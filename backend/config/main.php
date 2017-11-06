@@ -12,7 +12,16 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [],
+    'homeUrl' => '/category/index',
     'components' => [
+        'view' => [
+             'theme' => [
+                 'pathMap' => [
+                    '@app/views' => '@backend/views/yii2-adminlte-asset/example-views/yiisoft/yii2-app'
+                 ],
+             ],
+        ],
+
         'request' => [
             'csrfParam' => '_csrf-backend',
         ],
@@ -42,6 +51,7 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                '/' =>'/category'
             ],
         ],
 
