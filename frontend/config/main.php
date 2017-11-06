@@ -43,7 +43,6 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                'frontend/web/<controller>/<ation>' => '<controller><action>'
             ],
         ],
     ],
