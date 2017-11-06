@@ -1,0 +1,27 @@
+{
+  "name": "magaz",
+  "version": "1.0.0",
+  "description": "some website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "gulp": "^3.9.1",
+    "gulp-if": "^2.0.2",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-watch": "^4.3.11"
+  },
+  "dependencies": {
+    "bootstrap": "4.0.0-beta.2",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.6"
+  }
+}
