@@ -19,7 +19,7 @@ class m171107_114152_profile extends Migration
             'country' => $this->string(255)->notNull(),
             'about_myself' => $this->string(255)->notNull(),
             'contacts' => $this->string(255)->notNull(),
-            'date' => $this->date(),
+            'date' => $this->dateTime(),
             
         ]);
     }

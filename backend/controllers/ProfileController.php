@@ -6,6 +6,9 @@ use Yii;
 use yii\data\ActiveDataProvider;
 use frontend\models\Profile;
 use frontend\models\Comments;
+use frontend\models\Photo;
+use frontend\models\UploadForm;
+use yii\web\UploadedFile;
 use backend\models\SearchProfile;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -61,7 +64,7 @@ class ProfileController extends Controller
     ],
 ]);
         return $this->render('view', [
-            'model' => $this->findModel($id),
+            'model' => Profile::find()->where(['id' => $id])->with('photo')->one(),
             'comments' => $provider,
         ]);
     }
@@ -92,13 +95,24 @@ class ProfileController extends Controller
      */
     public function actionUpdate($id)
     {
+
         $model = $this->findModel($id);
+        $photo = new UploadForm();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+
+                $photo->imageFiles = UploadedFile::getInstances($photo, 'imageFiles');
+                if ($photo->upload()) {
+                    echo '<pre>';
+                    print_r($photo);
+                    echo '</pre>';
+                }
+
+//            return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
                 'model' => $model,
+                'photo' => $photo,
             ]);
         }
     }

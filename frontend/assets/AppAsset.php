@@ -12,13 +12,23 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
+        'https://fonts.googleapis.com/css?family=Roboto:300,400,500',
         'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css',
+        'https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css',
+        'https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css',
+        'css/font-awesome.min.css',
         'css/site.css',
+<<<<<<< HEAD
+=======
+        'css/styles.css',
+>>>>>>> 3feb65b843aea73a222951a65afb946bba54c2a3
     ];
     public $js = [
         'https://code.jquery.com/jquery-3.2.1.slim.min.js',
+        'https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js',
         'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js',
         'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js',
+        'js/home-page.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

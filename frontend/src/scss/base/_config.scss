@@ -1,9 +1,12 @@
 // $color-primary: #afc;
+
+
 $pink-dark: #8c0032;
 $pink-normal: #c2185b;
 $pink-light: #fa5788;
-$font-color-main: #eed9e0;
+$pink-white: #eed9e0;
+$font-color-main: $pink-white;
 
-$font-family-primary: '', Helvetica, sans-serif;
+$font-family-primary: 'Roboto', Helvetica, sans-serif;
 $base-font-size: 16px;
-$bg-color: $pink-dark;
+$bg-color: #f48fb1;

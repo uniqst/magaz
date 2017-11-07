@@ -1,6 +1,6 @@
-html {
+:root {
   font-size: $base-font-size;
-  font-family: $font-family-primary;
+  font-family: $font-family-primary !important;
   line-height: 1.4;
   font-weight: 400;
 }
@@ -34,4 +34,13 @@ select,
 button {
   font-size: 1rem;
   font-family: $font-family-primary;
+}
+
+a {
+  color: $font-color-main;
+}
+
+a:hover {
+  color: $font-color-main;
+  text-decoration: none;
 }
