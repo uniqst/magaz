@@ -6,4 +6,18 @@ body {
 *{
     font-size: 17px;
     transition: 500ms;
+    color: white;
+}
+a{
+    color: white;
+}
+
+.no-margin{
+    margin: 0px;
+}
+/************************/
+        /*Sidebar*/
+/************************/
+.sidebar-bg{
+    background: #8C0032;
 }

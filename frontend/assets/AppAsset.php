@@ -12,9 +12,10 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/site.css',
         'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css',
-        'css/styles.css'
+        'css/site.css',
+        'css/styles.css',
+
     ];
     public $js = [
         'js/libs/jquery.min.js',
