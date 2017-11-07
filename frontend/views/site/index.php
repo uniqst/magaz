@@ -7,54 +7,54 @@ $this->title = 'My Yii Application';
 
 <div class="container">
     <div class="row">
-    <div class="col main-slider-container">
+        <div class="col main-slider-container">
 
-        <h3 class="subheading-main">New Girls</h3>
+            <h3 class="subheading-main">New Girls</h3>
 
-        <div class="new-girls-slider">
+            <div class="new-girls-slider">
 
-            <div class="slick-carousel">
-                <div class="slider-item">
-                    <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
-                        <a class="girl-card__name" href="#">Katrina</a>
+                <div class="slick-carousel">
+                    <div class="slider-item">
+                        <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
+                            <a class="girl-card__name" href="#">Katrina</a>
+                        </div>
                     </div>
-                </div>
-                <div class="slider-item">
-                    <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
-                        <a class="girl-card__name" href="#">Katrina</a>
+                    <div class="slider-item">
+                        <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
+                            <a class="girl-card__name" href="#">Katrina</a>
+                        </div>
                     </div>
-                </div>
-                <div class="slider-item">
-                    <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
-                        <a class="girl-card__name" href="#">Katrina</a>
+                    <div class="slider-item">
+                        <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
+                            <a class="girl-card__name" href="#">Katrina</a>
+                        </div>
                     </div>
-                </div>
-                <div class="slider-item">
-                    <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
-                        <a class="girl-card__name" href="#">Katrina</a>
+                    <div class="slider-item">
+                        <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
+                            <a class="girl-card__name" href="#">Katrina</a>
+                        </div>
                     </div>
-                </div>
-                <div class="slider-item">
-                    <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
-                        <a class="girl-card__name" href="#">Katrina</a>
+                    <div class="slider-item">
+                        <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
+                            <a class="girl-card__name" href="#">Katrina</a>
+                        </div>
                     </div>
-                </div>
-                <div class="slider-item">
-                    <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
-                        <a class="girl-card__name" href="#">Katrina</a>
+                    <div class="slider-item">
+                        <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
+                            <a class="girl-card__name" href="#">Katrina</a>
+                        </div>
                     </div>
-                </div>
-                <div class="slider-item">
-                    <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
-                        <a class="girl-card__name">Katrina</a>
+                    <div class="slider-item">
+                        <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
+                            <a class="girl-card__name">Katrina</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
     <div class="row">
-        <div class="last-response">
+        <div class="col last-response">
             <h3 class="subheading-main">Customer response</h3>
             <div class="iconblock">
                 <a href="#" class="pencil"></a>
@@ -66,6 +66,104 @@ $this->title = 'My Yii Application';
                     <cite>Mr. Customuer</cite>
                 </div>
             </blockquote>
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col-2 sidebar-main d-none d-lg-block">
+            Sidebar main
+        </div>
+        <div class="col home-main-section">
+            <div class="links-tree">
+                <a href="#">Home</a>
+                <a href="#">Catalog</a>
+                <a href="#">English</a>
+            </div>
+
+            <h1 class="heading-main">
+                Bursa platinum girls. High class escorts. Pleasure without limits
+            </h1>
+            <div class="items-block">
+                <div class="container">
+                    <div class="row no-padding">
+
+                        <div class="col">
+                            <div class="items-block__item" style="background-image: url(/img/girl-cards/girl-card-2.jpg)">
+                                <div class="info-card">
+                                    <div class="wrapper">
+                                        <div class="info-card__name">
+                                            <a href="#">Valerry</a>
+                                        </div>
+                                        <div class="info-card__about">
+                                            <span class="age">Age 22</span>
+                                            <span class="nationality">Ukrainian</span>
+                                        </div>
+                                        <p class="info-card__more-info">
+                                            Id hinc dicam splendide pri, te mel mazim omnes voluptua, eos id eius eligendi consequuntur.  In decore dolore liberavisse pro, eum diam cibo gloriatur te.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="items-block__item" style="background-image: url(/img/girl-cards/girl-card-2.jpg)">
+                                <div class="info-card">
+                                    <div class="wrapper">
+                                        <div class="info-card__name">
+                                            <a href="#">Valerry</a>
+                                        </div>
+                                        <div class="info-card__about">
+                                            <span class="age">Age 22</span>
+                                            <span class="nationality">Ukrainian</span>
+                                        </div>
+                                        <p class="info-card__more-info">
+                                            Id hinc dicam splendide pri, te mel mazim omnes voluptua, eos id eius eligendi consequuntur.  In decore dolore liberavisse pro, eum diam cibo gloriatur te.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col d-none d-lg-block">
+                            <div class="items-block__item" style="background-image: url(/img/girl-cards/girl-card-2.jpg)">
+                                <div class="info-card">
+                                    <div class="wrapper">
+                                        <div class="info-card__name">
+                                            <a href="#">Valerry</a>
+                                        </div>
+                                        <div class="info-card__about">
+                                            <span class="age">Age 22</span>
+                                            <span class="nationality">Ukrainian</span>
+                                        </div>
+                                        <p class="info-card__more-info">
+                                            Id hinc dicam splendide pri, te mel mazim omnes voluptua, eos id eius eligendi consequuntur.  In decore dolore liberavisse pro, eum diam cibo gloriatur te.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col d-none d-xl-block">
+                            <div class="items-block__item" style="background-image: url(/img/girl-cards/girl-card-2.jpg)">
+                                <div class="info-card">
+                                    <div class="wrapper">
+                                        <div class="info-card__name">
+                                            <a href="#">Valerry</a>
+                                        </div>
+                                        <div class="info-card__about">
+                                            <span class="age">Age 22</span>
+                                            <span class="nationality">Ukrainian</span>
+                                        </div>
+                                        <p class="info-card__more-info">
+                                            Id hinc dicam splendide pri, te mel mazim omnes voluptua, eos id eius eligendi consequuntur.  In decore dolore liberavisse pro, eum diam cibo gloriatur te.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
