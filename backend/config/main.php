@@ -12,7 +12,6 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [],
-    'homeUrl' => '/category/index',
     'components' => [
         'view' => [
              'theme' => [
@@ -21,7 +20,6 @@ return [
                  ],
              ],
         ],
-
         'request' => [
             'csrfParam' => '_csrf-backend',
         ],
@@ -56,5 +54,20 @@ return [
         ],
 
     ],
+
+    'as access' => [
+            'class' => yii\filters\AccessControl::className(),
+            'rules' => [
+                [
+                    'actions' => ['login', 'error'],
+                    'allow' => true,
+                    'roles' => ['?'],
+                ],
+                [
+                    'allow' => true,
+                    'roles' => ['@'],
+                ],
+            ],
+        ],
     'params' => $params,
 ];
