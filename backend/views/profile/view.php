@@ -50,7 +50,24 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'contacts',
             // 'date',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            ['class' => 'yii\grid\ActionColumn',
+                'buttons'=>[
+                    'view'=>function ($url, $comments) {
+                        $customurl=Yii::$app->getUrlManager()->createUrl(['/comments/view','id'=>$comments['id']]); //$model->id для AR
+                        return \yii\helpers\Html::a( '<span class="glyphicon glyphicon-eye-open"></span>', $customurl,
+                            ['title' => Yii::t('yii', 'View'), 'data-pjax' => '0']);
+
+                    },
+                    'delete'=>function ($url, $comments) {
+                        $customurl=Yii::$app->getUrlManager()->createUrl(['/comments/delete','id'=>$comments['id']]); //$model->id для AR
+                        return \yii\helpers\Html::a( '<span class="glyphicon glyphicon-trash"></span>', $customurl,
+                            ['title' => Yii::t('yii', 'View'), 'data-confirm' => "Вы уверены, что хотите удалить этот элемент?", 'data-method'=>"post"]);
+
+                    }
+
+                ],
+                'template'=>'{view}  {delete}',
+            ],
         ],
     ]); ?>
 
