@@ -1,0 +1,48 @@
+.last-response {
+  background-color:#8c0032;
+  color: $font-color-main;
+  padding: 20px 20px 25px ;
+  position: relative;
+}
+
+.last-response {
+
+  .iconblock {
+    position: absolute;
+    // padding: 5px;
+    right: 20px;
+    top: 20px;
+  }
+  .pencil,
+  .msgbox {
+    cursor: pointer;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+  }
+  .pencil {
+    background-image: url(/img/icons/icon-pencil.jpg);
+  }
+  .msgbox {
+    background-image: url(/img/icons/icon-chatbox.jpg);
+  }
+}
+
+.response {
+  
+  &__quote {
+    padding-top: 30px;
+  }
+  &__author {
+    text-align: right;
+
+    cite {
+      font-style: normal;
+    }
+  }
+
+}
+

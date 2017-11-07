@@ -29,6 +29,13 @@ button {
   font-size: 1rem;
   font-family: "Roboto", Helvetica, sans-serif; }
 
+a {
+  color: #eed9e0; }
+
+a:hover {
+  color: #eed9e0;
+  text-decoration: none; }
+
 .subheading-main {
   margin: 0;
   text-transform: uppercase;
@@ -50,7 +57,7 @@ button {
   height: 330px;
   padding: 15px;
   text-align: center;
-  background-position: cetner;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -72,6 +79,41 @@ button {
     color: #eed9e0;
     font-size: 18px;
     padding: .4em; }
+
+.last-response {
+  background-color: #8c0032;
+  color: #eed9e0;
+  padding: 20px 20px 25px;
+  position: relative; }
+
+.last-response .iconblock {
+  position: absolute;
+  right: 20px;
+  top: 20px; }
+
+.last-response .pencil,
+.last-response .msgbox {
+  cursor: pointer;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px 32px; }
+
+.last-response .pencil {
+  background-image: url(/img/icons/icon-pencil.jpg); }
+
+.last-response .msgbox {
+  background-image: url(/img/icons/icon-chatbox.jpg); }
+
+.response__quote {
+  padding-top: 30px; }
+
+.response__author {
+  text-align: right; }
+  .response__author cite {
+    font-style: normal; }
 
 html,
 body {
