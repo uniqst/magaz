@@ -35,3 +35,12 @@ button {
   font-size: 1rem;
   font-family: $font-family-primary;
 }
+
+a {
+  color: $font-color-main;
+}
+
+a:hover {
+  color: $font-color-main;
+  text-decoration: none;
+}
