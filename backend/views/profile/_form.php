@@ -9,8 +9,9 @@ use yii\widgets\ActiveForm;
 ?>
 
 <div class="profile-form">
+    <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]) ?>
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?= $form->field($model, 'imageFiles[]')->fileInput(['multiple' => true, 'accept' => 'image/*']) ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
