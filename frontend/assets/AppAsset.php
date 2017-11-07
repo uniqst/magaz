@@ -18,10 +18,7 @@ class AppAsset extends AssetBundle
         'https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css',
         'css/font-awesome.min.css',
         'css/site.css',
-<<<<<<< HEAD
-=======
-        'css/styles.css',
->>>>>>> 3feb65b843aea73a222951a65afb946bba54c2a3
+
     ];
     public $js = [
         'https://code.jquery.com/jquery-3.2.1.slim.min.js',
