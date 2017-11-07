@@ -32,6 +32,8 @@
                 'items' => [
                     ['label' => 'Меню', 'options' => ['class' => 'header']],
                     ['label' => 'Категории', 'icon' => 'dashboard', 'url' => ['/category']],
+                    ['label' => 'Анкета', 'icon' => 'dashboard', 'url' => ['/profile']],
+                    ['label' => 'Отзывы', 'icon' => 'dashboard', 'url' => ['/comments']],
                     ['label' => 'Логин', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
                     [
                         'label' => 'Same tools',
