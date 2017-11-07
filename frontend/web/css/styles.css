@@ -1,3 +1,7 @@
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important; }
+
 :root {
   font-size: 16px;
   font-family: "Roboto", Helvetica, sans-serif !important;
@@ -36,11 +40,19 @@ a:hover {
   color: white;
   text-decoration: none; }
 
-.subheading-main {
+.subheading-main,
+.heading-main {
   margin: 0;
   text-transform: uppercase;
-  font-size: 16px;
-  font-family: Roboto; }
+  font-family: Roboto;
+  font-weight: 500; }
+
+.subheading-main {
+  font-size: 16px; }
+
+.heading-main {
+  font-size: 20px;
+  padding: 1.8em 0; }
 
 .main-slider-container {
   color: #eed9e0;
@@ -116,9 +128,63 @@ a:hover {
     font-style: normal; }
 
 .home-main-section {
+  padding-top: 30px;
   color: black; }
   .home-main-section a {
     color: black; }
+  .home-main-section .links-tree {
+    font-size: 18px;
+    font-weight: 400; }
+    .home-main-section .links-tree a:not(:last-of-type)::after {
+      content: ' >'; }
+
+.items-block {
+  color: black; }
+  .items-block__item {
+    height: 330px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 130px; }
+    .items-block__item .info-card {
+      color: white;
+      font-size: 14px;
+      position: absolute;
+      bottom: 0;
+      -webkit-transform: translate(0, 50%);
+              transform: translate(0, 50%); }
+      .items-block__item .info-card .wrapper {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        width: 85%;
+        margin: 0 auto;
+        background-color: #fa5788;
+        padding: 1em; }
+      .items-block__item .info-card a {
+        color: white; }
+
+.info-card__name {
+  text-align: center; }
+  .info-card__name a {
+    display: inline-block;
+    width: auto;
+    text-transform: uppercase; }
+
+.info-card__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1em 0;
+  text-transform: uppercase; }
+
+.info-card__more-info {
+  line-height: 1.1;
+  text-overflow: ellipsis; }
 
 html,
 body {

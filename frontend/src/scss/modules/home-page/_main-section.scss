@@ -1,9 +1,72 @@
 .home-main-section {
+  padding-top: 30px;
   color: black;
+  
   a {
     color:black;
   }
   .links-tree {
+    font-size: 18px;
+    font-weight: 400;
+    a:not(:last-of-type)::after {
+      content: ' >';
+    }
+  }
+}
 
+.items-block {
+  color: black;
+
+  &__item {
+    height: 330px; 
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 130px;
+
+    .info-card {
+      color: white;
+      font-size: 14px;
+      position: absolute;
+      bottom: 0;
+      transform: translate(0, 50%);
+
+      .wrapper {
+        box-sizing: border-box;
+        width: 85%;
+        margin: 0 auto;
+        background-color: #fa5788;
+        padding: 1em;
+      }
+
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+.info-card {
+  &__name {
+    text-align: center;
+    a {
+      display: inline-block;
+      width: auto;
+      text-transform: uppercase;
+    }
+  }
+
+  &__about {
+    display: flex;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+    margin: 1em 0;
+    text-transform: uppercase;
+  }
+
+  &__more-info {
+    line-height: 1.1;
+    text-overflow: ellipsis;
   }
 }

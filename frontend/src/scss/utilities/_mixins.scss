@@ -1,5 +1,10 @@
 $browser-context: 20px; // Default
 
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 @function em($pixels, $context: $browser-context) {
   @return #{$pixels/$context}em;
 }

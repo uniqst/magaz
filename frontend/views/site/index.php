@@ -68,8 +68,8 @@ $this->title = 'My Yii Application';
             </blockquote>
         </div>
     </div>
-    <div class="row">
-        <div class="col-2 sidebar-main">
+    <div class="row no-gutters">
+        <div class="col-2 sidebar-main d-none d-lg-block">
             Sidebar main
         </div>
         <div class="col home-main-section">
@@ -78,22 +78,85 @@ $this->title = 'My Yii Application';
                 <a href="#">Catalog</a>
                 <a href="#">English</a>
             </div>
+
             <h1 class="heading-main">
                 Bursa platinum girls. High class escorts. Pleasure without limits
             </h1>
             <div class="items-block">
                 <div class="container">
-                    <div class="row">
+                    <div class="row no-padding">
 
                         <div class="col">
-                            <div class="items-block__item" >
+                            <div class="items-block__item" style="background-image: url(/img/girl-cards/girl-card-2.jpg)">
                                 <div class="info-card">
-                                    <a href="#" class="info-card__name">Valerry</a>
-                                    <div class>
-                                        <span class="info-card__age">Age 22</span>
-                                        <span class="info-card__nationality">Ukrainian</span>
+                                    <div class="wrapper">
+                                        <div class="info-card__name">
+                                            <a href="#">Valerry</a>
+                                        </div>
+                                        <div class="info-card__about">
+                                            <span class="age">Age 22</span>
+                                            <span class="nationality">Ukrainian</span>
+                                        </div>
+                                        <p class="info-card__more-info">
+                                            Id hinc dicam splendide pri, te mel mazim omnes voluptua, eos id eius eligendi consequuntur.  In decore dolore liberavisse pro, eum diam cibo gloriatur te.
+                                        </p>
                                     </div>
-                                    <p class="info-card__more-info">Id hinc dicam splendide pri, te mel mazim omnes voluptua, eos id eius eligendi consequuntur. Nam oratio doctus eu, nonumes assentior cum ea. Sed ei purto corpora similique. In decore dolore liberavisse pro, eum diam cibo gloriatur te.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="items-block__item" style="background-image: url(/img/girl-cards/girl-card-2.jpg)">
+                                <div class="info-card">
+                                    <div class="wrapper">
+                                        <div class="info-card__name">
+                                            <a href="#">Valerry</a>
+                                        </div>
+                                        <div class="info-card__about">
+                                            <span class="age">Age 22</span>
+                                            <span class="nationality">Ukrainian</span>
+                                        </div>
+                                        <p class="info-card__more-info">
+                                            Id hinc dicam splendide pri, te mel mazim omnes voluptua, eos id eius eligendi consequuntur.  In decore dolore liberavisse pro, eum diam cibo gloriatur te.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col d-none d-lg-block">
+                            <div class="items-block__item" style="background-image: url(/img/girl-cards/girl-card-2.jpg)">
+                                <div class="info-card">
+                                    <div class="wrapper">
+                                        <div class="info-card__name">
+                                            <a href="#">Valerry</a>
+                                        </div>
+                                        <div class="info-card__about">
+                                            <span class="age">Age 22</span>
+                                            <span class="nationality">Ukrainian</span>
+                                        </div>
+                                        <p class="info-card__more-info">
+                                            Id hinc dicam splendide pri, te mel mazim omnes voluptua, eos id eius eligendi consequuntur.  In decore dolore liberavisse pro, eum diam cibo gloriatur te.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col d-none d-xl-block">
+                            <div class="items-block__item" style="background-image: url(/img/girl-cards/girl-card-2.jpg)">
+                                <div class="info-card">
+                                    <div class="wrapper">
+                                        <div class="info-card__name">
+                                            <a href="#">Valerry</a>
+                                        </div>
+                                        <div class="info-card__about">
+                                            <span class="age">Age 22</span>
+                                            <span class="nationality">Ukrainian</span>
+                                        </div>
+                                        <p class="info-card__more-info">
+                                            Id hinc dicam splendide pri, te mel mazim omnes voluptua, eos id eius eligendi consequuntur.  In decore dolore liberavisse pro, eum diam cibo gloriatur te.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
