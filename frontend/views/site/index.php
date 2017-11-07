@@ -4,50 +4,80 @@
 
 $this->title = 'My Yii Application';
 ?>
-<div class="site-index">
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2">Side bar</div>
+        <div class="col-sm-8">
+            <div class="main-slider-container">
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
+                <h3 class="subheading-main">New Girls</h3>
 
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+                <div class="new-girls-slider">
+
+                    <div class="slick-carousel">
+                        <div class="slider-item">
+                            <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
+                                <a class="girl-card__name">Katrina</a>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
+                                <a class="girl-card__name">Katrina</a>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
+                                <a class="girl-card__name">Katrina</a>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
+                                <a class="girl-card__name">Katrina</a>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
+                                <a class="girl-card__name">Katrina</a>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
+                                <a class="girl-card__name">Katrina</a>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
+                                <a class="girl-card__name">Katrina</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="last-responce">
+                <h3 class="subheading-main">Customer response</h3>
+                <blockquote>
+                    <p>Vis primis omnium hendrerit no, ei sumo clita salutatus est. Cu nisl falli ocurreret pri, ne duo aeque accusam salutandi. Vim ex commune definitiones, duo vero audiam alterum cu, has id graeci viderer malorum. Sed epicuri maluisset omittantur in, ornatus fierent dolores mel an. Integre platonem posidonium an his, in duo dicta labores facilisi, ceteros intellegebat vis te.</p>
+                    <cite></cite>
+                </blockquote>
+            </div>
+
+        </div>
+        <div class="col-sm-2">Side bar</div>
     </div>
+</div>
 
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+<!-- <div class="main-slider-container">
+    <h3>New Girls</h3>
+    <div class="new-girls-slider">
+        <div class="owl-carousel owl-theme">
+            <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
+                <a class="girl-card__name">Katrina</a>
             </div>
         </div>
-
     </div>
+</div> -->
+
+
 </div>
