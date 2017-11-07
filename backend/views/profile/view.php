@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use yii\grid\GridView;
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Profile */
@@ -37,5 +38,20 @@ $this->params['breadcrumbs'][] = $this->title;
             'date',
         ],
     ]) ?>
+
+    <?= GridView::widget([
+        'dataProvider' => $comments,
+        'columns' => [
+            ['class' => 'yii\grid\SerialColumn'],
+
+            'id',
+            'email',
+            'content',
+            // 'contacts',
+            // 'date',
+
+            ['class' => 'yii\grid\ActionColumn'],
+        ],
+    ]); ?>
 
 </div>

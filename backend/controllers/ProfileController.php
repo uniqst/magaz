@@ -3,7 +3,9 @@
 namespace backend\controllers;
 
 use Yii;
+use yii\data\ActiveDataProvider;
 use frontend\models\Profile;
+use frontend\models\Comments;
 use backend\models\SearchProfile;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -51,8 +53,16 @@ class ProfileController extends Controller
      */
     public function actionView($id)
     {
+        $comments = Comments::find()->where(['profile_id' => $id]); 
+        $provider = new ActiveDataProvider([
+    'query' => $comments,
+    'pagination' => [
+        'pageSize' => 10,
+    ],
+]);
         return $this->render('view', [
             'model' => $this->findModel($id),
+            'comments' => $provider,
         ]);
     }
 
