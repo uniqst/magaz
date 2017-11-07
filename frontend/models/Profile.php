@@ -59,4 +59,9 @@ class Profile extends \yii\db\ActiveRecord
         return $this->hasMany(Photo::className(), ['profile_id' => 'id']);
     }
 
+    public function getImage()
+    {
+        return $this->hasOne(Photo::className(), ['profile_id' => 'id']);
+    }
+
 }

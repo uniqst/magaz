@@ -43,6 +43,7 @@ class ProfileController extends Controller
         $searchModel = new SearchProfile();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
+
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
@@ -80,6 +81,15 @@ class ProfileController extends Controller
         $photo = new UploadForm();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $photo->imageFiles = UploadedFile::getInstances($photo, 'imageFiles');
+            if ($photo->upload()) {
+                foreach($photo->imageFiles as $img){
+                    $image = new Photo();
+                    $image->profile_id = $model->id;
+                    $image->src = $img->name;
+                    $image->save();
+                }
+            }
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
@@ -105,12 +115,14 @@ class ProfileController extends Controller
 
                 $photo->imageFiles = UploadedFile::getInstances($photo, 'imageFiles');
                 if ($photo->upload()) {
-                    echo '<pre>';
-                    print_r($photo);
-                    echo '</pre>';
+                    foreach($photo->imageFiles as $img){
+                        $image = new Photo();
+                        $image->profile_id = $id;
+                        $image->src = $img->name;
+                        $image->save();
+                    }
                 }
-
-//            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
                 'model' => $model,

@@ -67,7 +67,8 @@ class SearchProfile extends Profile
         $query->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'country', $this->country])
             ->andFilterWhere(['like', 'about_myself', $this->about_myself])
-            ->andFilterWhere(['like', 'contacts', $this->contacts]);
+            ->andFilterWhere(['like', 'contacts', $this->contacts])
+            ->with('photo');
 
         return $dataProvider;
     }
