@@ -2,9 +2,6 @@ html,
 body {
     min-height: 100vh;
     background: #F48FB1;
-}
-*{
-    transition: 500ms;
     color: white;
 }
 a{

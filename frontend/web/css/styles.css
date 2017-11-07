@@ -30,10 +30,10 @@ button {
   font-family: "Roboto", Helvetica, sans-serif; }
 
 a {
-  color: #eed9e0; }
+  color: white; }
 
 a:hover {
-  color: #eed9e0;
+  color: white;
   text-decoration: none; }
 
 .subheading-main {
@@ -114,6 +114,11 @@ a:hover {
   text-align: right; }
   .response__author cite {
     font-style: normal; }
+
+.home-main-section {
+  color: black; }
+  .home-main-section a {
+    color: black; }
 
 html,
 body {
