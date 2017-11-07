@@ -61,7 +61,7 @@ class ProfileController extends Controller
     ],
 ]);
         return $this->render('view', [
-            'model' => $this->findModel($id),
+            'model' => Profile::find()->where(['id' => $id])->with('photo')->one(),
             'comments' => $provider,
         ]);
     }

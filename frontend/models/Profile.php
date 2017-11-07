@@ -53,4 +53,10 @@ class Profile extends \yii\db\ActiveRecord
             'date' => 'Дата',
         ];
     }
+
+    public function getPhoto()
+    {
+        return $this->hasMany(Photo::className(), ['profile_id' => 'id']);
+    }
+
 }
