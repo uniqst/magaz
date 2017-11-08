@@ -2,6 +2,7 @@
 namespace frontend\controllers;
 
 use Yii;
+use yii\db\Expression;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
@@ -12,6 +13,7 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use frontend\models\Profile;
 
 /**
  * Site controller
@@ -72,7 +74,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $model = Profile::find()->orderBy(new Expression('rand()'))->limit(5)->with('image')->all();
+        return $this->render('index', compact('model'));
     }
 
     /**

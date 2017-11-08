@@ -12,43 +12,14 @@ $this->title = 'My Yii Application';
             <h3 class="subheading-main">New Girls</h3>
 
             <div class="new-girls-slider">
-
                 <div class="slick-carousel">
+                    <?php foreach($model as $image):?>
                     <div class="slider-item">
-                        <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
-                            <a class="girl-card__name" href="#">Katrina</a>
+                        <div class="girl-card" style="background-image: url(photo/<?= $image->image->src?>)">
+                            <a class="girl-card__name" href="#"><?= $image->name?></a>
                         </div>
                     </div>
-                    <div class="slider-item">
-                        <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
-                            <a class="girl-card__name" href="#">Katrina</a>
-                        </div>
-                    </div>
-                    <div class="slider-item">
-                        <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
-                            <a class="girl-card__name" href="#">Katrina</a>
-                        </div>
-                    </div>
-                    <div class="slider-item">
-                        <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
-                            <a class="girl-card__name" href="#">Katrina</a>
-                        </div>
-                    </div>
-                    <div class="slider-item">
-                        <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
-                            <a class="girl-card__name" href="#">Katrina</a>
-                        </div>
-                    </div>
-                    <div class="slider-item">
-                        <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
-                            <a class="girl-card__name" href="#">Katrina</a>
-                        </div>
-                    </div>
-                    <div class="slider-item">
-                        <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
-                            <a class="girl-card__name">Katrina</a>
-                        </div>
-                    </div>
+                    <?php endforeach;?>
                 </div>
             </div>
         </div>
