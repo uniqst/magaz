@@ -257,20 +257,42 @@
       </div>
       <div class="articles__list">
         <ul>
-          <div class="list-item container-fluid">
-            <div class="row no-gutters">
-              <div class="col-2 photo" style="background-image: url(img/cat.jpg)">
+          <div class="list-item">
+              <div class="photo" style="background-image: url(img/cat.jpg)">
               </div>
-              <div class="col-10 article">
+              <div class="article">
                 <div class="article__title">
                   <a href="#">The Dance Flour</a>
                 </div>
                 <div class="article__text">
-                 Nam duis velit affert an. Munere inermis percipit ut vis, alienum efficiendi vix ei. Eum no semper quaestio. Natum reformidans intellegebat ei sea, partem temporibus cum in. Ut nec euismod albucius ullamcorper, ut cibo feugiat sanctus vis. Id case erant nostrum est. Ex duo accusata democritum consequuntur. Ius ex duis accommodare. Et porro appareat vis. Et nam velit viris feugait, putant mentitum no nam.
+                  Eum no semper quaestio. Natum reformidans intellegebat ei sea, partem temporibus cum in. Ut nec euismod albucius ullamcorper, ut cibo feugiat sanctus vis. Id case erant nostrum est. Ex duo accusata democritum consequuntur. Ius ex duis accommodare. Et porro appareat vis. Et nam velit viris feugait, putant mentitum no nam.
                 </div>
               </div>
             </div>
-          </div>
+          <div class="list-item">
+              <div class="photo" style="background-image: url(img/cat.jpg)">
+              </div>
+              <div class="article">
+                <div class="article__title">
+                  <a href="#">The Dance Flour</a>
+                </div>
+                <div class="article__text">
+                  Eum no semper quaestio. Natum reformidans intellegebat ei sea, partem temporibus cum in. Ut nec euismod albucius ullamcorper, ut cibo feugiat sanctus vis. Id case erant nostrum est. Ex duo accusata democritum consequuntur. Ius ex duis accommodare. Et porro appareat vis. Et nam velit viris feugait, putant mentitum no nam.
+                </div>
+              </div>
+            </div>
+          <div class="list-item">
+              <div class="photo" style="background-image: url(img/cat.jpg)">
+              </div>
+              <div class="article">
+                <div class="article__title">
+                  <a href="#">The Dance Flour</a>
+                </div>
+                <div class="article__text">
+                  Eum no semper quaestio. Natum reformidans intellegebat ei sea, partem temporibus cum in. Ut nec euismod albucius ullamcorper, ut cibo feugiat sanctus vis. Id case erant nostrum est. Ex duo accusata democritum consequuntur. Ius ex duis accommodare. Et porro appareat vis. Et nam velit viris feugait, putant mentitum no nam.
+                </div>
+              </div>
+            </div>
         </ul>
       </div>
     </div>
