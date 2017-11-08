@@ -29,7 +29,8 @@ h2 {
 input,
 textarea,
 select,
-button {
+button,
+label {
   font-size: 1rem;
   font-family: "Roboto", Helvetica, sans-serif; }
 
@@ -238,6 +239,32 @@ a:hover {
   .application form .upload-photo .title {
     font-size: 18px;
     margin-bottom: 15px; }
+  .application .upload-photo .upload-label {
+    -webkit-box-shadow: 0 0 2px rbga(0, 0, 0, 0.3);
+            box-shadow: 0 0 2px rbga(0, 0, 0, 0.3);
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    background-color: #eed9e0;
+    color: black;
+    font-size: 18px; }
+  .application .upload-photo .upload-input {
+    display: none; }
+  .application .submit button {
+    border: none;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    background-color: #eed9e0;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase; }
 
 .infobox-main {
   background-color: #c2185b; }

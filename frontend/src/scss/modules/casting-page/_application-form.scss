@@ -59,5 +59,39 @@
     }
 
   }
+
+  .upload-photo {
+    .upload-label {
+      box-shadow: 0 0 2px rbga(0, 0, 0, .3);
+      text-align: center;
+      text-transform: uppercase;
+      display: inline-block;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      cursor: pointer;
+      background-color: #eed9e0;
+      color: black;
+      font-size: 18px;
+    }
+    .upload-input {
+      display: none;
+    }
+  }
+
+  .submit {
+    button {
+      border: none;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      display: inline-block;
+      background-color: #eed9e0;
+      color: black;
+      font-size: 18px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
 }
 
