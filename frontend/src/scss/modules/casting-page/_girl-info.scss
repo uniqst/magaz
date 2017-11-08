@@ -1,0 +1,53 @@
+.girl-info {
+  padding: 15px 15px 30px;
+  background-color: #c2185b;
+  margin-bottom: 80px;
+}
+
+
+
+.girl-info__title {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.girl-info__card {
+  margin-top: 45px;
+}
+
+.card__photo-section {
+  padding-left: 0;
+  padding-right: 0;
+  .photo {
+    height: 340px;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.card__info-list {
+  ul {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+
+.info-list__item {
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #fa5788;
+  padding: 12px 20px;
+  list-style-type: none;
+  margin-bottom: 7px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card__description {
+  padding: 20px 0;
+}

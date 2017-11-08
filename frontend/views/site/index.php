@@ -5,7 +5,7 @@
 $this->title = 'My Yii Application';
 ?>
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col main-slider-container">
 
@@ -72,7 +72,7 @@ $this->title = 'My Yii Application';
         <div class="col-2 sidebar-main d-none d-lg-block">
             Sidebar main
         </div>
-        <div class="col home-main-section">
+        <div class="col main-center-col">
             <div class="links-tree">
                 <a href="#">Home</a>
                 <a href="#">Catalog</a>

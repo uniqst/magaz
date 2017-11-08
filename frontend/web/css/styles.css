@@ -2,18 +2,20 @@
   padding: 0 !important;
   margin: 0 !important; }
 
-:root {
-  font-size: 16px;
-  font-family: "Roboto", Helvetica, sans-serif !important;
-  line-height: 1.4;
-  font-weight: 400; }
+html {
+  font-size: 16px; }
 
 html,
 body {
   margin: 0; }
 
 body {
-  background-color: #f48fb1; }
+  background-color: #f48fb1;
+  font-size: 1rem;
+  font-family: "Roboto", Helvetica, sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  overflow-x: hidden; }
 
 h1,
 h2,
@@ -60,9 +62,18 @@ a:hover {
   padding-bottom: .8em; }
 
 .site-wrapper {
-  max-width: 1200px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto; }
+
+.dir-tree-links {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  color: black; }
+  .dir-tree-links a {
+    color: black;
+    font-size: 14px;
+    font-weight: 400; }
 
 .main-slider-container {
   color: #eed9e0;
@@ -196,50 +207,50 @@ a:hover {
   line-height: 1.1;
   text-overflow: ellipsis; }
 
-.application {
+.application-form {
   background-color: #c2185b;
   padding: 30px; }
-  .application .page-name {
+  .application-form .page-name {
     font-size: 24px; }
-  .application .heading-main {
+  .application-form .heading-main {
     font-weight: 400;
     padding-top: .4em;
     padding-bottom: .8em; }
-  .application .text {
+  .application-form .text {
     font-size: 20px; }
-  .application form > .row > div {
+  .application-form form > .row > div {
     margin-bottom: 24px; }
-  .application form > .row > span {
+  .application-form form > .row > span {
     padding-left: 15px;
     padding-right: 15px;
     display: block; }
-  .application form input::-webkit-input-placeholder,
-  .application form textarea::-webkit-input-placeholder {
+  .application-form form input::-webkit-input-placeholder,
+  .application-form form textarea::-webkit-input-placeholder {
     color: white; }
-  .application form input:-ms-input-placeholder,
-  .application form textarea:-ms-input-placeholder {
+  .application-form form input:-ms-input-placeholder,
+  .application-form form textarea:-ms-input-placeholder {
     color: white; }
-  .application form input::-ms-input-placeholder,
-  .application form textarea::-ms-input-placeholder {
+  .application-form form input::-ms-input-placeholder,
+  .application-form form textarea::-ms-input-placeholder {
     color: white; }
-  .application form input::placeholder,
-  .application form textarea::placeholder {
+  .application-form form input::placeholder,
+  .application-form form textarea::placeholder {
     color: white; }
-  .application form input[type=email]:focus,
-  .application form input[type=text]:focus,
-  .application form textarea:focus {
+  .application-form form input[type=email]:focus,
+  .application-form form input[type=text]:focus,
+  .application-form form textarea:focus {
     outline: none; }
-  .application form input[type=email], .application form input[type=text],
-  .application form textarea {
+  .application-form form input[type=email], .application-form form input[type=text],
+  .application-form form textarea {
     width: 100%;
     padding: 15px 20px;
     border: none;
     background-color: #fa5788;
     color: white; }
-  .application form .upload-photo .title {
+  .application-form form .upload-photo .title {
     font-size: 18px;
     margin-bottom: 15px; }
-  .application .upload-photo .upload-label {
+  .application-form .upload-photo .upload-label {
     -webkit-box-shadow: 0 0 2px rbga(0, 0, 0, 0.3);
             box-shadow: 0 0 2px rbga(0, 0, 0, 0.3);
     text-align: center;
@@ -252,9 +263,9 @@ a:hover {
     background-color: #eed9e0;
     color: black;
     font-size: 18px; }
-  .application .upload-photo .upload-input {
+  .application-form .upload-photo .upload-input {
     display: none; }
-  .application .submit button {
+  .application-form .submit button {
     border: none;
     width: 100%;
     padding-top: 10px;
@@ -265,6 +276,109 @@ a:hover {
     font-size: 18px;
     text-align: center;
     text-transform: uppercase; }
+
+.application-ask {
+  background-color: #8c0032;
+  padding: 30px; }
+  .application-ask .msg-block {
+    font-size: 18px;
+    margin-bottom: 15px; }
+    .application-ask .msg-block p {
+      text-transform: uppercase;
+      margin-bottom: 0; }
+  .application-ask .image {
+    background-image: url(../img/cat-small.jpg);
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    border-radius: 50%; }
+
+.girl-info {
+  padding: 15px 15px 30px;
+  background-color: #c2185b;
+  margin-bottom: 80px; }
+
+.girl-info__title {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 18px;
+  text-transform: uppercase; }
+
+.girl-info__card {
+  margin-top: 45px; }
+
+.card__photo-section {
+  padding-left: 0;
+  padding-right: 0; }
+  .card__photo-section .photo {
+    height: 340px;
+    background-position: center;
+    background-size: cover; }
+
+.card__info-list ul {
+  padding-left: 0;
+  margin-left: 0; }
+
+.info-list__item {
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #fa5788;
+  padding: 12px 20px;
+  list-style-type: none;
+  margin-bottom: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.card__description {
+  padding: 20px 0; }
+
+.articles-box {
+  padding-top: 15px;
+  background-color: #c2185b;
+  margin-bottom: 80px; }
+  .articles-box__title {
+    padding-left: 30px;
+    padding-right: 15px;
+    font-size: 18px;
+    text-transform: uppercase; }
+
+.articles__list ul {
+  margin-top: 50px;
+  margin-left: 0;
+  padding-left: 0; }
+
+.list-item {
+  padding-left: 0;
+  padding-right: 0; }
+  .list-item .photo {
+    width: 155px;
+    height: 155px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+
+.article {
+  background-color: #8c0032; }
+  .article:not(:last-of-type) {
+    border-bottom: 1px solid #c2185b; }
+  .article__title {
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 16px; }
+  .article__text {
+    font-size: 12px;
+    padding: 10px; }
 
 .infobox-main {
   background-color: #c2185b; }
