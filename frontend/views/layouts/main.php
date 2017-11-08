@@ -4,11 +4,10 @@
 /* @var $content string */
 
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
+use yii\helpers\Url;
 
 AppAsset::register($this);
 ?>
@@ -40,19 +39,19 @@ AppAsset::register($this);
             <ul class="navbar-nav navbar-main">
 
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">home</a>
+                    <a class="nav-link" href="/">home</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">all girls</a>
+                    <a class="nav-link" href="<?=Url::to(['/girls'])?>">all girls</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">how to make an order</a>
+                    <a class="nav-link" href="<?=Url::to(['/how-make-order'])?>">how to make an order</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">servises</a>
+                    <a class="nav-link" href="<?=Url::to(['/services'])?>">servises</a>
                 </li>
 
                 <li class="nav-item">
@@ -64,7 +63,7 @@ AppAsset::register($this);
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">casting</a>
+                    <a class="nav-link" href="<?=Url::to(['/casting'])?>">casting</a>
                 </li>
 
                 <li class="nav-item">
@@ -72,7 +71,7 @@ AppAsset::register($this);
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">contacts</a>
+                    <a class="nav-link" href="<?=Url::to(['/contacts'])?>">contacts</a>
                 </li>
 
             </ul>
