@@ -1,0 +1,26 @@
+.application {
+  background-color: #c2185b;
+
+  padding: 30px;
+
+  form  {
+    > .row {
+      margin-bottom: 24px;
+      > span {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: block;
+      }
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 15px 20px;
+      border: none;
+      background-color: #fa5788;
+    }
+
+  }
+}
+

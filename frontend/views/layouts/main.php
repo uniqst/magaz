@@ -120,7 +120,7 @@ AppAsset::register($this);
     <div class="navbar-bottom navbar-bg-bottom ml-auto"></div>
 
 
-    <div class="container-fluid h-100" style="min-height: 75vh">
+    <div class="container-fluid h-100 site-wrapper" style="min-height: 75vh">
 
             <div ><!--site content-->
                 <?= Breadcrumbs::widget([
@@ -130,7 +130,7 @@ AppAsset::register($this);
                 <?= $content ?>
             </div><!--site content-->
 
-        </div><!--row-->
+    </div>
 
 </div><!--wrap-->
 
