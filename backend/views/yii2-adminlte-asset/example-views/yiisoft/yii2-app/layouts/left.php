@@ -17,6 +17,7 @@
                     ['label' => 'Категории', 'icon' => 'dashboard', 'url' => ['/category']],
                     ['label' => 'Анкета', 'icon' => 'dashboard', 'url' => ['/profile']],
                     ['label' => 'Отзывы', 'icon' => 'dashboard', 'url' => ['/comments']],
+                    ['label' => 'Профиль', 'icon' => 'dashboard', 'url' => ['/user/update', 'id' => 1]],
                     ['label' => 'Логин', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
                     [
                         'label' => 'Same tools',
