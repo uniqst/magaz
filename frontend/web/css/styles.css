@@ -41,7 +41,8 @@ a:hover {
   text-decoration: none; }
 
 .subheading-main,
-.heading-main {
+.heading-main,
+.page-name {
   margin: 0;
   text-transform: uppercase;
   font-family: Roboto;
@@ -53,6 +54,9 @@ a:hover {
 .heading-main {
   font-size: 20px;
   padding: 1.8em 0; }
+
+.page-name {
+  padding-bottom: .8em; }
 
 .site-wrapper {
   max-width: 1200px;
@@ -194,18 +198,46 @@ a:hover {
 .application {
   background-color: #c2185b;
   padding: 30px; }
-  .application form > .row {
+  .application .page-name {
+    font-size: 24px; }
+  .application .heading-main {
+    font-weight: 400;
+    padding-top: .4em;
+    padding-bottom: .8em; }
+  .application .text {
+    font-size: 20px; }
+  .application form > .row > div {
     margin-bottom: 24px; }
-    .application form > .row > span {
-      padding-left: 15px;
-      padding-right: 15px;
-      display: block; }
-  .application form input,
+  .application form > .row > span {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: block; }
+  .application form input::-webkit-input-placeholder,
+  .application form textarea::-webkit-input-placeholder {
+    color: white; }
+  .application form input:-ms-input-placeholder,
+  .application form textarea:-ms-input-placeholder {
+    color: white; }
+  .application form input::-ms-input-placeholder,
+  .application form textarea::-ms-input-placeholder {
+    color: white; }
+  .application form input::placeholder,
+  .application form textarea::placeholder {
+    color: white; }
+  .application form input[type=email]:focus,
+  .application form input[type=text]:focus,
+  .application form textarea:focus {
+    outline: none; }
+  .application form input[type=email], .application form input[type=text],
   .application form textarea {
     width: 100%;
     padding: 15px 20px;
     border: none;
-    background-color: #fa5788; }
+    background-color: #fa5788;
+    color: white; }
+  .application form .upload-photo .title {
+    font-size: 18px;
+    margin-bottom: 15px; }
 
 .infobox-main {
   background-color: #c2185b; }
