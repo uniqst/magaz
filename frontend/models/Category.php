@@ -44,4 +44,9 @@ class Category extends \yii\db\ActiveRecord
             'name' => 'Name',
         ];
     }
+
+    public function getCategory()
+    {
+        return $this->hasOne(Category::className(), ['id' => 'parent_id']);
+    }
 }
