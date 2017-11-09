@@ -15,8 +15,13 @@ $this->title = 'My Yii Application';
                 <div class="slick-carousel">
                     <?php foreach($model as $image):?>
                     <div class="slider-item">
+<<<<<<< HEAD
                         <div class="girl-card" style="background-image: url(photo/<?= $image->image->src?>)">
                             <a class="girl-card__name" href="<?=Url::to(['/girls/girl', 'id' => $image->id, 'name' => $image->name])?>"><?= $image->name?></a>
+=======
+                        <div class="girl-card" style="background-image: url('photo/<?= $image->image->src?>')">
+                            <a class="girl-card__name" href="#"><?= $image->name?></a>
+>>>>>>> e4ccce94f3adb5e33e449eaab43dc7345823f68f
                         </div>
                     </div>
                     <?php endforeach;?>

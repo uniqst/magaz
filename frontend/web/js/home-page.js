@@ -1,4 +1,33 @@
 $(document).ready(function () {
+  $('.bottom-items-slider > .slick-carousel')
+    .slick(
+    {
+      arrows: true,
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1300,
+          settings: {
+            slidesToShow: 4,
+          }
+        },
+        {
+          breakpoint: 1050,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 850,
+          settings: {
+            slidesToShow: 2,
+          }
+        }
+      ]
+    }
+  );
   $('.new-girls-slider > .slick-carousel').slick(
     {
       arrows: true,
