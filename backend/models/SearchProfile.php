@@ -18,8 +18,8 @@ class SearchProfile extends Profile
     public function rules()
     {
         return [
-            [['id', 'age'], 'integer'],
-            [['name', 'country', 'about_myself', 'contacts', 'date'], 'safe'],
+            [['id', 'age', 'phone', 'height', 'weight', 'status'], 'integer'],
+            [['name', 'nationality', 'mesurements', 'about_myself', 'date'], 'safe'],
         ];
     }
 
@@ -65,9 +65,8 @@ class SearchProfile extends Profile
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'country', $this->country])
+            ->andFilterWhere(['like', 'nationality', $this->nationality])
             ->andFilterWhere(['like', 'about_myself', $this->about_myself])
-            ->andFilterWhere(['like', 'contacts', $this->contacts])
             ->with('photo');
 
         return $dataProvider;

@@ -16,15 +16,25 @@ use frontend\models\Photo;
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'phone')->textInput() ?>
+
+    <?= $form->field($model, 'nationality')->textInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'age')->textInput() ?>
 
-    <?= $form->field($model, 'country')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'height')->textInput() ?>
 
-    <?= $form->field($model, 'about_myself')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'mesurements')->textInput() ?>
 
-    <?= $form->field($model, 'contacts')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'weight')->textInput() ?>
 
-    <?= $form->field($model, 'date')->hiddenInput(['value' => date('Y-m-d H:i:s')]) ?>
+    <?= $form->field($model, 'about_myself')->textArea(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'status')->textInput() ?>
+
+    <?= $form->field($model, 'date')->hiddenInput(['value' => date('Y-m-d H:i:s')])->label(false) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

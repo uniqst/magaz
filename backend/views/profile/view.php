@@ -33,10 +33,15 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id',
             'name',
+            'email',
+            'phone',
             'age',
-            'country',
+            'nationality',
+            'mesurements',
+            'height',
+            'weight',
+            'status',
             'about_myself',
-            'contacts',
             'date',
         ],
     ]) ?>

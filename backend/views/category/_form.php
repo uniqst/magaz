@@ -2,17 +2,29 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use frontend\models\Category;
+use yii\helpers\ArrayHelper;
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Category */
 /* @var $form yii\widgets\ActiveForm */
+
+// получаем всех авторов
+    $category = Category::find()->where(['parent_id' => 0 ])->all();
+// формируем массив, с ключем равным полю 'id' и значением равным полю 'name' 
+    $items = ArrayHelper::map($category,'id','name');
+    $params = [
+        'prompt' => 'Укажите родительскую категорию'
+    ];
+
+
 ?>
 
 <div class="category-form">
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'parent_id')->textInput() ?>
+    <?= $form->field($model, 'parent_id')->dropDownList($items,$params); ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 

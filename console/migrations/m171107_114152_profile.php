@@ -14,11 +14,16 @@ class m171107_114152_profile extends Migration
     {
          $this->createTable('{{%profile}}', [
             'id' => $this->primaryKey(11),
-            'name' => $this->string(255)->notNull(), 
+            'name' => $this->string(255)->notNull(),
+            'email' => $this->string(255)->notNull(),
+            'phone' => $this->string(255)->notNull(),
+            'nationality' => $this->string(255)->notNull(), 
             'age' => $this->integer(11)->notNull(),
-            'country' => $this->string(255)->notNull(),
+            'height' => $this->string(255)->notNull(),
+            'mesurements' => $this->string(255)->notNull(),
+            'weight' => $this->string(255)->notNull(),
             'about_myself' => $this->string(255)->notNull(),
-            'contacts' => $this->string(255)->notNull(),
+            'status' => $this->integer(11),
             'date' => $this->dateTime(),
             
         ]);
