@@ -5,9 +5,8 @@ use yii\helpers\Url;
 $this->title = 'My Yii Application';
 ?>
 
-<div class="container-fluid">
     <div class="row">
-        <div class="col main-slider-container">
+        <div class="offset-xl-2 col-xl-8 main-slider-container">
 
             <h3 class="subheading-main">New Girls</h3>
 
@@ -25,7 +24,7 @@ $this->title = 'My Yii Application';
         </div>
     </div>
     <div class="row">
-        <div class="col last-response">
+        <div class="offset-xl-2 col-xl-8 last-response">
             <h3 class="subheading-main">Customer response</h3>
             <div class="iconblock">
                 <a href="#" class="pencil"></a>
@@ -39,20 +38,30 @@ $this->title = 'My Yii Application';
             </blockquote>
         </div>
     </div>
+    <div class="row dir-tree-links">
+        <div class="offset-xl-2 col-xl-8">
+            <a href="#">Home</a>
+            <span> > </span>
+            <a href="#">Catalog</a>
+            <span> > </span>
+            <a href="#">English</a>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="offset-md-2 col-8">
+            <h1 class="heading-main">
+                Bursa platinum girls. High class escorts. Pleasure without limits
+            </h1>
+        </div>
+    </div>
+
     <div class="row no-gutters">
         <div class="col-2 sidebar-main d-none d-lg-block">
             Sidebar main
         </div>
         <div class="col main-center-col">
-            <div class="links-tree">
-                <a href="#">Home</a>
-                <a href="#">Catalog</a>
-                <a href="#">English</a>
-            </div>
 
-            <h1 class="heading-main">
-                Bursa platinum girls. High class escorts. Pleasure without limits
-            </h1>
             <div class="items-block">
                 <div class="container">
                     <div class="row no-padding">
@@ -82,7 +91,6 @@ $this->title = 'My Yii Application';
             </div>
         </div>
     </div>
-</div>
 
 <!-- <div class="main-slider-container">
     <h3>New Girls</h3>
@@ -94,6 +102,3 @@ $this->title = 'My Yii Application';
         </div>
     </div>
 </div> -->
-
-
-</div>

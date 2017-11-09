@@ -1,17 +1,20 @@
-.home-main-section {
-  padding-top: 30px;
-  color: black;
+// .home-main-section {
+//   padding-top: 30px;
+//   color: black;
   
-  a {
-    color:black;
-  }
-  .links-tree {
-    font-size: 18px;
-    font-weight: 400;
-    a:not(:last-of-type)::after {
-      content: ' >';
-    }
-  }
+//   .heading-main {
+//     color: black;
+//     margin-bottom: 30px;
+//   }
+
+//   a {
+//     color:black;
+//   }
+// }
+
+.heading-main {
+  color: black;
+  margin-bottom: 30px;
 }
 
 .items-block {
