@@ -43,6 +43,7 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'girl/<id:\d+>/<name:\w+>' => 'girls/girl'
             ],
         ],
     ],

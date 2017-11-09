@@ -70,5 +70,9 @@ class GirlsController extends Controller
     {
         return $this->render('index');
     }
+    public function actionGirl()
+    {
+        return $this->render('girl');
+    }
 
 }
