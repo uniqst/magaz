@@ -1,4 +1,12 @@
 $(document).ready(function () {
+  $('.bottom-items-slider > .slick-carousel').slick(
+    {
+      arrows: true,
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 1
+    }
+  );
   $('.new-girls-slider > .slick-carousel').slick(
     {
       arrows: true,
