@@ -183,27 +183,27 @@ a:hover {
       .items-block__item .info-card a {
         color: white; }
 
-.info-card__name {
-  text-align: center; }
-  .info-card__name a {
-    display: inline-block;
-    width: auto;
+.info-card {
+  width: 100%; }
+  .info-card__name {
+    text-align: center; }
+    .info-card__name a {
+      display: inline-block;
+      width: auto;
+      text-transform: uppercase; }
+  .info-card__about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid white;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 1em 0;
     text-transform: uppercase; }
-
-.info-card__about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-bottom: 1px solid white;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 1em 0;
-  text-transform: uppercase; }
-
-.info-card__more-info {
-  line-height: 1.1;
-  text-overflow: ellipsis; }
+  .info-card__more-info {
+    line-height: 1.1;
+    text-overflow: ellipsis; }
 
 .application-form {
   background-color: #c2185b;
@@ -403,7 +403,12 @@ a:hover {
   font-size: 20px; }
 
 .bottom-items-slider {
-  padding: 45px 115px; }
+  padding: 45px 115px;
+  background-image: -webkit-gradient(linear, left bottom, left top, );
+  background-image: linear-gradient(to top); }
+  .bottom-items-slider .item-box {
+    width: 200px;
+    height: 200px; }
 
 .infobox-main {
   background-color: #c2185b; }
