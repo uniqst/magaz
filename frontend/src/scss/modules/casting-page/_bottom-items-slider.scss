@@ -1,11 +1,74 @@
 .bottom-items-slider {
   padding: 45px 115px;
-  background-image: linear-gradient(to top);
+  background-image: linear-gradient(to top, #8c0032, #8c0032 35%, #c2185b 35%);
 
   .item-box {
+    font-size: 12px;
+    background-position: center;
+    background-size: cover;
     width: 200px;
     height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
+
+  .item-box__title {
+    height: 36px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, .7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    a {
+      color: #a3395d;
+    }
+  }
+
+  .girl {
+    .item-box__info {
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+
+  .service {
+    .item-box__info {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .story {
+    .item-box__info {
+      padding: 15px;
+      a {
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  .item-box__info {
+    background-color: rgba(247, 107, 150, 0.7);
+    min-height: 36px;
+    max-height: 90px;
+    width: 100%;
+    display: flex;
+
+    a {
+      display: block;
+      max-height: 90px;
+    }
+  }
+
 }
 
 

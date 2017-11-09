@@ -404,11 +404,77 @@ a:hover {
 
 .bottom-items-slider {
   padding: 45px 115px;
-  background-image: -webkit-gradient(linear, left bottom, left top, );
-  background-image: linear-gradient(to top); }
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#8c0032), color-stop(35%, #8c0032), color-stop(35%, #c2185b));
+  background-image: linear-gradient(to top, #8c0032, #8c0032 35%, #c2185b 35%); }
   .bottom-items-slider .item-box {
+    font-size: 12px;
+    background-position: center;
+    background-size: cover;
     width: 200px;
-    height: 200px; }
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .bottom-items-slider .item-box__title {
+    height: 36px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .bottom-items-slider .item-box__title a {
+      color: #a3395d; }
+  .bottom-items-slider .girl .item-box__info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px; }
+  .bottom-items-slider .service .item-box__info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .bottom-items-slider .story .item-box__info {
+    padding: 15px; }
+    .bottom-items-slider .story .item-box__info a {
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+  .bottom-items-slider .item-box__info {
+    background-color: rgba(247, 107, 150, 0.7);
+    min-height: 36px;
+    max-height: 90px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .bottom-items-slider .item-box__info a {
+      display: block;
+      max-height: 90px; }
 
 .infobox-main {
   background-color: #c2185b; }
