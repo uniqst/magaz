@@ -7,7 +7,7 @@ use yii\widgets\ActiveForm;
 
 <div class="row">
   <div class="application-page offset-xl-2 col-xl-8">
-    <div class="application-form">
+    <div class="top-form">
       
       <h2 class="page-name">Applciation</h1>
       <h1 class="heading-main">Bursa platinum girls. High class escors. Pleasure without limits</h1>
