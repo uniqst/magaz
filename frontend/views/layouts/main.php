@@ -55,11 +55,11 @@ AppAsset::register($this);
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">booking</a>
+                    <a class="nav-link" href="<?=Url::to(['/booking'])?>">booking</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">erotic stories</a>
+                    <a class="nav-link" href="<?=Url::to(['/stories'])?>">erotic stories</a>
                 </li>
 
                 <li class="nav-item">

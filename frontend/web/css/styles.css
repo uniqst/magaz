@@ -206,7 +206,8 @@ a:hover {
   .top-form .heading-main {
     font-weight: 400;
     padding-top: .4em;
-    padding-bottom: .8em; }
+    padding-bottom: .8em;
+    color: white; }
   .top-form .text {
     font-size: 20px; }
   .top-form form > .row > div {
