@@ -1,3 +1,10 @@
+<?
+
+use yii\helpers\Html;
+use yii\widgets\ActiveForm;
+
+?>
+
 <div class="row">
   <div class="application-page offset-xl-2 col-xl-8">
     <div class="application-form">
@@ -5,53 +12,45 @@
       <h2 class="page-name">Applciation</h1>
       <h1 class="heading-main">Bursa platinum girls. High class escors. Pleasure without limits</h1>
       <p class="text">You are young and brave? Become one of our escorts!</p>
-
-      <form class="main-application-form container-fluid" action="/CastingController.php" method="post" novalidate="novalidate">
+      <?php $form = ActiveForm::begin(['options' => ['class' => 'main-application-form container-fluid', 'novalidate' => 'novalidate', 'enctype' => 'multipart/form-data']]) ?>
         <div class="row">
           <div class="col-md-6">
-            <input type="text" name="name" placeholder="name*">
+            <?= $form->field($model, 'name')->textInput(['maxlength' => true, 'placeholder' => 'name*'])->label(false) ?>
           </div>
           <div class="col-md-6">
-            <input type="email" name="email" placeholder="e-mail*">
+            <?= $form->field($model, 'email')->textInput(['maxlength' => true, 'placeholder' => 'email*'])->label(false) ?>
           </div>
           <div class="col-md-6" >
-            <input type="text" name="phone" placeholder="your phone number*">
+            <?= $form->field($model, 'phone')->textInput(['maxlength' => true, 'placeholder' => 'phone*'])->label(false) ?>
           </div>
           <div class="col-md-6">
-            <input type="text" name="nationality" placeholder="nationality*">
+            <?= $form->field($model, 'nationality')->textInput(['maxlength' => true, 'placeholder' => 'nationality*'])->label(false) ?>
           </div>
           <div class="col-md-6" >
-            <input type="text" name="age" placeholder="age*">
+            <?= $form->field($model, 'age')->textInput(['maxlength' => true, 'placeholder' => 'age*'])->label(false) ?>
           </div>
           <div class="col-md-6">
-            <input type="text" name="height" placeholder="height*">
+            <?= $form->field($model, 'height')->textInput(['maxlength' => true, 'placeholder' => 'height*'])->label(false) ?>
           </div>
           <div class="col-md-6">
-            <input type="text" name="mesurements" placeholder="mesurements (E.G. 90 - 60 - 90)*"> 
+            <?= $form->field($model, 'mesurements')->textInput(['maxlength' => true, 'placeholder' => 'mesurements (E.G. 90 - 60 - 90)*'])->label(false) ?>
           </div>
           <div class="col-md-6" >
-            <input type="text" name="weight" placeholder="weight*">
+            <?= $form->field($model, 'weight')->textInput(['maxlength' => true, 'placeholder' => 'weight*'])->label(false) ?>
           </div>
+            <?= $form->field($model, 'date')->hiddenInput(['value' => date('Y-m-d H:i:s')])->label(false) ?>
 
         </div>
         <div class="row">
           <div class="col-md-12">
-            <textarea name="" id="" cols="30" rows="10" class="col-md-12" placeholder="few words about you*"></textarea>
+             <?= $form->field($model, 'about_myself')->textArea(['maxlength' => true, 'placeholder' => 'few words about you*', 'cols' => 30, 'rows' => 10, 'class' => 'col-md-12'])->label(false) ?>
           </div>
         </div>
         <div class="row upload-photo">
             <p class="col-md-12 title subheading-main">Upload photo</p>
             <div class="col-md-4">
               <label for="photo1" class="upload-label"><span>Choose file</span></label>
-              <input type="file" class="upload-input" id="photo1" name="photo1">
-            </div>
-            <div class="col-md-4">
-              <label for="photo2" class="upload-label"><span>Choose file</span></label>
-              <input type="file" class="upload-input" id="photo2" name="photo2">
-            </div>
-            <div class="col-md-4">
-              <label for="photo3" class="upload-label"><span>Choose file</span></label>
-              <input type="file" class="upload-input" id="photo3" name="photo3">
+              <?= $form->field($photo, 'imageFiles[]')->fileInput(['multiple' => true, 'accept' => 'image/*', 'class' => 'upload-input', 'id' => 'photo1'])->label(false) ?>
             </div>
         </div>
         <div class="row submit">
@@ -59,7 +58,7 @@
             <button type="submit">Submit</button>
           </div>
         </div>
-      </form>
+      <?php ActiveForm::end(); ?>
     </div>
     <div class="application-ask container-fluid">
       <div class="row">

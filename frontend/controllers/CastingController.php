@@ -5,6 +5,10 @@ use Yii;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
+use yii\web\UploadedFile;
+use frontend\models\Profile;
+use frontend\models\Photo;
+use frontend\models\UploadForm;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 
@@ -68,7 +72,21 @@ class CastingController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $model = new Profile();
+        $photo = new UploadForm();
+
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $photo->imageFiles = UploadedFile::getInstances($photo, 'imageFiles');
+                foreach ($photo->imageFiles as $file) {
+                    $str = substr(md5(microtime() . rand(0, 9999)), 0, 20);
+                    $file->saveAs('photo/' . $str . '.' . $file->extension);
+                    $image = new Photo();
+                    $image->profile_id = $model->id;
+                    $image->src = $str . '.' . $file->extension;
+                    $image->save();
+                }
+        }
+        return $this->render('index', compact('model', 'photo'));
     }
 
 }
