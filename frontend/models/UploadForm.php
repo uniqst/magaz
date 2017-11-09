@@ -3,6 +3,7 @@ namespace frontend\models;
 
 use yii\base\Model;
 use yii\web\UploadedFile;
+use frontend\models\Photo;
 
 class UploadForm extends Model
 {
@@ -18,15 +19,4 @@ class UploadForm extends Model
         ];
     }
 
-    public function upload()
-    {
-        if ($this->validate()) {
-            foreach ($this->imageFiles as $file) {
-                $file->saveAs('../../frontend/web/photo/' . $file->baseName . '.' . $file->extension);
-            }
-            return true;
-        } else {
-            return false;
-        }
-    }
 }

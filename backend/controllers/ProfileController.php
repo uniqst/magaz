@@ -82,14 +82,14 @@ class ProfileController extends Controller
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $photo->imageFiles = UploadedFile::getInstances($photo, 'imageFiles');
-            if ($photo->upload()) {
-                foreach($photo->imageFiles as $img){
+                foreach ($photo->imageFiles as $file) {
+                    $str = substr(md5(microtime() . rand(0, 9999)), 0, 20);
+                    $file->saveAs('../../frontend/web/photo/' . $str . '.' . $file->extension);
                     $image = new Photo();
                     $image->profile_id = $model->id;
-                    $image->src = $img->name;
+                    $image->src = $str . '.' . $file->extension;
                     $image->save();
                 }
-            }
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
@@ -112,16 +112,15 @@ class ProfileController extends Controller
         $photo = new UploadForm();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-
                 $photo->imageFiles = UploadedFile::getInstances($photo, 'imageFiles');
-                if ($photo->upload()) {
-                    foreach($photo->imageFiles as $img){
+                    foreach ($photo->imageFiles as $file) {
+                        $str = substr(md5(microtime() . rand(0, 9999)), 0, 20);
+                        $file->saveAs('../../frontend/web/photo/' . $str . '.' . $file->extension);
                         $image = new Photo();
-                        $image->profile_id = $id;
-                        $image->src = $img->name;
+                        $image->profile_id = $model->id;
+                        $image->src = $str . '.' . $file->extension;
                         $image->save();
                     }
-                }
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
