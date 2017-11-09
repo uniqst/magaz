@@ -1,0 +1,27 @@
+.application-ask {
+  background-color: #8c0032;
+  padding: 30px;
+
+  .msg-block {
+    font-size: 18px;
+    margin-bottom: 15px;
+    p {
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+  }
+
+  .image {
+    background-image: url(../img/cat-small.jpg);
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    border-radius: 50%;
+  }
+
+  .msg-block-wrap {
+  }
+}
+
