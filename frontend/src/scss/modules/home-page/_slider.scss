@@ -33,12 +33,13 @@
     }
 
     &__name {
+      text-transform: uppercase;
       background-color:#fa5788; 
       display: inline-block;
       width: 100%;
       color: $font-color-main;
-      font-size: 18px;
-      padding: .4em;
+      font-size: rem(12px);
+      padding: rem(15px);
     }
   }
 }

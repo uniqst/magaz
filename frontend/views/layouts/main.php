@@ -67,7 +67,7 @@ AppAsset::register($this);
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">riveiws</a>
+                    <a class="nav-link" href="<?=Url::to(['/reviews-for-escort'])?>">riveiws</a>
                 </li>
 
                 <li class="nav-item">

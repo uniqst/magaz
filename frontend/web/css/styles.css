@@ -108,12 +108,13 @@ a:hover {
     .new-girls-slider .girl-card__photo {
       max-width: 100%; }
     .new-girls-slider .girl-card__name {
+      text-transform: uppercase;
       background-color: #fa5788;
       display: inline-block;
       width: 100%;
       color: #ffffff;
-      font-size: 18px;
-      padding: .4em; }
+      font-size: 1rem;
+      padding: 1.25rem; }
 
 .last-response {
   background-color: #8c0032;
@@ -152,12 +153,16 @@ a:hover {
 
 .heading-main {
   color: black;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  font-weight: 400; }
 
 .items-block {
   color: black; }
   .items-block__item {
     height: 330px;
+    width: 234px;
+    margin-left: auto;
+    margin-right: auto;
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -165,7 +170,7 @@ a:hover {
     margin-bottom: 130px; }
     .items-block__item .info-card {
       color: white;
-      font-size: 14px;
+      font-size: 1rem;
       position: absolute;
       bottom: 0;
       -webkit-transform: translate(0, 50%);
@@ -173,25 +178,43 @@ a:hover {
       .items-block__item .info-card .wrapper {
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
-        width: 85%;
+        width: 90%;
         margin: 0 auto;
         background-color: #fa5788;
-        padding: 1em; }
+        padding: 15px 20px; }
       .items-block__item .info-card a {
+        font-size: 1rem;
         color: white; }
 
 .info-card {
-  width: 100%; }
+  width: 100%;
+  height: 200px;
+  font-size: 1rem; }
+  .info-card:hover .add-button {
+    display: inline-block;
+    opacity: 1; }
   .info-card__name {
     text-align: center; }
     .info-card__name a {
+      position: relative;
       display: inline-block;
       width: auto;
       text-transform: uppercase; }
+      .info-card__name a .add-button {
+        -webkit-transition: .3s opacity;
+        transition: .3s opacity;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: 0;
+        display: none;
+        -webkit-transform: translate(140%, 1px);
+                transform: translate(140%, 1px); }
   .info-card__about {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-bottom: 2px;
     border-bottom: 1px solid white;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -200,14 +223,16 @@ a:hover {
     text-transform: uppercase; }
   .info-card__more-info {
     line-height: 1.1;
-    text-overflow: ellipsis; }
+    text-overflow: ellipsis;
+    font-size: 1rem;
+    min-height: 1em; }
 
 .top-form {
   background-color: #c2185b;
   padding: 30px;
   font-size: 14px; }
   .top-form p {
-    margin-bottom: 16px; }
+    margin-bottom: 14px; }
   .top-form .heading-main {
     font-weight: 400;
     padding-top: .4em;
@@ -216,7 +241,7 @@ a:hover {
   .top-form .text {
     font-size: 14px; }
   .top-form form > .row > div {
-    margin-bottom: 0.95rem; }
+    margin-bottom: 1.58333rem; }
   .top-form form > .row > span {
     padding-left: 15px;
     padding-right: 15px;
@@ -240,12 +265,12 @@ a:hover {
   .top-form form input[type=email], .top-form form input[type=text],
   .top-form form textarea {
     width: 100%;
-    padding: 0.8rem 0.9rem;
+    padding: 1.33333rem 1.5rem;
     border: none;
     background-color: #fa5788;
     color: white; }
   .top-form form .upload-photo .title {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 15px; }
   .top-form .upload-photo .upload-label {
     -webkit-box-shadow: 0 0 2px rbga(0, 0, 0, 0.3);
@@ -259,7 +284,7 @@ a:hover {
     cursor: pointer;
     background-color: #eed9e0;
     color: black;
-    font-size: 18px; }
+    font-size: 14px; }
   .top-form .upload-photo .upload-input {
     display: none; }
   .top-form .submit button {
@@ -270,7 +295,7 @@ a:hover {
     display: inline-block;
     background-color: #eed9e0;
     color: black;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
     text-transform: uppercase; }
 
@@ -281,12 +306,11 @@ a:hover {
     font-size: 18px;
     margin-bottom: 15px; }
     .application-ask .msg-block p {
-      text-transform: uppercase;
       margin-bottom: 0; }
   .application-ask .image {
     background-image: url(../img/cat-small.jpg);
-    height: 300px;
-    width: 300px;
+    height: 290px;
+    width: 290px;
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -300,7 +324,7 @@ a:hover {
 .girl-info__title {
   padding-left: 15px;
   padding-right: 15px;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase; }
 
 .girl-info__card {
@@ -319,10 +343,10 @@ a:hover {
   margin-left: 0; }
 
 .info-list__item {
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   background-color: #fa5788;
-  padding: 12px 20px;
+  padding: 10px 20px;
   list-style-type: none;
   margin-bottom: 7px;
   display: -webkit-box;
@@ -525,6 +549,12 @@ a:hover {
   .error-page a {
     font-weight: 500;
     border-bottom: 2px solid white; }
+
+.page-contacts .contacts-page__phone {
+  font-size: 24px; }
+  .page-contacts .contacts-page__phone p {
+    font-size: 18px;
+    text-transform: none; }
 
 .infobox-main {
   background-color: #c2185b; }

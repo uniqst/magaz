@@ -15,6 +15,7 @@
 .heading-main {
   color: black;
   margin-bottom: 30px;
+  font-weight: 400;
 }
 
 .items-block {
@@ -22,6 +23,11 @@
 
   &__item {
     height: 330px; 
+    width: 234px;
+    // margin-left: 15px;
+    // margin-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,20 +36,21 @@
 
     .info-card {
       color: white;
-      font-size: 14px;
+      font-size: rem(12px);
       position: absolute;
       bottom: 0;
       transform: translate(0, 50%);
 
       .wrapper {
         box-sizing: border-box;
-        width: 85%;
+        width: 90%;
         margin: 0 auto;
         background-color: #fa5788;
-        padding: 1em;
+        padding: 15px 20px;
       }
 
       a {
+        font-size: rem(12px);
         color: white;
       }
     }
@@ -52,17 +59,34 @@
 
 .info-card {
   width: 100%;
+  height: 200px;
+  font-size: rem(12px);
+  &:hover .add-button {
+    display: inline-block;
+    opacity: 1;
+  }
   &__name {
     text-align: center;
     a {
+      position: relative;
       display: inline-block;
       width: auto;
       text-transform: uppercase;
+      .add-button {
+        transition: .3s opacity;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: 0;
+        display: none;
+        transform: translate(140%, 1px);
+      }
     }
   }
 
   &__about {
     display: flex;
+    padding-bottom: 2px;
     border-bottom: 1px solid white;
     justify-content: space-between;
     margin: 1em 0;
@@ -72,5 +96,7 @@
   &__more-info {
     line-height: 1.1;
     text-overflow: ellipsis;
+    font-size: rem(12px);
+    min-height: 1em;
   }
 }

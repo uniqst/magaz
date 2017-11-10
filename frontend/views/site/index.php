@@ -63,29 +63,39 @@ $this->title = 'My Yii Application';
         <div class="col main-center-col">
 
             <div class="items-block">
-                <div class="container">
+                <div class="container-fluild">
                     <div class="row no-padding">
-                        <?php foreach($model as $image):?>
                         <div class="col">
-                            <div class="items-block__item" style=" background-image: url(photo/<?=$image->image->src?>)">
-                                <div class="info-card" style="width: 100%;">
-                                    <div class="wrapper">
-                                        <div class="info-card__name">
-                                            <a href="#"><?=$image->name?></a>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <?php foreach($model as $image):?>
+                                    <div class="col">
+                                        <div class="items-block__item" style=" background-image: url(photo/<?=$image->image->src?>)">
+                                            <div class="info-card" style="width: 100%;">
+                                                <div class="wrapper">
+                                                    <div class="info-card__name">
+                                                        <a href="#">
+                                                            <?=$image->name?>
+                                                            <i class="add-button fa fa-plus"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="info-card__about">
+                                                        <span class="age"><?=$image->age?></span>
+                                                        <span class="nationality"><?=$image->nationality?></span>
+                                                    </div>
+                                                    <p class="info-card__more-info">
+                                                        <?=$image->about_myself?>
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="info-card__about">
-                                            <span class="age"><?=$image->age?></span>
-                                            <span class="nationality"><?=$image->nationality?></span>
-                                        </div>
-                                        <p class="info-card__more-info">
-                                            <?=$image->about_myself?>
-                                        </p>
                                     </div>
+                                    <?php endforeach;?>
                                 </div>
-                            </div>
-                        </div>
-                        <?php endforeach;?>
+                            </div>      
 
+
+                        </div>
                     </div>
                 </div>
             </div>
