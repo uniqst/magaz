@@ -2,7 +2,15 @@
   <div class="offset-xl-2 col-xl-8">
     <div class="top-form">
       <h1 class="page-name">How to make an order</h1>
-      <p>Order escort girl with our agency you can make in any time of the day. Write SMS or give call (Whatsapp ) +90 539 460 85 63. In Your message you need to specify girl’s name, Your hotel name, room number and Your name. Our manager quickly process your order and if you need will help determine the best choice regarding your preferences. We take into account even the smallest details. Girl comes within one hour. We are working without prepayment.</p>
+      <p>
+      Grab a pen and write down: here is the phone number of our booking service: <span class="text-nowrap">+90 539 460 85 63</span>. You can dial or send SMS using the ordinary phone, the same as to make a call or chat with us using Whatsapp or Viber applications for mobile phones.
+      </p>
+      <p>
+        When ordering, be sure to name your date (a girl's name) and several more parameters necessary: how should we call you (a name or a nickname), your contact phone number (required to contact you to approve your booking) and the place where a girl should meet you (this may be a hotel of 4/5 stars in the city or, in rarer occasions, your own or rented apartment).
+      </p>
+      <p>
+        Just as simple as that - and in an hour or two you will be delighted by our charming girl.
+      </p>
     </div>
     <!-- <div class="application-ask container-fluid">
       <div class="row">

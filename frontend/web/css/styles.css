@@ -201,6 +201,8 @@ a:hover {
 .top-form {
   background-color: #c2185b;
   padding: 30px; }
+  .top-form p {
+    margin-bottom: 16px; }
   .top-form .page-name {
     font-size: 24px; }
   .top-form .heading-main {
@@ -524,4 +526,4 @@ a:hover {
 .infobox-main {
   background-color: #c2185b; }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=styles.css.map */

@@ -2,6 +2,12 @@
   <div class="offset-xl-2 col-xl-8">
     <div class="application-ask container-fluid">
       <div class="row">
+        <div class="col-12">
+          <h1 class="main-heading">Contacts</h1>
+        </div>
+        <div class="col-md-6">
+          <div class="image mx-auto ml-md-0"></div>
+        </div>
         <div class="col-md-6 text-center text-md-right d-md-flex flex-md-column justify-content-md-center msg-block-wrap">
           <div class="msg-block">
             <p>Have a quetion?</p>
@@ -9,9 +15,6 @@
             <p>+905380639316</p>
             <p>Call, sms, viber, whatsapp</p>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="image mx-auto ml-md-0"></div>
         </div>
       </div>
     </div>

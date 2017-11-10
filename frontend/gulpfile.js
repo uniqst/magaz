@@ -40,7 +40,8 @@ gulp.task('scss:build', () => {
   ];
 
   gulp.src(['src/scss/**/*.{scss,sass}'])
-    .pipe(_if(!production, sourcemaps.init()))
+    // .pipe(_if(!production, sourcemaps.init()))
+    .pipe(sourcemaps.init())
     .pipe(sass({
       // includePaths: [
       //   './bower_components/breakpoint-sass/stylesheets',
@@ -51,8 +52,9 @@ gulp.task('scss:build', () => {
     //.on('error', gutil.log)
     .pipe(postcss(processors))
     // .pipe(_if(production, gcssnano()))
-    .pipe(_if(!production, sourcemaps.write('./')))
+    // .pipe(_if(!production, sourcemaps.write()))
     .pipe(rename('styles.css'))
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('web/css'))
 });
 
