@@ -3,7 +3,7 @@
   margin: 0 !important; }
 
 html {
-  font-size: 16px; }
+  font-size: 12px; }
 
 html,
 body {
@@ -58,6 +58,7 @@ a:hover {
   font-size: 20px; }
 
 .page-name {
+  font-size: 16px;
   padding-bottom: .8em; }
 
 .site-wrapper {
@@ -76,7 +77,7 @@ a:hover {
     font-weight: 400; }
 
 .main-slider-container {
-  color: #eed9e0;
+  color: #ffffff;
   background-color: #c2185b;
   padding: 15px; }
   .main-slider-container .slider-item {
@@ -85,7 +86,10 @@ a:hover {
 .new-girls-slider {
   padding: 1em 2em 2rem; }
   .new-girls-slider .girl-card {
-    height: 330px;
+    height: 340px;
+    width: 231px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 15px;
     text-align: center;
     background-position: center;
@@ -107,13 +111,13 @@ a:hover {
       background-color: #fa5788;
       display: inline-block;
       width: 100%;
-      color: #eed9e0;
+      color: #ffffff;
       font-size: 18px;
       padding: .4em; }
 
 .last-response {
   background-color: #8c0032;
-  color: #eed9e0;
+  color: #ffffff;
   padding: 20px 20px 25px;
   position: relative; }
 
@@ -200,20 +204,19 @@ a:hover {
 
 .top-form {
   background-color: #c2185b;
-  padding: 30px; }
+  padding: 30px;
+  font-size: 14px; }
   .top-form p {
     margin-bottom: 16px; }
-  .top-form .page-name {
-    font-size: 24px; }
   .top-form .heading-main {
     font-weight: 400;
     padding-top: .4em;
     padding-bottom: .8em;
     color: white; }
   .top-form .text {
-    font-size: 20px; }
+    font-size: 14px; }
   .top-form form > .row > div {
-    margin-bottom: 24px; }
+    margin-bottom: 0.95rem; }
   .top-form form > .row > span {
     padding-left: 15px;
     padding-right: 15px;
@@ -237,7 +240,7 @@ a:hover {
   .top-form form input[type=email], .top-form form input[type=text],
   .top-form form textarea {
     width: 100%;
-    padding: 15px 20px;
+    padding: 0.8rem 0.9rem;
     border: none;
     background-color: #fa5788;
     color: white; }

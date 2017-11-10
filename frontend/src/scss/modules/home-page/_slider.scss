@@ -12,12 +12,18 @@
   padding: 1em 2em 2rem;
 
   .girl-card {
-    height: 330px;
+    height: 340px;
+    width: 231px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 15px;
+
     text-align: center;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;

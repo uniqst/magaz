@@ -1,13 +1,14 @@
 .top-form {
   background-color: #c2185b;
   padding: 30px;
+  font-size: 14px;
 
   p {
     margin-bottom: 16px;
   }
 
   .page-name {
-    font-size: 24px;
+    // font-size: 24px;
   }
 
   .heading-main {
@@ -18,13 +19,13 @@
   }
 
   .text {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   form  {
     > .row {
       > div {
-        margin-bottom: 24px;
+        margin-bottom: rem(19px);
       }
       > span {
         padding-left: 15px;
@@ -48,7 +49,7 @@
     input[type=email],input[type=text],
     textarea {
       width: 100%;
-      padding: 15px 20px;
+      padding: rem(16px) rem(18px);
       border: none;
       background-color: #fa5788;
       color: white;

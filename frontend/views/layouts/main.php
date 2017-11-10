@@ -121,13 +121,11 @@ AppAsset::register($this);
 
     <div class="container-fluid h-100 site-wrapper" style="min-height: 75vh">
 
-            <div ><!--site content-->
-                <?= Breadcrumbs::widget([
-                    'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-                ]) ?>
-                <?= Alert::widget() ?>
-                <?= $content ?>
-            </div><!--site content-->
+        <?= Breadcrumbs::widget([
+            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+        ]) ?>
+        <?= Alert::widget() ?>
+        <?= $content ?>
 
     </div>
 

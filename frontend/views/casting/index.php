@@ -10,7 +10,6 @@ use yii\widgets\ActiveForm;
     <div class="top-form">
       
       <h2 class="page-name">Applciation</h1>
-      <h1 class="heading-main">Bursa platinum girls. High class escors. Pleasure without limits</h1>
       <p class="text">You are young and brave? Become one of our escorts!</p>
       <?php $form = ActiveForm::begin(['options' => ['class' => 'main-application-form container-fluid', 'novalidate' => 'novalidate', 'enctype' => 'multipart/form-data']]) ?>
         <div class="row">

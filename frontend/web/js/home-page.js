@@ -32,23 +32,23 @@ $(document).ready(function () {
     {
       arrows: true,
       infinite: true,
-      slidesToShow: 4,
+      slidesToShow: 3,
       slidesToScroll: 1,
       responsive: [
+        // {
+        //   breakpoint: 840,
+        //   settings: {
+        //     slidesToShow: 3,
+        //   }
+        // },
         {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 3,
-          }
-        },
-        {
-          breakpoint: 660,
+          breakpoint: 840,
           settings: {
             slidesToShow: 2,
           }
         },
         {
-          breakpoint: 440,
+          breakpoint: 570,
           settings: {
             slidesToShow: 1,
           }
