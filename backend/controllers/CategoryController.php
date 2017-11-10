@@ -37,6 +37,8 @@ class CategoryController extends Controller
     {
         $searchModel = new SeachCategory();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $dataProvider->query->where(['parent_id' => 0]);
+
 
         return $this->render('index', [
             'searchModel' => $searchModel,
