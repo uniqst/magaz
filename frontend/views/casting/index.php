@@ -45,24 +45,27 @@ use yii\widgets\ActiveForm;
              <?= $form->field($model, 'about_myself')->textArea(['maxlength' => true, 'placeholder' => 'few words about you*', 'cols' => 30, 'rows' => 10, 'class' => 'col-md-12'])->label(false) ?>
           </div>
         </div>
-        <div class="row upload-photo">
+        <div class="row upload-photo submit">
             <p class="col-md-12 title subheading-main">Upload photo</p>
             <div class="col-md-4">
               <label for="photo1" class="upload-label"><span>Choose file</span></label>
               <?= $form->field($photo, 'imageFiles[]')->fileInput(['multiple' => true, 'accept' => 'image/*', 'class' => 'upload-input', 'id' => 'photo1'])->label(false) ?>
             </div>
+            <div class="offset-md-4 col-md-4 text-right">
+              <button type="submit">Submit</button>
+            </div>
         </div>
-        <div class="row submit">
+        <!-- <div class="row submit">
           <div class="offset-md-8 col-md-4 text-right">
             <button type="submit">Submit</button>
           </div>
-        </div>
+        </div> -->
       <?php ActiveForm::end(); ?>
     </div>
     <div class="application-ask container-fluid">
       <div class="row">
         <div class="col-md-6 text-center text-md-right d-md-flex flex-md-column justify-content-md-center msg-block-wrap">
-          <div class="msg-block">
+          <div class="msg-block text-uppercase">
             <p>Have a quetion?</p>
             <p>Ask Lena!</p>
             <p>+905380639316</p>

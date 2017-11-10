@@ -232,7 +232,7 @@ a:hover {
   padding: 30px;
   font-size: 14px; }
   .top-form p {
-    margin-bottom: 16px; }
+    margin-bottom: 14px; }
   .top-form .heading-main {
     font-weight: 400;
     padding-top: .4em;
@@ -270,7 +270,7 @@ a:hover {
     background-color: #fa5788;
     color: white; }
   .top-form form .upload-photo .title {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 15px; }
   .top-form .upload-photo .upload-label {
     -webkit-box-shadow: 0 0 2px rbga(0, 0, 0, 0.3);
@@ -284,7 +284,7 @@ a:hover {
     cursor: pointer;
     background-color: #eed9e0;
     color: black;
-    font-size: 18px; }
+    font-size: 14px; }
   .top-form .upload-photo .upload-input {
     display: none; }
   .top-form .submit button {
@@ -295,7 +295,7 @@ a:hover {
     display: inline-block;
     background-color: #eed9e0;
     color: black;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
     text-transform: uppercase; }
 
@@ -306,12 +306,11 @@ a:hover {
     font-size: 18px;
     margin-bottom: 15px; }
     .application-ask .msg-block p {
-      text-transform: uppercase;
       margin-bottom: 0; }
   .application-ask .image {
     background-image: url(../img/cat-small.jpg);
-    height: 300px;
-    width: 300px;
+    height: 290px;
+    width: 290px;
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -325,7 +324,7 @@ a:hover {
 .girl-info__title {
   padding-left: 15px;
   padding-right: 15px;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase; }
 
 .girl-info__card {
@@ -344,10 +343,10 @@ a:hover {
   margin-left: 0; }
 
 .info-list__item {
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   background-color: #fa5788;
-  padding: 12px 20px;
+  padding: 10px 20px;
   list-style-type: none;
   margin-bottom: 7px;
   display: -webkit-box;
@@ -550,6 +549,12 @@ a:hover {
   .error-page a {
     font-weight: 500;
     border-bottom: 2px solid white; }
+
+.page-contacts .contacts-page__phone {
+  font-size: 24px; }
+  .page-contacts .contacts-page__phone p {
+    font-size: 18px;
+    text-transform: none; }
 
 .infobox-main {
   background-color: #c2185b; }
