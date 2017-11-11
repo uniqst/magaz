@@ -25,7 +25,9 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         ]) ?>
     </p>
-    
+    <?php foreach($model->photo as $photo):?>
+        <img src="/frontend/web/photo/<?= $photo->src?>" style="width: 200px;">
+    <?php endforeach;?>
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
