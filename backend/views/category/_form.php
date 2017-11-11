@@ -14,7 +14,7 @@ use yii\helpers\ArrayHelper;
 // формируем массив, с ключем равным полю 'id' и значением равным полю 'name' 
     $items = ArrayHelper::map($category,'id','name');
     $params = [
-        'prompt' => 'Укажите родительскую категорию'
+        'prompt' => 'Choose parent category'
     ];
 
 

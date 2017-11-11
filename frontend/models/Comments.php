@@ -33,7 +33,7 @@ class Comments extends \yii\db\ActiveRecord
     {
         return [
             [['parent_id', 'profile_id', 'email', 'name', 'content', 'date'], 'required'],
-            [['parent_id', 'profile_id', 'is_viewed'], 'integer'],
+            [['parent_id', 'profile_id', 'status', 'is_viewed'], 'integer'],
             [['date'], 'safe'],
             [['email', 'name', 'content'], 'string', 'max' => 255],
         ];
@@ -45,14 +45,20 @@ class Comments extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'Номер',
-            'parent_id' => 'Ответ',
+            'id' => 'ID',
+            'parent_id' => 'Parent_id',
             'profile_id' => 'Кому',
             'email' => 'Email',
-            'name' => 'Имя',
-            'content' => 'Контент',
-            'is_viewed' => 'Просмотрено',
-            'date' => 'Дата',
+            'name' => 'Name',
+            'content' => 'Content',
+            'status' => 'Status',
+            'is_viewed' => 'Is_viewed',
+            'date' => 'Date',
         ];
+    }
+
+    public function getProfile()
+    {
+        return $this->hasOne(Profile::className(), ['id' => 'profile_id']);
     }
 }

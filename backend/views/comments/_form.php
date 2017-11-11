@@ -1,7 +1,9 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
+use frontend\models\Comments;
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Comments */
@@ -23,6 +25,12 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'content')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'is_viewed')->textInput() ?>
+
+    <?= $form->field($model, 'status')->dropDownList([
+        '0' => 'Waiting',
+        '1' => 'Approved',
+        '2'=> 'Disapproved'
+        ]); ?>
 
     <?= $form->field($model, 'date')->textInput() ?>
 

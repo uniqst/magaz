@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\Url;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
 /* @var $this yii\web\View */
@@ -24,11 +25,32 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
-            'parent_id',
-            'profile_id',
+            [
+                'attribute' => 'profile_id',
+                'value' => function($data){
+                    $url = Url::to(["../../girls/girl", "id" => $data->profile->id, 'name' => $data->profile->name]);
+                    return '<a href="'.$url.'"> <img style="width:100px" src="../../photo/'.$data->profile->image->src.'">'.$data->profile->name.'</a>';
+                },
+                'format' => 'html'
+            ],
             'email:email',
             'name',
+            [
+                'attribute' => 'status',
+                'value' => function($data){
+                    if($data->status == 1){
+                        return '<i style="font-size:30px" class="fa fa-check-circle text-success" aria-hidden="true"></i>';
+                    }
+                    elseif($data->status == 0){
+                        return '<i style="font-size:30px" class="fa fa-bell" aria-hidden="true"></i>';
+                    }
+                    else {
+                        return '<i style="font-size:30px" class="fa fa-window-close text-danger" aria-hidden="true"></i>';
+                    }
+                        
+                },
+                'format' => 'html'
+            ],
             // 'content',
             // 'is_viewed',
             // 'date',

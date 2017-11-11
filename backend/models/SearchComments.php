@@ -18,7 +18,7 @@ class SearchComments extends Comments
     public function rules()
     {
         return [
-            [['id', 'parent_id', 'profile_id', 'is_viewed'], 'integer'],
+            [['id', 'parent_id', 'profile_id', 'status', 'is_viewed'], 'integer'],
             [['email', 'name', 'content', 'date'], 'safe'],
         ];
     }

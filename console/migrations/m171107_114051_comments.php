@@ -19,6 +19,7 @@ class m171107_114051_comments extends Migration
             'email' => $this->string(255)->notNull(),
             'name' => $this->string(255)->notNull(),
             'content' => $this->string(255)->notNull(),
+            'status' => $this->integer(11),
             'is_viewed' => $this->integer(11),
             'date' => $this->dateTime()->notNull(),
             

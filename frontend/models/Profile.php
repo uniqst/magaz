@@ -64,4 +64,9 @@ class Profile extends \yii\db\ActiveRecord
         return $this->hasOne(Photo::className(), ['profile_id' => 'id']);
     }
 
+    public function getComments()
+    {
+        return $this->hasMany(Comments::className(), ['profile_id' => 'id']);
+    }
+
 }
