@@ -25,9 +25,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         ]) ?>
     </p>
-    <?php foreach($model->photo as $photo):?>
-        <img src="/frontend/web/photo/<?= $photo->src?>" style="width: 300px;">
-    <?php endforeach;?>
+    
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
@@ -40,42 +38,25 @@ $this->params['breadcrumbs'][] = $this->title;
             'mesurements',
             'height',
             'weight',
-            'status',
+            [ 'attribute' => 'status',
+                'value' => function($model){
+                    if($model->status == 1){
+                        return '<i style="font-size:30px" class="fa fa-check-circle text-success" aria-hidden="true"></i>';
+                    }
+                    elseif($model->status == 0){
+                        return '<i style="font-size:30px" class="fa fa-bell" aria-hidden="true"></i>';
+                    }
+                    else {
+                        return '<i style="font-size:30px" class="fa fa-window-close text-danger" aria-hidden="true"></i>';
+                    }
+                },
+                'format' => 'html'
+            ],
             'about_myself',
             'date',
         ],
     ]) ?>
 
-    <?= GridView::widget([
-        'dataProvider' => $comments,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-
-            'id',
-            'email',
-            'content',
-            // 'contacts',
-            // 'date',
-
-            ['class' => 'yii\grid\ActionColumn',
-                'buttons'=>[
-                    'view'=>function ($url, $comments) {
-                        $customurl=Yii::$app->getUrlManager()->createUrl(['/comments/view','id'=>$comments['id']]); //$model->id для AR
-                        return \yii\helpers\Html::a( '<span class="glyphicon glyphicon-eye-open"></span>', $customurl,
-                            ['title' => Yii::t('yii', 'View'), 'data-pjax' => '0']);
-
-                    },
-                    'delete'=>function ($url, $comments) {
-                        $customurl=Yii::$app->getUrlManager()->createUrl(['/comments/delete','id'=>$comments['id']]); //$model->id для AR
-                        return \yii\helpers\Html::a( '<span class="glyphicon glyphicon-trash"></span>', $customurl,
-                            ['title' => Yii::t('yii', 'View'), 'data-confirm' => "Вы уверены, что хотите удалить этот элемент?", 'data-method'=>"post"]);
-
-                    }
-
-                ],
-                'template'=>'{view}  {delete}',
-            ],
-        ],
-    ]); ?>
+    
 
 </div>

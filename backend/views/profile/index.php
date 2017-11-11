@@ -1,7 +1,8 @@
 <?php
 
 use yii\helpers\Html;
-use yii\grid\GridView;
+use kartik\grid\GridView;
+use frontend\models\Profile; 
 use yii\widgets\Pjax;
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\SearchProfile */
@@ -22,7 +23,20 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            [
+            'class' => 'kartik\grid\ExpandRowColumn',
+            'value' => function ($model, $key, $index, $column) {
+                return GridView:: ROW_COLLAPSED;
+            },
+            'detail' => function ($model, $key, $index, $column) {
+                $model = Profile::find()->where(['id' => $model->id])->one();
+
+                return Yii::$app->controller->renderPartial('view', [
+                        'model' => $model,
+                ]);
+            },
+
+        ],
             [
                 'attribute' => 'id',
                 'value' => function($data){
@@ -36,8 +50,6 @@ $this->params['breadcrumbs'][] = $this->title;
 //            'about_myself',
             // 'contacts',
             // 'date',
-
-            ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
 <?php Pjax::end(); ?></div>

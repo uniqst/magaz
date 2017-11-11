@@ -32,7 +32,11 @@ use frontend\models\Photo;
 
     <?= $form->field($model, 'about_myself')->textArea(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'status')->textInput() ?>
+    <?= $form->field($model, 'status')->dropDownList([
+        '0' => 'Waiting',
+        '1' => 'Approved',
+        '2'=> 'Disapproved'
+        ]); ?>
 
     <?= $form->field($model, 'date')->hiddenInput(['value' => date('Y-m-d H:i:s')])->label(false) ?>
 
