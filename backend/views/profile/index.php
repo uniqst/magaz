@@ -9,6 +9,7 @@ use yii\widgets\Pjax;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Yii::t('app', 'Profiles');
+$model = Profile::find()->all();
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="profile-index">
@@ -29,8 +30,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 return GridView:: ROW_COLLAPSED;
             },
             'detail' => function ($model, $key, $index, $column) {
-                $model = Profile::find()->where(['id' => $model->id])->one();
 
+                
                 return Yii::$app->controller->renderPartial('view', [
                         'model' => $model,
                 ]);
