@@ -1,4 +1,4 @@
-<div class="row stories-page">
+<!-- <div class="row stories-page">
 
   <div class="col-12">
     <div class="row">
@@ -85,6 +85,7 @@
   <div class="d-none d-lg-block col-lg-3">
     sidebar right
   </div>
-</div>
+</div> -->
 
+<?= $this->render('story')?>
 <?= $this->render('../bottom-slider')?>

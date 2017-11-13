@@ -590,6 +590,19 @@ a:hover {
     .posts-container .image img {
       max-width: 100%; }
 
+.story-page .page-name {
+  color: black;
+  margin-bottom: 30px; }
+
+.story-page .main-heading {
+  margin-bottom: 10px; }
+
+.story-long .story__image:nth-of-type(even) {
+  float: right; }
+
+.story-long .story__image:nth-of-type(odd) {
+  float: left; }
+
 .infobox-main {
   background-color: #c2185b; }
 
