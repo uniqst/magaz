@@ -10,10 +10,36 @@
 }
 
 .story-long {
-  .story__image:nth-of-type(even) {
-    float: right;
+  p {
+    font-size: rem(14px);
+    color: black;
   }
-  .story__image:nth-of-type(odd) {
-    float: left;
+  .story__image {
+    width: 330px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    @include mq(sm) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &:nth-of-type(even) {
+      @include mq(sm) {
+        margin-left: 15px;
+        float: right;
+      }
+    }
+
+    &:nth-of-type(odd) {
+      @include mq(sm) {
+        margin-right: 15px;
+        float: left;
+      }
+    }
+
+    img {
+      max-width: 100%;
+    }
   }
 }

@@ -32,7 +32,7 @@
   <div class="col-lg-6">
     <div class="story-long">
       <div class="story__image">
-        <img src="http://via.placeholder.com/200x200" alt="Girl image">
+        <img src="http://via.placeholder.com/350x450" alt="Girl image">
       </div>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed amet rerum consequatur minima, labore quas sunt natus dolor, tempore deserunt nam itaque voluptatem saepe molestiae ut libero quos optio obcaecati!Itaque deleniti molestiae, vero perspiciatis debitis optio fugit saepe, tempore consectetur cum dignissimos blanditiis velit quam corporis voluptas laboriosam soluta a aliquid. Cum doloremque in libero sunt saepe laborum facilis!
@@ -49,7 +49,7 @@
         Dicta officiis harum ullam ut earum debitis impedit! Quia maxime fugit, molestiae nesciunt consequuntur, enim at vel corrupti quod cupiditate sapiente voluptatibus quae soluta alias pariatur cum, impedit voluptas maiores.
       </p>
       <div class="story__image">
-        <img src="http://via.placeholder.com/200x200" alt="Girl image">
+        <img src="http://via.placeholder.com/350x450" alt="Girl image">
       </div>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed amet rerum consequatur minima, labore quas sunt natus dolor, tempore deserunt nam itaque voluptatem saepe molestiae ut libero quos optio obcaecati!Itaque deleniti molestiae, vero perspiciatis debitis optio fugit saepe, tempore consectetur cum dignissimos blanditiis velit quam corporis voluptas laboriosam soluta a aliquid. Cum doloremque in libero sunt saepe laborum facilis!
@@ -66,7 +66,7 @@
         Dicta officiis harum ullam ut earum debitis impedit! Quia maxime fugit, molestiae nesciunt consequuntur, enim at vel corrupti quod cupiditate sapiente voluptatibus quae soluta alias pariatur cum, impedit voluptas maiores.
       </p>
       <div class="story__image">
-        <img src="http://via.placeholder.com/200x200" alt="Girl image">
+        <img src="http://via.placeholder.com/350x450" alt="Girl image">
       </div>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed amet rerum consequatur minima, labore quas sunt natus dolor, tempore deserunt nam itaque voluptatem saepe molestiae ut libero quos optio obcaecati!Itaque deleniti molestiae, vero perspiciatis debitis optio fugit saepe, tempore consectetur cum dignissimos blanditiis velit quam corporis voluptas laboriosam soluta a aliquid. Cum doloremque in libero sunt saepe laborum facilis!
@@ -82,53 +82,6 @@
         Quo id, cumque, iusto, veniam tenetur odit perferendis quisquam natus tempore nam libero repellendus! Blanditiis hic impedit repellat sint ullam fugiat, optio ducimus pariatur, modi nostrum asperiores eligendi esse! Tempore?
         Dicta officiis harum ullam ut earum debitis impedit! Quia maxime fugit, molestiae nesciunt consequuntur, enim at vel corrupti quod cupiditate sapiente voluptatibus quae soluta alias pariatur cum, impedit voluptas maiores.
       </p>
-      <div class="posts-list">
-        <div class="post-item clearfix">
-          <div class="image">
-            <a href="#">
-              <img src="http://via.placeholder.com/200x200" alt="Girl photo">
-            </a>
-          </div>
-          <div class="post-info-container">
-            <h2 class="title">
-              <a href="#">The Dancer Floor</a>
-            </h2>
-            <div class="center-block">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquid obcaecati ut. Labore aut in saepe eveniet nulla provident asperiores debitis velit odio vero sit, quasi voluptatibus quibusdam reiciendis maxime.</p>
-            </div>
-          </div>
-        </div>
-        <div class="post-item clearfix">
-          <div class="image">
-            <a href="#">
-              <img src="http://via.placeholder.com/200x200" alt="Girl photo">
-            </a>
-          </div>
-          <div class="post-info-container">
-            <h2 class="title">
-              <a href="#">The Dancer Floor</a>
-            </h2>
-            <div class="center-block">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquid obcaecati ut. Labore aut in saepe eveniet nulla provident asperiores debitis velit odio vero sit, quasi voluptatibus quibusdam reiciendis maxime.</p>
-            </div>
-          </div>
-        </div>
-        <div class="post-item clearfix">
-          <div class="image">
-            <a href="#">
-              <img src="http://via.placeholder.com/200x200" alt="Girl photo">
-            </a>
-          </div>
-          <div class="post-info-container">
-            <h2 class="title">
-              <a href="#">The Dancer Floor</a>
-            </h2>
-            <div class="center-block">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquid obcaecati ut. Labore aut in saepe eveniet nulla provident asperiores debitis velit odio vero sit, quasi voluptatibus quibusdam reiciendis maxime.</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <div class="d-none d-lg-block col-lg-3">

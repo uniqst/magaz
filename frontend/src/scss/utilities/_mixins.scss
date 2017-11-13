@@ -12,3 +12,26 @@ $browser-context: 12px; // Default
 @function rem($pixels, $context: $browser-context) {
   @return #{$pixels/$context}rem;
 }
+
+$breakpoints: (
+  'sm'   : ( min-width:  576px ),
+  'md'  : ( min-width:  768px ),
+  'lg'   : ( min-width: 992px ),
+  'xl' : ( min-width: 1200px )
+);
+
+@mixin mq($name) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $name) {
+    // Prints a media query based on the value
+    @media only screen and #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
