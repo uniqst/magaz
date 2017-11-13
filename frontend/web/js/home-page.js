@@ -20,13 +20,13 @@ $(document).ready(function () {
           }
         },
         {
-          breakpoint: 850,
+          breakpoint: 800,
           settings: {
             slidesToShow: 2,
           }
         },
         {
-          breakpoint: 660,
+          breakpoint: 630,
           settings: {
             slidesToShow: 1,
           }
