@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row stories-page">
 
   <div class="col-12">
     <div class="row">
@@ -87,3 +87,4 @@
   </div>
 </div>
 
+<?= $this->render('../bottom-slider')?>

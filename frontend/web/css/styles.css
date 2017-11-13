@@ -555,6 +555,9 @@ a:hover {
     font-size: 18px;
     text-transform: none; }
 
+.stories-page {
+  margin-bottom: 90px; }
+
 .stories.page-name {
   color: black; }
 

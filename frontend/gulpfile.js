@@ -23,6 +23,13 @@ gulp.task('bootstrap', function() {
     .pipe(gulp.dest("web/css"))
 });
 
+gulp.task('bs4', () => {
+  return gulp.src([
+    'node_modules/bootstrap/scss/**/*',
+  ])
+    .pipe(gulp.dest("src/scss/bootstrap"))
+})
+
 gulp.task('js', function() {
   return gulp.src([
     'node_modules/bootstrap/dist/js/bootstrap.min.js',
@@ -39,7 +46,8 @@ gulp.task('scss:build', () => {
     }),
   ];
 
-  gulp.src(['src/scss/**/*.{scss,sass}'])
+  // gulp.src(['src/scss/**/*.{scss,sass}'])
+  gulp.src(['src/scss/index.scss'])
     // .pipe(_if(!production, sourcemaps.init()))
     .pipe(sourcemaps.init())
     .pipe(sass({
