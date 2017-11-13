@@ -3,6 +3,8 @@
 use yii\helpers\Html;
 use yii\widgets\DetailView;
 use yii\grid\GridView;
+use yii\widgets\Pjax;
+use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Profile */
@@ -14,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="profile-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
-
+    <?php Pjax::begin(['enablePushState' => false]); ?>
     <p>
         <?= Html::a(Yii::t('app', 'Update'), ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
         <?= Html::a(Yii::t('app', 'Delete'), ['delete', 'id' => $model->id], [
@@ -25,9 +27,14 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         ]) ?>
     </p>
+    <div style="display:flex">
     <?php foreach($model->photo as $photo):?>
+    <div>
+       <div><a class="btn-danger btn" data-confirm="Вы уверены, что хотите удалить этот элемент?" href="<?= Url::to(['/profile', 'del' => $photo->id])?>">Удалить</a></div>
         <img src="/frontend/web/photo/<?= $photo->src?>" style="width: 200px;">
+    </div>
     <?php endforeach;?>
+    </div>
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
@@ -60,5 +67,5 @@ $this->params['breadcrumbs'][] = $this->title;
     ]) ?>
 
     
-
+<?php Pjax::end(); ?>
 </div>

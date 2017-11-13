@@ -42,7 +42,11 @@ class ProfileController extends Controller
     {
         $searchModel = new SearchProfile();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
+        $del = Yii::$app->request->get('del');
+        if($del){
+            $del = Photo::find()->where(['id' => $del])->one();
+            $del->delete();
+        }
 
         return $this->render('index', [
             'searchModel' => $searchModel,
