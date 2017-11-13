@@ -71,4 +71,9 @@ class StoriesController extends Controller
         return $this->render('index');
     }
 
+    public function actionStory()
+    {
+        return $this->render('story');
+    }
+
 }
