@@ -25,9 +25,13 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-
-            'id',
-            'img',
+            [
+                'attribute' => 'img',
+                'value' => function($data){
+                    return "<img src='/frontend/web/story/".$data->img."' style='width: 150px;' />";
+                },
+                'format' => 'html',
+            ],
             'name',
             'content',
             'date',
