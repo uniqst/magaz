@@ -59,8 +59,8 @@ gulp.task('scss:build', () => {
 });
 
 gulp.task('build', [
-  'bootstrap',
-  'js',
+  //'bootstrap',
+  //'js',
   'scss:build'
 ]);
 
