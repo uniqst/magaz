@@ -1,5 +1,5 @@
 <div class="row dir-tree-links">
-  <div class="offset-xl-2 col-xl-8">
+  <div class="offset-xl-3 col-xl-6">
     <a href="#">Home</a>
     <span> > </span>
     <a href="#">Catalog</a>
@@ -11,12 +11,12 @@
 <div class="row">
 
 
-  <div class="d-none d-xl-block col-xl-2">
+  <div class="d-none d-xl-block col-xl-3">
     Left sidebar
   </div>
 
 
-  <div class="main-center-col col-xl-8">
+  <div class="main-center-col col-xl-6">
     <div class="girl-info">
 
       <div class="girl-info__title">
@@ -234,8 +234,8 @@
   </div>
 
 
-  <div class="d-none d-xl-block col-xl-2">
-    Right sidebar
+  <div class="d-none d-xl-block col-xl-3">
+    <?= $this->render('sidebar-right')?>
   </div>
 
 </div>
