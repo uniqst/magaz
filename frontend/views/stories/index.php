@@ -34,51 +34,24 @@
     <div class="posts-container">
       <h1 class="page-name">EROTIC STORIES</h1>
       <div class="posts-list">
+        <?php foreach($model as $story):?>
         <div class="post-item clearfix">
           <div class="image">
             <a href="#">
               <img src="http://via.placeholder.com/200x200" alt="Girl photo">
             </a>
           </div>
+              
           <div class="post-info-container">
             <h2 class="title">
-              <a href="#">The Dancer Floor</a>
+              <a href="#"><?= $story->name?></a>
             </h2>
             <div class="center-block">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquid obcaecati ut. Labore aut in saepe eveniet nulla provident asperiores debitis velit odio vero sit, quasi voluptatibus quibusdam reiciendis maxime.</p>
+              <p><?= $story->content?></p>
             </div>
-          </div>
+          </div>  
         </div>
-        <div class="post-item clearfix">
-          <div class="image">
-            <a href="#">
-              <img src="http://via.placeholder.com/200x200" alt="Girl photo">
-            </a>
-          </div>
-          <div class="post-info-container">
-            <h2 class="title">
-              <a href="#">The Dancer Floor</a>
-            </h2>
-            <div class="center-block">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquid obcaecati ut. Labore aut in saepe eveniet nulla provident asperiores debitis velit odio vero sit, quasi voluptatibus quibusdam reiciendis maxime.</p>
-            </div>
-          </div>
-        </div>
-        <div class="post-item clearfix">
-          <div class="image">
-            <a href="#">
-              <img src="http://via.placeholder.com/200x200" alt="Girl photo">
-            </a>
-          </div>
-          <div class="post-info-container">
-            <h2 class="title">
-              <a href="#">The Dancer Floor</a>
-            </h2>
-            <div class="center-block">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquid obcaecati ut. Labore aut in saepe eveniet nulla provident asperiores debitis velit odio vero sit, quasi voluptatibus quibusdam reiciendis maxime.</p>
-            </div>
-          </div>
-        </div>
+              <?php endforeach;?>
       </div>
     </div>
   </div>

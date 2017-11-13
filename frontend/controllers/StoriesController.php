@@ -3,6 +3,7 @@ namespace frontend\controllers;
 
 use Yii;
 use yii\base\InvalidParamException;
+use frontend\models\Stories;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -68,7 +69,8 @@ class StoriesController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $model = Stories::find()->all(); 
+        return $this->render('index', compact('model'));
     }
 
     public function actionStory()
