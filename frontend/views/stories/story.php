@@ -88,3 +88,5 @@
     sidebar right
   </div>
 </div>
+
+<?= $this->render('../bottom-slider')?>

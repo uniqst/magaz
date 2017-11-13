@@ -597,29 +597,39 @@ a:hover {
 .story-page .main-heading {
   margin-bottom: 10px; }
 
-.story-long p {
-  font-size: 1.16667rem;
-  color: black; }
-
-.story-long .story__image {
-  width: 330px;
-  margin-bottom: 15px;
-  margin-left: auto;
-  margin-right: auto; }
+.story-long {
+  margin-bottom: 40px; }
   @media only screen and (min-width: 576px) {
-    .story-long .story__image {
-      margin-left: 0;
-      margin-right: 0; } }
-  @media only screen and (min-width: 576px) {
-    .story-long .story__image:nth-of-type(even) {
-      margin-left: 15px;
-      float: right; } }
-  @media only screen and (min-width: 576px) {
-    .story-long .story__image:nth-of-type(odd) {
-      margin-right: 15px;
-      float: left; } }
-  .story-long .story__image img {
-    max-width: 100%; }
+    .story-long {
+      margin-bottom: 60px; } }
+  @media only screen and (min-width: 768px) {
+    .story-long {
+      margin-bottom: 100px; } }
+  @media only screen and (min-width: 992px) {
+    .story-long {
+      margin-bottom: 140px; } }
+  .story-long p {
+    font-size: 1.16667rem;
+    color: black; }
+  .story-long .story__image {
+    width: 330px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto; }
+    @media only screen and (min-width: 576px) {
+      .story-long .story__image {
+        margin-left: 0;
+        margin-right: 0; } }
+    @media only screen and (min-width: 576px) {
+      .story-long .story__image:nth-of-type(even) {
+        margin-left: 15px;
+        float: right; } }
+    @media only screen and (min-width: 576px) {
+      .story-long .story__image:nth-of-type(odd) {
+        margin-right: 15px;
+        float: left; } }
+    .story-long .story__image img {
+      max-width: 100%; }
 
 .infobox-main {
   background-color: #c2185b; }

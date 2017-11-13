@@ -10,6 +10,16 @@
 }
 
 .story-long {
+  margin-bottom: 40px;;
+  @include mq(sm) {
+    margin-bottom: 60px;
+  }
+  @include mq(md) {
+    margin-bottom: 100px;
+  }
+  @include mq(lg) {
+    margin-bottom: 140px;
+  }
   p {
     font-size: rem(14px);
     color: black;
