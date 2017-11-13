@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="offset-xl-2 col-xl-8">
+  <div class="offset-xl-3 col-xl-6">
     <div class="application-ask page-contacts container-fluid">
       <div class="row">
         <div class="col-12">
