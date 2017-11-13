@@ -73,9 +73,11 @@ class StoriesController extends Controller
         return $this->render('index', compact('model'));
     }
 
-    public function actionStory()
+    public function actionStory($id)
     {
-        return $this->render('story');
+
+        $model = Stories::find()->where(['id' => $id])->one(); 
+        return $this->render('story', compact('model'));
     }
 
 }

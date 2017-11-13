@@ -44,7 +44,7 @@ return [
             'showScriptName' => false,
             'rules' => [
                 'girl/<id:\d+>/<name:\w+>' => 'girls/girl',
-                'story' => 'stories/story'
+                'story/<id:\d+>/<name:\w+>' => 'stories/story'
 
             ],
         ],

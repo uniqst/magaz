@@ -1,3 +1,7 @@
+<?php
+use yii\helpers\Url;
+?>
+
 <div class="row stories-page">
 
   <div class="col-12">
@@ -37,17 +41,17 @@
         <?php foreach($model as $story):?>
         <div class="post-item clearfix">
           <div class="image">
-            <a href="#">
-              <img src="http://via.placeholder.com/200x200" alt="Girl photo">
+            <a href="<?= Url::to(['/stories/story', 'id' => $story->id, 'name' => $story->name])?>">
+              <img src="/stori/<?= $story->img?>" width="200px" hight="200px" alt="Girl photo">
             </a>
           </div>
               
           <div class="post-info-container">
             <h2 class="title">
-              <a href="#"><?= $story->name?></a>
+              <a href="<?= Url::to(['/stories/story', 'id' => $story->id, 'name' => $story->name])?>"><?= $story->name?></a>
             </h2>
             <div class="center-block">
-              <p><?= $story->content?></p>
+              <p><?= mb_substr($story->content, 0,500)?></p>
             </div>
           </div>  
         </div>
