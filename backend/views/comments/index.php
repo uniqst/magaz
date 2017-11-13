@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'format' => 'html'
             ],
             'email:email',
-            'name',
+            'content',
             [
                 'attribute' => 'status',
                 'value' => function($data){
@@ -51,7 +51,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 },
                 'format' => 'html'
             ],
-            // 'content',
+
             // 'is_viewed',
             // 'date',
 
