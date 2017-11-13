@@ -1,10 +1,19 @@
-.bottom-items-slider {
-  padding: 12px 30px;
-  background-image: linear-gradient(to top, #8c0032, #8c0032 35%, #c2185b 35%);
+.main-sidebar-right {
+  background-image: linear-gradient(to left, #8c0032, #8c0032 65%, #c2185b 65%);
+  padding-bottom: 20px;
 
-  @include mq(lg) {
-    padding: 45px 115px;
+  .page-name {
+    font-weight: 400;
+    padding: 20px 25px;
+    margin-bottom: 20px;
   }
+
+  .slider-item {
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+  }
+
   .item-box {
     font-size: 12px;
     background-position: center;
@@ -73,5 +82,3 @@
   }
 
 }
-
-

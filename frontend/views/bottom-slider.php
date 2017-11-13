@@ -2,7 +2,7 @@
   <div class="slick-carousel">
 
     <div class="slider-item">
-      <div class="item-box girl" style="background-image: url('img/cat.jpg')">
+      <div class="item-box girl" style="background-image: url('../img/cat.jpg')">
         <div class="item-box__title">
           <a href="#">Oksana</a>
         </div>
@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="slider-item">
-      <div class="item-box service" style="background-image: url('img/cat.jpg')">
+      <div class="item-box service" style="background-image: url('../img/cat.jpg')">
         <div class="item-box__title">
           <a href="#">Service</a>
         </div>
@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="slider-item">
-      <div class="item-box story" style="background-image: url('img/cat.jpg')">
+      <div class="item-box story" style="background-image: url('../img/cat.jpg')">
         <div class="item-box__title">
           <a href="#story">Story</a>
         </div>
@@ -35,7 +35,7 @@
       </div>
     </div>
     <div class="slider-item">
-      <div class="item-box girl" style="background-image: url('img/cat.jpg')">
+      <div class="item-box girl" style="background-image: url('../img/cat.jpg')">
         <div class="item-box__title">
           <a href="#">Oksana</a>
         </div>
@@ -46,7 +46,7 @@
       </div>
     </div>
     <div class="slider-item">
-      <div class="item-box service" style="background-image: url('img/cat.jpg')">
+      <div class="item-box service" style="background-image: url('../img/cat.jpg')">
         <div class="item-box__title">
           <a href="#">Service</a>
         </div>
@@ -56,7 +56,7 @@
       </div>
     </div>
     <div class="slider-item">
-      <div class="item-box story" style="background-image: url('img/cat.jpg')">
+      <div class="item-box story" style="background-image: url('../img/cat.jpg')">
         <div class="item-box__title">
           <a href="#story">Story</a>
         </div>
@@ -68,7 +68,7 @@
       </div>
     </div>
     <div class="slider-item">
-      <div class="item-box girl" style="background-image: url('img/cat.jpg')">
+      <div class="item-box girl" style="background-image: url('../img/cat.jpg')">
         <div class="item-box__title">
           <a href="#">Oksana</a>
         </div>
@@ -79,7 +79,7 @@
       </div>
     </div>
     <div class="slider-item">
-      <div class="item-box service" style="background-image: url('img/cat.jpg')">
+      <div class="item-box service" style="background-image: url('../img/cat.jpg')">
         <div class="item-box__title">
           <a href="#">Service</a>
         </div>
@@ -89,7 +89,7 @@
       </div>
     </div>
     <div class="slider-item">
-      <div class="item-box story" style="background-image: url('img/cat.jpg')">
+      <div class="item-box story" style="background-image: url('../img/cat.jpg')">
         <div class="item-box__title">
           <a href="#story">Story</a>
         </div>
