@@ -83,7 +83,7 @@
     </div>
   </div>
   <div class="d-none d-lg-block col-lg-3">
-    sidebar right
+    <?= $this->render('../sidebar-right')?>
   </div>
 </div>
 
