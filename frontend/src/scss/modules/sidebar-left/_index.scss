@@ -1,6 +1,6 @@
 .main-sidebar-menu {
   background-color: #8c0032;
-  padding-bottom: 16px;
+  // padding-bottom: 16px;
 
   ul {
     list-style: none;
@@ -22,19 +22,71 @@
   text-transform: uppercase;
 }
 
+.sb-heading-main__link {
+  display: block;
+  color: #8c0032;
+
+  &:hover {
+    color: #8c0032;
+  }
+
+  &[data-toggle="collapse"] {
+    position: relative;
+  }
+
+  &[aria-expanded="false"]::before, &[aria-expanded="true"]::before {
+      content: '\f0d7';
+      color: #af4e71;
+      display: block;
+      position: absolute;
+      top: -4px;
+      right: 20px;
+      font-family: 'FontAwesome';
+      font-size: 16px;
+  }
+
+  &[aria-expanded="true"]::before {
+      content: '\f0d8';
+  }
+}
 .category-heading {
   font-size: 12px;
   font-weight: 500;
   padding-left: 45px;
+  text-transform: capitalize;
 
   a {
     display: block;
     padding: 3px 0 14px;
   }
+
+  a[data-toggle="collapse"] {
+    position: relative;
+  }
+
+  a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+      content: '\f0d7';
+      color: #d5a2b4;
+      display: block;
+      position: absolute;
+      top: -4px;
+      right: 20px;
+      font-family: 'FontAwesome';
+      font-size: 16px;
+  }
+
+  a[aria-expanded="true"]::before {
+      content: '\f0d8';
+  }
 }
 
 .category-list {
   padding-left: 65px;
+  overflow: hidden;
+}
+
+.category-list:not(:last-of-type()) {
+  border-bottom: 3px solid #af0f4c;
 }
 
 .category-list__item {
