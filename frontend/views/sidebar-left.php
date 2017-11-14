@@ -1,4 +1,7 @@
-<div class="col-xl-3 d-none d-xl-block">
+<div class="col-xl-3 d-none d-xl-block  main-sidebar-menu-js">
+  <!-- <div class="main-sidebar-close">
+    x
+  </div> -->
   <div class="main-sidebar-menu">
     <div class="page-name">
       Catalog

@@ -66,7 +66,7 @@ use yii\widgets\ActiveForm;
       <div class="row">
         <div class="col-md-6 text-center text-md-right d-md-flex flex-md-column justify-content-md-center msg-block-wrap">
           <div class="msg-block text-uppercase">
-            <p>Have a quetion?</p>
+            <p>Have a question?</p>
             <p>Ask Lena!</p>
             <p>+905380639316</p>
             <p>Call, sms, viber, whatsapp</p>

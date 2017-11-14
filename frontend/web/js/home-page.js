@@ -1,4 +1,12 @@
 $(document).ready(function () {
+  $('.left-menu-button button').click(function () {
+    console.log('kek');
+
+    // $('.main-sidebar-menu-js').addClass('.open');
+  });
+  $('.main-sidebar-close').click(function () {
+    // $('.main-sidebar-menu-js').removeClass('.open');
+  });
   $('.bottom-items-slider > .slick-carousel')
     .slick(
     {

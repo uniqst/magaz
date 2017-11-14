@@ -11,9 +11,8 @@
 <div class="row">
 
 
-  <div class="d-none d-xl-block col-xl-3">
-    Left sidebar
-  </div>
+
+  <?= $this->render('sidebar-left')?>
 
 
   <div class="main-center-col col-xl-6">

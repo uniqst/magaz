@@ -1,1 +1,3 @@
-<h1>Services</h1>
+<div class="col-xl-6">
+  
+</div>

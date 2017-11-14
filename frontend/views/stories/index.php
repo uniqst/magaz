@@ -31,9 +31,9 @@ use yii\helpers\Url;
         </div>
       </div>
   </div>
-  <div class="d-none d-lg-block col-lg-3">
-    sidebar left
-  </div>
+
+  <?= $this->render('../sidebar-left')?>
+  
   <div class="col-lg-6">
     <div class="posts-container">
       <h1 class="page-name">EROTIC STORIES</h1>

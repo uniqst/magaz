@@ -68,6 +68,7 @@ a:hover {
 
 .dir-tree-links {
   margin-bottom: 20px;
+  margin-top: 20px;
   color: black; }
   .dir-tree-links a {
     text-transform: uppercase;
@@ -795,6 +796,49 @@ a:hover {
       display: block;
       max-height: 90px; }
 
+.body {
+  position: relative !important; }
+
+.left-menu-button {
+  background-color: white;
+  top: 160px;
+  left: 0;
+  position: fixed;
+  color: black;
+  width: 70px;
+  height: 70px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  -webkit-transform: translateX(-60%);
+          transform: translateX(-60%);
+  text-align: right;
+  z-index: 9999;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.6); }
+  .left-menu-button button {
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+    .left-menu-button button::after {
+      font-family: 'FontAwesome';
+      color: #8c0032;
+      font-size: 42px;
+      content: '\f105'; }
+
+.left-menu-button__wrapper {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  overflow: hidden; }
+
 .main-sidebar-menu {
   background-color: #8c0032; }
   .main-sidebar-menu ul {
@@ -878,45 +922,5 @@ a:hover {
 
 .infobox-main {
   background-color: #c2185b; }
-
-.left-menu-button {
-  background-color: white;
-  top: 160px;
-  left: 0;
-  position: fixed;
-  color: black;
-  width: 70px;
-  height: 70px;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  -webkit-transform: translateX(-60%);
-          transform: translateX(-60%);
-  text-align: right;
-  z-index: 9999;
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 0 3px rgba(0, 0, 0, 0.6); }
-  .left-menu-button button {
-    display: inline-block;
-    cursor: pointer;
-    width: 100%;
-    text-align: right;
-    background-color: transparent;
-    border: none;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
-    .left-menu-button button::after {
-      font-family: 'FontAwesome';
-      color: #8c0032;
-      font-size: 42px;
-      content: '\f105'; }
-
-.left-menu-button__wrapper {
-  position: relative;
-  width: 70px;
-  height: 70px;
-  overflow: hidden; }
 
 /*# sourceMappingURL=styles.css.map */
