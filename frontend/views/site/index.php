@@ -49,17 +49,18 @@ $this->title = 'My Yii Application';
     </div>
     
     <div class="row">
-        <div class="offset-md-3 col-6">
+        <div class="col-12 offset-lg-3 col-lg-6">
             <h1 class="heading-main">
                 Bursa platinum girls. High class escorts. Pleasure without limits
             </h1>
         </div>
     </div>
 
-    <div class="row no-gutters">
-        <div class="col-xl-3 sidebar-main d-none d-lg-block">
+    <div class="row">
+        <?= $this->render('../sidebar-left')?>
+        <!-- <div class="col-xl-3 sidebar-main d-none d-lg-block">
             Sidebar main
-        </div>
+        </div> -->
         <div class="col-xl-9 main-center-col">
 
             <div class="items-block">
