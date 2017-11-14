@@ -62,7 +62,7 @@ a:hover {
   padding-bottom: .8em; }
 
 .site-wrapper {
-  max-width: 1400px;
+  max-width: 1900px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -367,7 +367,7 @@ a:hover {
   background-color: #8c0032;
   padding: 30px; }
   .application-ask .msg-block {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 15px; }
     .application-ask .msg-block p {
       margin-bottom: 0; }
@@ -665,7 +665,7 @@ a:hover {
     padding-left: 20px;
     padding-right: 20px; }
     .posts-container .post-info-container .title {
-      margin-bottom: 30px; }
+      margin-bottom: 20px; }
       .posts-container .post-info-container .title a {
         display: block; }
   .posts-container .image {

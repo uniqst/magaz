@@ -14,7 +14,7 @@ use yii\helpers\Url;
   <div class="col-12">
     <div class="row">
       <div class="offset-lg-3 col-lg-6">
-          <h1 class="heading-main">
+          <h1 class="heading-main mb-0">
               Bursa platinum girls. High class escorts. Pleasure without limits
           </h1>
       </div>
