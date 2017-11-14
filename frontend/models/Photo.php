@@ -27,7 +27,7 @@ class Photo extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['profile_id', 'src'], 'required'],
+            [['profile_id'], 'required'],
             [['profile_id'], 'integer'],
             [['src'], 'string', 'max' => 255],
         ];

@@ -15,7 +15,7 @@ class m171107_121940_photo extends Migration
          $this->createTable('{{%photo}}', [
             'id' => $this->primaryKey(11),
             'profile_id' => $this->integer(11)->notNull(),
-            'src' => $this->string(255)->notNull(),
+            'src' => $this->string(255),
             
         ]);
 

@@ -8,6 +8,8 @@ use frontend\models\Profile;
 use frontend\models\Comments;
 use frontend\models\Photo;
 use frontend\models\UploadForm;
+use frontend\models\Filters;
+use frontend\models\FiltersValue;
 use yii\web\UploadedFile;
 use backend\models\SearchProfile;
 use yii\web\Controller;
@@ -111,11 +113,20 @@ class ProfileController extends Controller
      */
     public function actionUpdate($id)
     {
-
+        $filters = Filters::find()->where(['parent_id' => 0])->with('value')->all();
         $model = $this->findModel($id);
         $photo = new UploadForm();
-
+         
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            foreach($_POST['value'] as $key=> $val){
+                $value = new FiltersValue();
+                $value->product_id = $model->id;
+                $value->filter_id = $key;
+                $value->value = $val;
+                $value->save();
+            }
+                if(!empty($_FILES['UploadForm'])){
+
                 $photo->imageFiles = UploadedFile::getInstances($photo, 'imageFiles');
                     foreach ($photo->imageFiles as $file) {
                         $str = substr(md5(microtime() . rand(0, 9999)), 0, 20);
@@ -124,12 +135,14 @@ class ProfileController extends Controller
                         $image->profile_id = $model->id;
                         $image->src = $str . '.' . $file->extension;
                         $image->save();
+                        }
                     }
-            return $this->redirect(['view', 'id' => $model->id]);
+           return $this->redirect(['update', 'id' => $model->id]);
         } else {
             return $this->render('update', [
                 'model' => $model,
                 'photo' => $photo,
+                'filters' => $filters,
             ]);
         }
     }

@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use frontend\models\Photo;
+use frontend\models\FiltersValue;
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Profile */
@@ -40,6 +41,14 @@ use frontend\models\Photo;
 
     <?= $form->field($model, 'date')->hiddenInput(['value' => date('Y-m-d H:i:s')])->label(false) ?>
 
+    <?php foreach($filters as $filter):?>
+    <?php $value = FiltersValue::find()->where(['filter_id' => $filter->id, 'product_id' => $model->id])->one();
+    if(empty($value)){
+        $value = new FiltersValue();
+    }
+    ?>
+        <?= $form->field($value, 'value')->textInput(['name' => 'value['.$filter->id.']'])->label($filter->name) ?>        
+    <?php endforeach;?>
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>

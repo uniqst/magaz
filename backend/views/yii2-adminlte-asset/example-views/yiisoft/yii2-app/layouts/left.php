@@ -15,6 +15,7 @@
                 'items' => [
                     ['label' => 'Menu', 'options' => ['class' => 'header']],
                     ['label' => 'Category', 'icon' => 'dashboard', 'url' => ['/category']],
+                    ['label' => 'Filters', 'icon' => 'dashboard', 'url' => ['/filters']],
                     ['label' => 'Application', 'icon' => 'dashboard', 'url' => ['/profile']],
                     ['label' => 'Stories', 'icon' => 'dashboard', 'url' => ['/stories']],
                     ['label' => 'Reviews', 'icon' => 'dashboard', 'url' => ['/comments']],

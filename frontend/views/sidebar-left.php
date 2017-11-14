@@ -1,52 +1,32 @@
+<?php
+
+use frontend\models\Category;
+$model = Category::find()->where(['parent_id' => 0])->with('category')->all();
+?>
+
+
+
 <div class="col-xl-3 d-none d-xl-block">
   <div class="main-sidebar-menu">
     <div class="page-name">
       Catalog
     </div>
+    <?php foreach($model as $category):?>
     <h2 class="sb-heading-main">
-      Escort cities
+      <?= $category->name?>
     </h2>
     <div class="category-list-wraper">
       <ul class="category-list">
+        <?php foreach($category->category as $cat):?>
         <li class="category-list__item">
           <a href="">
-            ankara escorts
+            <?= $cat->name?>
           </a>
         </li>
-        <li class="category-list__item">
-          <a href="">
-            bursa  escorts
-          </a>
-        </li>
-        <li class="category-list__item">
-          <a href="">
-            istanbul escorts
-          </a>
-        </li>
+        <?php endforeach;?>
       </ul>
     </div>
-    <h2 class="sb-heading-main">
-      Escort menu
-    </h2>
-    <div class="category-list-wraper">
-      <ul class="category-list">
-        <li class="category-list__item">
-          <a href="">
-            new girls ankara
-          </a>
-        </li>
-        <li class="category-list__item">
-          <a href="">
-            russian escort ankara
-          </a>
-        </li>
-        <li class="category-list__item">
-          <a href="">
-            ankara escort agency
-          </a>
-        </li>
-      </ul>
-    </div>
+  <?php endforeach;?>
     <h2 class="sb-heading-main sb-heading-main__link">
       <a href="#list-filters" class="sb-heading-main__link" data-toggle="collapse" aria-expanded="true">
         Filters
