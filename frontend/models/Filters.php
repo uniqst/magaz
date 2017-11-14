@@ -51,4 +51,8 @@ class Filters extends \yii\db\ActiveRecord
     {
         return $this->hasOne(FiltersValue::className(), ['filter_id' => 'id']);
     }
+    public function getValues()
+    {
+        return $this->hasMany(FiltersValue::className(), ['filter_id' => 'id']);
+    }
 }

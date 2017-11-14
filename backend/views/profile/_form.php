@@ -3,8 +3,9 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use frontend\models\Photo;
+use frontend\models\Filters;
 use frontend\models\FiltersValue;
-
+ $filters = Filters::find()->where(['parent_id' => 0])->with('value')->all();
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Profile */
 /* @var $form yii\widgets\ActiveForm */

@@ -85,8 +85,19 @@ class ProfileController extends Controller
     {
         $model = new Profile();
         $photo = new UploadForm();
+        $filters = Filters::find()->where(['parent_id' => 0])->with('value')->all();
+            
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            foreach($_POST['value'] as $key=> $val){
+                
+                    $value = new FiltersValue();
+                    $value->product_id = $model->id;
+                    $value->filter_id = $key;
+                    $value->value = $val;
+                    $value->save();
+                 
+            }
             $photo->imageFiles = UploadedFile::getInstances($photo, 'imageFiles');
                 foreach ($photo->imageFiles as $file) {
                     $str = substr(md5(microtime() . rand(0, 9999)), 0, 20);
@@ -101,6 +112,7 @@ class ProfileController extends Controller
             return $this->render('create', [
                 'model' => $model,
                 'photo' => $photo,
+                'filters' => $filters,
             ]);
         }
     }
@@ -119,11 +131,17 @@ class ProfileController extends Controller
          
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             foreach($_POST['value'] as $key=> $val){
-                $value = new FiltersValue();
-                $value->product_id = $model->id;
-                $value->filter_id = $key;
-                $value->value = $val;
-                $value->save();
+                $value = FiltersValue::find()->where(['filter_id' => $key, 'product_id' => $model->id])->one();
+                if(empty($value)){
+
+
+                    $value = new FiltersValue();
+                }
+                    $value->product_id = $model->id;
+                    $value->filter_id = $key;
+                    $value->value = $val;
+                    $value->save();
+                 
             }
                 if(!empty($_FILES['UploadForm'])){
 
