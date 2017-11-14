@@ -120,6 +120,12 @@ AppAsset::register($this);
 
 
     <div class="container-fluid h-100 site-wrapper" style="min-height: 75vh">
+        <div class="left-menu-button d-xl-none">
+            <div class="left-menu-button__wrapper">
+                <button>
+                </button>
+            </div>
+        </div>
 
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
