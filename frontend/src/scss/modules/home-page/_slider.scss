@@ -13,7 +13,8 @@
 
   .girl-card {
     height: 340px;
-    width: 231px;
+    max-width: 231px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 15px;
