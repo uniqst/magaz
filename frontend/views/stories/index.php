@@ -14,7 +14,7 @@ use yii\helpers\Url;
   <div class="col-12">
     <div class="row">
       <div class="offset-lg-3 col-lg-6">
-          <h1 class="heading-main">
+          <h1 class="heading-main mb-0">
               Bursa platinum girls. High class escorts. Pleasure without limits
           </h1>
       </div>
@@ -31,9 +31,9 @@ use yii\helpers\Url;
         </div>
       </div>
   </div>
-  <div class="d-none d-lg-block col-lg-3">
-    sidebar left
-  </div>
+
+  <?= $this->render('../sidebar-left')?>
+  
   <div class="col-lg-6">
     <div class="posts-container">
       <h1 class="page-name">EROTIC STORIES</h1>
