@@ -72,6 +72,33 @@
     }
   }
 
+  .slick-next,
+  .slick-prev {
+
+  }
+  .slick-next,
+  .slick-prev {
+    width: 45px;
+    height: 45px;
+    background-color: #8c0032;
+  }
+  .slick-next {
+    right: -45px;
+  }
+  .slick-prev {
+    left: -45px;
+  }
+  .slick-next:before,
+  .slick-prev:before {
+    font-family: 'FontAwesome';
+    color: #c2185b;
+  }
+  .slick-next:before {
+    content: '\f061';
+  }
+  .slick-prev:before {
+    content: '\f060';
+  }
 }
 
 

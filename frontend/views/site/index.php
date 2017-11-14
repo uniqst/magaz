@@ -5,37 +5,39 @@ use yii\helpers\Url;
 $this->title = 'My Yii Application';
 ?>
 
-    <div class="row">
-        <div class="offset-xl-3 col-xl-6 main-slider-container">
-
-            <h3 class="subheading-main">New Girls</h3>
-
-            <div class="new-girls-slider">
-                <div class="slick-carousel">
-                    <?php foreach($model as $image):?>
-                    <div class="slider-item">
-                        <div class="girl-card" style="background-image: url(photo/<?= $image->image->src?>)">
-                            <a class="girl-card__name" href="<?=Url::to(['/girls/girl', 'id' => $image->id, 'name' => $image->name])?>"><?= $image->name?></a>
+    <div class="row main-page-upper-box">
+        <div class="offset-xl-2 col-xl-8">
+            <div class="main-slider-container">
+                <h3 class="subheading-main">New Girls</h3>
+                <div class="new-girls-slider">
+                    <div class="slick-carousel">
+                        <?php foreach($model as $image):?>
+                        <div class="slider-item">
+                            <div class="girl-card" style="background-image: url(photo/<?= $image->image->src?>)">
+                                <a class="girl-card__name" href="<?=Url::to(['/girls/girl', 'id' => $image->id, 'name' => $image->name])?>"><?= $image->name?></a>
+                            </div>
                         </div>
+                        <?php endforeach;?>
                     </div>
-                    <?php endforeach;?>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="offset-xl-3 col-xl-6 last-response">
-            <h3 class="subheading-main">Customer response</h3>
-            <div class="iconblock">
-                <a href="#" class="pencil"></a>
-                <a href="#" class="msgbox"></a>
-            </div>
-            <blockquote class="response">
-                <p class="response__quote">Vis primis omnium hendrerit no, ei sumo clita salutatus est. Cu nisl falli ocurreret pri, ne duo aeque accusam salutandi. Vim ex commune definitiones, duo vero audiam alterum cu, has id graeci viderer malorum. Sed epicuri maluisset omittantur in, ornatus fierent dolores mel an. Integre platonem posidonium an his, in duo dicta labores facilisi, ceteros intellegebat vis te.</p>
-                <div class="response__author">
-                    <cite>Mr. Customuer</cite>
+    <!-- </div> -->
+    <!-- <div class="row"> -->
+        <div class="offset-xl-2 col-xl-8 ">
+            <div class="last-response">
+                <h3 class="subheading-main">Customer response</h3>
+                <div class="iconblock">
+                    <a href="#" class="pencil"></a>
+                    <a href="#" class="msgbox"></a>
                 </div>
-            </blockquote>
+                <blockquote class="response">
+                    <p class="response__quote">Vis primis omnium hendrerit no, ei sumo clita salutatus est. Cu nisl falli ocurreret pri, ne duo aeque accusam salutandi. Vim ex commune definitiones, duo vero audiam alterum cu, has id graeci viderer malorum. Sed epicuri maluisset omittantur in, ornatus fierent dolores mel an. Integre platonem posidonium an his, in duo dicta labores facilisi, ceteros intellegebat vis te.</p>
+                    <div class="response__author">
+                        <cite>Mr. Customuer</cite>
+                    </div>
+                </blockquote>
+            </div>
         </div>
     </div>
     <div class="row dir-tree-links">
@@ -56,7 +58,7 @@ $this->title = 'My Yii Application';
         </div>
     </div>
 
-    <div class="row">
+    <div class="row mp-content">
         <?= $this->render('../sidebar-left')?>
         <!-- <div class="col-xl-3 sidebar-main d-none d-lg-block">
             Sidebar main
@@ -66,34 +68,66 @@ $this->title = 'My Yii Application';
             <div class="items-block">
                 <div class="container-fluild">
                     <div class="row no-padding">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <?php foreach($model as $image):?>
-                                    <div class="col-6 col-sm-6 col-md-4 col-xl-3">
-                                        <div class="items-block__item" style=" background-image: url(photo/<?=$image->image->src?>)">
-                                            <div class="info-card" style="width: 100%;">
-                                                <div class="wrapper">
-                                                    <div class="info-card__name">
-                                                        <a href="#">
-                                                            <?=$image->name?>
-                                                            <i class="add-button fa fa-plus"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div class="info-card__about">
-                                                        <span class="age"><?=$image->age?></span>
-                                                        <span class="nationality"><?=$image->nationality?></span>
-                                                    </div>
-                                                    <p class="info-card__more-info">
-                                                        <?=$image->about_myself?>
-                                                    </p>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <?php foreach($model as $image):?>
+                                <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                                    <div class="items-block__item" style=" background-image: url(photo/<?=$image->image->src?>)">
+                                        <div class="info-card" style="width: 100%;">
+                                            <div class="wrapper">
+                                                <div class="info-card__name">
+                                                    <a href="#">
+                                                        <?=$image->name?>
+                                                        <i class="add-button fa fa-plus"></i>
+                                                    </a>
                                                 </div>
+                                                <div class="info-card__about">
+                                                    <span class="age"><?=$image->age?></span>
+                                                    <span class="nationality"><?=$image->nationality?></span>
+                                                </div>
+                                                <p class="info-card__more-info">
+                                                    <?=$image->about_myself?>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <?php endforeach;?>
                                 </div>
-                            </div>      
+                                <?php endforeach;?>
+                            </div>
+                        </div>      
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="offset-xl-3 col-xl-6">
+            <div class="embded-response-box">
+                <div class="page-name">
+                    Customer reviews
+                </div>
+                <div class="iconblock">
+                    <a href="#" class="pencil"></a>
+                    <a href="#" class="msgbox"></a>
+                </div>
+                <div class="resoponse-list">
+
+                    <blockquote class="response">
+                        <p class="response__quote">Vis primis omnium hendrerit no, ei sumo clita salutatus est. Cu nisl falli ocurreret pri, ne duo aeque accusam salutandi. Vim ex commune definitiones, duo vero audiam alterum cu, has id graeci viderer malorum. Sed epicuri maluisset omittantur in, ornatus fierent dolores mel an. Integre platonem posidonium an his, in duo dicta labores facilisi, ceteros intellegebat vis te.</p>
+                        <div class="response__author">
+                            <cite>Mr. Customuer</cite>
+                            |
+                            <time>10.04.17 14:11</time>
+                        </div>
+                    </blockquote>
+                    <blockquote class="response">
+                        <p class="response__quote">Vis primis omnium hendrerit no, ei sumo clita salutatus est. Cu nisl falli ocurreret pri, ne duo aeque accusam salutandi. Vim ex commune definitiones, duo vero audiam alterum cu, has id graeci viderer malorum. Sed epicuri maluisset omittantur in, ornatus fierent dolores mel an. Integre platonem posidonium an his, in duo dicta labores facilisi, ceteros intellegebat vis te.</p>
+                        <div class="response__author">
+                            <cite>Mr. Customuer</cite>
+                            |
+                            <time>10.04.17 14:11</time>
+                        </div>
+                    </blockquote>
                 </div>
             </div>
         </div>

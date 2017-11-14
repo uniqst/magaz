@@ -4,6 +4,9 @@ $(document).ready(function () {
     {
       arrows: true,
       infinite: true,
+      speed: 1000,
+      autoplay: true,
+      autoplaySpeed: 15000,
       slidesToShow: 5,
       slidesToScroll: 1,
       responsive: [
@@ -38,6 +41,9 @@ $(document).ready(function () {
     {
       arrows: true,
       infinite: true,
+      speed: 1000,
+      autoplay: true,
+      autoplaySpeed: 15000,
       slidesToShow: 3,
       slidesToScroll: 1,
       responsive: [

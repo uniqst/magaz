@@ -1,19 +1,57 @@
+.main-page-upper-box {
+  margin-bottom: 60px;
+}
+
 .main-slider-container {
   color: $font-color-main;
   background-color: #c2185b;
   padding: 15px;
 
+  .slick-next,
+  .slick-prev {
+
+  }
+  .slick-next,
+  .slick-prev {
+    width: 45px;
+    height: 45px;
+    background-color: #8c0032;
+  }
+  .slick-next {
+    right: -45px;
+    @include mq(xl) {
+      right: -65px;
+    }
+  }
+  .slick-prev {
+    left: -45px;
+    @include mq(xl) {
+      left: -65px;
+    }
+  }
+  .slick-next:before,
+  .slick-prev:before {
+    font-family: 'FontAwesome';
+    color: #c2185b;
+  }
+  .slick-next:before {
+    content: '\f061';
+  }
+  .slick-prev:before {
+    content: '\f060';
+  }
+
   .slider-item {
-    padding: .6em;
+    padding: 15px;
   }
 }
 
 .new-girls-slider {
-  padding: 1em 2em 2rem;
+  padding: 30px 40px 50px;
 
   .girl-card {
     height: 340px;
-    max-width: 231px;
+    // max-width: 400px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
