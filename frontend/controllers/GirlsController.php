@@ -47,18 +47,11 @@ class GirlsController extends Controller
     }
     public function actionFilters()
     {
-//        $model = Profile::find()->joinWith(['value' => function(yii\db\ActiveQuery $query){
-//            $query->andFilterWhere(['value' => [2, 'WQEE']]);
-//        }])->all();
-//            echo "<pre>";
-//            print_r($model);
-//            echo "</pre>";
+        $model = Profile::find()->joinWith(['value' => function(yii\db\ActiveQuery $query){
+            $query->andFilterWhere(['value' => [2, 'WQEE']]);
+        }])->all();
         print_r($_GET);
-        die();
-        return $this->render('filters');
-    }
-    public function actionTest(){
-        print_r($_GET);
+        return $this->render('filters', compact('model'));
     }
 
 }

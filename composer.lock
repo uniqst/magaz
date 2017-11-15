@@ -642,7 +642,11 @@
                 "widget",
                 "yii2"
             ],
+<<<<<<< HEAD
             "time": "2017-11-15 12:34:11"
+=======
+            "time": "2017-11-15T12:34:11+00:00"
+>>>>>>> 1f98eef0b260fe9a33d6aeeb46c457fc09629d0d
         },
         {
             "name": "kartik-v/yii2-krajee-base",
@@ -1214,7 +1218,11 @@
                 "framework",
                 "yii2"
             ],
+<<<<<<< HEAD
             "time": "2017-11-14 21:49:40"
+=======
+            "time": "2017-11-14T21:49:40+00:00"
+>>>>>>> 1f98eef0b260fe9a33d6aeeb46c457fc09629d0d
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -1360,7 +1368,11 @@
                 "swiftmailer",
                 "yii2"
             ],
+<<<<<<< HEAD
             "time": "2017-11-15 09:42:42"
+=======
+            "time": "2017-11-15T09:42:42+00:00"
+>>>>>>> 1f98eef0b260fe9a33d6aeeb46c457fc09629d0d
         }
     ],
     "packages-dev": [

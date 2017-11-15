@@ -6,7 +6,6 @@ use yii\helpers\Url;
   <!-- <div class="main-sidebar-close">
     x
   </div> -->
-    <?php print_r($_GET);?>
     <form action="<?=Url::to(['/girls/filters'])?>" method="get">
       <div class="main-sidebar-menu">
         <div class="page-name">
@@ -51,7 +50,7 @@ use yii\helpers\Url;
 <!--              <a href="--><?//= Url::to(['/girls/filters', 'value' => $val->value])?><!--">-->
 <!--                --><?//= $val->value?>
 <!--              </a>-->
-                <input type="checkbox"  onclick="this.form.submit()" id="value<?=$val->id?>" name="value" value="<?=$val->value?>">
+                <input type="checkbox" <?php if($_GET['value'] == $val->value) echo 'checked';?>  onclick="this.form.submit()" id="value<?=$val->id?>" name="value[<?= $val->id?>]" value="<?=$val->value?>">
                 <label for="value<?=$val->id?>" style="cursor: pointer"><?=$val->value?></label>
             </li>
           <?php endforeach;?>
@@ -59,6 +58,5 @@ use yii\helpers\Url;
           <?php endforeach;?>
         </div>
       </div>
-        <input type="submit">
     </form>
 </div>
