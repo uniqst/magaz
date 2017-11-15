@@ -1,4 +1,17 @@
 $(document).ready(function () {
+  var duration = 1000;
+  
+  $('.to-top-button').click(function (e) {
+    e.preventDefault();
+    console.log('here we go!');
+
+    // var offset = $('.' +.offset().top;
+
+    $('html,body').animate({
+      // scrollTop: $('.to-top').offset().top
+      scrollTop: 0
+    }, duration);
+  });
   $('.left-menu-button button').click(function () {
     console.log('kek');
 

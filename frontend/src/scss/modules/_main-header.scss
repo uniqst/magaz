@@ -1,0 +1,72 @@
+.navbar-bg-top{
+    background: #8C0032;
+}
+.navbar-bg-bottom{
+    background: #FCE1EA;
+}
+
+.navbar,
+.navbar-bottom{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: 0;
+    border: none;
+    border-radius: 0px;
+    text-transform: uppercase;
+}
+
+.navbar-bottom{
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.contacts-nav {
+    width: 250px;
+}
+.contacts-nav ul li a {
+    padding-top: 0px;
+    margin-right: 5px;
+}
+.contacts-nav ul li a:hover{
+    color: white;
+}
+
+.phone-navbar{
+    font-size: 28px;
+}
+.phone-navbar span {
+    position: absolute;
+    top: 12px;
+    font-size: 40px;
+    right: 260px;
+}
+
+.navbar {
+  .navbar-toggler-icon {
+    .fa-bars::before {
+      color: white;
+    }
+  }
+}
+
+.navbar-main {
+    // top: 10px;
+    // position: relative;
+    margin: auto;
+}
+
+.navbar-main li {
+    padding: 0px 8px;
+    border-bottom: 3px solid #8C0032;
+}
+.navbar-main li:hover,
+.navbar-main li .active{
+    border-bottom: 3px solid #FFC1E3;
+    background: #A3335B;
+    transition: 200ms;
+    padding: 0px 8px;
+}
+.navbar-main li a:hover{
+    color: white;
+    text-decoration: none;
+}
+
