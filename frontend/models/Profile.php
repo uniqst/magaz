@@ -69,4 +69,9 @@ class Profile extends \yii\db\ActiveRecord
         return $this->hasMany(Comments::className(), ['profile_id' => 'id']);
     }
 
+    public function getValue()
+    {
+        return $this->hasMany(FiltersValue::className(), ['product_id' => 'id']);
+    }
+
 }

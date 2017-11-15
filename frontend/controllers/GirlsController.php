@@ -2,12 +2,13 @@
 namespace frontend\controllers;
 
 use Yii;
+use yii\db\Expression;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-
+use frontend\models\Profile;
 
 /**
  * Site controller
@@ -20,26 +21,11 @@ class GirlsController extends Controller
     public function behaviors()
     {
         return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'only' => ['logout', 'signup'],
-                'rules' => [
-                    [
-                        'actions' => ['signup'],
-                        'allow' => true,
-                        'roles' => ['?'],
-                    ],
-                    [
-                        'actions' => ['logout'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
+
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'logout' => ['post'],
+                    'logout' => ['post', 'get'],
                 ],
             ],
         ];
@@ -48,27 +34,12 @@ class GirlsController extends Controller
     /**
      * @inheritdoc
      */
-    public function actions()
-    {
-        return [
-            'error' => [
-                'class' => 'yii\web\ErrorAction',
-            ],
-            'captcha' => [
-                'class' => 'yii\captcha\CaptchaAction',
-                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
-            ],
-        ];
-    }
 
-    /**
-     * Displays homepage.
-     *
-     * @return mixed
-     */
+
     public function actionIndex()
     {
-        return $this->render('index');
+        $model = Profile::find()->with('image')->all();
+        return $this->render('index', compact('model'));
     }
     public function actionGirl()
     {
@@ -76,7 +47,18 @@ class GirlsController extends Controller
     }
     public function actionFilters()
     {
+//        $model = Profile::find()->joinWith(['value' => function(yii\db\ActiveQuery $query){
+//            $query->andFilterWhere(['value' => [2, 'WQEE']]);
+//        }])->all();
+//            echo "<pre>";
+//            print_r($model);
+//            echo "</pre>";
+        print_r($_GET);
+        die();
         return $this->render('filters');
+    }
+    public function actionTest(){
+        print_r($_GET);
     }
 
 }

@@ -131,29 +131,7 @@ $this->title = 'My Yii Application';
                 </div>
             </div>
         </div>
-        <div class="offset-lg-1 col-lg-10 offset-xl-2 col-xl-8">
-            <div class="advertise-block">
-                <div class="advertise-block__list">
-                    <div class="advertise__item">
-                        <a href="">
-                            <img src="http://via.placeholder.com/600x230" alt="Add">
-                        </a>
-                    </div>
-                    <div class="advertise__item">
-                        <a href="">
-                            <img src="http://via.placeholder.com/600x230" alt="Add">
-                        </a>
-                    </div>
-                    <div class="advertise__item">
-                        <a href="">
-                            <img src="http://via.placeholder.com/600x230" alt="Add">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-
 
 <!-- <div class="main-slider-container">
     <h3>New Girls</h3>

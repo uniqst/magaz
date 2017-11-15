@@ -3,7 +3,7 @@
   <div class="col-12">
     <div class="row">
       <div class="offset-lg-3 col-lg-6">
-        <h2 class="page-name stories">Girls</h1>
+        <h2 class="page-name stories">Girls</h2>
       </div>
     </div>
   </div>
@@ -34,134 +34,26 @@
             <div class="items-block">
                 <div class="container">
                     <div class="row">
-
-                        <div class="col-6 col-sm-6 col-md-4 col-xl-4">
-                            <div class="items-block__item" style="background-image: url(/img/girl-cards/girl-card-2.jpg)">
-                                <div class="info-card">
-                                    <div class="wrapper">
-                                        <div class="info-card__name">
-                                            <a href="#">Valerry</a>
+                        <?php foreach($model as $profile):?>
+                            <div class="col-6 col-sm-6 col-md-4 col-xl-4">
+                                <div class="items-block__item" style="background-image: url(photo/<?=$profile->image->src?>)">
+                                    <div class="info-card">
+                                        <div class="wrapper">
+                                            <div class="info-card__name">
+                                                <a href="#"><?=$profile->name?></a>
+                                            </div>
+                                            <div class="info-card__about">
+                                                <span class="age">Age <?=$profile->age?></span>
+                                                <span class="nationality"><?=$profile->nationality?></span>
+                                            </div>
+                                            <p class="info-card__more-info">
+                                                <?=$profile->about_myself?>
+                                            </p>
                                         </div>
-                                        <div class="info-card__about">
-                                            <span class="age">Age 22</span>
-                                            <span class="nationality">Ukrainian</span>
-                                        </div>
-                                        <p class="info-card__more-info">
-                                            Id hinc dicam splendide pri, te mel mazim omnes voluptua, eos id eius eligendi consequuntur.  In decore dolore liberavisse pro, eum diam cibo gloriatur te.
-                                        </p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-4 col-xl-4">
-                            <div class="items-block__item" style="background-image: url(/img/girl-cards/girl-card-2.jpg)">
-                                <div class="info-card">
-                                    <div class="wrapper">
-                                        <div class="info-card__name">
-                                            <a href="#">Valerry</a>
-                                        </div>
-                                        <div class="info-card__about">
-                                            <span class="age">Age 22</span>
-                                            <span class="nationality">Ukrainian</span>
-                                        </div>
-                                        <p class="info-card__more-info">
-                                            Id hinc dicam splendide pri, te mel mazim omnes voluptua, eos id eius eligendi consequuntur.  In decore dolore liberavisse pro, eum diam cibo gloriatur te.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-4 col-xl-4">
-                            <div class="items-block__item" style="background-image: url(/img/girl-cards/girl-card-2.jpg)">
-                                <div class="info-card">
-                                    <div class="wrapper">
-                                        <div class="info-card__name">
-                                            <a href="#">Valerry</a>
-                                        </div>
-                                        <div class="info-card__about">
-                                            <span class="age">Age 22</span>
-                                            <span class="nationality">Ukrainian</span>
-                                        </div>
-                                        <p class="info-card__more-info">
-                                            Id hinc dicam splendide pri, te mel mazim omnes voluptua, eos id eius eligendi consequuntur.  In decore dolore liberavisse pro, eum diam cibo gloriatur te.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-4 col-xl-4">
-                            <div class="items-block__item" style="background-image: url(/img/girl-cards/girl-card-2.jpg)">
-                                <div class="info-card">
-                                    <div class="wrapper">
-                                        <div class="info-card__name">
-                                            <a href="#">Valerry</a>
-                                        </div>
-                                        <div class="info-card__about">
-                                            <span class="age">Age 22</span>
-                                            <span class="nationality">Ukrainian</span>
-                                        </div>
-                                        <p class="info-card__more-info">
-                                            Id hinc dicam splendide pri, te mel mazim omnes voluptua, eos id eius eligendi consequuntur.  In decore dolore liberavisse pro, eum diam cibo gloriatur te.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-4 col-xl-4">
-                            <div class="items-block__item" style="background-image: url(/img/girl-cards/girl-card-2.jpg)">
-                                <div class="info-card">
-                                    <div class="wrapper">
-                                        <div class="info-card__name">
-                                            <a href="#">Valerry</a>
-                                        </div>
-                                        <div class="info-card__about">
-                                            <span class="age">Age 22</span>
-                                            <span class="nationality">Ukrainian</span>
-                                        </div>
-                                        <p class="info-card__more-info">
-                                            Id hinc dicam splendide pri, te mel mazim omnes voluptua, eos id eius eligendi consequuntur.  In decore dolore liberavisse pro, eum diam cibo gloriatur te.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-4 col-xl-4">
-                            <div class="items-block__item" style="background-image: url(/img/girl-cards/girl-card-2.jpg)">
-                                <div class="info-card">
-                                    <div class="wrapper">
-                                        <div class="info-card__name">
-                                            <a href="#">Valerry</a>
-                                        </div>
-                                        <div class="info-card__about">
-                                            <span class="age">Age 22</span>
-                                            <span class="nationality">Ukrainian</span>
-                                        </div>
-                                        <p class="info-card__more-info">
-                                            Id hinc dicam splendide pri, te mel mazim omnes voluptua, eos id eius eligendi consequuntur.  In decore dolore liberavisse pro, eum diam cibo gloriatur te.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-4 col-xl-4">
-                            <div class="items-block__item" style="background-image: url(/img/girl-cards/girl-card-2.jpg)">
-                                <div class="info-card">
-                                    <div class="wrapper">
-                                        <div class="info-card__name">
-                                            <a href="#">Valerry</a>
-                                        </div>
-                                        <div class="info-card__about">
-                                            <span class="age">Age 22</span>
-                                            <span class="nationality">Ukrainian</span>
-                                        </div>
-                                        <p class="info-card__more-info">
-                                            Id hinc dicam splendide pri, te mel mazim omnes voluptua, eos id eius eligendi consequuntur.  In decore dolore liberavisse pro, eum diam cibo gloriatur te.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        <?php endforeach;?>
                     </div>
                 </div>
             </div>
