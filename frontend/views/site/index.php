@@ -59,7 +59,7 @@ $this->title = 'My Yii Application';
     </div>
 
     <div class="row mp-content">
-        <?= $this->render('../sidebar-left')?>
+        <?= \frontend\components\SidebarLeft::widget();?>
         <!-- <div class="col-xl-3 sidebar-main d-none d-lg-block">
             Sidebar main
         </div> -->

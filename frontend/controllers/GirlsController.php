@@ -74,5 +74,9 @@ class GirlsController extends Controller
     {
         return $this->render('girl');
     }
+    public function actionFilters()
+    {
+        return $this->render('filters');
+    }
 
 }

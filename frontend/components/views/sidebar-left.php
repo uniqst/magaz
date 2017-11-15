@@ -1,12 +1,3 @@
-<?php
-use frontend\models\Filters;
-use frontend\models\Category;
-$filters = Filters::find()->with('values')->all();
-$model = Category::find()->where(['parent_id' => 0])->with('category')->all();
-?>
-
-
-
 <div class="col-xl-3 d-none d-xl-block  main-sidebar-menu-js">
   <!-- <div class="main-sidebar-close">
     x
@@ -39,11 +30,11 @@ $model = Category::find()->where(['parent_id' => 0])->with('category')->all();
     <div class="category-list-wraper collapse show" id="list-filters">
       <?php foreach($filters as $filter):?>
       <h3 class="category-heading">
-        <a href="#list-categories" data-toggle="collapse" aria-expanded="true">
+        <a href="#list-categories<?=$filter->id?>" data-toggle="collapse" aria-expanded="true">
           <?= $filter->name?>
         </a>
       </h3>
-      <ul class="category-list category-list--border collapse show" id="list-categories">
+      <ul class="category-list category-list--border collapse show" id="list-categories<?=$filter->id?>">
         <li class="category-list__item">
           <a href="#">
             All
