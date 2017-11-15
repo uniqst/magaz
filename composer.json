@@ -31,7 +31,10 @@
         "codeception/verify": "~0.3.1"
     },
     "config": {
-        "process-timeout": 1800
+        "process-timeout": 1800,
+        "github-oauth": {
+            "github.com": "cba01f13622ac5a14effdc3787253e16b0fada65"
+        }
     },
     "repositories": [
         {
