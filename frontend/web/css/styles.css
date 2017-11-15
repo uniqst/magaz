@@ -291,6 +291,21 @@ a:hover {
   .embded-response-box .msgbox {
     background-image: url(/img/icons/icon-chatbox.png); }
 
+.advertise-block {
+  margin-bottom: 70px; }
+
+.advertise__item {
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto; }
+  .advertise__item:not(:last-of-type) {
+    margin-bottom: 15px; }
+  .advertise__item a {
+    display: block; }
+  .advertise__item img {
+    max-width: 100%;
+    display: block; }
+
 .top-form {
   background-color: #c2185b;
   padding: 30px;

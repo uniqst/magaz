@@ -28,7 +28,7 @@
       </div>
   </div>
 
-  <?= $this->render('../sidebar-left')?>
+  <?= \frontend\components\SidebarLeft::widget();?>
 
   <div class="col-xl-6 px-0">
             <div class="items-block">
@@ -167,8 +167,10 @@
             </div>
   </div>
   <div class="d-none d-lg-block col-lg-3">
-    <?= $this->render('../sidebar-right')?>
+  <?= \frontend\components\SidebarRight::widget();?>
+    <!--?= $this->render('../sidebar-right')?-->
   </div>
 </div>
 
-<?= $this->render('../bottom-slider')?>
+  <?= \frontend\components\BottomSlider::widget();?>
+<!--?= $this->render('../bottom-slider')?-->
