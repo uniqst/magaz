@@ -597,12 +597,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-grid.git",
-                "reference": "b8732509eeeb4facd106261d636723fbd6e339fc"
+                "reference": "51556908d3b05ca48705307d08f34426c8e45021"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/b8732509eeeb4facd106261d636723fbd6e339fc",
-                "reference": "b8732509eeeb4facd106261d636723fbd6e339fc",
+                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/51556908d3b05ca48705307d08f34426c8e45021",
+                "reference": "51556908d3b05ca48705307d08f34426c8e45021",
                 "shasum": ""
             },
             "require": {
@@ -642,7 +642,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2017-11-12T03:10:31+00:00"
+            "time": "2017-11-15T12:34:11+00:00"
         },
         {
             "name": "kartik-v/yii2-krajee-base",
@@ -1122,12 +1122,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "44eb50f56dd6afe890dd2bae48df558ff4cc2981"
+                "reference": "7b9cc001ee115cb80c1ccdb00173cb1f1c9387dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/44eb50f56dd6afe890dd2bae48df558ff4cc2981",
-                "reference": "44eb50f56dd6afe890dd2bae48df558ff4cc2981",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/7b9cc001ee115cb80c1ccdb00173cb1f1c9387dc",
+                "reference": "7b9cc001ee115cb80c1ccdb00173cb1f1c9387dc",
                 "shasum": ""
             },
             "require": {
@@ -1214,7 +1214,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2017-11-11T20:42:41+00:00"
+            "time": "2017-11-14T21:49:40+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -1318,12 +1318,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-swiftmailer.git",
-                "reference": "c3cbe6d81fde8566ff2345d29850adeb59f8929a"
+                "reference": "5cd97193864b7444ba3d13b163caf3e65ee12cec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/c3cbe6d81fde8566ff2345d29850adeb59f8929a",
-                "reference": "c3cbe6d81fde8566ff2345d29850adeb59f8929a",
+                "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/5cd97193864b7444ba3d13b163caf3e65ee12cec",
+                "reference": "5cd97193864b7444ba3d13b163caf3e65ee12cec",
                 "shasum": ""
             },
             "require": {
@@ -1360,7 +1360,7 @@
                 "swiftmailer",
                 "yii2"
             ],
-            "time": "2017-11-03T11:01:32+00:00"
+            "time": "2017-11-15T09:42:42+00:00"
         }
     ],
     "packages-dev": [
@@ -1940,29 +1940,35 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "4.1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "2d3d238c433cf69caeb4842e97a3223a116f94b2"
+                "reference": "1119a9765990a24f4c5218a85032fb6f3a91eaff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/2d3d238c433cf69caeb4842e97a3223a116f94b2",
-                "reference": "2d3d238c433cf69caeb4842e97a3223a116f94b2",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/1119a9765990a24f4c5218a85032fb6f3a91eaff",
+                "reference": "1119a9765990a24f4c5218a85032fb6f3a91eaff",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.0",
-                "phpdocumentor/reflection-common": "^1.0@dev",
+                "phpdocumentor/reflection-common": "^1.0.0",
                 "phpdocumentor/type-resolver": "^0.4.0",
                 "webmozart/assert": "^1.0"
             },
             "require-dev": {
-                "mockery/mockery": "^0.9.4",
-                "phpunit/phpunit": "^4.4"
+                "doctrine/instantiator": "~1.0.5",
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^6.4"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "phpDocumentor\\Reflection\\": [
@@ -1981,7 +1987,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2017-08-30T18:51:59+00:00"
+            "time": "2017-11-15T19:01:54+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -2387,12 +2393,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "0a858ae76c06449751e5a61c1e0e97191a0f3fd2"
+                "reference": "466b461f86c49a957c31bb0fbe0863eac0d9c64d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/0a858ae76c06449751e5a61c1e0e97191a0f3fd2",
-                "reference": "0a858ae76c06449751e5a61c1e0e97191a0f3fd2",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/466b461f86c49a957c31bb0fbe0863eac0d9c64d",
+                "reference": "466b461f86c49a957c31bb0fbe0863eac0d9c64d",
                 "shasum": ""
             },
             "require": {
@@ -2463,7 +2469,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-11-10T09:18:26+00:00"
+            "time": "2017-11-14T15:20:39+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
