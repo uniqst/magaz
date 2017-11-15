@@ -256,6 +256,9 @@ a:hover {
     font-size: 1rem;
     min-height: 1em; }
 
+.embded-response-box--mb {
+  margin-bottom: 70px; }
+
 .embded-response-box {
   background-color: #8c0032;
   color: #ffffff;
@@ -290,6 +293,19 @@ a:hover {
     background-image: url(/img/icons/icon-pencil.png); }
   .embded-response-box .msgbox {
     background-image: url(/img/icons/icon-chatbox.png); }
+
+.mp-text-block {
+  margin-bottom: 70px;
+  color: black; }
+
+.mp-text-block__heading {
+  text-transform: none;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 16px; }
+
+.mp-text-block__text p {
+  margin-bottom: 16px; }
 
 .advertise-block {
   margin-bottom: 70px; }

@@ -102,7 +102,7 @@ $this->title = 'My Yii Application';
     </div>
     <div class="row">
         <div class="offset-xl-3 col-xl-6">
-            <div class="embded-response-box">
+            <div class="embded-response-box embded-response-box--mb">
                 <div class="page-name">
                     Customer reviews
                 </div>
@@ -128,6 +128,40 @@ $this->title = 'My Yii Application';
                             <time>10.04.17 14:11</time>
                         </div>
                     </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="offset-xl-3 col-xl-6">
+            <div class="mp-text-block">
+                <div class="mp-text-block__text">
+                    <p>
+                        Her kiz bir bakig ile adami nasil buyulemeyi biliyor: sadece mukemmel kizin gozune bakin ve bu randevu ile sizi baglaycak ozel manyetizmayi hissedeceksiniz. Hizmetlerimizi sizin igin mumkun oldugunca rahat yapmaya galigtik, sadece katologumuzu bakin, kizi segin, biz de kalan her gey ile ilgilenegiz. inanin - bu randevu hafizamzda en heyecanli macera gibi kalacak.
+                    </p>
+                    <p>
+                        §ehrimizi ig ya da zevk igin ziyaret edersiniz olsun, her halde biz er guzel kizlarla en iyi randevulari size teklif etmekter memnun olacagiz. igleri dijgunmeden zor ig gijnunden dinleyebirsiniz. Kiz ile ortak dil bulmak igin gok zaman harcamamz gerek yok, о kendisi her gey yapip randevunuzu unutulmaz yapacak. Randevu igin ideal bir kizi segin ve biz eminiz ki bize yineden donecksiniz.
+                    </p>
+                </div>
+                <h3 class="mp-text-block__heading">
+                    Eskort bursa kizlari bunlari siz sipari? ettikten sonra sizin igin her geyi yapacaklar
+                </h3>
+                <div class="mp-text-block__text">
+                    <p>
+                        Her kiz bir bakig ile adami nasil buyulemeyi biliyor: sadece mukemmel kizin gozune bakin ve bu randevu ile sizi baglaycak ozel manyetizmayi hissedeceksiniz. Hizmetlerimizi sizin igin mumkun oldugunca rahat yapmaya galigtik, sadece katologumuzu bakin, kizi segin, biz de kalan her gey ile ilgilenegiz. inanin - bu randevu hafizamzda en heyecanli macera gibi kalacak.
+                    </p>
+                    <p>
+                        §ehrimizi ig ya da zevk igin ziyaret edersiniz olsun, her halde biz er guzel kizlarla en iyi randevulari size teklif etmekter memnun olacagiz. igleri dijgunmeden zor ig gijnunden dinleyebirsiniz. Kiz ile ortak dil bulmak igin gok zaman harcamamz gerek yok, о kendisi her gey yapip randevunuzu unutulmaz yapacak. Randevu igin ideal bir kizi segin ve biz eminiz ki bize yineden donecksiniz.
+                    </p>
+                </div>
+                <h3 class="mp-text-block__heading">
+                    Eskort bursa kizlari bunlari siz sipari? ettikten sonra sizin igin her geyi yapacaklar
+                </h3>
+                <div class="mp-text-block__text">
+                    <p>
+                        Her kiz bir bakig ile adami nasil buyulemeyi biliyor: sadece mukemmel kizin gozune bakin ve bu randevu ile sizi baglaycak ozel manyetizmayi hissedeceksiniz. Hizmetlerimizi sizin igin mumkun oldugunca rahat yapmaya galigtik, sadece katologumuzu bakin, kizi segin, biz de kalan her gey ile ilgilenegiz. inanin - bu randevu hafizamzda en heyecanli macera gibi kalacak.
+                    </p>
+                    <p>
+                        §ehrimizi ig ya da zevk igin ziyaret edersiniz olsun, her halde biz er guzel kizlarla en iyi randevulari size teklif etmekter memnun olacagiz. igleri dijgunmeden zor ig gijnunden dinleyebirsiniz. Kiz ile ortak dil bulmak igin gok zaman harcamamz gerek yok, о kendisi her gey yapip randevunuzu unutulmaz yapacak. Randevu igin ideal bir kizi segin ve biz eminiz ki bize yineden donecksiniz.
+                    </p>
                 </div>
             </div>
         </div>
