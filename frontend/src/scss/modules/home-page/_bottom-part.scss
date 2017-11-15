@@ -1,3 +1,22 @@
+.mp-text-block {
+  margin-bottom: 70px;
+  color: black
+
+}
+
+.mp-text-block__heading {
+  text-transform: none;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.mp-text-block__text {
+  p {
+    margin-bottom: 16px;
+  }
+}
+
 .advertise-block {
   margin-bottom: 70px;
 }

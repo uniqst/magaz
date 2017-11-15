@@ -29,9 +29,19 @@ AppAsset::register($this);
 
     <nav class="navbar navbar-expand-lg navbar-bg-top">
 
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">123</span>
+        <a class="navbar-brand" href="#">Nav brand</a>
+        <button 
+            class="navbar-toggler"
+            type="button" 
+            data-toggle="collapse" 
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon">
+                <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+            </span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -78,7 +88,7 @@ AppAsset::register($this);
 
         </div>
 
-        <div class="contacts-nav">
+        <div class="contacts-nav d-none d-xl-block">
 
             <h2 class="phone-navbar">
                 <span>+</span>
@@ -137,21 +147,90 @@ AppAsset::register($this);
 
 </div><!--wrap-->
 
-
-<footer class="footer">
-    <div class="footer-top-line"></div>
-
-    <div class="container">
-
-        <p class="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consequatur culpa esse est illum, ipsam neque praesentium. Adipisci atque autem consequuntur iste nulla possimus quae quis reprehenderit similique vitae, voluptatum.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur corporis dicta, distinctio dolor ducimus facere, harum ipsum laboriosam maxime, modi odio pariatur quae quo repellat similique voluptas voluptate. Aspernatur!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad asperiores commodi distinctio dolorem doloremque ducimus illum minima nulla repudiandae. Architecto aut eaque necessitatibus officiis, reiciendis voluptate. Expedita, iusto, perspiciatis.
+<div class="main-footer__top-line">
+    
+</div>
+<footer class="main-footer container-fluid">
+    <div class="row">
+        <div class="d-none d-xl-block col-xl-2">
+            <div class="main-footer__logo">
+                <div class="logo-image">
+                    <div class="logo-image__lips">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-8">
+            <div class="main-footer-wrapper">
+    <div class="main-footer__brand-name">
+        <p>
+            All Ankara Escort
         </p>
-
     </div>
+    <ul class="main-footer__nav nav justify-content-center navbar-main">
 
+        <li class="nav-item active">
+            <a class="nav-link" href="/">home</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="<?=Url::to(['/girls'])?>">all girls</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="<?=Url::to(['/how-make-order'])?>">how to make an order</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="<?=Url::to(['/services'])?>">servises</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="<?=Url::to(['/booking'])?>">booking</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="<?=Url::to(['/stories'])?>">erotic stories</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="<?=Url::to(['/casting'])?>">casting</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="<?=Url::to(['/reviews-for-escort'])?>">riveiws</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="<?=Url::to(['/contacts'])?>">contacts</a>
+        </li>
+
+    </ul>
+    <div class="main-footer__info">
+        <p>
+            All Ankara Escort organize the best love place on Earth. With us, you will feel as a king of seas, lands, aid skies - that big high you'll get from our pussycats. Here come people wanting to get fun with 1) exceptional beauties hard to find anywhere else in Italy, 2) Russian and Ukrainian girls of exclusive skills, and 3) girls, ready for everything for the exciting pleasure without boundaries.
+        </p>
+        <p>
+            What is more - these three are united in every our girl! Have a great time with allescortinankara.com.
+        </p>
+    </div>
+    <div class="main-footer__copy">
+        Copyright &copy; 2017 AllAnkaraEscort
+    </div>
+            </div>
+        </div>
+        <div class="d-none d-xl-flex justify-content-center col-xl-2">
+            <div class="main-footer__to-top">
+                <button class="to-top-button" type="button"></button>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="footer-top-line"></div>
+    <div class="container-fluid">
+            
+    </div> -->
 </footer>
+
 <?php $this->endBody() ?>
 
 </body>

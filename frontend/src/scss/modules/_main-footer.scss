@@ -1,0 +1,107 @@
+.main-footer {
+  padding: 25px 25px 20px;
+  background-color: #c2185b;
+
+  @include mq(md) {
+    background-color: #8c0032;
+  }
+  @include mq(xl) {
+    padding-top: 40px;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.main-footer__top-line {
+  @include mq(md) {
+    border-top: 1px solid #f7b5cb;
+    background: #fce1ea;
+    height:60px;
+  }
+}
+
+.main-footer__brand-name {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 16px;
+  // @include mq(xl) {
+  //   margin-bottom: 0;
+  // }
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.main-footer__info {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 550px;
+  text-align: center;
+  @include mq(md) {
+    display: block;
+    margin-bottom: 16px;
+  }
+}
+
+.main-footer__copy {
+  // font-size: 24px;
+  text-align: center;
+}
+
+.main-footer__nav {
+  display: none;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+
+  @include mq(xl) {
+    display: flex;
+  }
+}
+
+.main-footer__logo {
+  display: none;
+
+  @include mq(xl) {
+    display: block;
+  }
+  .logo-image {
+    position: relative;
+    margin-top: 25px;
+    margin-right: auto;
+    width: 125px;
+    height: 55px;
+    @include bg-img('../img/brand-logo-white.svg', contain);
+  }
+  .logo-image__lips {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 63px;
+    height: 51px;
+    transform: translate(80%, 80%);
+    @include bg-img('../img/lips.png', contain);
+  }
+}
+
+.main-footer__to-top {
+  align-self: center;
+}
+
+.to-top-button {
+  border: none;
+  background: #dfb8c6;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  &::before {
+    content: '\f106';
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'FontAwesome';
+    color: #8c0032;
+  }
+}

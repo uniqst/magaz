@@ -5,6 +5,13 @@ $browser-context: 12px; // Default
   margin: 0 !important;
 }
 
+@mixin bg-img($url, $size: cover, $position: center, $repeat: no-repeat) {
+  background-image: url($url);
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $position;
+}
+
 @function em($pixels, $context: $browser-context) {
   @return #{$pixels/$context}em;
 }
