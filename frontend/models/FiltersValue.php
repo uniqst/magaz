@@ -44,4 +44,9 @@ class FiltersValue extends \yii\db\ActiveRecord
             'value' => Yii::t('app', 'Value'),
         ];
     }
+    public function getFilters()
+    {
+        return $this->hasOne(Filters::className(), ['id' => 'filter_id']);
+    }
+
 }

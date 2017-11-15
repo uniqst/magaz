@@ -2,7 +2,9 @@
 namespace frontend\components;
 
 use frontend\models\Filters;
+use frontend\models\FiltersValue;
 use frontend\models\Category;
+use yii\db\ActiveQuery;
 use yii\base\Widget;
 
 

@@ -55,4 +55,5 @@ class Filters extends \yii\db\ActiveRecord
     {
         return $this->hasMany(FiltersValue::className(), ['filter_id' => 'id']);
     }
+
 }
