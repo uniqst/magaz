@@ -3,16 +3,16 @@
   <div class="col-12">
     <div class="row">
       <div class="offset-lg-3 col-lg-6">
-        <h2 class="page-name stories">Services</h1>
+        <h2 class="page-name stories">Girls</h1>
       </div>
     </div>
   </div>
   <div class="col-12">
     <div class="row">
       <div class="offset-lg-3 col-lg-6">
-          <h2 class="heading-main mb-0">
-            EROTIC SERVICES IS A STRAIT PASS TO UNLIMETED PLEASURE
-          </h2>
+          <h1 class="heading-main mb-0">
+            Bursa platinum girls. High class escorts. Plearsure without limits
+          </h1>
       </div>
     </div>
   </div>
@@ -30,10 +30,10 @@
 
   <?= $this->render('../sidebar-left')?>
 
-  <div class="col-xl-6">
+  <div class="col-xl-6 px-0">
             <div class="items-block">
                 <div class="container">
-                    <div class="row no-padding">
+                    <div class="row">
 
                         <div class="col-6 col-sm-6 col-md-4 col-xl-4">
                             <div class="items-block__item" style="background-image: url(/img/girl-cards/girl-card-2.jpg)">
