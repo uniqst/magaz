@@ -46,10 +46,12 @@ use yii\helpers\Url;
               </a>
             </li>
             <?php foreach($filter->values as $val):?>
+            <?php if(count($val->profiles) > 0):?>
             <li class="category-list__item">
                 <input style="display: none;" type="checkbox" <?php if($_GET['value'][$val->id] == $val->value) echo 'checked';?>  onclick="this.form.submit()" id="value<?=$val->id?>" name="value[<?= $val->id?>]" value="<?=$val->value?>">
                 <label for="value<?=$val->id?>" <?php if($_GET['value'][$val->id] == $val->value) echo "style='color: red;'";?>><?=$val->value?></label>
             </li>
+          <?php endif;?>
           <?php endforeach;?>
           </ul>
           <?php endforeach;?>

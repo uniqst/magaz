@@ -49,4 +49,10 @@ class FiltersValue extends \yii\db\ActiveRecord
         return $this->hasOne(Filters::className(), ['id' => 'filter_id']);
     }
 
+    public function getProfiles()
+    {
+        return $this->hasMany(Profile::className(), ['id' => 'product_id']);
+    }
+
+
 }

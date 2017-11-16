@@ -12,7 +12,7 @@
 
 
 
-  <?= $this->render('sidebar-left')?>
+ 
 
 
   <div class="main-center-col col-xl-6">
@@ -234,7 +234,7 @@
 
 
   <div class="d-none d-xl-block col-xl-3">
-    <?= $this->render('sidebar-right')?>
+   
   </div>
 
 </div>
