@@ -18,23 +18,21 @@ class Stories extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
-
-    public $imageFile;
-
     public static function tableName()
     {
         return 'stories';
     }
-
+    public $imageFile;
     /**
      * @inheritdoc
      */
     public function rules()
     {
         return [
-            [['img', 'name', 'content'], 'required'],
+            [['img', 'name', 'content', 'imageFile'], 'required'],
+            [['content'], 'string'],
             [['date'], 'safe'],
-            [['img', 'name', 'content'], 'string', 'max' => 255],
+            [['img', 'name'], 'string', 'max' => 255],
             [['imageFile'], 'file'],
         ];
     }
