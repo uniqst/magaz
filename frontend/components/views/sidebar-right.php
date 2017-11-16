@@ -11,7 +11,7 @@
                     </div>
                     <div class="item-box__info">
                         <span>Age: <?=$rand->age?></span>
-                        <span>R<?=$rand->nationality?></span>
+                        <span><?=$rand->nationality?></span>
                     </div>
                 </div>
             </div>
