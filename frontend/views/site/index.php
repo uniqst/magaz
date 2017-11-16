@@ -131,8 +131,7 @@ $this->title = 'My Yii Application';
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-=======
+
         <div class="offset-xl-3 col-xl-6">
             <div class="mp-text-block">
                 <div class="mp-text-block__text">
@@ -188,7 +187,6 @@ $this->title = 'My Yii Application';
                 </div>
             </div>
         </div>
->>>>>>> c0d637ff3791309c2d093921abcc5ddac2f021ca
     </div>
 
 <!-- <div class="main-slider-container">

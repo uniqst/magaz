@@ -47,11 +47,8 @@ use yii\helpers\Url;
             </li>
             <?php foreach($filter->values as $val):?>
             <li class="category-list__item">
-<!--              <a href="--><?//= Url::to(['/girls/filters', 'value' => $val->value])?><!--">-->
-<!--                --><?//= $val->value?>
-<!--              </a>-->
-                <input type="checkbox" <?php if($_GET['value'] == $val->value) echo 'checked';?>  onclick="this.form.submit()" id="value<?=$val->id?>" name="value[<?= $val->id?>]" value="<?=$val->value?>">
-                <label for="value<?=$val->id?>" style="cursor: pointer"><?=$val->value?></label>
+                <input style="display: none;" type="checkbox" <?php if($_GET['value'][$val->id] == $val->value) echo 'checked';?>  onclick="this.form.submit()" id="value<?=$val->id?>" name="value[<?= $val->id?>]" value="<?=$val->value?>">
+                <label for="value<?=$val->id?>" <?php if($_GET['value'][$val->id] == $val->value) echo "style='color: red;'";?>><?=$val->value?></label>
             </li>
           <?php endforeach;?>
           </ul>
