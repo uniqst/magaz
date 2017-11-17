@@ -76,6 +76,9 @@ a:hover {
     font-size: 14px;
     font-weight: 400; }
 
+.no-scroll {
+  overflow: hidden; }
+
 @media (min-width: 1300px) {
   .d-xxl-block {
     display: block !important; }
@@ -878,8 +881,35 @@ a:hover {
   height: 70px;
   overflow: hidden; }
 
+.main-sidebar-close {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer; }
+
+.main-sidebar-menu-js {
+  display: none;
+  -webkit-transition: .3 all;
+  transition: .3 all; }
+  .main-sidebar-menu-js.visible {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-left: 0;
+    padding-right: 0;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    z-index: 10000;
+    display: block; }
+
 .main-sidebar-menu {
-  background-color: #8c0032; }
+  background-color: #8c0032;
+  position: relative; }
   .main-sidebar-menu ul {
     list-style: none;
     margin-bottom: 0; }

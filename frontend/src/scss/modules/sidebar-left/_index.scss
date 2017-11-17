@@ -43,6 +43,35 @@
     height: 70px;
     overflow: hidden;
 }
+.main-sidebar-close {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.main-sidebar-menu-js {
+  display: none;
+  transition: .3 all;
+
+  &.visible {
+    // width: 100vw;
+    // height: 100vh;
+    background-color: rgba(0, 0, 0, .6);
+    @include px-0();
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    z-index: 10000;
+    display: block;
+  }
+}
 // .main-sidebar-close {
 //   position: absolute;
 //   right: 0;
@@ -74,6 +103,7 @@
 
 .main-sidebar-menu {
   background-color: #8c0032;
+  position: relative;
 
   ul {
     list-style: none;
