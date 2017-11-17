@@ -1,12 +1,169 @@
-.navbar-bg-top{
-    background: #8C0032;
-}
-.navbar-bg-bottom{
-    background: #FCE1EA;
+.main-header__social {
 }
 
-.navbar,
-.navbar-bottom{
+.social-list {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+
+    @include mq(md) {
+        flex-direction: column;
+        z-index: 100;
+    }
+
+    li:not(:last-of-type) {
+        margin-right: 7px;
+
+        @include mq(md) {
+            margin-right: 0;
+            margin-bottom: 7px;
+        }
+    }
+
+    .social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 31px;
+        height: 31px;
+        border-radius: 50%;
+        background-color: #deb3c3;
+        background-color: white;
+        transition: 0.3s opacity;
+
+        &:hover {
+            background-color: #deb3c3;
+            // opacity: .7;
+        }
+    }
+    .fa::before {
+        color: #971443;
+        font-size: 14px;
+    }
+}
+
+.main-header {
+    min-height: 57px;
+    background-color: #c2185b;
+    @include mq(md) {
+        background-color: #8c0032;
+    }
+
+    &__logo {
+        .logo-image {
+            // position: relative;
+            margin-right: auto;
+            width: 77px;
+            height: 34px;
+            @include bg-img('../img/brand-logo-white.svg', contain);
+        }
+        // .logo-image__lips {
+        //     position: absolute;
+        //     right: 0;
+        //     bottom: 0;
+        //     width: 63px;
+        //     height: 51px;
+        //     transform: translate(80%, 80%);
+        //     @include bg-img('../img/lips.png', contain);
+        // }
+
+    }
+
+    &__nav {
+        // z-index: 1000;
+    }
+
+    &__bottom-line {
+        background-color: #8c0032;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        min-height: 60px;
+        margin-bottom: 20px;
+        padding-top:20px;
+        padding-bottom: 68px;
+        @include mq(md) {
+            padding-top: 0;
+            padding-bottom: 0;
+            background-color: #fce1ea;
+        }
+    }
+
+    &__contacts {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &,
+        & a {
+            @include mq(md) {
+                color: black;
+            }
+            @include mq(xl) {
+                color: white;
+            }
+        }
+
+        .phone-number {
+            font-size: 28px;
+            font-weight: 300;
+            position: relative;
+            color: #fa5788;
+            @include mq(md) {
+                color: black;
+            }
+            @include mq(xl) {
+                color: white;
+            }
+        }
+
+        .phone-number span {
+            position: absolute;
+            top: 12px;
+            font-size: 40px;
+            right: 260px;
+        }
+
+        .phone-links {
+            display: flex;
+            // justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0 0 10px;
+
+
+            li:not(:last-of-type) {
+                margin-right: 10px;
+            }
+        }
+
+        ul li a {
+            font-size: 14px;
+            font-weight: 300;
+            text-transform: uppercase;
+            padding-top: 0px;
+        }
+
+        ul li a:hover{
+            color: white;
+        }
+
+    }
+
+    &__social {
+        background-color: transparent;
+        display: flex;
+        @include mq(md) {
+            position: fixed;
+            z-index: 100;
+            top: 50px;
+            right: 10px;
+        }
+    }
+
+}
+
+.navbar {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     margin: 0;
     border: none;
@@ -15,30 +172,11 @@
 }
 
 .navbar-bottom{
-    height: 60px;
-    margin-bottom: 20px;
 }
 
-.contacts-nav {
-    width: 250px;
-}
-.contacts-nav ul li a {
-    padding-top: 0px;
-    margin-right: 5px;
-}
-.contacts-nav ul li a:hover{
-    color: white;
-}
-
-.phone-navbar{
-    font-size: 28px;
-}
-.phone-navbar span {
-    position: absolute;
-    top: 12px;
-    font-size: 40px;
-    right: 260px;
-}
+/****************************/
+/*      BUTTON ICON         */
+/****************************/
 
 .navbar {
   .navbar-toggler-icon {
@@ -48,25 +186,33 @@
   }
 }
 
+
+
 .navbar-main {
-    // top: 10px;
-    // position: relative;
     margin: auto;
 }
 
 .navbar-main li {
-    padding: 0px 8px;
-    border-bottom: 3px solid #8C0032;
+    padding: 0px 0px;
+    border-bottom: 3px solid transparent;
+    transition-property: border-bottom-color, background-color;
+    transition-duration: .3s;
+    background-color: #c2185b;
+    @include mq(md) {
+        background-color: #8c0032;
+    }
+
+    > a.nav-link,
+    .navbar-expand-lg &  > a.nav-link {
+     padding: 16px 16px 14px;
+    }
 }
 .navbar-main li:hover,
-.navbar-main li .active{
-    border-bottom: 3px solid #FFC1E3;
+.navbar-main li.active{
+    border-color: #FFC1E3;
     background: #A3335B;
-    transition: 200ms;
-    padding: 0px 8px;
 }
 .navbar-main li a:hover{
     color: white;
     text-decoration: none;
 }
-

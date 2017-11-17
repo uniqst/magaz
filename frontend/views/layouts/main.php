@@ -27,9 +27,15 @@ AppAsset::register($this);
 
 <div class="wrap">
 
-    <nav class="navbar navbar-expand-lg navbar-bg-top">
+    <nav class="navbar navbar-expand-lg main-header">
 
-        <a class="navbar-brand" href="#">Nav brand</a>
+        <a class="navbar-brand main-header__logo" href="#">
+            <div class="logo-image">
+                <!-- <div class="logo-image__lips">
+                </div> -->
+            </div>
+        </a>
+
         <button 
             class="navbar-toggler"
             type="button" 
@@ -44,90 +50,80 @@ AppAsset::register($this);
             </span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-            <ul class="navbar-nav navbar-main">
-
+        <div class="collapse navbar-collapse main-header__nav" id="navbarSupportedContent">
+            <ul class="navbar-nav navbar-main justify-content-center">
                 <li class="nav-item active">
                     <a class="nav-link" href="/">home</a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" href="<?=Url::to(['/girls'])?>">all girls</a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" href="<?=Url::to(['/how-make-order'])?>">how to make an order</a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" href="<?=Url::to(['/services'])?>">servises</a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" href="<?=Url::to(['/booking'])?>">booking</a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" href="<?=Url::to(['/stories'])?>">erotic stories</a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" href="<?=Url::to(['/casting'])?>">casting</a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" href="<?=Url::to(['/reviews-for-escort'])?>">riveiws</a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" href="<?=Url::to(['/contacts'])?>">contacts</a>
                 </li>
-
             </ul>
-
         </div>
+    </nav>
 
-        <div class="contacts-nav d-none d-xl-block">
+    <div class="navbar-bottom navbar-bg-bottom ml-auto main-header__bottom-line">
+        <div class="main-header__contacts">
 
-            <h2 class="phone-navbar">
+            <h2 class="phone-number">
                 <span>+</span>
                 90 539 460 85 63
             </h2>
 
-            <ul class="navbar-nav">
-
+            <ul class="phone-links">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a href="#">
                         call
                     </a>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a href="#">
                         sms
                     </a>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a  href="#">
                         viber
                     </a>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a  href="#">
                         whatsupp
                     </a>
                 </li>
-
             </ul>
-
         </div>
-
-    </nav>
-    <div class="navbar-bottom navbar-bg-bottom ml-auto"></div>
-
+        <div class="main-header__social">
+            <ul class="social-list list-unstyled">
+                <li><a href="#" class="social-link"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" class="social-link"><i class="fa fa-pinterest-p"></i></a></li>
+                <li><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#" class="social-link"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+        </div>
+    </div>
 
     <div class="container-fluid h-100 site-wrapper" style="min-height: 75vh">
         <div class="left-menu-button d-xl-none">
@@ -144,12 +140,10 @@ AppAsset::register($this);
         <?= $content ?>
 
     </div>
-
-</div><!--wrap-->
-
-<div class="main-footer__top-line">
-    
 </div>
+
+<div class="main-footer__top-line"></div>
+
 <footer class="main-footer container-fluid">
     <div class="row">
         <div class="d-none d-xl-block col-xl-2">
