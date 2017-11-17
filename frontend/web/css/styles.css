@@ -972,7 +972,8 @@ a:hover {
           flex-direction: column;
   flex-direction: row;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-bottom: 0; }
   .social-list li:not(:last-of-type) {
     margin-right: 7px; }
   .social-list .social-link {
@@ -999,7 +1000,7 @@ a:hover {
     font-size: 14px; }
 
 .main-header {
-  height: 57px;
+  min-height: 57px;
   background-color: #c2185b; }
   @media only screen and (min-width: 768px) {
     .main-header {
@@ -1042,8 +1043,16 @@ a:hover {
       top: 12px;
       font-size: 40px;
       right: 260px; }
-  .main-header__nav {
-    z-index: 1000; }
+  .main-header__social {
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media only screen and (min-width: 768px) {
+      .main-header__social {
+        position: absolute;
+        top: 20px;
+        right: 10px; } }
 
 .navbar {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -1069,7 +1078,10 @@ a:hover {
   transition-property: border-bottom-color, background-color;
   -webkit-transition-duration: .3s;
           transition-duration: .3s;
-  background-color: #8c0032; }
+  background-color: #c2185b; }
+  @media only screen and (min-width: 768px) {
+    .navbar-main li {
+      background-color: #8c0032; } }
   .navbar-main li > a.nav-link,
   .navbar-expand-lg .navbar-main li > a.nav-link {
     padding: 16px 16px 14px; }

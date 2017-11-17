@@ -35,6 +35,7 @@ AppAsset::register($this);
                 </div> -->
             </div>
         </a>
+
         <button 
             class="navbar-toggler"
             type="button" 
@@ -91,33 +92,27 @@ AppAsset::register($this);
             </h2>
 
             <ul class="navbar-nav">
-
                 <li class="nav-item">
                     <a class="nav-link" href="#">
                         call
                     </a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" href="#">
                         sms
                     </a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" href="#">
                         viber
                     </a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" href="#">
                         whatsupp
                     </a>
                 </li>
-
             </ul>
-
         </div>
         <div class="main-header__social">
             <ul class="social-list list-unstyled">
