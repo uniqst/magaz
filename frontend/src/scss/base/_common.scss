@@ -43,3 +43,13 @@
     font-weight: 400;
   }
 }
+
+@media (min-width: 1300px) {
+  .d-xxl-block {
+    display: block !important;
+  }
+
+  .d-xxl-flex {
+    display: flex !important;
+  }
+}

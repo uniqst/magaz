@@ -131,9 +131,18 @@
     }
 
     &__contacts {
-        width: 250px;
+        max-width: 250px;
         margin-left: auto;
         margin-right: auto;
+
+        @include mq(md) {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        @include mq(xl) {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
 
         &,
         & a {
@@ -142,6 +151,15 @@
             }
             @include mq(xl) {
                 color: white;
+            }
+        }
+
+        .phone-icon {
+            text-align: center;
+
+            .fa-phone::before {
+                font-size: 40px;
+                color: #fa5788;
             }
         }
 
@@ -159,19 +177,25 @@
         }
 
         .phone-number span {
-            position: absolute;
-            top: 12px;
-            font-size: 40px;
-            right: 260px;
+            @include mq(md) {
+                position: absolute;
+                top: 10px;
+                left: 0;
+                transform: translate(-110%, 0);
+                font-size: 32px;
+            }
         }
 
         .phone-links {
             display: flex;
-            // justify-content: center;
+            justify-content: center;
             list-style: none;
             padding: 0;
             margin: 0 0 10px;
 
+            @include mq(md) {
+                justify-content: flex-start;
+            }
 
             li:not(:last-of-type) {
                 margin-right: 10px;
@@ -250,7 +274,7 @@
 
     > a.nav-link,
     .navbar-expand-lg &  > a.nav-link {
-     padding: 16px 16px 14px;
+     padding: 16px 15px 14px;
     }
 }
 .navbar-main li:hover,
