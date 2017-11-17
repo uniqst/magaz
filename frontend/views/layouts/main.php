@@ -49,7 +49,7 @@ AppAsset::register($this);
             </span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse main-header__nav" id="navbarSupportedContent">
             <ul class="navbar-nav navbar-main justify-content-center">
                 <li class="nav-item active">
                     <a class="nav-link" href="/">home</a>

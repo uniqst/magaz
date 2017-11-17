@@ -115,6 +115,9 @@
             right: 260px;
         }
     }
+    &__nav {
+        z-index: 1000;
+    }
 }
 
 .navbar {
@@ -151,6 +154,7 @@
     border-bottom: 3px solid transparent;
     transition-property: border-bottom-color, background-color;
     transition-duration: .3s;
+    background-color: #8c0032;
 
     > a.nav-link,
     .navbar-expand-lg &  > a.nav-link {

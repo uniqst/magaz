@@ -1042,6 +1042,8 @@ a:hover {
       top: 12px;
       font-size: 40px;
       right: 260px; }
+  .main-header__nav {
+    z-index: 1000; }
 
 .navbar {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -1066,7 +1068,8 @@ a:hover {
   -webkit-transition-property: border-bottom-color, background-color;
   transition-property: border-bottom-color, background-color;
   -webkit-transition-duration: .3s;
-          transition-duration: .3s; }
+          transition-duration: .3s;
+  background-color: #8c0032; }
   .navbar-main li > a.nav-link,
   .navbar-expand-lg .navbar-main li > a.nav-link {
     padding: 16px 16px 14px; }
