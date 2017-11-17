@@ -1,5 +1,4 @@
 
-
 <div class="row stories-page">
 
     <div class="col-12">

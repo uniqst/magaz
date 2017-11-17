@@ -1,12 +1,16 @@
 <?php
 use yii\helpers\Url;
 ?>
-
+<style>
+    .labelcategory{
+        cursor: pointer;
+    }
+</style>
 <div class="col-xl-3 d-none d-xl-block  main-sidebar-menu-js">
   <!-- <div class="main-sidebar-close">
     x
   </div> -->
-    <form action="<?=Url::to(['/girls/filters'])?>" method="get">
+    <form action="<?=Url::to(['/girls/filters'])?>" id="form" method="get">
       <div class="main-sidebar-menu">
         <div class="page-name">
           Catalog
@@ -32,7 +36,7 @@ use yii\helpers\Url;
             Filters
           </a>
         </h2>
-        <div class="category-list-wraper collapse show" id="list-filters">
+        <div class="category-list-wraper collapse show" id="list-filtersasdas">
           <?php foreach($filters as $filter):?>
           <h3 class="category-heading">
             <a href="#list-categories<?=$filter->id?>" data-toggle="collapse" aria-expanded="true">
@@ -41,15 +45,15 @@ use yii\helpers\Url;
           </h3>
           <ul class="category-list category-list--border collapse show" id="list-categories<?=$filter->id?>">
             <li class="category-list__item">
-              <a href="#">
+              <a href="#" oclick="return false"class="inputAll">
                 All
               </a>
             </li>
             <?php foreach($filter->values as $val):?>
             <?php if(count($val->profiles) > 0):?>
             <li class="category-list__item">
-                <input style="display: none;" type="checkbox" <?php if($_GET['value'][$val->id] == $val->value) echo 'checked';?>  onclick="this.form.submit()" id="value<?=$val->id?>" name="value[<?= $val->id?>]" value="<?=$val->value?>">
-                <label for="value<?=$val->id?>" <?php if($_GET['value'][$val->id] == $val->value) echo "style='color: red;'";?>><?=$val->value?></label>
+                <input style="display: none;" type="checkbox" class="check<?=$filter->id?> inputCheck" <?php if($_GET['value'][$val->id] == $val->value) echo 'checked';?>  onclick="this.form.submit()" id="value<?=$val->id?>" name="value[<?= $val->id?>]" value="<?=$val->value?>">
+                <label class="labelcategory" for="value<?=$val->id?>" <?php if($_GET['value'][$val->id] == $val->value) echo "style='color: red;'";?>><?=$val->value?></label>
             </li>
           <?php endif;?>
           <?php endforeach;?>
