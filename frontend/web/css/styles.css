@@ -964,14 +964,21 @@ a:hover {
   margin-bottom: 0; }
   @media only screen and (min-width: 768px) {
     .social-list {
+      z-index: 100; } }
+  @media only screen and (min-width: 992px) {
+    .social-list {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      z-index: 100; } }
+      position: fixed;
+      top: 125px;
+      right: 0;
+      background-color: #ca567e;
+      padding: 15px 10px 15px 20px; } }
   .social-list li:not(:last-of-type) {
     margin-right: 7px; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 992px) {
       .social-list li:not(:last-of-type) {
         margin-right: 0;
         margin-bottom: 7px; } }
@@ -990,20 +997,49 @@ a:hover {
     border-radius: 50%;
     background-color: #deb3c3;
     background-color: white;
-    -webkit-transition: 0.3s opacity;
-    transition: 0.3s opacity; }
-    .social-list .social-link:hover {
-      background-color: #deb3c3; }
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all; }
+    @media only screen and (min-width: 768px) {
+      .social-list .social-link {
+        background-color: #deb3c3; } }
+    @media only screen and (min-width: 768px) {
+      .social-list .social-link:hover {
+        background-color: white; } }
   .social-list .fa::before {
     color: #971443;
     font-size: 14px; }
+    @media only screen and (min-width: 992px) {
+      .social-list .fa::before {
+        color: #ca567e; } }
 
 .main-header {
   min-height: 57px;
   background-color: #c2185b; }
   @media only screen and (min-width: 768px) {
     .main-header {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
       background-color: #8c0032; } }
+  @media only screen and (min-width: 992px) {
+    .main-header {
+      -webkit-box-orient: initial;
+      -webkit-box-direction: initial;
+          -ms-flex-direction: initial;
+              flex-direction: initial; } }
+  @media only screen and (min-width: 768px) {
+    .main-header__logo {
+      position: absolute;
+      left: 50%;
+      top: 6px;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0); } }
+  @media only screen and (min-width: 992px) {
+    .main-header__logo {
+      position: static;
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); } }
   .main-header__logo .logo-image {
     margin-right: auto;
     width: 77px;
@@ -1076,8 +1112,13 @@ a:hover {
     display: flex; }
     @media only screen and (min-width: 768px) {
       .main-header__social {
-        position: fixed;
+        position: absolute;
         z-index: 100;
+        top: 10px;
+        left: 10px; } }
+    @media only screen and (min-width: 1200px) {
+      .main-header__social {
+        position: fixed;
         top: 50px;
         right: 10px; } }
 
