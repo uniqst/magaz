@@ -1,3 +1,7 @@
+<?
+use yii\widgets\LinkPager;
+?>
+
 <div class="items-block">
     <div class="container">
         <div class="row">
@@ -22,5 +26,8 @@
                 </div>
             <?php endforeach;?>
         </div>
+        <?= LinkPager::widget([
+    'pagination' => $pages,
+]);?>
     </div>
 </div>

@@ -76,6 +76,17 @@ a:hover {
     font-size: 14px;
     font-weight: 400; }
 
+.no-scroll {
+  overflow: hidden; }
+
+@media (min-width: 1300px) {
+  .d-xxl-block {
+    display: block !important; }
+  .d-xxl-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important; } }
+
 .main-page-upper-box {
   margin-bottom: 60px; }
 
@@ -870,8 +881,35 @@ a:hover {
   height: 70px;
   overflow: hidden; }
 
+.main-sidebar-close {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer; }
+
+.main-sidebar-menu-js {
+  display: none;
+  -webkit-transition: .3 all;
+  transition: .3 all; }
+  .main-sidebar-menu-js.visible {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-left: 0;
+    padding-right: 0;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    z-index: 10000;
+    display: block; }
+
 .main-sidebar-menu {
-  background-color: #8c0032; }
+  background-color: #8c0032;
+  position: relative; }
   .main-sidebar-menu ul {
     list-style: none;
     margin-bottom: 0; }
@@ -964,14 +1002,21 @@ a:hover {
   margin-bottom: 0; }
   @media only screen and (min-width: 768px) {
     .social-list {
+      z-index: 100; } }
+  @media only screen and (min-width: 992px) {
+    .social-list {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      z-index: 100; } }
+      position: fixed;
+      top: 125px;
+      right: 0;
+      background-color: #ca567e;
+      padding: 15px 10px 15px 20px; } }
   .social-list li:not(:last-of-type) {
     margin-right: 7px; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 992px) {
       .social-list li:not(:last-of-type) {
         margin-right: 0;
         margin-bottom: 7px; } }
@@ -990,20 +1035,49 @@ a:hover {
     border-radius: 50%;
     background-color: #deb3c3;
     background-color: white;
-    -webkit-transition: 0.3s opacity;
-    transition: 0.3s opacity; }
-    .social-list .social-link:hover {
-      background-color: #deb3c3; }
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all; }
+    @media only screen and (min-width: 768px) {
+      .social-list .social-link {
+        background-color: #deb3c3; } }
+    @media only screen and (min-width: 768px) {
+      .social-list .social-link:hover {
+        background-color: white; } }
   .social-list .fa::before {
     color: #971443;
     font-size: 14px; }
+    @media only screen and (min-width: 992px) {
+      .social-list .fa::before {
+        color: #ca567e; } }
 
 .main-header {
   min-height: 57px;
   background-color: #c2185b; }
   @media only screen and (min-width: 768px) {
     .main-header {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
       background-color: #8c0032; } }
+  @media only screen and (min-width: 992px) {
+    .main-header {
+      -webkit-box-orient: initial;
+      -webkit-box-direction: initial;
+          -ms-flex-direction: initial;
+              flex-direction: initial; } }
+  @media only screen and (min-width: 768px) {
+    .main-header__logo {
+      position: absolute;
+      left: 50%;
+      top: 6px;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0); } }
+  @media only screen and (min-width: 992px) {
+    .main-header__logo {
+      position: static;
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); } }
   .main-header__logo .logo-image {
     margin-right: auto;
     width: 77px;
@@ -1026,9 +1100,17 @@ a:hover {
         padding-bottom: 0;
         background-color: #fce1ea; } }
   .main-header__contacts {
-    width: 250px;
+    max-width: 250px;
     margin-left: auto;
     margin-right: auto; }
+    @media only screen and (min-width: 768px) {
+      .main-header__contacts {
+        padding-top: 15px;
+        padding-bottom: 15px; } }
+    @media only screen and (min-width: 1200px) {
+      .main-header__contacts {
+        padding-top: 0;
+        padding-bottom: 0; } }
     @media only screen and (min-width: 768px) {
       .main-header__contacts,
       .main-header__contacts a {
@@ -1037,6 +1119,11 @@ a:hover {
       .main-header__contacts,
       .main-header__contacts a {
         color: white; } }
+    .main-header__contacts .phone-icon {
+      text-align: center; }
+      .main-header__contacts .phone-icon .fa-phone::before {
+        font-size: 40px;
+        color: #fa5788; }
     .main-header__contacts .phone-number {
       font-size: 28px;
       font-weight: 300;
@@ -1048,18 +1135,29 @@ a:hover {
       @media only screen and (min-width: 1200px) {
         .main-header__contacts .phone-number {
           color: white; } }
-    .main-header__contacts .phone-number span {
-      position: absolute;
-      top: 12px;
-      font-size: 40px;
-      right: 260px; }
+    @media only screen and (min-width: 768px) {
+      .main-header__contacts .phone-number span {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        -webkit-transform: translate(-110%, 0);
+                transform: translate(-110%, 0);
+        font-size: 32px; } }
     .main-header__contacts .phone-links {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       list-style: none;
       padding: 0;
       margin: 0 0 10px; }
+      @media only screen and (min-width: 768px) {
+        .main-header__contacts .phone-links {
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start; } }
       .main-header__contacts .phone-links li:not(:last-of-type) {
         margin-right: 10px; }
     .main-header__contacts ul li a {
@@ -1076,8 +1174,13 @@ a:hover {
     display: flex; }
     @media only screen and (min-width: 768px) {
       .main-header__social {
-        position: fixed;
+        position: absolute;
         z-index: 100;
+        top: 10px;
+        left: 10px; } }
+    @media only screen and (min-width: 1200px) {
+      .main-header__social {
+        position: fixed;
         top: 50px;
         right: 10px; } }
 
@@ -1111,7 +1214,7 @@ a:hover {
       background-color: #8c0032; } }
   .navbar-main li > a.nav-link,
   .navbar-expand-lg .navbar-main li > a.nav-link {
-    padding: 16px 16px 14px; }
+    padding: 16px 15px 14px; }
 
 .navbar-main li:hover,
 .navbar-main li.active {

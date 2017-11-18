@@ -38,7 +38,7 @@ class GirlsController extends Controller
 
     public function actionIndex()
     {
-        $model = Profile::find()->with('image')->all();
+        $model = Profile::find()->with('image');
         return $this->render('index', compact('model'));
     }
     public function actionGirl()
@@ -49,7 +49,7 @@ class GirlsController extends Controller
     {
         $model = Profile::find()->joinWith(['value' => function(yii\db\ActiveQuery $query){
             $query->andFilterWhere(['value' => $_GET['value']]);
-        }])->all();
+        }]);
 
         return $this->render('filters', compact('model'));
     }

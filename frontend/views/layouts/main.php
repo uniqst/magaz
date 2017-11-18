@@ -81,10 +81,44 @@ AppAsset::register($this);
                 </li>
             </ul>
         </div>
+        <div class="main-header__contacts d-none d-xl-block">
+
+            <h2 class="phone-number">
+                <span>+</span>
+                90 539 460 85 63
+            </h2>
+
+            <ul class="phone-links">
+                <li class="nav-item">
+                    <a href="#">
+                        call
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        sms
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a  href="#">
+                        viber
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a  href="#">
+                        whatsupp
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div class="navbar-bottom navbar-bg-bottom ml-auto main-header__bottom-line">
-        <div class="main-header__contacts">
+        <div class="main-header__contacts d-xl-none">
+
+            <div class="phone-icon d-md-none">
+                <i class="fa fa-phone"></i>
+            </div>
 
             <h2 class="phone-number">
                 <span>+</span>
@@ -125,7 +159,7 @@ AppAsset::register($this);
         </div>
     </div>
 
-    <div class="container-fluid h-100 site-wrapper" style="min-height: 75vh">
+    <div class="container-fluid h-100 site-wrapper main-wrapper" style="min-height: 75vh">
         <div class="left-menu-button d-xl-none">
             <div class="left-menu-button__wrapper">
                 <button>

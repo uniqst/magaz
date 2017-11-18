@@ -6,12 +6,13 @@ use yii\helpers\Url;
         cursor: pointer;
     }
 </style>
-<div class="col-xl-3 d-none d-xl-block  main-sidebar-menu-js">
+<div class="col-xl-3 d-xl-block main-sidebar-menu-js">
   <!-- <div class="main-sidebar-close">
     x
   </div> -->
     <form action="<?=Url::to(['/girls/filters'])?>" id="form" method="get">
       <div class="main-sidebar-menu">
+        <div class="main-sidebar-close">x</div>
         <div class="page-name">
           Catalog
         </div>
