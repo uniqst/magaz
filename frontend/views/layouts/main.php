@@ -52,31 +52,31 @@ AppAsset::register($this);
 
         <div class="collapse navbar-collapse main-header__nav" id="navbarSupportedContent">
             <ul class="navbar-nav navbar-main justify-content-center">
-                <li class="nav-item active">
+                <li class="nav-item <?=Yii::$app->controller->id == 'site' ? 'active' : ''?>">
                     <a class="nav-link" href="/">home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?=Yii::$app->controller->id == 'girls' ? 'active' : ''?>">
                     <a class="nav-link" href="<?=Url::to(['/girls'])?>">all girls</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?=Yii::$app->controller->id == 'how-make-order' ? 'active' : ''?>">
                     <a class="nav-link" href="<?=Url::to(['/how-make-order'])?>">how to make an order</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?=Yii::$app->controller->id == 'services' ? 'active' : ''?>">
                     <a class="nav-link" href="<?=Url::to(['/services'])?>">servises</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?=Yii::$app->controller->id == 'booking' ? 'active' : ''?>">
                     <a class="nav-link" href="<?=Url::to(['/booking'])?>">booking</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?=Yii::$app->controller->id == 'stories' ? 'active' : ''?>">
                     <a class="nav-link" href="<?=Url::to(['/stories'])?>">erotic stories</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?=Yii::$app->controller->id == 'casting' ? 'active' : ''?>">
                     <a class="nav-link" href="<?=Url::to(['/casting'])?>">casting</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?=Yii::$app->controller->id == 'reviews-for-escrort' ? 'active' : ''?>">
                     <a class="nav-link" href="<?=Url::to(['/reviews-for-escort'])?>">riveiws</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?=Yii::$app->controller->id == 'contacts' ? 'active' : ''?>">
                     <a class="nav-link" href="<?=Url::to(['/contacts'])?>">contacts</a>
                 </li>
             </ul>

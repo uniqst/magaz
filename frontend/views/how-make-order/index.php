@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="offset-xl-3 col-xl-6">
+    <div class="offset-xl-3 col-xl-6">
     <div class="top-form">
       <h1 class="page-name">How to make an order</h1>
       <p>
@@ -69,7 +69,6 @@
   </div>
 </div> -->
 
-<?= $this->render('../main-section')?>
-
+ <?=\frontend\components\MainSection::widget();?>
 
 
