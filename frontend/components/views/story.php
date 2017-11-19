@@ -8,19 +8,20 @@ use yii\helpers\Url;
       </div>
       <div class="articles__list">
         <ul>
-          
+          <?php foreach($model as $story):?>
           <div class="list-item">
-            <div class="photo" style="background-image: url(img/cat.jpg)">
+            <div class="photo" style="background-image: url(/story/<?= $story->img?>)">
             </div>
             <div class="article">
               <div class="article__title">
-                <a href="#">The Dance Flour</a>
+                <a href="#"><?= $story->name?></a>
               </div>
               <div class="article__text">
-                Eum no semper quaestio. Natum reformidans intellegebat ei sea, partem temporibus cum in. Ut nec euismod albucius ullamcorper, ut cibo feugiat sanctus vis. Id case erant nostrum est. Ex duo accusata democritum consequuntur. Ius ex duis accommodare. Et porro appareat vis. Et nam velit viris feugait, putant mentitum no nam.
+                <?= mb_substr($story->content, 0, 1000).'...'?> 
               </div>
             </div>
           </div>
+        <?php endforeach;?>
         </ul>
       </div>
     </div>
