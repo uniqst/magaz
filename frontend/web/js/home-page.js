@@ -117,23 +117,19 @@ $(document).ready(function () {
         }
       ]
       // slidesToScroll: 3
-
     }
-    // {
-    //   loop: true,
-    //   margin: 20,
-    //   nav: true,
-    //   responsive:{
-    //     0:{
-    //         items:2
-    //     },
-    //     600:{
-    //         items:3
-    //     },
-    //     1200:{
-    //         items:4
-    //     }
-    //   }
-    // }
   );
+
+  console.log($('.photo-block__list'))
+
+  $('.photo-block').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    gallery: {
+    enabled: true,
+      navigateByImgClick: true,
+      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+    }
+  });
+
 });

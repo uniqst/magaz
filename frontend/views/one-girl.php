@@ -21,25 +21,65 @@
       </div>
     </div>
 
-    <div class="col-xl-7">
+    <div class="col-sm-7">
       <div class="photo-block">
-        <div class="photo-block__photo" style="background-image: url('http://placehold.it/700x900?text=Image 1')">
-          <!-- <img src="http://placehold.it/400x400" alt="" class=""> -->
-        </div>
+
+        <a class="photo-block__photo" href="http://placehold.it/700x900?text=Image 1" style="background-image: url('http://placehold.it/700x900?text=Image 1')">
+        </a>
         <div class="photo-block__list flex-column">
-          <img src="http://placehold.it/600x900?text=Image 1" alt="" class="photo-tn">
-          <img src="http://placehold.it/600x900?text=Image 2" alt="" class="photo-tn">
-          <img src="http://placehold.it/600x900?text=Image 3" alt="" class="photo-tn">
-          <img src="http://placehold.it/600x900?text=Image 4" alt="" class="photo-tn">
+          <a href="http://placehold.it/700x900?text=Image 2">
+            <img src="http://placehold.it/200x200?text=Image 2" alt="Image 1" class="photo-tn">
+          </a>
+          <a href="http://placehold.it/700x900?text=Image 3">
+            <img src="http://placehold.it/200x200?text=Image 3" alt="Image 1" class="photo-tn">
+          </a>
+          <a href="http://placehold.it/700x900?text=Image 4">
+            <img src="http://placehold.it/200x200?text=Image 4" alt="Image 1" class="photo-tn">
+          </a>
+          <a href="http://placehold.it/700x900?text=Image 5">
+            <img src="http://placehold.it/200x200?text=Image 5" alt="Image 1" class="photo-tn">
+          </a>
         </div>
       </div>
       <h3 class="headline">Price</h3>
       Girl info and photo
     </div>
 
-    <div class="col-xl-5">
+    <div class="col-sm-5">
       <div class="card__info-list">
         <ul>
+          <li class="info-list__item">
+            <span class="property">Age</span>
+            <span class="value">18</span>
+          </li>
+          <li class="info-list__item">
+            <span class="property">Age</span>
+            <span class="value">18</span>
+          </li>
+          <li class="info-list__item">
+            <span class="property">Age</span>
+            <span class="value">18</span>
+          </li>
+          <li class="info-list__item">
+            <span class="property">Age</span>
+            <span class="value">18</span>
+          </li>
+          <li class="info-list__item">
+            <span class="property">Age</span>
+            <span class="value">18</span>
+          </li>
+          <li class="info-list__item">
+            <span class="property">Age</span>
+            <span class="value">18</span>
+          </li>
+          <li class="info-list__item">
+            <span class="property">Age</span>
+            <span class="value">18</span>
+          </li>
+          <li class="info-list__item">
+            <span class="property">Age</span>
+            <span class="value">18</span>
+          </li>
           <li class="info-list__item">
             <span class="property">Age</span>
             <span class="value">18</span>

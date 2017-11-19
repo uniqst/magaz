@@ -1,9 +1,15 @@
 .photo-block {
   display: flex;
 
+  a {
+    outline: none;
+  }
+
   &__photo {
+    display: flex;
     max-width: 70%;
     flex: 0 0 70%;
+    min-height: 100px;
     @include bg-img(null, cover, top center);
   }
 

@@ -31,9 +31,10 @@
   <?= \frontend\components\SidebarLeft::widget();?>
 
   <div class="col-xl-6 px-0">
+    <?= $this->render('../one-girl')?>
         <?=\frontend\components\ProductList::widget(['model' => $model])?>
   </div>
-  <div class="d-none d-lg-block col-lg-3">
+  <div class="d-none d-xl-block col-xl-3">
   <?= \frontend\components\SidebarRight::widget();?>
     <!--?= $this->render('../sidebar-right')?-->
   </div>

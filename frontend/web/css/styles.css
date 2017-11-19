@@ -872,11 +872,17 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .photo-block a {
+    outline: none; }
   .photo-block__photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     max-width: 70%;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 70%;
             flex: 0 0 70%;
+    min-height: 100px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center; }
