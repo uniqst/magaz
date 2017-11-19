@@ -9,6 +9,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use frontend\models\Profile;
+use frontend\models\FiltersValue;
 
 /**
  * Site controller
@@ -41,15 +42,16 @@ class GirlsController extends Controller
         $model = Profile::find()->with('image');
         return $this->render('index', compact('model'));
     }
-    public function actionGirl()
+    public function actionGirl($id)
     {
-        return $this->render('girl');
+        $model = Profile::find()->where(['id' => $id])->with('photo')->one();
+        return $this->render('girl', compact('model'));
     }
     public function actionFilters()
     {
         $model = Profile::find()->joinWith(['value' => function(yii\db\ActiveQuery $query){
             $query->andFilterWhere(['value' => $_GET['value']]);
-        }]);
+        }])->distinct();
 
         return $this->render('filters', compact('model'));
     }

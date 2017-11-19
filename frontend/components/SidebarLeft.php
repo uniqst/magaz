@@ -10,7 +10,9 @@ use yii\base\Widget;
 
 Class SidebarLeft extends Widget{
     public function run(){
-        $filters = Filters::find()->with('values.profiles')->all();
+        $filters = Filters::find()->with(['values' => function(ActiveQuery $query){
+            $query->groupBy('value');
+        }])->all();
         $model = Category::find()->where(['parent_id' => 0])->with('category')->all();
         return $this->render('sidebar-left', compact('filters','model'));
     }
