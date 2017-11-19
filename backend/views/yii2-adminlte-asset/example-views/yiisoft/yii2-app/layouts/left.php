@@ -19,6 +19,7 @@
                     ['label' => 'Application', 'icon' => 'dashboard', 'url' => ['/profile']],
                     ['label' => 'Stories', 'icon' => 'dashboard', 'url' => ['/stories']],
                     ['label' => 'Service', 'icon' => 'dashboard', 'url' => ['/service']],
+                    ['label' => 'Social Web', 'icon' => 'dashboard', 'url' => ['/social-web/update', 'id' => 1]],
                     ['label' => 'Reviews', 'icon' => 'dashboard', 'url' => ['/comments']],
                     ['label' => 'Profile', 'icon' => 'dashboard', 'url' => ['/user/update', 'id' => 1]],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
