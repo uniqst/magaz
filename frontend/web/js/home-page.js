@@ -46,6 +46,7 @@ $(document).ready(function () {
 
 
 
+  // Bottom slider widjet
   $('.bottom-items-slider > .slick-carousel')
     .slick(
     {
@@ -84,6 +85,8 @@ $(document).ready(function () {
       ]
     }
   );
+
+  // Slider on the main page
   $('.new-girls-slider > .slick-carousel').slick(
     {
       arrows: true,
@@ -101,13 +104,13 @@ $(document).ready(function () {
         //   }
         // },
         {
-          breakpoint: 840,
+          breakpoint: 640,
           settings: {
             slidesToShow: 2,
           }
         },
         {
-          breakpoint: 570,
+          breakpoint: 450,
           settings: {
             slidesToShow: 1,
           }

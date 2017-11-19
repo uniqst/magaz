@@ -37,6 +37,11 @@
     background-repeat: no-repeat;
     position: relative;
     margin-bottom: 130px;
+    &:hover {
+      .info-card .add-button {
+        opacity: 1;  
+      }
+    }
 
     .info-card {
       color: white;
@@ -47,10 +52,24 @@
 
       .wrapper {
         box-sizing: border-box;
-        width: 90%;
+        width: 86%;
         margin: 0 auto;
         background-color: #fa5788;
         padding: 15px 20px;
+        max-height: 180px;
+        min-height: 154px;
+        overflow: hidden;
+        position: relative;
+        &::after {
+            display: block;
+            height: 15px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: '';
+            background-color: #fa5788;
+        }
       }
 
       a {
@@ -65,10 +84,10 @@
   width: 100%;
   height: 200px;
   font-size: rem(12px);
-  &:hover .add-button {
-    display: inline-block;
-    opacity: 1;
-  }
+  // &:hover .add-button {
+  //   display: inline-block;
+  //   opacity: 1;
+  // }
   &__name {
     text-align: center;
     a {
@@ -79,11 +98,10 @@
       .add-button {
         transition: .3s opacity;
         position: absolute;
-        opacity: 0;
         top: 0;
         right: 0;
-        display: none;
         transform: translate(140%, 1px);
+        opacity: 0;
       }
     }
   }

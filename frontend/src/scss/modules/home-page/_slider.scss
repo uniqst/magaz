@@ -6,6 +6,8 @@
   color: $font-color-main;
   background-color: #c2185b;
   padding: 15px;
+  max-width: 1090px;
+  @include mx();
 
   .slick-next,
   .slick-prev {
@@ -13,18 +15,19 @@
   }
   .slick-next,
   .slick-prev {
+    z-index: 10;
     width: 45px;
     height: 45px;
     background-color: #8c0032;
   }
   .slick-next {
-    right: -45px;
+    right: 0px;
     @include mq(xl) {
       right: -65px;
     }
   }
   .slick-prev {
-    left: -45px;
+    left: 0px;
     @include mq(xl) {
       left: -65px;
     }
@@ -47,7 +50,13 @@
 }
 
 .new-girls-slider {
-  padding: 30px 40px 50px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  @include px(0);
+
+  @include mq(md) {
+    @include px(40px);
+  }
 
   .girl-card {
     height: 340px;
