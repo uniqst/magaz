@@ -5,9 +5,39 @@ $browser-context: 12px; // Default
   margin: 0 !important;
 }
 
-@mixin px-0() {
-  padding-left: 0;
-  padding-right: 0;
+// @mixin px-0() {
+//   padding-left: 0;
+//   padding-right: 0;
+// }
+
+@mixin px($left: null, $right: null) {
+  @if $left and $right {
+    margin-left: $left;
+    margin-right: $right;
+  } @else if not $left and $right {
+    // do nothing
+  } @else if $left and not $right {
+    margin-left: $left;
+    margin-right: $left;
+  } @else {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@mixin mx($m-left: null, $m-right: null) {
+  @if $m-left and $m-right {
+    margin-left: $m-left;
+    margin-right: $m-right;
+  } @else if not $m-left and $m-right {
+    // do nothing
+  } @else if $m-left and not $m-right {
+    margin-left: $m-left;
+    margin-right: $m-left;
+  } @else {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @mixin mx-a() {
