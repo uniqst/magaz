@@ -43,6 +43,9 @@ a:hover {
   color: white;
   text-decoration: none; }
 
+img {
+  max-width: 100%; }
+
 .subheading-main,
 .heading-main,
 .page-name {
@@ -864,6 +867,24 @@ a:hover {
     .main-sidebar-right .item-box__info a {
       display: block;
       max-height: 90px; }
+
+.photo-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .photo-block__photo {
+    max-width: 70%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 70%;
+            flex: 0 0 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center; }
+  .photo-block__list {
+    width: 30%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%; }
 
 .body {
   position: relative !important; }

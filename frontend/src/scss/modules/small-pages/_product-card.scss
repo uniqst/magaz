@@ -1,0 +1,14 @@
+.photo-block {
+  display: flex;
+
+  &__photo {
+    max-width: 70%;
+    flex: 0 0 70%;
+    @include bg-img(null, cover, top center);
+  }
+
+  &__list {
+    width: 30%;
+    flex: 0 0 30%;
+  }
+}
