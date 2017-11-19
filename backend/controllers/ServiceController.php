@@ -3,8 +3,8 @@
 namespace backend\controllers;
 
 use Yii;
-use frontend\models\Stories;
-use backend\models\SearchStories;
+use frontend\models\Service;
+use backend\models\SearchService;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -12,9 +12,9 @@ use frontend\models\UploadForm;
 use yii\web\UploadedFile;
 
 /**
- * StoriesController implements the CRUD actions for Stories model.
+ * ServiceController implements the CRUD actions for Service model.
  */
-class StoriesController extends Controller
+class ServiceController extends Controller
 {
     /**
      * @inheritdoc
@@ -32,14 +32,14 @@ class StoriesController extends Controller
     }
 
     /**
-     * Lists all Stories models.
+     * Lists all Service models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new SearchStories();
+        $searchModel = new SearchService();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-        $this->layout = 'main';
+
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
@@ -47,7 +47,7 @@ class StoriesController extends Controller
     }
 
     /**
-     * Displays a single Stories model.
+     * Displays a single Service model.
      * @param integer $id
      * @return mixed
      */
@@ -59,18 +59,19 @@ class StoriesController extends Controller
     }
 
     /**
-     * Creates a new Stories model.
+     * Creates a new Service model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Stories();
-        if ($model->load(Yii::$app->request->post())) {
+        $model = new Service();
+
+         if ($model->load(Yii::$app->request->post())) {
               if (Yii::$app->request->isPost) {
                 $str = substr(md5(microtime() . rand(0, 9999)), 0, 20);
                 $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
-                $model->imageFile->saveAs('../../frontend/web/story/' . $str . '.' . $model->imageFile->extension);
+                $model->imageFile->saveAs('../../frontend/web/services/' . $str . '.' . $model->imageFile->extension);
                 $model->img = $str . '.' . $model->imageFile->extension;
         }
                 $model->save();
@@ -83,7 +84,7 @@ class StoriesController extends Controller
     }
 
     /**
-     * Updates an existing Stories model.
+     * Updates an existing Service model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -96,7 +97,7 @@ class StoriesController extends Controller
               if (Yii::$app->request->isPost) {
                 $str = substr(md5(microtime() . rand(0, 9999)), 0, 20);
                 $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
-                $model->imageFile->saveAs('../../frontend/web/story/' . $str . '.' . $model->imageFile->extension);
+                $model->imageFile->saveAs('../../frontend/web/service/' . $str . '.' . $model->imageFile->extension);
                 $model->img = $str . '.' . $model->imageFile->extension;
         }
                 $model->save();
@@ -109,7 +110,7 @@ class StoriesController extends Controller
     }
 
     /**
-     * Deletes an existing Stories model.
+     * Deletes an existing Service model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -122,15 +123,15 @@ class StoriesController extends Controller
     }
 
     /**
-     * Finds the Stories model based on its primary key value.
+     * Finds the Service model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Stories the loaded model
+     * @return Service the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Stories::findOne($id)) !== null) {
+        if (($model = Service::findOne($id)) !== null) {
             return $model;
         }
 
