@@ -1,5 +1,41 @@
+.product-card {
+  margin-bottom: 110px;
+  padding-bottom: 30px;
+  background-color: #c2185b;
+  .page-name {
+    padding: 25px 0;
+  }
+
+  .headline {
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #8c0032;
+    font-size: 16px;
+    text-align: center;
+    &.about {
+      margin-bottom: 0;
+    }
+  }
+
+  .description {
+    font-weight: 300;
+    background-color: #fa5788;
+    padding: 20px;
+  }
+
+  .categories,
+  .services {
+    padding: 16px 24px;
+    margin-bottom: 10px;
+    background-color: #fa5788;
+    a {
+      text-transform: uppercase;
+    }
+  }
+}
 .photo-block {
   display: flex;
+  margin-bottom: 28px;
 
   a {
     outline: none;

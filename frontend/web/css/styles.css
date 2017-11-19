@@ -868,10 +868,38 @@ img {
       display: block;
       max-height: 90px; }
 
+.product-card {
+  margin-bottom: 110px;
+  padding-bottom: 30px;
+  background-color: #c2185b; }
+  .product-card .page-name {
+    padding: 25px 0; }
+  .product-card .headline {
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #8c0032;
+    font-size: 16px;
+    text-align: center; }
+    .product-card .headline.about {
+      margin-bottom: 0; }
+  .product-card .description {
+    font-weight: 300;
+    background-color: #fa5788;
+    padding: 20px; }
+  .product-card .categories,
+  .product-card .services {
+    padding: 16px 24px;
+    margin-bottom: 10px;
+    background-color: #fa5788; }
+    .product-card .categories a,
+    .product-card .services a {
+      text-transform: uppercase; }
+
 .photo-block {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: 28px; }
   .photo-block a {
     outline: none; }
   .photo-block__photo {
