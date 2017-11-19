@@ -456,7 +456,8 @@ a:hover {
   text-transform: uppercase; }
 
 .girl-info__card {
-  margin-top: 45px; }
+  margin-top: 45px;
+  font-weight: 300; }
 
 .card__photo-section {
   padding-left: 0;
@@ -542,6 +543,7 @@ a:hover {
     font-size: 16px; }
   .article__text {
     font-size: 12px;
+    font-weight: 300;
     padding: 5px 10px 10px; }
 
 .main-info-box {
@@ -698,11 +700,16 @@ a:hover {
     font-weight: 500;
     border-bottom: 2px solid white; }
 
-.page-contacts .contacts-page__phone {
-  font-size: 24px; }
-  .page-contacts .contacts-page__phone p {
-    font-size: 18px;
-    text-transform: none; }
+.page-contacts {
+  background-color: #c2185b; }
+  .page-contacts .msg-block p {
+    font-weight: 300; }
+  .page-contacts .contacts-page__phone {
+    font-weight: 300;
+    font-size: 24px; }
+    .page-contacts .contacts-page__phone p {
+      font-size: 18px;
+      text-transform: none; }
 
 .stories-page {
   margin-bottom: 90px; }
@@ -911,6 +918,9 @@ a:hover {
   color: white;
   font-size: 16px;
   cursor: pointer; }
+  @media only screen and (min-width: 1200px) {
+    .main-sidebar-close {
+      display: none; } }
 
 .main-sidebar-menu-js {
   display: none;
@@ -1347,9 +1357,7 @@ a:hover {
 .infobox-main {
   background-color: #c2185b; }
 
-/*# sourceMappingURL=styles.css.map */
-
-.pagination li a, .pagination li span{
+.pagination li a, .pagination li span {
   display: inline-block;
   padding: 6px 12px;
   font-size: 14px;
@@ -1368,8 +1376,9 @@ a:hover {
   background-image: none;
   border: 1px solid #8c0032;
   border-radius: 4px;
-  margin: 5px;
-}
-.pagination li.active a{
-    background-color: #8c0032;
-}
+  margin: 5px; }
+
+.pagination li.active a {
+  background-color: #8c0032; }
+
+/*# sourceMappingURL=styles.css.map */
