@@ -51,6 +51,10 @@
   color: white;
   font-size: 16px;
   cursor: pointer;
+
+  @include mq(xl) {
+    display: none;
+  };
 }
 
 .main-sidebar-menu-js {

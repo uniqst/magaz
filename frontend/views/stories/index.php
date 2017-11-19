@@ -32,7 +32,7 @@ use yii\helpers\Url;
       </div>
   </div>
 
-  <?= $this->render('../sidebar-left')?>
+<?= \frontend\components\SidebarLeft::widget();?>
   
   <div class="col-lg-6">
     <div class="posts-container">
@@ -60,8 +60,8 @@ use yii\helpers\Url;
     </div>
   </div>
   <div class="d-none d-lg-block col-lg-3">
-    <?= $this->render('../sidebar-right')?>
+    <?= \frontend\components\SidebarRight::widget();?>
   </div>
 </div>
 
-<?= $this->render('../bottom-slider')?>
+<?= \frontend\components\BottomSlider::widget();?>

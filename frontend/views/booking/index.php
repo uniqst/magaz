@@ -38,4 +38,4 @@
   </div>
 </div>
 
-<?= $this->render('../main-section')?>
+<?= \frontend\components\MainSection::widget();?>

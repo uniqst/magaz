@@ -10,10 +10,7 @@
 
 <div class="row">
 
-
-
- 
-
+  <?= \frontend\components\SidebarLeft::widget();?>
 
   <div class="main-center-col col-xl-6">
     <div class="girl-info">
@@ -232,9 +229,8 @@
     
   </div>
 
-
-  <div class="d-none d-xl-block col-xl-3">
-   
+  <div class="d-none d-lg-block col-lg-3">
+    <?= \frontend\components\SidebarRight::widget();?>
   </div>
 
 </div>

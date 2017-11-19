@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="booking-page offset-xl-2 col-xl-8">
+  <div class="booking-page offset-xl-3 col-xl-6">
     <div class="top-form">
       <h2 class="page-name">REVIEWS</h1>
       <p class="text">
@@ -21,4 +21,4 @@
   </div>
 </div>
 
-<?= $this->render('../main-section')?>
+<?= \frontend\components\MainSection::widget();?>

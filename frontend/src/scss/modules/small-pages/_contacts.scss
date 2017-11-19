@@ -1,5 +1,13 @@
 .page-contacts {
+  background-color: #c2185b;
+
+  .msg-block {
+    p {
+      font-weight: 300;
+    }
+  }
   .contacts-page__phone {
+    font-weight: 300;
     p {
       font-size: 18px;
       text-transform: none;
