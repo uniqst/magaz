@@ -6,7 +6,7 @@ use yii\helpers\Url;
   <div class="col-12">
     <div class="row">
       <div class="offset-lg-3 col-lg-6">
-        <h1 class="page-name">Erotic Stories</h1>
+        <h1 class="page-name stories">Erotic Stories</h1>
       </div>
     </div>
   </div>
@@ -30,9 +30,7 @@ use yii\helpers\Url;
       </div>
     </div>
   </div>
-  <div class="d-none d-lg-block col-lg-3">
-    sidebar left
-  </div>
+  <?= \frontend\components\SidebarLeft::widget();?>
   <div class="col-lg-6">
     <div class="story-long">
       <div class="story__image">
@@ -44,8 +42,8 @@ use yii\helpers\Url;
     </div>
   </div>
   <div class="d-none d-lg-block col-lg-3">
-    <?= $this->render('../sidebar-right')?>
+    <?= \frontend\components\SidebarRight::widget();?>
   </div>
 </div>
 
-<?= $this->render('../bottom-slider')?>
+<?= \frontend\components\BottomSlider::widget();?>

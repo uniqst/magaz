@@ -87,16 +87,18 @@ a:hover {
     display: -ms-flexbox !important;
     display: flex !important; } }
 
+.max-width-main {
+  max-width: 1090px;
+  margin-left: auto;
+  margin-right: auto; }
+
 .main-page-upper-box {
   margin-bottom: 60px; }
 
 .main-slider-container {
   color: #ffffff;
   background-color: #c2185b;
-  padding: 15px;
-  max-width: 1090px;
-  margin-left: auto;
-  margin-right: auto; }
+  padding: 15px; }
   .main-slider-container .slick-next,
   .main-slider-container .slick-prev {
     z-index: 10;
@@ -745,10 +747,6 @@ a:hover {
     float: left; }
     .posts-container .image img {
       max-width: 100%; }
-
-.story-page .page-name {
-  color: black;
-  margin-bottom: 30px; }
 
 .story-page .main-heading {
   margin-bottom: 10px; }
