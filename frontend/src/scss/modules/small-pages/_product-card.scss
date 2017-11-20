@@ -1,10 +1,41 @@
 .product-card {
+  position: relative;
   font-weight: 300;
   margin-bottom: 110px;
   padding-bottom: 30px;
   background-color: #c2185b;
+
+  .prev,
+  .next {
+    position: absolute;
+    top: 0;
+    right: 0;
+    button {
+      text-align: center;
+      border: none;
+      background: #dfb8c6;
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      cursor: pointer;
+      &:before {
+        content: '\f105';
+        font-size: 60px;
+        font-weight: 700;
+        font-family: 'FontAwesome';
+        color: #8c0032;
+      }
+    }
+  }
+  .prev {
+    right: 81px;
+    button:before {
+        content: '\f104';
+    }
+  }
+
   .page-name {
-    padding: 25px 0;
+    padding: 25px 0 50px;
   }
 
   .headline {
@@ -45,6 +76,7 @@
 }
 
 .price-block {
+  position: relative;
   &__tabs {
     .currency {
       display: flex;
@@ -125,6 +157,20 @@
 .photo-block {
   display: flex;
   margin-bottom: 28px;
+
+  .order-button {
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    font-size: 16px;
+    padding: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(#991317, .9);
+    border-radius: 4px;
+    box-shadow: 0 0 4px rbga(0, 0, 0, .5);
+  }
 
   a {
     outline: none;

@@ -5,27 +5,24 @@
 
     <div class="col-12">
         <h1 class="page-name">girl_name</h1>
-        <a href="#" class="order">
-          Order now
-        </a>
     </div>
 
-    <div class="col-12 next-prev-nav">
-      <div class="prev">
-        <button>
-          prev
-        </button>
-      </div>
-      <div class="next">
-        <button>
-          next
-        </button>
-      </div>
+    <div class="prev">
+      <a href="#prev-girl">
+        <button></button>
+      </a>
+    </div>
+    <div class="next">
+      <a href="#next-girl">
+        <button></button>
+      </a>
     </div>
 
     <div class="col-sm-7">
       <div class="photo-block">
-
+        <a href="#" class="order-button">
+          Order now
+        </a>
         <a class="photo-block__photo" href="http://placehold.it/700x900?text=Image 1" style="background-image: url('http://placehold.it/700x900?text=Image 1')">
         </a>
         <div class="photo-block__list flex-column">
