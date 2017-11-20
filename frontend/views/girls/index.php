@@ -31,7 +31,6 @@
   <?= \frontend\components\SidebarLeft::widget();?>
 
   <div class="col-xl-6">
-    <?= $this->render('../one-girl')?>
         <?=\frontend\components\ProductList::widget(['model' => $model])?>
   </div>
   <div class="d-none d-xl-block col-xl-3">
