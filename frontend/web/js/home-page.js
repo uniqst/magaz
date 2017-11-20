@@ -120,8 +120,6 @@ $(document).ready(function () {
     }
   );
 
-  console.log($('.photo-block__list'))
-
   $('.photo-block').magnificPopup({
     delegate: 'a',
     type: 'image',
@@ -130,6 +128,15 @@ $(document).ready(function () {
       navigateByImgClick: true,
       preload: [0,1] // Will preload 0 - before current, and 1 after the current image
     }
+  });
+
+  $('.price-block__tabs > .currency > a').click(function (e) {
+    e.preventDefault();
+
+    $('.price-block__tabs > .currency > a').removeClass('active');
+    $(this).addClass('active');
+    $('.price-block__prices .price-list').removeClass('active');
+    $('.price-block__prices').find('#' + $(this).attr('data-type')).addClass('active');
   });
 
 });

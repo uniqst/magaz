@@ -44,7 +44,58 @@
         </div>
       </div>
       <h3 class="headline">Price</h3>
-      Girl info and photo
+      <div class="price-block">
+        <div class="price-block__tabs">
+          <div class="currency">
+            <a href="#" class="active text-left" data-type="eur">eur</a>
+            <a href="#" class="text-center" data-type="try">try</a>
+            <a href="#" class="text-right" data-type="usd">usd</a>
+          </div>
+          <div class="titles">
+            <div class="text-left">Duration</div>
+            <div class="text-center">Incall</div>
+            <div class="text-right">Outcall</div>
+          </div>
+        </div>
+        <div class="price-block__prices">
+          <ul class="eur active price-list" id="eur">
+            <li class="price-item">
+              <span class="duration">1 hour</span>
+              <span class="incall"></span>
+              <span class="outcall">250</span>
+            </li>
+            <li class="price-item">
+              <span class="duration">2 hour</span>
+              <span class="incall"></span>
+              <span class="outcall">350</span>
+            </li>
+          </ul>
+          <ul class="try price-list" id="try">
+            <li class="price-item">
+              <span class="duration">1 hour</span>
+              <span class="incall"></span>
+              <span class="outcall">2350</span>
+            </li>
+            <li class="price-item">
+              <span class="duration">2 hour</span>
+              <span class="incall"></span>
+              <span class="outcall">3350</span>
+            </li>
+          </ul>
+          <ul class="usd price-list" id="usd">
+            <li class="price-item">
+              <span class="duration">1 hour</span>
+              <span class="incall"></span>
+              <span class="outcall">450</span>
+            </li>
+            <li class="price-item">
+              <span class="duration">2 hour</span>
+              <span class="incall"></span>
+              <span class="outcall">550</span>
+            </li>
+          </ul>
+        </div>  
+      </div>
     </div>
 
     <div class="col-sm-5">
@@ -96,7 +147,7 @@
           </li>
         </ul>
       </div>
-      <h3 class="headline">Categories and Services</h3>
+      <h3 class="headline">Categories &amp; Services</h3>
       <div class="categories">
         <a href="#">female escort</a>,
         <a href="#">russian escort</a>,
