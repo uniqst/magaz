@@ -84,12 +84,12 @@ AppAsset::register($this);
             </ul>
             <div class="main-header__multiling">
                 <div class="lang-wrapper">
-                    <a href="#en">
+                    <a href="<?=Url::to(['/', 'lang' => '']);?>">
                         <button class="lang active" id="lang-en" data-lant="en">En</button>
                     </a>
                 </div>
                 <div class="lang-wrapper">
-                    <a href="#tr">
+                    <a href="<?=Url::to(['/', 'lang' => 'tr']);?>">
                         <button class="lang" id="lang-tr" data-lant="en">Tr</button>
                     </a>
                 </div>
