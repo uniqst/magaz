@@ -117,23 +117,26 @@ $(document).ready(function () {
         }
       ]
       // slidesToScroll: 3
-
     }
-    // {
-    //   loop: true,
-    //   margin: 20,
-    //   nav: true,
-    //   responsive:{
-    //     0:{
-    //         items:2
-    //     },
-    //     600:{
-    //         items:3
-    //     },
-    //     1200:{
-    //         items:4
-    //     }
-    //   }
-    // }
   );
+
+  $('.photo-block').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    gallery: {
+    enabled: true,
+      navigateByImgClick: true,
+      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+    }
+  });
+
+  $('.price-block__tabs > .currency > a').click(function (e) {
+    e.preventDefault();
+
+    $('.price-block__tabs > .currency > a').removeClass('active');
+    $(this).addClass('active');
+    $('.price-block__prices .price-list').removeClass('active');
+    $('.price-block__prices').find('#' + $(this).attr('data-type')).addClass('active');
+  });
+
 });
