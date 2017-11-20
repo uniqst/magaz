@@ -14,7 +14,7 @@ $this->title = Yii::t('app', 'My Yii Application');
                         <?php foreach($model as $image):?>
                         <div class="slider-item">
                             <div class="girl-card" style="background-image: url(/photo/<?= $image->image->src?>)">
-                                <a class="girl-card__name" href="<?=Url::to(['/girls/girl', 'id' => $image->id, 'name' => $image->name])?>"><?= $image->name?></a>
+                                <a class="girl-card__name" href="<?=Url::to(['/girls/girl', 'id' => $image->id, 'name' => $image->name])?>"><?=Yii::t('app', $image->name)?></a>
                             </div>
                         </div>
                         <?php endforeach;?>
