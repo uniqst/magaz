@@ -29,7 +29,9 @@ AppAsset::register($this);
 
     <nav class="navbar navbar-expand-lg main-header">
 
-        <a class="navbar-brand main-header__logo" href="#">
+
+
+        <a class="navbar-brand main-header__logo" href="/">
             <div class="logo-image">
                 <!-- <div class="logo-image__lips">
                 </div> -->
@@ -80,6 +82,18 @@ AppAsset::register($this);
                     <a class="nav-link" href="<?=Url::to(['/contacts'])?>"><?=Yii::t('app', 'contacts');?></a>
                 </li>
             </ul>
+            <div class="main-header__multiling">
+                <div class="lang-wrapper">
+                    <a href="#en">
+                        <button class="lang active" id="lang-en" data-lant="en">En</button>
+                    </a>
+                </div>
+                <div class="lang-wrapper">
+                    <a href="#tr">
+                        <button class="lang" id="lang-tr" data-lant="en">Tr</button>
+                    </a>
+                </div>
+            </div>
         </div>
         <div class="main-header__contacts d-none d-xl-block">
 

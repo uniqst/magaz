@@ -37,7 +37,6 @@
         background-color: #deb3c3;
         background-color: white;
         transition: 0.3s all;
-        
 
         @include mq(md) {
             background-color: #deb3c3;
@@ -57,6 +56,7 @@
             }
         }
     }
+
     .fa::before {
         color: #971443;
         font-size: 14px;
@@ -69,6 +69,8 @@
 .main-header {
     min-height: 57px;
     background-color: #c2185b;
+    position: relative;
+
     @include mq(md) {
         // to move burger-icon navigation button to left,
         // when logo will be removed from flow with
@@ -86,10 +88,14 @@
             left: 50%;
             top: 6px;
             transform: translate(-50%, 0);
+            margin-right: 30px;
         }
         @include mq(lg) {
             position: static;
-            transform: translate(0, 0);
+            transform: translate(45px, 0);
+        }
+        @include mq(xl) {
+            // margin-right: 0;
         }
         .logo-image {
             // position: relative;
@@ -228,6 +234,66 @@
             position: fixed;
             top: 50px;
             right: 10px;
+        }
+    }
+    &__multiling {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+
+        @include mq(md) {
+            // align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 0;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+
+            text-transform: uppercase;
+        }
+
+        .lang-wrapper {
+            flex-grow: 1;
+            display: flex;
+            align-items: stretch;
+
+            a {
+                display: flex;
+                flex-grow: 1;
+                align-items: stretch;
+            }
+
+            button {
+                display: block;
+                width: 100%;
+                padding: 4px 12px;
+                cursor: pointer;
+
+                border: none;
+                background: none;
+                outline: none;
+
+                color: white;
+                transition: .3s background-color;
+
+                @include mq(md) {
+                    background-color: #a73b61;
+                }
+
+                @include mq(md) {
+
+                }
+
+                &.active,
+                &:hover {
+                    background-color: #cf94a9;
+                    text-decoration: underline;
+                }
+            }
         }
     }
 
