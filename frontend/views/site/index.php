@@ -2,13 +2,13 @@
 
 /* @var $this yii\web\View */
 use yii\helpers\Url;
-$this->title = 'My Yii Application';
+$this->title = Yii::t('app', 'My Yii Application');
 ?>
 
     <div class="row main-page-upper-box">
         <div class="offset-xl-2 col-xl-8">
             <div class="main-slider-container">
-                <h3 class="subheading-main">New Girls</h3>
+                <h3 class="subheading-main"><?=Yii::t('app', 'New Girls');?></h3>
                 <div class="new-girls-slider">
                     <div class="slick-carousel">
                         <?php foreach($model as $image):?>
@@ -26,15 +26,15 @@ $this->title = 'My Yii Application';
     <!-- <div class="row"> -->
         <div class="offset-xl-2 col-xl-8 ">
             <div class="last-response">
-                <h3 class="subheading-main">Customer response</h3>
+                <h3 class="subheading-main"><?=Yii::t('app', 'Customer response');?></h3>
                 <div class="iconblock">
                     <a href="#" class="pencil"></a>
                     <a href="#" class="msgbox"></a>
                 </div>
                 <blockquote class="response">
-                    <p class="response__quote">Vis primis omnium hendrerit no, ei sumo clita salutatus est. Cu nisl falli ocurreret pri, ne duo aeque accusam salutandi. Vim ex commune definitiones, duo vero audiam alterum cu, has id graeci viderer malorum. Sed epicuri maluisset omittantur in, ornatus fierent dolores mel an. Integre platonem posidonium an his, in duo dicta labores facilisi, ceteros intellegebat vis te.</p>
+                    <p class="response__quote"><?=Yii::t('app', 'Vis primis omnium hendrerit no, ei sumo clita salutatus est. Cu nisl falli ocurreret pri, ne duo aeque accusam salutandi. Vim ex commune definitiones, duo vero audiam alterum cu, has id graeci viderer malorum. Sed epicuri maluisset omittantur in, ornatus fierent dolores mel an. Integre platonem posidonium an his, in duo dicta labores facilisi, ceteros intellegebat vis te.');?></p>
                     <div class="response__author">
-                        <cite>Mr. Customuer</cite>
+                        <cite><?=Yii::t('app', 'Mr. Customuer');?></cite>
                     </div>
                 </blockquote>
             </div>
@@ -42,18 +42,18 @@ $this->title = 'My Yii Application';
     </div>
     <div class="row dir-tree-links">
         <div class="offset-xl-3 col-xl-6">
-            <a href="#">Home</a>
+            <a href="#"><?=Yii::t('app', 'Home');?></a>
             <span> > </span>
-            <a href="#">Catalog</a>
+            <a href="#"><?=Yii::t('app', 'Catalog');?></a>
             <span> > </span>
-            <a href="#">English</a>
+            <a href="#"><?=Yii::t('app', 'English');?></a>
         </div>
     </div>
     
     <div class="row">
         <div class="col-12 offset-lg-3 col-lg-6">
             <h1 class="heading-main">
-                Bursa platinum girls. High class escorts. Pleasure without limits
+                <?=Yii::t('app', 'Bursa platinum girls. High class escorts. Pleasure without limits');?>
             </h1>
         </div>
     </div>
@@ -104,7 +104,7 @@ $this->title = 'My Yii Application';
         <div class="offset-xl-3 col-xl-6">
             <div class="embded-response-box embded-response-box--mb">
                 <div class="page-name">
-                    Customer reviews
+                    <?=Yii::t('app', 'Customer reviews');?>
                 </div>
                 <div class="iconblock">
                     <a href="#" class="pencil"></a>
@@ -113,17 +113,17 @@ $this->title = 'My Yii Application';
                 <div class="resoponse-list">
 
                     <blockquote class="response">
-                        <p class="response__quote">Vis primis omnium hendrerit no, ei sumo clita salutatus est. Cu nisl falli ocurreret pri, ne duo aeque accusam salutandi. Vim ex commune definitiones, duo vero audiam alterum cu, has id graeci viderer malorum. Sed epicuri maluisset omittantur in, ornatus fierent dolores mel an. Integre platonem posidonium an his, in duo dicta labores facilisi, ceteros intellegebat vis te.</p>
+                        <p class="response__quote"><?=Yii::t('app', 'Vis primis omnium hendrerit no, ei sumo clita salutatus est. Cu nisl falli ocurreret pri, ne duo aeque accusam salutandi. Vim ex commune definitiones, duo vero audiam alterum cu, has id graeci viderer malorum. Sed epicuri maluisset omittantur in, ornatus fierent dolores mel an. Integre platonem posidonium an his, in duo dicta labores facilisi, ceteros intellegebat vis te.');?></p>
                         <div class="response__author">
-                            <cite>Mr. Customuer</cite>
+                            <cite><?=Yii::t('app', 'Mr. Customuer');?></cite>
                             |
                             <time>10.04.17 14:11</time>
                         </div>
                     </blockquote>
                     <blockquote class="response">
-                        <p class="response__quote">Vis primis omnium hendrerit no, ei sumo clita salutatus est. Cu nisl falli ocurreret pri, ne duo aeque accusam salutandi. Vim ex commune definitiones, duo vero audiam alterum cu, has id graeci viderer malorum. Sed epicuri maluisset omittantur in, ornatus fierent dolores mel an. Integre platonem posidonium an his, in duo dicta labores facilisi, ceteros intellegebat vis te.</p>
+                        <p class="response__quote"><?=Yii::t('app', 'Vis primis omnium hendrerit no, ei sumo clita salutatus est. Cu nisl falli ocurreret pri, ne duo aeque accusam salutandi. Vim ex commune definitiones, duo vero audiam alterum cu, has id graeci viderer malorum. Sed epicuri maluisset omittantur in, ornatus fierent dolores mel an. Integre platonem posidonium an his, in duo dicta labores facilisi, ceteros intellegebat vis te.');?></p>
                         <div class="response__author">
-                            <cite>Mr. Customuer</cite>
+                            <cite><?=Yii::t('app', 'Mr. Customuer');?></cite>
                             |
                             <time>10.04.17 14:11</time>
                         </div>
@@ -136,32 +136,32 @@ $this->title = 'My Yii Application';
             <div class="mp-text-block">
                 <div class="mp-text-block__text">
                     <p>
-                        Her kiz bir bakig ile adami nasil buyulemeyi biliyor: sadece mukemmel kizin gozune bakin ve bu randevu ile sizi baglaycak ozel manyetizmayi hissedeceksiniz. Hizmetlerimizi sizin igin mumkun oldugunca rahat yapmaya galigtik, sadece katologumuzu bakin, kizi segin, biz de kalan her gey ile ilgilenegiz. inanin - bu randevu hafizamzda en heyecanli macera gibi kalacak.
+                        <?=Yii::t('app', 'Her kiz bir bakig ile adami nasil buyulemeyi biliyor: sadece mukemmel kizin gozune bakin ve bu randevu ile sizi baglaycak ozel manyetizmayi hissedeceksiniz. Hizmetlerimizi sizin igin mumkun oldugunca rahat yapmaya galigtik, sadece katologumuzu bakin, kizi segin, biz de kalan her gey ile ilgilenegiz. inanin - bu randevu hafizamzda en heyecanli macera gibi kalacak.');?>
                     </p>
                     <p>
-                        §ehrimizi ig ya da zevk igin ziyaret edersiniz olsun, her halde biz er guzel kizlarla en iyi randevulari size teklif etmekter memnun olacagiz. igleri dijgunmeden zor ig gijnunden dinleyebirsiniz. Kiz ile ortak dil bulmak igin gok zaman harcamamz gerek yok, о kendisi her gey yapip randevunuzu unutulmaz yapacak. Randevu igin ideal bir kizi segin ve biz eminiz ki bize yineden donecksiniz.
-                    </p>
-                </div>
-                <h3 class="mp-text-block__heading">
-                    Eskort bursa kizlari bunlari siz sipari? ettikten sonra sizin igin her geyi yapacaklar
-                </h3>
-                <div class="mp-text-block__text">
-                    <p>
-                        Her kiz bir bakig ile adami nasil buyulemeyi biliyor: sadece mukemmel kizin gozune bakin ve bu randevu ile sizi baglaycak ozel manyetizmayi hissedeceksiniz. Hizmetlerimizi sizin igin mumkun oldugunca rahat yapmaya galigtik, sadece katologumuzu bakin, kizi segin, biz de kalan her gey ile ilgilenegiz. inanin - bu randevu hafizamzda en heyecanli macera gibi kalacak.
-                    </p>
-                    <p>
-                        §ehrimizi ig ya da zevk igin ziyaret edersiniz olsun, her halde biz er guzel kizlarla en iyi randevulari size teklif etmekter memnun olacagiz. igleri dijgunmeden zor ig gijnunden dinleyebirsiniz. Kiz ile ortak dil bulmak igin gok zaman harcamamz gerek yok, о kendisi her gey yapip randevunuzu unutulmaz yapacak. Randevu igin ideal bir kizi segin ve biz eminiz ki bize yineden donecksiniz.
+                        <?=Yii::t('app', '§ehrimizi ig ya da zevk igin ziyaret edersiniz olsun, her halde biz er guzel kizlarla en iyi randevulari size teklif etmekter memnun olacagiz. igleri dijgunmeden zor ig gijnunden dinleyebirsiniz. Kiz ile ortak dil bulmak igin gok zaman harcamamz gerek yok, о kendisi her gey yapip randevunuzu unutulmaz yapacak. Randevu igin ideal bir kizi segin ve biz eminiz ki bize yineden donecksiniz.');?>
                     </p>
                 </div>
                 <h3 class="mp-text-block__heading">
-                    Eskort bursa kizlari bunlari siz sipari? ettikten sonra sizin igin her geyi yapacaklar
+                    <?=Yii::t('app', 'Eskort bursa kizlari bunlari siz sipari? ettikten sonra sizin igin her geyi yapacaklar');?>
                 </h3>
                 <div class="mp-text-block__text">
                     <p>
-                        Her kiz bir bakig ile adami nasil buyulemeyi biliyor: sadece mukemmel kizin gozune bakin ve bu randevu ile sizi baglaycak ozel manyetizmayi hissedeceksiniz. Hizmetlerimizi sizin igin mumkun oldugunca rahat yapmaya galigtik, sadece katologumuzu bakin, kizi segin, biz de kalan her gey ile ilgilenegiz. inanin - bu randevu hafizamzda en heyecanli macera gibi kalacak.
+                        <?=Yii::t('app', 'Her kiz bir bakig ile adami nasil buyulemeyi biliyor: sadece mukemmel kizin gozune bakin ve bu randevu ile sizi baglaycak ozel manyetizmayi hissedeceksiniz. Hizmetlerimizi sizin igin mumkun oldugunca rahat yapmaya galigtik, sadece katologumuzu bakin, kizi segin, biz de kalan her gey ile ilgilenegiz. inanin - bu randevu hafizamzda en heyecanli macera gibi kalacak.');?>
                     </p>
                     <p>
-                        §ehrimizi ig ya da zevk igin ziyaret edersiniz olsun, her halde biz er guzel kizlarla en iyi randevulari size teklif etmekter memnun olacagiz. igleri dijgunmeden zor ig gijnunden dinleyebirsiniz. Kiz ile ortak dil bulmak igin gok zaman harcamamz gerek yok, о kendisi her gey yapip randevunuzu unutulmaz yapacak. Randevu igin ideal bir kizi segin ve biz eminiz ki bize yineden donecksiniz.
+                        <?=Yii::t('app', '§ehrimizi ig ya da zevk igin ziyaret edersiniz olsun, her halde biz er guzel kizlarla en iyi randevulari size teklif etmekter memnun olacagiz. igleri dijgunmeden zor ig gijnunden dinleyebirsiniz. Kiz ile ortak dil bulmak igin gok zaman harcamamz gerek yok, о kendisi her gey yapip randevunuzu unutulmaz yapacak. Randevu igin ideal bir kizi segin ve biz eminiz ki bize yineden donecksiniz.');?>
+                    </p>
+                </div>
+                <h3 class="mp-text-block__heading">
+                    <?=Yii::t('app', 'Eskort bursa kizlari bunlari siz sipari? ettikten sonra sizin igin her geyi yapacaklar');?>
+                </h3>
+                <div class="mp-text-block__text">
+                    <p>
+                        <?=Yii::t('app', 'Her kiz bir bakig ile adami nasil buyulemeyi biliyor: sadece mukemmel kizin gozune bakin ve bu randevu ile sizi baglaycak ozel manyetizmayi hissedeceksiniz. Hizmetlerimizi sizin igin mumkun oldugunca rahat yapmaya galigtik, sadece katologumuzu bakin, kizi segin, biz de kalan her gey ile ilgilenegiz. inanin - bu randevu hafizamzda en heyecanli macera gibi kalacak.');?>
+                    </p>
+                    <p>
+                        <?=Yii::t('app', '§ehrimizi ig ya da zevk igin ziyaret edersiniz olsun, her halde biz er guzel kizlarla en iyi randevulari size teklif etmekter memnun olacagiz. igleri dijgunmeden zor ig gijnunden dinleyebirsiniz. Kiz ile ortak dil bulmak igin gok zaman harcamamz gerek yok, о kendisi her gey yapip randevunuzu unutulmaz yapacak. Randevu igin ideal bir kizi segin ve biz eminiz ki bize yineden donecksiniz.');?>
                     </p>
                 </div>
             </div>

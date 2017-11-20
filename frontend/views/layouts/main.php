@@ -53,31 +53,31 @@ AppAsset::register($this);
         <div class="collapse navbar-collapse main-header__nav" id="navbarSupportedContent">
             <ul class="navbar-nav navbar-main justify-content-center">
                 <li class="nav-item <?=Yii::$app->controller->id == 'site' ? 'active' : ''?>">
-                    <a class="nav-link" href="/"><?=Yii::t('app','home');?></a>
+                    <a class="nav-link" href="/"><?=Yii::t('app', 'home');?></a>
                 </li>
                 <li class="nav-item <?=Yii::$app->controller->id == 'girls' ? 'active' : ''?>">
-                    <a class="nav-link" href="<?=Url::to(['/girls'])?>">all girls</a>
+                    <a class="nav-link" href="<?=Url::to(['/girls'])?>"><?=Yii::t('app', 'all girls');?></a>
                 </li>
                 <li class="nav-item <?=Yii::$app->controller->id == 'how-make-order' ? 'active' : ''?>">
-                    <a class="nav-link" href="<?=Url::to(['/how-make-order'])?>">how to make an order</a>
+                    <a class="nav-link" href="<?=Url::to(['/how-make-order'])?>"><?=Yii::t('app', 'how to make an order');?></a>
                 </li>
                 <li class="nav-item <?=Yii::$app->controller->id == 'services' ? 'active' : ''?>">
-                    <a class="nav-link" href="<?=Url::to(['/services'])?>">servises</a>
+                    <a class="nav-link" href="<?=Url::to(['/services'])?>"><?=Yii::t('app', 'servises');?></a>
                 </li>
                 <li class="nav-item <?=Yii::$app->controller->id == 'booking' ? 'active' : ''?>">
-                    <a class="nav-link" href="<?=Url::to(['/booking'])?>">booking</a>
+                    <a class="nav-link" href="<?=Url::to(['/booking'])?>"><?=Yii::t('app', 'booking');?></a>
                 </li>
                 <li class="nav-item <?=Yii::$app->controller->id == 'stories' ? 'active' : ''?>">
-                    <a class="nav-link" href="<?=Url::to(['/stories'])?>">erotic stories</a>
+                    <a class="nav-link" href="<?=Url::to(['/stories'])?>"><?=Yii::t('app', 'erotic stories');?></a>
                 </li>
                 <li class="nav-item <?=Yii::$app->controller->id == 'casting' ? 'active' : ''?>">
-                    <a class="nav-link" href="<?=Url::to(['/casting'])?>">casting</a>
+                    <a class="nav-link" href="<?=Url::to(['/casting'])?>"><?=Yii::t('app', 'casting');?></a>
                 </li>
                 <li class="nav-item <?=Yii::$app->controller->id == 'reviews-for-escrort' ? 'active' : ''?>">
-                    <a class="nav-link" href="<?=Url::to(['/reviews-for-escort'])?>">riveiws</a>
+                    <a class="nav-link" href="<?=Url::to(['/reviews-for-escort'])?>"><?=Yii::t('app', 'riveiws');?></a>
                 </li>
                 <li class="nav-item <?=Yii::$app->controller->id == 'contacts' ? 'active' : ''?>">
-                    <a class="nav-link" href="<?=Url::to(['/contacts'])?>">contacts</a>
+                    <a class="nav-link" href="<?=Url::to(['/contacts'])?>"><?=Yii::t('app', 'contacts');?></a>
                 </li>
             </ul>
         </div>
@@ -91,22 +91,22 @@ AppAsset::register($this);
             <ul class="phone-links">
                 <li class="nav-item">
                     <a href="#">
-                        call
+                        <?=Yii::t('app', 'call');?>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#">
-                        sms
+                        <?=Yii::t('app', 'sms');?>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a  href="#">
-                        viber
+                        <?=Yii::t('app', 'viber');?>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a  href="#">
-                        whatsupp
+                        <?=Yii::t('app', 'whatsupp');?>
                     </a>
                 </li>
             </ul>
@@ -128,22 +128,22 @@ AppAsset::register($this);
             <ul class="phone-links">
                 <li class="nav-item">
                     <a href="#">
-                        call
+                        <?=Yii::t('app', 'call');?>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#">
-                        sms
+                        <?=Yii::t('app', 'sms');?>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a  href="#">
-                        viber
+                        <?=Yii::t('app', 'viber');?>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a  href="#">
-                        whatsupp
+                        <?=Yii::t('app', 'whatsupp');?>
                     </a>
                 </li>
             </ul>
@@ -192,58 +192,58 @@ AppAsset::register($this);
             <div class="main-footer-wrapper">
     <div class="main-footer__brand-name">
         <p>
-            All Ankara Escort
+            <?=Yii::t('app', 'All Ankara Escort');?>
         </p>
     </div>
     <ul class="main-footer__nav nav justify-content-center navbar-main">
 
         <li class="nav-item active">
-            <a class="nav-link" href="/">home</a>
+            <a class="nav-link" href="/"><?=Yii::t('app', 'home');?></a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="<?=Url::to(['/girls'])?>">all girls</a>
+            <a class="nav-link" href="<?=Url::to(['/girls'])?>"><?=Yii::t('app', 'all girls');?></a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="<?=Url::to(['/how-make-order'])?>">how to make an order</a>
+            <a class="nav-link" href="<?=Url::to(['/how-make-order'])?>"><?=Yii::t('app', 'how to make an order');?></a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="<?=Url::to(['/services'])?>">servises</a>
+            <a class="nav-link" href="<?=Url::to(['/services'])?>"><?=Yii::t('app', 'servises');?></a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="<?=Url::to(['/booking'])?>">booking</a>
+            <a class="nav-link" href="<?=Url::to(['/booking'])?>"><?=Yii::t('app', 'booking');?></a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="<?=Url::to(['/stories'])?>">erotic stories</a>
+            <a class="nav-link" href="<?=Url::to(['/stories'])?>"><?=Yii::t('app', 'erotic stories');?></a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="<?=Url::to(['/casting'])?>">casting</a>
+            <a class="nav-link" href="<?=Url::to(['/casting'])?>"><?=Yii::t('app', 'casting');?></a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="<?=Url::to(['/reviews-for-escort'])?>">riveiws</a>
+            <a class="nav-link" href="<?=Url::to(['/reviews-for-escort'])?>"><?=Yii::t('app', 'riveiws');?></a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="<?=Url::to(['/contacts'])?>">contacts</a>
+            <a class="nav-link" href="<?=Url::to(['/contacts'])?>"><?=Yii::t('app', 'contacts');?></a>
         </li>
 
     </ul>
     <div class="main-footer__info">
         <p>
-            All Ankara Escort organize the best love place on Earth. With us, you will feel as a king of seas, lands, aid skies - that big high you'll get from our pussycats. Here come people wanting to get fun with 1) exceptional beauties hard to find anywhere else in Italy, 2) Russian and Ukrainian girls of exclusive skills, and 3) girls, ready for everything for the exciting pleasure without boundaries.
+            <?=Yii::t('app', "All Ankara Escort organize the best love place on Earth. With us, you will feel as a king of seas, lands, aid skies - that big high you'll get from our pussycats. Here come people wanting to get fun with 1) exceptional beauties hard to find anywhere else in Italy, 2) Russian and Ukrainian girls of exclusive skills, and 3) girls, ready for everything for the exciting pleasure without boundaries.");?>
         </p>
         <p>
-            What is more - these three are united in every our girl! Have a great time with allescortinankara.com.
+            <?=Yii::t('app', "What is more - these three are united in every our girl! Have a great time with allescortinankara.com.");?>
         </p>
     </div>
     <div class="main-footer__copy">
-        Copyright &copy; 2017 AllAnkaraEscort
+        <?=Yii::t('app', 'Copyright &copy; 2017 AllAnkaraEscort');?>
     </div>
             </div>
         </div>
