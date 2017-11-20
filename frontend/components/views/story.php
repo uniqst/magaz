@@ -14,10 +14,10 @@ use yii\helpers\Url;
             </div>
             <div class="article">
               <div class="article__title">
-                <a href="#"><?= $story->name?></a>
+                <a href="#"><?= Yii::t('app', $story->name)?></a>
               </div>
               <div class="article__text">
-                <?= mb_substr($story->content, 0, 1000).'...'?> 
+                <?= Yii::t('app', mb_substr($story->content, 0, 1000).'...')?>
               </div>
             </div>
           </div>

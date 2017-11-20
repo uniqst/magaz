@@ -8,8 +8,8 @@
                         <a href="#"><?=$rand->name?></a>
                     </div>
                     <div class="item-box__info">
-                        <span>Age: <?=$rand->age?></span>
-                        <span>R<?=$rand->nationality?></span>
+                        <span>Age: <?= Yii::t('app', $rand->age)?></span>
+                        <span>R<?= Yii::t('app', $rand->nationality)?></span>
                     </div>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                     </div>
                     <div class="item-box__info">
                         <a href="#story">
-                            <?=$rand->content?>
+                            <?= Yii::t('app', $rand->content)?>
                         </a>
                     </div>
                 </div>

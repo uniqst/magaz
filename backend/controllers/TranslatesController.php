@@ -11,7 +11,7 @@ use Zelenin\yii\modules\I18n\models\search\SourceMessageSearch;
 use Zelenin\yii\modules\I18n\models\SourceMessage;
 use Zelenin\yii\modules\I18n\Module;
 
-class DefaultController extends Controller
+class TranslatesController extends Controller
 {
     public function actionIndex()
     {

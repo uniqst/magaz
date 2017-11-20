@@ -7,7 +7,7 @@ use yii\widgets\Pjax;
 <?php $form = ActiveForm::begin(['options' => ['data-pjax' => true, 'class' => 'main-application-form container-fluid']]); ?>
 
     <div class="top-form">
-      <h2 class="page-name"><?=Yii::t('app', 'REVIEWS');?></h1>
+      <h2 class="page-name"><?=Yii::t('app', 'REVIEWS');?></h2>
       <p class="text">
          <?=Yii::t('app', 'This is a relatively new section on our site. Here, every fellow (man and woman) who used our services, can write a feedback on how it all went - smoothly or in a different way and which girl it was with him/her on a date. You can find this information useful when making a decision whether to book a certain girl or try to search for another one from our catalog. The reviews are especially useful when you feel that a profile of a girl says little to you and you are in the midst of a search for additional information that could help. So here you go - just look for a review of a specific girl in our catalog in this section and, if she is found, read to know her better before ordering using a number +90 539 460 85 63.');?>
       </p>
@@ -48,7 +48,7 @@ use yii\widgets\Pjax;
 <ul>
     <?php foreach($commentsList as $comment):?>
     <li>
-        <?=$comment->name?>
+        <?= Yii::t('app', $comment->name)?>
     </li>
     <?php endforeach;?>
 </ul>
