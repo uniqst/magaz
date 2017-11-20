@@ -17,7 +17,7 @@
             <div class="slider-item">
                 <div class="item-box story" style="background-image: url('/story/<?=$rand->img?>')">
                     <div class="item-box__title">
-                        <a href="#story">Story</a>
+                        <a href="#story"><?=Yii::t('app', 'Story');?></a>
                     </div>
                     <div class="item-box__info">
                         <a href="#story">

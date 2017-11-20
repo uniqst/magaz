@@ -14,7 +14,7 @@ use yii\helpers\Url;
       <div class="main-sidebar-menu">
         <div class="main-sidebar-close">x</div>
         <div class="page-name">
-          Catalog
+          <?=Yii::t('app', 'Catalog');?>
         </div>
         <?php foreach($model as $category):?>
         <h2 class="sb-heading-main">
@@ -34,7 +34,7 @@ use yii\helpers\Url;
       <?php endforeach;?>
         <h2 class="sb-heading-main sb-heading-main__link">
           <a href="#list-filters" class="sb-heading-main__link" data-toggle="collapse" aria-expanded="true">
-            Filters
+            <?=Yii::t('app', 'Filters');?>
           </a>
         </h2>
         <div class="category-list-wraper collapse show" id="list-filtersasdas">
@@ -47,7 +47,7 @@ use yii\helpers\Url;
           <ul class="category-list category-list--border collapse show" id="list-categories<?=$filter->id?>">
             <li class="category-list__item">
               <a href="#" oclick="return false"class="inputAll">
-                All
+                <?=Yii::t('app', 'All');?>
               </a>
             </li>
             <?php foreach($filter->values as $val):?>
