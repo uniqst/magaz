@@ -25,15 +25,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            [
-                'attribute' => 'profile_id',
-                'value' => function($data){
-                    $url = Url::to(["../../girls/girl", "id" => $data->profile->id, 'name' => $data->profile->name]);
-                    return '<a href="'.$url.'"> <img style="width:100px" src="../../photo/'.$data->profile->image->src.'">'.$data->profile->name.'</a>';
-                },
-                'format' => 'html'
-            ],
-            'email:email',
+            'name',
             'content',
             [
                 'attribute' => 'status',

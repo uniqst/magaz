@@ -14,17 +14,17 @@ use frontend\models\Comments;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'parent_id')->textInput() ?>
+    <?= $form->field($model, 'parent_id')->hiddenInput(['value' => 0])->label(false) ?>
 
-    <?= $form->field($model, 'profile_id')->textInput() ?>
+    <?= $form->field($model, 'profile_id')->hiddenInput(['value' => 0])->label(false) ?>
 
-    <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'email')->hiddenInput(['value' => 0])->label(false) ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'content')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'content')->textArea(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'is_viewed')->textInput() ?>
+    <?= $form->field($model, 'is_viewed')->hiddenInput(['value' => 0])->label(false) ?>
 
     <?= $form->field($model, 'status')->dropDownList([
         '0' => 'Waiting',

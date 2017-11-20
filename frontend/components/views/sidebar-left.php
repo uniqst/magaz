@@ -18,7 +18,7 @@ use yii\helpers\Url;
         </div>
         <?php foreach($model as $category):?>
         <h2 class="sb-heading-main">
-          <?= $category->name?>
+          <?= Yii::t('app', $category->name)?>
         </h2>
         <div class="category-list-wraper">
           <ul class="category-list">
@@ -41,7 +41,7 @@ use yii\helpers\Url;
           <?php foreach($filters as $filter):?>
           <h3 class="category-heading">
             <a href="#list-categories<?=$filter->id?>" data-toggle="collapse" aria-expanded="true">
-              <?= $filter->name?>
+              <?= Yii::t('app', $filter->name)?>
             </a>
           </h3>
           <ul class="category-list category-list--border collapse show" id="list-categories<?=$filter->id?>">
