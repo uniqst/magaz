@@ -4,7 +4,7 @@ use yii\helpers\Url;
 
 <div class="articles-box">
       <div class="articles-box__title">
-        <a href="#">Erotic stories</a>
+        <a href="#"><?=Yii::t('app', 'Erotic stories');?></a>
       </div>
       <div class="articles__list">
         <ul>
