@@ -35,7 +35,7 @@ use yii\helpers\Url;
             <div class="card__info-list">
               <ul>
                 <li class="info-list__item">
-                  <span class="property">Age</span>
+                  <span class="property"><?=Yii::t('app','Age');?></span>
                   <span class="value"><?= $product->age?></span>
                 </li>
                 <li class="info-list__item">
