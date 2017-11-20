@@ -3,16 +3,16 @@
     <div class="application-ask page-contacts container-fluid">
       <div class="row">
         <div class="col-12">
-          <h1 class="page-name mb-5">Contacts</h1>
+          <h1 class="page-name mb-5"><?=Yii::t('app', 'Contacts');?></h1>
         </div>
         <div class="col-md-6">
           <div class="image mx-auto mr-md-0"></div>
         </div>
         <div class="col-md-6 text-center text-md-left d-md-flex flex-md-column justify-content-md-center msg-block-wrap mt-5 mt-md-0">
           <div class="msg-block">
-            <p>If you have any questions or offers please don't hesitate to contact us!</p>
+            <p><?=Yii::t('app', "If you have any questions or offers please don't hesitate to contact us!");?></p>
             <p class="contacts-page__phone"><a href="tel:+905380639316">+905380639316</a></p>
-            <p class="text-uppercase">CALL, SMS, VIBER, WHATSAPP</p>
+            <p class="text-uppercase"><?=Yii::t('app', 'CALL, SMS, VIBER, WHATSAPP');?></p>
             <p><a href="mailto:sandra-1994@mail.ua">sandra-1994@mail.ua</a></p>
           </div>
         </div>
