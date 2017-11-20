@@ -29,6 +29,20 @@ AppAsset::register($this);
 
     <nav class="navbar navbar-expand-lg main-header">
 
+        <div class="main-header__multiling">
+            <div class="lang-wrapper">
+                <a href="#en">
+                    <button class="lang active" id="lang-en" data-lant="en">En</button>
+                </a>
+            </div>
+            <div class="lang-wrapper">
+                <a href="#tr">
+                    <button class="lang" id="lang-tr" data-lant="en">Tr</button>
+                </a>
+            </div>    
+        </div>
+
+
         <a class="navbar-brand main-header__logo" href="#">
             <div class="logo-image">
                 <!-- <div class="logo-image__lips">

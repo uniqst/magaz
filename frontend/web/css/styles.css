@@ -1259,7 +1259,8 @@ img {
 
 .main-header {
   min-height: 57px;
-  background-color: #c2185b; }
+  background-color: #c2185b;
+  position: relative; }
   @media only screen and (min-width: 768px) {
     .main-header {
       -webkit-box-orient: horizontal;
@@ -1283,8 +1284,8 @@ img {
   @media only screen and (min-width: 992px) {
     .main-header__logo {
       position: static;
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0); } }
+      -webkit-transform: translate(45px, 0);
+              transform: translate(45px, 0); } }
   .main-header__logo .logo-image {
     margin-right: auto;
     width: 77px;
@@ -1390,6 +1391,57 @@ img {
         position: fixed;
         top: 50px;
         right: 10px; } }
+  @media only screen and (min-width: 768px) {
+    .main-header__multiling {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      position: absolute;
+      text-transform: uppercase;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      position: absolute; } }
+  .main-header__multiling .lang-wrapper {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    .main-header__multiling .lang-wrapper a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; }
+    .main-header__multiling .lang-wrapper button {
+      display: block;
+      width: 100%;
+      cursor: pointer;
+      padding: 0 12px;
+      color: white;
+      background: none;
+      border: none;
+      background-color: #a73b61;
+      outline: none; }
+      .main-header__multiling .lang-wrapper button.active, .main-header__multiling .lang-wrapper button:hover {
+        background-color: #cf94a9;
+        text-decoration: underline; }
 
 .navbar {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
