@@ -21,7 +21,8 @@
         "dmstr/yii2-adminlte-asset": "^2.1",
         "kartik-v/yii2-grid": "@dev",
         "kartik-v/yii2-mpdf": "dev-master",
-        "mihaildev/yii2-ckeditor": "*"
+        "mihaildev/yii2-ckeditor": "*",
+        "zelenin/yii2-i18n-module": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
@@ -33,7 +34,7 @@
     "config": {
         "process-timeout": 1800,
         "github-oauth": {
-            "github.com": "cba01f13622ac5a14effdc3787253e16b0fada65"
+
         }
     },
     "repositories": [

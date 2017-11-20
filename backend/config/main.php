@@ -12,13 +12,15 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [
+        'i18n' => Zelenin\yii\modules\I18n\Module::className(),
        'gridview' =>  [
-         'class' => '\kartik\grid\Module'
+         'class' => '\kartik\grid\Module',
         // enter optional module parameters below - only if you need to  
       // use your own export download action or custom translation 
         // message source
         // 'downloadAction' => 'gridview/export/download',
         // 'i18n' => []
+           'i18n' => Zelenin\yii\modules\I18n\Module::className()
     ],
 ],
 
@@ -34,6 +36,7 @@ return [
         'request' => [
             'csrfParam' => '_csrf-backend',
         ],
+
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
@@ -43,6 +46,7 @@ return [
             // this is the name of the session cookie used for login on the backend
             'name' => 'advanced-backend',
         ],
+
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
