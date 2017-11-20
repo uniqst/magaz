@@ -25,11 +25,9 @@ echo Breadcrumb::widget(['links' => [
         <?php $form = ActiveForm::begin(); ?>
         <div class="field">
             <div class="ui grid">
-                <?php foreach ($model->messages as $language => $message) : ?>
                     <div class="four wide column">
-                        <?= $form->field($model->messages[$language], '[' . $language . ']translation')->label($language) ?>
+                        <?= $form->field($model->messages['tr'], '[' . 'tr' . ']translation')->label('Turkey') ?>
                     </div>
-                <?php endforeach; ?>
             </div>
         </div>
         <?= Html::submitButton(Module::t('Update'), ['class' => 'ui primary button']) ?>

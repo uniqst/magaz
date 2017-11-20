@@ -4,7 +4,7 @@ return [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
-    'language' => 'ru-RU',
+    'language' => 'en-EN', // <- здесь!
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
         'cache' => [
@@ -12,7 +12,7 @@ return [
         ],
         'i18n' => [
             'class' => Zelenin\yii\modules\I18n\components\I18N::className(),
-            'languages' => ['ru-RU', 'de-DE', 'it-IT']
+            'languages' => ['en', 'tr']
         ],
     ],
 ];

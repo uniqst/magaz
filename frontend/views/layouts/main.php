@@ -53,7 +53,7 @@ AppAsset::register($this);
         <div class="collapse navbar-collapse main-header__nav" id="navbarSupportedContent">
             <ul class="navbar-nav navbar-main justify-content-center">
                 <li class="nav-item <?=Yii::$app->controller->id == 'site' ? 'active' : ''?>">
-                    <a class="nav-link" href="/"><?=Yii::t('app','home');?></a>
+                    <a class="nav-link" href="<?=Url::to(['/'])?>"><?=Yii::t('app','home');?></a>
                 </li>
                 <li class="nav-item <?=Yii::$app->controller->id == 'girls' ? 'active' : ''?>">
                     <a class="nav-link" href="<?=Url::to(['/girls'])?>">all girls</a>

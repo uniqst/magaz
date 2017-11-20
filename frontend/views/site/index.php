@@ -13,7 +13,7 @@ $this->title = 'My Yii Application';
                     <div class="slick-carousel">
                         <?php foreach($model as $image):?>
                         <div class="slider-item">
-                            <div class="girl-card" style="background-image: url(photo/<?= $image->image->src?>)">
+                            <div class="girl-card" style="background-image: url(/photo/<?= $image->image->src?>)">
                                 <a class="girl-card__name" href="<?=Url::to(['/girls/girl', 'id' => $image->id, 'name' => $image->name])?>"><?= $image->name?></a>
                             </div>
                         </div>
@@ -77,7 +77,7 @@ $this->title = 'My Yii Application';
                                             <div class="wrapper">
                                                 <div class="info-card__name">
                                                     <a href="#">
-                                                        <?=$image->name?>
+                                                        <?=Yii::t('app', $image->name)?>
                                                         <i class="add-button fa fa-plus"></i>
                                                     </a>
                                                 </div>

@@ -43,13 +43,13 @@ echo Breadcrumbs::widget(['links' => [
                     return Html::a($model->message, ['update', 'id' => $model->id], ['data' => ['pjax' => 0]]);
                 }
             ],
-            [
-                'attribute' => 'category',
-                'value' => function ($model, $index, $dataColumn) {
-                    return $model->category;
-                },
-                'filter' => ArrayHelper::map($searchModel::getCategories(), 'category', 'category')
-            ],
+//            [
+//                'attribute' => 'category',
+//                'value' => function ($model, $index, $dataColumn) {
+//                    return $model->category;
+//                },
+//                'filter' => ArrayHelper::map($searchModel::getCategories(), 'category', 'category')
+//            ],
             [
                 'attribute' => 'status',
                 'value' => function ($model, $index, $widget) {

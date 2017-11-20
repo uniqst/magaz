@@ -43,8 +43,25 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+//        'i18n' => [
+//            'class'=> Zelenin\yii\modules\I18n\components\I18N::className(),
+//            'languages' => ['ru-RU', 'de-DE', 'it-IT'],
+//            'translations' => [
+//                'yii' => [
+//                    'class' => yii\i18n\DbMessageSource::className()
+//                ]
+//            ]
+//        ],
 
         'urlManager' => [
+            'class' => 'pheme\i18n\I18nUrlManager',
+//            'displaySourceLanguage' => true,
+            'languageParam' => 'lang',
+            'languages' => ['en', 'tr'],
+            'aliases' => [],
+            // 'aliases' => ['en' => 'en-US', 'sr' => 'sr-Latn'],
+            // The keys will become labels on the language switcher widget
+            // 'languages' => ['English' => 'en', 'Ελληνικά' => 'gr']
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
