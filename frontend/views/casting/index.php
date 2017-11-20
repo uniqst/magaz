@@ -9,8 +9,8 @@ use yii\widgets\ActiveForm;
   <div class="application-page offset-xl-3 col-xl-6">
     <div class="top-form">
       
-      <h2 class="page-name">Applciation</h1>
-      <p class="text">You are young and brave? Become one of our escorts!</p>
+      <h2 class="page-name"><?=Yii::t('app', 'Applciation');?></h1>
+      <p class="text"><?=Yii::t('app', 'You are young and brave? Become one of our escorts!');?></p>
       <?php $form = ActiveForm::begin(['options' => ['class' => 'main-application-form container-fluid', 'novalidate' => 'novalidate', 'enctype' => 'multipart/form-data']]) ?>
         <div class="row">
           <div class="col-md-6">
@@ -46,13 +46,13 @@ use yii\widgets\ActiveForm;
           </div>
         </div>
         <div class="row upload-photo submit">
-            <p class="col-md-12 title subheading-main">Upload photo</p>
+            <p class="col-md-12 title subheading-main"><?=Yii::t('app', 'Upload photo');?></p>
             <div class="col-md-4">
-              <label for="photo1" class="upload-label"><span>Choose file</span></label>
+              <label for="photo1" class="upload-label"><span><?=Yii::t('app', 'Choose file');?></span></label>
               <?= $form->field($photo, 'imageFiles[]')->fileInput(['multiple' => true, 'accept' => 'image/*', 'class' => 'upload-input', 'id' => 'photo1'])->label(false) ?>
             </div>
             <div class="offset-md-4 col-md-4 text-right">
-              <button type="submit">Submit</button>
+              <button type="submit"><?=Yii::t('app', 'Submit');?></button>
             </div>
         </div>
         <!-- <div class="row submit">
@@ -66,10 +66,10 @@ use yii\widgets\ActiveForm;
       <div class="row">
         <div class="col-md-6 text-center text-md-right d-md-flex flex-md-column justify-content-md-center msg-block-wrap">
           <div class="msg-block text-uppercase">
-            <p>Have a question?</p>
-            <p>Ask Lena!</p>
+            <p><?=Yii::t('app', 'Have a question?');?></p>
+            <p><?=Yii::t('app', 'Ask Lena!');?></p>
             <p>+905380639316</p>
-            <p>Call, sms, viber, whatsapp</p>
+            <p><?=Yii::t('app', 'Call, sms, viber, whatsapp');?></p>
           </div>
         </div>
         <div class="col-md-6">

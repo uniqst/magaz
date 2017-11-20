@@ -2,8 +2,8 @@
   <div class="booking-page offset-xl-3 col-xl-6">
     <div class="top-form">
       
-      <h2 class="page-name">Booking</h1>
-      <p class="text">You are now booking one of our stunning beuties</p>
+      <h2 class="page-name"><?=Yii::t('app', 'Booking');?></h1>
+      <p class="text"><?=Yii::t('app', 'You are now booking one of our stunning beuties');?></p>
 
       <form class="main-application-form container-fluid" action="" method="post" novalidate="novalidate">
         <div class="row">
@@ -30,7 +30,7 @@
         </div>
         <div class="row submit">
           <div class="offset-md-8 col-md-4 text-right">
-            <button type="submit">Submit</button>
+            <button type="submit"><?=Yii::t('app', 'Submit');?></button>
           </div>
         </div>
       </form>

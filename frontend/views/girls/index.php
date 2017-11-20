@@ -3,7 +3,7 @@
   <div class="col-12">
     <div class="row">
       <div class="offset-lg-3 col-lg-6">
-        <h2 class="page-name stories">Girls</h2>
+        <h2 class="page-name stories"><?=Yii::t('app', 'Girls');?></h2>
       </div>
     </div>
   </div>
@@ -11,7 +11,7 @@
     <div class="row">
       <div class="offset-lg-3 col-lg-6">
           <h1 class="heading-main mb-0">
-            Bursa platinum girls. High class escorts. Plearsure without limits
+            <?=Yii::t('app', 'Bursa platinum girls. High class escorts. Plearsure without limits');?>
           </h1>
       </div>
     </div>
@@ -19,11 +19,11 @@
   <div class="col-12 dir-tree-links">
       <div class="row">
         <div class="offset-lg-3 col-lg-6">
-          <a href="#">Home</a>
+          <a href="#"><?=Yii::t('app', 'Home');?></a>
           <span> > </span>
-          <a href="#">Catalog</a>
+          <a href="#"><?=Yii::t('app', 'Catalog');?></a>
           <span> > </span>
-          <a href="#">English</a>
+          <a href="#"><?=Yii::t('app', 'English');?></a>
         </div>
       </div>
   </div>
