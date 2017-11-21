@@ -55,7 +55,7 @@ class FiltersValue extends \yii\db\ActiveRecord
 
     public function getCategory()
     {
-        return $this->hasOne(Category::className(), ['id' => 'filter_id']);
+        return $this->hasOne(Category::className(), ['id' => 'value']);
     }
 
 
