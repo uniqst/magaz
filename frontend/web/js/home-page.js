@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var duration = 1000;
+  var duration = 500;
   // Scroll to top of web page
   $('.to-top-button').click(function (e) {
     e.preventDefault();
