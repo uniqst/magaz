@@ -43,7 +43,7 @@ $this->title = $model->name;
             <!-- <div class="product-card"> -->
 
             <div class="col-12">
-                <h1 class="page-name">girl_name</h1>
+                <h1 class="page-name"><?= $model->name?></h1>
             </div>
 
             <div class="prev">
@@ -139,67 +139,44 @@ $this->title = $model->name;
                     <ul>
                         <li class="info-list__item">
                             <span class="property"><?=Yii::t('app', 'Age')?></span>
-                            <span class="value">18</span>
+                            <span class="value"><?= $model->age?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property">Age</span>
-                            <span class="value">18</span>
+                            <span class="property"><?=Yii::t('app', 'Nationality')?></span>
+                            <span class="value"><?= $model->nationality?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property">Age</span>
-                            <span class="value">18</span>
+                            <span class="property"><?=Yii::t('app', 'Height')?></span>
+                            <span class="value"><?= $model->height?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property">Age</span>
-                            <span class="value">18</span>
+                            <span class="property"><?=Yii::t('app', 'Weight')?></span>
+                            <span class="value"><?= $model->weight?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property">Age</span>
-                            <span class="value">18</span>
-                        </li>
-                        <li class="info-list__item">
-                            <span class="property">Age</span>
-                            <span class="value">18</span>
-                        </li>
-                        <li class="info-list__item">
-                            <span class="property">Age</span>
-                            <span class="value">18</span>
-                        </li>
-                        <li class="info-list__item">
-                            <span class="property">Age</span>
-                            <span class="value">18</span>
-                        </li>
-                        <li class="info-list__item">
-                            <span class="property">Age</span>
-                            <span class="value">18</span>
-                        </li>
-                        <li class="info-list__item">
-                            <span class="property">Age</span>
-                            <span class="value">18</span>
-                        </li>
-                        <li class="info-list__item">
-                            <span class="property">Age</span>
-                            <span class="value">18</span>
+                            <span class="property"><?=Yii::t('app', 'Mesurements')?></span>
+                            <span class="value"><?= $model->mesurements?></span>
                         </li>
                     </ul>
                 </div>
-                <h3 class="headline">Categories &amp; Services</h3>
+                <h3 class="headline"><?=Yii::t('app', 'Categories &amp; Services')?></h3>
                 <div class="categories">
                     <a href="#">female escort</a>,
                     <a href="#">russian escort</a>,
                     <a href="#">vip escort</a>
                 </div>
+                
                 <div class="services">
-                    <a href="#">69</a>,
-                    <a href="#">BJ (Blowjob)</a>,
-                    <a href="#">CIM (Come in mouth</a>
+                    <?php foreach($service as $serv):?>
+                    <a href="#"><?= $serv->name?></a>
+                    <?php endforeach;?>
                 </div>
-
+               
             </div>
             <div class="col-12">
-                <h3 class="headline about">About girl_name</h3>
+                <h3 class="headline about"><?=Yii::t('app', 'About')?> <?= $model->name?></h3>
                 <div class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi accusamus aspernatur, deserunt corporis placeat, reprehenderit amet suscipit itaque ullam consectetur saepe in nulla iste aliquid dignissimos nobis possimus quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quia molestias culpa harum quibusdam ut repudiandae ipsa. Repellendus reprehenderit molestias velit! Velit eligendi quia possimus qui perspiciatis omnis, ut iste.
+                    <?=Yii::t('app', "$model->about_myself")?>
                 </div>
             </div>
 

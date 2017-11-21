@@ -9,6 +9,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use frontend\models\Profile;
+use frontend\models\Service;
 use frontend\models\FiltersValue;
 
 /**
@@ -44,8 +45,9 @@ class GirlsController extends Controller
     }
     public function actionGirl($id)
     {
+        $service = Service::find()->all();
         $model = Profile::find()->where(['id' => $id])->with('photo')->one();
-        return $this->render('girl', compact('model'));
+        return $this->render('girl', compact('model', 'service'));
     }
     public function actionFilters()
     {
