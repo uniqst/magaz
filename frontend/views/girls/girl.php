@@ -62,21 +62,15 @@ $this->title = $model->name;
                     <a href="#" class="order-button">
                         Order now
                     </a>
-                    <a class="photo-block__photo" href="http://placehold.it/700x900?text=Image 1" style="background-image: url('http://placehold.it/700x900?text=Image 1')">
+                    <a class="photo-block__photo" href="/photo/<?=$model->photo['0']->src?>" style="background-image: url('/photo/<?=$model->photo['0']->src?>')">
                     </a>
                     <div class="photo-block__list flex-column">
-                        <a href="http://placehold.it/700x900?text=Image 2">
-                            <img src="http://placehold.it/200x200?text=Image 2" alt="Image 1" class="photo-tn">
+                        <?php $photos = array_slice($model->photo, 1);?>
+                        <?php foreach($photos as $photo):?>
+                        <a href="/photo/<?=$photo->src?>">
+                            <img src="/photo/<?=$photo->src?>" alt="Image 1" class="photo-tn">
                         </a>
-                        <a href="http://placehold.it/700x900?text=Image 3">
-                            <img src="http://placehold.it/200x200?text=Image 3" alt="Image 1" class="photo-tn">
-                        </a>
-                        <a href="http://placehold.it/700x900?text=Image 4">
-                            <img src="http://placehold.it/200x200?text=Image 4" alt="Image 1" class="photo-tn">
-                        </a>
-                        <a href="http://placehold.it/700x900?text=Image 5">
-                            <img src="http://placehold.it/200x200?text=Image 5" alt="Image 1" class="photo-tn">
-                        </a>
+                        <?php endforeach;?>
                     </div>
                 </div>
                 <h3 class="headline">Price</h3>
@@ -88,9 +82,9 @@ $this->title = $model->name;
                             <a href="#" class="text-right" data-type="usd">usd</a>
                         </div>
                         <div class="titles">
-                            <div class="text-left">Duration</div>
-                            <div class="text-center">Incall</div>
-                            <div class="text-right">Outcall</div>
+                            <div class="text-left"><?=Yii::t('app', 'Duration')?></div>
+                            <div class="text-center"><?=Yii::t('app', 'Incall')?></div>
+                            <div class="text-right"><?=Yii::t('app', 'Outcall')?></div>
                         </div>
                     </div>
                     <div class="price-block__prices">
@@ -98,19 +92,19 @@ $this->title = $model->name;
                             <li class="price-item">
                                 <span class="duration">1 hour</span>
                                 <span class="incall"></span>
-                                <span class="outcall">250</span>
+                                <span class="outcall"><?=$model->price_eur?></span>
                             </li>
                             <li class="price-item">
                                 <span class="duration">2 hour</span>
                                 <span class="incall"></span>
-                                <span class="outcall">350</span>
+                                <span class="outcall"><?=$model->price_try?></span>
                             </li>
                         </ul>
                         <ul class="try price-list" id="try">
                             <li class="price-item">
                                 <span class="duration">1 hour</span>
                                 <span class="incall"></span>
-                                <span class="outcall">2350</span>
+                                <span class="outcall"><?=$model->price_usd?></span>
                             </li>
                             <li class="price-item">
                                 <span class="duration">2 hour</span>
@@ -160,15 +154,15 @@ $this->title = $model->name;
                     </ul>
                 </div>
                 <h3 class="headline"><?=Yii::t('app', 'Categories &amp; Services')?></h3>
-                <div class="categories">
-                    <a href="#">female escort</a>,
-                    <a href="#">russian escort</a>,
-                    <a href="#">vip escort</a>
-                </div>
+<!--                <div class="categories">-->
+<!--                    <a href="#">female escort</a>,-->
+<!--                    <a href="#">russian escort</a>,-->
+<!--                    <a href="#">vip escort</a>-->
+<!--                </div>-->
                 
                 <div class="services">
-                    <?php foreach($service as $serv):?>
-                    <a href="#"><?= $serv->name?></a>
+                    <?php foreach($model->value as $cat):?>
+                    <a href="#"><?= $cat->category->name?>, </a>
                     <?php endforeach;?>
                 </div>
                

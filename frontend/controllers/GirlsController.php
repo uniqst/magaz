@@ -46,7 +46,8 @@ class GirlsController extends Controller
     public function actionGirl($id)
     {
         $service = Service::find()->all();
-        $model = Profile::find()->where(['id' => $id])->with('photo')->one();
+        $model = Profile::find()->where(['id' => $id])->with('photo', 'value.category')->one();
+
         return $this->render('girl', compact('model', 'service'));
     }
     public function actionFilters()
@@ -54,10 +55,7 @@ class GirlsController extends Controller
         $model = Profile::find()->joinWith(['value.category' => function(yii\db\ActiveQuery $query){
             $query->andFilterWhere(['category.id' => $_GET['value']]);
         }])->distinct();
-//        $models = Profile::find()->with('value.category')->all();
-//        echo "<pre>";
-//        print_r($models);
-//        echo "</pre>";
+
 
         return $this->render('filters', compact('model'));
     }

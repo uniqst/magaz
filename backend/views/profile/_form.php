@@ -22,6 +22,12 @@ $category = Category::find()->where(['parent_id' => 0])->with('category')->all()
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'price_eur')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'price_try')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'price_usd')->textInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'phone')->textInput() ?>

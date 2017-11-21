@@ -32,7 +32,7 @@ class Profile extends \yii\db\ActiveRecord
     {
         return [
             [['age', 'phone', 'height', 'mesurements', 'weight', 'name', 'email', 'nationality', 'about_myself'], 'required'],
-            [['age', 'phone', 'height', 'weight', 'status'], 'integer'],
+            [['age', 'phone', 'height', 'weight', 'status', 'price_eur', 'price_try', 'price_usd'], 'integer'],
             [['date'], 'safe'],
             [['name', 'nationality', 'about_myself', 'mesurements', 'email'], 'string', 'max' => 255],
         ];

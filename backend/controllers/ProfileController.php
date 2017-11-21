@@ -90,10 +90,6 @@ class ProfileController extends Controller
 
         $filters = Filters::find()->where(['parent_id' => 0])->with('value')->all();
         $value = new FiltersValue();
-        echo '<pre>';
-        print_r($_POST);
-        echo '</pre>';
-
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             foreach($_POST['value'] as $key=> $val){
