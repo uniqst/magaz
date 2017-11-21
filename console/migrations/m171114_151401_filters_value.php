@@ -16,7 +16,7 @@ class m171114_151401_filters_value extends Migration
             'id' => $this->primaryKey(11),
             'product_id' => $this->integer(11)->notNull(),
             'filter_id' => $this->integer(11)->notNull(),
-            'value' => $this->string(255)->notNull(),
+            'value' => $this->integer(11)->notNull(),
             ]);
     }
 

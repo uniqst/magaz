@@ -5,7 +5,11 @@ use yii\widgets\ActiveForm;
 use frontend\models\Photo;
 use frontend\models\Filters;
 use frontend\models\FiltersValue;
- $filters = Filters::find()->where(['parent_id' => 0])->with('value')->all();
+use frontend\models\Category;
+use yii\helpers\ArrayHelper;
+// $cat = Category::find()->where(['parent_id' => 0])->
+$category = Category::find()->where(['parent_id' => 0])->with('category')->all();
+
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Profile */
 /* @var $form yii\widgets\ActiveForm */
@@ -42,14 +46,17 @@ use frontend\models\FiltersValue;
 
     <?= $form->field($model, 'date')->hiddenInput(['value' => date('Y-m-d H:i:s')])->label(false) ?>
 
-    <?php foreach($filters as $filter):?>
-    <?php $value = FiltersValue::find()->where(['filter_id' => $filter->id, 'product_id' => $model->id])->one();
-    if(empty($value)){
+
+
+<?php foreach($category as $cat):?>
+    <?php $items = ArrayHelper::map($cat->category,'id','name');?>
+    <?php $value = FiltersValue::find()->where(['filter_id' => $cat->id, 'product_id' => $model->id])->one(); 
+     if(empty($value)){
         $value = new FiltersValue();
     }
     ?>
-        <?= $form->field($value, 'value')->textInput(['name' => 'value['.$filter->id.']'])->label($filter->name) ?>        
-    <?php endforeach;?>
+    <?= $form->field($value, 'value')->dropDownList($items, ['name' => 'value['.$cat->id.']'])->label($cat->name) ?>    
+<?php endforeach;?>    
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>

@@ -826,12 +826,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mpdf/mpdf.git",
-                "reference": "4f7e05b9ab0577299941cd9026e2a6cad21b36cf"
+                "reference": "ed703c74d496d10edbdbcb742b7e279e0855bb8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mpdf/mpdf/zipball/4f7e05b9ab0577299941cd9026e2a6cad21b36cf",
-                "reference": "4f7e05b9ab0577299941cd9026e2a6cad21b36cf",
+                "url": "https://api.github.com/repos/mpdf/mpdf/zipball/ed703c74d496d10edbdbcb742b7e279e0855bb8d",
+                "reference": "ed703c74d496d10edbdbcb742b7e279e0855bb8d",
                 "shasum": ""
             },
             "require": {
@@ -885,7 +885,7 @@
                 "php",
                 "utf-8"
             ],
-            "time": "2017-11-20T14:14:10+00:00"
+            "time": "2017-11-20T15:08:42+00:00"
         },
         {
             "name": "paragonie/random_compat",

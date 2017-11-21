@@ -15,7 +15,7 @@
                 'items' => [
                     ['label' => 'Menu', 'options' => ['class' => 'header']],
                     ['label' => 'Category', 'icon' => 'dashboard', 'url' => ['/category']],
-                    ['label' => 'Filters', 'icon' => ' fa fa-filter', 'url' => ['/filters']],
+                    // ['label' => 'Filters', 'icon' => ' fa fa-filter', 'url' => ['/filters']],
                     ['label' => 'Application', 'icon' => 'fa fa-id-card-o', 'url' => ['/profile']],
                     ['label' => 'Stories', 'icon' => ' fa fa-file-powerpoint-o', 'url' => ['/stories']],
                     ['label' => 'Service', 'icon' => ' fa fa-hashtag', 'url' => ['/service']],

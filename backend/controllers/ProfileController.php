@@ -10,6 +10,8 @@ use frontend\models\Photo;
 use frontend\models\UploadForm;
 use frontend\models\Filters;
 use frontend\models\FiltersValue;
+use frontend\models\CategoryValue;
+use frontend\models\Category;
 use yii\web\UploadedFile;
 use backend\models\SearchProfile;
 use yii\web\Controller;
@@ -85,8 +87,13 @@ class ProfileController extends Controller
     {
         $model = new Profile();
         $photo = new UploadForm();
+
         $filters = Filters::find()->where(['parent_id' => 0])->with('value')->all();
-            
+        $value = new FiltersValue();
+        echo '<pre>';
+        print_r($_POST);
+        echo '</pre>';
+
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             foreach($_POST['value'] as $key=> $val){
@@ -107,12 +114,13 @@ class ProfileController extends Controller
                     $image->src = $str . '.' . $file->extension;
                     $image->save();
                 }
-            return $this->redirect(['view', 'id' => $model->id]);
+             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
                 'photo' => $photo,
                 'filters' => $filters,
+                'value' => $value,
             ]);
         }
     }
@@ -128,6 +136,7 @@ class ProfileController extends Controller
         $filters = Filters::find()->where(['parent_id' => 0])->with('value')->all();
         $model = $this->findModel($id);
         $photo = new UploadForm();
+        $value = FiltersValue::find()->where(['product_id' => 'id'])->all();
          
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             foreach($_POST['value'] as $key=> $val){
@@ -161,6 +170,7 @@ class ProfileController extends Controller
                 'model' => $model,
                 'photo' => $photo,
                 'filters' => $filters,
+                'value' => $value,
             ]);
         }
     }

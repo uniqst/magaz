@@ -28,8 +28,7 @@ class FiltersValue extends \yii\db\ActiveRecord
     {
         return [
             [['product_id', 'filter_id', 'value'], 'required'],
-            [['product_id', 'filter_id'], 'integer'],
-            [['value'], 'string', 'max' => 255],
+            [['product_id', 'filter_id', 'value'], 'integer'],
         ];
     }
 
@@ -52,6 +51,11 @@ class FiltersValue extends \yii\db\ActiveRecord
     public function getProfiles()
     {
         return $this->hasMany(Profile::className(), ['id' => 'product_id']);
+    }
+
+    public function getCategory()
+    {
+        return $this->hasOne(Category::className(), ['id' => 'filter_id']);
     }
 
 

@@ -49,4 +49,9 @@ class Category extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Category::className(), ['parent_id' => 'id']);
     }
+
+    public function getValues()
+    {
+        return $this->hasMany(FiltersValue::className(), ['filter_id' => 'id']);
+    }
 }
