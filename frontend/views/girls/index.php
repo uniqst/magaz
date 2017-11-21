@@ -30,7 +30,7 @@
 
   <?= \frontend\components\SidebarLeft::widget();?>
 
-  <div class="col-xl-6">
+  <div class="col-xl-6 px-0">
         <?=\frontend\components\ProductList::widget(['model' => $model])?>
   </div>
   <div class="d-none d-xl-block col-xl-3">
