@@ -37,7 +37,7 @@
     
   </div>
 
-  <div class="d-none d-lg-block col-lg-3">
+  <div class="d-none d-xl-block col-xl-3">
     <?= \frontend\components\SidebarRight::widget();?>
   </div>
 
