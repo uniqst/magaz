@@ -16,18 +16,14 @@ use yii\helpers\Url;
         <div class="page-name">
           <?=Yii::t('app', 'Catalog');?>
         </div>
-        <h2 class="sb-heading-main sb-heading-main__link">
-          <a href="#list-filters" class="sb-heading-main__link" data-toggle="collapse" aria-expanded="true">
-            <?=Yii::t('app', 'Filters');?>
-          </a>
-        </h2>
+
         <div class="category-list-wraper collapse show" id="list-filtersasdas">
           <?php foreach($model as $filter):?>
-          <h3 class="category-heading">
-            <a href="#list-categories<?=$filter->id?>" data-toggle="collapse" aria-expanded="true">
+            <h2 class="sb-heading-main sb-heading-main__link">
+            <a href="#list-categories<?=$filter->id?>" class="sb-heading-main__link" data-toggle="collapse" aria-expanded="true">
               <?= Yii::t('app', $filter->name)?>
             </a>
-          </h3>
+          </h2>
           <ul class="category-list category-list--border collapse show" id="list-categories<?=$filter->id?>">
             <li class="category-list__item">
               <a href="#" oclick="return false"class="inputAll">
@@ -36,8 +32,8 @@ use yii\helpers\Url;
             </li>
             <?php foreach($filter->category as $val):?>
             <li class="category-list__item">
-                <input style="display: none;" type="checkbox" class="check<?=$filter->id?> inputCheck" <?php if($_GET['value'][$val->id] == $val->values) echo 'checked';?>  onclick="this.form.submit()" id="value<?=$val->id?>" name="value[<?= $val->id?>]" value="<?=$val->values?>">
-                <label class="labelcategory" for="value<?=$val->id?>" <?php if($_GET['value'][$val->id] == $val->values) echo "style='color: red;'";?>><?=$val->values?></label>
+                <input style="display: none;" type="checkbox" class="check<?=$val->id?> inputCheck" <?php if($_GET['value'][$val->id] == $val->id) echo 'checked';?>  onclick="this.form.submit()" id="value<?=$val->id?>" name="value[<?= $val->id?>]" value="<?=$val->id?>">
+                <label class="labelcategory" for="value<?=$val->id?>" <?php if($_GET['value'][$val->id] == $val->id) echo "style='color: red;'";?>><?=$val->name?></label>
             </li>
           <?php endforeach;?>
           </ul>
