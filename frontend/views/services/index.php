@@ -30,11 +30,11 @@
 
   <?= \frontend\components\SidebarLeft::widget()?>
 
-  <div class="col-lg-6">
+  <div class="col-xl-6">
  
     <?= \frontend\components\Service::widget()?>
   </div>
-  <div class="d-none d-lg-block col-lg-3">
+  <div class="d-none d-xl-block col-xl-3">
     <?= \frontend\components\SidebarRight::widget()?>
   </div>
 </div>

@@ -12,16 +12,16 @@ $browser-context: 12px; // Default
 
 @mixin px($left: null, $right: null) {
   @if $left and $right {
-    margin-left: $left;
-    margin-right: $right;
+    padding-left: $left;
+    padding-right: $right;
   } @else if not $left and $right {
     // do nothing
   } @else if $left and not $right {
-    margin-left: $left;
-    margin-right: $left;
+    padding-left: $left;
+    padding-right: $left;
   } @else {
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
   }
 }
 

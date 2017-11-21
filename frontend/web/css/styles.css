@@ -132,12 +132,12 @@ img {
 .new-girls-slider {
   padding-top: 30px;
   padding-bottom: 50px;
-  margin-left: 0;
-  margin-right: 0; }
+  padding-left: 0;
+  padding-right: 0; }
   @media only screen and (min-width: 768px) {
     .new-girls-slider {
-      margin-left: 40px;
-      margin-right: 40px; } }
+      padding-left: 40px;
+      padding-right: 40px; } }
   .new-girls-slider .girl-card {
     height: 340px;
     width: 100%;
@@ -1102,9 +1102,11 @@ img {
   -webkit-transition: .3 all;
   transition: .3 all; }
   .main-sidebar-menu-js.visible {
+    padding-left: 0;
+    padding-right: 0;
     background-color: rgba(0, 0, 0, 0.6);
-    margin-left: 0;
-    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -1401,7 +1403,7 @@ img {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-top: 10px; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 992px) {
       .main-header__multiling {
         display: -webkit-box;
         display: -ms-flexbox;
