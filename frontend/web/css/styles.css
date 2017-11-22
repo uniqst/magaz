@@ -234,15 +234,21 @@ img {
 .items-block {
   color: black; }
   .items-block__item {
-    height: 440px;
+    height: 320px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 110px;
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
-    margin-bottom: 130px; }
+    position: relative; }
+    @media only screen and (min-width: 768px) {
+      .items-block__item {
+        height: 350px; } }
+    @media only screen and (min-width: 1200px) {
+      .items-block__item {
+        height: 440px; } }
     .items-block__item:hover .info-card .add-button {
       opacity: 1; }
     .items-block__item .info-card {

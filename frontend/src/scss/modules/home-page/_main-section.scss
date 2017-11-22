@@ -27,18 +27,22 @@
   color: black;
 
   &__item {
-    height: 440px; 
-    // width: 234px;
+    height: 320px; 
     width: 100%;
-    // margin-left: 15px;
-    // margin-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    @include mx(auto);
+    margin-bottom: 110px;
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    margin-bottom: 130px;
+
+    @include mq(md) {
+      height: 350px; 
+    }
+    @include mq(xl) {
+      height: 440px; 
+    }
+
     &:hover {
       .info-card .add-button {
         opacity: 1;  
