@@ -6,7 +6,7 @@
   @include mq(xl) {
     max-width: 350px;
   }
-  
+
   .page-name {
     font-weight: 400;
     padding: 20px 25px;
@@ -33,14 +33,16 @@
   }
 
   .item-box__title {
-    height: 36px;
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: rgba(255, 255, 255, .7);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 36px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .7);
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+
     a {
       color: #a3395d;
     }
@@ -52,6 +54,13 @@
       justify-content: space-between;
       padding-left: 25px;
       padding-right: 25px;
+      font-weight: 400;
+      // a {
+      //   color: white !important;
+      //   span {
+      //     color: white !important;
+      //   }
+      // }
     }
   }
 
@@ -59,6 +68,7 @@
     .item-box__info {
       align-items: center;
       justify-content: center;
+      font-weight: 400;
     }
   }
 
@@ -69,7 +79,16 @@
         width: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
+        font-weight: 400;
       }
+      // a {
+      //   color: white !important;
+      //   font-weight: 400 !important;
+      //   font-size: 12px !important;
+      //   span {
+      //     color: white !important;
+      //   }
+      // }
     }
   }
 

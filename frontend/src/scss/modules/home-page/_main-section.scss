@@ -26,6 +26,22 @@
 .items-block {
   color: black;
 
+  &__link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0;
+    transition: .5s opacity;
+
+    .items-block__item:hover & {
+      opacity: .4;
+    }
+  }
+
   &__item {
     height: 320px; 
     width: 100%;
@@ -51,16 +67,18 @@
     }
 
     .info-card {
-      color: white;
-      font-size: rem(12px);
+      width: 86%;
+      margin-left: 7%;
       position: absolute;
       bottom: 0;
       transform: translate(0, 50%);
+      font-size: rem(12px);
+      color: white;
 
       .wrapper {
         box-sizing: border-box;
-        width: 86%;
         margin: 0 auto;
+        width: 100%;
         background-color: #fa5788;
         padding: 15px 20px;
         max-height: 180px;
@@ -103,9 +121,17 @@
     text-align: center;
     a {
       position: relative;
-      display: inline-block;
-      width: auto;
+      display: block;
+      width: 100%;
+      padding-top: 2px;
+      padding-bottom: 2px;
       text-transform: uppercase;
+      transition: .3 color;
+
+      &:hover {
+        color: #fdc7d4;  
+      }
+
       .add-button {
         transition: .3s opacity;
         position: absolute;

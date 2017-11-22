@@ -73,12 +73,13 @@ $this->title = 'My Yii Application';
                                 <?php foreach($model as $image):?>
                                 <div class="col-6 col-sm-6 col-md-4 col-xl-3">
                                     <div class="items-block__item" style=" background-image: url(photo/<?=$image->image->src?>)">
-                                        <div class="info-card" style="width: 100%;">
+                                        <a href="#" class="items-block__link"></a>
+                                        <div class="info-card">
                                             <div class="wrapper">
                                                 <div class="info-card__name">
                                                     <a href="#">
                                                         <?=$image->name?>
-                                                        <i class="add-button fa fa-plus"></i>
+                                                        <!-- <i class="add-button fa fa-plus"></i> -->
                                                     </a>
                                                 </div>
                                                 <div class="info-card__about">
