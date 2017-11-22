@@ -14,6 +14,7 @@ use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 use frontend\models\Profile;
+use frontend\models\Comments;
 
 /**
  * Site controller
@@ -74,8 +75,11 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $model = Profile::find()->orderBy(new Expression('rand()'))->limit(5)->with('image')->all();
-        return $this->render('index', compact('model'));
+        $model = Profile::find()->where(['status' => 1])->limit(16)->with('image')->all();
+        $slider = array_slice($model, 0, 10);
+        $comment = Comments::find()->where(['status' => 1])->orderBy(['date' => SORT_DESC])->one();
+        $comments = Comments::find()->where(['status' => 1])->orderBy(['date' => SORT_DESC])->limit(10)->all();
+        return $this->render('index', compact('model', 'slider', 'comment', 'comments'));
     }
 
     /**
