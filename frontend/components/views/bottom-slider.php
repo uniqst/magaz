@@ -1,7 +1,7 @@
 <div class="col-12 bottom-items-slider">
   <div class="slick-carousel">
     <?php foreach($model as $rand):?>
-        <?php if(isset($rand->image)):?>
+        <?php if($rand->id == 'profile'):?>
      <div class="slider-item">
                 <div class="item-box girl" style="background-image: url('/photo/<?=$rand->image->src?>')">
                     <div class="item-box__title">
@@ -13,7 +13,7 @@
                     </div>
                 </div>
             </div>
-        <?php elseif(isset($rand->img)):?>
+        <?php elseif($rand->id == 'stories'):?>
             <div class="slider-item">
                 <div class="item-box story" style="background-image: url('/story/<?=$rand->img?>')">
                     <div class="item-box__title">
@@ -26,6 +26,19 @@
                     </div>
                 </div>
             </div>
+        <?php elseif($rand->id == 'service'):?>
+            <div class="slider-item">
+                <div class="item-box service" style="background-image: url('/service/<?=$rand->img?>')">
+                    <div class="item-box__title">
+                        <a href="#service"><?=Yii::t('app', 'Service');?></a>
+                    </div>
+                    <div class="item-box__info">
+                        <a href="#service">
+                            <?= Yii::t('app', $rand->name)?>
+                        </a>
+                    </div>
+                </div>
+            </div>    
         <?php endif;?>
     <?php endforeach;?>
     </div>
