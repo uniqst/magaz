@@ -34,11 +34,15 @@
 .dir-tree-links {
   margin-bottom: 20px;
   margin-top: 20px;
-  color: black;
+  @include mq(md) {
+    color: black;
+  }
   
   a {
     text-transform: uppercase;
-    color:black;
+    @include mq(md) {
+      color: black;
+    }
     font-size: 14px;
     font-weight: 400;
   }
@@ -55,6 +59,12 @@
 
   .d-xxl-flex {
     display: flex !important;
+  }
+}
+
+.px-to-md-0 {
+  @include mq-to(md) {
+    @include px(0);
   }
 }
 

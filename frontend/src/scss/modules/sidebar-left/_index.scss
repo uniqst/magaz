@@ -107,10 +107,13 @@
 // }
 
 .main-sidebar-menu {
-  max-width: 350px;
   margin-left: auto;
   position: relative;
   background-color: #8c0032;
+
+  @include mq(xl) {
+    max-width: 350px;
+  }
 
   ul {
     list-style: none;

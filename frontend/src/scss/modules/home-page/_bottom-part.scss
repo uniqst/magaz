@@ -1,19 +1,41 @@
 .mp-text-block {
   margin-bottom: 70px;
-  color: black
 
+  @include mq(md) {
+    color: black
+  }
 }
 
 .mp-text-block__heading {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
   text-transform: none;
-  font-weight: 500;
-  font-size: 14px;
-  margin-bottom: 16px;
+
+  @include mq(md) {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    color: black
+  }
 }
 
 .mp-text-block__text {
+  font-size: 18px;
+  text-align: center;
+
+  @include mq(md) {
+    font-size: 14px;
+    text-align: left;
+  }
+
   p {
-    margin-bottom: 16px;
+    margin-bottom: 30px;
+    @include mq(md) {
+      margin-bottom: 16px;
+    }
   }
 }
 
