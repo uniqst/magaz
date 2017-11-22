@@ -15,6 +15,7 @@ use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 use frontend\models\Profile;
 use frontend\models\Comments;
+use frontend\models\Advertising;
 
 /**
  * Site controller
@@ -79,7 +80,8 @@ class SiteController extends Controller
         $slider = array_slice($model, 0, 10);
         $comment = Comments::find()->where(['status' => 1])->orderBy(['date' => SORT_DESC])->one();
         $comments = Comments::find()->where(['status' => 1])->orderBy(['date' => SORT_DESC])->limit(10)->all();
-        return $this->render('index', compact('model', 'slider', 'comment', 'comments'));
+        $advertising = Advertising::find()->all();
+        return $this->render('index', compact('model', 'slider', 'comment', 'comments', 'advertising'));
     }
 
     /**

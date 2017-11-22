@@ -162,21 +162,13 @@ $this->title = 'My Yii Application';
         <div class="offset-lg-1 col-lg-10 offset-xl-2 col-xl-8">
             <div class="advertise-block">
                 <div class="advertise-block__list">
+                    <?php foreach($advertising as $adver):?>
                     <div class="advertise__item">
-                        <a href="">
-                            <img src="http://via.placeholder.com/600x230" alt="Add">
+                        <a href="<?= $adver->href?>" target='_blank'>
+                            <img width="600" height="230" src="/promo/<?= $adver->img?>" alt="Add">
                         </a>
                     </div>
-                    <div class="advertise__item">
-                        <a href="">
-                            <img src="http://via.placeholder.com/600x230" alt="Add">
-                        </a>
-                    </div>
-                    <div class="advertise__item">
-                        <a href="">
-                            <img src="http://via.placeholder.com/600x230" alt="Add">
-                        </a>
-                    </div>
+                <?php endforeach;?>
                 </div>
             </div>
         </div>
