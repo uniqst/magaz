@@ -2,20 +2,20 @@
     <div class="page-name">
         <?=Yii::t('app', 'Intresting');?>
     </div>
-    <?php foreach($model as $rand):?>
-        <?php if(isset($rand->image)):?>
-            <div class="slider-item">
+   <?php foreach($model as $rand):?>
+        <?php if($rand->id == 'profile'):?>
+     <div class="slider-item">
                 <div class="item-box girl" style="background-image: url('/photo/<?=$rand->image->src?>')">
                     <div class="item-box__title">
                         <a href="#"><?=$rand->name?></a>
                     </div>
                     <div class="item-box__info">
-                        <span>Age: <?=$rand->age?></span>
-                        <span><?=$rand->nationality?></span>
+                        <span>Age: <?= Yii::t('app', $rand->age)?></span>
+                        <span>R<?= Yii::t('app', $rand->nationality)?></span>
                     </div>
                 </div>
             </div>
-        <?php elseif(isset($rand->img)):?>
+        <?php elseif($rand->id == 'stories'):?>
             <div class="slider-item">
                 <div class="item-box story" style="background-image: url('/story/<?=$rand->img?>')">
                     <div class="item-box__title">
@@ -23,11 +23,24 @@
                     </div>
                     <div class="item-box__info">
                         <a href="#story">
-                            <?=$rand->content?>
+                            <?= Yii::t('app', $rand->content)?>
                         </a>
                     </div>
                 </div>
             </div>
+        <?php elseif($rand->id == 'service'):?>
+            <div class="slider-item">
+                <div class="item-box service" style="background-image: url('/service/<?=$rand->img?>')">
+                    <div class="item-box__title">
+                        <a href="#service"><?=Yii::t('app', 'Service');?></a>
+                    </div>
+                    <div class="item-box__info">
+                        <a href="#service">
+                            <?= Yii::t('app', $rand->name)?>
+                        </a>
+                    </div>
+                </div>
+            </div>    
         <?php endif;?>
     <?php endforeach;?>
 </div>

@@ -64,6 +64,7 @@
   &.visible {
     // width: 100vw;
     // height: 100vh;
+    @include px(0);
     background-color: rgba(0, 0, 0, .6);
     @include px(0);
     position: fixed;
@@ -106,8 +107,10 @@
 // }
 
 .main-sidebar-menu {
-  background-color: #8c0032;
+  max-width: 350px;
+  margin-left: auto;
   position: relative;
+  background-color: #8c0032;
 
   ul {
     list-style: none;
