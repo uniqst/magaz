@@ -2,7 +2,11 @@
   margin-bottom: 90px;
 }
 .stories.page-name {
-  color: black;
+  color: white;
+
+  @include mq(md) {
+    color: black;
+  }
 }
 .posts-container {
   .page-name {

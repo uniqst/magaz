@@ -34,17 +34,19 @@
 .dir-tree-links {
   margin-bottom: 20px;
   margin-top: 20px;
+
   @include mq(md) {
     color: black;
   }
   
   a {
     text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+
     @include mq(md) {
       color: black;
     }
-    font-size: 14px;
-    font-weight: 400;
   }
 }
 

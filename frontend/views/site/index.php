@@ -128,7 +128,7 @@ $this->title = 'My Yii Application';
         <div class="offset-xl-3 col-xl-6">
             <div class="mp-text-block">
                 <h3 class="mp-text-block__heading">
-                    <?=Yii::t('app', 'Eskort bursa kizlari bunlari siz sipari? ettikten sonra sizin igin her geyi yapacaklar');?>
+                    <?=Yii::t('app', 'Escort in Ankara, Turkey. Housewife, Escort agency «All Ankara Escort»');?>
                 </h3>
                 <div class="mp-text-block__text">
                     <p>
@@ -137,9 +137,7 @@ $this->title = 'My Yii Application';
                         ');?>
                     </p>
                     <p>
-                        <?=Yii::t('app', '
-                        If you live in Turkey and came to Ankara on business, to visit or just relax, then you definitely need to meet with one of our girls. It will help you to relax and spend time pleasantly, help relieve stress and make you forget about everything that bothers you. You can start a new day with full force. Our girls are always cheerful and sexy, always ready to give you pleasure. They can be gentle and tender, can be rude, all depends entirely on you and your desires. The most important thing is that our girls are very fond of their work, and this is very important! Everyone has long known that the most beautiful girls are in Ukraine and Russia. 
-                        ');?>
+                        <?=Yii::t('app', ' If you live in Turkey and came to Ankara on business, to visit or just relax, then you definitely need to meet with one of our girls. It will help you to relax and spend time pleasantly, help relieve stress and make you forget about everything that bothers you. You can start a new day with full force. Our girls are always cheerful and sexy, always ready to give you pleasure. They can be gentle and tender, can be rude, all depends entirely on you and your desires. The most important thing is that our girls are very fond of their work, and this is very important! Everyone has long known that the most beautiful girls are in Ukraine and Russia. ');?>
                     </p>
                 </div>
             </div>

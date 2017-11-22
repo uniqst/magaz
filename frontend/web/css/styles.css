@@ -85,7 +85,7 @@ img {
   .dir-tree-links a {
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: 400; }
+    font-weight: 300; }
     @media only screen and (min-width: 768px) {
       .dir-tree-links a {
         color: black; } }
@@ -775,7 +775,10 @@ img {
   margin-bottom: 90px; }
 
 .stories.page-name {
-  color: black; }
+  color: white; }
+  @media only screen and (min-width: 768px) {
+    .stories.page-name {
+      color: black; } }
 
 .posts-container {
   background-color: #c2185b; }
