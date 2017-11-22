@@ -8,13 +8,18 @@ body {
 }
 
 body {
-  background-color: $bg-color;
+  overflow-x: hidden;
+
   font-size: 1rem;
   font-family: $font-family-primary;
   line-height: 1.4;
   font-weight: 300;
 
-  overflow-x: hidden;
+  background-color: #8c0032;
+
+  @include mq(md) {
+    background-color: $bg-color;
+  }
 }
 
 h1,

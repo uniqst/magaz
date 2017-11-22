@@ -12,11 +12,13 @@
 //   }
 // }
 .mp-content {
-  margin-bottom: 70px;
-}
+    margin-bottom: 70px;
+  }
 
 .heading-main {
-  color: black;
+  @include mq(md) {
+    color: black;
+  }
   margin-bottom: 30px;
   font-weight: 400;
 }
@@ -75,6 +77,10 @@
       a {
         font-size: rem(12px);
         color: white;
+        font-weight: 400;
+        @include mq(md) {
+          // font-weight: 300;
+        }
       }
     }
   }

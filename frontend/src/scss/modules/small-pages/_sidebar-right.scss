@@ -1,9 +1,12 @@
 .main-sidebar-right {
-  max-width: 350px;
   margin-right: auto;
   background-image: linear-gradient(to left, #8c0032, #8c0032 65%, #c2185b 65%);
   padding-bottom: 20px;
 
+  @include mq(xl) {
+    max-width: 350px;
+  }
+  
   .page-name {
     font-weight: 400;
     padding: 20px 25px;

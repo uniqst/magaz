@@ -5,9 +5,15 @@
 .main-slider-container {
   color: $font-color-main;
   background-color: #c2185b;
-  padding: 15px;
-  // max-width: 1090px;
-  // @include mx();
+  // padding: 15px 0;
+
+  @include mq(md) {
+    // @include px(15px);
+  }
+
+  .subheading-main {
+    padding: 15px;
+  }
 
   .slick-next,
   .slick-prev {

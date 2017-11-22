@@ -6,7 +6,7 @@ $this->title = 'My Yii Application';
 ?>
 
     <div class="row main-page-upper-box">
-        <div class="offset-xl-2 col-xl-8">
+        <div class="offset-xl-2 col-xl-8 px-to-md-0">
             <div class="main-slider-container">
                 <h3 class="subheading-main">New Girls</h3>
                 <div class="new-girls-slider">
@@ -24,7 +24,7 @@ $this->title = 'My Yii Application';
         </div>
     <!-- </div> -->
     <!-- <div class="row"> -->
-        <div class="offset-xl-2 col-xl-8 ">
+        <div class="offset-xl-2 col-xl-8 px-to-md-0">
             <div class="last-response">
                 <h3 class="subheading-main">Customer response</h3>
                 <div class="iconblock">
@@ -101,7 +101,7 @@ $this->title = 'My Yii Application';
         </div>
     </div>
     <div class="row">
-        <div class="offset-xl-3 col-xl-6">
+        <div class="offset-xl-3 col-xl-6 px-to-md-0">
             <div class="embded-response-box embded-response-box--mb">
                 <div class="page-name">
                     Customer reviews
@@ -134,34 +134,15 @@ $this->title = 'My Yii Application';
 
         <div class="offset-xl-3 col-xl-6">
             <div class="mp-text-block">
-                <div class="mp-text-block__text">
-                    <p>
-                        Her kiz bir bakig ile adami nasil buyulemeyi biliyor: sadece mukemmel kizin gozune bakin ve bu randevu ile sizi baglaycak ozel manyetizmayi hissedeceksiniz. Hizmetlerimizi sizin igin mumkun oldugunca rahat yapmaya galigtik, sadece katologumuzu bakin, kizi segin, biz de kalan her gey ile ilgilenegiz. inanin - bu randevu hafizamzda en heyecanli macera gibi kalacak.
-                    </p>
-                    <p>
-                        §ehrimizi ig ya da zevk igin ziyaret edersiniz olsun, her halde biz er guzel kizlarla en iyi randevulari size teklif etmekter memnun olacagiz. igleri dijgunmeden zor ig gijnunden dinleyebirsiniz. Kiz ile ortak dil bulmak igin gok zaman harcamamz gerek yok, о kendisi her gey yapip randevunuzu unutulmaz yapacak. Randevu igin ideal bir kizi segin ve biz eminiz ki bize yineden donecksiniz.
-                    </p>
-                </div>
                 <h3 class="mp-text-block__heading">
-                    Eskort bursa kizlari bunlari siz sipari? ettikten sonra sizin igin her geyi yapacaklar
+                    Escort in Ankara, Turkey. Housewife, Escort agency «All Ankara Escort»
                 </h3>
                 <div class="mp-text-block__text">
                     <p>
-                        Her kiz bir bakig ile adami nasil buyulemeyi biliyor: sadece mukemmel kizin gozune bakin ve bu randevu ile sizi baglaycak ozel manyetizmayi hissedeceksiniz. Hizmetlerimizi sizin igin mumkun oldugunca rahat yapmaya galigtik, sadece katologumuzu bakin, kizi segin, biz de kalan her gey ile ilgilenegiz. inanin - bu randevu hafizamzda en heyecanli macera gibi kalacak.
+                        Escort agency «All Ankara Escort» has been operating successfully for more than five years. We work with only the best girls from different countries, mainly in the most beautiful girls from Russia and Ukraine. Customers who have used our escort service at least once, will melt our regular customers. Therefore, we value our reputation.
                     </p>
                     <p>
-                        §ehrimizi ig ya da zevk igin ziyaret edersiniz olsun, her halde biz er guzel kizlarla en iyi randevulari size teklif etmekter memnun olacagiz. igleri dijgunmeden zor ig gijnunden dinleyebirsiniz. Kiz ile ortak dil bulmak igin gok zaman harcamamz gerek yok, о kendisi her gey yapip randevunuzu unutulmaz yapacak. Randevu igin ideal bir kizi segin ve biz eminiz ki bize yineden donecksiniz.
-                    </p>
-                </div>
-                <h3 class="mp-text-block__heading">
-                    Eskort bursa kizlari bunlari siz sipari? ettikten sonra sizin igin her geyi yapacaklar
-                </h3>
-                <div class="mp-text-block__text">
-                    <p>
-                        Her kiz bir bakig ile adami nasil buyulemeyi biliyor: sadece mukemmel kizin gozune bakin ve bu randevu ile sizi baglaycak ozel manyetizmayi hissedeceksiniz. Hizmetlerimizi sizin igin mumkun oldugunca rahat yapmaya galigtik, sadece katologumuzu bakin, kizi segin, biz de kalan her gey ile ilgilenegiz. inanin - bu randevu hafizamzda en heyecanli macera gibi kalacak.
-                    </p>
-                    <p>
-                        §ehrimizi ig ya da zevk igin ziyaret edersiniz olsun, her halde biz er guzel kizlarla en iyi randevulari size teklif etmekter memnun olacagiz. igleri dijgunmeden zor ig gijnunden dinleyebirsiniz. Kiz ile ortak dil bulmak igin gok zaman harcamamz gerek yok, о kendisi her gey yapip randevunuzu unutulmaz yapacak. Randevu igin ideal bir kizi segin ve biz eminiz ki bize yineden donecksiniz.
+                        If you live in Turkey and came to Ankara on business, to visit or just relax, then you definitely need to meet with one of our girls. It will help you to relax and spend time pleasantly, help relieve stress and make you forget about everything that bothers you. You can start a new day with full force. Our girls are always cheerful and sexy, always ready to give you pleasure. They can be gentle and tender, can be rude, all depends entirely on you and your desires. The most important thing is that our girls are very fond of their work, and this is very important! Everyone has long known that the most beautiful girls are in Ukraine and Russia. 
                     </p>
                 </div>
             </div>
