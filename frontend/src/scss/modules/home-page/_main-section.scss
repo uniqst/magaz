@@ -39,6 +39,7 @@
     @include mq(md) {
       height: 350px; 
     }
+
     @include mq(xl) {
       height: 440px; 
     }
