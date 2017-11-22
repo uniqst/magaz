@@ -4,14 +4,25 @@ namespace frontend\components;
 use yii\base\Widget;
 use frontend\models\Profile;
 use frontend\models\Stories;
+use frontend\models\Service;
 use yii\db\Expression;
 
 
 Class SidebarRight extends Widget{
     public function run(){
-        $profile = Profile::find()->limit(3)->orderBy(new Expression('rand()'))->with('image')->all();
-        $stories = Stories::find()->limit(3)->orderBy(new Expression('rand()'))->all();
-        $model = array_merge($profile, $stories);
+        $profile = Profile::find()->where(['status' => 1])->limit(2)->orderBy(new Expression('rand()'))->with('image')->all();
+    	foreach($profile as $prof){
+    	$prof->id = 'profile';
+    	}
+        $stories = Stories::find()->limit(2)->orderBy(new Expression('rand()'))->all();
+        foreach($stories as $stor){
+    	$stor->id = 'stories';
+    	}
+        $service = Service::find()->limit(2)->orderBy(new Expression('rand()'))->all();
+        foreach($service as $serv){
+    	$serv->id = 'service';
+    	}
+        $model = array_merge($profile, $stories, $service);
         shuffle($model);
         return $this->render('sidebar-right', compact('model'));
     }

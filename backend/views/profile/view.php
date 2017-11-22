@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div style="display:flex">
     <?php foreach($model->photo as $photo):?>
     <div>
-       <div><a class="btn-danger btn" href="<?= Url::to(['/profile', 'del' => $photo->id])?>">Удалить</a></div>
+       <div><a class="btn-danger btn" style="position: absolute" href="<?= Url::to(['/profile', 'del' => $photo->id])?>">Удалить</a></div>
         <img src="/frontend/web/photo/<?= $photo->src?>" style="width: 200px;">
     </div>
     <?php endforeach;?>
