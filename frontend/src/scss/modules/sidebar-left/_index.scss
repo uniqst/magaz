@@ -107,8 +107,10 @@
 // }
 
 .main-sidebar-menu {
-  background-color: #8c0032;
+  max-width: 350px;
+  margin-left: auto;
   position: relative;
+  background-color: #8c0032;
 
   ul {
     list-style: none;
