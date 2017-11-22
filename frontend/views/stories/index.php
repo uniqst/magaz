@@ -6,14 +6,14 @@ use yii\helpers\Url;
 
   <div class="col-12">
     <div class="row">
-      <div class="offset-lg-3 col-lg-6">
+      <div class="mx-auto col-xl-58p">
         <h2 class="page-name stories">Erotic Stories</h1>
       </div>
     </div>
   </div>
   <div class="col-12">
     <div class="row">
-      <div class="offset-lg-3 col-lg-6">
+      <div class="mx-auto col-xl-58p">
           <h1 class="heading-main mb-0">
               Bursa platinum girls. High class escorts. Pleasure without limits
           </h1>
@@ -22,7 +22,7 @@ use yii\helpers\Url;
   </div>
   <div class="col-12 dir-tree-links">
       <div class="row">
-        <div class="offset-lg-3 col-lg-6">
+        <div class="mx-auto col-xl-58p">
           <a href="#">Home</a>
           <span> > </span>
           <a href="#">Catalog</a>
@@ -34,7 +34,7 @@ use yii\helpers\Url;
 
 <?= \frontend\components\SidebarLeft::widget();?>
   
-  <div class="col-lg-6">
+  <div class="col-xl-58p">
     <div class="posts-container">
       <h1 class="page-name">EROTIC STORIES</h1>
       <div class="posts-list">
@@ -59,7 +59,7 @@ use yii\helpers\Url;
       </div>
     </div>
   </div>
-  <div class="d-none d-lg-block col-lg-3">
+  <div class="d-none d-lx-block col-xl-21p">
     <?= \frontend\components\SidebarRight::widget();?>
   </div>
 </div>

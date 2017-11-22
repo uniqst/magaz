@@ -35,7 +35,7 @@ $this->title = $model->name;
 
   <?= \frontend\components\SidebarLeft::widget();?>
 
-  <div class="col-xl-6">
+  <div class="col-xl-58p">
 
     <div class="product-card">
 
@@ -237,7 +237,7 @@ $this->title = $model->name;
         </div>
     </div>
   </div>
-  <div class="d-none d-xl-block col-xl-3">
+  <div class="d-none d-xl-block col-xl-21p">
   <?= \frontend\components\SidebarRight::widget();?>
     <!--?= $this->render('../sidebar-right')?-->
   </div>

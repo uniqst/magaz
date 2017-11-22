@@ -6,7 +6,7 @@ use yii\helpers\Url;
         cursor: pointer;
     }
 </style>
-<div class="col-xl-3 d-xl-block main-sidebar-menu-js">
+<div class="col-xl-21p d-xl-block main-sidebar-menu-js">
   <!-- <div class="main-sidebar-close">
     x
   </div> -->

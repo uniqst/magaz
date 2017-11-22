@@ -1,6 +1,6 @@
 <div class="row">
 
-  <div class="booking-page offset-xl-2 col-xl-8">
+  <div class="booking-page mx-auto col-xl-58p">
     <?=\frontend\components\Comments::widget();?>
   </div>
 </div>

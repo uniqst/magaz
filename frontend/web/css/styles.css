@@ -130,7 +130,7 @@ img {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 58%;
             flex: 0 0 58%;
-    max-width: 85%; } }
+    max-width: 58%; } }
 
 .main-page-upper-box {
   margin-bottom: 60px; }
@@ -138,7 +138,6 @@ img {
 .main-slider-container {
   color: #ffffff;
   background-color: #c2185b;
-  max-width: 1090px;
   margin-left: auto;
   margin-right: auto; }
   .main-slider-container .subheading-main {
@@ -459,19 +458,29 @@ img {
 
 .top-form {
   background-color: #c2185b;
-  padding: 30px;
+  padding: 15px;
   font-size: 14px; }
+  .top-form .form-control {
+    margin-bottom: 24px;
+    border-radius: 0; }
+    .top-form .form-control:focus {
+      -webkit-box-shadow: 0 0 0 transparent;
+              box-shadow: 0 0 0 transparent; }
   .top-form p {
     margin-bottom: 14px; }
+  .top-form .page-name {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 9px; }
   .top-form .heading-main {
     font-weight: 400;
     padding-top: .4em;
     padding-bottom: .8em;
     color: white; }
   .top-form .text {
-    font-size: 14px; }
-  .top-form form > .row > div {
-    margin-bottom: 1.58333rem; }
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px; }
   .top-form form > .row > span {
     padding-left: 15px;
     padding-right: 15px;

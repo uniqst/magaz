@@ -6,7 +6,7 @@ use yii\widgets\ActiveForm;
 ?>
 
 <div class="row">
-  <div class="application-page offset-xl-3 col-xl-6">
+  <div class="application-page mx-auto col-xl-58p">
     <div class="top-form">
       
       <h2 class="page-name"><?=Yii::t('app', 'Applciation');?></h1>

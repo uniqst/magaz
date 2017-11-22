@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="booking-page offset-xl-3 col-xl-6">
+  <div class="booking-page col-xl-58p mx-auto">
     <div class="top-form">
       
       <h2 class="page-name"><?=Yii::t('app', 'Booking');?></h1>
@@ -8,24 +8,24 @@
       <form class="main-application-form container-fluid" action="" method="post" novalidate="novalidate">
         <div class="row">
           <div class="col-md-6">
-            <input type="text" name="name" placeholder="your name*">
+            <input type="text" class="form-control" name="name" placeholder="your name*">
           </div>
           <div class="col-md-6">
-            <input type="email" name="email" placeholder="your e-mail*">
+            <input type="email"class="form-control" name="email" placeholder="your e-mail*">
           </div>
           <div class="col-md-4" >
-            <input type="text" name="phone" placeholder="your phone number*">
+            <input type="text" class="form-control"name="phone" placeholder="your phone number*">
           </div>
           <div class="col-md-4">
-            <input type="text" name="escort_name" placeholder="name of escort*">
+            <input type="text" class="form-control"name="escort_name" placeholder="name of escort*">
           </div>
           <div class="col-md-4" >
-            <input type="text" name="adult" placeholder="are you 18? (YES/NO)">
+            <input type="text" class="form-control"name="adult" placeholder="are you 18? (YES/NO)">
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
-            <textarea name="" id="" cols="30" rows="7" class="col-md-12" placeholder="tell us if you have some special wishes*"></textarea>
+            <textarea class="form-control" name="" id="" cols="30" rows="7" class="col-md-12" placeholder="tell us if you have some special wishes*"></textarea>
           </div>
         </div>
         <div class="row submit">

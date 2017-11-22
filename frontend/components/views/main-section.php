@@ -1,5 +1,5 @@
 <div class="row dir-tree-links">
-  <div class="offset-xl-3 col-xl-6">
+  <div class="mx-auto col-xl-58p">
     <a href="#"><?=Yii::t('app', 'Home');?></a>
     <span> > </span>
     <a href="#"><?=Yii::t('app', 'Catalog');?></a>
@@ -12,7 +12,7 @@
 
   <?= \frontend\components\SidebarLeft::widget();?>
 
-  <div class="main-center-col col-xl-6">
+  <div class="main-center-col col-xl-58p">
 
    <?= frontend\components\Product::widget(); ?>
 
@@ -37,7 +37,7 @@
     
   </div>
 
-  <div class="d-none d-xl-block col-xl-3">
+  <div class="d-none d-xl-block col-xl-21p">
     <?= \frontend\components\SidebarRight::widget();?>
   </div>
 

@@ -93,9 +93,9 @@
 }
 .col-xl-58p {
   @extend %col;
-  
+
   @include mq(xl) {
     flex: 0 0 58%;
-    max-width: 85%
+    max-width: 58%
   }
 }

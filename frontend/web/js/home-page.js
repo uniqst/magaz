@@ -55,9 +55,15 @@ $(document).ready(function () {
       speed: 600,
       autoplay: true,
       autoplaySpeed: 10000,
-      slidesToShow: 5,
+      slidesToShow: 6,
       slidesToScroll: 1,
       responsive: [
+        {
+          breakpoint: 1550,
+          settings: {
+            slidesToShow: 5,
+          }
+        },
         {
           breakpoint: 1300,
           settings: {
