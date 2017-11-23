@@ -2,7 +2,6 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use mihaildev\ckeditor\CKEditor;
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Stories */
@@ -17,12 +16,7 @@ use mihaildev\ckeditor\CKEditor;
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'content')->widget(CKEditor::className(),[
-        'editorOptions' => [
-            'preset' => 'standart', //разработанны стандартные настройки basic, standard, full данную возможность не обязательно использовать
-            'inline' => false, //по умолчанию false
-        ],
-    ]); ?>
+    <?= $form->field($model, 'content')->textArea(['maxlength' => true, 'rows' => 6]) ?>
 
     <?= $form->field($model, 'date')->hiddenInput(['value' => date('Y-m-d H:i:s')])->label(false) ?>
 
