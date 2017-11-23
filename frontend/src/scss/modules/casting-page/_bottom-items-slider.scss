@@ -1,10 +1,18 @@
 .bottom-items-slider {
   padding: 12px 30px;
+  width: 98%;
+  @include mx(auto);
+  margin-top: 30px;
+  margin-bottom: 30px;
   background-image: linear-gradient(to top, #8c0032, #8c0032 35%, #c2185b 35%);
+  border-bottom: 1px solid #96043a;
 
   @include mq(lg) {
-    padding: 45px 115px;
+    padding: 45px 100px;
+    margin-top: 90px;
+    margin-bottom: 90px;
   }
+
   .item-box {
     font-size: 12px;
     font-weight: 400;
@@ -85,9 +93,17 @@
   }
   .slick-next {
     right: -45px;
+
+    @include mq(lg) {
+      right: -128px;
+    }
   }
   .slick-prev {
     left: -45px;
+
+    @include mq(lg) {
+      left: -128px;
+    }
   }
   .slick-next:before,
   .slick-prev:before {
