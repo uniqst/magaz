@@ -9,6 +9,14 @@
   }
 }
 .posts-container {
+  background-color: #c2185b;
+
+  // &.services {
+  //   .title {
+  //       text-transform: uppercase;
+  //   }
+  // }
+
   .page-name {
     padding: 18px 18px 55px;
     font-weight: 400;
@@ -34,13 +42,15 @@
     
     .title {
        margin-bottom: 20px;
+      text-transform: uppercase;
       a {
         display: block;
+        // text-transform: uppercase;
       }
     }
   }
 
-  background-color: #c2185b;
+
 
   // padding-left: 0;
   // padding-right: 0;

@@ -59,7 +59,7 @@ use yii\helpers\Url;
       </div>
     </div>
   </div>
-  <div class="d-none d-lx-block col-xl-21p">
+  <div class="d-none d-xl-block col-xl-21p">
     <?= \frontend\components\SidebarRight::widget();?>
   </div>
 </div>
