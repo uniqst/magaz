@@ -1,0 +1,41 @@
+.stories-list-js {
+  .slick-next,
+  .slick-prev {
+
+  }
+  .slick-next,
+  .slick-prev {
+    z-index: 10;
+    width: 35px;
+    height: 35px;
+    background-color: #8c0032;
+    transform: translate(0, -100%);
+    right: 0;
+    border: 1px solid #ae0f4c;
+  }
+  .slick-next {
+    // right: 0px;
+    top: 0;
+  }
+  .slick-prev {
+    // left: 0px;
+    left: unset;
+    top: 0;
+    transform: translate(-100%, -100%);
+  }
+  .slick-next:before,
+  .slick-prev:before {
+    font-family: 'FontAwesome';
+    color: #c2185b;
+  }
+  .slick-next:before {
+    content: '\f061';
+  }
+  .slick-prev:before {
+    content: '\f060';
+  }
+
+  .slider-item {
+    padding: 15px;
+  }
+}

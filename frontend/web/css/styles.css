@@ -476,6 +476,40 @@ img {
     max-width: 100%;
     display: block; }
 
+.stories-list-js .slick-next,
+.stories-list-js .slick-prev {
+  z-index: 10;
+  width: 35px;
+  height: 35px;
+  background-color: #8c0032;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+  right: 0;
+  border: 1px solid #ae0f4c; }
+
+.stories-list-js .slick-next {
+  top: 0; }
+
+.stories-list-js .slick-prev {
+  left: unset;
+  top: 0;
+  -webkit-transform: translate(-100%, -100%);
+          transform: translate(-100%, -100%); }
+
+.stories-list-js .slick-next:before,
+.stories-list-js .slick-prev:before {
+  font-family: 'FontAwesome';
+  color: #c2185b; }
+
+.stories-list-js .slick-next:before {
+  content: '\f061'; }
+
+.stories-list-js .slick-prev:before {
+  content: '\f060'; }
+
+.stories-list-js .slider-item {
+  padding: 15px; }
+
 .top-form {
   background-color: #c2185b;
   padding: 15px;
