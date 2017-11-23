@@ -11,7 +11,7 @@ Class ProductList extends Widget{
     public function run(){
             $countQuery = clone $this->model;
     // подключаем класс Pagination, выводим по 10 пунктов на страницу
-            $pages = new Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 1]);
+            $pages = new Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 16]);
     // приводим параметры в ссылке к ЧПУ
     		$pages->pageSizeParam = false;
     		$models = $countQuery->offset($pages->offset)
