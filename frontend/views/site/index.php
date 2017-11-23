@@ -102,12 +102,18 @@ $this->title = 'My Yii Application';
         </div>
     </div>
     <div class="row">
-        <div class="mx-auto col-lg-9 col-xl-8">
+        <div class="mx-auto col-lg-9 col-xl-8 common-block">
             <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 pr-md-0">
                 <div class="most-wanted-block">
                     <h3 class="page-name">Most Wanted</h3>
-                    <div class="most-wanted-slider">
+                    <div class="most-wanted-slider most-wanted-slider-js">
+                        <div class="most-wanted-slider__item">
+                            <div class="girl-image" style="background-image: url(photo/82db0c2c079e2f8f56a2-1.png)"></div>
+                        </div>
+                        <div class="most-wanted-slider__item">
+                            <div class="girl-image" style="background-image: url(photo/82db0c2c079e2f8f56a2-1.png)"></div>
+                        </div>
                         <div class="most-wanted-slider__item">
                             <div class="girl-image" style="background-image: url(photo/82db0c2c079e2f8f56a2-1.png)"></div>
                         </div>
@@ -120,7 +126,7 @@ $this->title = 'My Yii Application';
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 pl-md-0">
                 <div class="posts-container">
                     <h3 class="page-name">EROTIC STORIES</h3>
                     <div class="post-lists-wrapper stories-list-js">

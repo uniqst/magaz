@@ -474,11 +474,17 @@ img {
     max-width: 100%;
     display: block; }
 
+@media only screen and (min-width: 768px) {
+  .common-block {
+    margin-bottom: 90px; } }
+
 .most-wanted-block {
   background-color: #8c0032;
-  position: relative; }
+  position: relative;
+  height: 411px; }
   .most-wanted-block .page-name {
     position: absolute;
+    z-index: 1000;
     top: 0;
     width: 100%;
     padding: 15px 15px 55px;
@@ -496,7 +502,7 @@ img {
   padding-right: 25px; }
 
 .most-wanted__description {
-  padding: 25px;
+  padding: 20px 25px;
   padding-left: 25px;
   padding-right: 25px; }
 
@@ -506,6 +512,42 @@ img {
   background-position: center;
   height: 190px;
   width: 100%; }
+
+.most-wanted-slider-js .slick-next,
+.most-wanted-slider-js .slick-prev {
+  z-index: 10;
+  width: 35px;
+  height: 35px;
+  background-color: #8c0032;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  right: 0;
+  border: 1px solid #ae0f4c; }
+
+.most-wanted-slider-js .slick-next {
+  top: unset;
+  bottom: 0; }
+
+.most-wanted-slider-js .slick-prev {
+  top: unset;
+  left: unset;
+  bottom: 0;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0); }
+
+.most-wanted-slider-js .slick-next:before,
+.most-wanted-slider-js .slick-prev:before {
+  font-family: 'FontAwesome';
+  color: #c2185b; }
+
+.most-wanted-slider-js .slick-next:before {
+  content: '\f061'; }
+
+.most-wanted-slider-js .slick-prev:before {
+  content: '\f060'; }
+
+.most-wanted-slider-js .slider-item {
+  padding: 15px; }
 
 .stories-list-js .slick-next,
 .stories-list-js .slick-prev {
@@ -937,7 +979,7 @@ img {
       color: black; } }
 
 .posts-container {
-  margin-bottom: 90px;
+  border-left: 1px solid #ebc6d1;
   background-color: #c2185b; }
   .posts-container .page-name {
     padding: 15px 15px 55px;

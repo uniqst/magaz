@@ -160,4 +160,13 @@ $(document).ready(function () {
     fade: true,
     cssEase: 'linear'
   });
+
+  $('.most-wanted-slider-js').slick({
+    dots: false,
+    speed: 500,
+    arrows: true,
+    fade: true,
+    cssEase: 'linear'
+  });
+
 });
