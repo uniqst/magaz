@@ -2,4 +2,8 @@
 /node_modules/
 **/*.css.map
 src/scss/bootstrap
+/web/promo/*
+/web/service/*
+/web/story/*
+/web/stori/*
 
