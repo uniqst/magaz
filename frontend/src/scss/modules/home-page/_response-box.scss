@@ -1,5 +1,6 @@
 .embded-response-box--mb {
   margin-bottom: 70px;
+  border-bottom: 1px solid #aa1d50;
 }
 
 .embded-response-box {
@@ -9,7 +10,7 @@
   position: relative;
   
   .page-name {
-    padding: 15px 15px 24px;
+    padding: 15px 15px 45px;
     background-color: #c2185b;
   }
 
@@ -52,6 +53,34 @@
   }
   .msgbox {
     background-image: url(/img/icons/icon-chatbox.png);
+  }
+
+  .resopnse-list-js {
+    .slick-dots {
+      top: -25px;
+      bottom: unset;
+
+      li.slick-active button:before {
+        opacity: 1;
+        background-color: #eebfd1;
+      }
+    }
+
+    .slick-dots li button {
+      width: 14px;
+      height: 14px;
+
+      &:before {
+        width: 14px;
+        height: 14px;
+        border: 2px solid #eebfd1;
+        background-color: transparent;
+        opacity: 1;
+        border-radius: 50%;
+        content: '';
+        transition: .3 all;
+      }
+    }
   }
 }
 
