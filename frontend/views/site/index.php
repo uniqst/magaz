@@ -63,7 +63,7 @@ $this->title = 'My Yii Application';
         <!-- <div class="col-xl-3 sidebar-main d-none d-lg-block">
             Sidebar main
         </div> -->
-        <div class="col-xl-9 main-center-col">
+        <div class="col main-center-col">
 
             <div class="items-block">
                 <div class="container-fluild">
