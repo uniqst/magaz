@@ -153,4 +153,11 @@ $(document).ready(function () {
     cssEase: 'linear'
   });
 
+  $('.stories-list-js').slick({
+    dots: false,
+    speed: 500,
+    arrows: true,
+    fade: true,
+    cssEase: 'linear'
+  });
 });

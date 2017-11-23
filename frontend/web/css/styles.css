@@ -474,6 +474,73 @@ img {
     max-width: 100%;
     display: block; }
 
+.most-wanted-block {
+  background-color: #8c0032;
+  position: relative; }
+  .most-wanted-block .page-name {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 15px 15px 55px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), to(rgba(0, 0, 0, 0.3)));
+    background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.3)); }
+  .most-wanted-block p {
+    margin-bottom: 0; }
+
+.most-wanted__name {
+  padding: 25px 25px 15px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.most-wanted__description {
+  padding: 25px;
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.most-wanted-slider__item .girl-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 190px;
+  width: 100%; }
+
+.stories-list-js .slick-next,
+.stories-list-js .slick-prev {
+  z-index: 10;
+  width: 35px;
+  height: 35px;
+  background-color: #8c0032;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+  right: 0;
+  border: 1px solid #ae0f4c; }
+
+.stories-list-js .slick-next {
+  top: 0; }
+
+.stories-list-js .slick-prev {
+  left: unset;
+  top: 0;
+  -webkit-transform: translate(-100%, -100%);
+          transform: translate(-100%, -100%); }
+
+.stories-list-js .slick-next:before,
+.stories-list-js .slick-prev:before {
+  font-family: 'FontAwesome';
+  color: #c2185b; }
+
+.stories-list-js .slick-next:before {
+  content: '\f061'; }
+
+.stories-list-js .slick-prev:before {
+  content: '\f060'; }
+
+.stories-list-js .slider-item {
+  padding: 15px; }
+
 .top-form {
   background-color: #c2185b;
   padding: 15px;
@@ -631,7 +698,8 @@ img {
   .articles-box__title {
     padding-left: 30px;
     padding-right: 15px;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 400;
     text-transform: uppercase; }
 
 .articles__list ul {
@@ -869,9 +937,10 @@ img {
       color: black; } }
 
 .posts-container {
+  margin-bottom: 90px;
   background-color: #c2185b; }
   .posts-container .page-name {
-    padding: 18px 18px 55px;
+    padding: 15px 15px 55px;
     font-weight: 400; }
   .posts-container .post-item {
     background-color: #8c0032; }
