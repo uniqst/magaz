@@ -106,12 +106,23 @@ $this->title = 'My Yii Application';
             <div class="row">
             <div class="col-md-6">
                 <div class="most-wanted-block">
-                    
+                    <h3 class="page-name">Most Wanted</h3>
+                    <div class="most-wanted-slider">
+                        <div class="most-wanted-slider__item">
+                            <div class="girl-image" style="background-image: url(photo/82db0c2c079e2f8f56a2-1.png)"></div>
+                        </div>
+                    </div>
+                    <div class="most-wanted__name">
+                        <p>Sveta</p>
+                    </div>
+                    <div class="most-wanted__description">
+                        <p>This design is fucking brilliant. Fuck. Can we all just agree as the greater design community to stop fucking talking about Comic Sans altogether? It’s getting fucking old. A good fucking composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Paul Rand once said, “The public is more familiar with bad fucking design than good design.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="posts-container">
-                    <h1 class="page-name">EROTIC STORIES</h1>
+                    <h3 class="page-name">EROTIC STORIES</h3>
                     <div class="post-lists-wrapper stories-list-js">
 
                         <div class="posts-list">
