@@ -13,10 +13,8 @@ use yii\helpers\ArrayHelper;
     $category = Category::find()->where(['parent_id' => 0 ])->all();
 // формируем массив, с ключем равным полю 'id' и значением равным полю 'name' 
     $items = ArrayHelper::map($category,'id','name');
-    $items[] = [
-        '0' => 'None'
-    ];
-
+    $item = ['None'];
+    $items = array_merge($item, $items);
 
 ?>
 
@@ -24,7 +22,7 @@ use yii\helpers\ArrayHelper;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'parent_id')->dropDownList($items); ?>
+    <?= $form->field($model, 'parent_id')->dropDownList($items)->label('Parent category'); ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 

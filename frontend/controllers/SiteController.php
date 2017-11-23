@@ -13,6 +13,7 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use frontend\models\Category;
 use frontend\models\Profile;
 use frontend\models\Comments;
 use frontend\models\Advertising;
