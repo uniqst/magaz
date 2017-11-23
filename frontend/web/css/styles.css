@@ -633,7 +633,8 @@ img {
   .articles-box__title {
     padding-left: 30px;
     padding-right: 15px;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 400;
     text-transform: uppercase; }
 
 .articles__list ul {
@@ -871,9 +872,10 @@ img {
       color: black; } }
 
 .posts-container {
+  margin-bottom: 90px;
   background-color: #c2185b; }
   .posts-container .page-name {
-    padding: 18px 18px 55px;
+    padding: 15px 15px 55px;
     font-weight: 400; }
   .posts-container .post-item {
     background-color: #8c0032; }

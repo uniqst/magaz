@@ -102,6 +102,85 @@ $this->title = 'My Yii Application';
         </div>
     </div>
     <div class="row">
+        <div class="offset-xl-3 col-xl-6">
+            <div class="most-wanted-block">
+
+            </div>
+        </div>
+        <div class="offset-xl-3 col-xl-6">
+            <div class="posts-container">
+                <h1 class="page-name">EROTIC STORIES</h1>
+                <div class="post-lists-wrapper stories ">
+
+                    <div class="posts-list">
+                        <div class="post-item clearfix">
+                        <div class="image">
+                            <a href="/stories/story?id=2&amp;name=Wow+man+thats+nice">
+                            <img src="/stori/8078dac3dd07fc5d7f9c.png" width="200px" hight="200px" alt="Girl photo">
+                            </a>
+                        </div>
+                        <div class="post-info-container">
+                            <h2 class="title">
+                                <a href="/stories/story?id=2&amp;name=Wow+man+thats+nice">Wow man thats nice</a>
+                            </h2>
+                            <div class="center-block">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mi tincidunt, ultricies quam non, rutrum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat non justo at auctor. Nullam malesuada metus eu sollicitudin auctor. In a posuere neque, ac blandit risus. Curabitur at dictum ipsum. Mauris sagittis nisl eget orci tincidunt ornare. Sed facilisis nisl vel dui bibendum placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis e</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="post-item clearfix">
+                        <div class="image">
+                            <a href="/story/3/Hehehe">
+                            <img src="/stori/31f4870677169de72b00.png" width="200px" hight="200px" alt="Girl photo">
+                            </a>
+                        </div>
+                        <div class="post-info-container">
+                            <h2 class="title">
+                                <a href="/story/3/Hehehe">Hehehe</a>
+                            </h2>
+                            <div class="center-block">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mi tincidunt, ultricies quam non, rutrum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat non justo at auctor. Nullam malesuada metus eu sollicitudin auctor. In a posuere neque, ac blandit risus. Curabitur at dictum ipsum. Mauris sagittis nisl eget orci tincidunt ornare. Sed facilisis nisl vel dui bibendum placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis e</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="posts-list">
+                        <div class="post-item clearfix">
+                        <div class="image">
+                            <a href="/stories/story?id=2&amp;name=Wow+man+thats+nice">
+                            <img src="/stori/8078dac3dd07fc5d7f9c.png" width="200px" hight="200px" alt="Girl photo">
+                            </a>
+                        </div>
+                        <div class="post-info-container">
+                            <h2 class="title">
+                                <a href="/stories/story?id=2&amp;name=Wow+man+thats+nice">Wow man thats nice</a>
+                            </h2>
+                            <div class="center-block">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mi tincidunt, ultricies quam non, rutrum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat non justo at auctor. Nullam malesuada metus eu sollicitudin auctor. In a posuere neque, ac blandit risus. Curabitur at dictum ipsum. Mauris sagittis nisl eget orci tincidunt ornare. Sed facilisis nisl vel dui bibendum placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis e</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="post-item clearfix">
+                        <div class="image">
+                            <a href="/story/3/Hehehe">
+                            <img src="/stori/31f4870677169de72b00.png" width="200px" hight="200px" alt="Girl photo">
+                            </a>
+                        </div>
+                        <div class="post-info-container">
+                            <h2 class="title">
+                                <a href="/story/3/Hehehe">Hehehe</a>
+                            </h2>
+                            <div class="center-block">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mi tincidunt, ultricies quam non, rutrum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat non justo at auctor. Nullam malesuada metus eu sollicitudin auctor. In a posuere neque, ac blandit risus. Curabitur at dictum ipsum. Mauris sagittis nisl eget orci tincidunt ornare. Sed facilisis nisl vel dui bibendum placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis e</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
         <div class="offset-xl-3 col-xl-6 px-to-md-0">
             <div class="embded-response-box embded-response-box--mb">
                 <div class="page-name">
