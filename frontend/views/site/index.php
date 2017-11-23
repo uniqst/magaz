@@ -110,7 +110,7 @@ $this->title = 'My Yii Application';
         <div class="offset-xl-3 col-xl-6">
             <div class="posts-container">
                 <h1 class="page-name">EROTIC STORIES</h1>
-                <div class="post-lists-wrapper stories ">
+                <div class="post-lists-wrapper stories-list-js">
 
                     <div class="posts-list">
                         <div class="post-item clearfix">
