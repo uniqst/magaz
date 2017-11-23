@@ -228,7 +228,6 @@ img {
 
 .last-response .pencil,
 .last-response .msgbox {
-  cursor: pointer;
   display: inline-block;
   height: 32px;
   width: 32px;
@@ -397,7 +396,6 @@ img {
     top: 20px; }
   .embded-response-box .pencil,
   .embded-response-box .msgbox {
-    cursor: pointer;
     display: inline-block;
     height: 32px;
     width: 32px;

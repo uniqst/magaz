@@ -3,8 +3,8 @@
         <?=Yii::t('app', 'Customer reviews');?>
     </div>
     <div class="iconblock">
-        <a href="#" class="pencil"></a>
-        <a href="#" class="msgbox"></a>
+        <span class="pencil"></span>
+        <span class="msgbox"></span>
     </div>
     <div class="response-lists-wrapper resopnse-list-js">
         <div class="resoponse-list">
