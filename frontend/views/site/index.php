@@ -103,41 +103,7 @@ $this->title = 'My Yii Application';
     </div>
     <div class="row">
         <div class="offset-xl-3 col-xl-6 px-to-md-0">
-            <div class="embded-response-box embded-response-box--mb">
-                <div class="page-name">
-                    <?=Yii::t('app', 'Customer reviews');?>
-                </div>
-                <div class="iconblock">
-                    <a href="#" class="pencil"></a>
-                    <a href="#" class="msgbox"></a>
-                </div>
-                <div class="response-lists-wrapper resopnse-list-js">
-                    <div class="resoponse-list">
-                        <?php foreach($comments as $com):?>
-                        <blockquote class="response">
-                            <p class="response__quote"><?=Yii::t('app', $com->content);?></p>
-                            <div class="response__author">
-                                <cite><?=Yii::t('app', $com->name);?></cite>
-                                |
-                                <time><?= $com->date?></time>
-                            </div>
-                        </blockquote>
-                        <?php endforeach;?>
-                    </div>
-                    <div class="resoponse-list">
-                        <?php foreach($comments as $com):?>
-                        <blockquote class="response">
-                            <p class="response__quote"><?=Yii::t('app', $com->content);?></p>
-                            <div class="response__author">
-                                <cite><?=Yii::t('app', $com->name);?></cite>
-                                |
-                                <time><?= $com->date?></time>
-                            </div>
-                        </blockquote>
-                        <?php endforeach;?>
-                    </div>
-                </div>
-            </div>
+            <?=\frontend\components\CommentsList::widget();?>
         </div>
 
         <div class="offset-xl-3 col-xl-6">

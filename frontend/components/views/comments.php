@@ -43,11 +43,5 @@ use yii\widgets\Pjax;
 <?php ActiveForm::end(); ?>
 
     </div>
-<ul>
-    <?php foreach($commentsList as $comment):?>
-    <li>
-        <?= Yii::t('app', $comment->name)?>
-    </li>
-    <?php endforeach;?>
-</ul>
+
 <?php Pjax::end();?>
