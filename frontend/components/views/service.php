@@ -2,14 +2,14 @@
 use yii\helpers\Url;
 ?>
 
-<div class="posts-container">
+<div class="posts-container services">
       <h1 class="page-name">Services</h1>
-      <?php foreach($model as $services):?>
       <div class="posts-list">
+      <?php foreach($model as $services):?>
         <div class="post-item clearfix">
           <div class="image">
             <a href="#">
-              <img src="/service/<?= $services->img?>" style="hight:200px; width:200px" alt="Servise photo">
+              <img src="/service/<?= $services->img?>" style="height:160px; width:160px" alt="Servise photo">
             </a>
           </div>
           <div class="post-info-container">
@@ -23,7 +23,7 @@ use yii\helpers\Url;
             </div>
           </div>
         </div>
-      </div>
       <?php endforeach;?>
+      </div>
     </div>
     

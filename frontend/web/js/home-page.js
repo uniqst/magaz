@@ -145,4 +145,12 @@ $(document).ready(function () {
     $('.price-block__prices').find('#' + $(this).attr('data-type')).addClass('active');
   });
 
+  $('.resopnse-list-js').slick({
+    dots: true,
+    speed: 500,
+    arrows: false,
+    fade: true,
+    cssEase: 'linear'
+  });
+
 });
