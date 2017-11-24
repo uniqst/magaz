@@ -7,14 +7,14 @@ $this->title = $model->name;
 
   <div class="col-12">
     <div class="row">
-      <div class="offset-lg-3 col-lg-6">
+      <div class="mx-auto col-xl-58p">
         <h2 class="page-name stories"><?=Yii::t('app', 'Girls');?></h2>
       </div>
     </div>
   </div>
   <div class="col-12">
     <div class="row">
-      <div class="offset-lg-3 col-lg-6">
+      <div class="mx-auto col-xl-58p">
           <h1 class="heading-main mb-0">
             <?=Yii::t('app', 'Bursa platinum girls. High class escorts. Plearsure without limits');?>
           </h1>
@@ -23,7 +23,7 @@ $this->title = $model->name;
   </div>
   <div class="col-12 dir-tree-links">
       <div class="row">
-        <div class="offset-lg-3 col-lg-6">
+        <div class="mx-auto col-xl-58p">
           <a href="#"><?=Yii::t('app', 'Home');?></a>
           <span> > </span>
           <a href="#"><?=Yii::t('app', 'Catalog');?></a>

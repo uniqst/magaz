@@ -1939,4 +1939,11 @@ img {
 .pagination li.active a {
   background-color: #8c0032; }
 
+.top-form-how-to-order {
+  padding-left: 30px;
+  padding-right: 30px; }
+  .top-form-how-to-order .page-name {
+    padding-left: 0;
+    padding-right: 0; }
+
 /*# sourceMappingURL=styles.css.map */
