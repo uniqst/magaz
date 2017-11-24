@@ -33,21 +33,9 @@
             <div class="d-none d-md-block px-0 most-wanted-block--expanded">
                 <div class="most-wanted-block">
                     <div class="most-wanted-slider most-wanted-new-slider-js">
-                            <!-- <img src="photo/82db0c2c079e2f8f56a2.png" style="width: 300px; height: 250px;" alt=""> -->
-                            <!-- <img src="photo/82db0c2c079e2f8f56a2.png" style="width: 300px; height: 190px;" alt=""> -->
                             <img src="photo/82db0c2c079e2f8f56a2.png"  alt="">
                             <img src="photo/82db0c2c079e2f8f56a2.png"  alt="">
                             <img src="photo/82db0c2c079e2f8f56a2.png"  alt="">
-                        <!-- <div class="most-wanted-slider__item">
-                            <div class="girl-image" style="background-image: url(photo/82db0c2c079e2f8f56a2.png)"></div>
-                        </div>
-                        <div class="most-wanted-slider__item">
-                            <h3 class="page-name">Most Wanted</h3>
-                            <div class="girl-image" style="background-image: url(photo/82db0c2c079e2f8f56a2.png)"></div>
-                        </div>
-                        <div class="most-wanted-slider__item">
-                            <div class="girl-image" style="background-image: url(photo/82db0c2c079e2f8f56a2.png)"></div>
-                        </div> -->
                     </div>
                     <div class="most-wanted__name">
                         <p>Sveta</p>
