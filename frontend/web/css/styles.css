@@ -376,7 +376,13 @@ img {
 .embded-response-box {
   background-color: #8c0032;
   color: #ffffff;
-  position: relative; }
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 690px; }
+  @media only screen and (min-width: 1200px) {
+    .embded-response-box {
+      max-width: 990px; } }
   .embded-response-box .page-name {
     padding: 15px 15px 45px;
     background-color: #c2185b; }
@@ -427,10 +433,16 @@ img {
       transition: .3 all; }
 
 .mp-text-block {
-  margin-bottom: 70px; }
+  margin-bottom: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 690px; }
   @media only screen and (min-width: 768px) {
     .mp-text-block {
       color: black; } }
+  @media only screen and (min-width: 1200px) {
+    .mp-text-block {
+      max-width: 990px; } }
 
 .mp-text-block__heading {
   margin-bottom: 30px;
@@ -474,14 +486,36 @@ img {
     max-width: 100%;
     display: block; }
 
-@media only screen and (min-width: 768px) {
-  .common-block {
-    margin-bottom: 90px; } }
+.common-block {
+  padding-left: 30px;
+  padding-right: 30px; }
+  @media only screen and (min-width: 768px) {
+    .common-block {
+      margin-bottom: 90px; } }
+  .common-block .posts-container {
+    margin-bottom: 70px;
+    overflow: hidden;
+    background-color: #8c0032; }
+    @media only screen and (min-width: 768px) {
+      .common-block .posts-container {
+        margin-bottom: 0; } }
+    .common-block .posts-container .page-name {
+      background-color: #c2185b; }
+    @media only screen and (min-width: 1400px) {
+      .common-block .posts-container .image {
+        width: 200px;
+        height: 200px; } }
+    @media only screen and (min-width: 1400px) {
+      .common-block .posts-container .post-info-container {
+        height: 200px; } }
 
 .most-wanted-block {
   background-color: #8c0032;
   position: relative;
-  height: 411px; }
+  margin-bottom: 70px; }
+  @media only screen and (min-width: 768px) {
+    .most-wanted-block {
+      margin-bottom: 0; } }
   .most-wanted-block .page-name {
     position: absolute;
     z-index: 1000;
@@ -512,6 +546,9 @@ img {
   background-position: center;
   height: 190px;
   width: 100%; }
+  @media only screen and (min-width: 1400px) {
+    .most-wanted-slider__item .girl-image {
+      height: 250px; } }
 
 .most-wanted-slider-js .slick-next,
 .most-wanted-slider-js .slick-prev {
@@ -548,6 +585,60 @@ img {
 
 .most-wanted-slider-js .slider-item {
   padding: 15px; }
+
+.most-wanted-block--expanded {
+  position: relative;
+  margin-bottom: 70px; }
+  .most-wanted-block--expanded .most-wanted-block {
+    background-color: transparent; }
+  .most-wanted-block--expanded .most-wanted__name {
+    background-color: #8c0032; }
+  .most-wanted-block--expanded .most-wanted__description {
+    background-color: #8c0032; }
+  .most-wanted-block--expanded .page-name {
+    position: absolute;
+    text-align: center;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    padding: 15px 15px 55px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), to(rgba(0, 0, 0, 0.3)));
+    background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.3)); }
+  .most-wanted-block--expanded p {
+    margin-bottom: 0; }
+
+.most-wanted-new-slider-js {
+  background-color: none;
+  height: 250px; }
+  .most-wanted-new-slider-js img {
+    display: none;
+    height: 200px;
+    width: 400px;
+    top: unset !important;
+    bottom: 0 !important; }
+
+.most-wanted__name {
+  padding: 25px 25px 15px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.most-wanted__description {
+  padding: 20px 25px;
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.most-wanted-slider__item .girl-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 190px;
+  width: 100%; }
+  @media only screen and (min-width: 1400px) {
+    .most-wanted-slider__item .girl-image {
+      height: 250px; } }
 
 .stories-list-js .slick-next,
 .stories-list-js .slick-prev {
@@ -631,7 +722,7 @@ img {
   .top-form form input[type=email], .top-form form input[type=text],
   .top-form form textarea {
     width: 100%;
-    padding: 1.33333rem 1.5rem;
+    padding: 16px 18px;
     border: none;
     background-color: #fa5788;
     color: white; }
@@ -979,8 +1070,10 @@ img {
       color: black; } }
 
 .posts-container {
-  border-left: 1px solid #ebc6d1;
   background-color: #c2185b; }
+  @media only screen and (min-width: 768px) {
+    .common-block .posts-container {
+      border-left: 1px solid #ebc6d1; } }
   .posts-container .page-name {
     padding: 15px 15px 55px;
     font-weight: 400; }
@@ -1899,5 +1992,16 @@ img {
 
 .pagination li.active a {
   background-color: #8c0032; }
+
+.top-form-how-to-order {
+  padding-left: 30px;
+  padding-right: 30px; }
+  .top-form-how-to-order .page-name {
+    padding-left: 0;
+    padding-right: 0; }
+
+@media only screen and (min-width: 1200px) {
+  .booking-page .top-form {
+    margin-bottom: 60px; } }
 
 /*# sourceMappingURL=styles.css.map */

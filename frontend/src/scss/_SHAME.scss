@@ -26,3 +26,18 @@
 .pagination li.active a{
     background-color: #8c0032;
 }
+
+.top-form-how-to-order {
+    .page-name {
+        @include px(0);
+    }
+    @include px(30px);
+}
+
+.booking-page {
+    .top-form {
+        @include mq(xl) {
+            margin-bottom: 60px;
+        }
+    }
+}

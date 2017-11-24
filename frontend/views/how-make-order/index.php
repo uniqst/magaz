@@ -6,7 +6,7 @@ $this->title = 'How to make order';
 ?>
 <div class="row">
     <div class="mx-auto col-xl-58p">
-    <div class="top-form">
+    <div class="top-form top-form-how-to-order">
       <h1 class="page-name"><?=Yii::t('app', 'How to make an order');?></h1>
       <p>
       <?=Yii::t('app', 'Grab a pen and write down: here is the phone number of our booking service:');?> <span class="text-nowrap">+90 539 460 85 63</span>. <?=Yii::t('app', 'You can dial or send SMS using the ordinary phone, the same as to make a call or chat with us using Whatsapp or Viber applications for mobile phones.');?>

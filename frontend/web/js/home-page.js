@@ -1,5 +1,6 @@
 $(document).ready(function () {
   var duration = 500;
+  var dick_slider;
   // Scroll to top of web page
   $('.to-top-button').click(function (e) {
     e.preventDefault();
@@ -33,18 +34,21 @@ $(document).ready(function () {
       //   backgroundColor: 'rgba(0, 0, 0, .7)'
       // });
   });
+
   $(window).resize(function () {
     if ($(window).outerWidth() >= 1200) {
       $('.main-sidebar-menu-js').removeClass('visible');
       $('body').removeClass('no-scroll');
     }
+    dick_slider.reload();
+    if ($(window).outerWidth() >= 1200) {
+    }
   });
+
   $('.main-sidebar-close').click(function () {
     $('.main-sidebar-menu-js').removeClass('visible');
     $('body').removeClass('no-scroll');
   });
-
-
 
   // Bottom slider widjet
   $('.bottom-items-slider > .slick-carousel')
@@ -167,6 +171,33 @@ $(document).ready(function () {
     arrows: true,
     fade: true,
     cssEase: 'linear'
+  });
+
+  dick_slider = $('.most-wanted-new-slider-js').waterwheelCarousel({
+    separation: 200,
+    separationMultiplier: .7,
+    horizonOffset: 0,
+    sizeMultiplier: .84,
+    opacityMultiplier: .7
+  });
+
+  $(window).resize(function () {
+    var width = $(window).outerWidth();
+    if (width < 1400) {
+      dick_slider.reload();
+    // } else if (width >= 1200 && width < 1400) {
+    //   dick_slider.reload({
+    //     separation: 210
+    //   });
+    } else if (width >= 1400 && width < 1600) {
+      dick_slider.reload({
+        separation: 240
+      });
+    } else if (width >= 1600 && width < 1900) {
+      dick_slider.reload({
+        separation: 270
+      });
+    }
   });
 
 });
