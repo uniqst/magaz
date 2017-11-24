@@ -90,7 +90,7 @@ AppAsset::register($this);
                 </div>
                 <div class="lang-wrapper">
                     <a href="<?=Url::to(['/', 'lang' => 'tr']);?>">
-                        <button class="lang" id="lang-tr" data-lant="en">Tr</button>
+                        <button class="lang" id="lang-tr" data-lant="tr">Tr</button>
                     </a>
                 </div>
             </div>

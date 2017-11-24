@@ -1,4 +1,6 @@
-
+<?php
+use yii\helpers\Url;
+?>
 <div class="row stories-page">
 
     <div class="col-12">
@@ -20,11 +22,11 @@
     <div class="col-12 dir-tree-links">
         <div class="row">
             <div class="mx-auto col-xl-58p">
-                <a href="#">Home</a>
+                <a href="<?=Url::to(['/'])?>"><?=Yii::t('app','Home')?></a>
                 <span> > </span>
-                <a href="#">Catalog</a>
+                <a href="<?=Url::to(['/girls'])?>"><?=Yii::t('app','Catalog')?></a>
                 <span> > </span>
-                <a href="#">English</a>
+                <a href="<?=Url::to(['/girls/filters'])?>"><?=Yii::t('app','Filters')?></a>
             </div>
         </div>
     </div>

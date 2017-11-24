@@ -88,7 +88,7 @@
         <?=Yii::t('app', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, repellendus quas dolorem odit, minus ducimus, ut beatae suscipit explicabo voluptatibus est molestiae dolor eos esse. Deleniti officia laboriosam cupiditate maiores!');?>
       </p>
     </div>
-    
+
   </div>
 
   <div class="d-none d-xl-block col-xl-21p">

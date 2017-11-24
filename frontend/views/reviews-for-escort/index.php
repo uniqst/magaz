@@ -23,16 +23,7 @@ $this->title = 'Reviews';
 
 <?=\frontend\components\MainSection::widget();?>
 
-  <?= \frontend\components\SidebarLeft::widget();?>
 
-  <div class="main-center-col col-xl-58p">
-  <?= \frontend\components\CommentsList::widget();?>
-
-   <?= frontend\components\Product::widget(); ?>
-
-   <?= frontend\components\Story::widget(); ?>
-  </div>
-    
 
 
 

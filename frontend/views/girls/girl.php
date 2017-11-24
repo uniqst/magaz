@@ -1,4 +1,5 @@
 <?php
+use yii\helpers\Url;
 $this->title = $model->name;
 ?>
 
@@ -24,11 +25,11 @@ $this->title = $model->name;
   <div class="col-12 dir-tree-links">
       <div class="row">
         <div class="mx-auto col-xl-58p">
-          <a href="#"><?=Yii::t('app', 'Home');?></a>
-          <span> > </span>
-          <a href="#"><?=Yii::t('app', 'Catalog');?></a>
-          <span> > </span>
-          <a href="#"><?=Yii::t('app', 'English');?></a>
+            <a href="<?=Url::to(['/'])?>"><?=Yii::t('app','Home')?></a>
+            <span> > </span>
+            <a href="<?=Url::to(['/girls'])?>"><?=Yii::t('app','Girls')?></a>
+            <span> > </span>
+            <a href="<?=Url::to(['/girls/girl', 'id' => $model->id])?>"><?=Yii::t('app',$model->name)?></a>
         </div>
       </div>
   </div>
