@@ -25,7 +25,7 @@ use yii\helpers\Url;
                         <a href="<?=Url::to(['/stories/story', 'id' => $rand->id, 'name' => $rand->name])?>"><?=Yii::t('app', 'Story');?></a>
                     </div>
                     <div class="item-box__info">
-                        <a href="#story">
+                        <a href="<?=Url::to(['/stories/story', 'id' => $rand->id, 'name' => $rand->name])?>">
                             <?= Yii::t('app', $rand->content)?>
                         </a>
                     </div>
@@ -38,7 +38,7 @@ use yii\helpers\Url;
                         <a href="<?=Url::to(['/services/index', 'id' => $rand->id, 'name' => $rand->name])?>"><?=Yii::t('app', 'Service');?></a>
                     </div>
                     <div class="item-box__info">
-                        <a href="#service">
+                        <a href="<?=Url::to(['/services/index', 'id' => $rand->id, 'name' => $rand->name])?>">
                             <?= Yii::t('app', $rand->name)?>
                         </a>
                     </div>
