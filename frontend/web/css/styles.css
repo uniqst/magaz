@@ -376,7 +376,13 @@ img {
 .embded-response-box {
   background-color: #8c0032;
   color: #ffffff;
-  position: relative; }
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 690px; }
+  @media only screen and (min-width: 1200px) {
+    .embded-response-box {
+      max-width: 990px; } }
   .embded-response-box .page-name {
     padding: 15px 15px 45px;
     background-color: #c2185b; }
@@ -427,10 +433,16 @@ img {
       transition: .3 all; }
 
 .mp-text-block {
-  margin-bottom: 70px; }
+  margin-bottom: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 690px; }
   @media only screen and (min-width: 768px) {
     .mp-text-block {
       color: black; } }
+  @media only screen and (min-width: 1200px) {
+    .mp-text-block {
+      max-width: 990px; } }
 
 .mp-text-block__heading {
   margin-bottom: 30px;
@@ -474,14 +486,28 @@ img {
     max-width: 100%;
     display: block; }
 
-@media only screen and (min-width: 768px) {
-  .common-block {
-    margin-bottom: 90px; } }
+.common-block {
+  padding-left: 30px;
+  padding-right: 30px; }
+  @media only screen and (min-width: 768px) {
+    .common-block {
+      margin-bottom: 90px; } }
+  .common-block .posts-container {
+    background-color: #8c0032;
+    margin-bottom: 70px; }
+    @media only screen and (min-width: 768px) {
+      .common-block .posts-container {
+        margin-bottom: 0; } }
+    .common-block .posts-container .page-name {
+      background-color: #c2185b; }
 
 .most-wanted-block {
   background-color: #8c0032;
   position: relative;
-  height: 411px; }
+  margin-bottom: 70px; }
+  @media only screen and (min-width: 768px) {
+    .most-wanted-block {
+      margin-bottom: 0; } }
   .most-wanted-block .page-name {
     position: absolute;
     z-index: 1000;
@@ -979,8 +1005,10 @@ img {
       color: black; } }
 
 .posts-container {
-  border-left: 1px solid #ebc6d1;
   background-color: #c2185b; }
+  @media only screen and (min-width: 768px) {
+    .common-block .posts-container {
+      border-left: 1px solid #ebc6d1; } }
   .posts-container .page-name {
     padding: 15px 15px 55px;
     font-weight: 400; }

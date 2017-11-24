@@ -8,6 +8,12 @@
   color: $font-color-main;
   // padding: 20px 20px 25px ;
   position: relative;
+  @include mx(auto);
+  max-width: 690px;
+
+  @include mq(xl) {
+    max-width: 990px;
+  }
   
   .page-name {
     padding: 15px 15px 45px;

@@ -28,8 +28,8 @@ $this->title = 'My Yii Application';
             <div class="last-response">
                 <h3 class="subheading-main"><?=Yii::t('app', 'Customer response');?></h3>
                 <div class="iconblock">
-                    <a href="#" class="pencil"></a>
-                    <a href="#" class="msgbox"></a>
+                    <span href="#" class="pencil"></span>
+                    <span href="#" class="msgbox"></span>
                 </div>
                 <blockquote class="response">
                     <p class="response__quote"><?=Yii::t('app', $comment->content);?></p>
@@ -51,7 +51,7 @@ $this->title = 'My Yii Application';
     </div>
 
     <div class="row">
-        <div class="col-12 offset-lg-3 col-lg-6">
+        <div class="col-12 offset-xl-3 col-xl-6">
             <h1 class="heading-main">
                 <?=Yii::t('app', 'Bursa platinum girls. High class escorts. Pleasure without limits');?>
             </h1>
@@ -103,8 +103,8 @@ $this->title = 'My Yii Application';
     </div>
     <div class="row">
         <div class="mx-auto col-lg-9 col-xl-8 common-block">
-            <div class="row">
-            <div class="col-md-6 pr-md-0">
+            <div class="row mx-0">
+            <div class="col-md-6 px-0 most-wanted-block">
                 <div class="most-wanted-block">
                     <h3 class="page-name">Most Wanted</h3>
                     <div class="most-wanted-slider most-wanted-slider-js">
@@ -126,8 +126,8 @@ $this->title = 'My Yii Application';
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 pl-md-0">
-                <div class="posts-container">
+            <div class="col-md-6 px-0 posts-container">
+                <div class="">
                     <h3 class="page-name">EROTIC STORIES</h3>
                     <div class="post-lists-wrapper stories-list-js">
 

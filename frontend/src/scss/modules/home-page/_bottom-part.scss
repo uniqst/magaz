@@ -1,8 +1,15 @@
 .mp-text-block {
   margin-bottom: 70px;
+  @include mx(auto);
+  max-width: 690px;
+
 
   @include mq(md) {
     color: black
+  }
+  
+  @include mq(xl) {
+    max-width: 990px;
   }
 }
 
