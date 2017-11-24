@@ -668,7 +668,7 @@ img {
   .top-form form input[type=email], .top-form form input[type=text],
   .top-form form textarea {
     width: 100%;
-    padding: 1.33333rem 1.5rem;
+    padding: 16px 18px;
     border: none;
     background-color: #fa5788;
     color: white; }
@@ -1945,5 +1945,9 @@ img {
   .top-form-how-to-order .page-name {
     padding-left: 0;
     padding-right: 0; }
+
+@media only screen and (min-width: 1200px) {
+  .booking-page .top-form {
+    margin-bottom: 60px; } }
 
 /*# sourceMappingURL=styles.css.map */

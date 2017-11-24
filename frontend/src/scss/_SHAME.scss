@@ -33,3 +33,11 @@
     }
     @include px(30px);
 }
+
+.booking-page {
+    .top-form {
+        @include mq(xl) {
+            margin-bottom: 60px;
+        }
+    }
+}
