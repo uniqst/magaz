@@ -131,12 +131,23 @@
 }
 
 .most-wanted-block--expanded {
-  background-color: #8c0032;
+  // background-color: #8c0032;
   position: relative;
   margin-bottom: 70px;
+  .most-wanted-block {
+    background-color: transparent;
+  }
+
+  .most-wanted__name {
+    background-color: #8c0032; 
+  }
+
+  .most-wanted__description {
+    background-color: #8c0032; 
+  }
 
   @include mq(md) {
-    margin-bottom: 0;
+    // margin-bottom: 0;
   }
   // height: 411px;
   
@@ -152,6 +163,20 @@
 
   p {
     margin-bottom: 0;
+  }
+}
+
+
+.most-wanted-new-slider-js {
+  background-color: none;
+  height: 250px;
+
+  img {
+    display: none;
+    height: 200px;
+    width: 400px;
+    top: unset !important;
+    bottom: 0 !important;
   }
 }
 

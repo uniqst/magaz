@@ -587,12 +587,14 @@ img {
   padding: 15px; }
 
 .most-wanted-block--expanded {
-  background-color: #8c0032;
   position: relative;
   margin-bottom: 70px; }
-  @media only screen and (min-width: 768px) {
-    .most-wanted-block--expanded {
-      margin-bottom: 0; } }
+  .most-wanted-block--expanded .most-wanted-block {
+    background-color: transparent; }
+  .most-wanted-block--expanded .most-wanted__name {
+    background-color: #8c0032; }
+  .most-wanted-block--expanded .most-wanted__description {
+    background-color: #8c0032; }
   .most-wanted-block--expanded .page-name {
     position: absolute;
     text-align: center;
@@ -604,6 +606,16 @@ img {
     background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.3)); }
   .most-wanted-block--expanded p {
     margin-bottom: 0; }
+
+.most-wanted-new-slider-js {
+  background-color: none;
+  height: 250px; }
+  .most-wanted-new-slider-js img {
+    display: none;
+    height: 200px;
+    width: 400px;
+    top: unset !important;
+    bottom: 0 !important; }
 
 .most-wanted__name {
   padding: 25px 25px 15px;
