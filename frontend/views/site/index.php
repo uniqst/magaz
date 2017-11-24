@@ -65,7 +65,7 @@ $this->title = 'Home';
             <div class="row mx-0">
             <div class="col-md-6 px-0 most-wanted-block">
                 <div class="most-wanted-block">
-                    <h3 class="page-name">Most Wanted</h3>
+                    <h3 class="page-name"><?=Yii::t('app', 'Most Wanted');?></h3>
                     <div class="most-wanted-slider most-wanted-slider-js">
                         <div class="most-wanted-slider__item">
                             <div class="girl-image" style="background-image: url(photo/82db0c2c079e2f8f56a2.png)"></div>
@@ -81,7 +81,7 @@ $this->title = 'Home';
                         <p>Sveta</p>
                     </div>
                     <div class="most-wanted__description">
-                        <p>This design is fucking brilliant. Fuck. Can we all just agree as the greater design community to stop fucking talking about Comic Sans altogether? It’s getting fucking old. A good fucking composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Paul Rand once said, “The public is more familiar with bad fucking design than good design.</p>
+                        <p><?=Yii::t('app', 'This design is fucking brilliant. Fuck. Can we all just agree as the greater design community to stop fucking talking about Comic Sans altogether? It’s getting fucking old. A good fucking composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Paul Rand once said, “The public is more familiar with bad fucking design than good design.');?></p>
                     </div>
                 </div>
             </div>
@@ -100,10 +100,10 @@ $this->title = 'Home';
                             </div>
                             <div class="post-info-container">
                                 <h2 class="title">
-                                    <a href="/stories/story?id=2&amp;name=Wow+man+thats+nice">Wow man thats nice</a>
+                                    <a href="/stories/story?id=2&amp;name=Wow+man+thats+nice"><?=Yii::t('app', 'Wow man thats nice');?></a>
                                 </h2>
                                 <div class="center-block">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mi tincidunt, ultricies quam non, rutrum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat non justo at auctor. Nullam malesuada metus eu sollicitudin auctor. In a posuere neque, ac blandit risus. Curabitur at dictum ipsum. Mauris sagittis nisl eget orci tincidunt ornare. Sed facilisis nisl vel dui bibendum placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis e</p>
+                                    <p><?=Yii::t('app', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mi tincidunt, ultricies quam non, rutrum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat non justo at auctor. Nullam malesuada metus eu sollicitudin auctor. In a posuere neque, ac blandit risus. Curabitur at dictum ipsum. Mauris sagittis nisl eget orci tincidunt ornare. Sed facilisis nisl vel dui bibendum placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis e');?></p>
                                 </div>
                             </div>
                             </div>
@@ -115,10 +115,10 @@ $this->title = 'Home';
                             </div>
                             <div class="post-info-container">
                                 <h2 class="title">
-                                    <a href="/story/3/Hehehe">Hehehe</a>
+                                    <a href="/story/3/Hehehe"><?=Yii::t('app', 'Hehehe');?></a>
                                 </h2>
                                 <div class="center-block">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mi tincidunt, ultricies quam non, rutrum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat non justo at auctor. Nullam malesuada metus eu sollicitudin auctor. In a posuere neque, ac blandit risus. Curabitur at dictum ipsum. Mauris sagittis nisl eget orci tincidunt ornare. Sed facilisis nisl vel dui bibendum placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis e</p>
+                                    <p><?=Yii::t('app', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mi tincidunt, ultricies quam non, rutrum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat non justo at auctor. Nullam malesuada metus eu sollicitudin auctor. In a posuere neque, ac blandit risus. Curabitur at dictum ipsum. Mauris sagittis nisl eget orci tincidunt ornare. Sed facilisis nisl vel dui bibendum placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis e');?></p>
                                 </div>
                             </div>
                             </div>
@@ -132,10 +132,10 @@ $this->title = 'Home';
                             </div>
                             <div class="post-info-container">
                                 <h2 class="title">
-                                    <a href="/stories/story?id=2&amp;name=Wow+man+thats+nice">Wow man thats nice</a>
+                                    <a href="/stories/story?id=2&amp;name=Wow+man+thats+nice"><?=Yii::t('app', 'Wow man thats nice');?></a>
                                 </h2>
                                 <div class="center-block">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mi tincidunt, ultricies quam non, rutrum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat non justo at auctor. Nullam malesuada metus eu sollicitudin auctor. In a posuere neque, ac blandit risus. Curabitur at dictum ipsum. Mauris sagittis nisl eget orci tincidunt ornare. Sed facilisis nisl vel dui bibendum placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis e</p>
+                                    <p><?=Yii::t('app', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mi tincidunt, ultricies quam non, rutrum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat non justo at auctor. Nullam malesuada metus eu sollicitudin auctor. In a posuere neque, ac blandit risus. Curabitur at dictum ipsum. Mauris sagittis nisl eget orci tincidunt ornare. Sed facilisis nisl vel dui bibendum placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis e');?></p>
                                 </div>
                             </div>
                             </div>
@@ -147,10 +147,10 @@ $this->title = 'Home';
                             </div>
                             <div class="post-info-container">
                                 <h2 class="title">
-                                    <a href="/story/3/Hehehe">Hehehe</a>
+                                    <a href="/story/3/Hehehe"><?=Yii::t('app', 'Hehehe');?></a>
                                 </h2>
                                 <div class="center-block">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mi tincidunt, ultricies quam non, rutrum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat non justo at auctor. Nullam malesuada metus eu sollicitudin auctor. In a posuere neque, ac blandit risus. Curabitur at dictum ipsum. Mauris sagittis nisl eget orci tincidunt ornare. Sed facilisis nisl vel dui bibendum placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis e</p>
+                                    <p><?=Yii::t('app', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mi tincidunt, ultricies quam non, rutrum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat non justo at auctor. Nullam malesuada metus eu sollicitudin auctor. In a posuere neque, ac blandit risus. Curabitur at dictum ipsum. Mauris sagittis nisl eget orci tincidunt ornare. Sed facilisis nisl vel dui bibendum placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis e');?></p>
                                 </div>
                             </div>
                             </div>
