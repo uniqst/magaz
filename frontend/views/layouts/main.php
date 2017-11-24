@@ -85,12 +85,12 @@ AppAsset::register($this);
             <div class="main-header__multiling">
                 <div class="lang-wrapper">
                     <a href="<?=Url::to(['/', 'lang' => '']);?>">
-                        <button class="lang active" id="lang-en" data-lant="en">En</button>
+                        <button class="lang <?php if(Yii::$app->language != 'tr'){echo 'active';}?>" id="lang-en" data-lant="en">En</button>
                     </a>
                 </div>
                 <div class="lang-wrapper">
                     <a href="<?=Url::to(['/', 'lang' => 'tr']);?>">
-                        <button class="lang" id="lang-tr" data-lant="tr">Tr</button>
+                        <button class="lang <?php if(Yii::$app->language == 'tr'){echo 'active';}?>" id="lang-tr" data-lant="tr">Tr</button>
                     </a>
                 </div>
             </div>
