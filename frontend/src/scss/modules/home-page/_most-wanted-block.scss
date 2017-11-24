@@ -129,3 +129,56 @@
     padding: 15px;
   }
 }
+
+.most-wanted-block--expanded {
+  background-color: #8c0032;
+  position: relative;
+  margin-bottom: 70px;
+
+  @include mq(md) {
+    margin-bottom: 0;
+  }
+  // height: 411px;
+  
+  .page-name {
+    position: absolute;
+    text-align: center;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    padding: 15px 15px 55px;
+    background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, .3));
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.most-wanted__name {
+  padding: 25px 25px 15px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  @include px(25px);
+}
+
+.most-wanted__description {
+  padding: 20px 25px;
+  @include px(25px);
+}
+
+.most-wanted-slider {
+  &__item {
+    .girl-image {
+      @include bg-img(null);
+      height: 190px;
+      width: 100%;
+
+      @include mq(xxl) {
+        height: 250px;
+      };
+    }
+  }
+
+}

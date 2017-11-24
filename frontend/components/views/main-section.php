@@ -18,7 +18,54 @@
 
    <?= frontend\components\Story::widget(); ?>
 
-    
+
+
+            <div class="d-none d-md-block px-0 most-wanted-block--expanded">
+                <div class="most-wanted-block">
+                    <div class="most-wanted-slider most-wanted-slider-js">
+                        <div class="most-wanted-slider__item">
+                            <div class="girl-image" style="background-image: url(photo/82db0c2c079e2f8f56a2.png)"></div>
+                        </div>
+                        <div class="most-wanted-slider__item">
+                            <h3 class="page-name">Most Wanted</h3>
+                            <div class="girl-image" style="background-image: url(photo/82db0c2c079e2f8f56a2.png)"></div>
+                        </div>
+                        <div class="most-wanted-slider__item">
+                            <div class="girl-image" style="background-image: url(photo/82db0c2c079e2f8f56a2.png)"></div>
+                        </div>
+                    </div>
+                    <div class="most-wanted__name">
+                        <p>Sveta</p>
+                    </div>
+                    <div class="most-wanted__description">
+                        <p>This design is fucking brilliant. Fuck. Can we all just agree as the greater design community to stop fucking talking about Comic Sans altogether? It’s getting fucking old. A good fucking composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Paul Rand once said, “The public is more familiar with bad fucking design than good design.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="d-md-none px-0 most-wanted-block">
+                <div class="most-wanted-block">
+                    <h3 class="page-name">Most Wanted</h3>
+                    <div class="most-wanted-slider most-wanted-slider-js">
+                        <div class="most-wanted-slider__item">
+                            <div class="girl-image" style="background-image: url(photo/82db0c2c079e2f8f56a2.png)"></div>
+                        </div>
+                        <div class="most-wanted-slider__item">
+                            <div class="girl-image" style="background-image: url(photo/82db0c2c079e2f8f56a2.png)"></div>
+                        </div>
+                        <div class="most-wanted-slider__item">
+                            <div class="girl-image" style="background-image: url(photo/82db0c2c079e2f8f56a2.png)"></div>
+                        </div>
+                    </div>
+                    <div class="most-wanted__name">
+                        <p>Sveta</p>
+                    </div>
+                    <div class="most-wanted__description">
+                        <p>This design is fucking brilliant. Fuck. Can we all just agree as the greater design community to stop fucking talking about Comic Sans altogether? It’s getting fucking old. A good fucking composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Paul Rand once said, “The public is more familiar with bad fucking design than good design.</p>
+                    </div>
+                </div>
+            </div>
 
     <div class="main-info-box">
       <h2 class="info-box__heading">

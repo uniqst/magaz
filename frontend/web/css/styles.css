@@ -586,6 +586,48 @@ img {
 .most-wanted-slider-js .slider-item {
   padding: 15px; }
 
+.most-wanted-block--expanded {
+  background-color: #8c0032;
+  position: relative;
+  margin-bottom: 70px; }
+  @media only screen and (min-width: 768px) {
+    .most-wanted-block--expanded {
+      margin-bottom: 0; } }
+  .most-wanted-block--expanded .page-name {
+    position: absolute;
+    text-align: center;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    padding: 15px 15px 55px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), to(rgba(0, 0, 0, 0.3)));
+    background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.3)); }
+  .most-wanted-block--expanded p {
+    margin-bottom: 0; }
+
+.most-wanted__name {
+  padding: 25px 25px 15px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.most-wanted__description {
+  padding: 20px 25px;
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.most-wanted-slider__item .girl-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 190px;
+  width: 100%; }
+  @media only screen and (min-width: 1400px) {
+    .most-wanted-slider__item .girl-image {
+      height: 250px; } }
+
 .stories-list-js .slick-next,
 .stories-list-js .slick-prev {
   z-index: 10;
