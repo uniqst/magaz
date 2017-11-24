@@ -6,15 +6,29 @@
   }
 
   .posts-container {
-    background-color: #8c0032;
     margin-bottom: 70px;
-
+    overflow: hidden;
+    background-color: #8c0032;
+        
     @include mq(md) {
       margin-bottom: 0;
     }
 
     .page-name {
       background-color: #c2185b;
+    }
+
+    .image {
+      @include mq(xxl) {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    .post-info-container {
+      @include mq(xxl) {
+        height: 200px;
+      }
     }
   }
 }
@@ -63,6 +77,10 @@
       @include bg-img(null);
       height: 190px;
       width: 100%;
+
+      @include mq(xxl) {
+        height: 250px;
+      };
     }
   }
 

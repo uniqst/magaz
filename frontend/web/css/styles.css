@@ -493,13 +493,21 @@ img {
     .common-block {
       margin-bottom: 90px; } }
   .common-block .posts-container {
-    background-color: #8c0032;
-    margin-bottom: 70px; }
+    margin-bottom: 70px;
+    overflow: hidden;
+    background-color: #8c0032; }
     @media only screen and (min-width: 768px) {
       .common-block .posts-container {
         margin-bottom: 0; } }
     .common-block .posts-container .page-name {
       background-color: #c2185b; }
+    @media only screen and (min-width: 1400px) {
+      .common-block .posts-container .image {
+        width: 200px;
+        height: 200px; } }
+    @media only screen and (min-width: 1400px) {
+      .common-block .posts-container .post-info-container {
+        height: 200px; } }
 
 .most-wanted-block {
   background-color: #8c0032;
@@ -538,6 +546,9 @@ img {
   background-position: center;
   height: 190px;
   width: 100%; }
+  @media only screen and (min-width: 1400px) {
+    .most-wanted-slider__item .girl-image {
+      height: 250px; } }
 
 .most-wanted-slider-js .slick-next,
 .most-wanted-slider-js .slick-prev {
