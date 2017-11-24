@@ -1,3 +1,9 @@
+<?php
+
+/* @var $this yii\web\View */
+use yii\helpers\Url;
+$this->title = 'Booking';
+?>
 <div class="row">
   <div class="booking-page col-xl-58p mx-auto">
     <div class="top-form">
@@ -37,5 +43,15 @@
     </div>
   </div>
 </div>
+
+<div class="col-12 dir-tree-links">
+      <div class="row">
+        <div class="mx-auto col-xl-58p">
+          <a href="<?= Url::to('/site/index')?>"><?=Yii::t('app', 'Home');?></a>
+          <span> > </span>
+          <a href="<?= Url::to('/booking/index')?>"><?=Yii::t('app', 'Booking');?></a>
+        </div>
+      </div>
+  </div>
 
 <?= \frontend\components\MainSection::widget();?>

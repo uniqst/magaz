@@ -1,3 +1,9 @@
+<?php
+
+/* @var $this yii\web\View */
+use yii\helpers\Url;
+$this->title = 'Services';
+?>
 <div class="row stories-page">
 
   <div class="col-12">
@@ -19,11 +25,9 @@
   <div class="col-12 dir-tree-links">
       <div class="row">
         <div class="mx-auto col-xl-58p">
-          <a href="#"><?=Yii::t('app', 'Home');?></a>
+          <a href="<?= Url::to('/site/index')?>"><?=Yii::t('app', 'Home');?></a>
           <span> > </span>
-          <a href="#"><?=Yii::t('app', 'Catalog');?></a>
-          <span> > </span>
-          <a href="#"><?=Yii::t('app', 'English');?></a>
+          <a href="<?= Url::to('/services/index')?>"><?=Yii::t('app', 'Services');?></a>
         </div>
       </div>
   </div>

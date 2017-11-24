@@ -2,7 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-
+use yii\helpers\Url;
+$this->title = 'Casting';
 ?>
 
 <div class="row">
@@ -60,6 +61,7 @@ use yii\widgets\ActiveForm;
             <button type="submit">Submit</button>
           </div>
         </div> -->
+
       <?php ActiveForm::end(); ?>
     </div>
     <div class="application-ask container-fluid">
@@ -79,5 +81,15 @@ use yii\widgets\ActiveForm;
     </div>
   </div>
 </div>
+
+<div class="col-12 dir-tree-links">
+      <div class="row">
+        <div class="mx-auto col-xl-58p">
+          <a href="<?= Url::to('/site/index')?>"><?=Yii::t('app', 'Home');?></a>
+          <span> > </span>
+          <a href="<?= Url::to('/casting/index')?>"><?=Yii::t('app', 'Casting');?></a>
+        </div>
+      </div>
+  </div>
 
 <?= frontend\components\MainSection::widget()?>

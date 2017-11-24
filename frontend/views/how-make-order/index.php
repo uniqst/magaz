@@ -1,3 +1,9 @@
+<?php
+
+/* @var $this yii\web\View */
+use yii\helpers\Url;
+$this->title = 'How to make order';
+?>
 <div class="row">
     <div class="mx-auto col-xl-58p">
     <div class="top-form">
@@ -27,6 +33,14 @@
         </div>
       </div>
     </div> -->
+  </div>
+</div>
+
+<div class="row dir-tree-links">
+  <div class="mx-auto col-xl-58p">
+    <a href="<?= Url::to('/site/index')?>"><?=Yii::t('app', 'Home');?></a>
+    <span> > </span>
+    <a href="<?= Url::to('/how-make-order/index')?>"><?=Yii::t('app', 'How to make order');?></a>
   </div>
 </div>
 <!-- <div class="row">

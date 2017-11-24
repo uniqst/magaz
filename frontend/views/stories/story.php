@@ -1,23 +1,25 @@
 <?php
+
 use yii\helpers\Url;
+$this->title = 'Story';
 ?>
 
 <div class="row story-page">
   <div class="col-12">
     <div class="row">
       <div class="mx-auto col-xl-58p">
-        <h1 class="page-name stories">Erotic Stories</h1>
+        <h1 class="page-name stories"><?=Yii::t('app', 'Erotic Stories');?></h1>
       </div>
     </div>
   </div>
   <div class="col-12 dir-tree-links">
       <div class="row">
         <div class="mx-auto col-xl-58p">
-          <a href="#">Home</a>
+          <a href="<?= Url::to('/site/index')?>"><?=Yii::t('app', 'Home');?></a>
           <span> > </span>
-          <a href="#">Catalog</a>
+          <a href="<?= Url::to('/stories/index')?>"><?=Yii::t('app', 'Stories');?></a>
           <span> > </span>
-          <a href="#">English</a>
+          <a href="<?= Url::to('/stories/story')?>?id=<?= $model->id?>"><?=Yii::t('app', 'Story');?></a>
         </div>
       </div>
   </div>

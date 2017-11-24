@@ -16,7 +16,7 @@
                 </div>
             <?php elseif($rand->id == 'stories'):?>
                 <div class="slider-item">
-                    <div class="item-box story" style="background-image: url('/story/<?=$rand->img?>')">
+                    <div class="item-box story" style="background-image: url('/stori/<?=$rand->img?>')">
                         <div class="item-box__title">
                             <a href="#story"><?=Yii::t('app', 'Story');?></a>
                         </div>

@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 use yii\helpers\Url;
-$this->title = 'My Yii Application';
+$this->title = 'Home';
 ?>
 
     <div class="row main-page-upper-box">
@@ -42,11 +42,7 @@ $this->title = 'My Yii Application';
     </div>
     <div class="row dir-tree-links">
         <div class="offset-xl-3 col-xl-6">
-            <a href="#"><?=Yii::t('app', 'Home');?></a>
-            <span> > </span>
-            <a href="#"><?=Yii::t('app', 'Catalog');?></a>
-            <span> > </span>
-            <a href="#"><?=Yii::t('app', 'English');?></a>
+            <a href="<?= Url::to('/site/index')?>"><?=Yii::t('app', 'Home');?></a>
         </div>
     </div>
 
@@ -65,40 +61,8 @@ $this->title = 'My Yii Application';
         </div> -->
         <div class="col main-center-col">
 
-            <div class="items-block">
-                <div class="container-fluild">
-                    <div class="row no-padding">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <?php foreach($model as $image):?>
-                                <div class="col-6 col-sm-6 col-md-4 col-xl-3">
-                                    <div class="items-block__item" style=" background-image: url(photo/<?=$image->image->src?>)">
-                                        <a href="#" class="items-block__link"></a>
-                                        <div class="info-card">
-                                            <div class="wrapper">
-                                                <div class="info-card__name">
-                                                    <a href="#">
-                                                        <?=$image->name?>
-                                                        <!-- <i class="add-button fa fa-plus"></i> -->
-                                                    </a>
-                                                </div>
-                                                <div class="info-card__about">
-                                                    <span class="age"><?=$image->age?></span>
-                                                    <span class="nationality"><?=$image->nationality?></span>
-                                                </div>
-                                                <p class="info-card__more-info">
-                                                    <?=$image->about_myself?>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <?php endforeach;?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?= \frontend\components\ProductList::widget(['model' => $model2]);?>
+            
         </div>
     </div>
     <div class="row">
@@ -128,7 +92,7 @@ $this->title = 'My Yii Application';
             </div>
             <div class="col-md-6 pl-md-0">
                 <div class="posts-container">
-                    <h3 class="page-name">EROTIC STORIES</h3>
+                    <h3 class="page-name"><?=Yii::t('app', 'EROTIC STORIES');?></h3>
                     <div class="post-lists-wrapper stories-list-js">
 
                         <div class="posts-list">

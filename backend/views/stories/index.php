@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
             [
                 'attribute' => 'img',
                 'value' => function($data){
-                    return "<img src='/frontend/web/story/".$data->img."' style='width: 150px;' />";
+                    return "<img src='/frontend/web/stori/".$data->img."' style='width: 150px;' />";
                 },
                 'format' => 'html',
             ],

@@ -77,12 +77,14 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $model = Profile::find()->where(['status' => 1])->limit(16)->with('image')->all();
+
+        $model = Profile::find()->where(['status' => 1])->with('image')->all();
+        $model2 = Profile::find()->where(['status' => 1])->with('image');
         $slider = array_slice($model, 0, 10);
         $comment = Comments::find()->where(['status' => 1])->orderBy(['date' => SORT_DESC])->one();
         $comments = Comments::find()->where(['status' => 1])->orderBy(['date' => SORT_DESC])->limit(10)->all();
         $advertising = Advertising::find()->all();
-        return $this->render('index', compact('model', 'slider', 'comment', 'comments', 'advertising'));
+        return $this->render('index', compact('model', 'model2', 'slider', 'comment', 'comments', 'advertising'));
     }
 
     /**

@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Url;
+$this->title = 'Stories';
 ?>
 
 <div class="row stories-page">
@@ -7,7 +8,7 @@ use yii\helpers\Url;
   <div class="col-12">
     <div class="row">
       <div class="mx-auto col-xl-58p">
-        <h2 class="page-name stories">Erotic Stories</h1>
+        <h2 class="page-name stories"><?=Yii::t('app', 'Erotic Stories');?></h1>
       </div>
     </div>
   </div>
@@ -15,7 +16,7 @@ use yii\helpers\Url;
     <div class="row">
       <div class="mx-auto col-xl-58p">
           <h1 class="heading-main mb-0">
-              Bursa platinum girls. High class escorts. Pleasure without limits
+              <?=Yii::t('app', 'Bursa platinum girls. High class escorts. Pleasure without limits');?>
           </h1>
       </div>
     </div>
@@ -23,11 +24,9 @@ use yii\helpers\Url;
   <div class="col-12 dir-tree-links">
       <div class="row">
         <div class="mx-auto col-xl-58p">
-          <a href="#">Home</a>
+          <a href="<?= Url::to('/site/index')?>"><?=Yii::t('app', 'Home');?></a>
           <span> > </span>
-          <a href="#">Catalog</a>
-          <span> > </span>
-          <a href="#">English</a>
+          <a href="<?= Url::to('/stories/index')?>"><?=Yii::t('app', 'Stories');?></a>
         </div>
       </div>
   </div>
@@ -36,7 +35,7 @@ use yii\helpers\Url;
   
   <div class="col-xl-58p">
     <div class="posts-container">
-      <h1 class="page-name">EROTIC STORIES</h1>
+      <h1 class="page-name"><?=Yii::t('app', 'EROTIC STORIES');?></h1>
       <div class="posts-list">
         <?php foreach($model as $story):?>
         <div class="post-item clearfix">

@@ -1,3 +1,9 @@
+<?php
+
+/* @var $this yii\web\View */
+use yii\helpers\Url;
+$this->title = 'Contacts';
+?>
 <div class="row">
   <div class="mx-auto col-xl-58p">
     <div class="application-ask page-contacts container-fluid">
@@ -59,6 +65,16 @@
     </div>
   </div>
 </div> -->
+
+<div class="col-12 dir-tree-links">
+      <div class="row">
+        <div class="mx-auto col-xl-58p">
+          <a href="<?= Url::to('/site/index')?>"><?=Yii::t('app', 'Home');?></a>
+          <span> > </span>
+          <a href="<?= Url::to('/contacts/index')?>"><?=Yii::t('app', 'Contacts');?></a>
+        </div>
+      </div>
+  </div>
 
 <?= \frontend\components\MainSection::widget();?>
 

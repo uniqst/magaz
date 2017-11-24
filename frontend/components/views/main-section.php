@@ -1,12 +1,4 @@
-<div class="row dir-tree-links">
-  <div class="mx-auto col-xl-58p">
-    <a href="#"><?=Yii::t('app', 'Home');?></a>
-    <span> > </span>
-    <a href="#"><?=Yii::t('app', 'Catalog');?></a>
-    <span> > </span>
-    <a href="#"><?=Yii::t('app', 'English');?></a>
-  </div>
-</div>
+
 
 <div class="row">
 
