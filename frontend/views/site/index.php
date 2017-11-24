@@ -40,11 +40,6 @@ $this->title = 'Home';
             </div>
         </div>
     </div>
-    <div class="row dir-tree-links">
-        <div class="offset-xl-3 col-xl-6">
-            <a href="<?= Url::to('/site/index')?>"><?=Yii::t('app', 'Home');?></a>
-        </div>
-    </div>
 
     <div class="row">
         <div class="col-12 offset-xl-3 col-xl-6">
