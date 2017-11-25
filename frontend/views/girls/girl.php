@@ -1,6 +1,10 @@
 <?php
 use yii\helpers\Url;
+use frontend\models\Profile;
 $this->title = $model->name;
+$id = Yii::$app->request->get('id');
+$next = Profile::findOne($id+1);
+$prev = Profile::findOne($id-1);
 ?>
 
 
@@ -48,12 +52,14 @@ $this->title = $model->name;
             </div>
 
             <div class="prev">
-                <a href="#prev-girl">
+                <a href="<?= Url::to(['/girls/girl/', 'id' => $model->id-1, 'name' => $prev->name])?>">
                     <button></button>
                 </a>
             </div>
             <div class="next">
-                <a href="#next-girl">
+                <?php $next = $next->id+1?>
+                <?php if(!isset($next) ){$next = 1;} ?>
+                <a href="<?= Url::to(['/girls/girl/', 'id' => $model->id+1, 'name' => $next->name])?>">
                     <button></button>
                 </a>
             </div>
