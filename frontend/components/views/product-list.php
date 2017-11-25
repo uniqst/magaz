@@ -10,7 +10,7 @@ use yii\widgets\LinkPager;
                 <div class="col-6 col-sm-6 col-md-4 col-xl-4">
                     <div class="items-block">
                         <div class="items-block__item" style="background-image: url(/photo/<?=$profile->image->src?>)">
-                            <a href="#" class="items-block__link"></a>
+                            <a href="<?=Url::to(['/girls/girl', 'id' => $profile->id, 'name' => $profile->name])?>" class="items-block__link"></a>
                             <div class="info-card">
                                 <div class="wrapper">
                                     <div class="info-card__name">
