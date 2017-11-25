@@ -57,8 +57,6 @@ $prev = Profile::findOne($id-1);
                 </a>
             </div>
             <div class="next">
-                <?php $next = $next->id+1?>
-                <?php if(!isset($next) ){$next = 1;} ?>
                 <a href="<?= Url::to(['/girls/girl/', 'id' => $model->id+1, 'name' => $next->name])?>">
                     <button></button>
                 </a>
