@@ -26,7 +26,7 @@
                 <div class="most-wanted-block">
                     <div class="most-wanted-slider most-wanted-new-slider-js">
                       <?php foreach($model->photo as $photo):?>
-                            <img src="/photo/<?= $photo->src?>"  alt="">
+                            <img height="500" width="700" src="/photo/<?= $photo->src?>"  alt="">
                       <?php endforeach;?>
                     </div>
                     <div class="most-wanted__name">
