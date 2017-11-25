@@ -64,26 +64,7 @@ $this->title = 'Home';
         <div class="mx-auto col-lg-9 col-xl-9 common-block">
             <div class="row mx-0">
             <div class="col-md-6 px-0 most-wanted-block">
-                <div class="most-wanted-block">
-                    <h3 class="page-name"><?=Yii::t('app', 'Most Wanted');?></h3>
-                    <div class="most-wanted-slider most-wanted-slider-js">
-                        <div class="most-wanted-slider__item">
-                            <div class="girl-image" style="background-image: url(photo/82db0c2c079e2f8f56a2.png)"></div>
-                        </div>
-                        <div class="most-wanted-slider__item">
-                            <div class="girl-image" style="background-image: url(photo/82db0c2c079e2f8f56a2.png)"></div>
-                        </div>
-                        <div class="most-wanted-slider__item">
-                            <div class="girl-image" style="background-image: url(photo/82db0c2c079e2f8f56a2.png)"></div>
-                        </div>
-                    </div>
-                    <div class="most-wanted__name">
-                        <p>Sveta</p>
-                    </div>
-                    <div class="most-wanted__description">
-                        <p><?=Yii::t('app', 'This design is fucking brilliant. Fuck. Can we all just agree as the greater design community to stop fucking talking about Comic Sans altogether? It’s getting fucking old. A good fucking composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Paul Rand once said, “The public is more familiar with bad fucking design than good design.');?></p>
-                    </div>
-                </div>
+                <?= \frontend\components\MostWanted::widget();?>
             </div>
             <div class="col-md-6 pl-md-0">
                 <div class="posts-container">
