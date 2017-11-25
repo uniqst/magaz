@@ -18,13 +18,10 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'printerest')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'instagram')->textInput(['maxlength' => true]) ?>
-
     <?= $form->field($model, 'google_plus')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'linked_in')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'vk')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>

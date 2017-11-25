@@ -33,13 +33,24 @@ class SocialWebController extends Controller
      * Lists all SocialWeb models.
      * @return mixed
      */
-    
+    public function actionIndex()
+    {
+        $dataProvider = new ActiveDataProvider([
+            'query' => SocialWeb::find(),
+        ]);
+
+        return $this->render('index', [
+            'dataProvider' => $dataProvider,
+        ]);
+    }
+
+
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['update', 'id' => $model->id]);
         }
 
         return $this->render('update', [
@@ -53,7 +64,7 @@ class SocialWebController extends Controller
      * @param integer $id
      * @return mixed
      */
-    
+
     protected function findModel($id)
     {
         if (($model = SocialWeb::findOne($id)) !== null) {

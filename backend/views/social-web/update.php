@@ -5,12 +5,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model frontend\models\SocialWeb */
 
-$this->title = Yii::t('app', 'Update Social Web: {nameAttribute}', [
-    'nameAttribute' => $model->id,
-]);
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Social Webs'), 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = Yii::t('app', 'Update');
+$this->title = Yii::t('app', 'Social Web');
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Social Webs'), 'url' => ['update', 'id' => $model->id]];
 ?>
 <div class="social-web-update">
 

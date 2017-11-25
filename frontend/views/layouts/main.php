@@ -8,6 +8,7 @@ use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
 use yii\helpers\Url;
+use frontend\models\SocialWeb;
 
 AppAsset::register($this);
 ?>
@@ -163,12 +164,13 @@ AppAsset::register($this);
             </ul>
         </div>
         <div class="main-header__social">
+            <?php $sw = SocialWeb::find()->one();?>
             <ul class="social-list list-unstyled">
-                <li><a href="#" class="social-link"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#" class="social-link"><i class="fa fa-pinterest-p"></i></a></li>
-                <li><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#" class="social-link"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="<?=$sw->facebook;?>" target="_blank" class="social-link"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="<?=$sw->twitter;?>" target="_blank" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="<?=$sw->printerest;?>" target="_blank" class="social-link"><i class="fa fa-pinterest-p"></i></a></li>
+                <li><a href="<?=$sw->linked_in;?>" target="_blank" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="<?=$sw->google_plus;?>" target="_blank" class="social-link"><i class="fa fa-google-plus"></i></a></li>
             </ul>
         </div>
     </div>
