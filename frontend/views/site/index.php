@@ -40,11 +40,6 @@ $this->title = 'Home';
             </div>
         </div>
     </div>
-    <div class="row dir-tree-links">
-        <div class="offset-xl-3 col-xl-6">
-            <a href="<?= Url::to('/site/index')?>"><?=Yii::t('app', 'Home');?></a>
-        </div>
-    </div>
 
     <div class="row">
         <div class="col-12 offset-xl-3 col-xl-6">
@@ -69,26 +64,7 @@ $this->title = 'Home';
         <div class="mx-auto col-lg-9 col-xl-9 common-block">
             <div class="row mx-0">
             <div class="col-md-6 px-0 most-wanted-block">
-                <div class="most-wanted-block">
-                    <h3 class="page-name">Most Wanted</h3>
-                    <div class="most-wanted-slider most-wanted-slider-js">
-                        <div class="most-wanted-slider__item">
-                            <div class="girl-image" style="background-image: url(photo/82db0c2c079e2f8f56a2.png)"></div>
-                        </div>
-                        <div class="most-wanted-slider__item">
-                            <div class="girl-image" style="background-image: url(photo/82db0c2c079e2f8f56a2.png)"></div>
-                        </div>
-                        <div class="most-wanted-slider__item">
-                            <div class="girl-image" style="background-image: url(photo/82db0c2c079e2f8f56a2.png)"></div>
-                        </div>
-                    </div>
-                    <div class="most-wanted__name">
-                        <p>Sveta</p>
-                    </div>
-                    <div class="most-wanted__description">
-                        <p>This design is fucking brilliant. Fuck. Can we all just agree as the greater design community to stop fucking talking about Comic Sans altogether? It’s getting fucking old. A good fucking composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Paul Rand once said, “The public is more familiar with bad fucking design than good design.</p>
-                    </div>
-                </div>
+                <?= \frontend\components\MostWanted::widget();?>
             </div>
             <div class="col-md-6 pl-md-0">
                 <div class="posts-container">
@@ -105,10 +81,10 @@ $this->title = 'Home';
                             </div>
                             <div class="post-info-container">
                                 <h2 class="title">
-                                    <a href="/stories/story?id=2&amp;name=Wow+man+thats+nice">Wow man thats nice</a>
+                                    <a href="/stories/story?id=2&amp;name=Wow+man+thats+nice"><?=Yii::t('app', 'Wow man thats nice');?></a>
                                 </h2>
                                 <div class="center-block">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mi tincidunt, ultricies quam non, rutrum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat non justo at auctor. Nullam malesuada metus eu sollicitudin auctor. In a posuere neque, ac blandit risus. Curabitur at dictum ipsum. Mauris sagittis nisl eget orci tincidunt ornare. Sed facilisis nisl vel dui bibendum placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis e</p>
+                                    <p><?=Yii::t('app', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mi tincidunt, ultricies quam non, rutrum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat non justo at auctor. Nullam malesuada metus eu sollicitudin auctor. In a posuere neque, ac blandit risus. Curabitur at dictum ipsum. Mauris sagittis nisl eget orci tincidunt ornare. Sed facilisis nisl vel dui bibendum placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis e');?></p>
                                 </div>
                             </div>
                             </div>
@@ -120,10 +96,10 @@ $this->title = 'Home';
                             </div>
                             <div class="post-info-container">
                                 <h2 class="title">
-                                    <a href="/story/3/Hehehe">Hehehe</a>
+                                    <a href="/story/3/Hehehe"><?=Yii::t('app', 'Hehehe');?></a>
                                 </h2>
                                 <div class="center-block">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mi tincidunt, ultricies quam non, rutrum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat non justo at auctor. Nullam malesuada metus eu sollicitudin auctor. In a posuere neque, ac blandit risus. Curabitur at dictum ipsum. Mauris sagittis nisl eget orci tincidunt ornare. Sed facilisis nisl vel dui bibendum placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis e</p>
+                                    <p><?=Yii::t('app', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mi tincidunt, ultricies quam non, rutrum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat non justo at auctor. Nullam malesuada metus eu sollicitudin auctor. In a posuere neque, ac blandit risus. Curabitur at dictum ipsum. Mauris sagittis nisl eget orci tincidunt ornare. Sed facilisis nisl vel dui bibendum placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis e');?></p>
                                 </div>
                             </div>
                             </div>
@@ -137,10 +113,10 @@ $this->title = 'Home';
                             </div>
                             <div class="post-info-container">
                                 <h2 class="title">
-                                    <a href="/stories/story?id=2&amp;name=Wow+man+thats+nice">Wow man thats nice</a>
+                                    <a href="/stories/story?id=2&amp;name=Wow+man+thats+nice"><?=Yii::t('app', 'Wow man thats nice');?></a>
                                 </h2>
                                 <div class="center-block">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mi tincidunt, ultricies quam non, rutrum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat non justo at auctor. Nullam malesuada metus eu sollicitudin auctor. In a posuere neque, ac blandit risus. Curabitur at dictum ipsum. Mauris sagittis nisl eget orci tincidunt ornare. Sed facilisis nisl vel dui bibendum placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis e</p>
+                                    <p><?=Yii::t('app', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mi tincidunt, ultricies quam non, rutrum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat non justo at auctor. Nullam malesuada metus eu sollicitudin auctor. In a posuere neque, ac blandit risus. Curabitur at dictum ipsum. Mauris sagittis nisl eget orci tincidunt ornare. Sed facilisis nisl vel dui bibendum placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis e');?></p>
                                 </div>
                             </div>
                             </div>
@@ -152,10 +128,10 @@ $this->title = 'Home';
                             </div>
                             <div class="post-info-container">
                                 <h2 class="title">
-                                    <a href="/story/3/Hehehe">Hehehe</a>
+                                    <a href="/story/3/Hehehe"><?=Yii::t('app', 'Hehehe');?></a>
                                 </h2>
                                 <div class="center-block">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mi tincidunt, ultricies quam non, rutrum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat non justo at auctor. Nullam malesuada metus eu sollicitudin auctor. In a posuere neque, ac blandit risus. Curabitur at dictum ipsum. Mauris sagittis nisl eget orci tincidunt ornare. Sed facilisis nisl vel dui bibendum placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis e</p>
+                                    <p><?=Yii::t('app', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mi tincidunt, ultricies quam non, rutrum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat non justo at auctor. Nullam malesuada metus eu sollicitudin auctor. In a posuere neque, ac blandit risus. Curabitur at dictum ipsum. Mauris sagittis nisl eget orci tincidunt ornare. Sed facilisis nisl vel dui bibendum placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis e');?></p>
                                 </div>
                             </div>
                             </div>

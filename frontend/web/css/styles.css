@@ -2004,4 +2004,16 @@ img {
   .booking-page .top-form {
     margin-bottom: 60px; } }
 
+.video-block {
+  margin-bottom: 40px; }
+  .video-block video {
+    max-width: 100%; }
+  .video-block__title {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 14px; }
+    @media only screen and (min-width: 768px) {
+      .video-block__title {
+        color: black; } }
+
 /*# sourceMappingURL=styles.css.map */

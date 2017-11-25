@@ -17,6 +17,7 @@ class m171119_140445_service extends Migration
             'name' => $this->string(255)->notNull(),
             'content' => $this->string(1000)->notNull(),
             'img' => $this->string(255)->notNull(),
+            'date' => $this->string(255),
             
         ]);
     }

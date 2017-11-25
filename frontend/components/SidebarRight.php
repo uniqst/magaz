@@ -12,15 +12,15 @@ Class SidebarRight extends Widget{
     public function run(){
         $profile = Profile::find()->where(['status' => 1])->limit(2)->orderBy(new Expression('rand()'))->with('image')->all();
     	foreach($profile as $prof){
-    	$prof->id = 'profile';
+    	$prof->date = 'profile';
     	}
         $stories = Stories::find()->limit(2)->orderBy(new Expression('rand()'))->all();
         foreach($stories as $stor){
-    	$stor->id = 'stories';
+    	$stor->date = 'stories';
     	}
         $service = Service::find()->limit(2)->orderBy(new Expression('rand()'))->all();
         foreach($service as $serv){
-    	$serv->id = 'service';
+    	$serv->date = 'service';
     	}
         $model = array_merge($profile, $stories, $service);
         shuffle($model);

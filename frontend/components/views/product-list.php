@@ -1,4 +1,5 @@
 <?
+use yii\helpers\Url;
 use yii\widgets\LinkPager;
 ?>
 
@@ -13,7 +14,7 @@ use yii\widgets\LinkPager;
                             <div class="info-card">
                                 <div class="wrapper">
                                     <div class="info-card__name">
-                                        <a href="#">
+                                        <a href="<?=Url::to(['/girls/girl', 'id' => $profile->id, 'name' => $profile->name])?>">
                                             <?=$profile->name?>
                                             <!-- <i class="add-button fa fa-plus"></i> -->
                                         </a>
