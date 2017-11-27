@@ -13,7 +13,8 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'https://fonts.googleapis.com/css?family=Roboto:300,400,500',
-        'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css',
+//        'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css',
+        'css/bootstrap.min.css',
         'https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css',
         'https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css',
         // 'https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.5/css/lightgallery.min.css',
@@ -22,7 +23,6 @@ class AppAsset extends AssetBundle
         // 'css/bootstrap4.css',
         'css/site.css',
         'css/styles.css',
-        'http://vjs.zencdn.net/6.4.0/video-js.css'
     ];
     public $js = [
         // 'http://code.jquery.com/jquery-1.9.1.min.js',
@@ -34,7 +34,6 @@ class AppAsset extends AssetBundle
         'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js',
         // 'https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.5/js/lightgallery-all.min.js',
         'https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js',
-        'http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js',
         'js/home-page.js',
         'js/main.js'
     ];

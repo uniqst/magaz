@@ -12,11 +12,16 @@ use yii\helpers\ArrayHelper;
 // получаем всех авторов
     $category = Category::find()->where(['parent_id' => 0 ])->all();
 // формируем массив, с ключем равным полю 'id' и значением равным полю 'name' 
-    $items = ArrayHelper::map($category,'id','name');
-    $item = ['None'];
-    $items = array_merge($item, $items);
+//    $items = ArrayHelper::map($category,'id', 'name');
+//    $item = ['None'];
+//    $items = array_merge($item, $items);
+     $items = ['0' => 'None'];
 
+         foreach($category as $cat){
+             $items[$cat->id] = $cat->name;
+         }
 ?>
+
 
 <div class="category-form">
 
