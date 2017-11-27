@@ -13,15 +13,6 @@ return [
     'homeUrl' => '/',
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
-        'assetManager' => [
-            'bundles' => [
-                'yii\web\JqueryAsset' => [
-                    'jsOptions' => [
-                        'async' => 'async'
-                    ],
-                ],
-            ],
-        ],
         'assetsAutoCompress' =>
             [
                 'class'                         => '\skeeks\yii2\assetsAuto\AssetsAutoCompressComponent',
