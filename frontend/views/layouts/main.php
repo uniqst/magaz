@@ -274,7 +274,9 @@ AppAsset::register($this);
             
     </div> -->
 </footer>
-
+<link href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css">
+<link href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 <?php $this->endBody() ?>
 
 </body>
