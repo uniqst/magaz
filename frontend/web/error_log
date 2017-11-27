@@ -1,0 +1,1461 @@
+[25-Nov-2017 18:09:55 Europe/Kiev] An Error occurred while handling another error:
+PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('app')
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('app')
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(161): yii\db\Command->queryAll()
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(132): yii\i18n\DbMessageSource->loadMessagesFromDb('app', 'en-EN')
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(107): yii\i18n\DbMessageSource->loadMessages('app', 'en-EN')
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(87): yii\i18n\MessageSource->translateMessage('app', 'home', 'en-EN')
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/I18N.php(90): yii\i18n\MessageSource->translate('app', 'home', 'en-EN')
+#15 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/BaseYii.php(512): yii\i18n\I18N->translate('app', 'home', Array, 'en-EN')
+#16 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(59): yii\BaseYii::t('app', 'home')
+#17 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#18 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#19 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#20 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#21 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#22 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#23 [internal function]: yii\web\ErrorAction->run()
+#24 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#25 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#26 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#27 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#28 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#29 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#30 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('app')
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('app')
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(161): yii\db\Command->queryAll()
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(132): yii\i18n\DbMessageSource->loadMessagesFromDb('app', 'en-EN')
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(107): yii\i18n\DbMessageSource->loadMessages('app', 'en-EN')
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(87): yii\i18n\MessageSource->translateMessage('app', 'home', 'en-EN')
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/I18N.php(90): yii\i18n\MessageSource->translate('app', 'home', 'en-EN')
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/BaseYii.php(512): yii\i18n\I18N->translate('app', 'home', Array, 'en-EN')
+#14 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(59): yii\BaseYii::t('app', 'home')
+#15 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#16 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#17 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#18 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#19 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#20 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#21 [internal function]: yii\web\ErrorAction->run()
+#22 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#23 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#24 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#25 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#26 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#27 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#28 {main}
+Additional Information:
+
+Previous exception:
+PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(243): yii\db\Connection->getSlavePdo()
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1062): yii\db\Command->prepare(true)
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /home/h7111c/bt4.uniq-st.com/frontend/controllers/SiteController.php(81): yii\db\ActiveQuery->all()
+#10 [internal function]: frontend\controllers\SiteController->actionIndex()
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#15 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(243): yii\db\Connection->getSlavePdo()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1062): yii\db\Command->prepare(true)
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/h7111c/bt4.uniq-st.com/frontend/controllers/SiteController.php(81): yii\db\ActiveQuery->all()
+#8 [internal function]: frontend\controllers\SiteController->actionIndex()
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#15 {main}
+Additional Information:
+
+$_SERVER = [
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'TZ' => 'Europe/Kiev',
+    'HTTP_CONNECTION' => 'close',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'REQUEST_URI' => '/',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REDIRECT_URL' => '/',
+    'REMOTE_PORT' => '46057',
+    'SCRIPT_FILENAME' => '/home/h7111c/bt4.uniq-st.com/frontend/web/index.php',
+    'SERVER_ADMIN' => 'webmaster@bt4.uniq-st.com',
+    'DOCUMENT_ROOT' => '/home/h7111c/bt4.uniq-st.com',
+    'REMOTE_ADDR' => '109.251.133.13',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '46.105.135.208',
+    'SERVER_NAME' => 'bt4.uniq-st.com',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_SIGNATURE' => '<address>Apache Server at bt4.uniq-st.com Port 80</address>
+',
+    'HTTP_COOKIE' => '_ga=GA1.2.301249583.1511298780; _gid=GA1.2.1704025707.1511607092',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_REAL_IP' => '109.251.133.13',
+    'HTTP_X_FORWARDED_SERVER' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_HOST' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_FOR' => '109.251.133.13',
+    'HTTP_HOST' => 'bt4.uniq-st.com',
+    'UNIQUE_ID' => 'WhmV0yW7rPAAB7kAUC0AAAAY',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WhmV0yW7rPAAB7kAUC0AAAAY',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1511626195.7404000759124755859375,
+    'REQUEST_TIME' => 1511626195,
+]
+[25-Nov-2017 18:11:34 Europe/Kiev] An Error occurred while handling another error:
+PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('app')
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('app')
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(161): yii\db\Command->queryAll()
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(132): yii\i18n\DbMessageSource->loadMessagesFromDb('app', 'en-EN')
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(107): yii\i18n\DbMessageSource->loadMessages('app', 'en-EN')
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(87): yii\i18n\MessageSource->translateMessage('app', 'home', 'en-EN')
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/I18N.php(90): yii\i18n\MessageSource->translate('app', 'home', 'en-EN')
+#15 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/BaseYii.php(512): yii\i18n\I18N->translate('app', 'home', Array, 'en-EN')
+#16 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(59): yii\BaseYii::t('app', 'home')
+#17 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#18 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#19 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#20 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#21 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#22 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#23 [internal function]: yii\web\ErrorAction->run()
+#24 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#25 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#26 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#27 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#28 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#29 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#30 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('app')
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('app')
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(161): yii\db\Command->queryAll()
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(132): yii\i18n\DbMessageSource->loadMessagesFromDb('app', 'en-EN')
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(107): yii\i18n\DbMessageSource->loadMessages('app', 'en-EN')
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(87): yii\i18n\MessageSource->translateMessage('app', 'home', 'en-EN')
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/I18N.php(90): yii\i18n\MessageSource->translate('app', 'home', 'en-EN')
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/BaseYii.php(512): yii\i18n\I18N->translate('app', 'home', Array, 'en-EN')
+#14 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(59): yii\BaseYii::t('app', 'home')
+#15 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#16 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#17 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#18 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#19 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#20 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#21 [internal function]: yii\web\ErrorAction->run()
+#22 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#23 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#24 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#25 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#26 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#27 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#28 {main}
+Additional Information:
+
+Previous exception:
+PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(243): yii\db\Connection->getSlavePdo()
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1062): yii\db\Command->prepare(true)
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /home/h7111c/bt4.uniq-st.com/frontend/controllers/SiteController.php(81): yii\db\ActiveQuery->all()
+#10 [internal function]: frontend\controllers\SiteController->actionIndex()
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#15 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(243): yii\db\Connection->getSlavePdo()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1062): yii\db\Command->prepare(true)
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/h7111c/bt4.uniq-st.com/frontend/controllers/SiteController.php(81): yii\db\ActiveQuery->all()
+#8 [internal function]: frontend\controllers\SiteController->actionIndex()
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#15 {main}
+Additional Information:
+
+$_SERVER = [
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'TZ' => 'Europe/Kiev',
+    'HTTP_CONNECTION' => 'close',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'REQUEST_URI' => '/',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REDIRECT_URL' => '/',
+    'REMOTE_PORT' => '47570',
+    'SCRIPT_FILENAME' => '/home/h7111c/bt4.uniq-st.com/frontend/web/index.php',
+    'SERVER_ADMIN' => 'webmaster@bt4.uniq-st.com',
+    'DOCUMENT_ROOT' => '/home/h7111c/bt4.uniq-st.com',
+    'REMOTE_ADDR' => '109.251.133.13',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '46.105.135.208',
+    'SERVER_NAME' => 'bt4.uniq-st.com',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_SIGNATURE' => '<address>Apache Server at bt4.uniq-st.com Port 80</address>
+',
+    'HTTP_COOKIE' => '_ga=GA1.2.301249583.1511298780; _gid=GA1.2.1704025707.1511607092',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_X_REAL_IP' => '109.251.133.13',
+    'HTTP_X_FORWARDED_SERVER' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_HOST' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_FOR' => '109.251.133.13',
+    'HTTP_HOST' => 'bt4.uniq-st.com',
+    'UNIQUE_ID' => 'WhmWNiW7rPAAB8vNC6AAAAAi',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WhmWNiW7rPAAB8vNC6AAAAAi',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1511626294.2028338909149169921875,
+    'REQUEST_TIME' => 1511626294,
+]
+[25-Nov-2017 18:11:35 Europe/Kiev] An Error occurred while handling another error:
+PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('app')
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('app')
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(161): yii\db\Command->queryAll()
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(132): yii\i18n\DbMessageSource->loadMessagesFromDb('app', 'en-EN')
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(107): yii\i18n\DbMessageSource->loadMessages('app', 'en-EN')
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(87): yii\i18n\MessageSource->translateMessage('app', 'home', 'en-EN')
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/I18N.php(90): yii\i18n\MessageSource->translate('app', 'home', 'en-EN')
+#15 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/BaseYii.php(512): yii\i18n\I18N->translate('app', 'home', Array, 'en-EN')
+#16 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(59): yii\BaseYii::t('app', 'home')
+#17 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#18 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#19 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#20 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#21 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#22 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#23 [internal function]: yii\web\ErrorAction->run()
+#24 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#25 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#26 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#27 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#28 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#29 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#30 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('app')
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('app')
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(161): yii\db\Command->queryAll()
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(132): yii\i18n\DbMessageSource->loadMessagesFromDb('app', 'en-EN')
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(107): yii\i18n\DbMessageSource->loadMessages('app', 'en-EN')
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(87): yii\i18n\MessageSource->translateMessage('app', 'home', 'en-EN')
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/I18N.php(90): yii\i18n\MessageSource->translate('app', 'home', 'en-EN')
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/BaseYii.php(512): yii\i18n\I18N->translate('app', 'home', Array, 'en-EN')
+#14 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(59): yii\BaseYii::t('app', 'home')
+#15 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#16 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#17 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#18 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#19 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#20 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#21 [internal function]: yii\web\ErrorAction->run()
+#22 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#23 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#24 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#25 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#26 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#27 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#28 {main}
+Additional Information:
+
+Previous exception:
+PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(243): yii\db\Connection->getSlavePdo()
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1062): yii\db\Command->prepare(true)
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /home/h7111c/bt4.uniq-st.com/frontend/controllers/SiteController.php(81): yii\db\ActiveQuery->all()
+#10 [internal function]: frontend\controllers\SiteController->actionIndex()
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#15 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(243): yii\db\Connection->getSlavePdo()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1062): yii\db\Command->prepare(true)
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/h7111c/bt4.uniq-st.com/frontend/controllers/SiteController.php(81): yii\db\ActiveQuery->all()
+#8 [internal function]: frontend\controllers\SiteController->actionIndex()
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#15 {main}
+Additional Information:
+
+$_SERVER = [
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'TZ' => 'Europe/Kiev',
+    'HTTP_CONNECTION' => 'close',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'REQUEST_URI' => '/',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REDIRECT_URL' => '/',
+    'REMOTE_PORT' => '47577',
+    'SCRIPT_FILENAME' => '/home/h7111c/bt4.uniq-st.com/frontend/web/index.php',
+    'SERVER_ADMIN' => 'webmaster@bt4.uniq-st.com',
+    'DOCUMENT_ROOT' => '/home/h7111c/bt4.uniq-st.com',
+    'REMOTE_ADDR' => '109.251.133.13',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '46.105.135.208',
+    'SERVER_NAME' => 'bt4.uniq-st.com',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_SIGNATURE' => '<address>Apache Server at bt4.uniq-st.com Port 80</address>
+',
+    'HTTP_COOKIE' => '_ga=GA1.2.301249583.1511298780; _gid=GA1.2.1704025707.1511607092',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_X_REAL_IP' => '109.251.133.13',
+    'HTTP_X_FORWARDED_SERVER' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_HOST' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_FOR' => '109.251.133.13',
+    'HTTP_HOST' => 'bt4.uniq-st.com',
+    'UNIQUE_ID' => 'WhmWNyW7rPAAB8uZ8jYAAAAL',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WhmWNyW7rPAAB8uZ8jYAAAAL',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1511626295.0706479549407958984375,
+    'REQUEST_TIME' => 1511626295,
+]
+[25-Nov-2017 18:11:35 Europe/Kiev] An Error occurred while handling another error:
+PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('app')
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('app')
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(161): yii\db\Command->queryAll()
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(132): yii\i18n\DbMessageSource->loadMessagesFromDb('app', 'en-EN')
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(107): yii\i18n\DbMessageSource->loadMessages('app', 'en-EN')
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(87): yii\i18n\MessageSource->translateMessage('app', 'home', 'en-EN')
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/I18N.php(90): yii\i18n\MessageSource->translate('app', 'home', 'en-EN')
+#15 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/BaseYii.php(512): yii\i18n\I18N->translate('app', 'home', Array, 'en-EN')
+#16 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(59): yii\BaseYii::t('app', 'home')
+#17 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#18 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#19 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#20 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#21 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#22 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#23 [internal function]: yii\web\ErrorAction->run()
+#24 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#25 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#26 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#27 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#28 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#29 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#30 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('app')
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('app')
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(161): yii\db\Command->queryAll()
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(132): yii\i18n\DbMessageSource->loadMessagesFromDb('app', 'en-EN')
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(107): yii\i18n\DbMessageSource->loadMessages('app', 'en-EN')
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(87): yii\i18n\MessageSource->translateMessage('app', 'home', 'en-EN')
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/I18N.php(90): yii\i18n\MessageSource->translate('app', 'home', 'en-EN')
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/BaseYii.php(512): yii\i18n\I18N->translate('app', 'home', Array, 'en-EN')
+#14 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(59): yii\BaseYii::t('app', 'home')
+#15 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#16 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#17 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#18 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#19 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#20 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#21 [internal function]: yii\web\ErrorAction->run()
+#22 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#23 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#24 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#25 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#26 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#27 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#28 {main}
+Additional Information:
+
+Previous exception:
+PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(243): yii\db\Connection->getSlavePdo()
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1062): yii\db\Command->prepare(true)
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /home/h7111c/bt4.uniq-st.com/frontend/controllers/SiteController.php(81): yii\db\ActiveQuery->all()
+#10 [internal function]: frontend\controllers\SiteController->actionIndex()
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#15 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(243): yii\db\Connection->getSlavePdo()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1062): yii\db\Command->prepare(true)
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/h7111c/bt4.uniq-st.com/frontend/controllers/SiteController.php(81): yii\db\ActiveQuery->all()
+#8 [internal function]: frontend\controllers\SiteController->actionIndex()
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#15 {main}
+Additional Information:
+
+$_SERVER = [
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'TZ' => 'Europe/Kiev',
+    'HTTP_CONNECTION' => 'close',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'REQUEST_URI' => '/',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REDIRECT_URL' => '/',
+    'REMOTE_PORT' => '47585',
+    'SCRIPT_FILENAME' => '/home/h7111c/bt4.uniq-st.com/frontend/web/index.php',
+    'SERVER_ADMIN' => 'webmaster@bt4.uniq-st.com',
+    'DOCUMENT_ROOT' => '/home/h7111c/bt4.uniq-st.com',
+    'REMOTE_ADDR' => '109.251.133.13',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '46.105.135.208',
+    'SERVER_NAME' => 'bt4.uniq-st.com',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_SIGNATURE' => '<address>Apache Server at bt4.uniq-st.com Port 80</address>
+',
+    'HTTP_COOKIE' => '_ga=GA1.2.301249583.1511298780; _gid=GA1.2.1704025707.1511607092',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_X_REAL_IP' => '109.251.133.13',
+    'HTTP_X_FORWARDED_SERVER' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_HOST' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_FOR' => '109.251.133.13',
+    'HTTP_HOST' => 'bt4.uniq-st.com',
+    'UNIQUE_ID' => 'WhmWNyW7rPAAB8tk3uEAAAAf',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WhmWNyW7rPAAB8tk3uEAAAAf',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1511626295.63519001007080078125,
+    'REQUEST_TIME' => 1511626295,
+]
+[25-Nov-2017 18:11:35 Europe/Kiev] An Error occurred while handling another error:
+PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('app')
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('app')
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(161): yii\db\Command->queryAll()
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(132): yii\i18n\DbMessageSource->loadMessagesFromDb('app', 'en-EN')
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(107): yii\i18n\DbMessageSource->loadMessages('app', 'en-EN')
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(87): yii\i18n\MessageSource->translateMessage('app', 'home', 'en-EN')
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/I18N.php(90): yii\i18n\MessageSource->translate('app', 'home', 'en-EN')
+#15 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/BaseYii.php(512): yii\i18n\I18N->translate('app', 'home', Array, 'en-EN')
+#16 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(59): yii\BaseYii::t('app', 'home')
+#17 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#18 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#19 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#20 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#21 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#22 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#23 [internal function]: yii\web\ErrorAction->run()
+#24 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#25 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#26 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#27 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#28 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#29 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#30 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('app')
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('app')
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(161): yii\db\Command->queryAll()
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(132): yii\i18n\DbMessageSource->loadMessagesFromDb('app', 'en-EN')
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(107): yii\i18n\DbMessageSource->loadMessages('app', 'en-EN')
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(87): yii\i18n\MessageSource->translateMessage('app', 'home', 'en-EN')
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/I18N.php(90): yii\i18n\MessageSource->translate('app', 'home', 'en-EN')
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/BaseYii.php(512): yii\i18n\I18N->translate('app', 'home', Array, 'en-EN')
+#14 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(59): yii\BaseYii::t('app', 'home')
+#15 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#16 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#17 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#18 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#19 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#20 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#21 [internal function]: yii\web\ErrorAction->run()
+#22 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#23 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#24 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#25 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#26 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#27 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#28 {main}
+Additional Information:
+
+Previous exception:
+PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(243): yii\db\Connection->getSlavePdo()
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1062): yii\db\Command->prepare(true)
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /home/h7111c/bt4.uniq-st.com/frontend/controllers/SiteController.php(81): yii\db\ActiveQuery->all()
+#10 [internal function]: frontend\controllers\SiteController->actionIndex()
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#15 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(243): yii\db\Connection->getSlavePdo()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1062): yii\db\Command->prepare(true)
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/h7111c/bt4.uniq-st.com/frontend/controllers/SiteController.php(81): yii\db\ActiveQuery->all()
+#8 [internal function]: frontend\controllers\SiteController->actionIndex()
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#15 {main}
+Additional Information:
+
+$_SERVER = [
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'TZ' => 'Europe/Kiev',
+    'HTTP_CONNECTION' => 'close',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'REQUEST_URI' => '/',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REDIRECT_URL' => '/',
+    'REMOTE_PORT' => '47587',
+    'SCRIPT_FILENAME' => '/home/h7111c/bt4.uniq-st.com/frontend/web/index.php',
+    'SERVER_ADMIN' => 'webmaster@bt4.uniq-st.com',
+    'DOCUMENT_ROOT' => '/home/h7111c/bt4.uniq-st.com',
+    'REMOTE_ADDR' => '109.251.133.13',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '46.105.135.208',
+    'SERVER_NAME' => 'bt4.uniq-st.com',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_SIGNATURE' => '<address>Apache Server at bt4.uniq-st.com Port 80</address>
+',
+    'HTTP_COOKIE' => '_ga=GA1.2.301249583.1511298780; _gid=GA1.2.1704025707.1511607092',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_X_REAL_IP' => '109.251.133.13',
+    'HTTP_X_FORWARDED_SERVER' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_HOST' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_FOR' => '109.251.133.13',
+    'HTTP_HOST' => 'bt4.uniq-st.com',
+    'UNIQUE_ID' => 'WhmWNyW7rPAAB8vODeEAAAAj',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WhmWNyW7rPAAB8vODeEAAAAj',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1511626295.893826007843017578125,
+    'REQUEST_TIME' => 1511626295,
+]
+[25-Nov-2017 18:11:44 Europe/Kiev] An Error occurred while handling another error:
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_deb.source_message' doesn't exist in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(161): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(132): yii\i18n\DbMessageSource->loadMessagesFromDb('app', 'en-EN')
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(107): yii\i18n\DbMessageSource->loadMessages('app', 'en-EN')
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(87): yii\i18n\MessageSource->translateMessage('app', 'home', 'en-EN')
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/I18N.php(90): yii\i18n\MessageSource->translate('app', 'home', 'en-EN')
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/BaseYii.php(512): yii\i18n\I18N->translate('app', 'home', Array, 'en-EN')
+#8 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(59): yii\BaseYii::t('app', 'home')
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#15 [internal function]: yii\web\ErrorAction->run()
+#16 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#17 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#18 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#19 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#20 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#21 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_deb.source_message' doesn't exist
+The SQL being executed was: (SELECT `t1`.`message` AS `message`, `t2`.`translation` AS `translation` FROM `source_message` `t1`, `message` `t2` WHERE (`t1`.`id`=`t2`.`id`) AND (`t1`.`category`='app') AND (`t2`.`language`='en-EN')) UNION ALL ( SELECT `t1`.`message` AS `message`, `t2`.`translation` AS `translation` FROM `source_message` `t1`, `message` `t2` WHERE ((`t1`.`id`=`t2`.`id`) AND (`t1`.`category`='app') AND (`t2`.`language`='en')) AND (`t2`.`id` NOT IN (SELECT `id` FROM `message` WHERE `language`='en-EN')) ) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), '(SELECT `t1`.`m...')
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(161): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(132): yii\i18n\DbMessageSource->loadMessagesFromDb('app', 'en-EN')
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(107): yii\i18n\DbMessageSource->loadMessages('app', 'en-EN')
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(87): yii\i18n\MessageSource->translateMessage('app', 'home', 'en-EN')
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/I18N.php(90): yii\i18n\MessageSource->translate('app', 'home', 'en-EN')
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/BaseYii.php(512): yii\i18n\I18N->translate('app', 'home', Array, 'en-EN')
+#8 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(59): yii\BaseYii::t('app', 'home')
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#15 [internal function]: yii\web\ErrorAction->run()
+#16 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#17 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#18 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#19 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#20 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#21 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#22 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'h7111c_deb.source_message' doesn't exist
+)
+
+Previous exception:
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_deb.profile' doesn't exist in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /home/h7111c/bt4.uniq-st.com/frontend/controllers/SiteController.php(81): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_deb.profile' doesn't exist
+The SQL being executed was: SELECT * FROM `profile` WHERE `status`=1 in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /home/h7111c/bt4.uniq-st.com/frontend/controllers/SiteController.php(81): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'h7111c_deb.profile' doesn't exist
+)
+
+$_SERVER = [
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'TZ' => 'Europe/Kiev',
+    'HTTP_CONNECTION' => 'close',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'REQUEST_URI' => '/',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REDIRECT_URL' => '/',
+    'REMOTE_PORT' => '47869',
+    'SCRIPT_FILENAME' => '/home/h7111c/bt4.uniq-st.com/frontend/web/index.php',
+    'SERVER_ADMIN' => 'webmaster@bt4.uniq-st.com',
+    'DOCUMENT_ROOT' => '/home/h7111c/bt4.uniq-st.com',
+    'REMOTE_ADDR' => '109.251.133.13',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '46.105.135.208',
+    'SERVER_NAME' => 'bt4.uniq-st.com',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_SIGNATURE' => '<address>Apache Server at bt4.uniq-st.com Port 80</address>
+',
+    'HTTP_COOKIE' => '_ga=GA1.2.301249583.1511298780; _gid=GA1.2.1704025707.1511607092',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_X_REAL_IP' => '109.251.133.13',
+    'HTTP_X_FORWARDED_SERVER' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_HOST' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_FOR' => '109.251.133.13',
+    'HTTP_HOST' => 'bt4.uniq-st.com',
+    'UNIQUE_ID' => 'WhmWQCW7rPAAB8uL5ZMAAAAC',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WhmWQCW7rPAAB8uL5ZMAAAAC',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1511626304.442637920379638671875,
+    'REQUEST_TIME' => 1511626304,
+]
+[25-Nov-2017 18:11:45 Europe/Kiev] An Error occurred while handling another error:
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_deb.source_message' doesn't exist in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(161): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(132): yii\i18n\DbMessageSource->loadMessagesFromDb('app', 'en-EN')
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(107): yii\i18n\DbMessageSource->loadMessages('app', 'en-EN')
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(87): yii\i18n\MessageSource->translateMessage('app', 'home', 'en-EN')
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/I18N.php(90): yii\i18n\MessageSource->translate('app', 'home', 'en-EN')
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/BaseYii.php(512): yii\i18n\I18N->translate('app', 'home', Array, 'en-EN')
+#8 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(59): yii\BaseYii::t('app', 'home')
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#15 [internal function]: yii\web\ErrorAction->run()
+#16 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#17 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#18 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#19 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#20 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#21 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_deb.source_message' doesn't exist
+The SQL being executed was: (SELECT `t1`.`message` AS `message`, `t2`.`translation` AS `translation` FROM `source_message` `t1`, `message` `t2` WHERE (`t1`.`id`=`t2`.`id`) AND (`t1`.`category`='app') AND (`t2`.`language`='en-EN')) UNION ALL ( SELECT `t1`.`message` AS `message`, `t2`.`translation` AS `translation` FROM `source_message` `t1`, `message` `t2` WHERE ((`t1`.`id`=`t2`.`id`) AND (`t1`.`category`='app') AND (`t2`.`language`='en')) AND (`t2`.`id` NOT IN (SELECT `id` FROM `message` WHERE `language`='en-EN')) ) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), '(SELECT `t1`.`m...')
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(161): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(132): yii\i18n\DbMessageSource->loadMessagesFromDb('app', 'en-EN')
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(107): yii\i18n\DbMessageSource->loadMessages('app', 'en-EN')
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(87): yii\i18n\MessageSource->translateMessage('app', 'home', 'en-EN')
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/I18N.php(90): yii\i18n\MessageSource->translate('app', 'home', 'en-EN')
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/BaseYii.php(512): yii\i18n\I18N->translate('app', 'home', Array, 'en-EN')
+#8 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(59): yii\BaseYii::t('app', 'home')
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#15 [internal function]: yii\web\ErrorAction->run()
+#16 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#17 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#18 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#19 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#20 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#21 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#22 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'h7111c_deb.source_message' doesn't exist
+)
+
+Previous exception:
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_deb.profile' doesn't exist in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /home/h7111c/bt4.uniq-st.com/frontend/controllers/SiteController.php(81): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_deb.profile' doesn't exist
+The SQL being executed was: SELECT * FROM `profile` WHERE `status`=1 in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /home/h7111c/bt4.uniq-st.com/frontend/controllers/SiteController.php(81): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'h7111c_deb.profile' doesn't exist
+)
+
+$_SERVER = [
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'TZ' => 'Europe/Kiev',
+    'HTTP_CONNECTION' => 'close',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'REQUEST_URI' => '/',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REDIRECT_URL' => '/',
+    'REMOTE_PORT' => '47892',
+    'SCRIPT_FILENAME' => '/home/h7111c/bt4.uniq-st.com/frontend/web/index.php',
+    'SERVER_ADMIN' => 'webmaster@bt4.uniq-st.com',
+    'DOCUMENT_ROOT' => '/home/h7111c/bt4.uniq-st.com',
+    'REMOTE_ADDR' => '109.251.133.13',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '46.105.135.208',
+    'SERVER_NAME' => 'bt4.uniq-st.com',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_SIGNATURE' => '<address>Apache Server at bt4.uniq-st.com Port 80</address>
+',
+    'HTTP_COOKIE' => '_ga=GA1.2.301249583.1511298780; _gid=GA1.2.1704025707.1511607092',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_X_REAL_IP' => '109.251.133.13',
+    'HTTP_X_FORWARDED_SERVER' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_HOST' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_FOR' => '109.251.133.13',
+    'HTTP_HOST' => 'bt4.uniq-st.com',
+    'UNIQUE_ID' => 'WhmWQSW7rPAAB8vNC7QAAAAi',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WhmWQSW7rPAAB8vNC7QAAAAi',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1511626305.20481395721435546875,
+    'REQUEST_TIME' => 1511626305,
+]
+[25-Nov-2017 18:11:45 Europe/Kiev] An Error occurred while handling another error:
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_deb.source_message' doesn't exist in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(161): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(132): yii\i18n\DbMessageSource->loadMessagesFromDb('app', 'en-EN')
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(107): yii\i18n\DbMessageSource->loadMessages('app', 'en-EN')
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(87): yii\i18n\MessageSource->translateMessage('app', 'home', 'en-EN')
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/I18N.php(90): yii\i18n\MessageSource->translate('app', 'home', 'en-EN')
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/BaseYii.php(512): yii\i18n\I18N->translate('app', 'home', Array, 'en-EN')
+#8 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(59): yii\BaseYii::t('app', 'home')
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#15 [internal function]: yii\web\ErrorAction->run()
+#16 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#17 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#18 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#19 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#20 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#21 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_deb.source_message' doesn't exist
+The SQL being executed was: (SELECT `t1`.`message` AS `message`, `t2`.`translation` AS `translation` FROM `source_message` `t1`, `message` `t2` WHERE (`t1`.`id`=`t2`.`id`) AND (`t1`.`category`='app') AND (`t2`.`language`='en-EN')) UNION ALL ( SELECT `t1`.`message` AS `message`, `t2`.`translation` AS `translation` FROM `source_message` `t1`, `message` `t2` WHERE ((`t1`.`id`=`t2`.`id`) AND (`t1`.`category`='app') AND (`t2`.`language`='en')) AND (`t2`.`id` NOT IN (SELECT `id` FROM `message` WHERE `language`='en-EN')) ) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), '(SELECT `t1`.`m...')
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(161): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(132): yii\i18n\DbMessageSource->loadMessagesFromDb('app', 'en-EN')
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(107): yii\i18n\DbMessageSource->loadMessages('app', 'en-EN')
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(87): yii\i18n\MessageSource->translateMessage('app', 'home', 'en-EN')
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/I18N.php(90): yii\i18n\MessageSource->translate('app', 'home', 'en-EN')
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/BaseYii.php(512): yii\i18n\I18N->translate('app', 'home', Array, 'en-EN')
+#8 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(59): yii\BaseYii::t('app', 'home')
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#15 [internal function]: yii\web\ErrorAction->run()
+#16 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#17 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#18 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#19 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#20 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#21 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#22 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'h7111c_deb.source_message' doesn't exist
+)
+
+Previous exception:
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_deb.profile' doesn't exist in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /home/h7111c/bt4.uniq-st.com/frontend/controllers/SiteController.php(81): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_deb.profile' doesn't exist
+The SQL being executed was: SELECT * FROM `profile` WHERE `status`=1 in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /home/h7111c/bt4.uniq-st.com/frontend/controllers/SiteController.php(81): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'h7111c_deb.profile' doesn't exist
+)
+
+$_SERVER = [
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'TZ' => 'Europe/Kiev',
+    'HTTP_CONNECTION' => 'close',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'REQUEST_URI' => '/',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REDIRECT_URL' => '/',
+    'REMOTE_PORT' => '47900',
+    'SCRIPT_FILENAME' => '/home/h7111c/bt4.uniq-st.com/frontend/web/index.php',
+    'SERVER_ADMIN' => 'webmaster@bt4.uniq-st.com',
+    'DOCUMENT_ROOT' => '/home/h7111c/bt4.uniq-st.com',
+    'REMOTE_ADDR' => '109.251.133.13',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '46.105.135.208',
+    'SERVER_NAME' => 'bt4.uniq-st.com',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_SIGNATURE' => '<address>Apache Server at bt4.uniq-st.com Port 80</address>
+',
+    'HTTP_COOKIE' => '_ga=GA1.2.301249583.1511298780; _gid=GA1.2.1704025707.1511607092',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_X_REAL_IP' => '109.251.133.13',
+    'HTTP_X_FORWARDED_SERVER' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_HOST' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_FOR' => '109.251.133.13',
+    'HTTP_HOST' => 'bt4.uniq-st.com',
+    'UNIQUE_ID' => 'WhmWQSW7rPAAB8uW6v8AAAAH',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WhmWQSW7rPAAB8uW6v8AAAAH',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1511626305.4745590686798095703125,
+    'REQUEST_TIME' => 1511626305,
+]
+[25-Nov-2017 18:11:45 Europe/Kiev] An Error occurred while handling another error:
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_deb.source_message' doesn't exist in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(161): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(132): yii\i18n\DbMessageSource->loadMessagesFromDb('app', 'en-EN')
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(107): yii\i18n\DbMessageSource->loadMessages('app', 'en-EN')
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(87): yii\i18n\MessageSource->translateMessage('app', 'home', 'en-EN')
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/I18N.php(90): yii\i18n\MessageSource->translate('app', 'home', 'en-EN')
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/BaseYii.php(512): yii\i18n\I18N->translate('app', 'home', Array, 'en-EN')
+#8 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(59): yii\BaseYii::t('app', 'home')
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#15 [internal function]: yii\web\ErrorAction->run()
+#16 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#17 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#18 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#19 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#20 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#21 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_deb.source_message' doesn't exist
+The SQL being executed was: (SELECT `t1`.`message` AS `message`, `t2`.`translation` AS `translation` FROM `source_message` `t1`, `message` `t2` WHERE (`t1`.`id`=`t2`.`id`) AND (`t1`.`category`='app') AND (`t2`.`language`='en-EN')) UNION ALL ( SELECT `t1`.`message` AS `message`, `t2`.`translation` AS `translation` FROM `source_message` `t1`, `message` `t2` WHERE ((`t1`.`id`=`t2`.`id`) AND (`t1`.`category`='app') AND (`t2`.`language`='en')) AND (`t2`.`id` NOT IN (SELECT `id` FROM `message` WHERE `language`='en-EN')) ) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), '(SELECT `t1`.`m...')
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(161): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(132): yii\i18n\DbMessageSource->loadMessagesFromDb('app', 'en-EN')
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(107): yii\i18n\DbMessageSource->loadMessages('app', 'en-EN')
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(87): yii\i18n\MessageSource->translateMessage('app', 'home', 'en-EN')
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/I18N.php(90): yii\i18n\MessageSource->translate('app', 'home', 'en-EN')
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/BaseYii.php(512): yii\i18n\I18N->translate('app', 'home', Array, 'en-EN')
+#8 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(59): yii\BaseYii::t('app', 'home')
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#15 [internal function]: yii\web\ErrorAction->run()
+#16 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#17 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#18 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#19 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#20 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#21 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#22 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'h7111c_deb.source_message' doesn't exist
+)
+
+Previous exception:
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_deb.profile' doesn't exist in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /home/h7111c/bt4.uniq-st.com/frontend/controllers/SiteController.php(81): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_deb.profile' doesn't exist
+The SQL being executed was: SELECT * FROM `profile` WHERE `status`=1 in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /home/h7111c/bt4.uniq-st.com/frontend/controllers/SiteController.php(81): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'h7111c_deb.profile' doesn't exist
+)
+
+$_SERVER = [
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'TZ' => 'Europe/Kiev',
+    'HTTP_CONNECTION' => 'close',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'REQUEST_URI' => '/',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REDIRECT_URL' => '/',
+    'REMOTE_PORT' => '47912',
+    'SCRIPT_FILENAME' => '/home/h7111c/bt4.uniq-st.com/frontend/web/index.php',
+    'SERVER_ADMIN' => 'webmaster@bt4.uniq-st.com',
+    'DOCUMENT_ROOT' => '/home/h7111c/bt4.uniq-st.com',
+    'REMOTE_ADDR' => '109.251.133.13',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '46.105.135.208',
+    'SERVER_NAME' => 'bt4.uniq-st.com',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_SIGNATURE' => '<address>Apache Server at bt4.uniq-st.com Port 80</address>
+',
+    'HTTP_COOKIE' => '_ga=GA1.2.301249583.1511298780; _gid=GA1.2.1704025707.1511607092',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_X_REAL_IP' => '109.251.133.13',
+    'HTTP_X_FORWARDED_SERVER' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_HOST' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_FOR' => '109.251.133.13',
+    'HTTP_HOST' => 'bt4.uniq-st.com',
+    'UNIQUE_ID' => 'WhmWQSW7rPAAB8vLByIAAAAc',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WhmWQSW7rPAAB8vLByIAAAAc',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1511626305.7162048816680908203125,
+    'REQUEST_TIME' => 1511626305,
+]
+[25-Nov-2017 18:16:38 Europe/Kiev] An Error occurred while handling another error:
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_deb.source_message' doesn't exist in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(161): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(132): yii\i18n\DbMessageSource->loadMessagesFromDb('app', 'en-EN')
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(107): yii\i18n\DbMessageSource->loadMessages('app', 'en-EN')
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(87): yii\i18n\MessageSource->translateMessage('app', 'home', 'en-EN')
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/I18N.php(90): yii\i18n\MessageSource->translate('app', 'home', 'en-EN')
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/BaseYii.php(512): yii\i18n\I18N->translate('app', 'home', Array, 'en-EN')
+#8 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(59): yii\BaseYii::t('app', 'home')
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#15 [internal function]: yii\web\ErrorAction->run()
+#16 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#17 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#18 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#19 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#20 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#21 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_deb.source_message' doesn't exist
+The SQL being executed was: (SELECT `t1`.`message` AS `message`, `t2`.`translation` AS `translation` FROM `source_message` `t1`, `message` `t2` WHERE (`t1`.`id`=`t2`.`id`) AND (`t1`.`category`='app') AND (`t2`.`language`='en-EN')) UNION ALL ( SELECT `t1`.`message` AS `message`, `t2`.`translation` AS `translation` FROM `source_message` `t1`, `message` `t2` WHERE ((`t1`.`id`=`t2`.`id`) AND (`t1`.`category`='app') AND (`t2`.`language`='en')) AND (`t2`.`id` NOT IN (SELECT `id` FROM `message` WHERE `language`='en-EN')) ) in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), '(SELECT `t1`.`m...')
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(161): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/DbMessageSource.php(132): yii\i18n\DbMessageSource->loadMessagesFromDb('app', 'en-EN')
+#4 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(107): yii\i18n\DbMessageSource->loadMessages('app', 'en-EN')
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/MessageSource.php(87): yii\i18n\MessageSource->translateMessage('app', 'home', 'en-EN')
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/i18n/I18N.php(90): yii\i18n\MessageSource->translate('app', 'home', 'en-EN')
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/BaseYii.php(512): yii\i18n\I18N->translate('app', 'home', Array, 'en-EN')
+#8 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(59): yii\BaseYii::t('app', 'home')
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#11 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#15 [internal function]: yii\web\ErrorAction->run()
+#16 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#17 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#18 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#19 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#20 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#21 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#22 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'h7111c_deb.source_message' doesn't exist
+)
+
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "contacts.php". in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('contacts.php', Array)
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'TZ' => 'Europe/Kiev',
+    'HTTP_CONNECTION' => 'close',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'REQUEST_URI' => '/contacts.php?_escaped_fragment_=',
+    'QUERY_STRING' => '_escaped_fragment_=',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REDIRECT_URL' => '/frontend/web/contacts.php',
+    'REDIRECT_QUERY_STRING' => '_escaped_fragment_=',
+    'REMOTE_PORT' => '53476',
+    'SCRIPT_FILENAME' => '/home/h7111c/bt4.uniq-st.com/frontend/web/index.php',
+    'SERVER_ADMIN' => 'webmaster@bt4.uniq-st.com',
+    'DOCUMENT_ROOT' => '/home/h7111c/bt4.uniq-st.com',
+    'REMOTE_ADDR' => '213.180.203.41',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '46.105.135.208',
+    'SERVER_NAME' => 'bt4.uniq-st.com',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_SIGNATURE' => '<address>Apache Server at bt4.uniq-st.com Port 80</address>
+',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_FROM' => 'support@search.yandex.ru',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)',
+    'HTTP_X_REAL_IP' => '213.180.203.41',
+    'HTTP_X_FORWARDED_SERVER' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_HOST' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_FOR' => '213.180.203.41',
+    'HTTP_HOST' => 'bt4.uniq-st.com',
+    'UNIQUE_ID' => 'WhmXZiW7rPAAB9M2l-gAAAAY',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WhmXZiW7rPAAB9M2l-gAAAAY',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WhmXZiW7rPAAB9M2l-gAAAAY',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1511626598.302978038787841796875,
+    'REQUEST_TIME' => 1511626598,
+]
