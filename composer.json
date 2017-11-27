@@ -22,7 +22,8 @@
         "kartik-v/yii2-grid": "@dev",
         "kartik-v/yii2-mpdf": "dev-master",
         "zelenin/yii2-i18n-module": "dev-master",
-        "pheme/yii2-i18n-url": "*"
+        "pheme/yii2-i18n-url": "*",
+        "skeeks/yii2-assets-auto-compress": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
