@@ -13,7 +13,8 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'https://fonts.googleapis.com/css?family=Roboto:300,400,500',
-        'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css',
+//        'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css',
+        'css/bootstrap.min.css',
         'https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css',
         'https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css',
         // 'https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.5/css/lightgallery.min.css',
