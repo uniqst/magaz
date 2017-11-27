@@ -97,96 +97,96 @@ $prev = Profile::findOne($id-1);
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', '1 hour')?></span>
                                 <span class="incall"></span>
-                                <span class="outcall"><?=$model->price_eur?></span>
+                                <span class="outcall"><?=$price->price_eur?></span>
                             </li>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', '2 hour')?></span>
                                 <span class="incall"></span>
-                                <span class="outcall"><?=$model->price_eur_two?></span>
+                                <span class="outcall"><?=$price->price_eur_two?></span>
                             </li>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', '3 hour')?></span>
                                 <span class="incall"></span>
-                                <span class="outcall"><?=$model->price_eur_three?></span>
+                                <span class="outcall"><?=$price->price_eur_three?></span>
                             </li>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', '4 hour')?></span>
                                 <span class="incall"></span>
-                                <span class="outcall"><?=$model->price_eur_four?></span>
+                                <span class="outcall"><?=$price->price_eur_four?></span>
                             </li>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', 'All night')?></span>
                                 <span class="incall"></span>
-                                <span class="outcall"><?=$model->price_eur_night?></span>
+                                <span class="outcall"><?=$price->price_eur_night?></span>
                             </li>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', 'Taxi')?></span>
                                 <span class="incall"></span>
-                                <span class="outcall"><?=$model->taxi_eur?></span>
+                                <span class="outcall"><?=$price->taxi_eur?></span>
                             </li>
                         </ul>
                         <ul class="try price-list" id="try">
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', '1 hour')?></span>
                                 <span class="incall"></span>
-                                <span class="outcall"><?=$model->price_try?></span>
+                                <span class="outcall"><?=$price->price_try?></span>
                             </li>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', '2 hour')?></span>
                                 <span class="incall"></span>
-                                <span class="outcall"><?=$model->price_try_two?></span>
+                                <span class="outcall"><?=$price->price_try_two?></span>
                             </li>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', '3 hour')?></span>
                                 <span class="incall"></span>
-                                <span class="outcall"><?=$model->price_try_three?></span>
+                                <span class="outcall"><?=$price->price_try_three?></span>
                             </li>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', '4 hour')?></span>
                                 <span class="incall"></span>
-                                <span class="outcall"><?=$model->price_try_four?></span>
+                                <span class="outcall"><?=$price->price_try_four?></span>
                             </li>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', 'All night')?></span>
                                 <span class="incall"></span>
-                                <span class="outcall"><?=$model->price_try_night?></span>
+                                <span class="outcall"><?=$price->price_try_night?></span>
                             </li>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', 'Taxi')?></span>
                                 <span class="incall"></span>
-                                <span class="outcall"><?=$model->taxi_try?></span>
+                                <span class="outcall"><?=$price->taxi_try?></span>
                             </li>
                         </ul>
                         <ul class="usd price-list" id="usd">
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', '1 hour')?></span>
                                 <span class="incall"></span>
-                                <span class="outcall"><?=$model->price_usd?></span>
+                                <span class="outcall"><?=$price->price_usd?></span>
                             </li>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', '2 hour')?></span>
                                 <span class="incall"></span>
-                                <span class="outcall"><?=$model->price_usd_two?></span>
+                                <span class="outcall"><?=$price->price_usd_two?></span>
                             </li>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', '3 hour')?></span>
                                 <span class="incall"></span>
-                                <span class="outcall"><?=$model->price_usd_three?></span>
+                                <span class="outcall"><?=$price->price_usd_three?></span>
                             </li>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', '4 hour')?></span>
                                 <span class="incall"></span>
-                                <span class="outcall"><?=$model->price_usd_four?></span>
+                                <span class="outcall"><?=$price->price_usd_four?></span>
                             </li>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', 'All night')?></span>
                                 <span class="incall"></span>
-                                <span class="outcall"><?=$model->price_usd_night?></span>
+                                <span class="outcall"><?=$price->price_usd_night?></span>
                             </li>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', 'Taxi')?></span>
                                 <span class="incall"></span>
-                                <span class="outcall"><?=$model->taxi_usd?></span>
+                                <span class="outcall"><?=$price->taxi_usd?></span>
                             </li>
                         </ul>
                     </div>
@@ -215,6 +215,14 @@ $prev = Profile::findOne($id-1);
                         <li class="info-list__item">
                             <span class="property"><?=Yii::t('app', 'Mesurements')?></span>
                             <span class="value"><?= $model->mesurements?></span>
+                        </li>
+                        <li class="info-list__item">
+                            <span class="property"><?=Yii::t('app', 'Contact')?></span>
+                            <span class="value"><?= $price->phone?></span>
+                        </li>
+                        <li class="info-list__item">
+                            <span class="property"><?=Yii::t('app', 'Email')?></span>
+                            <span class="value"><?= $price->email?></span>
                         </li>
                     </ul>
                 </div>
