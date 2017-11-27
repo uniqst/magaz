@@ -4,12 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
-    "hash": "6f9b6a534e87ab7ec155cff82dad61cc",
-    "content-hash": "00035b6716935d9b6d89637f5f9dadb1",
-=======
+    "hash": "01eae03fec8e7b8745ab8f82e6a7daaa",
     "content-hash": "f16f75b0d47ca23760e04792dec44961",
->>>>>>> 5f9ac2b542cfde72bb58ba7f2e5af57f415b4404
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -329,7 +325,7 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
-            "time": "2017-02-14T19:40:03+00:00"
+            "time": "2017-02-14 19:40:03"
         },
         {
             "name": "dmstr/yii2-adminlte-asset",
@@ -648,7 +644,7 @@
                 "http",
                 "laravel"
             ],
-            "time": "2017-06-28T17:37:25+00:00"
+            "time": "2017-06-28 17:37:25"
         },
         {
             "name": "kartik-v/yii2-dialog",
@@ -753,11 +749,7 @@
                 "widget",
                 "yii2"
             ],
-<<<<<<< HEAD
             "time": "2017-11-24 04:55:57"
-=======
-            "time": "2017-11-24T04:55:57+00:00"
->>>>>>> 5f9ac2b542cfde72bb58ba7f2e5af57f415b4404
         },
         {
             "name": "kartik-v/yii2-krajee-base",
@@ -860,10 +852,7 @@
                 "utf8",
                 "yii2"
             ],
-<<<<<<< HEAD
             "time": "2017-07-19 09:51:02"
-=======
-            "time": "2017-07-19T09:51:02+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -941,8 +930,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2017-06-19T01:22:40+00:00"
->>>>>>> 5f9ac2b542cfde72bb58ba7f2e5af57f415b4404
+            "time": "2017-06-19 01:22:40"
         },
         {
             "name": "mpdf/mpdf",
@@ -1009,10 +997,7 @@
                 "php",
                 "utf-8"
             ],
-<<<<<<< HEAD
             "time": "2017-11-25 09:13:29"
-=======
-            "time": "2017-11-25T09:13:29+00:00"
         },
         {
             "name": "mrclay/jsmin-php",
@@ -1064,7 +1049,7 @@
                 "jsmin",
                 "minify"
             ],
-            "time": "2015-03-30T15:04:42+00:00"
+            "time": "2015-03-30 15:04:42"
         },
         {
             "name": "mrclay/minify",
@@ -1126,7 +1111,7 @@
             ],
             "description": "Minify is a PHP5 app that helps you follow several rules for client-side performance. It combines multiple CSS or Javascript files, removes unnecessary whitespace and comments, and serves them with gzip encoding and optimal client-side cache headers",
             "homepage": "https://github.com/mrclay/minify",
-            "time": "2017-11-03T21:00:15+00:00"
+            "time": "2017-11-03 21:00:15"
         },
         {
             "name": "mrclay/props-dic",
@@ -1178,7 +1163,7 @@
                 "di",
                 "di container"
             ],
-            "time": "2016-02-10T18:59:20+00:00"
+            "time": "2016-02-10 18:59:20"
         },
         {
             "name": "natxet/CssMin",
@@ -1225,8 +1210,7 @@
                 "css",
                 "minify"
             ],
-            "time": "2017-10-04T16:54:00+00:00"
->>>>>>> 5f9ac2b542cfde72bb58ba7f2e5af57f415b4404
+            "time": "2017-10-04 16:54:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -1367,7 +1351,7 @@
                 "container",
                 "dependency injection"
             ],
-            "time": "2017-08-23T11:42:00+00:00"
+            "time": "2017-08-23 11:42:00"
         },
         {
             "name": "psr/container",
@@ -1416,7 +1400,7 @@
                 "container-interop",
                 "psr"
             ],
-            "time": "2017-06-28T15:35:32+00:00"
+            "time": "2017-06-28 15:35:32"
         },
         {
             "name": "psr/log",
@@ -1621,7 +1605,7 @@
                 "skeeks",
                 "yii"
             ],
-            "time": "2017-10-05T13:42:22+00:00"
+            "time": "2017-10-05 13:42:22"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1676,10 +1660,7 @@
                 "mail",
                 "mailer"
             ],
-<<<<<<< HEAD
             "time": "2017-11-23 14:49:29"
-=======
-            "time": "2017-11-23T14:49:29+00:00"
         },
         {
             "name": "tedivm/jshrink",
@@ -1725,7 +1706,7 @@
                 "javascript",
                 "minifier"
             ],
-            "time": "2017-05-30T02:59:46+00:00"
+            "time": "2017-05-30 02:59:46"
         },
         {
             "name": "tubalmartin/cssmin",
@@ -1778,8 +1759,7 @@
                 "minify",
                 "yui"
             ],
-            "time": "2017-05-16T13:45:26+00:00"
->>>>>>> 5f9ac2b542cfde72bb58ba7f2e5af57f415b4404
+            "time": "2017-05-16 13:45:26"
         },
         {
             "name": "yiisoft/yii2",
@@ -1787,21 +1767,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-<<<<<<< HEAD
-                "reference": "634a70ad18d91ea033f461d55be2cf90a6070d1f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/634a70ad18d91ea033f461d55be2cf90a6070d1f",
-                "reference": "634a70ad18d91ea033f461d55be2cf90a6070d1f",
-=======
                 "reference": "da26fa9e3e8560426dcc5bc30a35ab9f92b5a092"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/da26fa9e3e8560426dcc5bc30a35ab9f92b5a092",
                 "reference": "da26fa9e3e8560426dcc5bc30a35ab9f92b5a092",
->>>>>>> 5f9ac2b542cfde72bb58ba7f2e5af57f415b4404
                 "shasum": ""
             },
             "require": {
@@ -1888,11 +1859,7 @@
                 "framework",
                 "yii2"
             ],
-<<<<<<< HEAD
-            "time": "2017-11-25 12:39:17"
-=======
-            "time": "2017-11-26T06:43:05+00:00"
->>>>>>> 5f9ac2b542cfde72bb58ba7f2e5af57f415b4404
+            "time": "2017-11-26 06:43:05"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -2035,7 +2002,7 @@
                 "httpclient",
                 "yii2"
             ],
-            "time": "2017-11-03T11:22:41+00:00"
+            "time": "2017-11-03 11:22:41"
         },
         {
             "name": "yiisoft/yii2-swiftmailer",
@@ -2600,11 +2567,7 @@
                 "object",
                 "object graph"
             ],
-<<<<<<< HEAD
             "time": "2017-10-20 11:34:00"
-=======
-            "time": "2017-10-20T11:34:00+00:00"
->>>>>>> 5f9ac2b542cfde72bb58ba7f2e5af57f415b4404
         },
         {
             "name": "phar-io/manifest",
@@ -2959,11 +2922,7 @@
                 "spy",
                 "stub"
             ],
-<<<<<<< HEAD
             "time": "2017-11-24 13:59:53"
-=======
-            "time": "2017-11-24T13:59:53+00:00"
->>>>>>> 5f9ac2b542cfde72bb58ba7f2e5af57f415b4404
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -3027,11 +2986,7 @@
                 "testing",
                 "xunit"
             ],
-<<<<<<< HEAD
-            "time": "2017-11-16 09:51:47"
-=======
-            "time": "2017-11-26T15:39:52+00:00"
->>>>>>> 5f9ac2b542cfde72bb58ba7f2e5af57f415b4404
+            "time": "2017-11-26 15:39:52"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -3078,11 +3033,7 @@
                 "filesystem",
                 "iterator"
             ],
-<<<<<<< HEAD
             "time": "2017-11-24 15:00:59"
-=======
-            "time": "2017-11-24T15:00:59+00:00"
->>>>>>> 5f9ac2b542cfde72bb58ba7f2e5af57f415b4404
         },
         {
             "name": "phpunit/php-text-template",
@@ -3221,11 +3172,7 @@
             "keywords": [
                 "tokenizer"
             ],
-<<<<<<< HEAD
-            "time": "2017-11-16 09:53:19"
-=======
-            "time": "2017-11-26T16:22:18+00:00"
->>>>>>> 5f9ac2b542cfde72bb58ba7f2e5af57f415b4404
+            "time": "2017-11-26 16:22:18"
         },
         {
             "name": "phpunit/phpunit",
@@ -4257,11 +4204,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
             "time": "2017-11-21 17:31:29"
-=======
-            "time": "2017-11-21T17:31:29+00:00"
->>>>>>> 5f9ac2b542cfde72bb58ba7f2e5af57f415b4404
         },
         {
             "name": "symfony/dom-crawler",
@@ -4783,11 +4726,7 @@
                 "gii",
                 "yii2"
             ],
-<<<<<<< HEAD
             "time": "2017-11-25 12:25:21"
-=======
-            "time": "2017-11-25T12:25:21+00:00"
->>>>>>> 5f9ac2b542cfde72bb58ba7f2e5af57f415b4404
         }
     ],
     "aliases": [],
