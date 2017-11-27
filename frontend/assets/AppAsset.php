@@ -17,12 +17,9 @@ class AppAsset extends AssetBundle
         'https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css',
         'https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css',
         // 'https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.5/css/lightgallery.min.css',
-        'https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css',
-        'css/font-awesome.min.css',
         // 'css/bootstrap4.css',
         'css/site.css',
         'css/styles.css',
-        'http://vjs.zencdn.net/6.4.0/video-js.css'
     ];
     public $js = [
         // 'http://code.jquery.com/jquery-1.9.1.min.js',
