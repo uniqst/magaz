@@ -9,7 +9,7 @@ $params = array_merge(
 return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
-    'bootstrap'   => ['log', 'assetsAutoCompress'],
+    'bootstrap'    => ['assetsAutoCompress'],
     'homeUrl' => '/',
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
@@ -53,6 +53,7 @@ return [
                         'no-comments' => true   //cut all the html comments
                     ],
             ],
+
         'db' => [
             'attributes' => [
                 PDO::MYSQL_ATTR_INIT_COMMAND => "SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));",

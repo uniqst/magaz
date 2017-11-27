@@ -274,15 +274,7 @@ AppAsset::register($this);
             
     </div> -->
 </footer>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-
-<link href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css">
-<link href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.csshttps://fonts.googleapis.com/css?family=Roboto:300,400,500">
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
-<link src="css/font-awesome.min.css">
+<script asu scr="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"></script>
 
 <?php $this->endBody() ?>
 
