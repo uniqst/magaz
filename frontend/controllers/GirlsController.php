@@ -47,10 +47,12 @@ class GirlsController extends Controller
     public function actionGirl($id)
     {
         $service = Service::find()->all();
-        $price = Price::find()->one();
+        $price_usd = Price::find()->where(['currency' => 0])->all();
+        $price_eur = Price::find()->where(['currency' => 1])->all();
+        $price_try = Price::find()->where(['currency' => 2])->all();
         $model = Profile::find()->where(['id' => $id])->with('photo', 'value.category')->one();
 
-        return $this->render('girl', compact('model', 'service', 'price'));
+        return $this->render('girl', compact('model', 'service', 'price_usd', 'price_eur', 'price_try'));
     }
     public function actionFilters()
     {

@@ -23,7 +23,7 @@
                     ['label' => 'Service', 'icon' => ' fa fa-hashtag', 'url' => ['/service']],
                     ['label' => 'Social Web', 'icon' => ' fa fa-facebook', 'url' => ['/social-web/update', 'id' => 1]],
                     ['label' => 'Reviews', 'icon' => ' fa fa-comment', 'url' => ['/comments']],
-                    ['label' => 'Price', 'icon' => ' fa fa-money', 'url' => ['/price/update', 'id' => 1]],
+                    ['label' => 'Price', 'icon' => ' fa fa-money', 'url' => ['/price']],
                     ['label' => 'Profile', 'icon' => 'fa fa-user-circle-o', 'url' => ['/user/update', 'id' => 1]],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
                     ['label' => 'Translations', 'icon' => ' fa fa-database', 'url' => ['/translates']],

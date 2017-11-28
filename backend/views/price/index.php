@@ -24,26 +24,17 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'price_eur',
-            'price_try',
-            'price_usd',
-            'price_eur_two',
-            //'price_try_two',
-            //'price_usd_two',
-            //'price_eur_three',
-            //'price_try_three',
-            //'price_usd_three',
-            //'price_eur_four',
-            //'price_try_four',
-            //'price_usd_four',
-            //'price_eur_night',
-            //'price_try_night',
-            //'price_usd_night',
-            //'taxi_eur',
-            //'taxi_try',
-            //'taxi_usd',
-            //'email:email',
-            //'phone',
+            'name',
+            'incall',
+            'outcall',
+            [
+                'attribute' => 'currency',
+                'value' => function($data){
+                    if($data->currency == 0) return 'usd';
+                    if($data->currency == 1) return 'eur';
+                    if($data->currency == 2) return 'try';
+                }
+            ],
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

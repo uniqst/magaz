@@ -14,29 +14,10 @@ class m171127_143815_price extends Migration
     {
         $this->createTable('{{%price}}', [
             'id' => $this->primaryKey(11),
-            'price_eur_one' => $this->integer(11),
-            'price_try_one' => $this->integer(11),
-            'price_usd_one' => $this->integer(11),
-            'price_eur_two' => $this->integer(11),
-            'price_try_two' => $this->integer(11),
-            'price_usd_two' => $this->integer(11),
-            'price_eur_three' => $this->integer(11),
-            'price_try_three' => $this->integer(11),
-             'price_usd_three' => $this->integer(11),
-             'price_eur_four' => $this->integer(11),
-             'price_try_four' => $this->integer(11),
-             'price_usd_four' => $this->integer(11),
-             'price_eur_night' => $this->integer(11),
-             'price_try_night' => $this->integer(11),
-             'price_usd_night' => $this->integer(11),
-             'price_eur_one' => $this->integer(11),
-             'price_eur_one' => $this->integer(11),
-             'price_eur_one' => $this->integer(11),
-             'taxi_eur' => $this->integer(11),
-             'taxi_try' => $this->integer(11),
-             'taxi_usd' => $this->integer(11),
-             'email' => $this->string(255)->notNull(),
-            'phone' => $this->string(255)->notNull(),
+            'name' => $this->string(20)->notNull(),
+            'incall' => $this->integer(11)->notNull(),
+            'outcall' => $this->integer(11)->notNull(),
+            'currency' => $this->integer(11)->notNull(),
             
         ]);
     }
