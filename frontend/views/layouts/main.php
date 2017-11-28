@@ -6,10 +6,12 @@
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
+use frontend\models\Contacts;
 use common\widgets\Alert;
 use yii\helpers\Url;
 use frontend\models\SocialWeb;
 
+$model = Contacts::find()->one();
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -102,7 +104,7 @@ AppAsset::register($this);
 
             <h2 class="phone-number">
                 <span>+</span>
-                90 539 460 85 63
+                <?= $model->phone?>
             </h2>
 
             <ul class="phone-links">
@@ -139,7 +141,7 @@ AppAsset::register($this);
 
             <h2 class="phone-number">
                 <span>+</span>
-                90 539 460 85 63
+                <?= $model->phone?>
             </h2>
 
             <ul class="phone-links">
