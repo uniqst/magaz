@@ -29,7 +29,7 @@
 
                             <!-- Нужно добавить атрибут "data-girl-id" с уникальным значением,
                             которое мы дублируем в блоке .most-wanted__wrapper в атрибуие "id" -->
-                            <!-- <img height="500" width="700" data-girl-id="girl-12345" src="/photo/<?= $want->img_mw?>"  alt=""> -->
+                            <img height="500" width="700" data-girl-id="<?= $want->id?>" src="/photo/<?= $want->img_mw?>"  alt="">
                             <img height="500" width="700" src="/photo/<?= $want->img_mw?>"  alt="">
                       <?php endforeach;?>
                     </div>
@@ -42,7 +42,7 @@
                           <p><?= $want->about_myself?></p>
                       </div>
                     </div> -->
-                    <div class="most-wanted-wrapper">
+                    <div class="most-wanted-wrapper" id="girl-12345">
                       <div class="most-wanted__name">
                           <p><?= $want->name?></p>
                       </div>
