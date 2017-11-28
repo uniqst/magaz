@@ -2018,9 +2018,20 @@ img {
 
 body {
   position: relative;
-  background-color: transparent;
   background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
   background-position: 60px 50px, 150px 54px, 230px 45px, 396px 60px, 473px 83px, 583px 73px, 583px 73px, 460px 157px, 299px 156px, 375px 225px, 375px 225px, 60px 50px;
+  background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px, 107px, 0;
+  background-repeat: no-repeat; }
+
+.main-header {
+  background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
+  background-position: 60px 110px, 150px 114px, 230px 105px, 396px 120px, 473px 143px, 583px 133px, 583px 133px, 460px 217px, 299px 216px, 375px 285px, 375px 285px, 60px 110px;
+  background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px, 107px, 0;
+  background-repeat: no-repeat; }
+
+.navbar-bottom {
+  background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
+  background-position: 60px -30px, 150px -26px, 230px -35px, 396px -20px, 473px 3px, 583px -7px, 583px -7px, 460px 77px, 299px 76px, 375px 145px, 375px 145px, 60px -30px;
   background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px, 107px, 0;
   background-repeat: no-repeat; }
 
