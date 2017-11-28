@@ -25,6 +25,8 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
+<div class="bubbles"></div>
+
 <div class="wrap">
 
     <nav class="navbar navbar-expand-lg main-header">
