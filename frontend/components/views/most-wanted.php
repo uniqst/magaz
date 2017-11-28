@@ -7,10 +7,12 @@
                         </div>
                         <?php endforeach;?>
                     </div>
-                    <div class="most-wanted__name">
-                        <p><?= $model->name?></p>
-                    </div>
-                    <div class="most-wanted__description">
-                        <p><?=Yii::t('app', $model->about_myself);?></p>
+                    <div class="most-wanted-info-wrapper">
+                        <div class="most-wanted__name">
+                            <p><?= $model->name?></p>
+                        </div>
+                        <div class="most-wanted__description">
+                            <p><?=Yii::t('app', $model->about_myself);?></p>
+                        </div>
                     </div>
                 </div>
