@@ -26,31 +26,18 @@
                 <div class="most-wanted-block">
                     <div class="most-wanted-slider most-wanted-new-slider-js">
                       <?php foreach($model as $want):?>
-
-                            <!-- Нужно добавить атрибут "data-girl-id" с уникальным значением,
-                            которое мы дублируем в блоке .most-wanted__wrapper в атрибуие "id" -->
-                            <img height="500" width="700" data-girl-id="<?= $want->id?>" src="/photo/<?= $want->img_mw?>"  alt="">
-                            <img height="500" width="700" src="/photo/<?= $want->img_mw?>"  alt="">
+                            <img height="500" width="700" data-girl-id="girl-<?= $want->id?>" src="/photo/<?= $want->img_mw?>"  alt="Girl image">
                       <?php endforeach;?>
                     </div>
                     <?php foreach($model as $want):?>
-                    <!-- <div class="most-wanted-wrapper" id="girl-12345">
-                      <div class="most-wanted__name">
-                          <p><?= $want->name?></p>
+                      <div class="most-wanted-wrapper" id="girl-<?= $want->id?>">
+                        <div class="most-wanted__name">
+                            <p><?= $want->name?></p>
+                        </div>
+                        <div class="most-wanted__description">
+                            <p><?= $want->about_myself?></p>
+                        </div>
                       </div>
-                      <div class="most-wanted__description">
-                          <p><?= $want->about_myself?></p>
-                      </div>
-                    </div> -->
-                    <div class="most-wanted-wrapper" id="girl-12345">
-                      <div class="most-wanted__name">
-                          <p><?= $want->name?></p>
-                      </div>
-                      <div class="most-wanted__description">
-                          <p><?= $want->about_myself?></p>
-                      </div>
-                    </div>
-
                   <?php endforeach;?>
                 </div>
             </div>

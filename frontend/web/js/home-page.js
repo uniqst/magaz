@@ -202,7 +202,16 @@ $(document).ready(function () {
   }
 
   resizeSlider();
-  
+
   $(window).resize(resizeSlider);
+
+  $('.most-wanted-new-slider-js > img').click(function() {
+    $('.most-wanted-wrapper').hide();
+    $('.most-wanted-wrapper#' + $(this).attr('data-girl-id')).show();
+  });
+
+  $('.most-wanted-new-slider-js > img:gt(0)').each(function () {
+    $('.most-wanted-wrapper#' + $(this).attr('data-girl-id')).hide();
+  });
 
 });
