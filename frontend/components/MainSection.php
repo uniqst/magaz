@@ -9,9 +9,7 @@ use yii\db\ActiveQuery;
 
 Class MainSection extends Widget{
     public function run(){
-    	$model = Profile::find()->orderBy(new Expression('rand()'))->with(['photo' => function(ActiveQuery $query){
-    		$query->limit(3);
-    	}])->one();
+    	$model = Profile::find()->orderBy(new Expression('rand()'))->limit(3)->all();
         return $this->render('main-section', compact('model'));
     }
 }

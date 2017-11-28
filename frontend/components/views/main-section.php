@@ -25,16 +25,18 @@
             <div class="d-none d-md-block px-0 most-wanted-block--expanded">
                 <div class="most-wanted-block">
                     <div class="most-wanted-slider most-wanted-new-slider-js">
-                      <?php foreach($model->photo as $photo):?>
-                            <img height="500" width="700" src="/photo/<?= $photo->src?>"  alt="">
+                      <?php foreach($model as $want):?>
+                            <img height="500" width="700" src="/photo/<?= $want->img_mw?>"  alt="">
                       <?php endforeach;?>
                     </div>
+                    <?php foreach($model as $want):?>
                     <div class="most-wanted__name">
-                        <p><?= $model->name?></p>
+                        <p><?= $want->name?></p>
                     </div>
                     <div class="most-wanted__description">
-                        <p><?= $model->about_myself?></p>
+                        <p><?= $want->about_myself?></p>
                     </div>
+                  <?php endforeach;?>
                 </div>
             </div>
 

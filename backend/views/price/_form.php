@@ -11,7 +11,7 @@ use yii\widgets\ActiveForm;
 <div class="price-form">
 
     <?php $form = ActiveForm::begin(); ?>
-
+    
     <div class="row">
         <div class="col-md-2">
     <?= $form->field($model, 'price_try')->textInput(['maxlength' => true]) ?>

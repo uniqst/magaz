@@ -25,16 +25,18 @@ class Profile extends \yii\db\ActiveRecord
         return 'profile';
     }
 
+     public $imageFile;
     /**
      * @inheritdoc
      */
     public function rules()
     {
         return [
-            [['age', 'phone', 'height', 'mesurements', 'weight', 'name', 'email', 'nationality', 'about_myself'], 'required'],
-            [['age', 'phone', 'height', 'weight', 'status', 'price_eur', 'price_try', 'price_usd', 'price_eur_two', 'price_try_two', 'price_usd_two', 'price_eur_three', 'price_try_three', 'price_usd_three', 'price_eur_four', 'price_try_four', 'price_usd_four', 'price_eur_night', 'price_try_night', 'price_usd_night', 'taxi_eur', 'taxi_try', 'taxi_usd'], 'integer'],
+            [['age', 'height', 'mesurements', 'weight', 'name', 'nationality', 'about_myself', 'email', 'phone'], 'required'],
+            [['age', 'height', 'weight', 'status'], 'integer'],
             [['date'], 'safe'],
-            [['name', 'nationality', 'about_myself', 'mesurements', 'email'], 'string', 'max' => 255],
+            [['imageFile'], 'file'],
+            [['name', 'nationality', 'about_myself', 'about_myself_link', 'most_wanted', 'email', 'phone', 'title', 'h1', 'h2', 'mesurements'], 'string', 'max' => 255],
         ];
     }
 
@@ -49,7 +51,6 @@ class Profile extends \yii\db\ActiveRecord
             'age' => 'Возраст',
             'country' => 'Страна',
             'about_myself' => 'О себе',
-            'contacts' => 'Контакты',
             'date' => 'Дата',
         ];
     }

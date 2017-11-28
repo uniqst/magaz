@@ -49,7 +49,7 @@ class ProfileController extends Controller
         $del = Yii::$app->request->get('del');
         if($del){
             $del = Photo::find()->where(['id' => $del])->one();
-            $del->delete();
+            $del->delete();  
         }
 
         return $this->render('index', [
@@ -65,13 +65,7 @@ class ProfileController extends Controller
      */
     public function actionView($id)
     {
-        $comments = Comments::find()->where(['profile_id' => $id]); 
-        $provider = new ActiveDataProvider([
-    'query' => $comments,
-    'pagination' => [
-        'pageSize' => 10,
-    ],
-]);
+
         return $this->render('view', [
             'model' => Profile::find()->where(['id' => $id])->with('photo')->one(),
             'comments' => $provider,
@@ -91,7 +85,14 @@ class ProfileController extends Controller
         $filters = Filters::find()->where(['parent_id' => 0])->with('value')->all();
         $value = new FiltersValue();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
+
+            $str = substr(md5(microtime() . rand(0, 9999)), 0, 20);
+                $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
+                $model->imageFile->saveAs('../../frontend/web/photo/' . $str . '.' . $model->imageFile->extension);
+                $model->img_mw = $str . '.' . $model->imageFile->extension;
+                $model->save();
+
             foreach($_POST['value'] as $key=> $val){
                 
                     $value = new FiltersValue();
@@ -111,6 +112,12 @@ class ProfileController extends Controller
                     $image->save();
                 }
              return $this->redirect(['view', 'id' => $model->id]);
+            
+
+                       
+
+             
+
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -134,7 +141,14 @@ class ProfileController extends Controller
         $photo = new UploadForm();
         $value = FiltersValue::find()->where(['product_id' => 'id'])->all();
          
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
+
+            $str = substr(md5(microtime() . rand(0, 9999)), 0, 20);
+                $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
+                $model->imageFile->saveAs('../../frontend/web/photo/' . $str . '.' . $model->imageFile->extension);
+                $model->img_mw = $str . '.' . $model->imageFile->extension;
+                $model->save();
+                
             foreach($_POST['value'] as $key=> $val){
                 $value = FiltersValue::find()->where(['filter_id' => $key, 'product_id' => $model->id])->one();
                 if(empty($value)){

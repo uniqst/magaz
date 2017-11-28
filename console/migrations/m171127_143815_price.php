@@ -14,9 +14,9 @@ class m171127_143815_price extends Migration
     {
         $this->createTable('{{%price}}', [
             'id' => $this->primaryKey(11),
-            'price_eur' => $this->integer(11),
-            'price_try' => $this->integer(11),
-            'price_usd' => $this->integer(11),
+            'price_eur_one' => $this->integer(11),
+            'price_try_one' => $this->integer(11),
+            'price_usd_one' => $this->integer(11),
             'price_eur_two' => $this->integer(11),
             'price_try_two' => $this->integer(11),
             'price_usd_two' => $this->integer(11),
@@ -29,6 +29,9 @@ class m171127_143815_price extends Migration
              'price_eur_night' => $this->integer(11),
              'price_try_night' => $this->integer(11),
              'price_usd_night' => $this->integer(11),
+             'price_eur_one' => $this->integer(11),
+             'price_eur_one' => $this->integer(11),
+             'price_eur_one' => $this->integer(11),
              'taxi_eur' => $this->integer(11),
              'taxi_try' => $this->integer(11),
              'taxi_usd' => $this->integer(11),

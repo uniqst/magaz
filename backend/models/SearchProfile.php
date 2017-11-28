@@ -18,7 +18,7 @@ class SearchProfile extends Profile
     public function rules()
     {
         return [
-            [['id', 'age', 'phone', 'height', 'weight', 'status'], 'integer'],
+            [['id', 'age', 'height', 'weight', 'status'], 'integer'],
             [['name', 'nationality', 'mesurements', 'about_myself', 'date'], 'safe'],
         ];
     }
