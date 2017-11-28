@@ -14,6 +14,7 @@
                 'options' => ['class' => 'sidebar-menu tree', 'data-widget'=> 'tree'],
                 'items' => [
                     ['label' => 'Menu', 'options' => ['class' => 'header']],
+                    ['label' => 'City', 'icon' => 'dashboard', 'url' => ['/city']],
                     ['label' => 'Category', 'icon' => 'dashboard', 'url' => ['/category']],
                     // ['label' => 'Filters', 'icon' => ' fa fa-filter', 'url' => ['/filters']],
                     ['label' => 'Application', 'icon' => 'fa fa-id-card-o', 'url' => ['/profile']],
