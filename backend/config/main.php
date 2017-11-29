@@ -68,6 +68,17 @@ return [
             ],
         ],
 
+
+    ],
+'controllerMap' => [
+        'elfinder' => [
+            'class' => 'mihaildev\elfinder\PathController',
+            'access' => ['@'],
+            'root' => [
+                'path' => 'upload/global',
+                'name' => 'Global'
+            ],
+        ]
     ],
 
     'as access' => [
@@ -84,5 +95,6 @@ return [
                 ],
             ],
         ],
+
     'params' => $params,
 ];

@@ -23,7 +23,9 @@
         "kartik-v/yii2-mpdf": "dev-master",
         "zelenin/yii2-i18n-module": "dev-master",
         "pheme/yii2-i18n-url": "*",
-        "skeeks/yii2-assets-auto-compress": "*"
+        "skeeks/yii2-assets-auto-compress": "*",
+        "mihaildev/yii2-elfinder": "*",
+        "mihaildev/yii2-ckeditor": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

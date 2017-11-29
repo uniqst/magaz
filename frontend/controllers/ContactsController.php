@@ -5,6 +5,7 @@ use Yii;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
+use frontend\models\Contacts;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 
@@ -68,8 +69,8 @@ class ContactsController extends Controller
      */
     public function actionIndex()
     {
-        
-        return $this->render('index');
+        $model = Contacts::find()->one();  
+        return $this->render('index', compact('model'));
     }
 
 }

@@ -149,11 +149,11 @@ $prev = Profile::findOne($id-1);
                         </li>
                         <li class="info-list__item">
                             <span class="property"><?=Yii::t('app', 'Contact')?></span>
-                            <span class="value"><?= $price->phone?></span>
+                            <span class="value"><?= $contact->phone?></span>
                         </li>
                         <li class="info-list__item">
                             <span class="property"><?=Yii::t('app', 'Email')?></span>
-                            <span class="value"><?= $price->email?></span>
+                            <span class="value"><?= $contact->email?></span>
                         </li>
                     </ul>
                 </div>

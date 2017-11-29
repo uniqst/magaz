@@ -37,9 +37,6 @@ $this->title = 'Story';
 
   <div class="col">
     <div class="story-long">
-      <div class="story__image">
-        <img src="/stori/<?= $model->img?>" width="350px" hight="450px" alt="Girl image">
-      </div>
       <p>
         <?= $model->content?>
       </p>
