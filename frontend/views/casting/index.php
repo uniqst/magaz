@@ -70,7 +70,7 @@ $this->title = 'Casting';
           <div class="msg-block text-uppercase">
             <p><?=Yii::t('app', 'Have a question?');?></p>
             <p><?=Yii::t('app', 'Ask Lena!');?></p>
-            <p>+905380639316</p>
+            <p><?= $contact->phone?></p>
             <p><?=Yii::t('app', 'Call, sms, viber, whatsapp');?></p>
           </div>
         </div>

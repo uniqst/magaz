@@ -7,6 +7,7 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\web\UploadedFile;
 use frontend\models\Profile;
+use frontend\models\Contacts;
 use frontend\models\Photo;
 use frontend\models\UploadForm;
 use yii\filters\VerbFilter;
@@ -74,6 +75,7 @@ class CastingController extends Controller
     {
         $model = new Profile();
         $photo = new UploadForm();
+        $contact = Contacts::find()->one();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $photo->imageFiles = UploadedFile::getInstances($photo, 'imageFiles');
@@ -86,7 +88,7 @@ class CastingController extends Controller
                     $image->save();
                 }
         }
-        return $this->render('index', compact('model', 'photo'));
+        return $this->render('index', compact('model', 'photo', 'contact'));
     }
 
 }

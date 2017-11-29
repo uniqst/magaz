@@ -21,7 +21,10 @@ use mihaildev\elfinder\ElFinder;
 
 	<?= $form->field($model, 'content')->widget(CKEditor::className(), [
 
-  'editorOptions' => ElFinder::ckeditorOptions('elfinder',[/* Some CKEditor Options */]),
+  'editorOptions' => ElFinder::ckeditorOptions('elfinder',[
+  		'preset' => 'full',
+  		'inline' => false,
+  	]),
 
 ]);?>
 
