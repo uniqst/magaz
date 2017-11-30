@@ -7,6 +7,8 @@ use frontend\models\Filters;
 use frontend\models\FiltersValue;
 use frontend\models\Category;
 use yii\helpers\ArrayHelper;
+use mihaildev\ckeditor\CKEditor;
+use mihaildev\elfinder\ElFinder;
 // $cat = Category::find()->where(['parent_id' => 0])->
 $category = Category::find()->where(['parent_id' => 0])->with('category')->all();
 
@@ -46,7 +48,14 @@ $category = Category::find()->where(['parent_id' => 0])->with('category')->all()
 
     <?= $form->field($model, 'weight')->textInput() ?>
 
-    <?= $form->field($model, 'about_myself')->textArea(['maxlength' => true]) ?>
+    <?= $form->field($model, 'about_myself')->widget(CKEditor::className(), [
+
+  'editorOptions' => ElFinder::ckeditorOptions('elfinder',[
+        'preset' => 'full',
+        'inline' => false,
+    ]),
+
+]);?>
 
     <?= $form->field($model, 'status')->dropDownList([
         '0' => 'Waiting',
