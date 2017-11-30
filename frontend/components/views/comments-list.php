@@ -1,10 +1,14 @@
+<?php
+use Yii\helpers\Url;
+?>
+
 <div class="embded-response-box embded-response-box--mb">
     <div class="page-name">
         <?=Yii::t('app', 'Customer reviews');?>
     </div>
     <div class="iconblock">
-        <span class="pencil"></span>
-        <span class="msgbox"></span>
+        <a href="<?= Url::to(['/reviews-for-escort'])?>"><span  class="pencil"></span></a>
+        <a href="<?= Url::to(['/reviews-for-escort'])?>"><span class="msgbox"></span></a>
     </div>
     <div class="response-lists-wrapper resopnse-list-js">
         <div class="resoponse-list">

@@ -28,8 +28,8 @@ $this->title = $pages[0]->text;
             <div class="last-response">
                 <h3 class="subheading-main"><?=Yii::t('app', $pages[2]->text);?></h3>
                 <div class="iconblock">
-                    <span href="#" class="pencil"></span>
-                    <span href="#" class="msgbox"></span>
+                    <a href="<?= Url::to(['/reviews-for-escort'])?>"><span  class="pencil"></span></a>
+                    <a href="<?= Url::to(['/reviews-for-escort'])?>"><span class="msgbox"></span></a>
                 </div>
                 <blockquote class="response">
                     <p class="response__quote"><?=Yii::t('app', $comment->content);?></p>

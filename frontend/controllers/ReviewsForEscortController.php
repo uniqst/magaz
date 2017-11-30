@@ -8,6 +8,8 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use frontend\models\Pages;
+use frontend\models\Comments;
+
 
 
 /**
@@ -69,8 +71,11 @@ class ReviewsForEscortController extends Controller
      */
     public function actionIndex()
     {
-        $pages = Pages::find()->where(['page' => 'Reviews'])->all();  
-        return $this->render('index', compact('pages'));
+        $pages = Pages::find()->where(['page' => 'Reviews'])->all();
+        $model = Comments::find()->where(['status' => 1])->limit(10)->all();
+        $model1 = array_slice($model, 0, 5);
+        $model2 = array_slice($model, 6, 10); 
+        return $this->render('index', compact('pages', 'model1', 'model2'));
     }
 
 }
