@@ -13,7 +13,7 @@ $prev = Profile::findOne($id-1);
   <div class="col-12">
     <div class="row">
       <div class="mx-auto col-xl-58p">
-        <h2 class="page-name stories"><?=Yii::t('app', 'Girls');?></h2>
+        <h2 class="page-name stories"><?=Yii::t('app', $pages[0]->text);?></h2>
       </div>
     </div>
   </div>
@@ -21,7 +21,7 @@ $prev = Profile::findOne($id-1);
     <div class="row">
       <div class="mx-auto col-xl-58p">
           <h1 class="heading-main mb-0">
-            <?=Yii::t('app', 'Bursa platinum girls. High class escorts. Plearsure without limits');?>
+            <?=Yii::t('app', $pages[0]->text);?>
           </h1>
       </div>
     </div>

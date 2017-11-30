@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 use yii\helpers\Url;
-$this->title = 'Reviews';
+$this->title = $pages[0]->text;
 ?>
 
 <div class="row">

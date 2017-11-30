@@ -1,6 +1,6 @@
 <?php
 use yii\helpers\Url;
-$this->title = 'Stories';
+$this->title = $pages[0]->text;
 ?>
 
 <div class="row stories-page">
@@ -8,7 +8,7 @@ $this->title = 'Stories';
   <div class="col-12">
     <div class="row">
       <div class="mx-auto col-xl-58p">
-        <h2 class="page-name stories"><?=Yii::t('app', 'Erotic Stories');?></h1>
+        <h2 class="page-name stories"><?=Yii::t('app', $pages[1]->text);?></h1>
       </div>
     </div>
   </div>
@@ -16,7 +16,7 @@ $this->title = 'Stories';
     <div class="row">
       <div class="mx-auto col-xl-58p">
           <h1 class="heading-main mb-0">
-              <?=Yii::t('app', 'Bursa platinum girls. High class escorts. Pleasure without limits');?>
+              <?=Yii::t('app', $pages[2]->text);?>
           </h1>
       </div>
     </div>
@@ -35,7 +35,7 @@ $this->title = 'Stories';
   
   <div class="col-xl-58p">
     <div class="posts-container">
-      <h1 class="page-name"><?=Yii::t('app', 'EROTIC STORIES');?></h1>
+      <h1 class="page-name"><?=Yii::t('app', $pages[3]->text);?></h1>
       <div class="posts-list">
         <?php foreach($model as $story):?>
         <div class="post-item clearfix">

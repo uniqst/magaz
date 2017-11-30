@@ -8,6 +8,7 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use frontend\models\Pages;
 
 
 /**
@@ -69,15 +70,16 @@ class StoriesController extends Controller
      */
     public function actionIndex()
     {
+        $pages = Pages::find()->where(['page' => 'Stories'])->all();  
         $model = Stories::find()->all(); 
-        return $this->render('index', compact('model'));
+        return $this->render('index', compact('model', 'pages'));
     }
 
     public function actionStory($id)
     {
-
+        $pages = Pages::find()->where(['page' => 'Stories'])->all();  
         $model = Stories::find()->where(['id' => $id])->one(); 
-        return $this->render('story', compact('model'));
+        return $this->render('story', compact('model', 'pages'));
     }
 
 }

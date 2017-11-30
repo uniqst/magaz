@@ -2,20 +2,14 @@
 
 /* @var $this yii\web\View */
 use yii\helpers\Url;
-$this->title = 'How to make order';
+$this->title = $pages[0]->text;
 ?>
 <div class="row">
     <div class="mx-auto col-xl-58p">
     <div class="top-form top-form-how-to-order">
-      <h1 class="page-name"><?=Yii::t('app', 'How to make an order');?></h1>
+      <h1 class="page-name"><?=Yii::t('app', $pages[1]->text);?></h1>
       <p>
-      <?=Yii::t('app', 'Grab a pen and write down: here is the phone number of our booking service:');?> <span class="text-nowrap">+90 539 460 85 63</span>. <?=Yii::t('app', 'You can dial or send SMS using the ordinary phone, the same as to make a call or chat with us using Whatsapp or Viber applications for mobile phones.');?>
-      </p>
-      <p>
-       <?=Yii::t('app', "When ordering, be sure to name your date (a girl's name) and several more parameters necessary: how should we call you (a name or a nickname), your contact phone number (required to contact you to approve your booking) and the place where a girl should meet you (this may be a hotel of 4/5 stars in the city or, in rarer occasions, your own or rented apartment).");?> 
-      </p>
-      <p>
-        <?=Yii::t('app', 'Just as simple as that - and in an hour or two you will be delighted by our charming girl.');?>
+      <?=Yii::t('app', $pages[2]->text);?>
       </p>
     </div>
     <!-- <div class="application-ask container-fluid">

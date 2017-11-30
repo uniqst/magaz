@@ -3,15 +3,15 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\helpers\Url;
-$this->title = 'Casting';
+$this->title = $pages[0]->text;
 ?>
 
 <div class="row">
   <div class="application-page mx-auto col-xl-58p">
     <div class="top-form">
       
-      <h2 class="page-name"><?=Yii::t('app', 'Applciation');?></h1>
-      <p class="text"><?=Yii::t('app', 'You are young and brave? Become one of our escorts!');?></p>
+      <h2 class="page-name"><?=Yii::t('app', $pages[1]->text);?></h1>
+      <p class="text"><?=Yii::t('app', $pages[2]->text);?></p>
       <?php $form = ActiveForm::begin(['options' => ['class' => 'main-application-form container-fluid', 'novalidate' => 'novalidate', 'enctype' => 'multipart/form-data']]) ?>
         <div class="row">
           <div class="col-md-6">
@@ -68,10 +68,11 @@ $this->title = 'Casting';
       <div class="row">
         <div class="col-md-6 text-center text-md-right d-md-flex flex-md-column justify-content-md-center msg-block-wrap">
           <div class="msg-block text-uppercase">
-            <p><?=Yii::t('app', 'Have a question?');?></p>
-            <p><?=Yii::t('app', 'Ask Lena!');?></p>
+            <p><?=Yii::t('app', $pages[3]->text);?></p>
+            <p><?=Yii::t('app', $pages[4]->text);?></p>
             <p><?= $contact->phone?></p>
             <p><?=Yii::t('app', 'Call, sms, viber, whatsapp');?></p>
+            <p><?= $contact->email?></p>
           </div>
         </div>
         <div class="col-md-6">
