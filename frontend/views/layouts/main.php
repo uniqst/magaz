@@ -250,10 +250,7 @@ AppAsset::register($this);
     </ul>
     <div class="main-footer__info">
         <p>
-            <?=Yii::t('app', "All Ankara Escort organize the best love place on Earth. With us, you will feel as a king of seas, lands, aid skies - that big high you'll get from our pussycats. Here come people wanting to get fun with 1) exceptional beauties hard to find anywhere else in Italy, 2) Russian and Ukrainian girls of exclusive skills, and 3) girls, ready for everything for the exciting pleasure without boundaries.");?>
-        </p>
-        <p>
-            <?=Yii::t('app', "What is more - these three are united in every our girl! Have a great time with allescortinankara.com.");?>
+            <?=Yii::t('app', $pages[9]->text);?>
         </p>
     </div>
     <div class="main-footer__copy">

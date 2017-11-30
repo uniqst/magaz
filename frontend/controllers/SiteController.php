@@ -16,6 +16,7 @@ use frontend\models\ContactForm;
 use frontend\models\Category;
 use frontend\models\Profile;
 use frontend\models\Comments;
+use frontend\models\Pages;
 use frontend\models\Advertising;
 
 /**
@@ -77,14 +78,14 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-
+        $pages = Pages::find()->where(['page' => 'Home'])->all();
         $model = Profile::find()->where(['status' => 1])->with('image')->all();
         $model2 = Profile::find()->where(['status' => 1])->with('image');
         $slider = array_slice($model, 0, 10);
         $comment = Comments::find()->where(['status' => 1])->orderBy(['date' => SORT_DESC])->one();
         $comments = Comments::find()->where(['status' => 1])->orderBy(['date' => SORT_DESC])->limit(10)->all();
         $advertising = Advertising::find()->all();
-        return $this->render('index', compact('model', 'model2', 'slider', 'comment', 'comments', 'advertising'));
+        return $this->render('index', compact('model', 'model2', 'slider', 'comment', 'comments', 'advertising', 'pages'));
     }
 
     /**
