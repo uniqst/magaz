@@ -26,9 +26,9 @@ $category = Category::find()->where(['parent_id' => 0])->with('category')->all()
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'h1')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'name_description')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'h2')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'description')->textArea(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'phone')->textInput(['maxlength' => true]) ?>
 
@@ -36,7 +36,7 @@ $category = Category::find()->where(['parent_id' => 0])->with('category')->all()
 
     <?= $form->field($model, 'imageFile')->fileInput(['accept' => 'image/*']) ?>
 
-    <?= $form->field($model, 'most_wanted')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'most_wanted')->textArea(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'nationality')->textInput(['maxlength' => true]) ?>
 

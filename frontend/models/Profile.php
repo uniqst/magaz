@@ -36,7 +36,9 @@ class Profile extends \yii\db\ActiveRecord
             [['age', 'height', 'weight', 'status'], 'integer'],
             [['date'], 'safe'],
             [['imageFile'], 'file'],
-            [['name', 'nationality', 'about_myself', 'about_myself_link', 'most_wanted', 'email', 'phone', 'title', 'h1', 'h2', 'mesurements'], 'string', 'max' => 255],
+            [['name', 'nationality',  'about_myself_link', 'email', 'phone', 'title', 'description', 'name_description', 'mesurements'], 'string', 'max' => 255],
+            [['most_wanted', 'about_myself'], 'string', 'max' => 500],
+            
         ];
     }
 
