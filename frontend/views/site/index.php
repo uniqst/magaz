@@ -3,6 +3,10 @@
 /* @var $this yii\web\View */
 use yii\helpers\Url;
 $this->title = $pages[0]->text;
+$this->registerMetaTag([
+'name' => 'description',
+'content' => $pages[6]->text
+]);
 ?>
 
     <div class="row main-page-upper-box">
