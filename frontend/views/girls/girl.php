@@ -1,7 +1,7 @@
 <?php
 use yii\helpers\Url;
 use frontend\models\Profile;
-$this->title = $model->name;
+$this->title = $model->title;
 $this->registerMetaTag([
 'name' => 'description',
 'content' => $model->description
@@ -25,7 +25,7 @@ $prev = Profile::findOne($id-1);
     <div class="row">
       <div class="mx-auto col-xl-58p">
           <h1 class="heading-main mb-0">
-            <?=Yii::t('app', $pages[0]->text);?>
+            <?=Yii::t('app', $model->H1);?>
           </h1>
       </div>
     </div>
@@ -184,6 +184,16 @@ $prev = Profile::findOne($id-1);
 
         </div>
     </div>
+
+
+
+            <div class="mx-auto col-xl-58p">
+                <h2 class="heading-main mb-0"><?=Yii::t('app', $model->H2);?></h2>
+            </div>
+            <div class="most-wanted__name">
+                    <p><?= $model->text1000?></p>
+            </div>
+
             <div class="d-none d-md-block px-0 most-wanted-block--expanded">
                 <div class="most-wanted-block">
                     <div class="most-wanted-slider most-wanted-new-slider-js">

@@ -26,6 +26,19 @@ $category = Category::find()->where(['parent_id' => 0])->with('category')->all()
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'H1')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'H2')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'text1000')->widget(CKEditor::className(), [
+
+  'editorOptions' => ElFinder::ckeditorOptions('elfinder',[
+        'preset' => 'full',
+        'inline' => false,
+    ]),
+
+  ]);?>
+
     <?= $form->field($model, 'name_description')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'description')->textArea(['maxlength' => true]) ?>

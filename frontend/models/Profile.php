@@ -38,6 +38,7 @@ class Profile extends \yii\db\ActiveRecord
             [['imageFile'], 'file'],
             [['name', 'nationality',  'about_myself_link', 'email', 'phone', 'title', 'description', 'name_description', 'mesurements'], 'string', 'max' => 255],
             [['most_wanted', 'about_myself'], 'string', 'max' => 500],
+            [['text1000'], 'string', 'max' => 1000],
             
         ];
     }

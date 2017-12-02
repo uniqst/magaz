@@ -2,6 +2,10 @@
 
 use yii\helpers\Url;
 $this->title = $model->name;
+$this->registerMetaTag([
+'name' => 'description',
+'content' => $pages[6]->text
+]);
 ?>
 
 <div class="row story-page">
