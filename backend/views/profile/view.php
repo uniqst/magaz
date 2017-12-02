@@ -41,6 +41,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'name',
             'age',
+            'H1',
+            'H2',
+            'description',
+            'name_description',
             'nationality',
             'mesurements',
             'height',
@@ -59,10 +63,12 @@ $this->params['breadcrumbs'][] = $this->title;
                 },
                 'format' => 'html'
             ],
+            'text1000',
             'about_myself',
             'phone',
             'email', 
         ],
+
     ]) ?>
 
     <div>

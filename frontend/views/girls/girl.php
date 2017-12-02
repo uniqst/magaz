@@ -1,7 +1,11 @@
 <?php
 use yii\helpers\Url;
 use frontend\models\Profile;
-$this->title = $model->name;
+$this->title = $model->title;
+$this->registerMetaTag([
+'name' => 'description',
+'content' => $model->description
+]);
 $id = Yii::$app->request->get('id');
 $next = Profile::findOne($id+1);
 $prev = Profile::findOne($id-1);
@@ -13,7 +17,7 @@ $prev = Profile::findOne($id-1);
   <div class="col-12">
     <div class="row">
       <div class="mx-auto col-xl-58p">
-        <h2 class="page-name stories"><?=Yii::t('app', $pages[0]->text);?></h2>
+        <h2 class="page-name stories"><?=Yii::t('app', $model->name_description);?></h2>
       </div>
     </div>
   </div>
@@ -21,7 +25,7 @@ $prev = Profile::findOne($id-1);
     <div class="row">
       <div class="mx-auto col-xl-58p">
           <h1 class="heading-main mb-0">
-            <?=Yii::t('app', $pages[0]->text);?>
+            <?=Yii::t('app', $model->H1);?>
           </h1>
       </div>
     </div>
@@ -97,8 +101,8 @@ $prev = Profile::findOne($id-1);
                             <?php foreach($price_eur as $eur):?>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', $eur->name)?></span>
-                                <span class="incall"><?= $eur->incall?></span>
-                                <span class="outcall"><?=$eur->outcall?></span>
+                                <span class="incall"><?= $eur->incall?> <i class="fa fa-eur" aria-hidden="true"></i></span>
+                                <span class="outcall"><?=$eur->outcall?> <i class="fa fa-eur" aria-hidden="true"></i></span>
                             </li>
                             <?php endforeach;?>
                         </ul>
@@ -106,8 +110,8 @@ $prev = Profile::findOne($id-1);
                             <?php foreach($price_try as $eur):?>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', $eur->name)?></span>
-                                <span class="incall"><?= $eur->incall?></span>
-                                <span class="outcall"><?=$eur->outcall?></span>
+                                <span class="incall"><?= $eur->incall?> <i class="fa fa-try" aria-hidden="true"></i></span>
+                                <span class="outcall"><?=$eur->outcall?> <i class="fa fa-try" aria-hidden="true"></i></span>
                             </li>
                             <?php endforeach;?>
                         </ul>
@@ -115,8 +119,8 @@ $prev = Profile::findOne($id-1);
                             <?php foreach($price_usd as $eur):?>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', $eur->name)?></span>
-                                <span class="incall"><?= $eur->incall?></span>
-                                <span class="outcall"><?=$eur->outcall?></span>
+                                <span class="incall"><?= $eur->incall?> <i class="fa fa-usd" aria-hidden="true"></i></span>
+                                <span class="outcall"><?=$eur->outcall?> <i class="fa fa-usd" aria-hidden="true"></i></span>
                             </li>
                             <?php endforeach;?>
                         </ul>
@@ -180,6 +184,31 @@ $prev = Profile::findOne($id-1);
 
         </div>
     </div>
+
+
+
+            <!-- <div class="mx-auto col-xl-58p">
+                <h2 class="heading-main mb-0"><?=Yii::t('app', $model->H2);?></h2>
+            </div>
+            <div class="main-info-box">
+                <h2 class="info-box__heading"></h2>
+                <p class="">
+                    <?= $model->text1000?>
+                </p>
+
+            </div> -->
+
+            <div class="mp-text-block">
+                <h2 class="mp-text-block__heading">
+                    <?=Yii::t('app', $model->H2);?>
+                </h2>
+                <div class="mp-text-block__text">
+                    <p>
+                        <?= $model->text1000?>
+                    </p>
+                </div>
+            </div>
+
             <div class="d-none d-md-block px-0 most-wanted-block--expanded">
                 <div class="most-wanted-block">
                     <div class="most-wanted-slider most-wanted-new-slider-js">

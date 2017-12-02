@@ -14,9 +14,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'position')->textInput() ?>
 
-    <?= $form->field($model, 'href')->textInput() ?>
-
-    <?= $form->field($model, 'imageFile')->fileInput(['accept' => 'image/*']) ?>
+    <?= $form->field($model, 'banner')->textArea() ?>
 
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>

@@ -22,15 +22,9 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-            [
-                'attribute' => 'img',
-                'value' => function($data){
-                    return "<img src='/frontend/web/promo/".$data->img."' style='width: 150px;' />";
-                },
-                'format' => 'html',
-            ],
 
             'position',
+            'banner',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

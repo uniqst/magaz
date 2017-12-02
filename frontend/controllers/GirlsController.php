@@ -49,7 +49,6 @@ class GirlsController extends Controller
     }
     public function actionGirl($id)
     {
-        $pages = Pages::find()->where(['page' => 'Girl'])->all();
         $contact = Contacts::find()->one();
         $service = Service::find()->all();
         $price_usd = Price::find()->where(['currency' => 0])->all();
@@ -57,7 +56,7 @@ class GirlsController extends Controller
         $price_try = Price::find()->where(['currency' => 2])->all();
         $model = Profile::find()->where(['id' => $id])->with('photo', 'value.category')->one();
 
-        return $this->render('girl', compact('model', 'service', 'price_usd', 'price_eur', 'price_try', 'contact', 'pages'));
+        return $this->render('girl', compact('model', 'service', 'price_usd', 'price_eur', 'price_try', 'contact'));
     }
     public function actionFilters()
     {

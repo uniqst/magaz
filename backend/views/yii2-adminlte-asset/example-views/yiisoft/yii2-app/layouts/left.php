@@ -22,7 +22,7 @@
                     ['label' => 'Advertising', 'icon' => ' fa fa-registered', 'url' => ['/advertising']],
                     ['label' => 'Stories', 'icon' => ' fa fa-file-powerpoint-o', 'url' => ['/stories']],
                     ['label' => 'Service', 'icon' => ' fa fa-hashtag', 'url' => ['/service']],
-                    ['label' => 'Social Web', 'icon' => ' fa fa-facebook', 'url' => ['/social-web/update', 'id' => 1]],
+                    // ['label' => 'Social Web', 'icon' => ' fa fa-facebook', 'url' => ['/social-web']],
                     ['label' => 'Reviews', 'icon' => ' fa fa-comment', 'url' => ['/comments']],
                     ['label' => 'Price', 'icon' => ' fa fa-money', 'url' => ['/price']],
                     ['label' => 'Pages', 'icon' => ' fa fa-money', 'url' => ['/pages']],

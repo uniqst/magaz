@@ -13,7 +13,7 @@ use Yii;
  */
 class Advertising extends \yii\db\ActiveRecord
 {
-    public $imageFile;
+
     /**
      * @inheritdoc
      */
@@ -28,10 +28,10 @@ class Advertising extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['position', 'href'], 'required'],
+            [['position', 'banner'], 'required'],
             [['position'], 'integer'],
-            [['img', 'href'], 'string', 'max' => 255],
-            [['imageFile'], 'file'],
+            [['banner'], 'string', 'max' => 500],
+            
         ];
     }
 
@@ -43,8 +43,7 @@ class Advertising extends \yii\db\ActiveRecord
         return [
             'id' => Yii::t('app', 'ID'),
             'position' => Yii::t('app', 'Position'),
-            'img' => Yii::t('app', 'Img'),
-            'href' => Yii::t('app', 'Href'),
+            'banner' => Yii::t('app', 'Banner'),
         ];
     }
 }
