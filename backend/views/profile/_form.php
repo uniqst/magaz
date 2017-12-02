@@ -69,13 +69,13 @@ $category = Category::find()->where(['parent_id' => 0])->with('category')->all()
 
 <?php foreach($category as $cat):?>
     <?php $items = ArrayHelper::map($cat->category,'id','name');?>
-    <?php $value = FiltersValue::find()->where(['filter_id' => $cat->id, 'product_id' => $model->id])->one(); 
+    <?php $value = FiltersValue::find()->where(['filter_id' => $cat->id, 'product_id' => $model->id])->one();
      if(empty($value)){
         $value = new FiltersValue();
     }
     ?>
-    <?= $form->field($value, 'value')->dropDownList($items, ['name' => 'value['.$cat->id.']'])->label($cat->name) ?>    
-<?php endforeach;?>    
+    <?= $form->field($value, 'value')->dropDownList($items, ['name' => 'value['.$cat->id.']'])->label($cat->name) ?>
+<?php endforeach;?>
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>

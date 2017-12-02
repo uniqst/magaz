@@ -68,7 +68,6 @@ class ProfileController extends Controller
 
         return $this->render('view', [
             'model' => Profile::find()->where(['id' => $id])->with('photo')->one(),
-            'comments' => $provider,
         ]);
     }
 
@@ -94,13 +93,13 @@ class ProfileController extends Controller
                 $model->save();
 
             foreach($_POST['value'] as $key=> $val){
-                
+
                     $value = new FiltersValue();
                     $value->product_id = $model->id;
                     $value->filter_id = $key;
                     $value->value = $val;
                     $value->save();
-                 
+
             }
             $photo->imageFiles = UploadedFile::getInstances($photo, 'imageFiles');
                 foreach ($photo->imageFiles as $file) {
@@ -112,11 +111,11 @@ class ProfileController extends Controller
                     $image->save();
                 }
              return $this->redirect(['view', 'id' => $model->id]);
-            
 
-                       
 
-             
+
+
+
 
         } else {
             return $this->render('create', [

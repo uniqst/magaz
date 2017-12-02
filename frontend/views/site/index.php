@@ -3,6 +3,10 @@
 /* @var $this yii\web\View */
 use yii\helpers\Url;
 $this->title = $pages[0]->text;
+$this->registerMetaTag([
+'name' => 'description',
+'content' => $pages[6]->text
+]);
 ?>
 
     <div class="row main-page-upper-box">
@@ -92,9 +96,7 @@ $this->title = $pages[0]->text;
                 <div class="advertise-block__list">
                     <?php foreach($advertising as $adver):?>
                     <div class="advertise__item">
-                        <a href="<?= $adver->href?>" target='_blank'>
-                            <img width="600" height="230" src="/promo/<?= $adver->img?>" alt="Add">
-                        </a>
+                        <a><?= $adver->banner?></a>
                     </div>
                 <?php endforeach;?>
                 </div>
