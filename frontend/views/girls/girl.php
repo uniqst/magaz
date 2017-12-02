@@ -187,11 +187,26 @@ $prev = Profile::findOne($id-1);
 
 
 
-            <div class="mx-auto col-xl-58p">
+            <!-- <div class="mx-auto col-xl-58p">
                 <h2 class="heading-main mb-0"><?=Yii::t('app', $model->H2);?></h2>
             </div>
-            <div class="most-wanted__name">
-                    <p><?= $model->text1000?></p>
+            <div class="main-info-box">
+                <h2 class="info-box__heading"></h2>
+                <p class="">
+                    <?= $model->text1000?>
+                </p>
+
+            </div> -->
+
+            <div class="mp-text-block">
+                <h2 class="mp-text-block__heading">
+                    <?=Yii::t('app', $model->H2);?>
+                </h2>
+                <div class="mp-text-block__text">
+                    <p>
+                        <?= $model->text1000?>
+                    </p>
+                </div>
             </div>
 
             <div class="d-none d-md-block px-0 most-wanted-block--expanded">
