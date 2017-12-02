@@ -181,7 +181,8 @@ $(document).ready(function () {
     opacityMultiplier: .7
   });
 
-  $(window).resize(function () {
+
+  function resizeSlider() {
     var width = $(window).outerWidth();
     if (width < 1400) {
       dick_slider.reload();
@@ -198,6 +199,19 @@ $(document).ready(function () {
         separation: 270
       });
     }
+  }
+
+  resizeSlider();
+
+  $(window).resize(resizeSlider);
+
+  $('.most-wanted-new-slider-js > img').click(function() {
+    $('.most-wanted-wrapper').hide();
+    $('.most-wanted-wrapper#' + $(this).attr('data-girl-id')).show();
+  });
+
+  $('.most-wanted-new-slider-js > img:gt(0)').each(function () {
+    $('.most-wanted-wrapper#' + $(this).attr('data-girl-id')).hide();
   });
 
 });

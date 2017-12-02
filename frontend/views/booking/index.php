@@ -2,14 +2,18 @@
 
 /* @var $this yii\web\View */
 use yii\helpers\Url;
-$this->title = 'Booking';
+$this->title = $pages[0]->text;
+$this->registerMetaTag([
+'name' => 'description',
+'content' => $pages[5]->text
+]);
 ?>
 <div class="row">
   <div class="booking-page col-xl-58p mx-auto">
     <div class="top-form">
       
-      <h2 class="page-name"><?=Yii::t('app', 'Booking');?></h1>
-      <p class="text"><?=Yii::t('app', 'You are now booking one of our stunning beuties');?></p>
+      <h2 class="page-name"><?=Yii::t('app', $pages[1]->text);?></h1>
+      <p class="text"><?=Yii::t('app', $pages[2]->text);?></p>
 
       <form class="main-application-form container-fluid" action="" method="post" novalidate="novalidate">
         <div class="row">

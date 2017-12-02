@@ -2,14 +2,18 @@
 
 /* @var $this yii\web\View */
 use yii\helpers\Url;
-$this->title = 'Services';
+$this->title = $pages[0]->text;
+$this->registerMetaTag([
+'name' => 'description',
+'content' => $pages[3]->text
+]);
 ?>
 <div class="row stories-page">
 
   <div class="col-12">
     <div class="row">
       <div class="mx-auto col-xl-58p">
-        <h2 class="page-name stories"><?=Yii::t('app', 'Services');?></h1>
+        <h2 class="page-name stories"><?=Yii::t('app', $pages[1]->text);?></h1>
       </div>
     </div>
   </div>
@@ -17,7 +21,7 @@ $this->title = 'Services';
     <div class="row">
       <div class="mx-auto col-xl-58p">
           <h2 class="heading-main mb-0">
-            <?=Yii::t('app', 'EROTIC SERVICES IS A STRAIT PASS TO UNLIMETED PLEASURE');?>
+            <?=Yii::t('app', $pages[2]->text);?>
           </h2>
       </div>
     </div>

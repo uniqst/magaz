@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use mihaildev\ckeditor\CKEditor;
+use mihaildev\elfinder\ElFinder;
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Stories */
@@ -15,8 +17,16 @@ use yii\widgets\ActiveForm;
    <?= $form->field($model, 'imageFile')->fileInput() ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
+	
 
-    <?= $form->field($model, 'content')->textArea(['maxlength' => true, 'rows' => 6]) ?>
+	<?= $form->field($model, 'content')->widget(CKEditor::className(), [
+
+  'editorOptions' => ElFinder::ckeditorOptions('elfinder',[
+  		'preset' => 'full',
+  		'inline' => false,
+  	]),
+
+]);?>
 
     <?= $form->field($model, 'date')->hiddenInput(['value' => date('Y-m-d H:i:s')])->label(false) ?>
 

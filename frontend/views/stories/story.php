@@ -1,14 +1,18 @@
 <?php
 
 use yii\helpers\Url;
-$this->title = 'Story';
+$this->title = $model->name;
+$this->registerMetaTag([
+'name' => 'description',
+'content' => $pages[6]->text
+]);
 ?>
 
 <div class="row story-page">
   <div class="col-12">
     <div class="row">
       <div class="mx-auto col-xl-58p">
-        <h1 class="page-name stories"><?=Yii::t('app', 'Erotic Stories');?></h1>
+        <h1 class="page-name stories"><?=Yii::t('app', $pages[4]->text);?></h1>
       </div>
     </div>
   </div>
@@ -37,9 +41,6 @@ $this->title = 'Story';
 
   <div class="col">
     <div class="story-long">
-      <div class="story__image">
-        <img src="/stori/<?= $model->img?>" width="350px" hight="450px" alt="Girl image">
-      </div>
       <p>
         <?= $model->content?>
       </p>

@@ -7,6 +7,7 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use frontend\models\Pages;
 
 
 /**
@@ -68,7 +69,8 @@ class HowMakeOrderController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $pages = Pages::find()->where(['page' => 'How to make order'])->all();  
+        return $this->render('index', compact('pages'));
     }
 
 }

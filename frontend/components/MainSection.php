@@ -2,6 +2,7 @@
 namespace frontend\components;
 
 use frontend\models\Profile;
+use frontend\models\Pages;
 use yii\base\Widget;
 use yii\db\Expression;
 use yii\db\ActiveQuery;
@@ -9,9 +10,8 @@ use yii\db\ActiveQuery;
 
 Class MainSection extends Widget{
     public function run(){
-    	$model = Profile::find()->orderBy(new Expression('rand()'))->with(['photo' => function(ActiveQuery $query){
-    		$query->limit(3);
-    	}])->one();
-        return $this->render('main-section', compact('model'));
+    	$pages = Pages::find()->where(['page' => 'Booking'])->all();
+    	$model = Profile::find()->orderBy(new Expression('rand()'))->limit(3)->all();
+        return $this->render('main-section', compact('model', 'pages'));
     }
 }

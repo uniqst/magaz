@@ -40,9 +40,11 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id',
             'name',
-            'email',
-            'phone',
             'age',
+            'H1',
+            'H2',
+            'description',
+            'name_description',
             'nationality',
             'mesurements',
             'height',
@@ -61,11 +63,26 @@ $this->params['breadcrumbs'][] = $this->title;
                 },
                 'format' => 'html'
             ],
+            'text1000',
             'about_myself',
-            'date',
+            'phone',
+            'email', 
         ],
+
     ]) ?>
 
+    <div>
+       <img src="/frontend/web/photo/<?= $model->img_mw?>" style="width: 200px;">
+    </div>
+
+    <?= DetailView::widget([
+        'model' => $model,
+        'attributes' => [
+            'most_wanted',
+            'date',
+             ],
+    ]) ?>
+    
     
 <?php Pjax::end(); ?>
 </div>

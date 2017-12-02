@@ -2,24 +2,28 @@
 
 /* @var $this yii\web\View */
 use yii\helpers\Url;
-$this->title = 'Contacts';
+$this->title = $pages[0]->text;
+$this->registerMetaTag([
+'name' => 'description',
+'content' => $pages[3]->text
+]);
 ?>
 <div class="row">
   <div class="mx-auto col-xl-58p">
     <div class="application-ask page-contacts container-fluid">
       <div class="row">
         <div class="col-12">
-          <h1 class="page-name mb-5"><?=Yii::t('app', 'Contacts');?></h1>
+          <h1 class="page-name mb-5"><?=Yii::t('app', $pages[1]->text);?></h1>
         </div>
         <div class="col-md-6">
           <div class="image mx-auto mr-md-0"></div>
         </div>
         <div class="col-md-6 text-center text-md-left d-md-flex flex-md-column justify-content-md-center msg-block-wrap mt-5 mt-md-0">
           <div class="msg-block">
-            <p><?=Yii::t('app', "If you have any questions or offers please don't hesitate to contact us!");?></p>
-            <p class="contacts-page__phone"><a href="tel:+905380639316">+905380639316</a></p>
+            <p><?=Yii::t('app', $pages[2]->text);?></p>
+            <p class="contacts-page__phone"><a href="tel:+905380639316"><?= $model->phone?></a></p>
             <p class="text-uppercase"><?=Yii::t('app', 'CALL, SMS, VIBER, WHATSAPP');?></p>
-            <p><a href="mailto:sandra-1994@mail.ua">sandra-1994@mail.ua</a></p>
+            <p><a href="mailto:sandra-1994@mail.ua"><?= $model->email?></a></p>
           </div>
         </div>
       </div>

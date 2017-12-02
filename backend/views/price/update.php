@@ -6,10 +6,10 @@ use yii\helpers\Html;
 /* @var $model frontend\models\Price */
 
 $this->title = Yii::t('app', 'Update Price: {nameAttribute}', [
-    'nameAttribute' => $model->id,
+    'nameAttribute' => $model->name,
 ]);
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Prices'), 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
+$this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = Yii::t('app', 'Update');
 ?>
 <div class="price-update">

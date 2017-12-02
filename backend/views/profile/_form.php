@@ -7,6 +7,8 @@ use frontend\models\Filters;
 use frontend\models\FiltersValue;
 use frontend\models\Category;
 use yii\helpers\ArrayHelper;
+use mihaildev\ckeditor\CKEditor;
+use mihaildev\elfinder\ElFinder;
 // $cat = Category::find()->where(['parent_id' => 0])->
 $category = Category::find()->where(['parent_id' => 0])->with('category')->all();
 
@@ -22,72 +24,32 @@ $category = Category::find()->where(['parent_id' => 0])->with('category')->all()
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
-    <div class="row">
-        <div class="col-md-2">
-    <?= $form->field($model, 'price_try')->textInput(['maxlength' => true]) ?>
-        </div>
-        <div class="col-md-2">
-    <?= $form->field($model, 'price_try_two')->textInput(['maxlength' => true]) ?>
-        </div>
-        <div class="col-md-2">
-    <?= $form->field($model, 'price_try_three')->textInput(['maxlength' => true]) ?>
-        </div>
-        <div class="col-md-2">
-    <?= $form->field($model, 'price_usd_four')->textInput(['maxlength' => true]) ?>
-        </div>
-        <div class="col-md-2">
-    <?= $form->field($model, 'taxi_try')->textInput(['maxlength' => true]) ?>
-        </div>
-        <div class="col-md-2">
-        <?= $form->field($model, 'price_try_night')->textInput(['maxlength' => true]) ?>
-        </div>
-    </div>
+    <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
-    <div class="row">
-        <div class="col-md-2">
-            <?= $form->field($model, 'price_usd')->textInput(['maxlength' => true]) ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'price_usd_two')->textInput(['maxlength' => true]) ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'price_usd_three')->textInput(['maxlength' => true]) ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'price_usd_four')->textInput(['maxlength' => true]) ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'taxi_usd')->textInput(['maxlength' => true]) ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'price_usd_night')->textInput(['maxlength' => true]) ?>
-        </div>
-    </div>
+    <?= $form->field($model, 'H1')->textInput(['maxlength' => true]) ?>
 
-    <div class="row">
-        <div class="col-md-2">
-            <?= $form->field($model, 'price_eur')->textInput(['maxlength' => true]) ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'price_eur_two')->textInput(['maxlength' => true]) ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'price_eur_three')->textInput(['maxlength' => true]) ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'price_eur_four')->textInput(['maxlength' => true]) ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'taxi_eur')->textInput(['maxlength' => true]) ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'price_eur_night')->textInput(['maxlength' => true]) ?>
-        </div>
-    </div>
+    <?= $form->field($model, 'H2')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'text1000')->widget(CKEditor::className(), [
+
+  'editorOptions' => ElFinder::ckeditorOptions('elfinder',[
+        'preset' => 'full',
+        'inline' => false,
+    ]),
+
+  ]);?>
+
+    <?= $form->field($model, 'name_description')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'description')->textArea(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'phone')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'phone')->textInput() ?>
+    <?= $form->field($model, 'imageFile')->fileInput(['accept' => 'image/*']) ?>
+
+    <?= $form->field($model, 'most_wanted')->textArea(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'nationality')->textInput(['maxlength' => true]) ?>
 
@@ -99,7 +61,14 @@ $category = Category::find()->where(['parent_id' => 0])->with('category')->all()
 
     <?= $form->field($model, 'weight')->textInput() ?>
 
-    <?= $form->field($model, 'about_myself')->textArea(['maxlength' => true]) ?>
+    <?= $form->field($model, 'about_myself')->widget(CKEditor::className(), [
+
+  'editorOptions' => ElFinder::ckeditorOptions('elfinder',[
+        'preset' => 'full',
+        'inline' => false,
+    ]),
+
+]);?>
 
     <?= $form->field($model, 'status')->dropDownList([
         '0' => 'Waiting',

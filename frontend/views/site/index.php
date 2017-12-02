@@ -2,13 +2,17 @@
 
 /* @var $this yii\web\View */
 use yii\helpers\Url;
-$this->title = 'Home';
+$this->title = $pages[0]->text;
+$this->registerMetaTag([
+'name' => 'description',
+'content' => $pages[6]->text
+]);
 ?>
 
     <div class="row main-page-upper-box">
         <div class="offset-xl-2 col-xl-8 px-to-md-0">
             <div class="main-slider-container">
-                <h3 class="subheading-main"><?=Yii::t('app', 'New Girls');?></h3>
+                <h3 class="subheading-main"><?=Yii::t('app', $pages[1]->text);?></h3>
                 <div class="new-girls-slider">
                     <div class="slick-carousel">
                         <?php foreach($slider as $image):?>
@@ -26,10 +30,10 @@ $this->title = 'Home';
     <!-- <div class="row"> -->
         <div class="offset-xl-2 col-xl-8 px-to-md-0">
             <div class="last-response">
-                <h3 class="subheading-main"><?=Yii::t('app', 'Customer response');?></h3>
+                <h3 class="subheading-main"><?=Yii::t('app', $pages[2]->text);?></h3>
                 <div class="iconblock">
-                    <span href="#" class="pencil"></span>
-                    <span href="#" class="msgbox"></span>
+                    <a href="<?= Url::to(['/reviews-for-escort'])?>"><span  class="pencil"></span></a>
+                    <a href="<?= Url::to(['/reviews-for-escort'])?>"><span class="msgbox"></span></a>
                 </div>
                 <blockquote class="response">
                     <p class="response__quote"><?=Yii::t('app', $comment->content);?></p>
@@ -44,7 +48,7 @@ $this->title = 'Home';
     <div class="row">
         <div class="col-12 offset-xl-3 col-xl-6">
             <h1 class="heading-main">
-                <?=Yii::t('app', 'Bursa platinum girls. High class escorts. Pleasure without limits');?>
+                <?=Yii::t('app', $pages[3]->text);?>
             </h1>
         </div>
     </div>
@@ -78,16 +82,11 @@ $this->title = 'Home';
         <div class="offset-xl-3 col-xl-6">
             <div class="mp-text-block">
                 <h3 class="mp-text-block__heading">
-                    <?=Yii::t('app', 'Escort in Ankara, Turkey. Housewife, Escort agency «All Ankara Escort»');?>
+                    <?=Yii::t('app', $pages[4]->text);?>
                 </h3>
                 <div class="mp-text-block__text">
                     <p>
-                        <?=Yii::t('app', '
-                        Escort agency «All Ankara Escort» has been operating successfully for more than five years. We work with only the best girls from different countries, mainly in the most beautiful girls from Russia and Ukraine. Customers who have used our escort service at least once, will melt our regular customers. Therefore, we value our reputation.
-                        ');?>
-                    </p>
-                    <p>
-                        <?=Yii::t('app', ' If you live in Turkey and came to Ankara on business, to visit or just relax, then you definitely need to meet with one of our girls. It will help you to relax and spend time pleasantly, help relieve stress and make you forget about everything that bothers you. You can start a new day with full force. Our girls are always cheerful and sexy, always ready to give you pleasure. They can be gentle and tender, can be rude, all depends entirely on you and your desires. The most important thing is that our girls are very fond of their work, and this is very important! Everyone has long known that the most beautiful girls are in Ukraine and Russia. ');?>
+                        <?=Yii::t('app', $pages[5]->text);?>
                     </p>
                 </div>
             </div>

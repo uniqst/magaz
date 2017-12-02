@@ -6,10 +6,14 @@
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
+use frontend\models\Contacts;
+use frontend\models\Pages;
 use common\widgets\Alert;
 use yii\helpers\Url;
 use frontend\models\SocialWeb;
 
+$pages = Pages::find()->where(['page' => 'Head'])->all();
+$model = Contacts::find()->one();
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -25,6 +29,8 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
+
+<div class="bubbles"></div>
 
 <div class="wrap">
 
@@ -56,31 +62,31 @@ AppAsset::register($this);
         <div class="collapse navbar-collapse main-header__nav" id="navbarSupportedContent">
             <ul class="navbar-nav navbar-main justify-content-center">
                 <li class="nav-item <?=Yii::$app->controller->id == 'site' ? 'active' : ''?>">
-                    <a class="nav-link" href="<?=Url::to(['/'])?>"><?=Yii::t('app','home');?></a>
+                    <a class="nav-link" href="<?=Url::to(['/'])?>"><?=Yii::t('app', $pages[0]->text);?></a>
                 </li>
                 <li class="nav-item <?=Yii::$app->controller->id == 'girls' ? 'active' : ''?>">
-                    <a class="nav-link" href="<?=Url::to(['/girls'])?>"><?=Yii::t('app', 'all girls');?></a>
+                    <a class="nav-link" href="<?=Url::to(['/girls'])?>"><?=Yii::t('app', $pages[1]->text);?></a>
                 </li>
                 <li class="nav-item <?=Yii::$app->controller->id == 'how-make-order' ? 'active' : ''?>">
-                    <a class="nav-link" href="<?=Url::to(['/how-make-order'])?>"><?=Yii::t('app', 'how to make an order');?></a>
+                    <a class="nav-link" href="<?=Url::to(['/how-make-order'])?>"><?=Yii::t('app', $pages[2]->text);?></a>
                 </li>
                 <li class="nav-item <?=Yii::$app->controller->id == 'services' ? 'active' : ''?>">
-                    <a class="nav-link" href="<?=Url::to(['/services'])?>"><?=Yii::t('app', 'servises');?></a>
+                    <a class="nav-link" href="<?=Url::to(['/services'])?>"><?=Yii::t('app', $pages[3]->text);?></a>
                 </li>
                 <li class="nav-item <?=Yii::$app->controller->id == 'booking' ? 'active' : ''?>">
-                    <a class="nav-link" href="<?=Url::to(['/booking'])?>"><?=Yii::t('app', 'booking');?></a>
+                    <a class="nav-link" href="<?=Url::to(['/booking'])?>"><?=Yii::t('app', $pages[4]->text);?></a>
                 </li>
                 <li class="nav-item <?=Yii::$app->controller->id == 'stories' ? 'active' : ''?>">
-                    <a class="nav-link" href="<?=Url::to(['/stories'])?>"><?=Yii::t('app', 'erotic stories');?></a>
+                    <a class="nav-link" href="<?=Url::to(['/stories'])?>"><?=Yii::t('app', $pages[5]->text);?></a>
                 </li>
                 <li class="nav-item <?=Yii::$app->controller->id == 'casting' ? 'active' : ''?>">
-                    <a class="nav-link" href="<?=Url::to(['/casting'])?>"><?=Yii::t('app', 'casting');?></a>
+                    <a class="nav-link" href="<?=Url::to(['/casting'])?>"><?=Yii::t('app', $pages[6]->text);?></a>
                 </li>
                 <li class="nav-item <?=Yii::$app->controller->id == 'reviews-for-escrort' ? 'active' : ''?>">
-                    <a class="nav-link" href="<?=Url::to(['/reviews-for-escort'])?>"><?=Yii::t('app', 'riveiws');?></a>
+                    <a class="nav-link" href="<?=Url::to(['/reviews-for-escort'])?>"><?=Yii::t('app', $pages[7]->text);?></a>
                 </li>
                 <li class="nav-item <?=Yii::$app->controller->id == 'contacts' ? 'active' : ''?>">
-                    <a class="nav-link" href="<?=Url::to(['/contacts'])?>"><?=Yii::t('app', 'contacts');?></a>
+                    <a class="nav-link" href="<?=Url::to(['/contacts'])?>"><?=Yii::t('app', $pages[8]->text);?></a>
                 </li>
             </ul>
             <div class="main-header__multiling">
@@ -100,7 +106,7 @@ AppAsset::register($this);
 
             <h2 class="phone-number">
                 <span>+</span>
-                90 539 460 85 63
+                <?= $model->phone?>
             </h2>
 
             <ul class="phone-links">
@@ -137,7 +143,7 @@ AppAsset::register($this);
 
             <h2 class="phone-number">
                 <span>+</span>
-                90 539 460 85 63
+                <?= $model->phone?>
             </h2>
 
             <ul class="phone-links">
@@ -213,49 +219,38 @@ AppAsset::register($this);
     </div>
     <ul class="main-footer__nav nav justify-content-center navbar-main">
 
-        <li class="nav-item active">
-            <a class="nav-link" href="/"><?=Yii::t('app', 'home');?></a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="<?=Url::to(['/girls'])?>"><?=Yii::t('app', 'all girls');?></a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="<?=Url::to(['/how-make-order'])?>"><?=Yii::t('app', 'how to make an order');?></a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="<?=Url::to(['/services'])?>"><?=Yii::t('app', 'servises');?></a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="<?=Url::to(['/booking'])?>"><?=Yii::t('app', 'booking');?></a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="<?=Url::to(['/stories'])?>"><?=Yii::t('app', 'erotic stories');?></a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="<?=Url::to(['/casting'])?>"><?=Yii::t('app', 'casting');?></a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="<?=Url::to(['/reviews-for-escort'])?>"><?=Yii::t('app', 'riveiws');?></a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="<?=Url::to(['/contacts'])?>"><?=Yii::t('app', 'contacts');?></a>
-        </li>
+        <li class="nav-item <?=Yii::$app->controller->id == 'site' ? 'active' : ''?>">
+                    <a class="nav-link" href="<?=Url::to(['/'])?>"><?=Yii::t('app', $pages[0]->text);?></a>
+                </li>
+                <li class="nav-item <?=Yii::$app->controller->id == 'girls' ? 'active' : ''?>">
+                    <a class="nav-link" href="<?=Url::to(['/girls'])?>"><?=Yii::t('app', $pages[1]->text);?></a>
+                </li>
+                <li class="nav-item <?=Yii::$app->controller->id == 'how-make-order' ? 'active' : ''?>">
+                    <a class="nav-link" href="<?=Url::to(['/how-make-order'])?>"><?=Yii::t('app', $pages[2]->text);?></a>
+                </li>
+                <li class="nav-item <?=Yii::$app->controller->id == 'services' ? 'active' : ''?>">
+                    <a class="nav-link" href="<?=Url::to(['/services'])?>"><?=Yii::t('app', $pages[3]->text);?></a>
+                </li>
+                <li class="nav-item <?=Yii::$app->controller->id == 'booking' ? 'active' : ''?>">
+                    <a class="nav-link" href="<?=Url::to(['/booking'])?>"><?=Yii::t('app', $pages[4]->text);?></a>
+                </li>
+                <li class="nav-item <?=Yii::$app->controller->id == 'stories' ? 'active' : ''?>">
+                    <a class="nav-link" href="<?=Url::to(['/stories'])?>"><?=Yii::t('app', $pages[5]->text);?></a>
+                </li>
+                <li class="nav-item <?=Yii::$app->controller->id == 'casting' ? 'active' : ''?>">
+                    <a class="nav-link" href="<?=Url::to(['/casting'])?>"><?=Yii::t('app', $pages[6]->text);?></a>
+                </li>
+                <li class="nav-item <?=Yii::$app->controller->id == 'reviews-for-escrort' ? 'active' : ''?>">
+                    <a class="nav-link" href="<?=Url::to(['/reviews-for-escort'])?>"><?=Yii::t('app', $pages[7]->text);?></a>
+                </li>
+                <li class="nav-item <?=Yii::$app->controller->id == 'contacts' ? 'active' : ''?>">
+                    <a class="nav-link" href="<?=Url::to(['/contacts'])?>"><?=Yii::t('app', $pages[8]->text);?></a>
+                </li>
 
     </ul>
     <div class="main-footer__info">
         <p>
-            <?=Yii::t('app', "All Ankara Escort organize the best love place on Earth. With us, you will feel as a king of seas, lands, aid skies - that big high you'll get from our pussycats. Here come people wanting to get fun with 1) exceptional beauties hard to find anywhere else in Italy, 2) Russian and Ukrainian girls of exclusive skills, and 3) girls, ready for everything for the exciting pleasure without boundaries.");?>
-        </p>
-        <p>
-            <?=Yii::t('app', "What is more - these three are united in every our girl! Have a great time with allescortinankara.com.");?>
+            <?=Yii::t('app', $pages[9]->text);?>
         </p>
     </div>
     <div class="main-footer__copy">

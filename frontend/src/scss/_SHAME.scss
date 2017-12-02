@@ -59,3 +59,112 @@
     }
 
 }
+
+@mixin bubbles-pos($x: 0, $y: 0) {
+    background-position: 
+        $x + 0px  $y + 0px,
+        $x + 90px $y + 4px,
+        $x + 170px $y + -5px,
+        $x + 336px $y + 10px,
+        $x + 413px $y + 33px,
+        $x + 523px $y + 23px,
+        $x + 523px $y + 23px,
+        $x + 400px $y + 107px,
+        $x + 239px $y + 106px,
+        $x + 315px $y + 175px,
+        $x + 315px $y + 175px,
+        $x + 0px $y + 0px;
+}
+
+@mixin bubbles($x: 0, $y: 0) {
+    // background-color: transparent;
+    background-image: 
+        url('../img/buble.svg'),
+        url('../img/buble.svg'),
+        url('../img/buble.svg'),
+        url('../img/buble.svg'),
+        url('../img/buble.svg'),
+        url('../img/buble.svg'),
+        url('../img/buble.svg'),
+        url('../img/buble.svg'),
+        url('../img/buble.svg'),
+        url('../img/buble.svg'),
+        url('../img/buble.svg');
+
+    // background-position: 
+    //     0px  0px,
+    //     90px 4px,
+    //     170px -5px,
+    //     336px 10px,
+    //     413px 33px,
+    //     523px 23px,
+    //     523px 23px,
+    //     400px 107px,
+    //     239px 106px,
+    //     315px 175px,
+    //     315px 175px,
+    //     0px 0px;
+    background-position: 
+        $x + 0px  $y + 0px,
+        $x + 90px $y + 4px,
+        $x + 170px $y + -5px,
+        $x + 336px $y + 10px,
+        $x + 413px $y + 33px,
+        $x + 523px $y + 23px,
+        $x + 523px $y + 23px,
+        $x + 400px $y + 107px,
+        $x + 239px $y + 106px,
+        $x + 315px $y + 175px;
+
+    background-size:
+        125px,
+        104px,
+        123px,
+        102px,
+        90px,
+        46px,
+        46px,
+        80px,
+        147px,
+        107px;
+
+    background-repeat: no-repeat;
+}
+
+body {
+    position: relative;
+    @include mq(md) {
+        @include bubbles(60px , 31px);
+    }
+    @include mq(xl) {
+        @include bubbles(60px, 50px);
+    }
+}
+
+
+
+.main-header {
+    @include mq(xl) {
+        @include bubbles(60px , 60px + 50px);
+    }
+}
+
+.navbar-bottom {
+    @include bubbles(60px , 50px);
+    @include mq(md) {
+        @include bubbles(60px , -30px);
+    }
+    @include mq(xl) {
+        @include bubbles(60px , -30px);
+    }
+}
+
+.bubbles {
+    // height: 400px;
+    // width: 100%;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // z-index: 1000;
+    // opacity: .3;
+}

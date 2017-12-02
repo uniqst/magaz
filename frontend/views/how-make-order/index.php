@@ -2,13 +2,18 @@
 
 /* @var $this yii\web\View */
 use yii\helpers\Url;
-$this->title = 'How to make order';
+$this->title = $pages[0]->text;
+$this->registerMetaTag([
+'name' => 'description',
+'content' => $pages[3]->text
+]);
 ?>
 <div class="row">
     <div class="mx-auto col-xl-58p">
     <div class="top-form top-form-how-to-order">
-      <h1 class="page-name"><?=Yii::t('app', 'How to make an order');?></h1>
+      <h1 class="page-name"><?=Yii::t('app', $pages[1]->text);?></h1>
       <p>
+<<<<<<< HEAD
       <?=Yii::t('app', 'Grab a pen and write down: here is the phone number of our booking service:');?> <span class="text-nowrap">12312321</span>. <?=Yii::t('app', 'You can dial or send SMS using the ordinary phone, the same as to make a call or chat with us using Whatsapp or Viber applications for mobile phones.');?>
       </p>
       <p>
@@ -16,6 +21,9 @@ $this->title = 'How to make order';
       </p>
       <p>
         <?=Yii::t('app', 'Just as simple as that - and in an hour or two you will be delighted by our charming girl.');?>
+=======
+      <?=Yii::t('app', $pages[2]->text);?>
+>>>>>>> 21bc6d318804c4e2a115c5478913ba34aa7f9368
       </p>
     </div>
     <!-- <div class="application-ask container-fluid">
