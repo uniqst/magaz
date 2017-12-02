@@ -15,8 +15,7 @@ class m171122_132447_advertising extends Migration
         $this->createTable('{{%advertising}}', [
             'id' => $this->primaryKey(11),
             'position' => $this->integer(11)->notNull(),
-            'img' => $this->string(255)->notNull(),
-            'href' => $this->string(255)->notNull(),
+            'banner' => $this->string(500)->notNull(),
 
         ]);
     }

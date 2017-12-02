@@ -96,9 +96,7 @@ $this->registerMetaTag([
                 <div class="advertise-block__list">
                     <?php foreach($advertising as $adver):?>
                     <div class="advertise__item">
-                        <a href="<?= $adver->href?>" target='_blank'>
-                            <img width="600" height="230" src="/promo/<?= $adver->img?>" alt="Add">
-                        </a>
+                        <a><?= $adver->banner?></a>
                     </div>
                 <?php endforeach;?>
                 </div>

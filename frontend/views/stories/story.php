@@ -1,10 +1,10 @@
 <?php
 
 use yii\helpers\Url;
-$this->title = $model->name;
+$this->title = $model->title;
 $this->registerMetaTag([
 'name' => 'description',
-'content' => $pages[6]->text
+'content' => $model->description
 ]);
 ?>
 
@@ -12,7 +12,7 @@ $this->registerMetaTag([
   <div class="col-12">
     <div class="row">
       <div class="mx-auto col-xl-58p">
-        <h1 class="page-name stories"><?=Yii::t('app', $pages[4]->text);?></h1>
+        <h1 class="page-name stories"><?=Yii::t('app', $model->H1);?></h1>
       </div>
     </div>
   </div>
