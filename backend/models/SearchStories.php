@@ -19,7 +19,7 @@ class SearchStories extends Stories
     {
         return [
             [['id'], 'integer'],
-            [['img', 'name', 'content', 'date'], 'safe'],
+            [['img', 'content', 'date'], 'safe'],
         ];
     }
 
@@ -64,7 +64,6 @@ class SearchStories extends Stories
         ]);
 
         $query->andFilterWhere(['like', 'img', $this->img])
-            ->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'content', $this->content]);
 
         return $dataProvider;

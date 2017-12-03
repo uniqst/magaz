@@ -14,7 +14,7 @@ class m171130_105215_pages extends Migration
     {
         $this->createTable('{{%pages}}', [
             'id' => $this->primaryKey(11),
-            'text' => $this->string(10000)->notNull(),
+            'text' => $this->getDb()->getSchema()->createColumnSchemaBuilder('LONGTEXT')->notNull(),
             'page' => $this->string(255)->notNull(),
         ]);
     }

@@ -43,10 +43,6 @@ $category = Category::find()->where(['parent_id' => 0])->with('category')->all()
 
     <?= $form->field($model, 'description')->textArea(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'phone')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
-
     <?= $form->field($model, 'imageFile')->fileInput(['accept' => 'image/*']) ?>
 
     <?= $form->field($model, 'most_wanted')->widget(CKEditor::className(), [
