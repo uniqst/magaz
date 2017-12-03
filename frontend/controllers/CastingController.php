@@ -84,11 +84,19 @@ class CastingController extends Controller
                 foreach ($photo->imageFiles as $file) {
                     $str = substr(md5(microtime() . rand(0, 9999)), 0, 20);
                     $file->saveAs('photo/' . $str . '.' . $file->extension);
-                    $image = new Photo();
-                    $image->profile_id = $model->id;
-                    $image->src = $str . '.' . $file->extension;
+                    
                    
                 }
+            Yii::$app->mailer->compose()
+    ->setFrom('from@domain.com')
+    ->setTo('to@domain.com')
+    ->setSubject('Тема сообщения')
+    ->setTextBody('Текст сообщения')
+    ->setHtmlBody('<b>текст сообщения в формате HTML</b>')
+     foreach ($photo->imageFiles as $file){
+        $message->attachContent('Attachment content', ['fileName' => $file, 'contentType' => 'text/plain']);
+     }
+    ->send();
         }
         return $this->render('index', compact('model', 'photo', 'contact', 'pages'));
     }
