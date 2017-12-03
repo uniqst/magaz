@@ -21,14 +21,20 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
+            ['class' => 'yii\grid\ActionColumn',
+                'template' => '{update}'
+            ],
             ['class' => 'yii\grid\SerialColumn'],
 
-            'text',
+            [
+              'attribute' => 'text',
+                'value' => function($data){
+                    return mb_substr($data->text, 0, 60);
+                },
+            ],
             'page',
 
-            ['class' => 'yii\grid\ActionColumn', 
-             'template' => '{update}'
-            ],
+
         ],
     ]); ?>
     <?php Pjax::end(); ?>
