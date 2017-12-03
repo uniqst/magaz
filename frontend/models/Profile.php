@@ -49,12 +49,15 @@ class Profile extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'Номер',
-            'name' => 'Имя',
-            'age' => 'Возраст',
-            'country' => 'Страна',
-            'about_myself' => 'О себе',
-            'date' => 'Дата',
+            'id' => 'ID',
+            'name' => 'Name',
+            'age' => 'Age',
+            'country' => 'Country',
+            'about_myself' => 'About myself',
+            'date' => 'Date',
+            'name_description' => 'Name page',
+            'description' => 'Meta tag description'
+
         ];
     }
 

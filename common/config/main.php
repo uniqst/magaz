@@ -10,6 +10,9 @@ return [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
+        'mailer' => [
+            'class' => 'yii\swiftmailer\Mailer',
+        ],
         'i18n' => [
             'class' => Zelenin\yii\modules\I18n\components\I18N::className(),
             'languages' => ['en', 'tr']
