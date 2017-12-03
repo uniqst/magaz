@@ -79,7 +79,7 @@ class CastingController extends Controller
         $contact = Contacts::find()->one();
         $pages = Pages::find()->where(['page' => 'Casting'])->all();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
             $photo->imageFiles = UploadedFile::getInstances($photo, 'imageFiles');
                 foreach ($photo->imageFiles as $file) {
                     $str = substr(md5(microtime() . rand(0, 9999)), 0, 20);
@@ -87,7 +87,7 @@ class CastingController extends Controller
                     $image = new Photo();
                     $image->profile_id = $model->id;
                     $image->src = $str . '.' . $file->extension;
-                    $image->save();
+                   
                 }
         }
         return $this->render('index', compact('model', 'photo', 'contact', 'pages'));

@@ -49,7 +49,14 @@ $category = Category::find()->where(['parent_id' => 0])->with('category')->all()
 
     <?= $form->field($model, 'imageFile')->fileInput(['accept' => 'image/*']) ?>
 
-    <?= $form->field($model, 'most_wanted')->textArea(['maxlength' => true]) ?>
+    <?= $form->field($model, 'most_wanted')->widget(CKEditor::className(), [
+
+  'editorOptions' => ElFinder::ckeditorOptions('elfinder',[
+        'preset' => 'full',
+        'inline' => false,
+    ]),
+
+]);?>
 
     <?= $form->field($model, 'nationality')->textInput(['maxlength' => true]) ?>
 

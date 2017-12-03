@@ -18,6 +18,8 @@ use mihaildev\elfinder\ElFinder;
 
    <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
+   <?= $form->field($model, 'description')->textArea(['maxlength' => true]) ?>
+
    <?= $form->field($model, 'H1')->textInput(['maxlength' => true]) ?>
 
    <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
