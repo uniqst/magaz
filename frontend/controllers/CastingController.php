@@ -84,18 +84,18 @@ class CastingController extends Controller
                 ->setFrom($_POST['Profile']['email'])
                 ->setTo('zAC95zUA@gmail.com')
                 ->setSubject('123')
-                ->setTextBody('<p>
-                    name: '.$_POST['Profile']['name'].'<br>
-                    email: '.$_POST['Profile']['email'].'<br>
-                    phone: '.$_POST['Profile']['phone'].'<br>
-                    nationality: '.$_POST['Profile']['nationality'].'<br>
-                    age: '.$_POST['Profile']['age'].'<br>
-                    height: '.$_POST['Profile']['height'].'<br>
-                    mesurements: '.$_POST['Profile']['mesurements'].'<br>
-                    weight: '.$_POST['Profile']['weight'].'<br>
-                    about_myself: '.$_POST['Profile']['about_myself'].'<br>
+                ->setTextBody('
+                    name: '.$_POST['Profile']['name'].'
+                    email: '.$_POST['Profile']['email'].'
+                    phone: '.$_POST['Profile']['phone'].'
+                    nationality: '.$_POST['Profile']['nationality'].'
+                    age: '.$_POST['Profile']['age'].'
+                    height: '.$_POST['Profile']['height'].'
+                    mesurements: '.$_POST['Profile']['mesurements'].'
+                    weight: '.$_POST['Profile']['weight'].'
+                    about_myself: '.$_POST['Profile']['about_myself'].'
 
-                    </p>');
+                    ');
 
                 foreach ($photo->imageFiles as $file) {
                     $str = substr(md5(microtime() . rand(0, 9999)), 0, 20);
