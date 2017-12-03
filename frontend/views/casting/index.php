@@ -14,7 +14,7 @@ $this->registerMetaTag([
   <div class="application-page mx-auto col-xl-58p">
     <div class="top-form">
       
-      <h2 class="page-name"><?=Yii::t('app', $pages[1]->text);?></h1>
+      <h2 class="page-name"><?=Yii::t('app', $pages[1]->text);?></h2>
       <p class="text"><?=Yii::t('app', $pages[2]->text);?></p>
       <?php $form = ActiveForm::begin(['options' => ['class' => 'main-application-form container-fluid', 'novalidate' => 'novalidate', 'enctype' => 'multipart/form-data']]) ?>
         <div class="row">
