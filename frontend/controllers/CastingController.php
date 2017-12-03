@@ -78,25 +78,24 @@ class CastingController extends Controller
         $photo = new UploadForm();
         $contact = Contacts::find()->one();
         $pages = Pages::find()->where(['page' => 'Casting'])->all();
-
         if ($model->load(Yii::$app->request->post())) {
             $photo->imageFiles = UploadedFile::getInstances($photo, 'imageFiles');
+            $message = Yii::$app->mailer->compose()
+                ->setFrom('galifax94@gmail.com')
+                ->setTo('galifax94@gmail.com')
+                ->setSubject('123')
+                ->setTextBody('<p>
+                    name: '.$_POST['Profile']['name'].'<br>
+                    email: '.$_POST['Profile']['email'].'<br>
+                    </p>');
+
                 foreach ($photo->imageFiles as $file) {
                     $str = substr(md5(microtime() . rand(0, 9999)), 0, 20);
                     $file->saveAs('photo/' . $str . '.' . $file->extension);
-                    
-                   
+                    $message->attach('photo/' . $str . '.' . $file->extension);
+
                 }
-            Yii::$app->mailer->compose()
-    ->setFrom('from@domain.com')
-    ->setTo('to@domain.com')
-    ->setSubject('Тема сообщения')
-    ->setTextBody('Текст сообщения')
-    ->setHtmlBody('<b>текст сообщения в формате HTML</b>')
-     foreach ($photo->imageFiles as $file){
-        $message->attachContent('Attachment content', ['fileName' => $file, 'contentType' => 'text/plain']);
-     }
-    ->send();
+            $message->send();
         }
         return $this->render('index', compact('model', 'photo', 'contact', 'pages'));
     }
