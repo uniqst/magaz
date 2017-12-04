@@ -40,17 +40,17 @@ $this->title = $pages[0]->text;
         <?php foreach($model as $story):?>
         <div class="post-item clearfix">
           <div class="image">
-            <a href="<?= Url::to(['/stories/story', 'id' => $story->id, 'name' => $story->name])?>">
+            <a href="<?= Url::to(['/stories/story', 'id' => $story->id, 'name' => $story->H1])?>">
               <img src="/stori/<?= $story->img?>" width="200px" hight="200px" alt="Girl photo">
             </a>
           </div>
               
           <div class="post-info-container">
             <h2 class="title">
-              <a href="<?= Url::to(['/stories/story', 'id' => $story->id, 'name' => $story->name])?>"><?= $story->name?></a>
+              <a href="<?= Url::to(['/stories/story', 'id' => $story->id, 'name' => $story->H1])?>"><?= $story->H1?></a>
             </h2>
             <div class="center-block">
-              <p><?= mb_substr($story->content, 0,500)?></p>
+              <p><?= mb_substr($story->short_description, 0,500)?></p>
             </div>
           </div>  
         </div>

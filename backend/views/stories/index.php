@@ -25,6 +25,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
+            'H1',
             [
                 'attribute' => 'img',
                 'value' => function($data){
@@ -32,7 +33,6 @@ $this->params['breadcrumbs'][] = $this->title;
                 },
                 'format' => 'html',
             ],
-            'name',
             'date',
 
             ['class' => 'yii\grid\ActionColumn'],

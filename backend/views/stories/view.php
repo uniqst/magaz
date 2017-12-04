@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Stories */
 
-$this->title = $model->name;
+$this->title = $model->H1;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Stories'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -32,7 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'title',
             'description',
             'H1',
-            'name',
+            'short_description',
             'content',
             'date',
         ],

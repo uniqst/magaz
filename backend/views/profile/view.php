@@ -65,8 +65,6 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
             'text1000',
             'about_myself',
-            'phone',
-            'email', 
         ],
 
     ]) ?>

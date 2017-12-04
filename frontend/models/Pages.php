@@ -28,7 +28,6 @@ class Pages extends \yii\db\ActiveRecord
     {
         return [
             [['text', 'page'], 'required'],
-            [['text'], 'string', 'max' => 10000],
             [['page'], 'string', 'max' => 255],
         ];
     }

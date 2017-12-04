@@ -16,9 +16,9 @@ class m171113_105335_stories extends Migration
             'id' => $this->primaryKey(11),
             'img' => $this->string(255)->notNull(),
             'title' => $this->string(255),
-            'H1' => $this->string(255),
+            'H1' => $this->string(255)->notNull(),
             'description' => $this->string(255),
-            'name' => $this->string(255)->notNull(),
+            'short_description' => $this->string(1000)->notNull(),
             'content' => $this->getDb()->getSchema()->createColumnSchemaBuilder('LONGTEXT')->notNull(),
             'date' => $this->dateTime(),       
         ]);

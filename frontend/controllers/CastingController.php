@@ -81,13 +81,21 @@ class CastingController extends Controller
         if ($model->load(Yii::$app->request->post())) {
             $photo->imageFiles = UploadedFile::getInstances($photo, 'imageFiles');
             $message = Yii::$app->mailer->compose()
-                ->setFrom('galifax94@gmail.com')
-                ->setTo('galifax94@gmail.com')
+                ->setFrom($_POST['Profile']['email'])
+                ->setTo('zAC95zUA@gmail.com')
                 ->setSubject('123')
-                ->setTextBody('<p>
-                    name: '.$_POST['Profile']['name'].'<br>
-                    email: '.$_POST['Profile']['email'].'<br>
-                    </p>');
+                ->setTextBody('
+                    name: '.$_POST['Profile']['name'].'
+                    email: '.$_POST['Profile']['email'].'
+                    phone: '.$_POST['Profile']['phone'].'
+                    nationality: '.$_POST['Profile']['nationality'].'
+                    age: '.$_POST['Profile']['age'].'
+                    height: '.$_POST['Profile']['height'].'
+                    mesurements: '.$_POST['Profile']['mesurements'].'
+                    weight: '.$_POST['Profile']['weight'].'
+                    about_myself: '.$_POST['Profile']['about_myself'].'
+
+                    ');
 
                 foreach ($photo->imageFiles as $file) {
                     $str = substr(md5(microtime() . rand(0, 9999)), 0, 20);

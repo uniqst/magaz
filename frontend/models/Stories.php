@@ -29,10 +29,11 @@ class Stories extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['img', 'name', 'content'], 'required'],
+            [['img', 'short_description', 'content'], 'required'],
             [['content'], 'string'],
             [['date'], 'safe'],
-            [['img', 'name', 'title', 'H1', 'description'], 'string', 'max' => 255],
+            [['img', 'title', 'H1', 'description'], 'string', 'max' => 255],
+            [['short_description'], 'string', 'max' => 1000],
             [['imageFile'], 'file'],
         ];
     }
@@ -45,7 +46,7 @@ class Stories extends \yii\db\ActiveRecord
         return [
             'id' => Yii::t('app', 'ID'),
             'img' => Yii::t('app', 'Img'),
-            'name' => Yii::t('app', 'Name'),
+            'description' => Yii::t('app', 'Meta description'),
             'content' => Yii::t('app', 'Content'),
             'date' => Yii::t('app', 'Date'),
         ];

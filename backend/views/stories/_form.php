@@ -22,7 +22,14 @@ use mihaildev\elfinder\ElFinder;
 
    <?= $form->field($model, 'H1')->textInput(['maxlength' => true]) ?>
 
-   <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
+   <?= $form->field($model, 'short_description')->widget(CKEditor::className(), [
+
+  'editorOptions' => ElFinder::ckeditorOptions('elfinder',[
+      'preset' => 'full',
+      'inline' => false,
+    ]),
+
+]);?>
 	
 
 	 <?= $form->field($model, 'content')->widget(CKEditor::className(), [

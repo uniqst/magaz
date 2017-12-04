@@ -26,7 +26,7 @@ use yii\helpers\Url;
 
             <?php foreach($city as $val):?>
             <li class="category-list__item">
-                <a href="<?= $val->href?>"><?= Yii::t('app', $val->name)?></a>
+                <a href="<?= $val->href?>" target="_blank"><?= Yii::t('app', $val->name)?></a>
             </li>
           <?php endforeach;?>
           </ul>

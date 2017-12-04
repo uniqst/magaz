@@ -23,18 +23,9 @@ $this->registerMetaTag([
           <span> > </span>
           <a href="<?= Url::to(['/stories/index'])?>"><?=Yii::t('app', 'Stories');?></a>
           <span> > </span>
-          <a href="<?= Url::to(['/stories/story', 'id' => $model->id])?>"><?=Yii::t('app', $model->name);?></a>
+          <a href="<?= Url::to(['/stories/story', 'id' => $model->id])?>"><?=Yii::t('app', $model->H1);?></a>
         </div>
       </div>
-  </div>
-  <div class="col-12">
-    <div class="row">
-      <div class="mx-auto col-xl-58p">
-          <h1 class="heading-main">
-              <?= $model->name?>
-          </h1>
-      </div>
-    </div>
   </div>
 
   <?= \frontend\components\SidebarLeft::widget();?>
