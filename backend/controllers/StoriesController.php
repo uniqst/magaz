@@ -96,7 +96,7 @@ class StoriesController extends Controller
               if (Yii::$app->request->isPost) {
                 $str = substr(md5(microtime() . rand(0, 9999)), 0, 20);
                 $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
-                 if ($model->imageFile){
+                 if (isset($model->imageFile)){
                     
                 $model->imageFile->saveAs('../../frontend/web/stori/' . $str . '.' . $model->imageFile->extension);
                 $model->img = $str . '.' . $model->imageFile->extension;
