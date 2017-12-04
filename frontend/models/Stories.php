@@ -29,7 +29,7 @@ class Stories extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['img', 'short_description', 'content'], 'required'],
+            [['short_description', 'content'], 'required'],
             [['content'], 'string'],
             [['date'], 'safe'],
             [['img', 'title', 'H1', 'description'], 'string', 'max' => 255],

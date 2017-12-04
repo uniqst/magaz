@@ -17,7 +17,7 @@ use yii\helpers\Url;
                 <a href="#"><?= Yii::t('app', $story->H1)?></a>
               </div>
               <div class="article__text">
-                <?= Yii::t('app', mb_substr($story->content, 0, 1000).'...')?>
+                <?= Yii::t('app', mb_substr($story->short_description, 0, 1000).'...')?>
               </div>
             </div>
           </div>

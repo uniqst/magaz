@@ -14,7 +14,7 @@ class m171113_105335_stories extends Migration
     {
         $this->createTable('{{%stories}}', [
             'id' => $this->primaryKey(11),
-            'img' => $this->string(255)->notNull(),
+            'img' => $this->string(255),
             'title' => $this->string(255),
             'H1' => $this->string(255)->notNull(),
             'description' => $this->string(255),

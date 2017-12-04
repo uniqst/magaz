@@ -12,7 +12,7 @@
                             <p><?= $model->name?></p>
                         </div>
                         <div class="most-wanted__description">
-                            <p><?=Yii::t('app', $model->about_myself);?></p>
+                            <p><?=Yii::t('app', $model->most_wanted);?></p>
                         </div>
                     </div>
                 </div>
