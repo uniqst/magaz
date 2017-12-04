@@ -20,7 +20,7 @@ use yii\helpers\Url;
         <div class="category-list-wraper collapse show" id="list-filtersasdas">
             <h2 class="sb-heading-main sb-heading-main__link">
               <?= Yii::t('app', 'City')?>
-           
+
           </h2>
           <ul class="category-list category-list--border collapse show">
 
