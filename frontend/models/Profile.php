@@ -32,7 +32,7 @@ class Profile extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['age', 'height', 'mesurements', 'weight', 'name', 'nationality', 'about_myself', 'email', 'phone'], 'required'],
+            [['age', 'height', 'mesurements', 'weight', 'name', 'nationality', 'about_myself'], 'required'],
             [['age', 'height', 'weight', 'status'], 'integer'],
             [['date'], 'safe'],
             [['imageFile'], 'file'],
