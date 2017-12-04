@@ -18,7 +18,7 @@ class m171113_105335_stories extends Migration
             'title' => $this->string(255),
             'H1' => $this->string(255)->notNull(),
             'description' => $this->string(255),
-            'short_description' => $this->string(500)->notNull(),
+            'short_description' => $this->string(1000)->notNull(),
             'content' => $this->getDb()->getSchema()->createColumnSchemaBuilder('LONGTEXT')->notNull(),
             'date' => $this->dateTime(),       
         ]);

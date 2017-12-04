@@ -33,7 +33,7 @@ class Stories extends \yii\db\ActiveRecord
             [['content'], 'string'],
             [['date'], 'safe'],
             [['img', 'title', 'H1', 'description'], 'string', 'max' => 255],
-            [['short_description'], 'string', 'max' => 500],
+            [['short_description'], 'string', 'max' => 1000],
             [['imageFile'], 'file'],
         ];
     }

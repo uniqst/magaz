@@ -19,7 +19,7 @@ class m171107_114152_profile extends Migration
             'H1' => $this->string(255),
             'H2' => $this->string(255),
             'name_description' => $this->string(255),
-            'description' => $this->string(255),
+            'description' => $this->string(500),
             'most_wanted' => $this->string(1000),
             'text1000' => $this->string(2000),
             'img_mw' => $this->string(255),
