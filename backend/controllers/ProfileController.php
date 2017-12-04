@@ -17,6 +17,7 @@ use backend\models\SearchProfile;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use frontend\models\AttendanceValue;
 
 /**
  * ProfileController implements the CRUD actions for Profile model.
@@ -78,6 +79,7 @@ class ProfileController extends Controller
      */
     public function actionCreate()
     {
+
         $model = new Profile();
         $photo = new UploadForm();
 
@@ -91,6 +93,13 @@ class ProfileController extends Controller
                 $model->imageFile->saveAs('../../frontend/web/photo/' . $str . '.' . $model->imageFile->extension);
                 $model->img_mw = $str . '.' . $model->imageFile->extension;
                 $model->save();
+
+            foreach($_POST['option'] as $opt){
+                $op = new AttendanceValue();
+                $op->profile_id = $model->id;
+                $op->attendance_id = $opt;
+                $op->save();
+            }
 
             foreach($_POST['value'] as $key=> $val){
 
@@ -135,6 +144,7 @@ class ProfileController extends Controller
      */
     public function actionUpdate($id)
     {
+
         $filters = Filters::find()->where(['parent_id' => 0])->with('value')->all();
         $model = $this->findModel($id);
         $photo = new UploadForm();
@@ -149,6 +159,13 @@ class ProfileController extends Controller
                     $model->img_mw = $str . '.' . $model->imageFile->extension;
                 }
                 $model->save();
+
+            foreach($_POST['option'] as $opt){
+                $op = new AttendanceValue();
+                $op->profile_id = $model->id;
+                $op->attendance_id = $opt;
+                $op->save();
+            }
                 
             foreach($_POST['value'] as $key=> $val){
                 $value = FiltersValue::find()->where(['filter_id' => $key, 'product_id' => $model->id])->one();

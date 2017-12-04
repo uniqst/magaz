@@ -9,9 +9,13 @@ use frontend\models\Category;
 use yii\helpers\ArrayHelper;
 use mihaildev\ckeditor\CKEditor;
 use mihaildev\elfinder\ElFinder;
+use frontend\models\Attendance;
+use frontend\models\AttendanceValue;
+
 // $cat = Category::find()->where(['parent_id' => 0])->
 $category = Category::find()->where(['parent_id' => 0])->with('category')->all();
 
+$att = Attendance::find()->all();
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Profile */
 /* @var $form yii\widgets\ActiveForm */
@@ -92,6 +96,11 @@ $category = Category::find()->where(['parent_id' => 0])->with('category')->all()
     ?>
     <?= $form->field($value, 'value')->dropDownList($items, ['name' => 'value['.$cat->id.']'])->label($cat->name) ?>
 <?php endforeach;?>
+
+    <?php foreach($att as $a):?>
+        <input type="checkbox" name="option[<?=$a->id?>]" value="<?=$a->id?>"><?=$a->name?>
+    <?php endforeach;?>
+
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
