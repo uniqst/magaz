@@ -177,7 +177,7 @@ $prev = Profile::findOne($id-1);
                         <?php endif;?>
                     <?php endforeach;?>
                 </div>
-               
+
                 <div class="services" style="margin-top: -17px;">
                     <?php foreach($model->attVal as $at):?>
                         <?php if($at == end($model->attVal)):?>
