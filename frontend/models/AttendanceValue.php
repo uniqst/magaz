@@ -46,6 +46,6 @@ class AttendanceValue extends \yii\db\ActiveRecord
 
     public function getAtt()
     {
-        return $this->hasMany(Attendance::className(), ['id' => 'attendance_id']);
+        return $this->hasOne(Attendance::className(), ['id' => 'attendance_id']);
     }
 }

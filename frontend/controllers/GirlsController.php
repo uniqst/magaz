@@ -2,6 +2,7 @@
 namespace frontend\controllers;
 
 use Yii;
+use yii\db\ActiveQuery;
 use yii\db\Expression;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
@@ -54,7 +55,8 @@ class GirlsController extends Controller
         $price_usd = Price::find()->where(['currency' => 0])->all();
         $price_eur = Price::find()->where(['currency' => 1])->all();
         $price_try = Price::find()->where(['currency' => 2])->all();
-        $model = Profile::find()->where(['id' => $id])->with('photo', 'value.category')->one();
+        $model = Profile::find()->where(['id' => $id])
+            ->with('photo', 'value.category', 'attVal.att')->one();
 
         return $this->render('girl', compact('model', 'service', 'price_usd', 'price_eur', 'price_try', 'contact'));
     }

@@ -170,7 +170,21 @@ $prev = Profile::findOne($id-1);
                 
                 <div class="services">
                     <?php foreach($model->value as $cat):?>
-                    <a href="#"><?= $cat->category->name?>, </a>
+                        <?php if($cat == end($model->value)):?>
+                    <a href="#"><?= $cat->category->name?></a>
+                            <?php else:?>
+                            <a href="#"><?= $cat->category->name?>,</a>
+                        <?php endif;?>
+                    <?php endforeach;?>
+                </div>
+               
+                <div class="services" style="margin-top: -17px;">
+                    <?php foreach($model->attVal as $at):?>
+                        <?php if($at == end($model->attVal)):?>
+                            <a href="#"><?= $at->att->name?></a>
+                        <?php else:?>
+                            <a href="#"><?= $at->att->name?>,</a>
+                        <?php endif;?>
                     <?php endforeach;?>
                 </div>
                
