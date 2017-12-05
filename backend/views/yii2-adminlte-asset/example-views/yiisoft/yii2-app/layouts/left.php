@@ -16,6 +16,7 @@
                     ['label' => 'Menu', 'options' => ['class' => 'header']],
                     ['label' => 'City', 'icon' => ' fa fa-building-o', 'url' => ['/city']],
                     ['label' => 'Category', 'icon' => 'dashboard', 'url' => ['/category']],
+                    ['label' => 'Profile Service', 'icon' => 'dashboard', 'url' => ['/attendance']],
                     ['label' => 'Conctacts', 'icon' => ' fa fa-envelope-open', 'url' => ['/contacts/update', 'id' => 1]],
                     // ['label' => 'Filters', 'icon' => ' fa fa-filter', 'url' => ['/filters']],
                     ['label' => 'Application', 'icon' => 'fa fa-id-card-o', 'url' => ['/profile']],

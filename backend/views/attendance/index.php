@@ -6,7 +6,7 @@ use yii\widgets\Pjax;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Attendances');
+$this->title = Yii::t('app', 'Profile Service');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="attendance-index">
@@ -23,7 +23,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
             'name',
 
             ['class' => 'yii\grid\ActionColumn'],
