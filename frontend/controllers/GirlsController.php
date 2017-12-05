@@ -62,6 +62,8 @@ class GirlsController extends Controller
     {
         $model = Profile::find()->joinWith(['value.category' => function(yii\db\ActiveQuery $query){
             $query->andFilterWhere(['category.id' => $_GET['value']]);
+        }])->joinWith(['attVal.att' => function(yii\db\ActiveQuery $query){
+            $query->andFilterWhere(['attendance.id' => $_GET['service']]);
         }])->distinct();
 
 

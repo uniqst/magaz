@@ -82,5 +82,10 @@ class Profile extends \yii\db\ActiveRecord
         return $this->hasMany(FiltersValue::className(), ['product_id' => 'id']);
     }
 
+    public function getAttVal()
+    {
+        return $this->hasMany(AttendanceValue::className(), ['profile_id' => 'id']);
+    }
+
 
 }

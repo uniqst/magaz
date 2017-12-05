@@ -55,6 +55,22 @@ use yii\helpers\Url;
                       <?php endforeach;?>
                   </ul>
               <?php endforeach;?>
+              <a href="#list-categoriess" style="color: white; margin-left: 20px; font-size: 14px; padding-bottom: 10px;" class="sb-heading-main__link" data-toggle="collapse" aria-expanded="true">
+                  <?= Yii::t('app', 'Services')?>
+              </a>
+              <ul class="category-list category-list--border collapse show" id="list-categoriess">
+                  <li class="category-list__item">
+                      <a href="#" oclick="return false"class="inputAll">
+                          <?=Yii::t('app', 'All');?>
+                      </a>
+                  </li>
+                  <?php foreach($services as $serv):?>
+                  <li class="category-list__item">
+                      <input style="display: none;" type="checkbox" class="check<?=$serv->id?> inputCheck" <?php if($_GET['service'][$serv->id] == $serv->id) echo 'checked';?>  onclick="this.form.submit()" id="service<?=$serv->id?>" name="service[<?= $serv->id?>]" value="<?=$serv->id?>">
+                      <label class="labelcategory" for="service<?=$serv->id?>" <?php if($_GET['service'][$serv->id] == $serv->id) echo "style='color: red;'";?>><?=$serv->name?></label>
+                  </li>
+                  <?php endforeach;?>
+              </ul>
           </div>
       </div>
     </form>

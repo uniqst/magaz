@@ -43,4 +43,9 @@ class AttendanceValue extends \yii\db\ActiveRecord
             'profile_id' => Yii::t('app', 'Profile ID'),
         ];
     }
+
+    public function getAtt()
+    {
+        return $this->hasMany(Attendance::className(), ['id' => 'attendance_id']);
+    }
 }
