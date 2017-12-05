@@ -26,7 +26,7 @@ use yii\helpers\Url;
                     </div>
                     <div class="item-box__info">
                         <a href="<?=Url::to(['/stories/story', 'id' => $rand->id, 'name' => $rand->H1])?>">
-                            <?= Yii::t('app', substr($rand->short_description, 0, 20))?>
+                            <?= Yii::t('app', substr($rand->short_description, 0, 50))?>
                         </a>
                     </div>
                 </div>
