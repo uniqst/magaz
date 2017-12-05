@@ -159,12 +159,22 @@ class ProfileController extends Controller
                     $model->img_mw = $str . '.' . $model->imageFile->extension;
                 }
                 $model->save();
+            $oo = [];
+            if($_POST['option']) {
+                foreach ($_POST['option'] as $opt) {
+                    if (empty(AttendanceValue::find()->where(['profile_id' => $model->id, 'attendance_id' => $opt])->one())) {
+                        $op = new AttendanceValue();
+                        $op->profile_id = $model->id;
+                        $op->attendance_id = $opt;
+                        $op->save();
+                    }
+                    $oo[] = $opt;
 
-            foreach($_POST['option'] as $opt){
-                $op = new AttendanceValue();
-                $op->profile_id = $model->id;
-                $op->attendance_id = $opt;
-                $op->save();
+                }
+            }
+            $delete = AttendanceValue::find()->where(['profile_id' => $model->id])->andWhere(['not in', 'attendance_id', $oo])->all();
+            foreach($delete as $del){
+                $del->delete();
             }
                 
             foreach($_POST['value'] as $key=> $val){

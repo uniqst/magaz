@@ -96,11 +96,16 @@ $att = Attendance::find()->all();
     ?>
     <?= $form->field($value, 'value')->dropDownList($items, ['name' => 'value['.$cat->id.']'])->label($cat->name) ?>
 <?php endforeach;?>
-
+    <p><label class="control-label" for="filtersvalue-value">Services</label></p>
+    <p>
     <?php foreach($att as $a):?>
+        <?php if(empty(AttendanceValue::find()->where(['profile_id' => $model->id, 'attendance_id' => $a->id])->one())):?>
         <input type="checkbox" name="option[<?=$a->id?>]" value="<?=$a->id?>"><?=$a->name?>
+        <?php else:?>
+            <input type="checkbox" name="option[<?=$a->id?>]" checked value="<?=$a->id?>"><?=$a->name?>
+        <?php endif;?>
     <?php endforeach;?>
-
+    </p>
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
