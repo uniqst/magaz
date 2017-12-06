@@ -46,7 +46,7 @@ $prev = Profile::findOne($id-1);
             <!-- <div class="product-card"> -->
 
             <div class="col-12">
-                <h1 class="page-name"><?= $model->name?></h1>
+                <h2 class="page-name"><?= $model->name?></h2>
             </div>
 
             <div class="prev">
@@ -235,9 +235,9 @@ $prev = Profile::findOne($id-1);
             </div> -->
 
             <div class="mp-text-block">
-                <h2 class="mp-text-block__heading">
+                <h3 class="mp-text-block__heading">
                     <?=Yii::t('app', $model->H2);?>
-                </h2>
+                </h3>
                 <div class="mp-text-block__text">
                     <p>
                         <?= $model->text1000?>
