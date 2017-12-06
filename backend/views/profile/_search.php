@@ -23,6 +23,20 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'country') ?>
 
+    <?= $form->field($model, 'chest') ?>
+
+    <?= $form->field($model, 'hair') ?>
+
+    <?= $form->field($model, 'eye') ?>
+
+    <?= $form->field($model, 'language') ?>
+
+    <?= $form->field($model, 'country') ?>
+
+    <?= $form->field($model, 'city') ?>
+
+    <?= $form->field($model, 'working_hours') ?>
+
     <?= $form->field($model, 'about_myself') ?>
 
     <?php // echo $form->field($model, 'contacts') ?>

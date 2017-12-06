@@ -91,21 +91,21 @@ $prev = Profile::findOne($id-1);
                         </div>
                     </div>
                     <div class="price-block__prices">
-                        <ul class="eur active price-list" id="eur">
-                            <?php foreach($price_eur as $eur):?>
-                            <li class="price-item">
-                                <span class="duration"><?=Yii::t('app', $eur->name)?></span>
-                                <span class="incall"><?= $eur->incall ? $eur->incall . ' <i class="fa fa-eur" aria-hidden="true"></i>' : '-'?></span>
-                                <span class="outcall"><?=$eur->outcall ? $eur->outcall . ' <i class="fa fa-eur" aria-hidden="true"></i>' : '-'?></span>
-                            </li>
-                            <?php endforeach;?>
-                        </ul>
-                        <ul class="try price-list" id="try">
+                        <ul class="try active price-list" id="try">
                             <?php foreach($price_try as $eur):?>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', $eur->name)?></span>
                                 <span class="incall"><?= $eur->incall ? $eur->incall . ' <i class="fa fa-try" aria-hidden="true"></i>' : '-'?></span>
                                 <span class="outcall"><?=$eur->outcall ? $eur->outcall . ' <i class="fa fa-try" aria-hidden="true"></i>' : '-'?></span>
+                            </li>
+                            <?php endforeach;?>
+                        </ul>
+                        <ul class="eur price-list" id="eur">
+                            <?php foreach($price_eur as $eur):?>
+                            <li class="price-item">
+                                <span class="duration"><?=Yii::t('app', $eur->name)?></span>
+                                <span class="incall"><?= $eur->incall ? $eur->incall . ' <i class="fa fa-eur" aria-hidden="true"></i>' : '-'?></span>
+                                <span class="outcall"><?=$eur->outcall ? $eur->outcall . ' <i class="fa fa-eur" aria-hidden="true"></i>' : '-'?></span>
                             </li>
                             <?php endforeach;?>
                         </ul>
@@ -126,32 +126,60 @@ $prev = Profile::findOne($id-1);
                 <div class="card__info-list">
                     <ul>
                         <li class="info-list__item">
-                            <span class="property"><?=Yii::t('app', 'Age')?></span>
+                            <span class="property"><?=Yii::t('app', 'AGE')?></span>
                             <span class="value"><?= $model->age?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property"><?=Yii::t('app', 'Nationality')?></span>
+                            <span class="property"><?=Yii::t('app', 'NATIONALITY')?></span>
                             <span class="value"><?= $model->nationality?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property"><?=Yii::t('app', 'Height')?></span>
+                            <span class="property"><?=Yii::t('app', 'HEIGHT')?></span>
                             <span class="value"><?= $model->height?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property"><?=Yii::t('app', 'Weight')?></span>
+                            <span class="property"><?=Yii::t('app', 'WEIGHT')?></span>
                             <span class="value"><?= $model->weight?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property"><?=Yii::t('app', 'Mesurements')?></span>
+                            <span class="property"><?=Yii::t('app', 'CHEST')?></span>
+                            <span class="value"><?= $model->chest?></span>
+                        </li>
+                        <li class="info-list__item">
+                            <span class="property"><?=Yii::t('app', 'OPTIONS')?></span>
                             <span class="value"><?= $model->mesurements?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property"><?=Yii::t('app', 'Contact')?></span>
+                            <span class="property"><?=Yii::t('app', 'HAIR COLOR')?></span>
+                            <span class="value"><?= $model->hair?></span>
+                        </li>
+                        <li class="info-list__item">
+                            <span class="property"><?=Yii::t('app', 'EYE COLOR')?></span>
+                            <span class="value"><?= $model->eye?></span>
+                        </li>
+                        <li class="info-list__item">
+                            <span class="property"><?=Yii::t('app', 'LANGUAGES')?></span>
+                            <span class="value"><?= $model->language?></span>
+                        </li>
+                        <li class="info-list__item">
+                            <span class="property"><?=Yii::t('app', 'CONTACT')?></span>
                             <span class="value"><?= $contact->phone?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property"><?=Yii::t('app', 'Email')?></span>
+                            <span class="property"><?=Yii::t('app', 'EMAIL')?></span>
                             <span class="value"><?= $contact->email?></span>
+                        </li>
+                        <li class="info-list__item">
+                            <span class="property"><?=Yii::t('app', 'CITY')?></span>
+                            <span class="value"><?= $model->city?></span>
+                        </li>
+                        <li class="info-list__item">
+                            <span class="property"><?=Yii::t('app', 'WORKING HOURS')?></span>
+                            <span class="value"><?= $model->working_hours?></span>
+                        </li>
+                        <li class="info-list__item">
+                            <span class="property"><?=Yii::t('app', 'REGISTRATE')?></span>
+                            <span class="value"><?= $model->date?></span>
                         </li>
                     </ul>
                 </div>
