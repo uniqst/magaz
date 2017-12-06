@@ -39,7 +39,7 @@
                     <?php foreach($model as $want):?>
                       <div class="most-wanted-wrapper" id="girl-<?= $want->id?>">
                         <div class="most-wanted__name">
-                            <p><?= $want->name?></p>
+                            <p><a href="<?=\yii\helpers\Url::to(['/girls/girl', 'id' => $want->id, 'name' => $want->name])?>"><?= $want->name?></a></p>
                         </div>
                         <div class="most-wanted__description">
                             <p><?= $want->about_myself?></p>
