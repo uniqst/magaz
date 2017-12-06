@@ -14,7 +14,7 @@ use yii\helpers\Url;
                     </div>
                     <div class="item-box__info">
                         <span>Age: <?= Yii::t('app', $rand->age)?></span>
-                        <span>R<?= Yii::t('app', $rand->nationality)?></span>
+                        <span><?= Yii::t('app', $rand->nationality)?></span>
                     </div>
                 </div>
             </div>

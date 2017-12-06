@@ -55,7 +55,7 @@ use yii\helpers\Url;
                   <span class="value"><?= $product->mesurements?></span>
                 </li>
                 <li class="info-list__item">
-                  <span class="property"><?= Yii::t('app', 'Contact')?>Contact</span>
+                  <span class="property"><?= Yii::t('app', 'Contact')?></span>
                   <span class="value"><?= $product->phone?></span>
                 </li>
               </ul>

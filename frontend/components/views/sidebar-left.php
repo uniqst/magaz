@@ -50,7 +50,7 @@ use yii\helpers\Url;
                       <?php foreach($filter->category as $val):?>
                           <li class="category-list__item">
                               <input style="display: none;" type="checkbox" class="check<?=$val->id?> inputCheck" <?php if($_GET['value'][$val->id] == $val->id) echo 'checked';?>  onclick="this.form.submit()" id="value<?=$val->id?>" name="value[<?= $val->id?>]" value="<?=$val->id?>">
-                              <label class="labelcategory" for="value<?=$val->id?>" <?php if($_GET['value'][$val->id] == $val->id) echo "style='color: red;'";?>><?=$val->name?></label>
+                              <label class="labelcategory" for="value<?=$val->id?>" <?php if($_GET['value'][$val->id] == $val->id) echo "style='color: red;'";?>><?= Yii::t('app', $val->name)?></label>
                           </li>
                       <?php endforeach;?>
                   </ul>
@@ -67,7 +67,7 @@ use yii\helpers\Url;
                   <?php foreach($services as $serv):?>
                   <li class="category-list__item">
                       <input style="display: none;" type="checkbox" class="check<?=$serv->id?> inputCheck" <?php if($_GET['service'][$serv->id] == $serv->id) echo 'checked';?>  onclick="this.form.submit()" id="service<?=$serv->id?>" name="service[<?= $serv->id?>]" value="<?=$serv->id?>">
-                      <label class="labelcategory" for="service<?=$serv->id?>" <?php if($_GET['service'][$serv->id] == $serv->id) echo "style='color: red;'";?>><?=$serv->name?></label>
+                      <label class="labelcategory" for="service<?=$serv->id?>" <?php if($_GET['service'][$serv->id] == $serv->id) echo "style='color: red;'";?>><?= Yii::t('app', $serv->name)?></label>
                   </li>
                   <?php endforeach;?>
               </ul>
