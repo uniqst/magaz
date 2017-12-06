@@ -43,7 +43,14 @@ $att = Attendance::find()->all();
 
   ]);?>
 
-    <?= $form->field($model, 'name_description')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'name_description')->widget(CKEditor::className(), [
+
+  'editorOptions' => ElFinder::ckeditorOptions('elfinder',[
+        'preset' => 'full',
+        'inline' => false,
+    ]),
+
+  ]);?>
 
     <?= $form->field($model, 'description')->textArea(['maxlength' => true]) ?>
 

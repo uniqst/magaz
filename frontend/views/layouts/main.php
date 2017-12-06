@@ -82,7 +82,7 @@ AppAsset::register($this);
                 <li class="nav-item <?=Yii::$app->controller->id == 'casting' ? 'active' : ''?>">
                     <a class="nav-link" href="<?=Url::to(['/casting'])?>"><?=Yii::t('app', $pages[6]->text);?></a>
                 </li>
-                <li class="nav-item <?=Yii::$app->controller->id == 'reviews-for-escrort' ? 'active' : ''?>">
+                <li class="nav-item <?=Yii::$app->controller->id == 'reviews-for-escort' ? 'active' : ''?>">
                     <a class="nav-link" href="<?=Url::to(['/reviews-for-escort'])?>"><?=Yii::t('app', $pages[7]->text);?></a>
                 </li>
                 <li class="nav-item <?=Yii::$app->controller->id == 'contacts' ? 'active' : ''?>">
