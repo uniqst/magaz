@@ -28,6 +28,10 @@
                       <?php foreach($model as $want):?>
                             <img height="500" width="700" data-girl-id="girl-<?= $want->id?>" src="/photo/<?= $want->img_mw?>"  alt="Girl image">
                       <?php endforeach;?>
+                      <div class="most-wanted-slider__buttons">
+                          <button class="mv-prev"></button>
+                          <button class="mv-next"></button>
+                      </div>
                     </div>
                     <?php foreach($model as $want):?>
                       <div class="most-wanted-wrapper" id="girl-<?= $want->id?>">

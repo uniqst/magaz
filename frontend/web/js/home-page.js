@@ -214,4 +214,6 @@ $(document).ready(function () {
     $('.most-wanted-wrapper#' + $(this).attr('data-girl-id')).hide();
   });
 
+  
+
 });

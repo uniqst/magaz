@@ -630,15 +630,47 @@ img {
   padding-left: 25px;
   padding-right: 25px; }
 
-.most-wanted-slider__item .girl-image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 190px;
-  width: 100%; }
-  @media only screen and (min-width: 1400px) {
-    .most-wanted-slider__item .girl-image {
-      height: 250px; } }
+.most-wanted-slider {
+  position: relative; }
+  .most-wanted-slider__item .girl-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 190px;
+    width: 100%; }
+    @media only screen and (min-width: 1400px) {
+      .most-wanted-slider__item .girl-image {
+        height: 250px; } }
+  .most-wanted-slider__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 85px;
+    height: 42px; }
+    .most-wanted-slider__buttons .mv-prev,
+    .most-wanted-slider__buttons .mv-next {
+      width: 42px;
+      height: 42px;
+      outline: none;
+      border: none;
+      z-index: 10;
+      cursor: pointer;
+      background-color: #8c0032; }
+      .most-wanted-slider__buttons .mv-prev:before,
+      .most-wanted-slider__buttons .mv-next:before {
+        font-family: 'FontAwesome';
+        color: #c2185b;
+        font-size: 20px; }
+    .most-wanted-slider__buttons .mv-prev {
+      border-right: 1px solid #ca6a8a;
+      width: 43px; }
+      .most-wanted-slider__buttons .mv-prev:before {
+        content: '\f060'; }
+    .most-wanted-slider__buttons .mv-next:before {
+      content: '\f061'; }
 
 .stories-list-js .slick-next,
 .stories-list-js .slick-prev {
@@ -960,7 +992,7 @@ img {
   .bottom-items-slider .story .item-box__info {
     padding: 15px; }
     .bottom-items-slider .story .item-box__info a {
-      /*width: 100%;*/
+      width: 100%;
       overflow: hidden;
       text-overflow: ellipsis; }
   .bottom-items-slider .item-box__info {
@@ -1212,7 +1244,7 @@ img {
   .main-sidebar-right .story .item-box__info {
     padding: 15px; }
     .main-sidebar-right .story .item-box__info a {
-      /*width: 100%;*/
+      width: 100%;
       overflow: hidden;
       text-overflow: ellipsis;
       font-weight: 400; }
@@ -2022,92 +2054,38 @@ body {
     body {
       background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
       background-position: 60px 31px, 150px 35px, 230px 26px, 396px 41px, 473px 64px, 583px 54px, 583px 54px, 460px 138px, 299px 137px, 375px 206px;
-      background-size: 125px,
- 104px,
- 123px,
- 102px,
- 90px,
- 46px,
- 46px,
- 80px,
- 147px,
- 107px;
+      background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
       background-repeat: no-repeat; } }
   @media only screen and (min-width: 1200px) {
     body {
       background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
       background-position: 60px 50px, 150px 54px, 230px 45px, 396px 60px, 473px 83px, 583px 73px, 583px 73px, 460px 157px, 299px 156px, 375px 225px;
-      background-size: 125px,
- 104px,
- 123px,
- 102px,
- 90px,
- 46px,
- 46px,
- 80px,
- 147px,
- 107px;
+      background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
       background-repeat: no-repeat; } }
 
 @media only screen and (min-width: 1200px) {
   .main-header {
     background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
     background-position: 60px 110px, 150px 114px, 230px 105px, 396px 120px, 473px 143px, 583px 133px, 583px 133px, 460px 217px, 299px 216px, 375px 285px;
-    background-size: 125px,
- 104px,
- 123px,
- 102px,
- 90px,
- 46px,
- 46px,
- 80px,
- 147px,
- 107px;
+    background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
     background-repeat: no-repeat; } }
 
 .navbar-bottom {
   background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
   background-position: 60px 50px, 150px 54px, 230px 45px, 396px 60px, 473px 83px, 583px 73px, 583px 73px, 460px 157px, 299px 156px, 375px 225px;
-  background-size: 125px,
- 104px,
- 123px,
- 102px,
- 90px,
- 46px,
- 46px,
- 80px,
- 147px,
- 107px;
+  background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
   background-repeat: no-repeat; }
   @media only screen and (min-width: 768px) {
     .navbar-bottom {
       background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
       background-position: 60px -30px, 150px -26px, 230px -35px, 396px -20px, 473px 3px, 583px -7px, 583px -7px, 460px 77px, 299px 76px, 375px 145px;
-      background-size: 125px,
- 104px,
- 123px,
- 102px,
- 90px,
- 46px,
- 46px,
- 80px,
- 147px,
- 107px;
+      background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
       background-repeat: no-repeat; } }
   @media only screen and (min-width: 1200px) {
     .navbar-bottom {
       background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
       background-position: 60px -30px, 150px -26px, 230px -35px, 396px -20px, 473px 3px, 583px -7px, 583px -7px, 460px 77px, 299px 76px, 375px 145px;
-      background-size: 125px,
- 104px,
- 123px,
- 102px,
- 90px,
- 46px,
- 46px,
- 80px,
- 147px,
- 107px;
+      background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
       background-repeat: no-repeat; } }
 
 /*# sourceMappingURL=styles.css.map */
