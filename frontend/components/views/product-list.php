@@ -15,16 +15,16 @@ use yii\widgets\LinkPager;
                                 <div class="wrapper">
                                     <div class="info-card__name">
                                         <a href="<?=Url::to(['/girls/girl', 'id' => $profile->id, 'name' => $profile->name])?>">
-                                            <?=$profile->name?>
+                                            <?= Yii::t('app', $profile->name)?>
                                             <!-- <i class="add-button fa fa-plus"></i> -->
                                         </a>
                                     </div>
                                     <div class="info-card__about">
                                         <span class="age">Age <?=$profile->age?></span>
-                                        <span class="nationality"><?=$profile->nationality?></span>
+                                        <span class="nationality"><?= Yii::t('app', $profile->nationality)?></span>
                                     </div>
                                     <p class="info-card__more-info">
-                                        <?=$profile->name_description?>
+                                        <?= Yii::t('app', $profile->name_description)?>
                                     </p>
                                 </div>
                             </div>

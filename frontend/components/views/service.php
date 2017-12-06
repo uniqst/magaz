@@ -8,7 +8,7 @@ use yii\helpers\Url;
       <?php foreach($model as $services):?>
         <div class="post-item clearfix">
           <div class="image">
-            <a href="#">
+            <a href="<?=Url::to(['/girls/filters'])?>">
               <img src="/service/<?= $services->img?>" style="height:160px; width:160px" alt="Servise photo">
             </a>
           </div>

@@ -39,10 +39,10 @@
                     <?php foreach($model as $want):?>
                       <div class="most-wanted-wrapper" id="girl-<?= $want->id?>">
                         <div class="most-wanted__name">
-                            <p><?= $want->name?></p>
+                            <p><?= Yii::t('app', $want->name)?></p>
                         </div>
                         <div class="most-wanted__description">
-                            <p><?= $want->about_myself?></p>
+                            <p><?= Yii::t('app', $want->about_myself)?></p>
                         </div>
                       </div>
                   <?php endforeach;?>
