@@ -90,8 +90,10 @@ class ProfileController extends Controller
 
             $str = substr(md5(microtime() . rand(0, 9999)), 0, 20);
                 $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
-                $model->imageFile->saveAs('../../frontend/web/photo/' . $str . '.' . $model->imageFile->extension);
-                $model->img_mw = $str . '.' . $model->imageFile->extension;
+                if(isset($model->imageFile)) {
+                    $model->imageFile->saveAs('../../frontend/web/photo/' . $str . '.' . $model->imageFile->extension);
+                    $model->img_mw = $str . '.' . $model->imageFile->extension;
+                }
                 $model->save();
 
             foreach($_POST['option'] as $opt){

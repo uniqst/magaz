@@ -5,6 +5,9 @@
   <?= \frontend\components\SidebarLeft::widget();?>
 
   <div class="main-center-col col-xl-58p">
+        <?php if(Yii::$app->controller->id == 'reviews-for-escort'):?>
+          <?=\frontend\components\CommentsList::widget()?>
+      <?php endif;?>
 
    <?= frontend\components\Product::widget(); ?>
 
