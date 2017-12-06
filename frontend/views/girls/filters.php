@@ -2,7 +2,6 @@
 use yii\helpers\Url;
 ?>
 <div class="row stories-page">
-<?php print_r($_GET);?>
     <div class="col-12">
         <div class="row">
             <div class="mx-auto col-xl-58p">
