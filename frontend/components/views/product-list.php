@@ -24,7 +24,7 @@ use yii\widgets\LinkPager;
                                         <span class="nationality"><?=$profile->nationality?></span>
                                     </div>
                                     <p class="info-card__more-info">
-                                        <?=$profile->about_myself?>
+                                        <?=$profile->name_description?>
                                     </p>
                                 </div>
                             </div>

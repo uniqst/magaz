@@ -14,13 +14,7 @@ $prev = Profile::findOne($id-1);
 
 <div class="row stories-page">
 
-  <div class="col-12">
-    <div class="row">
-      <div class="mx-auto col-xl-58p">
-        <h2 class="page-name stories"><?=Yii::t('app', $model->name_description);?></h2>
-      </div>
-    </div>
-  </div>
+ 
   <div class="col-12">
     <div class="row">
       <div class="mx-auto col-xl-58p">
