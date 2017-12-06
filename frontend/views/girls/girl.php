@@ -181,9 +181,9 @@ $prev = Profile::findOne($id-1);
                 <div class="services" style="margin-top: -17px;">
                     <?php foreach($model->attVal as $at):?>
                         <?php if($at == end($model->attVal)):?>
-                            <a href="#"><?= $at->att->name?></a>
+                            <a href="<?=Url::to(['/girls/filters', 'service['. $at->att->id .']' => $at->att->id])?>"><?= $at->att->name?></a>
                         <?php else:?>
-                            <a href="#"><?= $at->att->name?>,</a>
+                            <a href="<?=Url::to(['/girls/filters', 'service['. $at->att->id .']' => $at->att->id])?>"><?= $at->att->name?>,</a>
                         <?php endif;?>
                     <?php endforeach;?>
                 </div>
