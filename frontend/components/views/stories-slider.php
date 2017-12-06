@@ -18,9 +18,9 @@ use yii\helpers\Url;
                                 </a>
                             </div>
                             <div class="post-info-container">
-                                <h2 class="title">
+                                <h3 class="title">
                                     <a href="<?=Url::to(['/stories/story', 'id' => $stor->id, 'name' => $stor->H1])?>"><?=Yii::t('app', $stor->H1);?></a>
-                                </h2>
+                                </h3>
                                 <div class="center-block">
                                     <p><?=Yii::t('app', $stor->short_description);?></p>
                                 </div>
@@ -38,9 +38,9 @@ use yii\helpers\Url;
                                 </a>
                             </div>
                             <div class="post-info-container">
-                                <h2 class="title">
+                                <h3 class="title">
                                     <a href="<?=Url::to(['/stories/story', 'id' => $stor->id, 'name' => $stor->H1])?>"><?=Yii::t('app', $stor->H1);?></a>
-                                </h2>
+                                </h3>
                                 <div class="center-block">
                                     <p><?=Yii::t('app', $stor->short_description);?></p>
                                 </div>
