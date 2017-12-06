@@ -11,6 +11,7 @@ $this->registerMetaTag([
 
 <div class="row">
   <div class="booking-page mx-auto col-xl-58p">
+    <h2 class="text-success"><?= Yii::$app->session->getFlash('send'); ?></h2>
     <?=\frontend\components\Comments::widget();?>
   </div>
 </div>
