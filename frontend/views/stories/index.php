@@ -12,7 +12,7 @@ $this->registerMetaTag([
   <div class="col-12">
     <div class="row">
       <div class="mx-auto col-xl-58p">
-        <h2 class="page-name stories"><?=Yii::t('app', $pages[1]->text);?></h1>
+        <h2 class="page-name stories"><?=Yii::t('app', $pages[1]->text);?></h2>
       </div>
     </div>
   </div>
@@ -50,9 +50,9 @@ $this->registerMetaTag([
           </div>
               
           <div class="post-info-container">
-            <h2 class="title">
+            <h3 class="title">
               <a href="<?= Url::to(['/stories/story', 'id' => $story->id, 'name' => $story->H1])?>"><?= $story->H1?></a>
-            </h2>
+            </h3>
             <div class="center-block">
               <p><?= mb_substr($story->short_description, 0,500)?></p>
             </div>
