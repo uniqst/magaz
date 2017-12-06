@@ -18,10 +18,9 @@ use yii\helpers\Url;
         </div>
 
         <div class="category-list-wraper collapse show" id="list-filtersasdas">
-            <h2 class="sb-heading-main sb-heading-main__link">
-              <?= Yii::t('app', 'City')?>
-
-          </h2>
+            <h3 class="sb-heading-main sb-heading-main__link">
+              <?= Yii::t('app', 'City')?> 
+            </h3>
           <ul class="category-list category-list--border collapse show">
 
             <?php foreach($city as $val):?>
@@ -32,9 +31,9 @@ use yii\helpers\Url;
           </ul>
         </div>
 
-          <h2 class="sb-heading-main sb-heading-main__link">
+          <h3 class="sb-heading-main sb-heading-main__link">
               <?= Yii::t('app', 'Filters')?>
-          </h2>
+          </h3>
 
           <div class="category-list-wraper collapse show" id="list-filtersasdas">
               <?php foreach($model as $filter):?>

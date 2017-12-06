@@ -3,7 +3,7 @@ use yii\helpers\Url;
 ?>
 
 <div class="posts-container services">
-      <h1 class="page-name">Services</h1>
+      <h2 class="page-name">Services</h2>
       <div class="posts-list">
       <?php foreach($model as $services):?>
         <div class="post-item clearfix">
@@ -13,9 +13,9 @@ use yii\helpers\Url;
             </a>
           </div>
           <div class="post-info-container">
-            <h2 class="title">
+            <h3 class="title">
               <?= $services->name?>
-            </h2>
+            </h3>
             <div class="center-block">
               <p>
               <?= mb_substr($services->content, 0, 1000).'...'?>
