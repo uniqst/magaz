@@ -25,7 +25,6 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
-
     <?php $this->head() ?>
 </head>
 <body>
@@ -46,19 +45,19 @@ AppAsset::register($this);
             </div>
         </a>
 
-<!--        <button -->
-<!--            class="navbar-toggler"-->
-<!--            type="button" -->
-<!--            data-toggle="collapse" -->
-<!--            data-target="#navbarSupportedContent"-->
-<!--            aria-controls="navbarSupportedContent"-->
-<!--            aria-expanded="false"-->
-<!--            aria-label="Toggle navigation"-->
-<!--        >-->
-<!--            <span class="navbar-toggler-icon">-->
-<!--                <i class="fa fa-bars fa-lg" aria-hidden="true"></i>-->
-<!--            </span>-->
-<!--        </button>-->
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon">
+                <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+            </span>
+        </button>
 
         <div class="collapse navbar-collapse main-header__nav" id="navbarSupportedContent">
             <ul class="navbar-nav navbar-main justify-content-center">
@@ -134,16 +133,7 @@ AppAsset::register($this);
             </ul>
         </div>
     </nav>
-    <script type="text/javascript">(function() {
-            if (window.pluso)if (typeof window.pluso.start == "function") return;
-            if (window.ifpluso==undefined) { window.ifpluso = 1;
-                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
-                s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
-                s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
-                var h=d[g]('body')[0];
-                h.appendChild(s);
-            }})();</script>
-    <div class="pluso" data-background="#ca567e" data-options="medium,round,line,vertical,nocounter,theme=04" data-services="twitter,facebook,pinterest,linkedin,google"></div>
+
     <div class="navbar-bottom navbar-bg-bottom ml-auto main-header__bottom-line">
         <div class="main-header__contacts d-xl-none">
 
@@ -179,6 +169,17 @@ AppAsset::register($this);
                 </li>
             </ul>
         </div>
+        <script type="text/javascript">(function() {
+                if (window.pluso)if (typeof window.pluso.start == "function") return;
+                if (window.ifpluso==undefined) { window.ifpluso = 1;
+                    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+                    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+                    var h=d[g]('body')[0];
+                    h.appendChild(s);
+                }})();</script>
+
+        <div class="pluso" data-background="#ca567e" data-options="medium,round,line,vertical,nocounter,theme=04" data-services="facebook,twitter,pinterest,linkedin,google"></div>
 <!--        <div class="main-header__social">-->
 <!--            --><?php //$sw = SocialWeb::find()->one();?>
 <!--            <ul class="social-list list-unstyled">-->

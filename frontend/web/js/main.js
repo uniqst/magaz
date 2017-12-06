@@ -6,3 +6,5 @@ $(document).ready(function(){
         $('#form').submit();
     })
 });
+
+$('.pluso').css({'position': 'fixed', 'right': '0', 'top' : '100px'});
