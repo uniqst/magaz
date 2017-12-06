@@ -75,6 +75,20 @@ $att = Attendance::find()->all();
 
     <?= $form->field($model, 'weight')->textInput() ?>
 
+    <?= $form->field($model, 'chest')->textInput() ?>
+
+    <?= $form->field($model, 'hair')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'eye')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'language')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'country')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'city')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'working_hours')->textInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'about_myself')->widget(CKEditor::className(), [
 
   'editorOptions' => ElFinder::ckeditorOptions('elfinder',[

@@ -49,6 +49,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'mesurements',
             'height',
             'weight',
+            'chest',
+            'hair',
+            'eye',
+            'language', 
+            'country', 
+            'city', 
+            'working_hours',
             [ 'attribute' => 'status',
                 'value' => function($model){
                     if($model->status == 1){
