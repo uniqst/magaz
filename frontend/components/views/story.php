@@ -10,7 +10,7 @@ use yii\helpers\Url;
         <ul>
           <?php foreach($model as $story):?>
           <div class="list-item">
-            <div class="photo" style="background-image: url(/story/<?= $story->img?>)">
+            <div class="photo" style="background-image: url(/stori/<?= $story->img?>)">
             </div>
             <div class="article">
               <div class="article__title">

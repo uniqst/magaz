@@ -86,8 +86,8 @@ $prev = Profile::findOne($id-1);
                 <div class="price-block">
                     <div class="price-block__tabs">
                         <div class="currency">
-                            <a href="#" class="active text-left" data-type="eur"><?=Yii::t('app', 'eur')?></a>
-                            <a href="#" class="text-center" data-type="try"><?=Yii::t('app', 'try')?></a>
+                            <a href="#" class="active text-left" data-type="try"><?=Yii::t('app', 'try')?></a>
+                            <a href="#" class="text-center" data-type="eur"><?=Yii::t('app', 'eur')?></a>
                             <a href="#" class="text-right" data-type="usd"><?=Yii::t('app', 'usd')?></a>
                         </div>
                         <div class="titles">
@@ -101,8 +101,8 @@ $prev = Profile::findOne($id-1);
                             <?php foreach($price_eur as $eur):?>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', $eur->name)?></span>
-                                <span class="incall"><?= $eur->incall?> <i class="fa fa-eur" aria-hidden="true"></i></span>
-                                <span class="outcall"><?=$eur->outcall?> <i class="fa fa-eur" aria-hidden="true"></i></span>
+                                <span class="incall"><?= $eur->incall ? $eur->incall . ' <i class="fa fa-eur" aria-hidden="true"></i>' : '-'?></span>
+                                <span class="outcall"><?=$eur->outcall ? $eur->outcall . ' <i class="fa fa-eur" aria-hidden="true"></i>' : '-'?></span>
                             </li>
                             <?php endforeach;?>
                         </ul>
@@ -110,8 +110,8 @@ $prev = Profile::findOne($id-1);
                             <?php foreach($price_try as $eur):?>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', $eur->name)?></span>
-                                <span class="incall"><?= $eur->incall?> <i class="fa fa-try" aria-hidden="true"></i></span>
-                                <span class="outcall"><?=$eur->outcall?> <i class="fa fa-try" aria-hidden="true"></i></span>
+                                <span class="incall"><?= $eur->incall ? $eur->incall . ' <i class="fa fa-try" aria-hidden="true"></i>' : '-'?></span>
+                                <span class="outcall"><?=$eur->outcall ? $eur->outcall . ' <i class="fa fa-try" aria-hidden="true"></i>' : '-'?></span>
                             </li>
                             <?php endforeach;?>
                         </ul>
@@ -119,8 +119,8 @@ $prev = Profile::findOne($id-1);
                             <?php foreach($price_usd as $eur):?>
                             <li class="price-item">
                                 <span class="duration"><?=Yii::t('app', $eur->name)?></span>
-                                <span class="incall"><?= $eur->incall?> <i class="fa fa-usd" aria-hidden="true"></i></span>
-                                <span class="outcall"><?=$eur->outcall?> <i class="fa fa-usd" aria-hidden="true"></i></span>
+                                <span class="incall"><?= $eur->incall ? $eur->incall . ' <i class="fa fa-usd" aria-hidden="true"></i>' : '-'?></span>
+                                <span class="outcall"><?=$eur->outcall ? $eur->outcall . ' <i class="fa fa-usd" aria-hidden="true"></i>' : '-'?> </span>
                             </li>
                             <?php endforeach;?>
                         </ul>
