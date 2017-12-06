@@ -6,6 +6,10 @@
                             <div class="girl-image" height="500" width="700"  style="background-image: url(/photo/<?= $photo->src?>)"></div>
                         </div>
                         <?php endforeach;?>
+                        <div class="most-wanted-slider__buttons">
+                            <button class="mv-prev"></button>
+                            <button class="mv-next"></button>
+                        </div>
                     </div>
                     <div class="most-wanted-info-wrapper">
                         <div class="most-wanted__name">
