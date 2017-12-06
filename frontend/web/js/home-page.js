@@ -216,18 +216,18 @@ $(document).ready(function () {
   // Hide by default all info blocks except the first
   $('.most-wanted-new-slider-js > img:gt(0)').each(function () {
     $('.most-wanted-wrapper#' + $(this).attr('data-girl-id')).hide();
-    lastGirl = $(this).attr('data-girl-id');
+    // lastGirl = $(this).attr('data-girl-id');
   });
 
   $('.most-wanted-new-slider-js .mv-next').click(function () {
     dick_slider.prev();
 
-    $('.most-wanted-wrapper#' + lastGirl).hide();
+    // $('.most-wanted-wrapper#' + lastGirl).hide();
 
     var next = $('.most-wanted-wrapper:visible');
     next.hide();
     // console.log(next.hide());
-    next = next.next();
+    next = next.next('.most-wanted-wrapper');
     // console.log('next is: ', next);
     if (next.length) {
       next.show();
@@ -236,25 +236,27 @@ $(document).ready(function () {
       // console.log('hello from else');
       // console.log($('.most-wanted-wrapper'));
     }
-
+    // lastGirl = next.attr('id');
     // next.hide();
     // next.next().show();
   });
 
   $('.most-wanted-new-slider-js .mv-prev').click(function () {
     dick_slider.next();
-
-    $('.most-wanted-wrapper#' + lastGirl).hide();
+    // $('.most-wanted-wrapper#' + lastGirl).hide();
 
     var prev = $('.most-wanted-wrapper:visible');
-    console.log(prev.hide());
-    prev = prev.prev();
+    // console.log(prev.hide());
+    prev.hide();
+    prev = prev.prev('.most-wanted-wrapper');
 
-    // console.log('next is: ', next);
+    // console.log('prev is: ', prev);
+
     if (prev.length) {
       prev.show();
     } else {
       prev = $('.most-wanted-wrapper').last().show();
+      // console.log(prev);
     }
   });
 });
