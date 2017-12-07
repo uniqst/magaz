@@ -164,12 +164,46 @@ $(document).ready(function () {
     cssEase: 'linear'
   });
 
+  // This is from "most wanted" widjet
   $('.most-wanted-slider-js').slick({
     dots: false,
     speed: 500,
     arrows: true,
     fade: true,
     cssEase: 'linear'
+  });
+
+  $('.most-wanted-widget > .most-wanted-info-wrapper:gt(0)').hide();
+
+  $('.most-wanted-widget .slick-next').click(function () {
+    var next = $('.most-wanted-info-wrapper:visible');
+    next.hide();
+    // console.log(next.hide());
+    next = next.next('.most-wanted-info-wrapper');
+    // console.log('next is: ', next);
+    if (next.length) {
+      next.show();
+    } else {
+      next = $('.most-wanted-info-wrapper').first().show();
+      // console.log('hello from else');
+      // console.log($('.most-wanted-wrapper'));
+    }
+  });
+
+  $('.most-wanted-widget .slick-prev').click(function () {
+    var prev = $('.most-wanted-info-wrapper:visible');
+    // console.log(prev.hide());
+    prev.hide();
+    prev = prev.prev('.most-wanted-info-wrapper');
+
+    // console.log('prev is: ', prev);
+
+    if (prev.length) {
+      prev.show();
+    } else {
+      prev = $('.most-wanted-info-wrapper').last().show();
+      // console.log(prev);
+    }
   });
 
   dick_slider = $('.most-wanted-new-slider-js').waterwheelCarousel({
