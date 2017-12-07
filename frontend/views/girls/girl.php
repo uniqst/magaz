@@ -46,7 +46,7 @@ $prev = Profile::findOne($id-1);
             <!-- <div class="product-card"> -->
 
             <div class="col-12">
-                <h2 class="page-name"><?= $model->name?></h2>
+                <h2 class="page-name"><?=Yii::t('app', $model->name);?></h2>
             </div>
 
             <div class="prev">
@@ -193,9 +193,9 @@ $prev = Profile::findOne($id-1);
                 <div class="services">
                     <?php foreach($model->value as $cat):?>
                         <?php if($cat == end($model->value)):?>
-                    <a href="#"><?= $cat->category->name?></a>
+                    <a href="#"><?=Yii::t('app', $cat->category->name)?></a>
                             <?php else:?>
-                            <a href="#"><?= $cat->category->name?>,</a>
+                            <a href="#"><?=Yii::t('app', $cat->category->name)?></a>
                         <?php endif;?>
                     <?php endforeach;?>
                 </div>
@@ -212,7 +212,7 @@ $prev = Profile::findOne($id-1);
                
             </div>
             <div class="col-12">
-                <h3 class="headline about"><?=Yii::t('app', 'About')?> <?= $model->name?></h3>
+                <h3 class="headline about"><?=Yii::t('app', 'About')?> <?=Yii::t('app', $model->name)?></h3>
                 <div class="description">
                     <?=Yii::t('app', "$model->about_myself")?>
                 </div>

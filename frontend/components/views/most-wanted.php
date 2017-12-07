@@ -13,7 +13,7 @@
                     </div>
                     <div class="most-wanted-info-wrapper">
                         <div class="most-wanted__name">
-                            <p><?= $model->name?></p>
+                            <p><?= Yii::t('app', $model->name)?></p>
                         </div>
                         <div class="most-wanted__description">
                             <p><?=Yii::t('app', $model->most_wanted);?></p>
