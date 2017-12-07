@@ -114,7 +114,8 @@
     // ;
 
     background-image: 
-        // url('../img/buble.svg'),
+        url('../img/buble.svg'),
+        url('../img/buble.svg'),
         url('../img/buble.svg'),
         url('../img/buble.svg'),
         url('../img/buble.svg'),
@@ -136,6 +137,8 @@
         $x + 523px $y + 23px,
         $x + 400px $y + 107px,
         $x + 239px $y + 106px,
+        $x + -20px $y + 130px,
+        $x + 192px $y + 127px,
         $x + 315px $y + 175px;
 
     background-size:
@@ -148,6 +151,8 @@
         46px,
         80px,
         147px,
+        120px,
+        67px,
         107px;
 
     background-repeat: no-repeat;
