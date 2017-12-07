@@ -67,7 +67,8 @@
 }
 
 .main-header {
-    min-height: 57px;
+    // min-height: 57px;
+    min-height: 78px;
     background-color: #c2185b;
     position: relative;
 
@@ -80,6 +81,11 @@
     }
     @include mq(lg) {
         flex-direction: initial;
+        height: 100px;        
+    }
+
+    @include mq(xl) {
+        // height: 100px;        
     }
 
     &__logo {
@@ -117,7 +123,9 @@
     }
 
     &__nav {
-        // z-index: 1000;
+        @include mq(lg) {
+            align-self: flex-end;
+        }
         .navbar-nav {
         }
     }
@@ -126,7 +134,12 @@
         background-color: #8c0032;
         // box-shadow: inset 0 -10px 10px -10px rgba(0,0,0,0.5);
         // box-shadow: 0 0 10px rgba(0,0,0,0.5);
-        min-height: 60px;
+
+        min-height: 99px;
+
+        // временно
+        // min-height: 400px;
+
         padding-top: 20px;
         padding-bottom: 68px;
         margin-bottom: 20;
@@ -343,6 +356,7 @@
     background-color: #c2185b;
     @include mq(md) {
         background-color: #8c0032;
+        background-color: transparent;
     }
 
     > a.nav-link,
@@ -353,7 +367,7 @@
 .navbar-main li:hover,
 .navbar-main li.active{
     border-color: #FFC1E3;
-    background: #A3335B;
+    background: rgba(255, 255, 255, .4);
 }
 .navbar-main li a:hover{
     color: white;

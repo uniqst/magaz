@@ -60,6 +60,7 @@
 
 }
 
+
 @mixin bubbles-pos($x: 0, $y: 0) {
     background-position: 
         $x + 0px  $y + 0px,
@@ -73,23 +74,10 @@
         $x + 239px $y + 106px,
         $x + 315px $y + 175px,
         $x + 315px $y + 175px,
+        $x + 315px, $y + 175px,
         $x + 0px $y + 0px;
 }
 
-@mixin bubbles($x: 0, $y: 0) {
-    // background-color: transparent;
-    background-image: 
-        url('../img/buble.svg'),
-        url('../img/buble.svg'),
-        url('../img/buble.svg'),
-        url('../img/buble.svg'),
-        url('../img/buble.svg'),
-        url('../img/buble.svg'),
-        url('../img/buble.svg'),
-        url('../img/buble.svg'),
-        url('../img/buble.svg'),
-        url('../img/buble.svg'),
-        url('../img/buble.svg');
 
     // background-position: 
     //     0px  0px,
@@ -104,67 +92,110 @@
     //     315px 175px,
     //     315px 175px,
     //     0px 0px;
-    background-position: 
-        $x + 0px  $y + 0px,
-        $x + 90px $y + 4px,
-        $x + 170px $y + -5px,
-        $x + 336px $y + 10px,
-        $x + 413px $y + 33px,
-        $x + 523px $y + 23px,
-        $x + 523px $y + 23px,
-        $x + 400px $y + 107px,
-        $x + 239px $y + 106px,
-        $x + 315px $y + 175px;
 
-    background-size:
-        125px,
-        104px,
-        123px,
-        102px,
-        90px,
-        46px,
-        46px,
-        80px,
-        147px,
-        107px;
+@function bubble-size($radius) {
+    @return $radius * 2;
+}
+
+@function bubble-pos($cx, $cy, $radius) {
+    @return $cx - $radius, $cy - $radius;
+}
+
+@mixin bubbles-r($x: 0, $y: 0) {
+    
+    background-image: url('../img/bubbles-right.png');
+
+    background-position: $x, $y;
 
     background-repeat: no-repeat;
 }
 
-body {
-    position: relative;
-    @include mq(md) {
-        @include bubbles(60px , 31px);
-    }
-    @include mq(xl) {
-        @include bubbles(60px, 50px);
-    }
+@mixin bubbles($x: 0, $y: 0) {
+    // background-color: transparent;
+
+    // background:
+    //     url('../img/buble.svg')
+    //     $x + 0px  $y + 0px / 
+    //     125px,
+    //     url('../img/buble.svg')
+    //     $x + 0px  $y + 0px / 
+    //     125px
+    // ;
+
+    // background-image: 
+    //     url('../img/buble.svg'),
+    //     url('../img/buble.svg'),
+    //     url('../img/buble.svg'),
+    //     url('../img/buble.svg'),
+    //     url('../img/buble.svg'),
+    //     url('../img/buble.svg'),
+    //     url('../img/buble.svg'),
+    //     url('../img/buble.svg'),
+    //     url('../img/buble.svg'),
+    //     url('../img/buble.svg'),
+    //     url('../img/buble.svg'),
+    //     url('../img/buble.svg');
+
+    // background-position: 
+    //     $x + 0px  $y + 0px,
+    //     $x + 90px $y + 4px,
+    //     $x + 170px $y + -5px,
+    //     $x + 336px $y + 10px,
+    //     $x + 413px $y + 33px,
+    //     $x + 523px $y + 23px,
+    //     $x + 523px $y + 23px,
+    //     $x + 400px $y + 107px,
+    //     $x + 239px $y + 106px,
+    //     $x + -20px $y + 130px,
+    //     $x + 192px $y + 127px,
+    //     $x + 315px $y + 175px;
+
+    // background-size:
+    //     125px,
+    //     104px,
+    //     123px,
+    //     102px,
+    //     90px,
+    //     46px,
+    //     46px,
+    //     80px,
+    //     147px,
+    //     120px,
+    //     67px,
+    //     107px;
+
+    background-image: url('../img/bubbles-left.png');
+    background-position: $x $y;
+    background-repeat: no-repeat;
 }
 
 
 
 .main-header {
-    @include mq(xl) {
-        @include bubbles(60px , 60px + 50px);
+    @include mq(md) {
+        @include bubbles(60px , 0);
+    }
+    @include mq(lg) {
+        @include bubbles(200px, 0);
     }
 }
 
 .navbar-bottom {
-    @include bubbles(60px , 50px);
+    @include bubbles(0, 0);
     @include mq(md) {
-        @include bubbles(60px , -30px);
+        @include bubbles(60px, -78px);
     }
-    @include mq(xl) {
-        @include bubbles(60px , -30px);
+    @include mq(lg) {
+        @include bubbles(200px, -100px);
     }
 }
 
-.bubbles {
-    // height: 400px;
-    // width: 100%;
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // z-index: 1000;
-    // opacity: .3;
+body {
+    position: relative;
+    @include mq(md) {
+        @include bubbles(60px, 0);
+    }
+    @include mq(lg) {
+        @include bubbles(200px, 0);
+    }
 }
