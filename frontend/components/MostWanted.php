@@ -8,7 +8,7 @@ Class MostWanted extends Widget{
 
 	public function run(){
 
-		$model = Profile::find()->orderBy(new Expression('rand()'))->with('photo')->one();
+		$model = Profile::find()->orderBy(new Expression('rand()'))->limit(3)->all();
 		return $this->render('most-wanted', compact('model'));
 
 	}

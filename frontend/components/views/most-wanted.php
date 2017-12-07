@@ -1,9 +1,14 @@
+<?php
+use yii\helpers\Url;
+?>
 <div class="most-wanted-block most-wanted-widget">
                     <h3 class="page-name"><?=Yii::t('app', 'Most Wanted');?></h3>
                     <div class="most-wanted-slider most-wanted-slider-js">
-                        <?php foreach($model->photo as $photo):?>
+                        <?php foreach($model as $want):?>
                             <div class="most-wanted-slider__item">
-                                <div class="girl-image" height="500" width="700"  style="background-image: url(/photo/<?= $photo->src?>)"></div>
+                                <a href="<?=Url::to(['/girls/girl', 'id' => $want->id, 'name' => $want->name])?>">
+                                    <div class="girl-image" height="500" width="700"  style="background-image: url(/photo/<?= $want->img_mw?>)"></div>
+                                </a>
                             </div>
                         <?php endforeach;?>
                         <!-- <div class="most-wanted-slider__buttons">
@@ -11,13 +16,15 @@
                             <button class="mv-next"></button>
                         </div> -->
                     </div>
-                    <?php foreach($model->photo as $photo):?>
+                    <?php foreach($model as $want):?>
                         <div class="most-wanted-info-wrapper">
                             <div class="most-wanted__name">
-                                <p>Name</p>
+                                <a href="<?=Url::to(['/girls/girl', 'id' => $want->id, 'name' => $want->name])?>">
+                                <p><?= $want->name?></p>
+                                </a>
                             </div>
                             <div class="most-wanted__description">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ipsa totam repellendus et a sapiente, eveniet incidunt, vero consequuntur nobis laudantium odio accusantium reprehenderit id natus, expedita aut doloribus deleniti.</p>
+                                <p><?= $want->most_wanted?></p>
                             </div>
                         </div>
                     <?php endforeach;?>
