@@ -1121,11 +1121,7 @@
                 "php",
                 "utf-8"
             ],
-<<<<<<< HEAD
             "time": "2017-12-01 12:31:32"
-=======
-            "time": "2017-12-01T12:31:32+00:00"
->>>>>>> 88aff1ddf2c34ba1dbee7812df409728994e6f46
         },
         {
             "name": "mrclay/jsmin-php",
@@ -1791,11 +1787,7 @@
             ],
             "description": "File manager for web",
             "homepage": "http://elfinder.org",
-<<<<<<< HEAD
             "time": "2017-12-02 09:45:46"
-=======
-            "time": "2017-12-02T09:45:46+00:00"
->>>>>>> 88aff1ddf2c34ba1dbee7812df409728994e6f46
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1957,12 +1949,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "fd5ae31660c0e8898086dc48b147843e228ab1f3"
+                "reference": "b6a90bf8abacc6e2a7f74257d8c32485e7780976"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/fd5ae31660c0e8898086dc48b147843e228ab1f3",
-                "reference": "fd5ae31660c0e8898086dc48b147843e228ab1f3",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/b6a90bf8abacc6e2a7f74257d8c32485e7780976",
+                "reference": "b6a90bf8abacc6e2a7f74257d8c32485e7780976",
                 "shasum": ""
             },
             "require": {
@@ -2049,11 +2041,7 @@
                 "framework",
                 "yii2"
             ],
-<<<<<<< HEAD
-            "time": "2017-12-02 05:26:55"
-=======
-            "time": "2017-12-02T05:26:55+00:00"
->>>>>>> 88aff1ddf2c34ba1dbee7812df409728994e6f46
+            "time": "2017-12-02 15:24:56"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -2697,11 +2685,7 @@
                 "faker",
                 "fixtures"
             ],
-<<<<<<< HEAD
             "time": "2017-12-01 14:02:51"
-=======
-            "time": "2017-12-01T14:02:51+00:00"
->>>>>>> 88aff1ddf2c34ba1dbee7812df409728994e6f46
         },
         {
             "name": "guzzlehttp/psr7",
@@ -2816,11 +2800,7 @@
                 "object",
                 "object graph"
             ],
-<<<<<<< HEAD
             "time": "2017-11-29 14:36:38"
-=======
-            "time": "2017-11-29T14:36:38+00:00"
->>>>>>> 88aff1ddf2c34ba1dbee7812df409728994e6f46
         },
         {
             "name": "phar-io/manifest",
@@ -2984,12 +2964,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "c19b4d170c5a9cc9d93d3d63d7125f894f2726b1"
+                "reference": "bab88701ea52d718b4d56728670f43a456720e6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/c19b4d170c5a9cc9d93d3d63d7125f894f2726b1",
-                "reference": "c19b4d170c5a9cc9d93d3d63d7125f894f2726b1",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/bab88701ea52d718b4d56728670f43a456720e6b",
+                "reference": "bab88701ea52d718b4d56728670f43a456720e6b",
                 "shasum": ""
             },
             "require": {
@@ -3001,6 +2981,7 @@
             "require-dev": {
                 "doctrine/instantiator": "^1.0",
                 "mockery/mockery": "^1.0",
+                "phpstan/phpstan": "^0.9.0",
                 "phpunit/phpunit": "^6.4"
             },
             "type": "library",
@@ -3025,11 +3006,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-<<<<<<< HEAD
-            "time": "2017-11-30 09:27:01"
-=======
-            "time": "2017-11-30T09:27:01+00:00"
->>>>>>> 88aff1ddf2c34ba1dbee7812df409728994e6f46
+            "time": "2017-12-02 18:12:29"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -3180,7 +3157,6 @@
             "time": "2017-11-24 13:59:53"
         },
         {
-<<<<<<< HEAD
             "name": "phpunit/php-code-coverage",
             "version": "5.2.x-dev",
             "source": {
@@ -3244,8 +3220,6 @@
             "time": "2017-11-28 06:05:44"
         },
         {
-=======
->>>>>>> 88aff1ddf2c34ba1dbee7812df409728994e6f46
             "name": "phpunit/php-file-iterator",
             "version": "1.4.x-dev",
             "source": {
@@ -3388,25 +3362,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "a60fc2ad92986d9f951a91012c5083eed3b2a92a"
+                "reference": "13eb9aba9626b1a3811c6a492acc9669d24bb85a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/a60fc2ad92986d9f951a91012c5083eed3b2a92a",
-                "reference": "a60fc2ad92986d9f951a91012c5083eed3b2a92a",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/13eb9aba9626b1a3811c6a492acc9669d24bb85a",
+                "reference": "13eb9aba9626b1a3811c6a492acc9669d24bb85a",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
-                "php": "^7.1"
+                "php": "^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7.0"
+                "phpunit/phpunit": "^6.2.4"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
@@ -3429,11 +3403,7 @@
             "keywords": [
                 "tokenizer"
             ],
-<<<<<<< HEAD
             "time": "2017-11-27 08:47:38"
-=======
-            "time": "2017-11-28T13:47:13+00:00"
->>>>>>> 88aff1ddf2c34ba1dbee7812df409728994e6f46
         },
         {
             "name": "phpunit/phpunit",
@@ -3517,11 +3487,7 @@
                 "testing",
                 "xunit"
             ],
-<<<<<<< HEAD
             "time": "2017-12-01 11:07:45"
-=======
-            "time": "2017-12-01T11:07:45+00:00"
->>>>>>> 88aff1ddf2c34ba1dbee7812df409728994e6f46
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -4299,12 +4265,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "9468ad3fba3a5e1f0dc12a96e50e84cddb923cf0"
+                "reference": "2cdef78de8f54f68ff16a857e710e7302b47d4c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/9468ad3fba3a5e1f0dc12a96e50e84cddb923cf0",
-                "reference": "9468ad3fba3a5e1f0dc12a96e50e84cddb923cf0",
+                "url": "https://api.github.com/repos/symfony/console/zipball/2cdef78de8f54f68ff16a857e710e7302b47d4c7",
+                "reference": "2cdef78de8f54f68ff16a857e710e7302b47d4c7",
                 "shasum": ""
             },
             "require": {
@@ -4360,11 +4326,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-            "time": "2017-11-29 13:28:14"
-=======
-            "time": "2017-11-29T13:28:14+00:00"
->>>>>>> 88aff1ddf2c34ba1dbee7812df409728994e6f46
+            "time": "2017-12-02 18:20:11"
         },
         {
             "name": "symfony/css-selector",
@@ -4758,11 +4720,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
             "time": "2017-11-29 13:28:14"
-=======
-            "time": "2017-11-29T13:28:14+00:00"
->>>>>>> 88aff1ddf2c34ba1dbee7812df409728994e6f46
         },
         {
             "name": "theseer/tokenizer",
@@ -4954,12 +4912,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-gii.git",
-                "reference": "9be77c1ade3a1990b1ab69ca617bed3372c09118"
+                "reference": "059b0b154b5bb3bbee47698f758f7a60e00da3da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/9be77c1ade3a1990b1ab69ca617bed3372c09118",
-                "reference": "9be77c1ade3a1990b1ab69ca617bed3372c09118",
+                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/059b0b154b5bb3bbee47698f758f7a60e00da3da",
+                "reference": "059b0b154b5bb3bbee47698f758f7a60e00da3da",
                 "shasum": ""
             },
             "require": {
@@ -4999,11 +4957,7 @@
                 "gii",
                 "yii2"
             ],
-<<<<<<< HEAD
-            "time": "2017-11-27 20:10:28"
-=======
-            "time": "2017-11-27T20:10:28+00:00"
->>>>>>> 88aff1ddf2c34ba1dbee7812df409728994e6f46
+            "time": "2017-12-02 21:50:10"
         }
     ],
     "aliases": [],
