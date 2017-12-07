@@ -1243,7 +1243,7 @@ img {
   .main-sidebar-right .story .item-box__info {
     padding: 15px; }
     .main-sidebar-right .story .item-box__info a {
-      width: 100%;
+      
       overflow: hidden;
       text-overflow: ellipsis;
       font-weight: 400; }

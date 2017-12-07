@@ -179,7 +179,7 @@ $prev = Profile::findOne($id-1);
                         </li>
                         <li class="info-list__item">
                             <span class="property"><?=Yii::t('app', 'REGISTRATE')?></span>
-                            <span class="value"><?= $model->date?></span>
+                            <span class="value"><?= date('d-m-Y', time($model->date))?></span>
                         </li>
                     </ul>
                 </div>
