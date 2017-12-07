@@ -992,6 +992,7 @@ img {
   .bottom-items-slider .story .item-box__info {
     padding: 15px; }
     .bottom-items-slider .story .item-box__info a {
+      width: 100%;
       overflow: hidden;
       text-overflow: ellipsis; }
   .bottom-items-slider .item-box__info {
@@ -1707,7 +1708,7 @@ img {
     background-position: center; }
   .main-header__bottom-line {
     background-color: #8c0032;
-    min-height: 60px;
+    min-height: 99px;
     padding-top: 20px;
     padding-bottom: 68px;
     margin-bottom: 20; }
@@ -2066,92 +2067,38 @@ body {
     body {
       background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
       background-position: 60px 31px, 150px 35px, 230px 26px, 396px 41px, 473px 64px, 583px 54px, 583px 54px, 460px 138px, 299px 137px, 375px 206px;
-      background-size: 125px,
- 104px,
- 123px,
- 102px,
- 90px,
- 46px,
- 46px,
- 80px,
- 147px,
- 107px;
+      background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
       background-repeat: no-repeat; } }
   @media only screen and (min-width: 1200px) {
     body {
       background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
       background-position: 60px 50px, 150px 54px, 230px 45px, 396px 60px, 473px 83px, 583px 73px, 583px 73px, 460px 157px, 299px 156px, 375px 225px;
-      background-size: 125px,
- 104px,
- 123px,
- 102px,
- 90px,
- 46px,
- 46px,
- 80px,
- 147px,
- 107px;
+      background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
       background-repeat: no-repeat; } }
 
 @media only screen and (min-width: 1200px) {
   .main-header {
     background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
     background-position: 60px 110px, 150px 114px, 230px 105px, 396px 120px, 473px 143px, 583px 133px, 583px 133px, 460px 217px, 299px 216px, 375px 285px;
-    background-size: 125px,
- 104px,
- 123px,
- 102px,
- 90px,
- 46px,
- 46px,
- 80px,
- 147px,
- 107px;
+    background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
     background-repeat: no-repeat; } }
 
 .navbar-bottom {
   background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
   background-position: 60px 50px, 150px 54px, 230px 45px, 396px 60px, 473px 83px, 583px 73px, 583px 73px, 460px 157px, 299px 156px, 375px 225px;
-  background-size: 125px,
- 104px,
- 123px,
- 102px,
- 90px,
- 46px,
- 46px,
- 80px,
- 147px,
- 107px;
+  background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
   background-repeat: no-repeat; }
   @media only screen and (min-width: 768px) {
     .navbar-bottom {
       background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
       background-position: 60px -30px, 150px -26px, 230px -35px, 396px -20px, 473px 3px, 583px -7px, 583px -7px, 460px 77px, 299px 76px, 375px 145px;
-      background-size: 125px,
- 104px,
- 123px,
- 102px,
- 90px,
- 46px,
- 46px,
- 80px,
- 147px,
- 107px;
+      background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
       background-repeat: no-repeat; } }
   @media only screen and (min-width: 1200px) {
     .navbar-bottom {
       background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
       background-position: 60px -30px, 150px -26px, 230px -35px, 396px -20px, 473px 3px, 583px -7px, 583px -7px, 460px 77px, 299px 76px, 375px 145px;
-      background-size: 125px,
- 104px,
- 123px,
- 102px,
- 90px,
- 46px,
- 46px,
- 80px,
- 147px,
- 107px;
+      background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
       background-repeat: no-repeat; } }
 
 /*# sourceMappingURL=styles.css.map */
