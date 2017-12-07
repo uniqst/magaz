@@ -1685,10 +1685,23 @@ img {
       -webkit-transform: translate(45px, 0);
               transform: translate(45px, 0); } }
   .main-header__logo .logo-image {
+    position: relative;
     margin-right: auto;
-    width: 77px;
-    height: 34px;
+    width: 100px;
+    height: 58px;
     background-image: url("../img/brand-logo-white.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .main-header__logo .logo-image__lips {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 63px;
+    height: 51px;
+    -webkit-transform: translate(80%, 80%);
+            transform: translate(80%, 80%);
+    background-image: url("../img/lips-white.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; }
