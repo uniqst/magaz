@@ -1173,9 +1173,10 @@ img {
 
 .main-sidebar-right {
   margin-right: auto;
-  background-image: -webkit-gradient(linear, right top, left top, from(#8c0032), color-stop(65%, #8c0032), color-stop(65%, #c2185b));
-  background-image: linear-gradient(to left, #8c0032, #8c0032 65%, #c2185b 65%);
-  padding-bottom: 20px; }
+  background: url("../img/bubbles-sm.png") -15px -15px, -webkit-gradient(linear, right top, left top, from(#8c0032), color-stop(65%, #8c0032), color-stop(65%, #c2185b));
+  background: url("../img/bubbles-sm.png") -15px -15px, linear-gradient(to left, #8c0032, #8c0032 65%, #c2185b 65%);
+  padding-bottom: 20px;
+  background-repeat: no-repeat; }
   @media only screen and (min-width: 1200px) {
     .main-sidebar-right {
       max-width: 350px; } }
@@ -1244,7 +1245,7 @@ img {
   .main-sidebar-right .story .item-box__info {
     padding: 15px; }
     .main-sidebar-right .story .item-box__info a {
-      
+      width: 100%;
       overflow: hidden;
       text-overflow: ellipsis;
       font-weight: 400; }
@@ -2066,6 +2067,11 @@ img {
     @media only screen and (min-width: 768px) {
       .video-block__title {
         color: black; } }
+
+.bubbles-sm {
+  background-image: url("../img/bubbles-sm.png");
+  background-position: -15px -15px;
+  background-repeat: no-repeat; }
 
 @media only screen and (min-width: 768px) {
   .main-header {

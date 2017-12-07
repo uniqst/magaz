@@ -169,6 +169,18 @@
     background-repeat: no-repeat;
 }
 
+@mixin bubbles-sm($x: 0, $y: 0) {
+    background-image: url('../img/bubbles-left.png');
+    background-position: $x $y;
+    background-repeat: no-repeat;
+}
+
+.bubbles-sm {
+    background-image: url('../img/bubbles-sm.png');
+    background-position: -15px -15px;
+    // background-size: ;
+    background-repeat: no-repeat;
+}
 
 
 .main-header {

@@ -1,7 +1,10 @@
 .main-sidebar-right {
   margin-right: auto;
-  background-image: linear-gradient(to left, #8c0032, #8c0032 65%, #c2185b 65%);
+  background: 
+url('../img/bubbles-sm.png') -15px -15px,
+    linear-gradient(to left, #8c0032, #8c0032 65%, #c2185b 65%);
   padding-bottom: 20px;
+  background-repeat: no-repeat;
 
   @include mq(xl) {
     max-width: 350px;

@@ -13,7 +13,7 @@ use yii\helpers\Url;
     <form action="<?=Url::to(['/girls/filters'])?>" id="form" method="get">
       <div class="main-sidebar-menu">
         <div class="main-sidebar-close">x</div>
-        <div class="page-name">
+        <div class="page-name bubbles-sm">
           <?=Yii::t('app', 'Catalog');?>
         </div>
 
