@@ -1459,3 +1459,139 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1511626598.302978038787841796875,
     'REQUEST_TIME' => 1511626598,
 ]
+[07-Dec-2017 02:37:08 Europe/Kiev] An Error occurred while handling another error:
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_new.pages' doesn't exist in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(15): yii\db\ActiveQuery->all()
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#11 [internal function]: yii\web\ErrorAction->run()
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#15 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#16 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#17 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#18 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_new.pages' doesn't exist
+The SQL being executed was: SELECT * FROM `pages` WHERE `page`='Head' in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /home/h7111c/bt4.uniq-st.com/frontend/views/layouts/main.php(15): yii\db\ActiveQuery->all()
+#5 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(332): require('/home/h7111c/bt...')
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/h7111c/bt...', Array)
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/h7111c/bt...', Array, Object(frontend\controllers\SiteController))
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="err...')
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#11 [internal function]: yii\web\ErrorAction->run()
+#12 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#13 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#14 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#15 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#16 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#17 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#18 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'h7111c_new.pages' doesn't exist
+)
+
+Previous exception:
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_new.pages' doesn't exist in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /home/h7111c/bt4.uniq-st.com/frontend/controllers/SiteController.php(81): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'h7111c_new.pages' doesn't exist
+The SQL being executed was: SELECT * FROM `pages` WHERE `page`='Home' in /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /home/h7111c/bt4.uniq-st.com/frontend/controllers/SiteController.php(81): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /home/h7111c/bt4.uniq-st.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/h7111c/bt4.uniq-st.com/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'h7111c_new.pages' doesn't exist
+)
+
+$_SERVER = [
+    'PATH' => '/usr/local/jdk/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/opt/alt/ruby21/bin/ruby:/opt/cpanel/composer/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin',
+    'HTTP_CONNECTION' => 'close',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'REQUEST_URI' => '/',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REDIRECT_URL' => '/',
+    'REMOTE_PORT' => '47737',
+    'SCRIPT_FILENAME' => '/home/h7111c/bt4.uniq-st.com/frontend/web/index.php',
+    'SERVER_ADMIN' => 'webmaster@bt4.uniq-st.com',
+    'DOCUMENT_ROOT' => '/home/h7111c/bt4.uniq-st.com',
+    'REMOTE_ADDR' => '212.90.61.208',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '46.105.135.208',
+    'SERVER_NAME' => 'bt4.uniq-st.com',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_SIGNATURE' => '<address>Apache Server at bt4.uniq-st.com Port 80</address>
+',
+    'HTTP_COOKIE' => '_identity-backend=9bc882bda609618c60ef3377868e8f34451e1eb8649d9dde0c96ad7d126458fca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22jx2PBu4LuU_iRbJRc_QyrPq0PF4kf66D%22%2C2592000%5D%22%3B%7D; advanced-frontend=43b121a93331b06f3e866dc0bcfbdf48; _csrf-frontend=98df0812f4a201bab2953a2827d1fff816a17600830d8c68a86e403988d0d0aaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-4CJ6EXpdoQFRxYuEO6FEQ18CQjpn-O6%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_X_REAL_IP' => '212.90.61.208',
+    'HTTP_X_FORWARDED_SERVER' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_HOST' => 'bt4.uniq-st.com',
+    'HTTP_X_FORWARDED_FOR' => '212.90.61.208',
+    'HTTP_HOST' => 'bt4.uniq-st.com',
+    'UNIQUE_ID' => 'WiiNNCW7rPAACoulOjUAAAB1',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiiNNCW7rPAACoulOjUAAAB1',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512607028.402120113372802734375,
+    'REQUEST_TIME' => 1512607028,
+]

@@ -992,7 +992,6 @@ img {
   .bottom-items-slider .story .item-box__info {
     padding: 15px; }
     .bottom-items-slider .story .item-box__info a {
-      width: 100%;
       overflow: hidden;
       text-overflow: ellipsis; }
   .bottom-items-slider .item-box__info {
