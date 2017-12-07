@@ -1656,7 +1656,7 @@ img {
         color: #ca567e; } }
 
 .main-header {
-  min-height: 57px;
+  min-height: 78px;
   background-color: #c2185b;
   position: relative; }
   @media only screen and (min-width: 768px) {
@@ -1671,7 +1671,8 @@ img {
       -webkit-box-orient: initial;
       -webkit-box-direction: initial;
           -ms-flex-direction: initial;
-              flex-direction: initial; } }
+              flex-direction: initial;
+      height: 100px; } }
   @media only screen and (min-width: 768px) {
     .main-header__logo {
       position: absolute;
@@ -1706,6 +1707,10 @@ img {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; }
+  @media only screen and (min-width: 992px) {
+    .main-header__nav {
+      -ms-flex-item-align: end;
+          align-self: flex-end; } }
   .main-header__bottom-line {
     background-color: #8c0032;
     min-height: 200px;
@@ -2062,43 +2067,50 @@ img {
       .video-block__title {
         color: black; } }
 
+@media only screen and (min-width: 768px) {
+  .main-header {
+    background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
+    background-position: 60px -30px, 150px -26px, 230px -35px, 396px -20px, 473px 3px, 583px -7px, 583px -7px, 460px 77px, 299px 76px, 375px 145px;
+    background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
+    background-repeat: no-repeat; } }
+
+@media only screen and (min-width: 992px) {
+  .main-header {
+    background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
+    background-position: 200px -30px, 290px -26px, 370px -35px, 536px -20px, 613px 3px, 723px -7px, 723px -7px, 600px 77px, 439px 76px, 515px 145px;
+    background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
+    background-repeat: no-repeat; } }
+
+.navbar-bottom {
+  background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
+  background-position: 0px 10px, 90px 14px, 170px 5px, 336px 20px, 413px 43px, 523px 33px, 523px 33px, 400px 117px, 239px 116px, 315px 185px;
+  background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
+  background-repeat: no-repeat; }
+  @media only screen and (min-width: 768px) {
+    .navbar-bottom {
+      background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
+      background-position: 60px -84px, 150px -80px, 230px -89px, 396px -74px, 473px -51px, 583px -61px, 583px -61px, 460px 23px, 299px 22px, 375px 91px;
+      background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
+      background-repeat: no-repeat; } }
+  @media only screen and (min-width: 992px) {
+    .navbar-bottom {
+      background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
+      background-position: 200px 0px, 290px 4px, 370px -5px, 536px 10px, 613px 33px, 723px 23px, 723px 23px, 600px 107px, 439px 106px, 515px 175px;
+      background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
+      background-repeat: no-repeat; } }
+
 body {
   position: relative; }
   @media only screen and (min-width: 768px) {
     body {
-      background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
+      background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
       background-position: 60px 31px, 150px 35px, 230px 26px, 396px 41px, 473px 64px, 583px 54px, 583px 54px, 460px 138px, 299px 137px, 375px 206px;
       background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
       background-repeat: no-repeat; } }
   @media only screen and (min-width: 1200px) {
     body {
-      background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
-      background-position: 60px 50px, 150px 54px, 230px 45px, 396px 60px, 473px 83px, 583px 73px, 583px 73px, 460px 157px, 299px 156px, 375px 225px;
-      background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
-      background-repeat: no-repeat; } }
-
-@media only screen and (min-width: 1200px) {
-  .main-header {
-    background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
-    background-position: 0px 50px, 90px 54px, 170px 45px, 336px 60px, 413px 83px, 523px 73px, 523px 73px, 400px 157px, 239px 156px, 315px 225px;
-    background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
-    background-repeat: no-repeat; } }
-
-.navbar-bottom {
-  background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
-  background-position: 60px 50px, 150px 54px, 230px 45px, 396px 60px, 473px 83px, 583px 73px, 583px 73px, 460px 157px, 299px 156px, 375px 225px;
-  background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
-  background-repeat: no-repeat; }
-  @media only screen and (min-width: 768px) {
-    .navbar-bottom {
-      background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
-      background-position: 60px -30px, 150px -26px, 230px -35px, 396px -20px, 473px 3px, 583px -7px, 583px -7px, 460px 77px, 299px 76px, 375px 145px;
-      background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
-      background-repeat: no-repeat; } }
-  @media only screen and (min-width: 1200px) {
-    .navbar-bottom {
-      background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
-      background-position: 60px -30px, 150px -26px, 230px -35px, 396px -20px, 473px 3px, 583px -7px, 583px -7px, 460px 77px, 299px 76px, 375px 145px;
+      background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
+      background-position: 120px 50px, 210px 54px, 290px 45px, 456px 60px, 533px 83px, 643px 73px, 643px 73px, 520px 157px, 359px 156px, 435px 225px;
       background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
       background-repeat: no-repeat; } }
 

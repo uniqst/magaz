@@ -114,7 +114,7 @@
     // ;
 
     background-image: 
-        url('../img/buble.svg'),
+        // url('../img/buble.svg'),
         url('../img/buble.svg'),
         url('../img/buble.svg'),
         url('../img/buble.svg'),
@@ -153,40 +153,32 @@
     background-repeat: no-repeat;
 }
 
-body {
-    position: relative;
-    @include mq(md) {
-        @include bubbles(60px , 31px);
-    }
-    @include mq(xl) {
-        @include bubbles(60px, 50px);
-    }
-}
-
-
-
 .main-header {
-    @include mq(xl) {
-        @include bubbles(0, 0 + 50px);
+    @include mq(md) {
+        @include bubbles(60px , -30px);
+    }
+    @include mq(lg) {
+        // @include bubbles(120px, 0 + 50px);
+        @include bubbles(200px, -30px);
     }
 }
 
 .navbar-bottom {
-    @include bubbles(60px , 50px);
+    @include bubbles(0, 10px);
     @include mq(md) {
-        @include bubbles(60px , -30px);
+        @include bubbles(60px, -84px);
     }
-    @include mq(xl) {
-        @include bubbles(60px , -30px);
+    @include mq(lg) {
+        @include bubbles(200px, 0);
     }
 }
 
-.bubbles {
-    // height: 400px;
-    // width: 100%;
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // z-index: 1000;
-    // opacity: .3;
+body {
+    position: relative;
+    @include mq(md) {
+        @include bubbles(60px, 31px);
+    }
+    @include mq(xl) {
+        @include bubbles(120px, 50px);
+    }
 }
