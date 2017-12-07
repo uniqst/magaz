@@ -45,10 +45,10 @@ AppAsset::register($this);
             </div>
         </a>
 
-        <button 
+        <button
             class="navbar-toggler"
-            type="button" 
-            data-toggle="collapse" 
+            type="button"
+            data-toggle="collapse"
             data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
@@ -82,7 +82,7 @@ AppAsset::register($this);
                 <li class="nav-item <?=Yii::$app->controller->id == 'casting' ? 'active' : ''?>">
                     <a class="nav-link" href="<?=Url::to(['/casting'])?>"><?=Yii::t('app', $pages[6]->text);?></a>
                 </li>
-                <li class="nav-item <?=Yii::$app->controller->id == 'reviews-for-escrort' ? 'active' : ''?>">
+                <li class="nav-item <?=Yii::$app->controller->id == 'reviews-for-escort' ? 'active' : ''?>">
                     <a class="nav-link" href="<?=Url::to(['/reviews-for-escort'])?>"><?=Yii::t('app', $pages[7]->text);?></a>
                 </li>
                 <li class="nav-item <?=Yii::$app->controller->id == 'contacts' ? 'active' : ''?>">
@@ -169,16 +169,27 @@ AppAsset::register($this);
                 </li>
             </ul>
         </div>
-        <div class="main-header__social">
-            <?php $sw = SocialWeb::find()->one();?>
-            <ul class="social-list list-unstyled">
-                <li><a href="<?=$sw->facebook;?>" target="_blank" class="social-link"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="<?=$sw->twitter;?>" target="_blank" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="<?=$sw->printerest;?>" target="_blank" class="social-link"><i class="fa fa-pinterest-p"></i></a></li>
-                <li><a href="<?=$sw->linked_in;?>" target="_blank" class="social-link"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="<?=$sw->google_plus;?>" target="_blank" class="social-link"><i class="fa fa-google-plus"></i></a></li>
-            </ul>
-        </div>
+        <script type="text/javascript">(function() {
+                if (window.pluso)if (typeof window.pluso.start == "function") return;
+                if (window.ifpluso==undefined) { window.ifpluso = 1;
+                    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+                    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+                    var h=d[g]('body')[0];
+                    h.appendChild(s);
+                }})();</script>
+
+        <div class="pluso" data-background="#ca567e" data-options="medium,round,line,vertical,nocounter,theme=04" data-services="facebook,twitter,pinterest,linkedin,google"></div>
+<!--        <div class="main-header__social">-->
+<!--            --><?php //$sw = SocialWeb::find()->one();?>
+<!--            <ul class="social-list list-unstyled">-->
+<!--                <li><a href="--><?//=$sw->facebook;?><!--" target="_blank" class="social-link"><i class="fa fa-facebook"></i></a></li>-->
+<!--                <li><a href="--><?//=$sw->twitter;?><!--" target="_blank" class="social-link"><i class="fa fa-twitter"></i></a></li>-->
+<!--                <li><a href="--><?//=$sw->printerest;?><!--" target="_blank" class="social-link"><i class="fa fa-pinterest-p"></i></a></li>-->
+<!--                <li><a href="--><?//=$sw->linked_in;?><!--" target="_blank" class="social-link"><i class="fa fa-linkedin"></i></a></li>-->
+<!--                <li><a href="--><?//=$sw->google_plus;?><!--" target="_blank" class="social-link"><i class="fa fa-google-plus"></i></a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
     </div>
 
     <div class="container-fluid h-100 site-wrapper main-wrapper" style="min-height: 75vh">

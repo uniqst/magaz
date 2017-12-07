@@ -14,7 +14,7 @@ $this->registerMetaTag([
   <div class="application-page mx-auto col-xl-58p">
     <div class="top-form">
       
-      <h2 class="page-name"><?=Yii::t('app', $pages[1]->text);?></h2>
+      <h1 class="page-name"><?=Yii::t('app', $pages[1]->text);?></h1>
       <p class="text"><?=Yii::t('app', $pages[2]->text);?></p>
       <?php $form = ActiveForm::begin(['options' => ['class' => 'main-application-form container-fluid', 'novalidate' => 'novalidate', 'enctype' => 'multipart/form-data']]) ?>
         <div class="row">
@@ -98,3 +98,24 @@ $this->registerMetaTag([
   </div>
 
 <?= frontend\components\MainSection::widget()?>
+
+<div class="main-info-box">
+      <h2 class="info-box__heading">
+        <?=Yii::t('app', $pages[3]->text);?>
+      </h2>
+      <p>
+        <?=Yii::t('app', $pages[4]->text);?>
+      </p>
+    </div>
+
+  </div>
+
+  <div class="d-none d-xl-block col-xl-21p">
+    <?= \frontend\components\SidebarRight::widget();?>
+  </div>
+
+</div>
+
+<div class="row">
+  <?= \frontend\components\BottomSlider::widget();?>
+</div>

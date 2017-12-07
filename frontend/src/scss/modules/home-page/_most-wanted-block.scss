@@ -194,6 +194,7 @@
 }
 
 .most-wanted-slider {
+  position: relative;
   &__item {
     .girl-image {
       @include bg-img(null);
@@ -205,5 +206,43 @@
       };
     }
   }
+  &__buttons {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 85px;
+    height: 42px;
 
+    .mv-prev,
+    .mv-next {
+      width: 42px;
+      height: 42px;
+      outline: none;
+      border: none;
+      z-index: 10;
+      cursor: pointer;
+      background-color: #8c0032;
+      &:before {
+        font-family: 'FontAwesome';
+        color: #c2185b;
+        font-size: 20px;
+      }
+    }
+
+    .mv-prev {
+      border-right: 1px solid #ca6a8a;
+      width: 43px;
+      &:before {
+        content: '\f060';
+      }
+
+    }
+
+    .mv-next {
+      &:before {
+        content: '\f061';
+      }
+    }
+  }
 }

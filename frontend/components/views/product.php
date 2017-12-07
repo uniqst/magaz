@@ -6,7 +6,7 @@ use yii\helpers\Url;
 
       <div class="girl-info__title">
         <a href="<?= Url::to(['/girls/girl', 'id' => $product->id, 'name' => $product->name]) ?>">
-          <?= $product->name?>
+          <?= Yii::t('app', $profile->name_description)?><?= $product->name?>
         </a>
       </div>
 
@@ -28,7 +28,7 @@ use yii\helpers\Url;
               </div>
             </div>
             <div class="card__description">
-             <?= $product->about_myself?>
+             <?= Yii::t('app', $profile->$product->about_myself)?>
             </div>
           </div>
           <div class="col-md-4">
@@ -39,23 +39,23 @@ use yii\helpers\Url;
                   <span class="value"><?= $product->age?></span>
                 </li>
                 <li class="info-list__item">
-                  <span class="property">Nationality</span>
+                  <span class="property"><?= Yii::t('app', 'Nationality')?></span>
                   <span class="value"><?= $product->nationality?></span>
                 </li>
                 <li class="info-list__item">
-                  <span class="property">Height</span>
+                  <span class="property"><?= Yii::t('app', 'Height')?></span>
                   <span class="value"><?= $product->height?></span>
                 </li>
                 <li class="info-list__item">
-                  <span class="property">Weight</span>
+                  <span class="property"><?= Yii::t('app', 'Weight')?></span>
                   <span class="value"><?= $product->weight?></span>
                 </li>
                 <li class="info-list__item">
-                  <span class="property">Mesurements</span>
+                  <span class="property"><?= Yii::t('app', 'Options')?></span>
                   <span class="value"><?= $product->mesurements?></span>
                 </li>
                 <li class="info-list__item">
-                  <span class="property">Contact</span>
+                  <span class="property"><?= Yii::t('app', 'Contact')?></span>
                   <span class="value"><?= $product->phone?></span>
                 </li>
               </ul>

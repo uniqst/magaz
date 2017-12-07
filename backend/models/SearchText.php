@@ -19,7 +19,7 @@ class SearchText extends Pages
     {
         return [
             [['id'], 'integer'],
-            [['text', 'page'], 'safe'],
+            [['text', 'page', 'description'], 'safe'],
         ];
     }
 
@@ -63,7 +63,8 @@ class SearchText extends Pages
         ]);
 
         $query->andFilterWhere(['like', 'text', $this->text])
-            ->andFilterWhere(['like', 'page', $this->page]);
+            ->andFilterWhere(['like', 'page', $this->page])
+            ->andFilterWhere(['like', 'description', $this->description]);
 
         return $dataProvider;
     }

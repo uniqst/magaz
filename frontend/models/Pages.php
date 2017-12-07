@@ -28,7 +28,7 @@ class Pages extends \yii\db\ActiveRecord
     {
         return [
             [['text', 'page'], 'required'],
-            [['page'], 'string', 'max' => 255],
+            [['page', 'description'], 'string', 'max' => 255],
         ];
     }
 
@@ -41,6 +41,7 @@ class Pages extends \yii\db\ActiveRecord
             'id' => Yii::t('app', 'ID'),
             'text' => Yii::t('app', 'Text'),
             'page' => Yii::t('app', 'Page'),
+            'description' => Yii::t('app', 'Description'),
         ];
     }
 }

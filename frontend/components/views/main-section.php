@@ -5,6 +5,9 @@
   <?= \frontend\components\SidebarLeft::widget();?>
 
   <div class="main-center-col col-xl-58p">
+        <?php if(Yii::$app->controller->id == 'reviews-for-escort'):?>
+          <?=\frontend\components\CommentsList::widget()?>
+      <?php endif;?>
 
    <?= frontend\components\Product::widget(); ?>
 
@@ -28,14 +31,19 @@
                       <?php foreach($model as $want):?>
                             <img height="500" width="700" data-girl-id="girl-<?= $want->id?>" src="/photo/<?= $want->img_mw?>"  alt="Girl image">
                       <?php endforeach;?>
+                      <div class="most-wanted-slider__buttons">
+                          <button class="mv-prev"></button>
+                          <button class="mv-next"></button>
+                      </div>
                     </div>
                     <?php foreach($model as $want):?>
                       <div class="most-wanted-wrapper" id="girl-<?= $want->id?>">
                         <div class="most-wanted__name">
-                            <p><?= $want->name?></p>
+                            <p><a href="<?=\yii\helpers\Url::to(['/girls/girl', 'id' => $want->id, 'name' => $want->name])?>"><?= $want->name?></a></p>
+
                         </div>
                         <div class="most-wanted__description">
-                            <p><?= $want->about_myself?></p>
+                            <p><?= Yii::t('app', $want->about_myself)?></p>
                         </div>
                       </div>
                   <?php endforeach;?>
@@ -45,23 +53,4 @@
 
             
 
-    <div class="main-info-box">
-      <h2 class="info-box__heading">
-        <?=Yii::t('app', $pages[3]->text);?>
-      </h2>
-      <p>
-        <?=Yii::t('app', $pages[4]->text);?>
-      </p>
-    </div>
-
-  </div>
-
-  <div class="d-none d-xl-block col-xl-21p">
-    <?= \frontend\components\SidebarRight::widget();?>
-  </div>
-
-</div>
-
-<div class="row">
-  <?= \frontend\components\BottomSlider::widget();?>
-</div>
+    

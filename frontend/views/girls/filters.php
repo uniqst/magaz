@@ -2,7 +2,6 @@
 use yii\helpers\Url;
 ?>
 <div class="row stories-page">
-
     <div class="col-12">
         <div class="row">
             <div class="mx-auto col-xl-58p">

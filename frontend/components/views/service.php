@@ -3,22 +3,23 @@ use yii\helpers\Url;
 ?>
 
 <div class="posts-container services">
-      <h1 class="page-name">Services</h1>
+
+      <h1 class="page-name"><?= Yii::t('app', 'Services')?></h1>
       <div class="posts-list">
       <?php foreach($model as $services):?>
         <div class="post-item clearfix">
           <div class="image">
-            <a href="#">
+            <a href="<?=Url::to(['/girls/filters'])?>">
               <img src="/service/<?= $services->img?>" style="height:160px; width:160px" alt="Servise photo">
             </a>
           </div>
           <div class="post-info-container">
             <h2 class="title">
-              <?= $services->name?>
+              <?= Yii::t('app', $services->name)?>
             </h2>
             <div class="center-block">
               <p>
-              <?= mb_substr($services->content, 0, 1000).'...'?>
+              <?= Yii::t('app', mb_substr($services->content, 0, 1000).'...')?>
               </p>
             </div>
           </div>

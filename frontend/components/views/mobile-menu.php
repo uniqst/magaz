@@ -2,9 +2,9 @@
   <div class="page-name">
     <?=Yii::t('app', 'Catalog');?>
   </div>
-  <h2 class="sb-heading-main">
+  <h3 class="sb-heading-main">
     <?=Yii::t('app', 'Escort cities');?>
-  </h2>
+  </h3>
   <div class="category-list-wraper">
     <ul class="category-list">
       <li class="category-list__item">
@@ -24,9 +24,9 @@
       </li>
     </ul>
   </div>
-  <h2 class="sb-heading-main">
+  <h3 class="sb-heading-main">
     <?=Yii::t('app', 'Escort menu');?>
-  </h2>
+  </h3>
   <div class="category-list-wraper">
     <ul class="category-list">
       <li class="category-list__item">
@@ -46,11 +46,11 @@
       </li>
     </ul>
   </div>
-  <h2 class="sb-heading-main sb-heading-main__link">
+  <h3 class="sb-heading-main sb-heading-main__link">
     <a href="#list-filters" class="sb-heading-main__link" data-toggle="collapse" aria-expanded="true">
       <?=Yii::t('app', 'Filters');?>
     </a>
-  </h2>
+  </h3>
   <div class="category-list-wraper collapse show" id="list-filters">
     <h3 class="category-heading">
       <a href="#list-categories" data-toggle="collapse" aria-expanded="true">

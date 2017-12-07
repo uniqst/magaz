@@ -15,7 +15,7 @@ Class Comments extends Widget{
             $model = new Comment();
         }
         $pages = Pages::find()->where(['page' => 'Reviews'])->all();  
-        $commentsList = Comment::find()->where(['status' => 1])->all();
+        $commentsList = Comment::find()->where(['status' => 1])->orderBy(['date' => SORT_DESC])->all();
         return $this->render('comments', compact('model', 'commentsList', 'pages'));
     }
 
