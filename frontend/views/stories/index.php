@@ -1,9 +1,9 @@
 <?php
 use yii\helpers\Url;
-$this->title = $pages[0]->text;
+$this->title = Yii::t('app', $pages[0]->text);
 $this->registerMetaTag([
 'name' => 'description',
-'content' => $pages[4]->text
+'content' => Yii::t('app', $pages[4]->text),
 ]);
 ?>
 
@@ -51,10 +51,10 @@ $this->registerMetaTag([
               
           <div class="post-info-container">
             <h3 class="title">
-              <a href="<?= Url::to(['/stories/story', 'id' => $story->id, 'name' => $story->H1])?>"><?= $story->H1?></a>
+              <a href="<?= Url::to(['/stories/story', 'id' => $story->id, 'name' => $story->H1])?>"><?=Yii::t('app', $story->H1);?></a>
             </h3>
             <div class="center-block">
-              <p><?= mb_substr($story->short_description, 0,500)?></p>
+              <p><?=Yii::t('app', mb_substr($story->short_description, 0,500));?></p>
             </div>
           </div>  
         </div>

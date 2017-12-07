@@ -1,10 +1,10 @@
 <?php
 
 use yii\helpers\Url;
-$this->title = $model->title;
+$this->title = Yii::t('app', $model->title);
 $this->registerMetaTag([
 'name' => 'description',
-'content' => $model->description
+'content' => Yii::t('app', $model->description),
 ]);
 ?>
 
@@ -33,7 +33,7 @@ $this->registerMetaTag([
   <div class="col">
     <div class="story-long">
       <p>
-        <?= $model->content?>
+        <?=Yii::t('app', $model->content);?>
       </p>
     </div>
   </div>
