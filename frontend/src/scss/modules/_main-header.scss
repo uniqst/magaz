@@ -98,21 +98,21 @@
             // margin-right: 0;
         }
         .logo-image {
-            // position: relative;
+            position: relative;
             margin-right: auto;
-            width: 77px;
-            height: 34px;
+            width: 100px;
+            height: 58px;
             @include bg-img('../img/brand-logo-white.svg', contain);
         }
-        // .logo-image__lips {
-        //     position: absolute;
-        //     right: 0;
-        //     bottom: 0;
-        //     width: 63px;
-        //     height: 51px;
-        //     transform: translate(80%, 80%);
-        //     @include bg-img('../img/lips.png', contain);
-        // }
+        .logo-image__lips {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 63px;
+            height: 51px;
+            transform: translate(80%, 80%);
+            @include bg-img('../img/lips-white.png', contain);
+        }
 
     }
 
