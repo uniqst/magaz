@@ -193,9 +193,9 @@ $prev = Profile::findOne($id-1);
                 <div class="services">
                     <?php foreach($model->value as $cat):?>
                         <?php if($cat == end($model->value)):?>
-                    <a href="#"><?= $cat->category->name?></a>
-                            <?php else:?>
-                            <a href="#"><?= $cat->category->name?>,</a>
+                    <a href="<?=Url::to(['/girls/filters', 'value['. $cat->category->id .']' => $cat->category->id])?>"><?= $cat->category->name?></a>
+                            <?php elseif($cat == !end($model->value)):?>
+                            <a href="<?=Url::to(['/girls/filters', 'value['. $cat->category->id .']' => $cat->category->id])?>"><?= $cat->category->name?></a>
                         <?php endif;?>
                     <?php endforeach;?>
                 </div>
@@ -204,7 +204,7 @@ $prev = Profile::findOne($id-1);
                     <?php foreach($model->attVal as $at):?>
                         <?php if($at == end($model->attVal)):?>
                             <a href="<?=Url::to(['/girls/filters', 'service['. $at->att->id .']' => $at->att->id])?>"><?= $at->att->name?></a>
-                        <?php else:?>
+                        <?php elseif($at == !end($model->attVal)):?>
                             <a href="<?=Url::to(['/girls/filters', 'service['. $at->att->id .']' => $at->att->id])?>"><?= $at->att->name?>,</a>
                         <?php endif;?>
                     <?php endforeach;?>
