@@ -1708,7 +1708,7 @@ img {
     background-position: center; }
   .main-header__bottom-line {
     background-color: #8c0032;
-    min-height: 99px;
+    min-height: 200px;
     padding-top: 20px;
     padding-bottom: 68px;
     margin-bottom: 20; }
@@ -1899,7 +1899,8 @@ img {
   background-color: #c2185b; }
   @media only screen and (min-width: 768px) {
     .navbar-main li {
-      background-color: #8c0032; } }
+      background-color: #8c0032;
+      background-color: transparent; } }
   .navbar-main li > a.nav-link,
   .navbar-expand-lg .navbar-main li > a.nav-link {
     padding: 16px 15px 14px; }
@@ -1907,7 +1908,7 @@ img {
 .navbar-main li:hover,
 .navbar-main li.active {
   border-color: #FFC1E3;
-  background: #A3335B; }
+  background: rgba(255, 255, 255, 0.4); }
 
 .navbar-main li a:hover {
   color: white;
@@ -2079,7 +2080,7 @@ body {
 @media only screen and (min-width: 1200px) {
   .main-header {
     background-image: url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg"), url("../img/buble.svg");
-    background-position: 60px 110px, 150px 114px, 230px 105px, 396px 120px, 473px 143px, 583px 133px, 583px 133px, 460px 217px, 299px 216px, 375px 285px;
+    background-position: 0px 50px, 90px 54px, 170px 45px, 336px 60px, 413px 83px, 523px 73px, 523px 73px, 400px 157px, 239px 156px, 315px 225px;
     background-size: 125px, 104px, 123px, 102px, 90px, 46px, 46px, 80px, 147px, 107px;
     background-repeat: no-repeat; } }
 

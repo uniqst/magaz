@@ -167,7 +167,7 @@ body {
 
 .main-header {
     @include mq(xl) {
-        @include bubbles(60px , 60px + 50px);
+        @include bubbles(0, 0 + 50px);
     }
 }
 
