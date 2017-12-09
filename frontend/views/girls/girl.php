@@ -246,21 +246,7 @@ $prev = Profile::findOne($id-1);
                 </div>
             </div>
 
-            <div class="d-none d-md-block px-0 most-wanted-block--expanded">
-                <div class="most-wanted-block">
-                    <div class="most-wanted-slider most-wanted-new-slider-js">
-                      <?php foreach($model->photo as $photo):?>
-                            <img height="500" width="700" src="/photo/<?= $photo->src?>"  alt="">
-                      <?php endforeach;?>
-                    </div>
-                    <div class="most-wanted__name">
-                        <p><?=Yii::t('app', $model->name)?></p>
-                    </div>
-                    <div class="most-wanted__description">
-                        <p><?=Yii::t('app', $model->about_myself)?></p>
-                    </div>
-                </div>
-            </div>
+            <?= \frontend\components\MostWanted::widget();?>
   </div>
 
   <div class="d-none d-xl-block col-xl-21p">
