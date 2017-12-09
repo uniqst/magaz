@@ -461,6 +461,11 @@ img {
 .mp-text-block__text {
   font-size: 18px;
   text-align: center; }
+  .mp-text-block__text a {
+    color: black;
+    text-decoration: underline; }
+  .mp-text-block__text a:hover {
+    text-decoration: underline; }
   @media only screen and (min-width: 768px) {
     .mp-text-block__text {
       font-size: 14px;
@@ -1308,6 +1313,10 @@ img {
     font-weight: 300;
     background-color: #fa5788;
     padding: 20px; }
+    .product-card .description a {
+      text-decoration: underline; }
+    .product-card .description a:hover {
+      text-decoration: underline; }
   .product-card .categories,
   .product-card .services {
     padding: 16px 24px;
