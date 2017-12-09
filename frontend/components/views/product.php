@@ -17,7 +17,8 @@ use yii\helpers\Url;
               <div class="row">
                 <!-- <div class="photo" style="background-image: url(img/cat.jpg)"></div>
                 <div class="photo" style="background-image: url(img/cat.jpg)"></div> -->
-                <?php foreach($product->photo as $photo):?>
+                <?php $photos = array_slice($product->photo, 0, 2);?>
+                <?php foreach($photos as $photo):?>
                 <div class="col">
                   <div class="photo" style="background-image: url(/photo/<?= $photo->src?>)"></div>
                 </div>

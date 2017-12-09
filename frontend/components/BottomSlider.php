@@ -24,6 +24,7 @@ Class BottomSlider extends Widget{
     	}
         $model = array_merge($profile, $stories, $service);
         shuffle($model);
+
         return $this->render('bottom-slider', compact('model'));
     }
 }

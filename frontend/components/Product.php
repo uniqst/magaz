@@ -9,9 +9,7 @@ Class Product extends Widget{
 
 	public function run(){
 		 $contact = Contacts::find()->one();
-		$model = Profile::find()->limit(2)->orderBy(new Expression('rand()'))->with(['photo' => function(\yii\db\ActiveQuery $query){
-			$query->limit(2);
-		}])->all();
+		$model = Profile::find()->limit(2)->orderBy(new Expression('rand()'))->with('photo')->all();
 		return $this->render('product', compact('model', 'contact'));
 
 	}
