@@ -246,7 +246,7 @@ $prev = Profile::findOne($id-1);
                 </div>
             </div>
 
-            <?= \frontend\components\MostWanted::widget();?>
+            <?= \frontend\components\MostWantedGirl::widget();?>
   </div>
 
   <div class="d-none d-xl-block col-xl-21p">
