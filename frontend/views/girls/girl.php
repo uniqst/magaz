@@ -195,7 +195,7 @@ $prev = Profile::findOne($id-1);
                         <?php if($cat == end($model->value)):?>
 
                     <a href="<?=Url::to(['/girls/filters', 'value['. $cat->category->id .']' => $cat->category->id])?>"><?=Yii::t('app', $cat->category->name)?></a>
-                            <?php elseif($cat == !end($model->value)):?>
+                            <?php elseif($cat != end($model->value)):?>
                             <a href="<?=Url::to(['/girls/filters', 'value['. $cat->category->id .']' => $cat->category->id])?>"><?=Yii::t('app', $cat->category->name)?>,</a>
                         <?php endif;?>
                     <?php endforeach;?>
@@ -205,7 +205,7 @@ $prev = Profile::findOne($id-1);
                     <?php foreach($model->attVal as $at):?>
                         <?php if($at == end($model->attVal)):?>
                             <a href="<?=Url::to(['/girls/filters', 'service['. $at->att->id .']' => $at->att->id])?>"><?=Yii::t('app', $at->att->name)?></a>
-                        <?php elseif($at == !end($model->attVal)):?>
+                        <?php elseif($at != end($model->attVal)):?>
                             <a href="<?=Url::to(['/girls/filters', 'service['. $at->att->id .']' => $at->att->id])?>"><?=Yii::t('app', $at->att->name)?>,</a>
                         <?php endif;?>
                     <?php endforeach;?>
