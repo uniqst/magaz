@@ -7,8 +7,7 @@ $this->registerMetaTag([
 'content' => $model->description
 ]);
 $id = Yii::$app->request->get('id');
-$next = Profile::findOne($id+1);
-$prev = Profile::findOne($id-1);
+
 ?>
 
 
@@ -50,12 +49,12 @@ $prev = Profile::findOne($id-1);
             </div>
 
             <div class="prev">
-                <a href="<?= Url::to(['/girls/girl/', 'id' => $model->id-1, 'name' => $prev->name])?>">
+                <a href="<?= Url::to(['/girls/girl/', 'id' => $model->id-1, 'name' => $model->name])?>">
                     <button></button>
                 </a>
             </div>
             <div class="next">
-                <a href="<?= Url::to(['/girls/girl/', 'id' => $model->id+1, 'name' => $next->name])?>">
+                <a href="<?= Url::to(['/girls/girl/', 'id' => $model->id+1, 'name' => $model->name])?>">
                     <button></button>
                 </a>
             </div>
