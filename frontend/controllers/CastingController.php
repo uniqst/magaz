@@ -104,6 +104,7 @@ class CastingController extends Controller
 
                 }
             $message->send();
+            Yii::$app->getSession()->setFlash('send_casting', 'Send message');
         }
         return $this->render('index', compact('model', 'photo', 'contact', 'pages'));
     }

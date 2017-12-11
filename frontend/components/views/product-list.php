@@ -23,7 +23,9 @@ use yii\widgets\LinkPager;
                                         <span class="age">Age <?=$profile->age?></span>
                                         <span class="nationality"><?= Yii::t('app', $profile->nationality)?></span>
                                     </div>
-                                    <p class="info-card__more-info"> <?= Yii::t('app', $profile->name_description)?> </p>
+                                    <div class="info-card__more-info">
+                                         <?= Yii::t('app', $profile->name_description)?> 
+                                     </div>
                                 </div>
                             </div>
                         </div>

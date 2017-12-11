@@ -65,7 +65,7 @@ img {
   font-size: 16px; }
 
 .heading-main {
-  font-size: 20px; }
+  font-size: 16px; }
 
 .page-name {
   font-size: 16px;
@@ -131,6 +131,10 @@ img {
         -ms-flex: 0 0 58%;
             flex: 0 0 58%;
     max-width: 58%; } }
+
+.links-u a {
+  text-decoration: underline;
+  color: inherit; }
 
 .main-page-upper-box {
   margin-bottom: 60px; }
@@ -368,6 +372,8 @@ img {
     text-overflow: ellipsis;
     font-size: 1rem;
     min-height: 1em; }
+    .info-card__more-info a {
+      text-decoration: underline; }
 
 .embded-response-box--mb {
   margin-bottom: 70px;
@@ -859,6 +865,8 @@ img {
 
 .card__description {
   padding: 20px 0; }
+  .card__description a {
+    text-decoration: underline; }
 
 .articles-box {
   padding-top: 15px;
@@ -921,6 +929,9 @@ img {
   margin-bottom: 80px; }
   .main-info-box p {
     font-size: 12px; }
+    .main-info-box p a {
+      color: inherit;
+      text-decoration: underline; }
 
 .info-box__heading {
   font-size: 20px; }
@@ -1107,6 +1118,8 @@ img {
 
 .posts-container {
   background-color: #c2185b; }
+  .posts-container .title {
+    font-size: 16px; }
   @media only screen and (min-width: 768px) {
     .common-block .posts-container {
       border-left: 1px solid #ebc6d1; } }

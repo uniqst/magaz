@@ -72,10 +72,12 @@ class ReviewsForEscortController extends Controller
      */
     public function actionIndex()
     {   
-        if($_POST){
-            $contact = Contacts::findOne(1);
+        $model = new Comments();
+        $contact = Contacts::findOne(1);
+        if($model->load(Yii::$app->request->post()) && $model->save()){
+           
             $message = Yii::$app->mailer->compose()
-            ->setFrom($_POST['email'])
+            ->setFrom($contact->email_message)
             ->setTo($contact->email_message)
             ->setSubject('Reviews')
             ->setTextBody('
@@ -84,7 +86,7 @@ class ReviewsForEscortController extends Controller
     
                 ');
         $message->send();
-            Yii::$app->getSession()->setFlash('send', 'Send message');
+            Yii::$app->getSession()->setFlash('send_reviews', 'Send message');
         }
         
         

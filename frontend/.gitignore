@@ -1,6 +1,6 @@
 .gitignore
 /node_modules/
-**/*.css.map
+#**/*.css.map
 src/scss/bootstrap
 /web/promo/*
 /web/service/*

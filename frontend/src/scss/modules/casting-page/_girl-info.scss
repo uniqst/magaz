@@ -54,5 +54,8 @@
 }
 
 .card__description {
+  a {
+    text-decoration: underline;
+  }
   padding: 20px 0;
 }
