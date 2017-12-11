@@ -7,7 +7,7 @@ use yii\widgets\ActiveForm;
 $this->title = Yii::t('app', $pages[0]->text);
 $this->registerMetaTag([
 'name' => 'description',
-'content' => Yii::t('app', $pages[5]->text);
+'content' => Yii::t('app', $pages[5]->text)
 ]);
 ?>
 <div class="row">
