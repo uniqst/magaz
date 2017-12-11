@@ -55,7 +55,7 @@ class GirlsController extends Controller
         $price_usd = Price::find()->where(['currency' => 0])->all();
         $price_eur = Price::find()->where(['currency' => 1])->all();
         $price_try = Price::find()->where(['currency' => 2])->all();
-        $model = Profile::find()->where(['id' => $id])
+        $model = Profile::find()->where(['id' => $id, 'status' => 1])
             ->with('photo', 'value.category', 'attVal.att')->one();
         return $this->render('girl', compact('model', 'service', 'price_usd', 'price_eur', 'price_try', 'contact'));
     }

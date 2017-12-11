@@ -7,7 +7,15 @@ $this->registerMetaTag([
 'content' => Yii::t('app', $model->description)
 ]);
 $id = Yii::$app->request->get('id');
-
+$count = Profile::find()->where(['status' => 1])->count();
+$next = Profile::findOne($id + 1);
+if($id == $count){
+    $next = Profile::findOne($count);    
+}
+$prev = Profile::findOne($id - 1);
+if($prev->id == 0){
+    $prev = Profile::findOne(1);    
+}
 ?>
 
 
@@ -49,12 +57,12 @@ $id = Yii::$app->request->get('id');
             </div>
 
             <div class="prev">
-                <a href="<?= Url::to(['/girls/girl/', 'id' => $model->id-1, 'name' => $model->name])?>">
+                <a href="<?= Url::to(['/girls/girl/', 'id' => $prev->id, 'name' => $prev->name])?>">
                     <button></button>
                 </a>
             </div>
             <div class="next">
-                <a href="<?= Url::to(['/girls/girl/', 'id' => $model->id+1, 'name' => $model->name])?>">
+                <a href="<?= Url::to(['/girls/girl/', 'id' => $next->id, 'name' => $next->name])?>">
                     <button></button>
                 </a>
             </div>

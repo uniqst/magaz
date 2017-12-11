@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4ed79da913caf10540905227985cfb7",
+    "content-hash": "9b9a84b3756197656579ab447a580fc5",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -349,6 +349,48 @@
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
+            "name": "derekisbusy/yii2-amp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/derekisbusy/yii2-amp.git",
+                "reference": "fb2b24e362901b37c888039316856c092556d8cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/derekisbusy/yii2-amp/zipball/fb2b24e362901b37c888039316856c092556d8cd",
+                "reference": "fb2b24e362901b37c888039316856c092556d8cd",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "derekisbusy\\amp\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Derek Gifford",
+                    "email": "derekisbusy@gmail.com"
+                }
+            ],
+            "description": "Collection of AMP widgets and layouts.",
+            "keywords": [
+                "amp",
+                "extension",
+                "mobile",
+                "yii2"
+            ],
+            "time": "2017-05-09T04:50:03+00:00"
+        },
+        {
             "name": "dmstr/yii2-adminlte-asset",
             "version": "2.6.0",
             "source": {
@@ -673,12 +715,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-dialog.git",
-                "reference": "ae6de7328251b084de7f1a66bac1f7c6279c9ad1"
+                "reference": "f75a4112e942e5a98253093f7c2275c984674749"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-dialog/zipball/ae6de7328251b084de7f1a66bac1f7c6279c9ad1",
-                "reference": "ae6de7328251b084de7f1a66bac1f7c6279c9ad1",
+                "url": "https://api.github.com/repos/kartik-v/yii2-dialog/zipball/f75a4112e942e5a98253093f7c2275c984674749",
+                "reference": "f75a4112e942e5a98253093f7c2275c984674749",
                 "shasum": ""
             },
             "require": {
@@ -717,7 +759,7 @@
                 "modal",
                 "yii2"
             ],
-            "time": "2017-11-06T16:04:54+00:00"
+            "time": "2017-12-11T15:57:27+00:00"
         },
         {
             "name": "kartik-v/yii2-grid",
@@ -1736,12 +1778,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Studio-42/elFinder.git",
-                "reference": "791505c0f4dbf61cf8545183daaff3b7de077a1a"
+                "reference": "71fbc39dcfb68c3a817a3a9efaad636b982e4d93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/791505c0f4dbf61cf8545183daaff3b7de077a1a",
-                "reference": "791505c0f4dbf61cf8545183daaff3b7de077a1a",
+                "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/71fbc39dcfb68c3a817a3a9efaad636b982e4d93",
+                "reference": "71fbc39dcfb68c3a817a3a9efaad636b982e4d93",
                 "shasum": ""
             },
             "require": {
@@ -1786,7 +1828,7 @@
             ],
             "description": "File manager for web",
             "homepage": "http://elfinder.org",
-            "time": "2017-12-11T12:15:35+00:00"
+            "time": "2017-12-11T16:03:19+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1794,12 +1836,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "17e67a2603b568826447530bc3b1f774f88e572d"
+                "reference": "5126386947ba5a8ea21233aa3473c9d1023263af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/17e67a2603b568826447530bc3b1f774f88e572d",
-                "reference": "17e67a2603b568826447530bc3b1f774f88e572d",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/5126386947ba5a8ea21233aa3473c9d1023263af",
+                "reference": "5126386947ba5a8ea21233aa3473c9d1023263af",
                 "shasum": ""
             },
             "require": {
@@ -1841,7 +1883,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2017-11-23T14:49:29+00:00"
+            "time": "2017-12-11T22:43:45+00:00"
         },
         {
             "name": "tedivm/jshrink",
@@ -1948,12 +1990,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "170b1226fde4581fa5584464e464297dd8854b7c"
+                "reference": "63457669c8cd0d0a8b1672597c2a5e18ab806763"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/170b1226fde4581fa5584464e464297dd8854b7c",
-                "reference": "170b1226fde4581fa5584464e464297dd8854b7c",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/63457669c8cd0d0a8b1672597c2a5e18ab806763",
+                "reference": "63457669c8cd0d0a8b1672597c2a5e18ab806763",
                 "shasum": ""
             },
             "require": {
@@ -2040,7 +2082,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2017-12-11T10:18:59+00:00"
+            "time": "2017-12-11T22:06:54+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -3357,29 +3399,29 @@
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "dev-master",
+            "version": "2.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "a60fc2ad92986d9f951a91012c5083eed3b2a92a"
+                "reference": "13eb9aba9626b1a3811c6a492acc9669d24bb85a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/a60fc2ad92986d9f951a91012c5083eed3b2a92a",
-                "reference": "a60fc2ad92986d9f951a91012c5083eed3b2a92a",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/13eb9aba9626b1a3811c6a492acc9669d24bb85a",
+                "reference": "13eb9aba9626b1a3811c6a492acc9669d24bb85a",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
-                "php": "^7.1"
+                "php": "^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7.0"
+                "phpunit/phpunit": "^6.2.4"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
@@ -3402,7 +3444,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2017-11-28T13:47:13+00:00"
+            "time": "2017-11-27T08:47:38+00:00"
         },
         {
             "name": "phpunit/phpunit",
@@ -4207,12 +4249,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
-                "reference": "179522b5f0b5e6d00bb60f38a4d6b29962e4b61b"
+                "reference": "f761b4ecdd23a451c2cae6fba704d8b207cbb045"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/179522b5f0b5e6d00bb60f38a4d6b29962e4b61b",
-                "reference": "179522b5f0b5e6d00bb60f38a4d6b29962e4b61b",
+                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/f761b4ecdd23a451c2cae6fba704d8b207cbb045",
+                "reference": "f761b4ecdd23a451c2cae6fba704d8b207cbb045",
                 "shasum": ""
             },
             "require": {
@@ -4256,7 +4298,7 @@
             ],
             "description": "Symfony BrowserKit Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-07T14:20:24+00:00"
+            "time": "2017-12-11T22:06:16+00:00"
         },
         {
             "name": "symfony/console",
@@ -4669,12 +4711,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "5009c3ee3388332f667c9ce37cb1712656f5d734"
+                "reference": "afe0cd38486505c9703707707d91450cfc1bd536"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/5009c3ee3388332f667c9ce37cb1712656f5d734",
-                "reference": "5009c3ee3388332f667c9ce37cb1712656f5d734",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/afe0cd38486505c9703707707d91450cfc1bd536",
+                "reference": "afe0cd38486505c9703707707d91450cfc1bd536",
                 "shasum": ""
             },
             "require": {
@@ -4719,7 +4761,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-12-08T15:26:26+00:00"
+            "time": "2017-12-11T20:38:23+00:00"
         },
         {
             "name": "theseer/tokenizer",
