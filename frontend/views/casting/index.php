@@ -11,6 +11,7 @@ $this->registerMetaTag([
 ?>
 
 <div class="row">
+<h3 class="text-center" style="font-size:25px; color:black"><?= Yii::$app->session->getFlash('send'); ?></h3>
   <div class="application-page mx-auto col-xl-58p">
     <div class="top-form">
       
