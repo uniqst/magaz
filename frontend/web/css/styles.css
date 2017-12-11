@@ -997,7 +997,7 @@ img {
   .bottom-items-slider .story .item-box__info {
     padding: 15px; }
     .bottom-items-slider .story .item-box__info a {
-      /*width: 100%;*/
+      width: 100%;
       overflow: hidden;
       text-overflow: ellipsis; }
   .bottom-items-slider .item-box__info {
@@ -1248,9 +1248,10 @@ img {
     font-weight: 400;
     text-transform: capitalize; }
   .main-sidebar-right .story .item-box__info {
-    padding: 15px; }
+    padding: 15px;
+    overflow: hidden; }
     .main-sidebar-right .story .item-box__info a {
-      /*width: 100%;*/
+      width: 100%;
       overflow: hidden;
       text-overflow: ellipsis;
       font-weight: 400; }

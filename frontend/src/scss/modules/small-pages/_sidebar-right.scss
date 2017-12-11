@@ -79,6 +79,7 @@ url('../img/bubbles-sm.png') -15px -15px,
   .story {
     .item-box__info {
       padding: 15px;
+      overflow: hidden;
       a {
         width: 100%;
         overflow: hidden;
