@@ -4,10 +4,10 @@
 use yii\helpers\Url;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-$this->title = $pages[0]->text;
+$this->title = Yii::t('app', $pages[0]->text);
 $this->registerMetaTag([
 'name' => 'description',
-'content' => $pages[5]->text
+'content' => Yii::t('app', $pages[5]->text);
 ]);
 ?>
 <div class="row">

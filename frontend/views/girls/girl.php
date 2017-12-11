@@ -1,10 +1,10 @@
 <?php
 use yii\helpers\Url;
 use frontend\models\Profile;
-$this->title = $model->title;
+$this->title = Yii::t('app', $model->title);
 $this->registerMetaTag([
 'name' => 'description',
-'content' => $model->description
+'content' => Yii::t('app', $model->description)
 ]);
 $id = Yii::$app->request->get('id');
 
