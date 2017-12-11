@@ -153,6 +153,9 @@
   }
 
   &__more-info {
+    a {
+      text-decoration: underline;
+    }
     line-height: 1.1;
     text-overflow: ellipsis;
     font-size: rem(12px);

@@ -3,6 +3,11 @@
   margin-bottom: 80px;
 
   p {
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+    
     font-size: 12px;
   }
 }

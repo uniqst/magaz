@@ -132,6 +132,9 @@ img {
             flex: 0 0 58%;
     max-width: 58%; } }
 
+.links-u a {
+  text-decoration: underline; }
+
 .main-page-upper-box {
   margin-bottom: 60px; }
 
@@ -368,6 +371,8 @@ img {
     text-overflow: ellipsis;
     font-size: 1rem;
     min-height: 1em; }
+    .info-card__more-info a {
+      text-decoration: underline; }
 
 .embded-response-box--mb {
   margin-bottom: 70px;
@@ -859,6 +864,8 @@ img {
 
 .card__description {
   padding: 20px 0; }
+  .card__description a {
+    text-decoration: underline; }
 
 .articles-box {
   padding-top: 15px;
@@ -921,6 +928,9 @@ img {
   margin-bottom: 80px; }
   .main-info-box p {
     font-size: 12px; }
+    .main-info-box p a {
+      color: inherit;
+      text-decoration: underline; }
 
 .info-box__heading {
   font-size: 20px; }
