@@ -19,7 +19,7 @@ $this->registerMetaTag([
           <div class="image mx-auto mr-md-0"></div>
         </div>
         <div class="col-md-6 text-center text-md-left d-md-flex flex-md-column justify-content-md-center msg-block-wrap mt-5 mt-md-0">
-          <div class="msg-block">
+          <div class="msg-block links-u">
             <p><?=Yii::t('app', $pages[2]->text);?></p>
             <p class="contacts-page__phone"><a href="tel:+905380639316"><?= $model->phone?></a></p>
             <p class="text-uppercase"><?=Yii::t('app', 'CALL, SMS, VIBER, WHATSAPP');?></p>

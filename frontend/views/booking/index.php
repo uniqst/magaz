@@ -16,7 +16,7 @@ $this->registerMetaTag([
     <div class="top-form">
       
       <h1 class="page-name"><?=Yii::t('app', $pages[1]->text);?></h1>
-      <p class="text"><?=Yii::t('app', $pages[2]->text);?></p>
+      <div class="text links-u"><?=Yii::t('app', $pages[2]->text);?></div>
 
       <?php $form = ActiveForm::begin(['class' => "main-application-form container-fluid"]);?>
         <div class="row">
