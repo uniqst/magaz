@@ -72,8 +72,8 @@ $this->registerMetaTag([
       <div class="row">
         <div class="col-md-6 text-center text-md-right d-md-flex flex-md-column justify-content-md-center msg-block-wrap">
           <div class="msg-block text-uppercase">
-            <p><?=Yii::t('app', $pages[3]->text);?></p>
-            <p><?=Yii::t('app', $pages[4]->text);?></p>
+            <p><?=Yii::t('app', 'ASC LENA!');?></p>
+            <p><?=Yii::t('app', 'HAVE A QUESTION');?></p>
             <p><?= $contact->phone?></p>
             <p><?=Yii::t('app', 'Call, sms, viber, whatsapp');?></p>
             <p><?= $contact->email?></p>
