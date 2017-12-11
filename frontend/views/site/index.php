@@ -12,7 +12,7 @@ $this->registerMetaTag([
     <div class="row main-page-upper-box">
         <div class="offset-xl-2 col-xl-8 px-to-md-0">
             <div class="main-slider-container">
-                <h3 class="subheading-main"><?=Yii::t('app', $pages[1]->text);?></h3>
+                <p class="subheading-main"><?=Yii::t('app', $pages[1]->text);?></p>
                 <div class="new-girls-slider">
                     <div class="slick-carousel">
                         <?php foreach($slider as $image):?>

@@ -105,10 +105,10 @@ AppAsset::register($this);
         </div>
         <div class="main-header__contacts d-none d-xl-block">
 
-            <h2 class="phone-number">
+            <p class="phone-number">
                 <span>+</span>
                 <?= $model->phone?>
-            </h2>
+            </p>
 
             <ul class="phone-links">
                 <li class="nav-item">
@@ -142,10 +142,10 @@ AppAsset::register($this);
                 <i class="fa fa-phone"></i>
             </div>
 
-            <h2 class="phone-number">
+            <p class="phone-number">
                 <span>+</span>
                 <?= $model->phone?>
-            </h2>
+            </p>
 
             <ul class="phone-links">
                 <li class="nav-item">

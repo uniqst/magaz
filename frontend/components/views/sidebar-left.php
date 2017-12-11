@@ -31,9 +31,9 @@ use yii\helpers\Url;
           </ul>
         </div>
 
-          <h3 class="sb-heading-main sb-heading-main__link">
+          <h4 class="sb-heading-main sb-heading-main__link">
               <?= Yii::t('app', 'Filters')?>
-          </h3>
+          </h4>
 
           <div class="category-list-wraper collapse show" id="list-filtersasdas">
               <?php foreach($model as $filter):?>

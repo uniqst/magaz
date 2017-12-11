@@ -11,7 +11,7 @@ $this->registerMetaTag([
 
 <div class="row">
   <div class="booking-page mx-auto col-xl-58p">
-    <h2 class="text-center" style="font-size:25px; color:black"><?= Yii::$app->session->getFlash('send'); ?></h2>
+    <h3 class="text-center" style="font-size:25px; color:black"><?= Yii::$app->session->getFlash('send'); ?></h3>
     <?=\frontend\components\Comments::widget();?>
   </div>
 </div>
@@ -20,7 +20,7 @@ $this->registerMetaTag([
       <div class="row">
         <div class="mx-auto col-xl-58p">
           <a href="<?= Url::to('/site/index')?>"><?=Yii::t('app', 'Home');?></a>
-          <span> > </span>
+          <span></span>
           <a href="<?= Url::to('/reviews-for-escort/index')?>"><?=Yii::t('app', 'Reviews');?></a>
         </div>
       </div>
@@ -30,9 +30,9 @@ $this->registerMetaTag([
 <?=\frontend\components\MainSection::widget();?>
 
 <div class="main-info-box">
-      <h2 class="info-box__heading">
+      <h4 class="info-box__heading">
         <?=Yii::t('app', $pages[3]->text);?>
-      </h2>
+      </h4>
       <p>
         <?=Yii::t('app', $pages[4]->text);?>
       </p>

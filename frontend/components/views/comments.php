@@ -7,7 +7,7 @@ use yii\widgets\Pjax;
     <div class="top-form">
 <?php $form = ActiveForm::begin(['options' => ['data-pjax' => true, 'class' => 'main-application-form container-fluid']]); ?>
 
-      <h2 class="page-name px-0"><?=Yii::t('app', $pages[1]->text);?></h2>
+      <h3 class="page-name px-0"><?=Yii::t('app', $pages[1]->text);?></h3>
       <p class="text px-0">
          <?=Yii::t('app', $pages[2]->text);?>
       </p>

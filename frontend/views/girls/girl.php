@@ -45,7 +45,7 @@ $id = Yii::$app->request->get('id');
             <!-- <div class="product-card"> -->
 
             <div class="col-12">
-                <h2 class="page-name"><?=Yii::t('app', $model->name);?></h2>
+                <h3 class="page-name"><?=Yii::t('app', $model->name);?></h3>
             </div>
 
             <div class="prev">
@@ -235,9 +235,9 @@ $id = Yii::$app->request->get('id');
             </div> -->
 
             <div class="mp-text-block">
-                <h3 class="mp-text-block__heading">
+                <h2 class="mp-text-block__heading">
                     <?=Yii::t('app', $model->H2);?>
-                </h3>
+                </h2>
                 <div class="mp-text-block__text">
                     <p>
                         <?=Yii::t('app', $model->text1000)?>

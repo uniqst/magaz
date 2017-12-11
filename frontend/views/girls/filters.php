@@ -5,7 +5,7 @@ use yii\helpers\Url;
     <div class="col-12">
         <div class="row">
             <div class="mx-auto col-xl-58p">
-                <h2 class="page-name stories">Girls</h2>
+                <p class="page-name stories">Girls</p>
             </div>
         </div>
     </div>
