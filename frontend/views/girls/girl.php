@@ -17,9 +17,9 @@ $id = Yii::$app->request->get('id');
   <div class="col-12">
     <div class="row">
       <div class="mx-auto col-xl-58p">
-          <h1 class="heading-main mb-0">
+          <div class="heading-main mb-0">
             <?=Yii::t('app', $model->H1);?>
-          </h1>
+          </div>
       </div>
     </div>
   </div>

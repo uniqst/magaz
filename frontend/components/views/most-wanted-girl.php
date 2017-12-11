@@ -15,7 +15,7 @@
               <p><a href="<?=\yii\helpers\Url::to(['/girls/girl', 'id' => $want->id, 'name' => $want->name])?>"><?= $want->name?></a></p>
 
           </div>
-          <div class="most-wanted__description">
+          <div class="most-wanted__description link-u">
               <p><?= Yii::t('app', $want->about_myself)?></p>
           </div>
         </div>
