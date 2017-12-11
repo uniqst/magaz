@@ -133,7 +133,8 @@ img {
     max-width: 58%; } }
 
 .links-u a {
-  text-decoration: underline; }
+  text-decoration: underline;
+  color: inherit; }
 
 .main-page-upper-box {
   margin-bottom: 60px; }
