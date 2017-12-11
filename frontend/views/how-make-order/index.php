@@ -12,7 +12,7 @@ $this->registerMetaTag([
     <div class="mx-auto col-xl-58p">
     <div class="top-form top-form-how-to-order">
       <h1 class="page-name"><?=Yii::t('app', $pages[1]->text);?></h1>
-      <p>
+      <p class="links-u">
         <?=Yii::t('app', $pages[2]->text);?>
       </p>
     </div>
