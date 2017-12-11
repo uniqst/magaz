@@ -11,12 +11,16 @@ $this->registerMetaTag([
 ]);
 ?>
 <div class="row">
-<h3 class="text-center" style="font-size:25px; color:black"><?= Yii::$app->session->getFlash('send'); ?></h3>
+
   <div class="booking-page col-xl-58p mx-auto">
     <div class="top-form">
       
       <h1 class="page-name"><?=Yii::t('app', $pages[1]->text);?></h1>
+
       <div class="text links-u"><?=Yii::t('app', $pages[2]->text);?></div>
+      <?php if($_POST):?>
+      <h3 class="text-center" style="font-size:25px; color:black">Send Message</h3>
+      <?php endif;?>
 
       <?php $form = ActiveForm::begin(['class' => "main-application-form container-fluid"]);?>
         <div class="row">

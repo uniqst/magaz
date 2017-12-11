@@ -11,7 +11,7 @@ $this->registerMetaTag([
 
 <div class="row">
   <div class="booking-page mx-auto col-xl-58p">
-    <h3 class="text-center" style="font-size:25px; color:black"><?= Yii::$app->session->getFlash('send'); ?></h3>
+    <h3 class="text-center" style="font-size:25px; color:black"><?= Yii::$app->session->getFlash('send_reviews'); ?></h3>
     <?=\frontend\components\Comments::widget();?>
   </div>
 </div>
