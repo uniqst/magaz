@@ -15,6 +15,7 @@ class m171128_214231_contacts extends Migration
         $this->createTable('{{%contacts}}', [
             'id' => $this->primaryKey(11),
             'email' => $this->string(30)->notNull(),
+            'email_message' => $this->string(30)->notNull(),
             'phone' => $this->string(30)->notNull(),
         ]);
     }

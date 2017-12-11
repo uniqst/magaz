@@ -9,6 +9,7 @@ use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use frontend\models\Pages;
 use frontend\models\Comments;
+use frontend\models\Contacts;
 
 
 
@@ -70,8 +71,19 @@ class ReviewsForEscortController extends Controller
      * @return mixed
      */
     public function actionIndex()
-    {
+    {   
         if($_POST){
+            $contact = Contacts::findOne(1);
+            $message = Yii::$app->mailer->compose()
+            ->setFrom($_POST['email'])
+            ->setTo($contact->email_message)
+            ->setSubject('Reviews')
+            ->setTextBody('
+                name: '.$_POST['Comments']['name'].'
+                content: '.$_POST['Comments']['content'].'
+    
+                ');
+        $message->send();
             Yii::$app->getSession()->setFlash('send', 'Send message');
         }
         

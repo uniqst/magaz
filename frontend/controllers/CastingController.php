@@ -76,14 +76,14 @@ class CastingController extends Controller
     {
         $model = new Profile();
         $photo = new UploadForm();
-        $contact = Contacts::find()->one();
+        $contact = Contacts::findOne(1);
         $pages = Pages::find()->where(['page' => 'Casting'])->all();
         if ($model->load(Yii::$app->request->post())) {
             $photo->imageFiles = UploadedFile::getInstances($photo, 'imageFiles');
             $message = Yii::$app->mailer->compose()
                 ->setFrom($_POST['Profile']['email'])
-                ->setTo('zAC95zUA@gmail.com')
-                ->setSubject('123')
+                ->setTo($contact->email_message)
+                ->setSubject('Casting')
                 ->setTextBody('
                     name: '.$_POST['Profile']['name'].'
                     email: '.$_POST['Profile']['email'].'

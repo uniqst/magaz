@@ -8,6 +8,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use frontend\models\Pages;
+use frontend\models\Contacts;
 
 
 /**
@@ -69,7 +70,23 @@ class BookingController extends Controller
      */
     public function actionIndex()
     {
+        $contact = Contacts::findOne(1);
         $pages = Pages::find()->where(['page' => 'Booking'])->all();
+        if($_POST){
+        $message = Yii::$app->mailer->compose()
+        ->setFrom($_POST['email'])
+        ->setTo($contact->email_message)
+        ->setSubject('Booking')
+        ->setTextBody('
+            name: '.$_POST['name'].'
+            email: '.$_POST['email'].'
+            phone: '.$_POST['phone'].'
+            escort name: '.$_POST['escort_name'].'
+            are you 18: '.$_POST['adult'].'
+            wishes: '.$_POST['wishes'].'
+
+            ');
+    $message->send();}
         return $this->render('index', compact('pages'));
     }
 
