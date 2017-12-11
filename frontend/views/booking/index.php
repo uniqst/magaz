@@ -11,7 +11,7 @@ $this->registerMetaTag([
 ]);
 ?>
 <div class="row">
-<h3 class="text-center" style="font-size:25px; color:black"><?= Yii::$app->session->getFlash('send'); ?></h3>
+<h3 class="text-center" style="font-size:25px; color:black"><?= Yii::$app->session->getFlash('send_booking'); ?></h3>
   <div class="booking-page col-xl-58p mx-auto">
     <div class="top-form">
       

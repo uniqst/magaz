@@ -86,7 +86,7 @@ class ReviewsForEscortController extends Controller
     
                 ');
         $message->send();
-            Yii::$app->getSession()->setFlash('send', 'Send message');
+            Yii::$app->getSession()->setFlash('send_reviews', 'Send message');
         }
         
         
