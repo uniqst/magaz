@@ -802,13 +802,12 @@ img {
     .application-ask .msg-block p {
       margin-bottom: 0; }
   .application-ask .image {
-    background-image: url(../img/cat-small.jpg);
+    background-image: url(../img/Lena.png);
     height: 290px;
     width: 290px;
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: cover;
-    border-radius: 50%; }
+    background-size: cover; }
 
 .girl-info {
   padding: 15px 15px 30px;
