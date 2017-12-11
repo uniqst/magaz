@@ -81,9 +81,9 @@ $this->registerMetaTag([
 
         <div class="offset-xl-3 col-xl-6">
             <div class="mp-text-block">
-                <h3 class="mp-text-block__heading">
+                <h2 class="mp-text-block__heading">
                     <?=Yii::t('app', $pages[4]->text);?>
-                </h3>
+                </h2>
                 <div class="mp-text-block__text">
                     <p>
                         <?=Yii::t('app', $pages[5]->text);?>
