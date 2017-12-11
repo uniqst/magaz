@@ -23,7 +23,7 @@ use yii\helpers\Url;
                                 <p><?= $want->name?></p>
                                 </a>
                             </div>
-                            <div class="most-wanted__description">
+                            <div class="most-wanted__description links-u">
                                 <p><?= $want->most_wanted?></p>
                             </div>
                         </div>
