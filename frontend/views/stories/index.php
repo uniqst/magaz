@@ -45,7 +45,7 @@ $this->registerMetaTag([
         <div class="post-item clearfix">
           <div class="image">
             <a href="<?= Url::to(['/stories/story', 'id' => $story->id, 'name' => $story->H1])?>">
-              <img src="/stori/<?= $story->img?>" width="200px" hight="200px" alt="Girl photo">
+              <img src="/stori/<?= $story->img?>" style="width:200px; hight:200px" alt="Girl photo">
             </a>
           </div>
               
