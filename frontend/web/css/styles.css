@@ -1118,6 +1118,8 @@ img {
 
 .posts-container {
   background-color: #c2185b; }
+  .posts-container .title {
+    font-size: 16px; }
   @media only screen and (min-width: 768px) {
     .common-block .posts-container {
       border-left: 1px solid #ebc6d1; } }
