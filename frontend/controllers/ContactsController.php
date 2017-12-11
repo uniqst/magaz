@@ -71,6 +71,21 @@ class ContactsController extends Controller
     public function actionIndex()
     {
         $model = Contacts::find()->one();
+        $contact = Contacts::findOne(1);
+        if($_POST){
+           
+            $message = Yii::$app->mailer->compose()
+            ->setFrom($_POST['email'])
+            ->setTo($contact->email_message)
+            ->setSubject('Reviews')
+            ->setTextBody('
+                name: '.$_POST['Comments']['name'].'
+                content: '.$_POST['Comments']['content'].'
+    
+                ');
+        $message->send();
+            Yii::$app->getSession()->setFlash('send', 'Send message');
+        }
         $pages = Pages::find()->where(['page' => 'Contacts'])->all();  
         return $this->render('index', compact('model', 'pages'));
     }
