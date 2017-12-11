@@ -1,5 +1,10 @@
 <?php
 use yii\helpers\Url;
+$this->title = Yii::t('app', $pages[0]->text);
+$this->registerMetaTag([
+'name' => 'description',
+'content' => Yii::t('app', $pages[3]->text),
+]);
 ?>
 <div class="row stories-page">
     <div class="col-12">
@@ -13,7 +18,7 @@ use yii\helpers\Url;
         <div class="row">
             <div class="mx-auto col-xl-58p">
                 <h1 class="heading-main mb-0">
-                    Bursa platinum girls. High class escorts. Plearsure without limits
+                <?= Yii::t('app', 'Bursa platinum girls. High class escorts. Plearsure without limits')?>
                 </h1>
             </div>
         </div>
