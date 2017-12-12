@@ -15,7 +15,7 @@ if(!isset($next->id)){
     $next = Profile::findOne($first->id);
 }
 $prev = Profile::find()->where(['<', 'id', $id])->andWhere(['status' => 1])->one();
-if(!isset($prev->id)){
+if($prev->id == ''){
     $prev = Profile::findOne($last->id);
 }
 ?>
