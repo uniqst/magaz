@@ -1,6 +1,7 @@
 <?php
 use yii\helpers\Url;
 // $this->title = Yii::t('app', $pages[0]->text);
+if(Yii::$app->request->get('value')){
 foreach($filters as $filter){
     $filt .= Yii::t('app', $filter->name) . ' > ';
     foreach($filter->category as $f){
@@ -11,6 +12,8 @@ foreach($filters as $filter){
         }
     }
 }
+}
+if(Yii::$app->request->get('service')){    
 $serv = 'Services: ';
 foreach($services as $s){
     if($s == end($services)){
@@ -18,6 +21,7 @@ foreach($services as $s){
     }else{
      $serv .= Yii::t('app', $s->name) . ', ';
     }
+}
 }
 
 $this->title = 'Filters: ' . $filt . $serv;
