@@ -1,6 +1,30 @@
 <?php
 use yii\helpers\Url;
-$this->title = Yii::t('app', $pages[0]->text);
+// $this->title = Yii::t('app', $pages[0]->text);
+if(Yii::$app->request->get('value')){
+foreach($filters as $filter){
+    $filt .= Yii::t('app', $filter->name) . ' > ';
+    foreach($filter->category as $f){
+       if ($f == end($filter->category)){
+        $filt .= Yii::t('app', $f->name) . '; ';
+        }else{
+            $filt .= Yii::t('app', $f->name) . ', ';
+        }
+    }
+}
+}
+if(Yii::$app->request->get('service')){    
+$serv = 'Services: ';
+foreach($services as $s){
+    if($s == end($services)){
+    $serv .= Yii::t('app', $s->name) . '; ';
+    }else{
+     $serv .= Yii::t('app', $s->name) . ', ';
+    }
+}
+}
+
+$this->title = 'Filters: ' . $filt . $serv;
 $this->registerMetaTag([
 'name' => 'description',
 'content' => Yii::t('app', $pages[3]->text),

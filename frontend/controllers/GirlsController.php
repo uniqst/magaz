@@ -15,6 +15,8 @@ use frontend\models\Price;
 use frontend\models\Pages;
 use frontend\models\Service;
 use frontend\models\FiltersValue;
+use frontend\models\Category;
+use frontend\models\Attendance;
 
 /**
  * Site controller
@@ -61,14 +63,17 @@ class GirlsController extends Controller
     }
     public function actionFilters()
     {
-        $model = Profile::find()->joinWith(['value.category' => function(yii\db\ActiveQuery $query){
+        $model = Profile::find()->where(['status' => 1])->joinWith(['value.category' => function(yii\db\ActiveQuery $query){
             $query->andFilterWhere(['category.id' => $_GET['value']]);
         }])->joinWith(['attVal.att' => function(yii\db\ActiveQuery $query){
             $query->andFilterWhere(['attendance.id' => $_GET['service']]);
         }])->distinct();
-
-
-        return $this->render('filters', compact('model'));
+        $filters = Category::find()->joinWith(['category as cat' => function(yii\db\ActiveQuery $query){
+            $query->andWhere(['cat.id' => Yii::$app->request->get('value')]);
+        }])->all();
+        $services = Attendance::find()->where(['id' => Yii::$app->request->get('service')])->all();
+    
+        return $this->render('filters', compact('model', 'filters', 'services'));
     }
 
 }
