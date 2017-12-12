@@ -51,6 +51,7 @@ gulp.task('scss:build', () => {
     // .pipe(_if(!production, sourcemaps.init()))
     .pipe(sourcemaps.init())
     .pipe(sass({
+      outputStyle: 'compressed'
       // includePaths: [
       //   './bower_components/breakpoint-sass/stylesheets',
       //   './bower_components/susy/sass',
