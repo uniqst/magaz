@@ -8,10 +8,11 @@ $this->registerMetaTag([
 ]);
 $id = Yii::$app->request->get('id');
 $last = Profile::find()->orderBy('id DESC')->where(['status' => 1])->one();
+$first = Profile::find()->orderBy('id ASC')->where(['status' => 1])->one();
 
 $next = Profile::find()->where(['>', 'id', $id])->andWhere(['status' => 1])->one();
 if(!isset($next->id)){
-    $next = Profile::findOne(1);
+    $next = Profile::findOne($first->id);
 }
 $prev = Profile::find()->where(['<', 'id', $id])->andWhere(['status' => 1])->one();
 if(!isset($prev->id)){
