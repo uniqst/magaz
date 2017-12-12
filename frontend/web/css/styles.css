@@ -65,7 +65,8 @@ img {
   font-size: 16px; }
 
 .heading-main {
-  font-size: 16px; }
+  font-size: 16px;
+  text-transform: none; }
 
 .page-name {
   font-size: 16px;
