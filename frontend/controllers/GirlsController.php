@@ -71,11 +71,6 @@ class GirlsController extends Controller
         $filters = Category::find()->joinWith(['category as cat' => function(yii\db\ActiveQuery $query){
             $query->andWhere(['cat.id' => Yii::$app->request->get('value')]);
         }])->all();
-
-        echo "<pre>";
-        print_r($filters);
-        echo "</pre>";
-        
         $services = Attendance::find()->where(['id' => Yii::$app->request->get('service')])->all();
     
         return $this->render('filters', compact('model', 'filters', 'services'));
