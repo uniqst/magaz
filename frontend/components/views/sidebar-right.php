@@ -22,9 +22,11 @@ use yii\helpers\Url;
             <div class="slider-item">
                 <div class="item-box story" style="background-image: url('/stori/<?=$rand->img?>')">
                     <div class="item-box__title">
-                        <a href="<?=Url::to(['/stories/story', 'id' => $rand->id, 'name' => $rand->H1])?>"><?=Yii::t('app', 'Story');?></a>
+                        <div>
+                            <a href="<?=Url::to(['/stories/story', 'id' => $rand->id, 'name' => $rand->H1])?>"><?=Yii::t('app', 'Story');?></a>
+                        </div>
                     </div>
-                    <div class="item-box__info">
+                    <div class="item-box__info text-center">
                         <a href="<?=Url::to(['/stories/story', 'id' => $rand->id, 'name' => $rand->H1])?>" style="overflow: hidden">
                             <?= Yii::t('app', $rand->short_description)?>
                         </a>

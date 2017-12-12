@@ -78,7 +78,7 @@ url('../img/bubbles-sm.png') -15px -15px,
 
   .story {
     .item-box__info {
-      padding: 15px;
+      // padding: 15px;
       overflow: hidden;
       a {
         width: 100%;
@@ -99,8 +99,10 @@ url('../img/bubbles-sm.png') -15px -15px,
 
   .item-box__info {
     background-color: rgba(247, 107, 150, 0.7);
-    min-height: 36px;
-    max-height: 90px;
+    height: 36px;
+    overflow: hidden;
+    @include px(25px);
+    // max-height: 90px;
     width: 100%;
     display: flex;
 
