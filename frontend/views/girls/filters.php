@@ -6,7 +6,7 @@ foreach($filters as $filter){
     foreach($filter->category as $f){
        if ($f == end($filter->category)){
         $filt .= Yii::t('app', $f->name) . '; ';
-        }elseif($f != end($filter->category)){
+        }else{
             $filt .= Yii::t('app', $f->name) . ', ';
         }
     }
@@ -15,7 +15,7 @@ $serv = 'Services: ';
 foreach($services as $s){
     if($s == end($services)){
     $serv .= Yii::t('app', $s->name) . '; ';
-    }elseif($s != end($services)){
+    }else{
      $serv .= Yii::t('app', $s->name) . ', ';
     }
 }

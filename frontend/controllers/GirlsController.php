@@ -69,8 +69,12 @@ class GirlsController extends Controller
             $query->andFilterWhere(['attendance.id' => $_GET['service']]);
         }])->distinct();
         $filters = Category::find()->joinWith(['category as cat' => function(yii\db\ActiveQuery $query){
-            $query->andWhere(['cat.id' => Yii::$app->request->get('value')])->groupBy('cat.parent_id');
+            $query->andWhere(['cat.id' => Yii::$app->request->get('value')]);
         }])->all();
+
+        echo "<pre>";
+        print_r($filters);
+        echo "</pre>";
         
         $services = Attendance::find()->where(['id' => Yii::$app->request->get('service')])->all();
     
