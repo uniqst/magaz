@@ -7,14 +7,15 @@ $this->registerMetaTag([
 'content' => Yii::t('app', $model->description)
 ]);
 $id = Yii::$app->request->get('id');
-$count = Profile::find()->where(['status' => 1])->count();
-$next = Profile::findOne($id + 1);
-if($id == $count){
-    $next = Profile::findOne($count);    
+$last = Profile::find()->orderBy('id DESC')->where(['status' => 1])->one();
+
+$next = Profile::find()->where(['>', 'id', $id])->andWhere(['status' => 1])->one();
+if(!isset($next->id)){
+    $next = Profile::findOne(1);
 }
-$prev = Profile::findOne($id - 1);
-if($prev->id == 0){
-    $prev = Profile::findOne(1);    
+$prev = Profile::find()->where(['<', 'id', $id])->andWhere(['status' => 1])->one();
+if(!isset($prev->id)){
+    $prev = Profile::findOne($last->id);
 }
 ?>
 
@@ -25,9 +26,9 @@ if($prev->id == 0){
   <div class="col-12">
     <div class="row">
       <div class="mx-auto col-xl-58p">
-          <div class="heading-main mb-0">
+          <h1 class="heading-main mb-0">
             <?=Yii::t('app', $model->H1);?>
-          </div>
+          </h1>
       </div>
     </div>
   </div>
