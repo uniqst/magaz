@@ -59,7 +59,12 @@
 
   .story {
     .item-box__info {
-      padding: 15px;
+      @include px(15px);
+      padding-top: 5px;
+      padding-bottom: 5px;
+      overflow: hidden;
+      text-align: center;
+
       a {
         width: 100%;
         overflow: hidden;
@@ -70,8 +75,8 @@
 
   .item-box__info {
     background-color: rgba(247, 107, 150, 0.7);
-    min-height: 36px;
-    max-height: 90px;
+    height: 36px;
+    // max-height: 90px;
     width: 100%;
     display: flex;
 
