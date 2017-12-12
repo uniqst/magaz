@@ -6,7 +6,7 @@ foreach($filters as $filter){
     foreach($filter->category as $f){
        if ($f == end($filter->category)){
         $filt .= Yii::t('app', $f->name) . '; ';
-        }elseif($f != end($filter->category){
+        }elseif($f != end($filter->category)){
             $filt .= Yii::t('app', $f->name) . ', ';
         }
     }
