@@ -10,35 +10,34 @@ $this->registerMetaTag([
 ?>
 <div class="row stories-page">
 
-  <div class="col-12">
-    <div class="row">
-      <div class="mx-auto col-xl-58p">
+  
+ 
+  
+
+  <?= \frontend\components\SidebarLeft::widget();?>
+
+  <div class="col-xl-58p px-0">
+  <div style="padding:20px">
+  <div class="row">
+      <div class="mx-auto">
         <h1 class="page-name stories"><?=Yii::t('app', $pages[1]->text);?></h1>
       </div>
     </div>
-  </div>
-  <div class="col-12">
     <div class="row">
-      <div class="mx-auto col-xl-58p">
+      <div class="mx-auto">
           <div class="heading-main mb-0 links-u">
             <?=Yii::t('app', $pages[2]->text);?>
           </div>
       </div>
     </div>
-  </div>
-  <div class="col-12 dir-tree-links">
-      <div class="row">
-        <div class="mx-auto col-xl-58p">
+    <div class="row dir-tree-links">
+        <div class="text-left" >
           <a href="<?= Url::to('/site/index')?>"><?=Yii::t('app', 'Home');?></a>
           <span> > </span>
           <a href="<?= Url::to('/girls/index')?>"><?=Yii::t('app', 'All girls');?></a>
         </div>
       </div>
-  </div>
-
-  <?= \frontend\components\SidebarLeft::widget();?>
-
-  <div class="col-xl-58p px-0">
+      </div>
         <?=\frontend\components\ProductList::widget(['model' => $model])?>
   </div>
   <div class="d-none d-xl-block col-xl-21p">
