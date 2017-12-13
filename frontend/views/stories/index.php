@@ -49,7 +49,7 @@ $this->registerMetaTag([
             </a>
           </div>
               
-          <div class="post-info-container">
+          <div class="post-info-container links-u">
             <h3 class="title">
               <a href="<?= Url::to(['/stories/story', 'id' => $story->id, 'name' => $story->H1])?>"><?=Yii::t('app', $story->H1);?></a>
             </h3>

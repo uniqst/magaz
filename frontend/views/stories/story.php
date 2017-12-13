@@ -31,7 +31,7 @@ $this->registerMetaTag([
   <?= \frontend\components\SidebarLeft::widget();?>
 
   <div class="col">
-    <div class="story-long">
+    <div class="story-long links-u">
       <p>
         <?=Yii::t('app', $model->content);?>
       </p>
