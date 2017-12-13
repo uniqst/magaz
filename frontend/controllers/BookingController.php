@@ -86,7 +86,9 @@ class BookingController extends Controller
             wishes: '.$_POST['wishes'].'
 
             ');
-    $message->send();}
+    $message->send();
+    Yii::$app->getSession()->setFlash('send_booking', 'Send message');
+}
         return $this->render('index', compact('pages'));
     }
 

@@ -73,9 +73,7 @@ $this->registerMetaTag([
 <div class="col-12 dir-tree-links">
       <div class="row">
         <div class="mx-auto col-xl-58p">
-          <a href="<?= Url::to('/site/index')?>"><?=Yii::t('app', 'Home');?></a>
-          <span> > </span>
-          <a href="<?= Url::to('/contacts/index')?>"><?=Yii::t('app', 'Contacts');?></a>
+          <a href="<?= Url::to('/')?>"><?=Yii::t('app', 'Home');?></a>
         </div>
       </div>
   </div>
