@@ -1,5 +1,4 @@
-<?
-use yii\helpers\Url;
+<? use yii\helpers\Url;
 ?>
 <div class="main-sidebar-right">
     <div class="page-name">
@@ -27,9 +26,11 @@ use yii\helpers\Url;
                         </div>
                     </div>
                     <div class="item-box__info text-center">
-                        <a href="<?=Url::to(['/stories/story', 'id' => $rand->id, 'name' => $rand->H1])?>" style="overflow: hidden">
-                            <?= Yii::t('app', $rand->short_description)?>
-                        </a>
+                        <span>
+                            <a href="<?=Url::to(['/stories/story', 'id' => $rand->id, 'name' => $rand->H1])?>" style="overflow: hidden">
+                                <?= Yii::t('app', $rand->short_description)?>
+                            </a>
+                        </span>
                     </div>
                 </div>
             </div>

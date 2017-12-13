@@ -58,13 +58,21 @@
   }
 
   .story {
+
     .item-box__info {
       @include px(15px);
       padding-top: 5px;
       padding-bottom: 5px;
       overflow: hidden;
       text-align: center;
-
+      align-items: center;
+  
+      span {
+        height: 17px;
+        display: inline-block;
+        overflow: hidden;
+      }
+      
       a {
         width: 100%;
         overflow: hidden;

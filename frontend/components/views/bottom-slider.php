@@ -24,9 +24,11 @@ use yii\helpers\Url;
                             <a href="<?=Url::to(['/stories/story', 'id' => $rand->id, 'name' => $rand->H1])?>"><?=Yii::t('app', 'Story');?></a>
                         </div>
                         <div class="item-box__info">
-                            <a href="<?=Url::to(['/stories/story', 'id' => $rand->id, 'name' => $rand->H1])?>" style="overflow: hidden;">
-                                <?= Yii::t('app', $rand->short_description);?>
-                            </a>
+                            <span>
+                                <a href="<?=Url::to(['/stories/story', 'id' => $rand->id, 'name' => $rand->H1])?>" style="overflow: hidden;">
+                                    <?= Yii::t('app', $rand->short_description);?>
+                                </a>
+                            </span>
                         </div>
                     </div>
                 </div>
