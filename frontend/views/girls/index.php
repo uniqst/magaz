@@ -32,9 +32,7 @@ $this->registerMetaTag([
     </div>
     <div class="row dir-tree-links">
         <div class="text-left" >
-          <a href="<?= Url::to('/site/index')?>"><?=Yii::t('app', 'Home');?></a>
-          <span> > </span>
-          <a href="<?= Url::to('/girls/index')?>"><?=Yii::t('app', 'All girls');?></a>
+          <a href="<?= Url::to('/')?>"><?=Yii::t('app', 'Home');?></a>
         </div>
       </div>
       </div>

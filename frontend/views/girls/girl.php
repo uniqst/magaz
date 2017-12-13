@@ -39,8 +39,6 @@ if($prev->id == ''){
             <a href="<?=Url::to(['/'])?>"><?=Yii::t('app','Home')?></a>
             <span> > </span>
             <a href="<?=Url::to(['/girls'])?>"><?=Yii::t('app','Girls')?></a>
-            <span> > </span>
-            <a href="<?=Url::to(['/girls/girl', 'id' => $model->id])?>"><?=Yii::t('app',$model->name)?></a>
         </div>
       </div>
   </div>

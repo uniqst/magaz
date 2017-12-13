@@ -21,9 +21,7 @@ $this->registerMetaTag([
 
 <div class="row dir-tree-links">
   <div class="mx-auto col-xl-58p">
-    <a href="<?= Url::to('/site/index')?>"><?=Yii::t('app', 'Home');?></a>
-    <span></span>
-    <a href="<?= Url::to('/how-make-order/index')?>"><?=Yii::t('app', 'How to make order');?></a>
+    <a href="<?= Url::to('/')?>"><?=Yii::t('app', 'Home');?></a>
   </div>
 </div>
 
