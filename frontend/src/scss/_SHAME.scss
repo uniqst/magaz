@@ -211,3 +211,11 @@ body {
         @include bubbles(200px, 0);
     }
 }
+
+.most-wanted-block {
+    .most-wanted__description {
+        a {
+            text-decoration: underline;
+        }
+    }
+}
