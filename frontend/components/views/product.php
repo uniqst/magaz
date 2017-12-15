@@ -22,7 +22,9 @@ use yii\helpers\Url;
                 <?php $photos = array_slice($product->photo, 0, 2);?>
                 <?php foreach($photos as $photo):?>
                 <div class="col">
-                  <div class="photo" style="background-image: url(/photo/<?= $photo->src?>)"></div>
+                  <div class="photo" style="background-image: url(/photo/<?= $photo->src?>)">
+                    <a href="<?= Url::to(['/girls/girl', 'id' => $product->id, 'name' => $product->name]) ?>">    
+                  </div>
                 </div>
                 <?php endforeach;?>
 
