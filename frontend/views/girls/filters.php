@@ -42,7 +42,7 @@ $this->registerMetaTag([
         <div class="row">
             <div class="mx-auto col-xl-58p">
                 <h1 class="heading-main mb-0">
-                <?= Yii::t('app', $filt . $serv)?>
+                <?= $filt . $serv ?>
                 </h1>
             </div>
         </div>
