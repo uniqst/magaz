@@ -191,11 +191,6 @@ if($prev->id == ''){
                     </ul>
                 </div>
                 <h3 class="headline"><?=Yii::t('app', 'Categories &amp; Services')?></h3>
-<!--                <div class="categories">-->
-<!--                    <a href="#">female escort</a>,-->
-<!--                    <a href="#">russian escort</a>,-->
-<!--                    <a href="#">vip escort</a>-->
-<!--                </div>-->
                 
                 <div class="services">
                     <?php foreach($model->value as $cat):?>
@@ -231,16 +226,6 @@ if($prev->id == ''){
 
 
 
-            <!-- <div class="mx-auto col-xl-58p">
-                <h2 class="heading-main mb-0"><?=Yii::t('app', $model->H2);?></h2>
-            </div>
-            <div class="main-info-box">
-                <h2 class="info-box__heading"></h2>
-                <p class="">
-                    <?= $model->text1000?>
-                </p>
-
-            </div> -->
 
             <div class="mp-text-block">
                 <h2 class="mp-text-block__heading">
@@ -258,9 +243,7 @@ if($prev->id == ''){
 
   <div class="d-none d-xl-block col-xl-21p">
     <?= \frontend\components\SidebarRight::widget();?>
-    <!--?= $this->render('../sidebar-right')?-->
   </div>
 </div>
 
   <?= \frontend\components\BottomSlider::widget();?>
-<!--?= $this->render('../bottom-slider')?-->

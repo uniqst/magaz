@@ -41,8 +41,6 @@ AppAsset::register($this);
         <a class="navbar-brand main-header__logo" href="/">
             <div class="logo-image">
                 <div class="logo-image__lips"></div>
-                <!-- <div class="logo-image__lips">
-                </div> -->
             </div>
         </a>
 

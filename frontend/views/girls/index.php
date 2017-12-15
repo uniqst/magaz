@@ -40,9 +40,9 @@ $this->registerMetaTag([
   </div>
   <div class="d-none d-xl-block col-xl-21p">
   <?= \frontend\components\SidebarRight::widget();?>
-    <!--?= $this->render('../sidebar-right')?-->
+   
   </div>
 </div>
 
   <?= \frontend\components\BottomSlider::widget();?>
-<!--?= $this->render('../bottom-slider')?-->
+

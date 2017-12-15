@@ -62,11 +62,6 @@ $this->registerMetaTag([
               <button type="submit"><?=Yii::t('app', 'Submit');?></button>
             </div>
         </div>
-        <!-- <div class="row submit">
-          <div class="offset-md-8 col-md-4 text-right">
-            <button type="submit">Submit</button>
-          </div>
-        </div> -->
 
       <?php ActiveForm::end(); ?>
     </div>
