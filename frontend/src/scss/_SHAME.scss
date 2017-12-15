@@ -219,3 +219,35 @@ body {
         }
     }
 }
+
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.main-header__contacts,
+.main-sidebar-menu,
+.items-block__item .info-card__name,
+.main-sidebar-right,
+.main-header,
+.bottom-items-slider
+ {
+    a {
+        text-decoration: none;
+    }
+}
+
+.main-header__contacts,
+.main-sidebar-menu,
+.items-block__item .info-card__name,
+.main-sidebar-right,
+// .main-header,
+.bottom-items-slider
+ {
+    a:hover {
+        text-decoration: underline;
+    }
+}
