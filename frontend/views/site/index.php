@@ -26,8 +26,6 @@ $this->registerMetaTag([
                 </div>
             </div>
         </div>
-    <!-- </div> -->
-    <!-- <div class="row"> -->
         <div class="offset-xl-2 col-xl-8 px-to-md-0">
             <div class="last-response">
                 <h3 class="subheading-main"><?=Yii::t('app', $pages[2]->text);?></h3>
@@ -55,9 +53,6 @@ $this->registerMetaTag([
 
     <div class="row mp-content">
         <?= \frontend\components\SidebarLeft::widget();?>
-        <!-- <div class="col-xl-3 sidebar-main d-none d-lg-block">
-            Sidebar main
-        </div> -->
         <div class="col main-center-col">
 
             <?= \frontend\components\ProductList::widget(['model' => $model2]);?>
@@ -103,14 +98,3 @@ $this->registerMetaTag([
             </div>
         </div>
     </div>
-
-<!-- <div class="main-slider-container">
-    <h3>New Girls</h3>
-    <div class="new-girls-slider">
-        <div class="owl-carousel owl-theme">
-            <div class="girl-card" style="background-image: url(/img/girl-cards/girl-card-1.jpg)">
-                <a class="girl-card__name">Katrina</a>
-            </div>
-        </div>
-    </div>
-</div> -->

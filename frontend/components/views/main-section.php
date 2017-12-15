@@ -13,18 +13,6 @@
 
    <?= frontend\components\Story::widget(); ?>
 
-
-
-            <!-- <script>
-              jQuery(function() {
-                jQuery('.most-wanted-new-slider-js').waterwheelCarousel({
-                  separation: 130,
-                  horizonOffset: 60,
-                  opacityMultiplier: .4
-                });
-              });
-            </script> -->
-
             <div class="d-none d-md-block px-0 most-wanted-block--expanded">
                 <div class="most-wanted-block">
                     <div class="most-wanted-slider most-wanted-new-slider-js">

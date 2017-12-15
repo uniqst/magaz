@@ -76,7 +76,7 @@ class BookingController extends Controller
         $message = Yii::$app->mailer->compose()
         ->setFrom($_POST['email'])
         ->setTo($contact->email_message)
-        ->setSubject('Booking')
+        ->setSubject('City Ankara - Booking')
         ->setTextBody('
             name: '.$_POST['name'].'
             email: '.$_POST['email'].'

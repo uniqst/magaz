@@ -3,7 +3,7 @@ use yii\helpers\Url;
 // $this->title = Yii::t('app', $pages[0]->text);
 if(Yii::$app->request->get('value')){
 foreach($filters as $filter){
-    $filt .= Yii::t('app', $filter->name) . ' > ';
+    $filt .= Yii::t('app', $filter->name) . ' - ';
     foreach($filter->category as $f){
        if ($f == end($filter->category)){
         $filt .= Yii::t('app', $f->name) . '; ';
@@ -14,7 +14,7 @@ foreach($filters as $filter){
 }
 }
 if(Yii::$app->request->get('service')){    
-$serv = 'Services: ';
+$serv = 'Services - ';
 foreach($services as $s){
     if($s == end($services)){
     $serv .= Yii::t('app', $s->name) . '; ';
@@ -24,7 +24,7 @@ foreach($services as $s){
 }
 }
 
-$this->title = 'Filters: ' . $filt . $serv;
+$this->title = 'Ankara escort Filters: ' . $filt . $serv;
 $this->registerMetaTag([
 'name' => 'description',
 'content' => Yii::t('app', $pages[3]->text),
@@ -42,7 +42,7 @@ $this->registerMetaTag([
         <div class="row">
             <div class="mx-auto col-xl-58p">
                 <h1 class="heading-main mb-0">
-                <?= Yii::t('app', 'Bursa platinum girls. High class escorts. Plearsure without limits')?>
+                <?= $filt . $serv ?>
                 </h1>
             </div>
         </div>
