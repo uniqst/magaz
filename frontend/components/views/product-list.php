@@ -17,7 +17,6 @@ use yii\widgets\LinkPager;
                                     <div class="info-card__name">
                                         <a href="<?=Url::to(['/girls/girl', 'id' => $profile->id, 'name' => $profile->name])?>">
                                             <?= Yii::t('app', $profile->name)?>
-                                           
                                         </a>
                                     </div>
                                     <div class="info-card__about">
