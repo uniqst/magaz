@@ -79,7 +79,7 @@ class ReviewsForEscortController extends Controller
             $message = Yii::$app->mailer->compose()
             ->setFrom($contact->email_message)
             ->setTo($contact->email_message)
-            ->setSubject('Reviews')
+            ->setSubject('City Ankara - Reviews')
             ->setTextBody('
                 name: '.$_POST['Comments']['name'].'
                 content: '.$_POST['Comments']['content'].'

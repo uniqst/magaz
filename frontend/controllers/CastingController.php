@@ -83,7 +83,7 @@ class CastingController extends Controller
             $message = Yii::$app->mailer->compose()
                 ->setFrom($_POST['Profile']['email'])
                 ->setTo($contact->email_message)
-                ->setSubject('Casting')
+                ->setSubject('City Ankara - Casting')
                 ->setTextBody('
                     name: '.$_POST['Profile']['name'].'
                     email: '.$_POST['Profile']['email'].'
