@@ -21,6 +21,7 @@
         <?php elseif($rand->date == 'stories'):?>
             <div class="slider-item">
                 <div class="item-box story" style="background-image: url('/stori/<?=$rand->img?>')">
+                <a href="<?=Url::to(['/stories/story', 'id' => $rand->id, 'name' => $rand->H1])?>" class="item-box story"></a>
                     <div class="item-box__title">
                         <div>
                             <a href="<?=Url::to(['/stories/story', 'id' => $rand->id, 'name' => $rand->H1])?>"><?=Yii::t('app', 'Story');?></a>
@@ -38,6 +39,7 @@
         <?php elseif($rand->date == 'service'):?>
             <div class="slider-item">
                 <div class="item-box service" style="background-image: url('/service/<?=$rand->img?>')">
+                    <a href="<?=Url::to(['/services/index', 'id' => $rand->id, 'name' => $rand->name])?>" class="item-box service"></a>
                     <div class="item-box__title">
                         <a href="<?=Url::to(['/services/index', 'id' => $rand->id, 'name' => $rand->name])?>"><?=Yii::t('app', 'Service');?></a>
                     </div>
