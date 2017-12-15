@@ -8,7 +8,7 @@
         <?php if($rand->date == 'profile'):?>
      <div class="slider-item">
                 <div class="item-box girl" style="background-image: url('/photo/<?=$rand->image->src?>')">
-                <a href="<?=Url::to(['/girls/girl', 'id' => $rand->id, 'name' => $rand->name])?>"></a>
+                <a href="<?=Url::to(['/girls/girl', 'id' => $rand->id, 'name' => $rand->name])?>" class="item-box girl"></a>
                     <div class="item-box__title">
                         <a href="<?=Url::to(['/girls/girl', 'id' => $rand->id, 'name' => $rand->name])?>"><?= Yii::t('app', $rand->name)?></a>
                     </div>
