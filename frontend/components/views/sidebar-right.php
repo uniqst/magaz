@@ -41,10 +41,10 @@
                 <div class="item-box service" style="background-image: url('/service/<?=$rand->img?>')">
                     <a href="<?=Url::to(['/services/index', 'id' => $rand->id, 'name' => $rand->name])?>" class="item-box service"></a>
                     <div class="item-box__title">
-                        <a href="<?=Url::to(['/services/index', 'id' => $rand->id, 'name' => $rand->name])?>"><?=Yii::t('app', 'Service');?></a>
+                        <a href="<?=Url::to(['/services/index'])?>"><?=Yii::t('app', 'Service');?></a>
                     </div>
                     <div class="item-box__info">
-                        <a href="<?=Url::to(['/services/index', 'id' => $rand->id, 'name' => $rand->name])?>">
+                        <a href="<?=Url::to(['/services/index'])?>">
                             <?= Yii::t('app', $rand->name)?>
                         </a>
                     </div>
