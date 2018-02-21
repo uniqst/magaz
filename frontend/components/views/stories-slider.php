@@ -4,7 +4,7 @@ use yii\helpers\Url;
 
 <div class="col-md-6 pl-md-0">
                 <div class="posts-container">
-                    <h3 class="page-name"><?=Yii::t('app', 'EROTIC STORIES');?></h3>
+                    <div class="page-name"><?=Yii::t('app', 'EROTIC STORIES');?></div>
                     
                     <div class="post-lists-wrapper stories-list-js">
 
@@ -18,9 +18,9 @@ use yii\helpers\Url;
                                 </a>
                             </div>
                             <div class="post-info-container">
-                                <h3 class="title">
+                                <div class="title">
                                     <a href="<?=Url::to(['/stories/story', 'id' => $stor->id, 'name' => $stor->H1])?>"><?=Yii::t('app', $stor->H1);?></a>
-                                </h3>
+                                </div>
                                 <div class="center-block">
                                     <p><?=Yii::t('app', $stor->short_description);?></p>
                                 </div>
@@ -38,9 +38,9 @@ use yii\helpers\Url;
                                 </a>
                             </div>
                             <div class="post-info-container">
-                                <h3 class="title">
+                                <div class="title">
                                     <a href="<?=Url::to(['/stories/story', 'id' => $stor->id, 'name' => $stor->H1])?>"><?=Yii::t('app', $stor->H1);?></a>
-                                </h3>
+                                </div>
                                 <div class="center-block">
                                     <p><?=Yii::t('app', $stor->short_description);?></p>
                                 </div>

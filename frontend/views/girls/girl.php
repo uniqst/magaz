@@ -1,4 +1,4 @@
-<?php
+/<?php
 use yii\helpers\Url;
 use frontend\models\Profile;
 $this->title = Yii::t('app', $model->title);
@@ -53,7 +53,7 @@ if($prev->id == ''){
             <!-- <div class="product-card"> -->
 
             <div class="col-12">
-                <h3 class="page-name"><?=Yii::t('app', $model->name);?></h3>
+                <div class="page-name"><?=Yii::t('app', $model->name);?></div>
             </div>
 
             <div class="prev">
@@ -83,7 +83,7 @@ if($prev->id == ''){
                         <?php endforeach;?>
                     </div>
                 </div>
-                <h3 class="headline"><?=Yii::t('app', 'Price')?></h3>
+                <div class="headline"><?=Yii::t('app', 'Price')?></div>
                 <div class="price-block">
                     <div class="price-block__tabs">
                         <div class="currency">
@@ -190,7 +190,7 @@ if($prev->id == ''){
                         </li>
                     </ul>
                 </div>
-                <h3 class="headline"><?=Yii::t('app', 'Categories &amp; Services')?></h3>
+                <div class="headline"><?=Yii::t('app', 'Categories &amp; Services')?></div>
                 
                 <div class="services">
                     <?php foreach($model->value as $cat):?>
@@ -215,7 +215,7 @@ if($prev->id == ''){
                
             </div>
             <div class="col-12">
-                <h3 class="headline about"><?=Yii::t('app', 'About')?> <?=Yii::t('app', $model->name)?></h3>
+                <div class="headline about"><?=Yii::t('app', 'About')?> <?=Yii::t('app', $model->name)?></div>
                 <div class="description">
                     <?=Yii::t('app', "$model->about_myself")?>
                 </div>

@@ -20,7 +20,7 @@ $this->registerMetaTag([
       <div class="row">
         <div class="mx-auto col-xl-58p">
           <a href="<?= Url::to(['/'])?>"><?=Yii::t('app', 'Home');?></a>
-          <span> > </span>
+          <span> </span>
           <a href="<?= Url::to(['/stories'])?>"><?=Yii::t('app', 'Stories');?></a>
         </div>
       </div>

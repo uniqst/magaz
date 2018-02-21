@@ -2,9 +2,9 @@
   <div class="page-name">
     <?=Yii::t('app', 'Catalog');?>
   </div>
-  <h3 class="sb-heading-main">
+  <div class="sb-heading-main">
     <?=Yii::t('app', 'Escort cities');?>
-  </h3>
+  </div>
   <div class="category-list-wraper">
     <ul class="category-list">
       <li class="category-list__item">

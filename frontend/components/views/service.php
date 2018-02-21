@@ -14,9 +14,9 @@ use yii\helpers\Url;
             </a>
           </div>
           <div class="post-info-container">
-            <h3 class="title">
+            <div class="title">
               <?= Yii::t('app', $services->name)?>
-            </h3>
+            </div>
             <div class="center-block">
               <p>
               <?= Yii::t('app', mb_substr($services->content, 0, 1000).'...')?>

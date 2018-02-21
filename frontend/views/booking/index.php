@@ -19,7 +19,7 @@ $this->registerMetaTag([
 
       <div class="text links-u"><?=Yii::t('app', $pages[2]->text);?></div>
       <?php if($_POST):?>
-      <h3 class="text-center" style="font-size:25px; color:black">Send Message</h3>
+      <div class="text-center" style="font-size:25px; color:black">Send Message</div>
       <?php endif;?>
 
       <?php $form = ActiveForm::begin(['class' => "main-application-form container-fluid"]);?>

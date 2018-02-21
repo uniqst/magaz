@@ -2,7 +2,7 @@
 use yii\helpers\Url;
 ?>
 <div class="most-wanted-block most-wanted-widget">
-                    <h3 class="page-name"><?=Yii::t('app', 'Most Wanted');?></h3>
+                    <div class="page-name"><?=Yii::t('app', 'Most Wanted');?></div>
                     <div class="most-wanted-slider most-wanted-slider-js">
                         <?php foreach($model as $want):?>
                             <div class="most-wanted-slider__item">

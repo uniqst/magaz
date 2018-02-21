@@ -37,7 +37,7 @@ $this->registerMetaTag([
   
   <div class="col-xl-58p">
     <div class="posts-container">
-      <h3 class="page-name"><?=Yii::t('app', $pages[3]->text);?></h3>
+      <div class="page-name"><?=Yii::t('app', $pages[3]->text);?></div>
       <div class="posts-list">
         <?php foreach($model as $story):?>
         <div class="post-item clearfix">
@@ -48,9 +48,9 @@ $this->registerMetaTag([
           </div>
               
           <div class="post-info-container links-u">
-            <h3 class="title">
+            <div class="title">
               <a href="<?= Url::to(['/stories/story', 'id' => $story->id, 'name' => $story->H1])?>"><?=Yii::t('app', $story->H1);?></a>
-            </h3>
+            </div>
             <div class="center-block">
               <p><?=Yii::t('app', mb_substr($story->short_description, 0,500));?></p>
             </div>

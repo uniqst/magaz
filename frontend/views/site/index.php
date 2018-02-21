@@ -28,7 +28,7 @@ $this->registerMetaTag([
         </div>
         <div class="offset-xl-2 col-xl-8 px-to-md-0">
             <div class="last-response">
-                <h3 class="subheading-main"><?=Yii::t('app', $pages[2]->text);?></h3>
+                <div class="subheading-main"><?=Yii::t('app', $pages[2]->text);?></div>
                 <div class="iconblock"
                     <a href="<?= Url::to(['/reviews-for-escort'])?>"><span  class="pencil"></span></a>
                     <a href="<?= Url::to(['/reviews-for-escort'])?>"><span class="msgbox"></span></a>

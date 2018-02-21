@@ -17,7 +17,7 @@ $this->registerMetaTag([
       
       <h1 class="page-name"><?=Yii::t('app', $pages[1]->text);?></h1>
       <p class="text"><?=Yii::t('app', $pages[2]->text);?></p>
-      <h3 class="text-center" style="font-size:25px; color:black"><?= Yii::$app->session->getFlash('send_casting'); ?></h3>
+      <div class="text-center" style="font-size:25px; color:black"><?= Yii::$app->session->getFlash('send_casting'); ?></div>
       <?php $form = ActiveForm::begin(['options' => ['class' => 'main-application-form container-fluid', 'novalidate' => 'novalidate', 'enctype' => 'multipart/form-data']]) ?>
         <div class="row">
           <div class="col-md-6">

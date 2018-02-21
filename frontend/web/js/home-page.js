@@ -295,9 +295,3 @@ $(document).ready(function () {
   });
 });
 
-// Verify age
-var ageVerify = document.querySelector('.age-verify');
-
-if (sessionStorage.getItem('age-check') !== 'stay') {
-  ageVerify.style.display = 'block';
-}
