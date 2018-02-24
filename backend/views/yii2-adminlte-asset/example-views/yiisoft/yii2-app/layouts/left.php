@@ -26,6 +26,7 @@
                     // ['label' => 'Social Web', 'icon' => ' fa fa-facebook', 'url' => ['/social-web']],
                     ['label' => 'Reviews', 'icon' => ' fa fa-comment', 'url' => ['/comments']],
                     ['label' => 'Price', 'icon' => ' fa fa-money', 'url' => ['/price']],
+                    ['label' => 'Verification Page', 'icon' => 'file-code-o', 'url' => ['/verification']],
                     ['label' => 'Pages', 'icon' => 'file-code-o', 'url' => ['/pages']],
                     ['label' => 'Profile', 'icon' => 'fa fa-user-circle-o', 'url' => ['/user/update', 'id' => 1]],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],

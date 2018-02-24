@@ -12,6 +12,11 @@ use common\widgets\Alert;
 use yii\helpers\Url;
 use frontend\models\SocialWeb;
 
+$session = Yii::$app->session;
+if($session['verification'] != 1){
+    return Yii::$app->response->redirect(Url::to(['/verification']));
+}
+
 $pages = Pages::find()->where(['page' => 'Head'])->all();
 $model = Contacts::find()->one();
 AppAsset::register($this);

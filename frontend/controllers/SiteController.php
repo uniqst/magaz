@@ -78,6 +78,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+
         $pages = Pages::find()->where(['page' => 'Home'])->all();
         $model = Profile::find()->where(['status' => 1])->with('image')->all();
         $model2 = Profile::find()->where(['status' => 1])->with('image');

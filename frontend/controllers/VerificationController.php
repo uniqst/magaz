@@ -7,6 +7,7 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use frontend\models\Verification;
 
 
 /**
@@ -42,7 +43,15 @@ class VerificationController extends Controller
     public function actionIndex()
     {
         $this->layout = false;
-        return $this->render('index');
+        $model = Verification::find()->one(); 
+        $session = Yii::$app->session;
+        if ($_GET['verification'] == 1){
+            $session['verification'] = 1;
+            return $this->redirect([$model->enter]);
+        }
+  
+
+        return $this->render('index', compact('model'));
     }
 
 }
