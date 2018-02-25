@@ -11,7 +11,7 @@ use yii\helpers\Url;
           <?php foreach($model as $story):?>
           <div class="list-item">
             <div class="photo" style="background-image: url(/stori/<?= $story->img?>)">
-              <a href=""></a>
+              <a href="<?= Url::to(['/stories/story', 'id' => $story->id, 'name' => $story->H1])?>"></a>
             </div>
             <div class="article">
               <div class="article__title">
