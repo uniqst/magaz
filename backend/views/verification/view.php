@@ -31,8 +31,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'textup',
             'textdown',
-            'Enter',
-            'Leave',
+            'enter',
+            'leave',
         ],
     ]) ?>
 

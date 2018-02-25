@@ -32,9 +32,9 @@ use mihaildev\elfinder\ElFinder;
 
 ]);?>
 
-    <?= $form->field($model, 'Enter')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'enter')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'Leave')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'leave')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
