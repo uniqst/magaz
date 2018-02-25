@@ -35,6 +35,11 @@
     // a {
     //   display: block;
     // }
+    display: flex; 
+    a { 
+      display: block; 
+      flex-grow: 1; 
+    } 
     // div {
       width: 155px;
       height: 155px;
