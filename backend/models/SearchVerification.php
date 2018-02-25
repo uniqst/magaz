@@ -19,7 +19,7 @@ class SearchVerification extends Verification
     {
         return [
             [['id'], 'integer'],
-            [['textup', 'textdown', 'Enter', 'Leave'], 'safe'],
+            [['textup', 'textdown', 'enter', 'leave'], 'safe'],
         ];
     }
 
@@ -64,8 +64,8 @@ class SearchVerification extends Verification
 
         $query->andFilterWhere(['like', 'textup', $this->textup])
             ->andFilterWhere(['like', 'textdown', $this->textdown])
-            ->andFilterWhere(['like', 'Enter', $this->Enter])
-            ->andFilterWhere(['like', 'Leave', $this->Leave]);
+            ->andFilterWhere(['like', 'enter', $this->enter])
+            ->andFilterWhere(['like', 'leave', $this->leave]);
 
         return $dataProvider;
     }

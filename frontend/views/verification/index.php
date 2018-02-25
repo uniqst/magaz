@@ -30,9 +30,9 @@
         </header>
         <div class="age-verify--wrapper">
             <div class="age-verify--text-block">
-                <p class="age-verify--main-text" style="padding-left: 30%;">
+                <div class="age-verify--main-text" style="padding-left: 30%;">
                     <?= $model->textup?>
-                </p>
+                </div>
             </div>
             <div class="age-verify--text-block">
                 <p class="age-verify--headline"><?= $model->textdown?></p>

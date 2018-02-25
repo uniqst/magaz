@@ -44,8 +44,8 @@ class Verification extends \yii\db\ActiveRecord
             'id' => 'ID',
             'textup' => 'Textup',
             'textdown' => 'Textdown',
-            'Enter' => 'Enter',
-            'Leave' => 'Leave',
+            'enter' => 'enter',
+            'leave' => 'leave',
         ];
     }
 }
