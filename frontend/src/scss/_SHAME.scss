@@ -253,10 +253,14 @@ a:hover {
 }
 
 .age-verify__header {
+    background-image: url('../img/bubbles-verifying.png');
+    background-position:  top left;
+    background-color: #8c0032;
+    background-repeat: no-repeat;
+
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, .4);
     height: 130px;
     position: relative;
-    background-color: #8c0032;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -280,12 +284,14 @@ a:hover {
     font-size: 16px;
     color: black;
     position: absolute;
-    background: bottom left url('../img/age-verify-girl3.png'),top center url('../img/bubbles-left.png');
+    background-image: url('../img/age-verify-girl3.png'), url('../img/bubbles-verifying.png');
+    background-position: bottom left, top left;
     background-color: #d3d3d3;
     background-repeat: no-repeat;
+    padding-bottom: 100px;
 
     @include mq(md) {
-        background-position: bottom center;
+        background-position: bottom center, top left;
     }
 
     a {
