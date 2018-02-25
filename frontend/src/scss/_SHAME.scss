@@ -275,16 +275,14 @@ a:hover {
 }
 
 .age-verify {
+
     width: 100%;
     font-size: 16px;
     color: black;
     position: absolute;
-    // background-size: contain;
+    background: bottom left url('../img/age-verify-girl3.png'),top center url('../img/bubbles-left.png');
     background-color: #d3d3d3;
-
     background-repeat: no-repeat;
-    background-image: url('../img/age-verify-girl3.png');
-    background-position: bottom left;
 
     @include mq(md) {
         background-position: bottom center;
