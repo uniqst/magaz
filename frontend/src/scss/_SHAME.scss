@@ -288,7 +288,11 @@ a:hover {
     background-position: bottom left, top left;
     background-color: #d3d3d3;
     background-repeat: no-repeat;
+<<<<<<< HEAD
     min-height: 100vh;
+=======
+    padding-bottom: 100px;
+>>>>>>> de41157c900cfc404dfc4d6df1e3861806c1eda8
 
     @include mq(md) {
         background-position: bottom center, top left;
