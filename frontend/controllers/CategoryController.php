@@ -17,6 +17,7 @@ class CategoryController extends Controller
     /**
      * @inheritdoc
      */
+
     public function behaviors()
     {
         return [

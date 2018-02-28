@@ -33,8 +33,14 @@ $this->registerMetaTag([
       <p>
         <?=Yii::t('app', $model->content);?>
       </p>
+
+      <?= frontend\components\Story::widget(); ?>
+
+      <?= frontend\components\MainQuestionnaire::widget(); ?>
+      
     </div>
   </div>
+
   <div class="d-none d-xl-block col-xl-21p">
     <?= \frontend\components\SidebarRight::widget();?>
   </div>

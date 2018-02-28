@@ -26,6 +26,7 @@ class GirlsController extends Controller
     /**
      * @inheritdoc
      */
+
     public function behaviors()
     {
         return [
@@ -63,6 +64,7 @@ class GirlsController extends Controller
     }
     public function actionFilters()
     {
+        $pages = Pages::find()->where(['page' => 'All Girls'])->all();  
         $model = Profile::find()->where(['status' => 1])->joinWith(['value.category' => function(yii\db\ActiveQuery $query){
             $query->andFilterWhere(['category.id' => $_GET['value']]);
         }])->joinWith(['attVal.att' => function(yii\db\ActiveQuery $query){
@@ -73,7 +75,7 @@ class GirlsController extends Controller
         }])->all();
         $services = Attendance::find()->where(['id' => Yii::$app->request->get('service')])->all();
     
-        return $this->render('filters', compact('model', 'filters', 'services'));
+        return $this->render('filters', compact('model', 'filters', 'services', 'pages'));
     }
 
 }

@@ -23,6 +23,7 @@ class CastingController extends Controller
     /**
      * @inheritdoc
      */
+
     public function behaviors()
     {
         return [

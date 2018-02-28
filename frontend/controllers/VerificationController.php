@@ -13,8 +13,10 @@ use frontend\models\Verification;
 /**
  * Site controller
  */
+
 class VerificationController extends Controller
 {
+
     /**
      * @inheritdoc
      */

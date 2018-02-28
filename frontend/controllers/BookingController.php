@@ -19,6 +19,7 @@ class BookingController extends Controller
     /**
      * @inheritdoc
      */
+
     public function behaviors()
     {
         return [
@@ -62,7 +63,7 @@ class BookingController extends Controller
             ],
         ];
     }
-
+    
     /**
      * Displays homepage.
      *
