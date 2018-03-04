@@ -7,6 +7,7 @@ use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use frontend\models\Contacts;
+use frontend\models\Seo;
 use frontend\models\Pages;
 use common\widgets\Alert;
 use yii\helpers\Url;
@@ -19,6 +20,7 @@ if($session['verification'] != 1){
 
 $pages = Pages::find()->where(['page' => 'Head'])->all();
 $model = Contacts::find()->one();
+$seo = Seo::find()->one();
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -27,7 +29,13 @@ AppAsset::register($this);
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?= $seo->google?>
+    <?= $seo->yandex?>
+    <meta property="og:title" content="Ankara escort">
+    <meta property="og:site_name" content=": allescortsankara">
+    <meta property="og:url" content=": http://allescortsankara.com">
+    <meta property="og:description" content="text">
+    <meta property="og:image" content="<?=Url::to(['/img/logo.PNG'])?>">
 
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>

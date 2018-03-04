@@ -67,7 +67,8 @@ return [
             'showScriptName' => false,
             'rules' => [
                 'girl/<id:\d+>/<name:\w+>' => 'girls/girl',
-                'story/<id:\d+>/<name:\w+>' => 'stories/story'
+                'story/<id:\d+>/<name:\w+>' => 'stories/story',
+                'sitemap.xml' => 'sitemap/index'
             ],
         ],
     ],

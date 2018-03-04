@@ -14,6 +14,7 @@
                 'options' => ['class' => 'sidebar-menu tree', 'data-widget'=> 'tree'],
                 'items' => [
                     ['label' => 'Menu', 'options' => ['class' => 'header']],
+                    ['label' => 'Seo', 'icon' => ' fa fa-building-o', 'url' => ['/seo']],
                     ['label' => 'City', 'icon' => ' fa fa-building-o', 'url' => ['/city']],
                     ['label' => 'Category', 'icon' => 'dashboard', 'url' => ['/category']],
                     ['label' => 'Profile Service', 'icon' => 'dashboard', 'url' => ['/attendance']],
