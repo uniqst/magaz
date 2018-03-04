@@ -16,16 +16,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'yandex')->textInput(['maxlength' => true]) ?>
     
-    <?= $form->field($model, 'robots')->textInput(['maxlength' => true]) ?>
-
-        <?php
-    $fp = fopen("/frontend/web/robots.txt", "a"); // Открываем файл в режиме записи 
-    $mytext = "Это строку необходимо нам записать\r\n"; // Исходная строка
-    $test = fwrite($fp, $mytext); // Запись в файл
-    if ($test) echo 'Данные в файл успешно занесены.';
-    else echo 'Ошибка при записи в файл.';
-    fclose($fp); //Закрытие файла
-?>
+    <?= $form->field($model, 'robots')->textArea(['maxlength' => true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

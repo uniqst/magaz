@@ -24,14 +24,19 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         ]) ?>
     </p>
-
+    <?php
+    $fp = fopen("../../frontend/web/robots.txt", "w+"); // Открываем файл в режиме записи 
+    $mytext = $model->robots; // Исходная строка
+    $test = fwrite($fp, $mytext); // Запись в файл
+    fclose($fp); //Закрытие файла
+        ?>       
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
             'id',
             'google',
-            'robots',
             'yandex',
+            'robots',
         ],
     ]) ?>
 
