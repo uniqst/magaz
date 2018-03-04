@@ -24,7 +24,7 @@ use yii\helpers\Url;
                                 </a>
                             </div>
                             <div class="most-wanted__description links-u">
-                                <p><?= $want->most_wanted?></p>
+                                <?= $want->most_wanted?>
                             </div>
                         </div>
                     <?php endforeach;?>
