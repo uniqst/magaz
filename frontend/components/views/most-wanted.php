@@ -7,7 +7,7 @@ use yii\helpers\Url;
                         <?php foreach($model as $want):?>
                             <div class="most-wanted-slider__item">
                                 <a href="<?=Url::to(['/girls/girl', 'id' => $want->id, 'name' => $want->name])?>">
-                                    <div class="girl-image" height="500" width="700"  style="background-image: url(/photo/<?= $want->img_mw?>)"></div>
+                                    <div class="girl-image" style="background-image: url(/photo/<?= $want->img_mw?>)"></div>
                                 </a>
                             </div>
                         <?php endforeach;?>
