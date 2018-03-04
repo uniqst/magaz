@@ -2,7 +2,7 @@
 use yii\helpers\Url;
 ?>
 
-<div class="articles-box">
+<div class="articles-box" style="margin-top: 100px;">
       <div class="articles-box__title">
         <a href="<?= Url::to('/stories')?>"><?=Yii::t('app', 'Erotic stories');?></a>
       </div>
