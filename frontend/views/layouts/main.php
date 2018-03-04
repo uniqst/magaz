@@ -98,14 +98,18 @@ AppAsset::register($this);
             </ul>
             <div class="main-header__multiling">
                 <div class="lang-wrapper">
-                    <a href="<?=Url::to(['/', 'lang' => '']);?>">
-                        <button class="lang <?php if(Yii::$app->language != 'tr'){echo 'active';}?>" id="lang-en" data-lant="en">En</button>
-                    </a>
+                    <button class="lang <?php if(Yii::$app->language != 'tr'){echo 'active';}?>" id="lang-en" data-lant="en">
+                        <a href="<?=Url::to(['/', 'lang' => '']);?>">
+                            En
+                        </a>
+                    </button>
                 </div>
                 <div class="lang-wrapper">
-                    <a href="<?=Url::to(['/', 'lang' => 'tr']);?>">
-                        <button class="lang <?php if(Yii::$app->language == 'tr'){echo 'active';}?>" id="lang-tr" data-lant="tr">Tr</button>
-                    </a>
+                    <button class="lang <?php if(Yii::$app->language == 'tr'){echo 'active';}?>" id="lang-tr" data-lant="tr">
+                        <a href="<?=Url::to(['/', 'lang' => 'tr']);?>">
+                            Tr
+                        </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -176,7 +180,7 @@ AppAsset::register($this);
                 </li>
             </ul>
         </div>
-        <script type="text/javascript">(function() {
+        <script >(function() {
                 if (window.pluso)if (typeof window.pluso.start == "function") return;
                 if (window.ifpluso==undefined) { window.ifpluso = 1;
                     var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
