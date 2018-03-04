@@ -107,12 +107,18 @@ AppAsset::register($this);
             <div class="main-header__multiling">
                 <div class="lang-wrapper">
                     <a href="<?=Url::to(['/', 'lang' => '']);?>">
-                        <button class="lang <?php if(Yii::$app->language != 'tr'){echo 'active';}?>" id="lang-en" data-lant="en">En</button>
+                        <span class="button lang <?php if(Yii::$app->language != 'tr'){echo 'active';}?>" id="lang-en" data-lant="en">
+                            <span class="button-text">
+                                En
+                            </span>
+                        </span>
                     </a>
                 </div>
                 <div class="lang-wrapper">
                     <a href="<?=Url::to(['/', 'lang' => 'tr']);?>">
-                        <button class="lang <?php if(Yii::$app->language == 'tr'){echo 'active';}?>" id="lang-tr" data-lant="tr">Tr</button>
+                        <span class="button lang <?php if(Yii::$app->language == 'tr'){echo 'active';}?>" id="lang-tr" data-lant="tr">
+                                Tr
+                        </span>
                     </a>
                 </div>
             </div>
@@ -184,7 +190,7 @@ AppAsset::register($this);
                 </li>
             </ul>
         </div>
-        <script type="text/javascript">(function() {
+        <script >(function() {
                 if (window.pluso)if (typeof window.pluso.start == "function") return;
                 if (window.ifpluso==undefined) { window.ifpluso = 1;
                     var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
@@ -295,7 +301,7 @@ AppAsset::register($this);
             
     </div> -->
 </footer>
-<script asu scr="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"></script>
+<!-- <script asu scr="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"></script> -->
 
 <?php $this->endBody() ?>
 
