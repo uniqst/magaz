@@ -80,9 +80,7 @@ $this->registerMetaTag([
                     <?=Yii::t('app', $pages[4]->text);?>
                 </h2>
                 <div class="mp-text-block__text">
-                    <p>
-                        <?=Yii::t('app', $pages[5]->text);?>
-                    </p>
+                    <?=Yii::t('app', $pages[5]->text);?>
                 </div>
             </div>
         </div>
@@ -91,7 +89,7 @@ $this->registerMetaTag([
                 <div class="advertise-block__list">
                     <?php foreach($advertising as $adver):?>
                     <div class="advertise__item">
-                        <a><?= $adver->banner?></a>
+                        <?= $adver->banner?>
                     </div>
                 <?php endforeach;?>
                 </div>
