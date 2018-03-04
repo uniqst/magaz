@@ -293,7 +293,7 @@ AppAsset::register($this);
             
     </div> -->
 </footer>
-<script asu scr="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"></script>
+<!-- <script asu scr="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"></script> -->
 
 <?php $this->endBody() ?>
 

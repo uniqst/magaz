@@ -14,7 +14,7 @@ use yii\helpers\Url;
                             <div class="post-item clearfix">
                             <div class="image">
                                 <a href="<?=Url::to(['/stories/story', 'id' => $stor->id, 'name' => $stor->H1])?>">
-                                <img src="/stori/<?= $stor->img?>" width="200" hight="200" alt="Girl photo">
+                                <img src="/stori/<?= $stor->img?>" width="200" height="200" alt="Girl photo">
                                 </a>
                             </div>
                             <div class="post-info-container">
@@ -34,7 +34,7 @@ use yii\helpers\Url;
                             <div class="post-item clearfix">
                             <div class="image">
                                 <a href="<?=Url::to(['/stories/story', 'id' => $stor->id, 'name' => $stor->H1])?>">
-                                <img src="/stori/<?= $stor->img?>" width="200" hight="200" alt="Girl photo">
+                                <img src="/stori/<?= $stor->img?>" width="200" height="200" alt="Girl photo">
                                 </a>
                             </div>
                             <div class="post-info-container">
