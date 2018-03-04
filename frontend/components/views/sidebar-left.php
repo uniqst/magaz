@@ -42,7 +42,7 @@ use yii\helpers\Url;
                   </a>
                   <ul class="category-list category-list--border collapse show" id="list-categories<?=$filter->id?>">
                       <li class="category-list__item">
-                          <a href="#" oclick="return false" class="inputAll">
+                          <a href="#" onclick="return false" class="inputAll">
                               <?=Yii::t('app', 'All');?>
                           </a>
                       </li>
@@ -59,7 +59,7 @@ use yii\helpers\Url;
               </a>
               <ul class="category-list category-list--border collapse show" id="list-categoriess">
                   <li class="category-list__item">
-                      <a href="#" oclick="return false"class="inputAll">
+                      <a href="#" onclick="return false" class="inputAll">
                           <?=Yii::t('app', 'All');?>
                       </a>
                   </li>
