@@ -5,7 +5,7 @@ use yii\helpers\Url;
 <div class="girl-info">
 
     <div class="girl-info__title">
-        <p><?= Yii::t('app', $product->name_description)?></p>
+        <?= Yii::t('app', $product->name_description)?>
         <a href="<?= Url::to(['/girls/girl', 'id' => $product->id, 'name' => $product->name]) ?>">
             <?= Yii::t('app',$product->name)?>
         </a>

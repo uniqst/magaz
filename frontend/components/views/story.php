@@ -9,7 +9,7 @@ use yii\helpers\Url;
       <div class="articles__list">
         <ul>
           <?php foreach($model as $story):?>
-          <div class="list-item">
+          <li class="list-item">
             <div class="photo" style="background-image: url(/stori/<?= $story->img?>)">
               <a href="<?= Url::to(['/stories/story', 'id' => $story->id, 'name' => $story->H1])?>"></a>
             </div>
@@ -21,7 +21,7 @@ use yii\helpers\Url;
                 <?= Yii::t('app', mb_substr($story->short_description, 0, 1000).'...')?>
               </div>
             </div>
-          </div>
+          </li>
         <?php endforeach;?>
         </ul>
       </div>
