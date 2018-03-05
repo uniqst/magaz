@@ -19,9 +19,9 @@ $this->registerMetaTag([
   <div class="col-12">
     <div class="row">
       <div class="mx-auto col-xl-58p">
-          <div class="heading-main mb-0 links-u">
+          <h2 class="heading-main mb-0 links-u">
               <?=Yii::t('app', $pages[2]->text);?>
-          </div>
+          </h2>
       </div>
     </div>
   </div>

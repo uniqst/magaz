@@ -229,7 +229,6 @@ AppAsset::register($this);
         <?= $content ?>
 
     </div>
-</div>
 
 <div class="main-footer__top-line"></div>
 
