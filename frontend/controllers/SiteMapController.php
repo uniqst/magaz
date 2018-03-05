@@ -27,13 +27,19 @@ class SitemapController extends Controller
                 );
             }
 
-            $categories = Category::find()->all();
-            foreach ($categories as $category) {
+            $posts = (new Query())
+                ->select('b.alias, c.alias as c_alias')
+                ->from('blog as b')
+                ->leftJoin('blog_categories as c', 'b.catid = c.id')
+                ->where('b.publish = 1 AND b.created <= NOW()')->all();
+ 
+            foreach ($posts as $post) {
                 $urls[] = array(
-                    Yii::$app->urlManager->createUrl(['/category/' . $category->id]) // создаем ссылки на выбранные категории
-                , ''                                                           // вероятная частота изменения категории
+                    Yii::$app->urlManager->createUrl(['/blog/' . $post['c_alias'] . '/' . $post['alias']]) // строим ссылки на записи блога
+                , 'weekly'
                 );
             }
+
             
             $filters = FiltersValue::find()->all();
             foreach ($filters as $filter) {
@@ -49,7 +55,7 @@ class SitemapController extends Controller
                 'urls' => $urls,                                // с генерированные ссылки для sitemap
             ));
  
-            Yii::$app->cache->set('sitemap', $xml_sitemap); // кэшируем результат, чтобы не нагружать сервер и не выполнять код при каждом запросе карты сайта.
+            Yii::$app->cache->set('sitemap', $xml_sitemap, 1*2); // кэшируем результат, чтобы не нагружать сервер и не выполнять код при каждом запросе карты сайта.
         }
  
         Yii::$app->response->format = \yii\web\Response::FORMAT_XML; // устанавливаем формат отдачи контента

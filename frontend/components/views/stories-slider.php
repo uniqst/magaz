@@ -22,7 +22,7 @@ use yii\helpers\Url;
                                     <a href="<?=Url::to(['/stories/story', 'id' => $stor->id, 'name' => $stor->H1])?>"><?=Yii::t('app', $stor->H1);?></a>
                                 </div>
                                 <div class="center-block">
-                                    <p><?=Yii::t('app', $stor->short_description);?></p>
+                                    <?=Yii::t('app', $stor->short_description);?>
                                 </div>
                             </div>
                             </div>
