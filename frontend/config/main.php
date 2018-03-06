@@ -68,7 +68,7 @@ return [
             'rules' => [
                 'girl/<id:\d+>/<name:\w+>' => 'girls/girl',
                 'story/<id:\d+>/<name:\w+>' => 'stories/story',
-                'sitemap.xml' => 'sitemap/index'
+                'sitemap.xml' => 'site/sitemap'
             ],
         ],
     ],

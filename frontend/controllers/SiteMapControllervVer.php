@@ -6,6 +6,8 @@ namespace frontend\controllers;
 use yii\web\Controller;
 use yii\db\Query;
 use frontend\models\Category;
+use frontend\models\Service;
+use frontend\models\Stories;
 use frontend\models\FiltersValue;
 use Yii;
  
@@ -23,7 +25,7 @@ class SitemapController extends Controller
             foreach ($categories as $category) {
                 $urls[] = array(
                     Yii::$app->urlManager->createUrl(['/category/' . $category->id]) // создаем ссылки на выбранные категории
-                , ''                                                           // вероятная частота изменения категории
+                , '1*2'                                                           // вероятная частота изменения категории
                 );
             }
 
@@ -36,16 +38,31 @@ class SitemapController extends Controller
             foreach ($posts as $post) {
                 $urls[] = array(
                     Yii::$app->urlManager->createUrl(['/blog/' . $post['c_alias'] . '/' . $post['alias']]) // строим ссылки на записи блога
-                , 'weekly'
+                , '1*2'
                 );
             }
 
-            
+            $categories = Service::find()->all();
+            foreach ($categories as $category) {
+                $urls[] = array(
+                    Yii::$app->urlManager->createUrl(['/service/' . $service->id]) // создаем ссылки на выбранные категории
+                , '1*2'                                                           // вероятная частота изменения категории
+                );
+            }
+
+            $categories = Stories::find()->all();
+            foreach ($categories as $category) {
+                $urls[] = array(
+                    Yii::$app->urlManager->createUrl(['/stories/' . $stories->id]) // создаем ссылки на выбранные категории
+                , '1*2'                                                           // вероятная частота изменения категории
+                );
+            }
+
             $filters = FiltersValue::find()->all();
             foreach ($filters as $filter) {
                 $urls[] = array(
                     Yii::$app->urlManager->createUrl(['/filters_value/' . $filter->id]) // создаем ссылки на выбранные категории
-                , ''                                                           // вероятная частота изменения категории
+                , '1*2'                                                           // вероятная частота изменения категории
                 );
             }
            
@@ -55,7 +72,7 @@ class SitemapController extends Controller
                 'urls' => $urls,                                // с генерированные ссылки для sitemap
             ));
  
-            Yii::$app->cache->set('sitemap', $xml_sitemap, 1*2); // кэшируем результат, чтобы не нагружать сервер и не выполнять код при каждом запросе карты сайта.
+
         }
  
         Yii::$app->response->format = \yii\web\Response::FORMAT_XML; // устанавливаем формат отдачи контента

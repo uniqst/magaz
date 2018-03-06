@@ -18,6 +18,7 @@ use frontend\models\Profile;
 use frontend\models\Comments;
 use frontend\models\Pages;
 use frontend\models\Advertising;
+use frontend\models\Sitemap;
 
 /**
  * Site controller
@@ -226,4 +227,21 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+
+
+    public function actionSitemap(){
+    //Карта сайта. Выводит в виде XML файла.
+    $sitemap = new Sitemap();
+    // Если в кэше нет карты сайта        
+    if (!$xml_sitemap = Yii::$app->cache->get('sitemaps')) {
+        //Получаем мыссив всех ссылок
+        $urls = $sitemap->getUrl();
+        //Формируем XML файл
+        $xml_sitemap = $sitemap->getXml($urls);
+        // кэшируем результат
+        // Yii::$app->cache->set('sitemap', $xml_sitemap, 3*1); 
+    } 
+    // Выводим карту сайта
+    $sitemap->showXml($xml_sitemap);
+}
 }
