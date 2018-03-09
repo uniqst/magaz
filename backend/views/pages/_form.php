@@ -11,26 +11,49 @@ use mihaildev\ckeditor\CKEditor;
 ?>
 
 <div class="pages-form">
-
+    <pre>
+        <?=print_r($translate)?>
+    </pre>
+    <div class="row">
     <?php $form = ActiveForm::begin(); ?>
 
-    <?php
-    echo $form->field($model, 'text')->widget(CKEditor::className(),[
-        'editorOptions' => [
-            'preset' => 'full', //разработанны стандартные настройки basic, standard, full данную возможность не обязательно использовать
-            'inline' => false, //по умолчанию false
-        ],
-    ]);
-    ?>
+        <div class="col-md-6">
 
-    <?= $form->field($model, 'page')->textInput(['maxlength' => true]) ?>
+            <?php
+            echo $form->field($model, 'text')->widget(CKEditor::className(),[
+                'editorOptions' => [
+                    'preset' => 'full', //разработанны стандартные настройки basic, standard, full данную возможность не обязательно использовать
+                    'inline' => false, //по умолчанию false
+                ],
+            ]);
+            ?>
 
-    <?= $form->field($model, 'description')->textArea(['maxlength' => true]) ?>
+            <?= $form->field($model, 'page')->textInput(['maxlength' => true]) ?>
 
-    <div class="form-group">
-        <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>
+            <?= $form->field($model, 'description')->textArea(['maxlength' => true]) ?>
+
+            <div class="form-group">
+                <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+
+            <?php echo $form->field($translate, 'message')->widget(CKEditor::className(),[
+                'editorOptions' => [
+                    'preset' => 'full', //разработанны стандартные настройки basic, standard, full данную возможность не обязательно использовать
+                    'inline' => false, //по умолчанию false
+                ],
+            ]);
+            ?>
+
+            <?= $form->field($model, 'page')->textInput(['maxlength' => true]) ?>
+
+            <?= $form->field($model, 'description')->textArea(['maxlength' => true]) ?>
+
+        </div>
+        <?php ActiveForm::end(); ?>
+
     </div>
-
-    <?php ActiveForm::end(); ?>
 
 </div>

@@ -1,7 +1,7 @@
 <?php
 
 namespace frontend\models;
-
+use Zelenin\yii\modules\I18n\models\SourceMessage;
 use Yii;
 
 /**
@@ -44,4 +44,10 @@ class Pages extends \yii\db\ActiveRecord
             'description' => Yii::t('app', 'Description'),
         ];
     }
+
+    public function getSm()
+    {
+        return $this->hasMany(SourceMessage::className(), ['text_id' => 'id']);
+    }
+    
 }
