@@ -8,9 +8,9 @@ use yii\widgets\Pjax;
 <?php $form = ActiveForm::begin(['options' => ['data-pjax' => true, 'class' => 'main-application-form container-fluid']]); ?>
 
       <h1 class="page-name px-0"><?=Yii::t('app', $pages[1]->text);?></h1>
-      <div class="text px-0 links-u">
+      <h2 class="text px-0 links-u">
          <?=Yii::t('app', $pages[2]->text);?>
-      </div>
+      </h2>
 
         <div class="row">
           <div class="col-md-12 ">

@@ -28,7 +28,7 @@ $this->registerMetaTag([
             <input type="text" class="form-control" name="name" placeholder="your name*">
           </div>
           <div class="col-md-6">
-            <input type="email"class="form-control" name="email" placeholder="your e-mail*">
+            <input type="email" class="form-control" name="email" placeholder="your e-mail*">
           </div>
           <div class="col-md-4" >
             <input type="text" class="form-control" name="phone" placeholder="your phone number*">
@@ -42,7 +42,7 @@ $this->registerMetaTag([
         </div>
         <div class="row">
           <div class="col-md-12">
-            <textarea class="form-control" name="wishes" id="" cols="30" rows="7" class="col-md-12" placeholder="tell us if you have some special wishes*"></textarea>
+            <textarea class="form-control col-md-12" name="wishes" cols="30" rows="7"></textarea>
           </div>
         </div>
         <div class="row submit">

@@ -25,7 +25,8 @@ AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
-<html lang="<?= Yii::$app->language ?>">
+<!-- <html lang="<?= Yii::$app->language ?>"> -->
+<html lang="en">
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -228,7 +229,6 @@ AppAsset::register($this);
         <?= $content ?>
 
     </div>
-</div>
 
 <div class="main-footer__top-line"></div>
 
