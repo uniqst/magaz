@@ -18,9 +18,7 @@ use yii\helpers\Url;
               <?= Yii::t('app', $services->name)?>
             </div>
             <div class="center-block">
-              <p>
               <?= Yii::t('app', mb_substr($services->content, 0, 1000).'...')?>
-              </p>
             </div>
           </div>
         </div>
