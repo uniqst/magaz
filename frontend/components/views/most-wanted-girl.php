@@ -16,7 +16,7 @@
 
           </div>
           <div class="most-wanted__description link-u">
-              <p><?= Yii::t('app', $want->about_myself)?></p>
+              <?= Yii::t('app', $want->about_myself)?>
           </div>
         </div>
     <?php endforeach;?>
