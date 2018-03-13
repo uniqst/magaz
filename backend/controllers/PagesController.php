@@ -9,7 +9,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use Zelenin\yii\modules\I18n\models\SourceMessage;
-
+use Zelenin\yii\modules\I18n\models\Message;
 
 /**
  * PagesController implements the CRUD actions for Pages model.
@@ -85,13 +85,16 @@ class PagesController extends Controller
      */
     public function actionUpdate($id)
     {
-        $model = Pages::find()->where(['id' => $id])->with('sm.messages')->one();
-
-        $translate = SourceMessage::find()->where(['text_id' => $id])->with(['messages' => function(yii\db\ActiveQuery $query){
-            $query->where(['language' => 'tr']);
+        $model = Pages::find()->where(['id' => $id])->one();
+        $text = $model->text;
+     
+        $translate = Message::find()->where(['language' => 'tr'])
+        ->joinWith(['sourceMessage' => function(yii\db\ActiveQuery $query) use($text){
+            $query->where(['message' => $text]);
         }])->one();
-
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            // $tralnslate->translation = $_POST['Message']['translation'];
+            // $tralnslate->save();
             return $this->redirect(['view', 'id' => $model->id]);
         }
 

@@ -44,10 +44,5 @@ class Pages extends \yii\db\ActiveRecord
             'description' => Yii::t('app', 'Description'),
         ];
     }
-
-    public function getSm()
-    {
-        return $this->hasMany(SourceMessage::className(), ['text_id' => 'id']);
-    }
     
 }
