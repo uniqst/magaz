@@ -88,14 +88,14 @@ class PagesController extends Controller
         $model = Pages::find()->where(['id' => $id])->one();
         $text = $model->text;
      
-        $translate = Message::find()->where(['language' => 'tr'])
-        ->joinWith(['sourceMessage' => function(yii\db\ActiveQuery $query) use($text){
-            $query->where(['message' => $text]);
-        }])->one();
+        // $translate = Message::find()->where(['language' => 'tr'])
+        // ->joinWith(['sourceMessage' => function(yii\db\ActiveQuery $query) use($text){
+        //     $query->where(['message' => $text]);
+        // }])->one();
+
+
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            // $tralnslate->translation = $_POST['Message']['translation'];
-            // $tralnslate->save();
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['update', 'id' => $model->id]);
         }
 
         return $this->render('update', [

@@ -11,9 +11,6 @@ use mihaildev\ckeditor\CKEditor;
 ?>
 
 <div class="pages-form">
-    <pre>
-        <?php print_r($translate);?>
-    </pre>
     <div class="row">
     <?php $form = ActiveForm::begin(); ?>
 
@@ -35,21 +32,14 @@ use mihaildev\ckeditor\CKEditor;
             <div class="form-group">
                 <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>
             </div>
+            <?php ActiveForm::end(); ?>
 
         </div>
-        <div class="col-md-6">
-
-            <?php echo $form->field($translate, 'translation')->widget(CKEditor::className(),[
-                'editorOptions' => [
-                    'preset' => 'full', //разработанны стандартные настройки basic, standard, full данную возможность не обязательно использовать
-                    'inline' => false, //по умолчанию false
-                ],
-            ]);
-            ?>
+    
+            <div class="col-md-6">
+            <?= \backend\components\Translate::widget(['text' => $model->text]);?>
 
         </div>
-        <?php ActiveForm::end(); ?>
-
     </div>
 
 </div>
