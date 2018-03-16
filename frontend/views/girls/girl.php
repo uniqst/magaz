@@ -138,7 +138,7 @@ if($prev->id == ''){
                         </li>
                         <li class="info-list__item">
                             <span class="property"><?=Yii::t('app', 'NATIONALITY')?></span>
-                            <span class="value"><?= $model->nationality?></span>
+                            <span class="value"><?=Yii::t('app' ,$model->nationality)?></span>
                         </li>
                         <li class="info-list__item">
                             <span class="property"><?=Yii::t('app', 'HEIGHT')?></span>
@@ -154,19 +154,19 @@ if($prev->id == ''){
                         </li>
                         <li class="info-list__item">
                             <span class="property"><?=Yii::t('app', 'OPTIONS')?></span>
-                            <span class="value"><?= $model->mesurements?></span>
+                            <span class="value"><?=Yii::t('app', $model->mesurements)?></span>
                         </li>
                         <li class="info-list__item">
                             <span class="property"><?=Yii::t('app', 'HAIR COLOR')?></span>
-                            <span class="value"><?= $model->hair?></span>
+                            <span class="value"><?=Yii::t('app', $model->hair)?></span>
                         </li>
                         <li class="info-list__item">
                             <span class="property"><?=Yii::t('app', 'EYE COLOR')?></span>
-                            <span class="value"><?= $model->eye?></span>
+                            <span class="value"><?=Yii::t('app', $model->eye)?></span>
                         </li>
                         <li class="info-list__item">
                             <span class="property"><?=Yii::t('app', 'LANGUAGES')?></span>
-                            <span class="value"><?= $model->language?></span>
+                            <span class="value"><?=Yii::t('app', $model->language)?></span>
                         </li>
                         <li class="info-list__item">
                             <span class="property"><?=Yii::t('app', 'CONTACT')?></span>
@@ -178,7 +178,7 @@ if($prev->id == ''){
                         </li>
                         <li class="info-list__item">
                             <span class="property"><?=Yii::t('app', 'CITY')?></span>
-                            <span class="value"><?= $model->city?></span>
+                            <span class="value"><?=Yii::t('app', $model->city)?></span>
                         </li>
                         <li class="info-list__item">
                             <span class="property"><?=Yii::t('app', 'WORKING HOURS')?></span>
