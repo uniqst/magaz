@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +20,7 @@
 <link href="/css/site.css" rel="stylesheet">
 <link href="/css/styles.css" rel="stylesheet">
 </head>
-
+<body>
 <div class="wrap">
     <div class="age-verify">
         <header class="age-verify__header">
@@ -49,3 +50,5 @@
         </div>
     </div>
 </div>
+</body>
+</html>
