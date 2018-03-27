@@ -27,7 +27,7 @@ foreach($services as $s){
 $this->title = 'Ankara escort Filters: ' . $filt . $serv;
 $this->registerMetaTag([
 'name' => 'description',
-'content' => Yii::t('app', $pages[3]->text),
+'content' => Yii::t('app', $filt . $serv),
 ]);
 ?>
 <div class="row stories-page">
