@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +20,7 @@
 <link href="/css/site.css" rel="stylesheet">
 <link href="/css/styles.css" rel="stylesheet">
 </head>
-
+<body>
 <div class="wrap">
     <div class="age-verify">
         <header class="age-verify__header">
@@ -35,7 +37,7 @@
                 </div>
             </div>
             <div class="age-verify--text-block">
-                <p class="age-verify--headline"><?= $model->textdown?></p>
+                <?= $model->textdown?>
             </div>
             <div class="age-verify__buttons">
                 <a href="?verification=1" class="age-verify--enter">
@@ -48,3 +50,5 @@
         </div>
     </div>
 </div>
+</body>
+</html>
