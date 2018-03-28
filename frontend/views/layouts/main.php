@@ -36,7 +36,7 @@ AppAsset::register($this);
     <meta property="og:type" content="website" />
     <meta property="og:url" content=": http://allescortsankara.com" />
     <meta property="og:description" content="Escort Ankara girls" />
-    <meta property="og:image" content="<?=Url::to(['/img/logo.PNG'])?>" />
+    <meta property="og:image" content="/img/logo.PNG" />
     <?= $seo->google?>
     <?= $seo->yandex?>
 
