@@ -25,7 +25,7 @@ AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
-<!-- <html lang="<?= Yii::$app->language ?>"> -->
+
 <html prefix="og: http://ogp.me/ns#" lang="en">
 <head>
     <meta charset="<?= Yii::$app->charset ?>" />
