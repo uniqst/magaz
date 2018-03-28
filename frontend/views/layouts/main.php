@@ -32,13 +32,13 @@ AppAsset::register($this);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <?= $seo->google?>
     <?= $seo->yandex?>
-    <meta property="og:title" content="Ankara escort">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:site_name" content=": allescortsankara">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content=": http://allescortsankara.com">
-    <meta property="og:description" content="Escort Ankara girls">
-    <meta property="og:image" content="<?=Url::to(['/img/logo.PNG'])?>">
+    <meta property="og:title" content="Ankara escort" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:site_name" content=": allescortsankara" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content=": http://allescortsankara.com" />
+    <meta property="og:description" content="Escort Ankara girls" />
+    <meta property="og:image" content="<?=Url::to(['/img/logo.PNG'])?>" />
 
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
