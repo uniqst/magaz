@@ -81,7 +81,11 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-
+        Yii::$app->controller->view->registerMetaTag(['property'=>'og:title', 'content'=>"Ankara escort"], 'og:title');
+        Yii::$app->controller->view->registerMetaTag(['property'=>'og:site_name', 'content'=>"allescortsankara"], 'og:site_name');
+        Yii::$app->controller->view->registerMetaTag(['property'=>'og:url', 'content'=>"http://www.allescortsankara.com"], 'og:url');
+        Yii::$app->controller->view->registerMetaTag(['property'=>'og:image', 'content'=>"/img/logo.PNG"], 'og:image');
+        
         $pages = Pages::find()->where(['page' => 'Home'])->all();
         $model = Profile::find()->where(['status' => 1])->with('image')->all();
         $model2 = Profile::find()->where(['status' => 1])->with('image');
