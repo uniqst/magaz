@@ -85,6 +85,7 @@ class SiteController extends Controller
         Yii::$app->controller->view->registerMetaTag(['property'=>'og:site_name', 'content'=>"allescortsankara"], 'og:site_name');
         Yii::$app->controller->view->registerMetaTag(['property'=>'og:url', 'content'=>"http://www.allescortsankara.com"], 'og:url');
         Yii::$app->controller->view->registerMetaTag(['property'=>'og:image', 'content'=>"/img/logo.PNG"], 'og:image');
+        Yii::$app->controller->view->registerMetaTag(['property'=>'og:type', 'content'=>"website"], 'og:type');
         
         $pages = Pages::find()->where(['page' => 'Home'])->all();
         $model = Profile::find()->where(['status' => 1])->with('image')->all();
