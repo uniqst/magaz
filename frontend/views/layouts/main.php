@@ -26,7 +26,7 @@ AppAsset::register($this);
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <!-- <html lang="<?= Yii::$app->language ?>"> -->
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,8 +34,9 @@ AppAsset::register($this);
     <?= $seo->yandex?>
     <meta property="og:title" content="Ankara escort">
     <meta property="og:site_name" content=": allescortsankara">
+    <meta property="og:type" content="article">
     <meta property="og:url" content=": http://allescortsankara.com">
-    <meta property="og:description" content="text">
+    <meta property="og:description" content="Escort Ankara girls">
     <meta property="og:image" content="<?=Url::to(['/img/logo.PNG'])?>">
 
     <?= Html::csrfMetaTags() ?>
