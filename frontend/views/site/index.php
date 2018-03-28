@@ -7,6 +7,12 @@ $this->registerMetaTag([
 'name' => 'description',
 'content' => Yii::t('app', $pages[6]->text),
 ]);
+
+Yii::$app->controller->view->registerMetaTag(['property'=>'og:title', 'content'=>"Ankara escort", 'og:title');
+Yii::$app->controller->view->registerMetaTag(['property'=>'og:site_name', 'content'=>"allescortsankara"], 'og:site_name');
+Yii::$app->controller->view->registerMetaTag(['property'=>'og:url', 'content'=>"http://allescortsankara.com"], 'og:url');
+Yii::$app->controller->view->registerMetaTag(['property'=>'og:image', 'content'=>"/img/logo.PNG"], 'og:image');
+
 ?>
 
     <div class="row main-page-upper-box">
