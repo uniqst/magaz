@@ -25,18 +25,16 @@ AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
-<!-- <html lang="<?= Yii::$app->language ?>"> -->
-<html lang="en">
+
+<html prefix="og: http://ogp.me/ns#" lang="en">
 <head>
-    <meta charset="<?= Yii::$app->charset ?>">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta charset="<?= Yii::$app->charset ?>" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <?= $seo->google?>
     <?= $seo->yandex?>
-    <meta property="og:title" content="Ankara escort">
-    <meta property="og:site_name" content=": allescortsankara">
-    <meta property="og:url" content=": http://allescortsankara.com">
-    <meta property="og:description" content="text">
-    <meta property="og:image" content="<?=Url::to(['/img/logo.PNG'])?>">
 
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>

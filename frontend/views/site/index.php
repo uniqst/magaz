@@ -7,6 +7,7 @@ $this->registerMetaTag([
 'name' => 'description',
 'content' => Yii::t('app', $pages[6]->text),
 ]);
+
 ?>
 
     <div class="row main-page-upper-box">
