@@ -2,11 +2,13 @@
 <html prefix="og: http://ogp.me/ns#">
 <head>
 
-    <?php Yii::$app->controller->view->registerMetaTag(['property'=>'og:title', 'content'=>"Ankara escort"], 'og:title');?>
-    <?php Yii::$app->controller->view->registerMetaTag(['property'=>'og:site_name', 'content'=>"allescortsankara"], 'og:site_name');?>
-    <?php Yii::$app->controller->view->registerMetaTag(['property'=>'og:url', 'content'=>"https://www.allescortsankara.com"], 'og:url');?>
-    <?php Yii::$app->controller->view->registerMetaTag(['property'=>'og:image', 'content'=>"https://allescortsankara.com/img/logo.png"], 'og:image');?>
-    <?php Yii::$app->controller->view->registerMetaTag(['property'=>'og:type', 'content'=>"website"], 'og:type');?>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ankara escort" />
+    <meta property="og:description" content="Ankara escort girls" />
+    <meta property="og:url" content="http://www.allescortsankara.com" />
+    <meta property="og:site_name" content="Allescortsankara" />
+    <meta property="og:image"
+    
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
