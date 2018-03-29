@@ -1,7 +1,7 @@
 Options +FollowSymLinks
 IndexIgnore */*
 RewriteEngine on
- 
+
 # Если запрос начинается с /admin, то заменяем на /backend/web/
 RewriteCond %{REQUEST_URI} ^/admin
 RewriteRule ^admin\/?(.*) /backend/web/$1

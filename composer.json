@@ -25,7 +25,10 @@
         "pheme/yii2-i18n-url": "*",
         "skeeks/yii2-assets-auto-compress": "*",
         "mihaildev/yii2-elfinder": "*",
-        "mihaildev/yii2-ckeditor": "*"
+        "mihaildev/yii2-ckeditor": "*",
+        "fgh151/yii2-opengraph": "*",
+        "dragonjet/yii2-opengraph": "*",
+        "rmrevin/yii2-minify-view": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
