@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4ed79da913caf10540905227985cfb7",
+    "content-hash": "22c93898b1f8f75f1db262c6ea61ecdd",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -1747,6 +1747,51 @@
                 "yii"
             ],
             "time": "2017-01-11T14:05:47+00:00"
+        },
+        {
+            "name": "rmrevin/yii2-minify-view",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rmrevin/yii2-minify-view.git",
+                "reference": "4545e6d3f1f0a8fd1589b5b698fd49faa1b354d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rmrevin/yii2-minify-view/zipball/4545e6d3f1f0a8fd1589b5b698fd49faa1b354d9",
+                "reference": "4545e6d3f1f0a8fd1589b5b698fd49faa1b354d9",
+                "shasum": ""
+            },
+            "require": {
+                "mrclay/minify": "^3.0",
+                "yiisoft/yii2": "^2.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "rmrevin\\yii\\minify\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Revin Roman",
+                    "email": "roman@rmrevin.com",
+                    "homepage": "https://rmrevin.com/"
+                }
+            ],
+            "description": "Yii2 View component with auto minification css & js in runtime",
+            "keywords": [
+                "JS",
+                "css",
+                "minify",
+                "view",
+                "yii2"
+            ],
+            "time": "2017-12-22T20:31:41+00:00"
         },
         {
             "name": "setasign/fpdi",
@@ -5084,7 +5129,8 @@
     "stability-flags": {
         "kartik-v/yii2-grid": 20,
         "kartik-v/yii2-mpdf": 20,
-        "zelenin/yii2-i18n-module": 20
+        "zelenin/yii2-i18n-module": 20,
+        "rmrevin/yii2-minify-view": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

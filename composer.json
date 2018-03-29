@@ -26,8 +26,11 @@
         "skeeks/yii2-assets-auto-compress": "*",
         "mihaildev/yii2-elfinder": "*",
         "mihaildev/yii2-ckeditor": "*",
+<<<<<<< HEAD
         "fgh151/yii2-opengraph": "*",
         "dragonjet/yii2-opengraph": "*",
+=======
+>>>>>>> 4b4624eb911200fa05d331c180d8fc16998fe493
         "rmrevin/yii2-minify-view": "dev-master"
     },
     "require-dev": {
