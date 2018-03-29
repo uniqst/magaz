@@ -29,13 +29,6 @@ AppAsset::register($this);
 <html prefix="og: http://ogp.me/ns#" lang="en">
 <head>
 
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Ankara escort" />
-    <meta property="og:description" content="Ankara escort girls" />
-    <meta property="og:url" content="http://www.allescortsankara.com" />
-    <meta property="og:site_name" content="Allescortsankara" />
-    <meta property="og:image" content="http://allescortsankara.com/img/logo.png" />
-
     <meta charset="<?= Yii::$app->charset ?>" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
