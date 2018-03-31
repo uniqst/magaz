@@ -7,7 +7,7 @@
     <meta property="og:description" content="Ankara escort girls" />
     <meta property="og:url" content="http://www.allescortsankara.com" />
     <meta property="og:site_name" content="Allescortsankara" />
-    <meta property="og:image" content="http://allescortsankara.com/img/logo.png" />
+    <meta property="og:image" content="http://allescortsankara.com/img/logo.PNG" />
     
 
     <meta charset="UTF-8">
