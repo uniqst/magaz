@@ -10,7 +10,7 @@ $this->registerMetaTag([
 Yii::$app->controller->view->registerMetaTag(['property'=>'og:title', 'content'=>$model->title], 'og:title');
 Yii::$app->controller->view->registerMetaTag(['property'=>'og:site_name', 'content'=>"allescortsankara"], 'og:site_name');
 Yii::$app->controller->view->registerMetaTag(['property'=>'og:url', 'content'=>Url::to(['/story', 'id' => $model->id, 'H1' => $model->H1])], 'og:url');
-Yii::$app->controller->view->registerMetaTag(['property'=>'og:image', 'content'=>"/story/" . $model->img], 'og:image');
+Yii::$app->controller->view->registerMetaTag(['property'=>'og:image', 'content'=>"/stori/" . $model->img], 'og:image');
 Yii::$app->controller->view->registerMetaTag(['property'=>'og:type', 'content'=>"website"], 'og:type');
 
 ?>
