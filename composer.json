@@ -26,7 +26,8 @@
         "skeeks/yii2-assets-auto-compress": "*",
         "mihaildev/yii2-elfinder": "*",
         "mihaildev/yii2-ckeditor": "*",
-        "rmrevin/yii2-minify-view": "dev-master"
+        "rmrevin/yii2-minify-view": "dev-master",
+        "maybeworks/yii2-minify": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

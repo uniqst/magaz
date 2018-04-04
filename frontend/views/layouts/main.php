@@ -35,7 +35,11 @@ AppAsset::register($this);
 
     <?= $seo->google?>
     <?= $seo->yandex?>
-
+    <?php if(Yii::$app->language == 'tr'):?>
+    <link rel="alternate" hreflang="tr" href="http://tr.allescortsankara.com/" />
+    <?php else:?>
+    <link rel="alternate" hreflang="en" href="http://en.allescortsankara.com/" />
+    <?php endif;?>
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <link rel="shortcut icon" type="image/png" href="favicon.png">
