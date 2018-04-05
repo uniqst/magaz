@@ -4,6 +4,7 @@
 use yii\helpers\Url;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\widgets\Breadcrumbs;
 $this->title = Yii::t('app', $pages[0]->text);
 $this->registerMetaTag([
 'name' => 'description',
