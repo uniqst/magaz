@@ -11,6 +11,8 @@ Class Translate extends Widget{
     public $input;
     public $label;
     public function run(){
+            $path = explode('/', Yii::$app->request->pathInfo);
+            if ($path[1] != 'create') {
             $model = SourceMessage::find()->where(['message' => $this->text])->one();
             if ($model != null) {
                 $model->initMessages();
@@ -26,5 +28,8 @@ Class Translate extends Widget{
             } else {
                 return '<h2>'.$this->label.' не проверено</h2>';
             }
+        } else {
+            return '<h2>Перевод "'.$this->label.'" будет доступен послепросмотра записи</h2>';
+        }
     }
 }

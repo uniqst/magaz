@@ -12,7 +12,9 @@ use mihaildev\elfinder\ElFinder;
 
 <div class="stories-form">
 
-   <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]) ?>
+<div class="row">
+  <div class="col-md-6">    
+    <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]) ?>
 
    <?= $form->field($model, 'imageFile')->fileInput() ?>
 
@@ -29,7 +31,7 @@ use mihaildev\elfinder\ElFinder;
   		'inline' => false,
   	]),
 
-]);?>
+]);?>   
 
 	 <?= $form->field($model, 'content')->widget(CKEditor::className(), [
 
@@ -41,6 +43,20 @@ use mihaildev\elfinder\ElFinder;
 ]);?>
 
     <?= $form->field($model, 'date')->hiddenInput(['value' => date('Y-m-d H:i:s')])->label(false) ?>
+
+ </div>
+ <div class="col-md-6">
+    <?= \backend\components\Translate::widget(['text' => $model->title, 'input' => 'text', 'label' => 'Title']);?>
+    <?= \backend\components\Translate::widget(['text' => $model->description, 'input' => 'area', 'label' => 'Meta description']);?>
+    <?= \backend\components\Translate::widget(['text' => $model->H1, 'input' => 'text', 'label' => 'H1']);?>
+    <?= \backend\components\Translate::widget(['text' => $model->short_description, 'input' => 'area', 'label' => 'Short Description']);?>
+    <?= \backend\components\Translate::widget(['text' => $model->content, 'input' => 'area', 'label' => 'Content']);?>
+
+
+ </div>
+</div>
+   
+
 
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>

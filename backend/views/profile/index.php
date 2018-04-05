@@ -1,7 +1,7 @@
 <?php
 
 use yii\helpers\Html;
-use kartik\grid\GridView;
+use yii\grid\GridView;
 use frontend\models\Profile; 
 use yii\widgets\Pjax;
 /* @var $this yii\web\View */
@@ -24,35 +24,24 @@ $this->params['breadcrumbs'][] = $this->title;
 <?php Pjax::begin(); ?>    <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'dataProvider' => $dataProvider,
         'columns' => [
-            [
-            'class' => 'kartik\grid\ExpandRowColumn',
-            'value' => function ($model, $key, $index, $column) {
-                return GridView:: ROW_COLLAPSED;
-            },
-            'detail' => function ($model, $key, $index, $column) {
-
-                
-                return Yii::$app->controller->renderPartial('view', [
-                        'model' => $model,
-
-                ]);
-            },
-
-        ],
-            [
+            ['class' => 'yii\grid\SerialColumn'],
+                [
                 'attribute' => 'id',
                 'value' => function($data){
                     return "<img src='/frontend/web/photo/".$data->image->src."' style='width: 150px;' />";
                 },
                 'format' => 'html',
-            ],
+              ],
             'name',
             'age',
 //            'country',
 //            'about_myself',
             // 'contacts',
             // 'date',
+            ['class' => 'yii\grid\ActionColumn'],
+
         ],
     ]); ?>
 <?php Pjax::end(); ?></div>
