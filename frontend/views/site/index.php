@@ -15,7 +15,7 @@ Yii::$app->controller->view->registerMetaTag(['property'=>'og:image', 'content'=
 Yii::$app->controller->view->registerMetaTag(['property'=>'og:type', 'content'=>"website"], 'og:type');
 
 ?>
-
+  
     <div class="row main-page-upper-box">
         <div class="offset-xl-2 col-xl-8 px-to-md-0">
             <div class="main-slider-container">

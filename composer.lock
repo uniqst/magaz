@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9bc1842b2a379439048255f40217f2ed",
+    "content-hash": "49bc8ed9872da97c8f189444b0871f9c",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -997,6 +997,48 @@
                 "yii2"
             ],
             "time": "2017-07-19T09:51:02+00:00"
+        },
+        {
+            "name": "matthew-p/yii2-breadcrumbs-microdata",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MatthewPattell/yii2-breadcrumbs-microdata.git",
+                "reference": "4847264b2e6093530b971f4b026be6e7513f7e35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MatthewPattell/yii2-breadcrumbs-microdata/zipball/4847264b2e6093530b971f4b026be6e7513f7e35",
+                "reference": "4847264b2e6093530b971f4b026be6e7513f7e35",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "mp\\bmicrodata\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Matthew Patell",
+                    "email": "hellboymxb@gmail.com"
+                }
+            ],
+            "description": "Add microdata for breadcrumbs.",
+            "keywords": [
+                "breadcrumbs",
+                "extension",
+                "microdata",
+                "yii2"
+            ],
+            "time": "2017-03-19T10:51:14+00:00"
         },
         {
             "name": "maybeworks/yii2-minify",

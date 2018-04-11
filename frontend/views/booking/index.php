@@ -66,7 +66,14 @@ Yii::$app->controller->view->registerMetaTag(['property'=>'og:type', 'content'=>
 <div class="col-12 dir-tree-links">
       <div class="row">
         <div class="mx-auto col-xl-58p">
-          <a href="<?= Url::to('/')?>"><?=Yii::t('app', 'Home');?></a>
+          <?= common\widgets\BreadcrumbsWidget::widget([
+            'options'=>['itemscope'=>'', 'itemtype'=>'http://schema.org/BreadcrumbList', 'class' => 'breadcrumb'],
+            'itemTemplate' => "<li itemprop=\"itemListElement\" itemscore
+            itemtype=\"http://schema.org/ListItem\">{link}</li>\n",
+              'activeItemTemplate' => "<li itemprop=\"itemListElement\" itemscope
+            itemtype=\"http://schema.org/ListItem\" class=\"active\">{link}</li>\n",
+            'links' => (isset($this->params['breadcrumbs']))?$this->params['breadcrumbs']:[],
+          ]);?>
         </div>
       </div>
   </div>
