@@ -4,30 +4,45 @@ use yii\helpers\Url;
 if(Yii::$app->request->get('value')){
 foreach($filters as $filter){
     $filt .= Yii::t('app', $filter->name) . ' - ';
+    foreach($filter->category as $d){
+        if ($d == end($filter->category)){
+         $filtt .= Yii::t('app', $d->name) . '; ';
+         }else{
+             $filtt .= Yii::t('app', $d->name) . ', ';
+         }
+     }
     foreach($filter->category as $f){
        if ($f == end($filter->category)){
-        $filt .= Yii::t('app', $f->name) . '; ';
+        $filt .= Yii::t('app', $f->name) . Yii::t('app', $f->description). '; ';
         }else{
-            $filt .= Yii::t('app', $f->name) . ', ';
+            $filt .= Yii::t('app', $f->name) . Yii::t('app', $f->description). ', ';
         }
     }
 }
 }
 if(Yii::$app->request->get('service')){    
 $serv = 'Services - ';
+foreach($services as $ss){
+    if($ss == end($services)){
+    $serv .= Yii::t('app', $ss->name) . '; ';
+    }else{
+     $serv .= Yii::t('app', $ss->name) . ', ';
+    }
+}
+
 foreach($services as $s){
     if($s == end($services)){
-    $serv .= Yii::t('app', $s->name) . '; ';
+    $servv .= Yii::t('app', $s->name) . Yii::t('app', $f->description). '; ';
     }else{
-     $serv .= Yii::t('app', $s->name) . ', ';
+     $servv .= Yii::t('app', $s->name) . Yii::t('app', $f->description). ', ';
     }
 }
 }
-
-$this->title = 'Ankara escort Filters: ' . $filt . $serv;
+// print_r($filters);
+$this->title = 'Ankara escort Filters: ' . $filtt . $servv;
 $this->registerMetaTag([
 'name' => 'description',
-'content' => Yii::t('app', $filt . $serv),
+'content' => Yii::t('app',  $filt . $serv),
 ]);
 ?>
 <div class="row stories-page">
@@ -42,7 +57,7 @@ $this->registerMetaTag([
         <div class="row">
             <div class="mx-auto col-xl-58p">
                 <h1 class="heading-main mb-0">
-                <?= $filt . $serv ?>
+                <?= $filtt . $servv ?>
                 </h1>
             </div>
         </div>

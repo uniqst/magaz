@@ -27,9 +27,9 @@ class Category extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['parent_id', 'name'], 'required'],
+            [['parent_id', 'name', 'description'], 'required'],
             [['parent_id'], 'integer'],
-            [['name'], 'string', 'max' => 255],
+            [['name', 'description'], 'string', 'max' => 255],
         ];
     }
 
@@ -42,6 +42,7 @@ class Category extends \yii\db\ActiveRecord
             'id' => 'ID',
             'parent_id' => 'Parent ID',
             'name' => 'Name',
+            'description' => 'Description',
         ];
     }
 

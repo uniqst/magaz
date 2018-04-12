@@ -30,8 +30,8 @@ class Service extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'content', 'img'], 'required'],
-            [['name', 'img'], 'string', 'max' => 255],
+            [['name', 'content', 'img', 'description'], 'required'],
+            [['name', 'img', 'description'], 'string', 'max' => 255],
             [['content'], 'string', 'max' => 1000],
             [['imageFile'], 'file'],
         ];
@@ -45,6 +45,7 @@ class Service extends \yii\db\ActiveRecord
         return [
             'id' => Yii::t('app', 'ID'),
             'name' => Yii::t('app', 'Name'),
+            'description' => Yii::t('app', 'Description'),
             'content' => Yii::t('app', 'Content'),
             'img' => Yii::t('app', 'Img'),
         ];
