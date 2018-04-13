@@ -30,21 +30,6 @@ $att = Attendance::find()->all();
 
         <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
-        <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
-
-        <?= $form->field($model, 'H1')->textInput(['maxlength' => true]) ?>
-
-        <?= $form->field($model, 'H2')->textInput(['maxlength' => true]) ?>
-
-        <?= $form->field($model, 'text1000')->widget(CKEditor::className(), [
-
-        'editorOptions' => ElFinder::ckeditorOptions('elfinder',[
-            'preset' => 'full',
-            'inline' => false,
-        ]),
-
-        ]);?>
-
         <?= $form->field($model, 'name_description')->widget(CKEditor::className(), [
 
         'editorOptions' => ElFinder::ckeditorOptions('elfinder',[
@@ -54,7 +39,31 @@ $att = Attendance::find()->all();
 
         ]);?>
 
+        <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
+
         <?= $form->field($model, 'description')->textArea(['maxlength' => true]) ?>
+
+        <?= $form->field($model, 'H1')->textInput(['maxlength' => true]) ?>
+
+        <?= $form->field($model, 'H2')->textInput(['maxlength' => true]) ?>
+
+        <?= $form->field($model, 'about_myself')->widget(CKEditor::className(), [
+
+        'editorOptions' => ElFinder::ckeditorOptions('elfinder',[
+            'preset' => 'full',
+            'inline' => false,
+        ]),
+
+        ]);?>
+
+        <?= $form->field($model, 'text1000')->widget(CKEditor::className(), [
+
+        'editorOptions' => ElFinder::ckeditorOptions('elfinder',[
+            'preset' => 'full',
+            'inline' => false,
+        ]),
+
+        ]);?>
 
         <?= $form->field($model, 'imageFile')->fileInput(['accept' => 'image/*']) ?>
 
@@ -90,15 +99,6 @@ $att = Attendance::find()->all();
         <?= $form->field($model, 'city')->textInput(['maxlength' => true]) ?>
 
         <?= $form->field($model, 'working_hours')->textInput(['maxlength' => true]) ?>
-
-        <?= $form->field($model, 'about_myself')->widget(CKEditor::className(), [
-
-        'editorOptions' => ElFinder::ckeditorOptions('elfinder',[
-            'preset' => 'full',
-            'inline' => false,
-        ]),
-
-        ]);?>
 
         <?= $form->field($model, 'status')->dropDownList([
             '0' => 'Waiting',
