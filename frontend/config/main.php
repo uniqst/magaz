@@ -13,29 +13,33 @@ return [
     'homeUrl' => '/',
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
+        // 'cache' => [
+        //     'class' => 'yii\caching\ApcCache',
+        // ],
         'view' => [
 			'class' => '\rmrevin\yii\minify\View',
 			'enableMinify' => !YII_DEBUG,
-			'concatCss' => true, // concatenate css
-			'minifyCss' => true, // minificate css
-			'concatJs' => true, // concatenate js
-			'minifyJs' => true, // minificate js
-			'minifyOutput' => true, // minificate result html page
-			'webPath' => '@web', // path alias to web base
-			'basePath' => '@webroot', // path alias to web base
-			'minifyPath' => '@webroot/minify', // path alias to save minify result
-			'jsPosition' => [ \yii\web\View::POS_END ], // positions of js files to be minified
-			'forceCharset' => 'UTF-8', // charset forcibly assign, otherwise will use all of the files found charset
-			'expandImports' => true, // whether to change @import on content
-			'compressOptions' => ['extra' => true], // options for compress
+			'concatCss' => true, 
+			'minifyCss' => true,
+			'concatJs' => true, 
+			'minifyJs' => true, 
+			'minifyOutput' => true, 
+			'webPath' => '@web', 
+			'basePath' => '@webroot', 
+			'minifyPath' => '@webroot/minify', 
+			'jsPosition' => [ \yii\web\View::POS_END ],
+			'forceCharset' => 'UTF-8', 
+			'expandImports' => true, 
+			'compressOptions' => ['extra' => true], 
 			'excludeFiles' => [
-            	'jquery.js', // exclude this file from minification
-            	'app-[^.].js', // you may use regexp
+            	'jquery.js', 
+            	'app-[^.].js', 
             ],
             'excludeBundles' => [
-            	\app\helloworld\AssetBundle::class, // exclude this bundle from minification
+            	\app\helloworld\AssetBundle::class, 
             ],
         ],
+      
         'db' => [
             'attributes' => [
                 PDO::MYSQL_ATTR_INIT_COMMAND => "SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));",
