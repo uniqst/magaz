@@ -15,10 +15,10 @@ use frontend\models\SocialWeb;
 use frontend\components\BreadcrumbsUtility;
 
 
-// $session = Yii::$app->session;
-// if($session['verification'] != 1){
-//     return Yii::$app->response->redirect(Url::to(['/verification']));
-// }
+$session = Yii::$app->session;
+if($session['verification'] != 1){
+    return Yii::$app->response->redirect(Url::to(['/verification']));
+}
 
 $pages = Pages::find()->where(['page' => 'Head'])->all();
 $model = Contacts::find()->one();
@@ -306,13 +306,6 @@ AppAsset::register($this);
             
     </div> -->
 </footer>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-<!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
-<!-- <link rel="stylesheet" href="css/bootstrap4.css"> -->
-<!-- <link rel="stylesheet" href="css/styles.css">  -->
-
 <!-- <script asu scr="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"></script> -->
 
 <?php $this->endBody() ?>
