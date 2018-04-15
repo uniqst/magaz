@@ -16,6 +16,7 @@ class m171106_124727_category extends Migration
             'id' => $this->primaryKey(11),
             'parent_id' => $this->integer(11)->notNull(),
             'name' => $this->string(255)->notNull(),
+            'description' => $this->string(255)->notNull(),
             
         ]);
         $this->createIndex('parent_id', '{{%category}}', 'parent_id');

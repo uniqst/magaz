@@ -19,7 +19,7 @@ class SeachCategory extends Category
     {
         return [
             [['id', 'parent_id'], 'integer'],
-            [['name'], 'safe'],
+            [['name', 'description'], 'safe'],
         ];
     }
 
@@ -64,6 +64,8 @@ class SeachCategory extends Category
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name]);
+
+        $query->andFilterWhere(['like', 'description', $this->name]);
 
         return $dataProvider;
     }

@@ -15,6 +15,7 @@ class m171119_140445_service extends Migration
          $this->createTable('{{%service}}', [
             'id' => $this->primaryKey(11),
             'name' => $this->string(255)->notNull(),
+            'description' => $this->string(255)->notNull(),
             'content' => $this->string(1000)->notNull(),
             'img' => $this->string(255)->notNull(),
             'date' => $this->string(255),

@@ -30,7 +30,7 @@ class Filters extends \yii\db\ActiveRecord
         return [
             [['parent_id', 'name'], 'required'],
             [['parent_id', 'positions'], 'integer'],
-            [['name'], 'string', 'max' => 255],
+            [['name', 'description'], 'string', 'max' => 255],
         ];
     }
 
@@ -43,6 +43,7 @@ class Filters extends \yii\db\ActiveRecord
             'id' => Yii::t('app', 'ID'),
             'parent_id' => Yii::t('app', 'Parent ID'),
             'name' => Yii::t('app', 'Name'),
+            'description' => Yii::t('app', 'Description'),
             'positions' => Yii::t('app', 'Positions'),
         ];
     }
