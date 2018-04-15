@@ -26,7 +26,8 @@ class Attendance extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name'], 'required'],
+            [['name', 'description'], 'required'],
+            [['description'], 'string', 'max' => 255],
             [['name'], 'string', 'max' => 50],
         ];
     }

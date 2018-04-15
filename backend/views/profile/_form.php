@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use frontend\models\Photo;
+use frontend\models\Services;
 use frontend\models\Filters;
 use frontend\models\FiltersValue;
 use frontend\models\Category;

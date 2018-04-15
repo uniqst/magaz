@@ -15,6 +15,7 @@ class m171204_193949_attendance extends Migration
         $this->createTable('{{%attendance}}', [
             'id' => $this->primaryKey(11),
             'name' => $this->string(50)->notNull(),
+            'deascription' => $this->string(255)->notNull(),
         ]);
     }
 

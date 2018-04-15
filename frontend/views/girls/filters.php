@@ -13,9 +13,9 @@ foreach($filters as $filter){
      }
     foreach($filter->category as $f){
        if ($f == end($filter->category)){
-        $filt .= Yii::t('app', $f->name) . Yii::t('app', $f->description). '; ';
+        $filt .= Yii::t('app', $f->name) . ' ' . Yii::t('app', $f->description). '; ';
         }else{
-            $filt .= Yii::t('app', $f->name) . Yii::t('app', $f->description). ', ';
+            $filt .= Yii::t('app', $f->name) . ' ' . Yii::t('app', $f->description). ', ';
         }
     }
 }
@@ -32,17 +32,17 @@ foreach($services as $ss){
 
 foreach($services as $s){
     if($s == end($services)){
-    $servv .= Yii::t('app', $s->name) . Yii::t('app', $f->description). '; ';
+    $servv .= Yii::t('app', $s->name) . ' ' . Yii::t('app', $s->description). '; ';
     }else{
-     $servv .= Yii::t('app', $s->name) . Yii::t('app', $f->description). ', ';
+     $servv .= Yii::t('app', $s->name) . ' ' . Yii::t('app', $s->description). ', ';
     }
 }
 }
 // print_r($filters);
-$this->title = 'Ankara escort Filters: ' . $filtt . $servv;
+$this->title = 'Ankara escort Filters: ' . $filtt . $serv;
 $this->registerMetaTag([
 'name' => 'description',
-'content' => Yii::t('app',  $filt . $serv),
+'content' => Yii::t('app',  $filt . $servv),
 ]);
 ?>
 <div class="row stories-page">
