@@ -47,9 +47,14 @@ use mihaildev\elfinder\ElFinder;
         <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>
     </div>
+    <?php ActiveForm::end(); ?>
 
  </div>
- <div class="col-md-6">
+
+
+
+    
+    <div class="col-md-6">
     <?= \backend\components\Translate::widget(['text' => $model->title, 'input' => 'text', 'label' => 'Title']);?>
     <?= \backend\components\Translate::widget(['text' => $model->description, 'input' => 'area', 'label' => 'Meta description']);?>
     <?= \backend\components\Translate::widget(['text' => $model->H1, 'input' => 'text', 'label' => 'H1']);?>
@@ -58,11 +63,5 @@ use mihaildev\elfinder\ElFinder;
 
 
  </div>
-</div>
-   
-
-
-
-    <?php ActiveForm::end(); ?>
 
 </div>
