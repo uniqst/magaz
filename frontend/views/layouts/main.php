@@ -15,10 +15,10 @@ use frontend\models\SocialWeb;
 use frontend\components\BreadcrumbsUtility;
 
 
-$session = Yii::$app->session;
-if($session['verification'] != 1){
-    return Yii::$app->response->redirect(Url::to(['/verification']));
-}
+// $session = Yii::$app->session;
+// if($session['verification'] != 1){
+//     return Yii::$app->response->redirect(Url::to(['/verification']));
+// }
 
 $pages = Pages::find()->where(['page' => 'Head'])->all();
 $model = Contacts::find()->one();

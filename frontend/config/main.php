@@ -13,9 +13,10 @@ return [
     'homeUrl' => '/',
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
-        // 'cache' => [
-        //     'class' => 'yii\caching\ApcCache',
-        // ],
+        'cache' => [
+            'class' => 'yii\caching\MemCache',
+            'useMemcached' => true,
+        ],
         'view' => [
 			'class' => '\rmrevin\yii\minify\View',
 			'enableMinify' => !YII_DEBUG,

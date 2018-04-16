@@ -12,15 +12,15 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        // 'https://fonts.googleapis.com/css?family=Roboto:300,400,500',
+        'https://fonts.googleapis.com/css?family=Roboto:300,400,500',
                 // 'css/bootstrap.min.css',
 
         // 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css',
         // 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css',
         // 'https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css',
-        // 'css/font-awesome.min.css',
+        'css/font-awesome.min.css',
         'css/bootstrap4.min.css',
-        // 'css/site.css',
+        'css/site.css',
         'css/styles.css',
     ];
     public $js = [
