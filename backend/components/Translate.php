@@ -14,10 +14,13 @@ Class Translate extends Widget{
             $path = explode('/', Yii::$app->request->pathInfo);
             if ($path[1] != 'create') {
             $model = SourceMessage::find()->where(['message' => $this->text])->one();
+
             if ($model != null) {
                 $model->initMessages();
                 if ($model::loadMultiple($model->messages, Yii::$app->getRequest()->post()) && $model::validateMultiple($model->messages)) {
-                    $model->saveMessages();
+                    if($_POST['Message']['tr']['id'] == $model->id){
+                        $model->saveMessages();
+                    }
                 }
                 return $this->render('translate', [
                     'model' => $model,

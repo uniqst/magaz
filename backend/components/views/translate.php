@@ -11,8 +11,10 @@ $text2 = str_replace('>', '&gt;', $text1);
 <?php Pjax::begin();?>
 <?php $form = ActiveForm::begin(['options' => ['data-pjax' => true]]); ?>
 <?php if($input == 'area'):?>
+<?= $form->field($model->messages['tr'], '[' . 'tr' . ']id')->hiddenInput()->label(false);?>
 <?= $form->field($model->messages['tr'], '[' . 'tr' . ']translation')->textArea()->label($label);?>
 <?php else: ?>
+<?= $form->field($model->messages['tr'], '[' . 'tr' . ']id')->hiddenInput()->label(false);?>
 <?= $form->field($model->messages['tr'], '[' . 'tr' . ']translation')->textInput()->label($label);?>
 <?php endif;?>
 
