@@ -44,6 +44,10 @@ use mihaildev\elfinder\ElFinder;
 
     <?= $form->field($model, 'date')->hiddenInput(['value' => date('Y-m-d H:i:s')])->label(false) ?>
 
+        <div class="form-group">
+        <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>
+    </div>
+
  </div>
  <div class="col-md-6">
     <?= \backend\components\Translate::widget(['text' => $model->title, 'input' => 'text', 'label' => 'Title']);?>
@@ -58,9 +62,6 @@ use mihaildev\elfinder\ElFinder;
    
 
 
-    <div class="form-group">
-        <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>
-    </div>
 
     <?php ActiveForm::end(); ?>
 
