@@ -19,7 +19,7 @@ class SearchService extends Service
     {
         return [
             [['id'], 'integer'],
-            [['name', 'description', 'content', 'img'], 'safe'],
+            [['name', 'content', 'img'], 'safe'],
         ];
     }
 
@@ -63,7 +63,6 @@ class SearchService extends Service
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'name', $this->description])
             ->andFilterWhere(['like', 'content', $this->content])
             ->andFilterWhere(['like', 'img', $this->img]);
 
