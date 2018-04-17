@@ -44,7 +44,7 @@ AppAsset::register($this);
     <?php endif;?>
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/png" href="https://allescortsankara.com/favicon.png">
     <?php $this->head() ?>
 </head>
 <body>

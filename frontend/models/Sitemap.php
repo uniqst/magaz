@@ -11,7 +11,7 @@ class Sitemap extends Model{
             $urls = array();    
             //Получаем массив URL из таблицы Sef
             $url_category = Category::find()
-                    ->select('name')
+                    ->select('id')
                     ->where(['<>', 'parent_id', 0])
                     ->all();
 
@@ -34,11 +34,12 @@ class Sitemap extends Model{
             $urls[] = array(Yii::$app->urlManager->createUrl(['/contacts']),'daily');
 
             foreach ($url_category as $url_rule){
-                $urls[] = array(Yii::$app->urlManager->createUrl(['/category', 'value' => $url_rule->name]),'daily');
+                $urls[] = array(Yii::$app->urlManager->createUrl(['/girls/filters', 'value' => $url_rule->id]),'daily');
             }
 
             foreach ($url_profiles as $url_rule){
-                $urls[] = array(Url::to(['/girl', 'id' =>$url_rule->id]). '/name','daily');
+                // $urls[] = array(Url::to(['/girl', 'id' =>$url_rule->id]). '/name','daily');
+                $urls[] = array("/girl/{$url_rule->id}/name",'daily');
             }
 
             foreach ($url_stories as $url_rule){
