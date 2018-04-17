@@ -47,7 +47,7 @@ class GirlsController extends Controller
 
     public function actionIndex()
     {
-        $model = Profile::find()->with('image');
+        $model = Profile::find()->orderBy(['id' => SORT_DESC])->with('image');
         $pages = Pages::find()->where(['page' => 'All Girls'])->all();  
         return $this->render('index', compact('model', 'pages'));
     }
@@ -65,7 +65,7 @@ class GirlsController extends Controller
     public function actionFilters()
     {
         $pages = Pages::find()->where(['page' => 'All Girls'])->all();  
-        $model = Profile::find()->where(['status' => 1])->joinWith(['value.category' => function(yii\db\ActiveQuery $query){
+        $model = Profile::find()->where(['status' => 1])->orderBy(['id' => SORT_DESC])->joinWith(['value.category' => function(yii\db\ActiveQuery $query){
             $query->andFilterWhere(['category.id' => $_GET['value']]);
         }])->joinWith(['attVal.att' => function(yii\db\ActiveQuery $query){
             $query->andFilterWhere(['attendance.id' => $_GET['service']]);
