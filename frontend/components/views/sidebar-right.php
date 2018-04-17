@@ -24,12 +24,12 @@
                 <a href="<?=Url::to(['/stories/story', 'id' => $rand->id, 'name' => $rand->H1])?>" class="item-box story"></a>
                     <div class="item-box__title">
                         <div>
-                        <a href="<?=Url::to(['/stories/story', 'id' => $rand->id, 'name' => $rand->H1])?>"><span><?=Yii::t('app', 'Story');?></span></a>
+                        <a href="<?=Url::to(['/stories/story', 'id' => $rand->id, 'name' => $rand->H1])?>"><?=Yii::t('app', 'Story');?></a>
                         </div>
                     </div>
                     <div class="item-box__info text-center">
                             <a href="<?=Url::to(['/stories/story', 'id' => $rand->id, 'name' => $rand->H1])?>" style="overflow: hidden">
-                                <span><?= Yii::t('app', $rand->short_description)?></span>
+                                <?= Yii::t('app', $rand->short_description)?>
                             </a>
                     </div>
                 </div>
