@@ -65,12 +65,12 @@ if($prev->id == ''){
 
             <div class="prev">
                 <a href="<?= Url::to(['/girls/girl/', 'id' => $prev->id, 'name' => $prev->name])?>">
-                    <button></button>
+                <span class="button"></span>
                 </a>
             </div>
             <div class="next">
                 <a href="<?= Url::to(['/girls/girl/', 'id' => $next->id, 'name' => $next->name])?>">
-                    <button></button>
+                <span class="button"></span>
                 </a>
             </div>
 
@@ -239,9 +239,7 @@ if($prev->id == ''){
                     <?=Yii::t('app', $model->H2);?>
                 </h2>
                 <div class="mp-text-block__text">
-                    <p>
                         <?=Yii::t('app', $model->text1000)?>
-                    </p>
                 </div>
             </div>
 
@@ -251,6 +249,6 @@ if($prev->id == ''){
   <div class="d-none d-xl-block col-xl-21p">
     <?= \frontend\components\SidebarRight::widget();?>
   </div>
-</div>
+
 
   <?= \frontend\components\BottomSlider::widget();?>

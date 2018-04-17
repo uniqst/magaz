@@ -6,7 +6,7 @@
     </div>
    <?php foreach($model as $rand):?>
         <?php if($rand->date == 'profile'):?>
-     <div class="slider-item">
+    <div class="slider-item">
                 <div class="item-box girl" style="background-image: url('/photo/<?=$rand->image->src?>')">
                 <a href="<?=Url::to(['/girls/girl', 'id' => $rand->id, 'name' => $rand->name])?>" class="item-box girl"></a>
                     <div class="item-box__title">
@@ -28,11 +28,9 @@
                         </div>
                     </div>
                     <div class="item-box__info text-center">
-                        <span>
                             <a href="<?=Url::to(['/stories/story', 'id' => $rand->id, 'name' => $rand->H1])?>" style="overflow: hidden">
-                                <?= Yii::t('app', $rand->short_description)?>
+                                <span><?= Yii::t('app', $rand->short_description)?></span>
                             </a>
-                        </span>
                     </div>
                 </div>
             </div>
