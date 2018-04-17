@@ -24,7 +24,7 @@
                 <a href="<?=Url::to(['/stories/story', 'id' => $rand->id, 'name' => $rand->H1])?>" class="item-box story"></a>
                     <div class="item-box__title">
                         <div>
-                            <a href="<?=Url::to(['/stories/story', 'id' => $rand->id, 'name' => $rand->H1])?>"><?=Yii::t('app', 'Story');?></a>
+                        <a href="<?=Url::to(['/stories/story', 'id' => $rand->id, 'name' => $rand->H1])?>"><span><?=Yii::t('app', 'Story');?></span></a>
                         </div>
                     </div>
                     <div class="item-box__info text-center">
