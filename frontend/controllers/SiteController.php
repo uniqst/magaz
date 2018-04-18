@@ -89,7 +89,7 @@ class SiteController extends Controller
         
         $pages = Pages::find()->where(['page' => 'Home'])->all();
         $model = Profile::find()->where(['status' => 1])->orderBy(['id' => SORT_DESC])->with('image')->all();
-        $model2 = Profile::find()->where(['status' => 1])->orderBy(['id' => SORT_DESC])->with('image');
+        $model2 = Profile::find()->where(['status' => 1])->with('image');
         $slider = array_slice($model, 0, 10);
         $comment = Comments::find()->where(['status' => 1])->orderBy(['date' => SORT_DESC])->one();
         $comments = Comments::find()->where(['status' => 1])->orderBy(['date' => SORT_DESC])->limit(10)->all();
