@@ -139,12 +139,12 @@ $att = Attendance::find()->all();
 
         <div class="col-md-6">
         <?= \backend\components\Translate::widget(['text' => $model->name, 'input' => 'text', 'label' => 'name']);?>
+        <?= \backend\components\Translate::widget(['text' => $model->name_description, 'input' => 'area', 'label' => 'name page']);?>
         <?= \backend\components\Translate::widget(['text' => $model->title, 'input' => 'text', 'label' => 'title']);?>
+        <?= \backend\components\Translate::widget(['text' => $model->description, 'input' => 'area', 'label' => 'meta tag desription']);?>
         <?= \backend\components\Translate::widget(['text' => $model->H1, 'input' => 'text', 'label' => 'H1']);?>
         <?= \backend\components\Translate::widget(['text' => $model->H2, 'input' => 'text', 'label' => 'H2']);?>
         <?= \backend\components\Translate::widget(['text' => $model->text1000, 'input' => 'area', 'label' => 'text1000']);?>
-        <?= \backend\components\Translate::widget(['text' => $model->name_description, 'input' => 'area', 'label' => 'name description']);?>
-        <?= \backend\components\Translate::widget(['text' => $model->description, 'input' => 'area', 'label' => 'desription']);?>
         <?= \backend\components\Translate::widget(['text' => $model->most_wanted, 'input' => 'area', 'label' => 'most wanted']);?>
         <?= \backend\components\Translate::widget(['text' => $model->nationality, 'input' => 'text', 'label' => 'nationality']);?>
         <?= \backend\components\Translate::widget(['text' => $model->weight, 'input' => 'text', 'label' => 'weight']);?>

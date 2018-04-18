@@ -140,59 +140,59 @@ if($prev->id == ''){
                 <div class="card__info-list">
                     <ul>
                         <li class="info-list__item">
-                            <span class="property"><?=Yii::t('app', 'AGE')?></span>
+                            <span class="property"><?=Yii::t('app', 'age')?></span>
                             <span class="value"><?= $model->age?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property"><?=Yii::t('app', 'NATIONALITY')?></span>
+                            <span class="property"><?=Yii::t('app', 'nationality')?></span>
                             <span class="value"><?=Yii::t('app' ,$model->nationality)?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property"><?=Yii::t('app', 'HEIGHT')?></span>
+                            <span class="property"><?=Yii::t('app', 'height')?></span>
                             <span class="value"><?= $model->height?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property"><?=Yii::t('app', 'WEIGHT')?></span>
+                            <span class="property"><?=Yii::t('app', 'weight')?></span>
                             <span class="value"><?= $model->weight?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property"><?=Yii::t('app', 'CHEST')?></span>
+                            <span class="property"><?=Yii::t('app', 'chest')?></span>
                             <span class="value"><?= $model->chest?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property"><?=Yii::t('app', 'OPTIONS')?></span>
+                            <span class="property"><?=Yii::t('app', 'options')?></span>
                             <span class="value"><?=Yii::t('app', $model->mesurements)?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property"><?=Yii::t('app', 'HAIR COLOR')?></span>
+                            <span class="property"><?=Yii::t('app', 'hair color')?></span>
                             <span class="value"><?=Yii::t('app', $model->hair)?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property"><?=Yii::t('app', 'EYE COLOR')?></span>
+                            <span class="property"><?=Yii::t('app', 'eye color')?></span>
                             <span class="value"><?=Yii::t('app', $model->eye)?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property"><?=Yii::t('app', 'LANGUAGES')?></span>
+                            <span class="property"><?=Yii::t('app', 'language')?></span>
                             <span class="value"><?=Yii::t('app', $model->language)?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property"><?=Yii::t('app', 'CONTACT')?></span>
+                            <span class="property"><?=Yii::t('app', 'contact')?></span>
                             <span class="value"><?= $contact->phone?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property"><?=Yii::t('app', 'EMAIL')?></span>
+                            <span class="property"><?=Yii::t('app', 'email')?></span>
                             <span class="value"><?= $contact->email?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property"><?=Yii::t('app', 'CITY')?></span>
+                            <span class="property"><?=Yii::t('app', 'city')?></span>
                             <span class="value"><?=Yii::t('app', $model->city)?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property"><?=Yii::t('app', 'WORKING HOURS')?></span>
+                            <span class="property"><?=Yii::t('app', 'working hour')?></span>
                             <span class="value"><?= $model->working_hours?></span>
                         </li>
                         <li class="info-list__item">
-                            <span class="property"><?=Yii::t('app', 'REGISTRATE')?></span>
+                            <span class="property"><?=Yii::t('app', 'registrate')?></span>
                             <span class="value"><?= date('d-m-Y', time($model->date))?></span>
                         </li>
                     </ul>
@@ -252,3 +252,10 @@ if($prev->id == ''){
 
 
   <?= \frontend\components\BottomSlider::widget();?>
+
+
+<style>
+    .property{
+        text-transform: uppercase;
+    }
+</style>
