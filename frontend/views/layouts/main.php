@@ -15,19 +15,10 @@ use frontend\models\SocialWeb;
 use frontend\components\BreadcrumbsUtility;
 
 
-$session = Yii::$app->session;
-if($session['verification'] != 1){
-    return Yii::$app->response->redirect(Url::to(['/verification']));
-}
-
-// $url = str_replace('/', '', $_SERVER['REQUEST_URI']);
-
-echo $_SERVER['REQUEST_URI'];
-if($_SERVER['REQUEST_URI'] == '/frontend/web/') {
-    return Yii::$app->response->redirect(Url::to(['/']));
-    // header('location: /');
-}
-
+// $session = Yii::$app->session;
+// if($session['verification'] != 1){
+//     return Yii::$app->response->redirect(Url::to(['/verification']));
+// }
 
 $pages = Pages::find()->where(['page' => 'Head'])->all();
 $model = Contacts::find()->one();
