@@ -10,7 +10,7 @@ use yii\db\ActiveQuery;
 Class MostWantedGirl extends Widget{
     public function run(){
     	
-    	$model = Profile::find()->orderBy(new Expression('rand()'))->limit(3)->all();
+    	$model = Profile::find()->orderBy(['id' => SORT_DESC])->limit(3)->all();
         return $this->render('most-wanted-girl', compact('model'));
     }
 }

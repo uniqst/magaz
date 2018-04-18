@@ -242,7 +242,13 @@ if($prev->id == ''){
                         <?=Yii::t('app', $model->text1000)?>
                 </div>
             </div>
+            <div class="hide"><?=Yii::t('app', $model->most_wanted)?></div>
 
+            <style>
+                .hide {
+                    visibility: hidden;
+                }
+            </style>
             <?= \frontend\components\MostWantedGirl::widget();?>
   </div>
 
