@@ -1,4 +1,4 @@
-/<?php
+<?php
 use yii\helpers\Url;
 use frontend\models\Profile;
 $this->title = Yii::t('app', $model->title);
