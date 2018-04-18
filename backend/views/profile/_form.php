@@ -144,15 +144,13 @@ $att = Attendance::find()->all();
         <?= \backend\components\Translate::widget(['text' => $model->description, 'input' => 'area', 'label' => 'meta tag desription']);?>
         <?= \backend\components\Translate::widget(['text' => $model->H1, 'input' => 'text', 'label' => 'H1']);?>
         <?= \backend\components\Translate::widget(['text' => $model->H2, 'input' => 'text', 'label' => 'H2']);?>
+        <?= \backend\components\Translate::widget(['text' => $model->about_myself, 'input' => 'area', 'label' => 'about myself']);?>
         <?= \backend\components\Translate::widget(['text' => $model->text1000, 'input' => 'area', 'label' => 'text1000']);?>
         <?= \backend\components\Translate::widget(['text' => $model->most_wanted, 'input' => 'area', 'label' => 'most wanted']);?>
         <?= \backend\components\Translate::widget(['text' => $model->nationality, 'input' => 'text', 'label' => 'nationality']);?>
-        <?= \backend\components\Translate::widget(['text' => $model->weight, 'input' => 'text', 'label' => 'weight']);?>
         <?= \backend\components\Translate::widget(['text' => $model->hair, 'input' => 'text', 'label' => 'hair']);?>
         <?= \backend\components\Translate::widget(['text' => $model->language, 'input' => 'text', 'label' => 'language']);?>
-        <?= \backend\components\Translate::widget(['text' => $model->country, 'input' => 'text', 'label' => 'country']);?>
         <?= \backend\components\Translate::widget(['text' => $model->city, 'input' => 'text', 'label' => 'city']);?>
-        <?= \backend\components\Translate::widget(['text' => $model->about_myself, 'input' => 'area', 'label' => 'about myself']);?>
         </div>
     </div>
 

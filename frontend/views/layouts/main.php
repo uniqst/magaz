@@ -20,6 +20,13 @@ if($session['verification'] != 1){
     return Yii::$app->response->redirect(Url::to(['/verification']));
 }
 
+
+
+if($_SERVER['REQUEST_URI'] == '/frontend/web/') {
+    return Yii::$app->response->redirect(Url::to(['/']));
+}
+
+
 $pages = Pages::find()->where(['page' => 'Head'])->all();
 $model = Contacts::find()->one();
 $seo = Seo::find()->one();
