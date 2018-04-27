@@ -74,6 +74,7 @@ class ServiceController extends Controller
                 $model->imageFile->saveAs('../../frontend/web/service/' . $str . '.' . $model->imageFile->extension);
                 $model->img = $str . '.' . $model->imageFile->extension;
         }
+                $model->date = 'default';
                 $model->save();
              return $this->redirect(['view', 'id' => $model->id]);
         }
